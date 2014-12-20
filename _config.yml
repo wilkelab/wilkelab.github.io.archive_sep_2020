@@ -10,5 +10,11 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 twitter_username: ClausWilke
 github_username:  wilkelab
 
+# Collections
+collections:
+  classes:
+    output: true
+    permalink: /classes/:path/
+
 # Build settings
 markdown: kramdown

@@ -7,14 +7,14 @@ layout: default
   <h1 class="page-heading">Older News</h1>
 
   <ul class="post-list">
-    {% for post in site.posts offset: 4%}
+    {% for item in site.posts offset: 1%}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <span class="post-meta">{{ item.date | date: "%b %-d, %Y" }}</span>
 
         <h2>
-          {{ post.title }}
+          {{ item.title }}
         </h2>
-        {{ post.content }}
+        {{ item.content }}
       </li>
     {% endfor %}
   </ul>
