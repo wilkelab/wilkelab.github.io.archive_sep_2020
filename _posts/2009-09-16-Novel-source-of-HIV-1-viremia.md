@@ -1,0 +1,6 @@
+---
+layout: post
+title:  "Novel source of HIV-1 viremia in patients on HAART"
+date:   2009-09-16 00:00:01
+---
+Even though highly active antiretroviral therapy (HAART) can reduce HIV-1 virus load to clinically undetectable levels, the virus never completely disappears and ultrasensitive assays can detect small quantities of virus in all patients on HAART. The exact origin of this virus is unknown. Many researchers assume that it is produced by latently infected CD4+ T cells that reactivate. [We analyzed](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2738142) HIV-1 sequences isolated from resting CD4+ T cells, activated CD4+ T cells, and blood plasma using a population-genetics approach. Our analysis showed that sequences from resting and activated CD4+ T cells formed a single population, whereas some of the virus in the blood plasma seemed genetically distinct from the virus in CD4+ T cells. This result shows that circulating CD4+ T cells are not the only source of residual viremia, and it suggests that a novel cellular source may contribute significantly to ongoing virus production under HAART. This research was featured by [Science Daily.](http://www.sciencedaily.com/releases/2009/08/090825082656.htm)

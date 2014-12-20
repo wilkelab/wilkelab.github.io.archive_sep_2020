@@ -4,10 +4,10 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Recent News</h1>
+  <h1 class="page-heading">Older News</h1>
 
   <ul class="post-list">
-    {% for post in site.posts limit:4 %}
+    {% for post in site.posts offset: 4%}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
@@ -18,7 +18,5 @@ layout: default
       </li>
     {% endfor %}
   </ul>
-  
-  <a href="{{ site.baseurl }}/index_old_news.html">Older News</a>
 
 </div>

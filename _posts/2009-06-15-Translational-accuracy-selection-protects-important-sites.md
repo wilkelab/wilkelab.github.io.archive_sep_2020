@@ -1,0 +1,6 @@
+---
+layout: post
+title:  "Translational-accuracy selection protects buried and structurally important sites"
+date:   2009-06-15 00:00:01
+---
+In 1994, Akashi proposed that translationally optimal codons, codons that are translated with relatively low error rate, should preferentially be located at important sites in coding sequences. This signal would be the consequence of translational-accuracy selection, i.e., selection to minimize the amount of non-functional or misfolded protein produced by translation errors. Traditionally, the importance of a site under Akashi's test has been assessed by evolutionary conservation. The July issue of Mol. Biol. Evol. contains a study by [Zhou et al.](http://dx.doi.org/10.1093/molbev/msp070) that correlates the location of optimal codons with sites that are important for protein structure. The study finds that there is a tendency of optimal codons to appear at structurally important sites in a wide range of organisms. The study lends further credence to the mistranslation-induced protein-misfolding hypothesis, which argues that much of the selection pressure on coding sequences stems from the toxic effects of mistranslated and misfolded proteins.
