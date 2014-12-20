@@ -2,9 +2,14 @@
  * Site header
  */
 .site-header {
+/*
     border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
+    */
     min-height: 56px;
+
+    background-color: black;
+    color: $text-color-extra-light;
 
     // Positioning context for the mobile navigation icon
     position: relative;
@@ -19,7 +24,7 @@
 
     &,
     &:visited {
-        color: $grey-color-dark;
+        color: $grey-color-light;
     }
 }
 
@@ -32,7 +37,7 @@
     }
 
     .page-link {
-        color: $text-color;
+        color: $text-color-extra-light;
         line-height: $base-line-height;
 
         // Gaps between nav items, but not on the first one
@@ -91,13 +96,27 @@
 /**
  * Site footer
  */
+ 
 .site-footer {
-    border-top: 1px solid $grey-color-light;
+    /*border-top: 1px solid $grey-color-light;*/
+    background-color: $grey-color-dark;
+    color: $text-color-light;
     padding: $spacing-unit 0;
+
+    min-height: 500px;    
+        
+    a {
+        color: $brand-color-light;
+        
+        &:hover {
+            color: $text-color-light;
+        }
+    }
 }
 
 .footer-heading {
     font-size: 18px;
+    color: $text-color-extra-light;
     margin-bottom: $spacing-unit / 2;
 }
 
@@ -109,7 +128,6 @@
 
 .footer-col-wrapper {
     font-size: 15px;
-    color: $grey-color;
     margin-left: -$spacing-unit / 2;
     @extend %clearfix;
 }
