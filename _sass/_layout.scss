@@ -1,6 +1,42 @@
 /**
+ * Entire page
+ */
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+body, html {
+    height: 100%;
+}
+
+/**
+ * Page cover
+ */
+#cover { 
+    background: url(../img/WilkeLabCover.jpg) no-repeat top left; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#empty {
+    height: 100%;
+}
+
+/**
  * Site header
  */
+ 
+#sticky {
+}
+#sticky.stick {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 10000;
+}
+
 .site-header {
 /*
     border-top: 5px solid $grey-color-dark;
@@ -11,8 +47,10 @@
     background-color: black;
     color: $text-color-extra-light;
 
+/*
     // Positioning context for the mobile navigation icon
     position: relative;
+    */
 }
 
 .site-title {
@@ -96,14 +134,6 @@
 /**
  * Site footer
  */
-body {
-    overflow-y: scroll;
-    overflow-x: hidden;
-}
-body, html {
-    height: 100%;
-}
-
 .site-footer {
     height: 100%;
     /*border-top: 1px solid $grey-color-light;*/
@@ -189,6 +219,7 @@ body, html {
  */
 .page-content {
     padding: $spacing-unit 0;
+    background: $background-color;
 }
 
 .page-heading {

@@ -8,5 +8,25 @@
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+  
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+  <script type="text/javascript">
+    function sticky_relocate() {
+      var window_top = $(window).scrollTop();
+      var div_top = $('#sticky-anchor').offset().top;
+      if (window_top > div_top) {
+        $('#sticky').addClass('stick');
+      } else {
+        $('#sticky').removeClass('stick');
+      }
+    }
+
+    $(function () {
+      $(window).scroll(sticky_relocate);
+      sticky_relocate();
+    });
+  </script>
+
 </head>
