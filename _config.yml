@@ -3,8 +3,10 @@ title: The Wilke Lab
 address: The University of Texas at Austin
 email: wilke@austin.utexas.edu
 description: > # this means to ignore newlines until "baseurl:"
-  The Wilke Lab carries out research in computational evolutionary biology,
-  bioinformatics, and biostatistics.
+  Department of Integrative Biology<br>
+  Institute for Cellular and Molecular Biology<br>
+  2500 Speedway, A4800<br>
+  Room: MBB 3.232
 baseurl: "" # the subpath of your site, e.g. /blog/
 #url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: ClausWilke
