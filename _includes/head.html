@@ -27,6 +27,10 @@
       $(window).scroll(sticky_relocate);
       sticky_relocate();
     });
+    
+    $(window).load(function() {
+	    $(".loader").fadeOut("slow");
+    })
   </script>
 
 </head>
