@@ -1,0 +1,30 @@
+---
+layout: default
+title: Publications
+permalink: /publications/
+---
+
+<div class="post">
+
+  <h1 class="post-title">Publications</h1>
+
+  <ul class="pub-list">
+    {% assign year = "0000" %}
+    {% for pub in site.data.publications %}
+      {% if year != pub.year %}
+        {% assign year = pub.year %}
+        <li class="pub-year">{{ year | capitalize }}</li>
+      {% endif %}
+      <li>
+        {{ pub.author }} ({{ pub.year }}). {{ pub.title }}. {{ pub.ref }}.
+        {% if pub.doi or pub.pmcid %}<br>{% endif %}
+        {% if pub.doi %}
+          &nbsp;&nbsp; doi: <a href="http://dx.doi.org/{{ pub.doi }}">{{pub.doi}}</a>
+        {% endif %}
+        {% if pub.pmcid %}
+          &nbsp;&nbsp; pmcid: <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/{{ pub.pmc }}">{{pub.pmcid}}</a>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</div>

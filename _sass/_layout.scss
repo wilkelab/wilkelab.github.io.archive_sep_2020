@@ -281,6 +281,26 @@ body, html {
     font-size: 24px;
 }
 
+/**
+ * Publication list
+ */
+.pub-list {
+    margin-left: 0;
+    list-style: none;
+
+    > li {
+        margin-bottom: $spacing-unit / 2;
+    }
+    
+    .pub-year {
+        font-weight: bold;
+        font-size: 20px;
+       
+        @include media-query($on-laptop) {
+            font-size: 18px;
+        }
+    }
+}
 
 
 /**
