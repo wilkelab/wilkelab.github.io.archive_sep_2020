@@ -35,11 +35,50 @@ body, html {
     height: 100%;
 }
 
+#headline-empty {
+    height: 100%;
+}
+
+
 /* about block */
 
 #about-block{
     background: $grey-color;
     color: #ffffff;
+}
+
+/**
+ * People page
+ */
+#people { 
+    background: url(../img/LabPictureApril2013_scaled.jpg) no-repeat left center rgb(1,2,2); 
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    /*
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    */
+}
+
+
+.people-title {
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -1px;
+    margin-bottom: 0;
+    float: left;
+
+    color: $text-color-extra-light;
+    text-shadow: 2px 2px 4px #000000;
+
+    &,
+    &:visited {
+        color: $grey-color-light;
+    }
 }
 
 /***

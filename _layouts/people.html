@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+   
+  <body id="people">
+    <div class="loader"></div>
+
+    <div id="headline-empty">
+      <h1 class="people-title">The Wilke Lab</h1>
+    </div>
+    
+    {% include header.html %}
+
+    <div class="page-content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </div>
+
+    {% include footer.html %}
+  </body>
+</html>
