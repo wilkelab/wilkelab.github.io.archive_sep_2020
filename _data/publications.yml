@@ -45,3 +45,145 @@
   ref: "PeerJ 2:e266"
   doi: 10.7717/peerj.266
   pmcid: PMC3940602
+  
+- author: M. Z. Tien, A. G. Meyer, D. K. Sydykova, S. J. Spielman, C. O. Wilke
+  year: 2013
+  title: Maximum allowed solvent accessibilites of residues in proteins
+  ref: "PLOS ONE 8:e80635"
+  doi: 10.1371/journal.pone.0080635
+  pmcid: PMC3836772
+  
+- author: E. L. Jackson, N. Ollikainen, A. W. Covert III, T. Kortemme, C. O. Wilke
+  year: 2013
+  title: Amino-acid site variability among natural and designed proteins
+  ref: "PeerJ 1:e211"
+  doi: 10.7717/peerj.211
+  pmcid: PMC3828621
+
+- author: A. R. Sedaghat, S. T. Gray, K. J. Chambers, C. O. Wilke, D. S. Caradonna
+  year: 2013
+  title: Sinonasal anatomic variants and asthma are associated with faster development of chronic rhinosinusitis in patients with allergic rhinitis
+  ref: "Int. Forum Allergy Rhinol. 3:755-761"
+  doi: 10.1002/alr.21163
+  
+- author: A. W. Covert, R. E. Lenski, C. O. Wilke, C. Ofria
+  year: 2013
+  title: Experiments on the role of deleterious mutations as stepping stones in adaptive evolution
+  ref: "Proc. Natl. Acad. Sci. USA 110:E3171-E3178"
+  doi: 10.1073/pnas.1313424110
+  pmcid: PMC3752215
+  
+- author: S. D. Smith-Tsurkan, R. A. Herr, S. Khuder, C. O. Wilke, I. S. Novella
+  year: 2013
+  title: The role of environmental factors on the evolution of phenotypic diversity in vesicular stomatitis virus populations
+  ref: "J. Gen. Virol. 94:860-868"
+  doi: 10.1099/vir.0.048082-0
+  pmcid: PMC3709682
+  
+- author: I. S. Novella, J. B. Presloid, C. Beech, C. O. Wilke
+  year: 2013
+  title: Congruent evolution of fitness and genetic robustness in VSV
+  ref: "J. Virol. 87:4923-4928"
+  doi: 10.1128/JVI.02796-12
+  pmcid: PMC3624304
+
+- author: C. Lee, R. A. Harris, J. K. Wall, R. D. Mayfield, C. O Wilke
+  year: 2013
+  title: RNaseIII and T4 Polynucleotide Kinase sequence biases and solutions during RNA-seq library construction
+  ref: "Biology Direct 8:16"
+  doi: 10.1186/1745-6150-8-16
+  pmcid: PMC3710281
+  
+- author: M. Z. Tien, D. K. Sydykova, A. G. Meyer, C. O. Wilke
+  year: 2013
+  title: "PeptideBuilder: A simple Python library to generate model peptides"
+  ref: "PeerJ 1:e80"
+  doi: 10.7717/peerj.80
+  pmcid: PMC3661355
+
+- author: S. J. Spielman, C. O. Wilke
+  year: 2013
+  title: Membrane environment imposes unique selection pressures on transmembrane domains of G protein-coupled receptors
+  ref: "J. Mol. Evol. 76:172-182"
+  doi: 10.1007/s00239-012-9538-8
+  pmcid: PMC3712645
+  
+- author: A. G. Meyer, E. T. Dawson, C. O. Wilke
+  year: 2013
+  title: Cross-species comparison of site-specific evolutionary-rate variation in influenza haemagglutinin
+  ref: "Phil. Trans. R. Soc. B. 368:20120334"
+  doi: 10.1098/rstb.2012.0334
+  pmcid: PMC3678335
+  
+- author: A. G. Meyer, C. O. Wilke
+  year: 2013
+  title: Integrating sequence variation and protein structure to identify sites under selection
+  ref: "Mol. Biol. Evol. 30:36-44"
+  doi: 10.1093/molbev/mss217
+  pmcid: PMC3525147
+  
+- author: M. P. Scherrer, A. G. Meyer, C. O. Wilke
+  year: 2012
+  title: Modeling coding-sequence evolution within the context of residue solvent accessibility
+  ref: "BMC Evol. Biol. 12:179"
+  doi: 10.1186/1471-2148-12-179
+  pmcid: PMC3527230
+  
+- author: J. J. Bull, I. J. Molineux, C. O. Wilke
+  year: 2012
+  title: Slow fitness recovery in a codon-modified viral genome
+  ref: "Mol. Biol. Evol. 29:2997-3004"
+  doi: 10.1093/molbev/mss119
+  pmcid: PMC3457771
+  
+- author: A. R. Sedaghat, S. T. Gray, C. O. Wilke, D. S. Caradonna
+  year: 2012
+  title: Risk factors for development of chronic rhinosinusitis in patients with allergic rhinitis
+  ref: "Int. Forum Allergy Rhinol. 2:370-375"
+  doi: 10.1002/alr.21055
+  
+- author: T. E. Keller, C. O. Wilke, J. J. Bull
+  year: 2012
+  title: Interactions between evolutionary processes at high mutation rates
+  ref: "Evolution 66:2303-2314"
+  doi: 10.1111/j.1558-5646.2012.01596.x
+  pmcid: PMC3389706
+  
+- author: C. O. Wilke
+  year: 2012
+  title: Bringing molecules back into molecular evolution
+  ref: "PLoS Comp. Biol. 8:e1002572"
+  doi: 10.1371/journal.pcbi.1002572
+  pmcid: PMC3386153
+  
+- author: A. W. Covert III, J. Carlson-Stevermer, D. Z. Derryberry, C. O. Wilke
+  year: 2012
+  title: The role of deleterious mutations in the adaptation to a novel envrionment
+  ref: "In Proceedings of the Thirteenth International Conference on the Simulation and Synthesis of Living Systems, C. Adami, D. M. Bryson, C. Ofria and R. T. Pennock, eds., pp. 27-31. MIT Press"
+  doi: 10.7551/978-0-262-31050-5-ch004
+  
+- author: A. W. Covert III, L. Smith, D. Z. Derryberry, C. O. Wilke
+  year: 2012
+  title: "What does sex have to do with it: tracking the fate of deleterious mutations in sexual populations"
+  ref: "In Proceedings of the Thirteenth International Conference on the Simulation and Synthesis of Living Systems, C. Adami, D. M. Bryson, C. Ofria and R. T. Pennock, eds., pp. 32-36. MIT Press"
+  doi: 10.7551/978-0-262-31050-5-ch005
+  
+- author: T. E. Keller, S. D. Mis, K. E. Jia, C. O. Wilke
+  year: 2012
+  title: Reduced mRNA secondary-structure stability near the start codon indicates functional genes in prokaryotes
+  ref: "Genome Biol. Evol. 4:80-88"
+  doi: 10.1093/gbe/evr129
+  pmcid: PMC3269970
+  
+- author: D. Wang, M. K. Markey, C. O. Wilke, A. Arapostathis
+  year: 2012
+  title: "Eigen-genomic System Dynamic-pattern Analysis (ESDA): Modeling mRNA degradation and self-regulation"
+  ref: "IEEE/ACM Transactions on Computational Biology and Bioinformatics 9:430-437"
+  doi: 10.1109/TCBB.2011.150
+  
+- author: D. Wang, A. Arapostathis, C. O. Wilke, M. K. Markey
+  year: 2012
+  title: Principal-oscillation-pattern analysis of gene expression
+  ref: "PLOS ONE 7:e28805"
+  doi: 10.1371/journal.pone.0028805
+  pmcid: PMC3254616
