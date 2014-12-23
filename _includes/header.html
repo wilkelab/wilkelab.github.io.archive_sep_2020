@@ -1,5 +1,10 @@
-<div id="sticky-anchor"></div>
- <div id="sticky">
+<div id="content-anchor"></div>
+<div id="sticky-phantom">
+  <header class="site-header">
+    <div class="wrapper"><a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a></div>
+  </header>
+</div>
+<div id="sticky">
   <header class="site-header">
     <div class="wrapper">
       <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
@@ -13,10 +18,10 @@
       </a>
       
         <div class="trigger">
-          <a class="page-link" href="/about/">About</a>
+          <a class="page-link" href="/#content-anchor">Home</a>
           <a class="page-link" href="/classes/">Classes</a>
         </div>
       </nav>
     </div>
   </header>
- </div>
+</div>

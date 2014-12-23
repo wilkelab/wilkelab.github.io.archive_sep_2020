@@ -35,6 +35,13 @@ body, html {
     height: 100%;
 }
 
+/* about block */
+
+#about-block{
+    background: $grey-color;
+    color: #ffffff;
+}
+
 /***
  * Loader image
  */
@@ -60,6 +67,10 @@ body, html {
   top: 0;
   width: 100vw;
   z-index: 10000;
+}
+
+#sticky-phantom{
+  visibility: hidden;
 }
 
 .site-header {
@@ -280,7 +291,7 @@ body, html {
 }
 
 .post-title {
-    font-size: 42px;
+    font-size: 36px;
     letter-spacing: -1px;
     line-height: 1;
 
