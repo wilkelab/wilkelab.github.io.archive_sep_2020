@@ -1,0 +1,62 @@
+- name: Claus O. Wilke
+  role: PI
+  url: "http://integrativebio.utexas.edu/component/cobalt/item/7-integrative-biology/237-wilke-claus-o"
+  pubs: "http://scholar.google.com/citations?user=Nc8U6E4AAAAJ"
+  blog: "http://serialmentor.com/blog"
+
+- name: Art Covert
+  role: Research Educator
+  joined: 2010
+  url: "http://artcovert.is-a-teacher.com/"
+  pubs: "http://scholar.google.com/citations?user=6KS9nS8AAAAJ"
+
+- name: Viswanadham Sridhara
+  role: Research Associate
+  joined: 2012
+  pubs: "http://scholar.google.com/citations?user=UBvhRHgAAAAJ"
+  
+- name: M. Umut Çağlar
+  role: Postdoc
+  joined: 2014
+  pubs: "http://scholar.google.com/citations?user=bdtVzlcAAAAJ"
+
+- name: Austin G. Meyer
+  role: Graduate Student (Biochem), Postdoc
+  joined: 2010
+  url: "http://www.meyerlab.org/"
+  pubs: "http://scholar.google.com/citations?user=Vssu9d0AAAAJ"
+  
+- name: Dakota Derryberry
+  role: Graduate Student (CMB)
+  joined: 2010
+  
+- name: Eleisha L. Jackson
+  role: Graduate Student (EEB)
+  joined: 2012
+  
+- name: Amir Shahmoradi
+  role: Graduate Student (Physics)
+  joined: 2012 
+  pubs: "http://scholar.google.com/citations?user=CEqJI2wAAAAJ"
+
+- name: Stephanie J. Spielman
+  role: Graduate Student (EEB) 
+  joined: 2011
+  pubs: "http://scholar.google.com/citations?user=6xAqQtIAAAAJ"
+  
+- name: Andrew Butler
+  role: Undergraduate
+  joined: 2013 
+
+- name: Eric Dawson
+  role: Undergraduate 
+  joined: 2012 
+  pubs: "http://scholar.google.com/citations?user=UIWzAQIAAAAJ"
+  
+- name: Keerthana Kumar
+  role: Undergraduate
+  joined: 2012
+  
+- name: Aakash Sur
+  role: Undergraduate
+  joined: 2014

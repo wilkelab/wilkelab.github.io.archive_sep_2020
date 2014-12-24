@@ -1,0 +1,31 @@
+- name: D. Allan Drummond
+  role: Postdoc
+  joined: 2006
+  left: 2006
+  currently: Assistant Professor, The University of Chicago
+  url: "http://drummond.openwetware.org/"
+
+- name: Tong Zhou
+  role: Postdoc
+  joined: 2006
+  left: 2010
+  currently: Research Assistant Professor, Arizona Health Sciences Center
+  url: "http://deptmedicine.arizona.edu/faculty/tong-zhou-phd"
+
+- name: Thomas Keller
+  role: Graduate Student (EEB)
+  joined: 2008
+  left: 2012
+  currently: Postdoc, Georgia Tech
+    
+- name: Eamon O'Dea
+  role: Graduate Student (EEB)
+  joined: 2008
+  left: 2013
+  currently: Postdoc, Georgetown University
+  
+- name: Michael P. Scherrer
+  role: Graduate Student (CMB)
+  joined: 2007
+  left: 2013
+  currently: Market Development Biologist, Sapling Learning

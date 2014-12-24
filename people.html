@@ -3,3 +3,51 @@ layout: people
 title: People
 permalink: /people/
 ---
+<div class="post">
+
+  <h1 class="post-title">Current group members</h1>
+
+  <ul class="post-list">
+    {% for person in site.data.current_members %}
+      <li>
+        <strong>{{ person.name }}</strong><br/>
+        {{ person.role }}{% if person.joined %},
+          {{ person.joined }}–present
+        {% endif %}<br/>
+        {% if person.url %}
+          &nbsp;&nbsp; <a href="{{ person.url }}">Profile</a>
+        {% endif %}
+        {% if person.pubs %}
+          &nbsp;&nbsp; <a href="{{ person.pubs }}">Publications</a>
+        {% endif %}
+        {% if person.blog %}
+          &nbsp;&nbsp; <a href="{{ person.blog }}">Blog</a>
+        {% endif %}
+
+      </li>
+    {% endfor %}
+  </ul>
+  
+  <h1 class="post-title">Past group members</h1>
+
+  <ul class="post-list">
+    {% for person in site.data.past_members %}
+      <li>
+        <strong>{{ person.name }}</strong>
+        <br/>{{ person.role }}, 
+        {% if person.joined == person.left %}
+          {{ person.left }}
+        {% else %}
+          {{ person.joined }}–{{ person.left }}
+        {% endif %}
+        <br/>Last known whereabouts:
+        {% if person.url %}
+            <a href="{{ person.url }}">{{ person.currently }}</a>
+        {% else %}
+            {{  person.currently }}
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+ 
+</div>

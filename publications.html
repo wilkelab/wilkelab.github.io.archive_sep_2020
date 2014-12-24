@@ -16,8 +16,7 @@ permalink: /publications/
         <li class="pub-year">{{ year | capitalize }}</li>
       {% endif %}
       <li>
-        {{ pub.author }} ({{ pub.year }}). {{ pub.title }}. {{ pub.ref }}.
-        {% if pub.doi or pub.pmcid %}<br>{% endif %}
+        {{ pub.author }} ({{ pub.year }}). {{ pub.title }}. {{ pub.ref }}.<br/>
         {% if pub.doi %}
           &nbsp;&nbsp; doi: <a href="http://dx.doi.org/{{ pub.doi }}">{{pub.doi}}</a>
         {% endif %}
