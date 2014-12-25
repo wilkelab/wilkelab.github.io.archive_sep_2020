@@ -15,13 +15,13 @@ permalink: /people/
           {{ person.joined }}–present
         {% endif %}<br/>
         {% if person.url %}
-          &nbsp;&nbsp; <a href="{{ person.url }}">Profile</a>
+          <a href="{{ person.url }}">Profile</a>&nbsp;&nbsp; 
         {% endif %}
         {% if person.pubs %}
-          &nbsp;&nbsp; <a href="{{ person.pubs }}">Publications</a>
+          <a href="{{ person.pubs }}">Publications</a>&nbsp;&nbsp; 
         {% endif %}
         {% if person.blog %}
-          &nbsp;&nbsp; <a href="{{ person.blog }}">Blog</a>
+          <a href="{{ person.blog }}">Blog</a>&nbsp;&nbsp; 
         {% endif %}
 
       </li>
@@ -40,11 +40,13 @@ permalink: /people/
         {% else %}
           {{ person.joined }}–{{ person.left }}
         {% endif %}
-        <br/>Last known whereabouts:
-        {% if person.url %}
+        {% if person.currently %}
+          <br/>Last known whereabouts:
+          {% if person.url %}
             <a href="{{ person.url }}">{{ person.currently }}</a>
-        {% else %}
+          {% else %}
             {{  person.currently }}
+          {% endif %}
         {% endif %}
       </li>
     {% endfor %}

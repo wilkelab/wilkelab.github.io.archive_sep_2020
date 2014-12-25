@@ -2,26 +2,40 @@
 layout: default
 title: Publications
 permalink: /publications/
+link-years:
+  - 2014
+  - 2012
+  - 2010
+  - 2008
 ---
 
 <div class="post">
 
   <h1 class="post-title">Publications</h1>
-
+  
+  <!-- Navigation shortcut. Activate when publist is complete. -->
+  <p>
+  {% for year in page.link-years %}
+  <a href="/publications/#{{ year }}">{{ year }}</a>&nbsp;&nbsp;&nbsp;
+  {% endfor %}
+  </p>
+  <!-- -->
+  
+  
   <ul class="pub-list">
     {% assign year = "0000" %}
     {% for pub in site.data.publications %}
       {% if year != pub.year %}
         {% assign year = pub.year %}
-        <li class="pub-year">{{ year | capitalize }}</li>
+        <li class="pub-year" id="{{ year }}">{{ year | capitalize }}</li>
       {% endif %}
       <li>
         {{ pub.author }} ({{ pub.year }}). {{ pub.title }}. {{ pub.ref }}.<br/>
         {% if pub.doi %}
-          &nbsp;&nbsp; doi: <a href="http://dx.doi.org/{{ pub.doi }}">{{pub.doi}}</a>
+          doi: <a href="http://dx.doi.org/{{ pub.doi }}">{{pub.doi}}</a>&nbsp;&nbsp; 
         {% endif %}
         {% if pub.pmcid %}
-          &nbsp;&nbsp; pmcid: <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/{{ pub.pmc }}">{{pub.pmcid}}</a>
+          pmcid: <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/{{ pub.pmcid }}">{{pub.pmcid}}</a>&nbsp;&nbsp; 
         {% endif %}
       </li>
     {% endfor %}
