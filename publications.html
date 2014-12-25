@@ -18,14 +18,15 @@ link-years:
 
   <h1 class="post-title">Publications</h1>
   
-  <!-- Navigation shortcut. Activate when publist is complete. -->
+  {% comment %} Navigation shortcut. {% endcomment %}  
   <p>
   {% for year in page.link-years %}
   <a href="/publications/#{{ year }}">{{ year }}</a>&nbsp;&nbsp;&nbsp;
   {% endfor %}
   </p>
-  <!-- -->
-  
+
+  {% comment %} Count publications backwards. {% endcomment %}  
+  {% assign count = site.data.publications.size %}
   
   <ul class="pub-list">
     {% assign year = "0000" %}
@@ -36,6 +37,7 @@ link-years:
         <li class="pub-year">{{ year | capitalize }}</li>
       {% endif %}
       <li>
+        {{ count | minus: forloop.index0 }}. 
         {{ pub.author }} ({{ pub.year }}). {{ pub.title }}. {{ pub.ref }}.<br/>
         {% if pub.doi %}
           doi: <a href="http://dx.doi.org/{{ pub.doi }}">{{pub.doi}}</a>&nbsp;&nbsp; 
