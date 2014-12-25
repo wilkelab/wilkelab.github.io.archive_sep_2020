@@ -10,6 +10,8 @@ link-years:
   - 2006
   - 2004
   - 2002
+  - 2000
+  - 1998
 ---
 
 <div class="post">
@@ -30,7 +32,8 @@ link-years:
     {% for pub in site.data.publications %}
       {% if year != pub.year %}
         {% assign year = pub.year %}
-        <li class="pub-year" id="{{ year }}">{{ year | capitalize }}</li>
+        <a class="anchor" id="{{ year }}">{{ year | capitalize }}</a>
+        <li class="pub-year">{{ year | capitalize }}</li>
       {% endif %}
       <li>
         {{ pub.author }} ({{ pub.year }}). {{ pub.title }}. {{ pub.ref }}.<br/>

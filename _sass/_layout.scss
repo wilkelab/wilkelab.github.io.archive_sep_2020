@@ -96,6 +96,18 @@ body, html {
 }
 
 /**
+ * Anchors that correct for site header
+ */
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -56px - $spacing-unit / 2; /* min. height of site-header class */
+    height: 0px;
+    visibility: hidden;
+}
+
+/**
  * Site header
  */
  

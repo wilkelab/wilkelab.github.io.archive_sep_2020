@@ -208,6 +208,13 @@
   doi: 10.1186/1745-6150-6-42
   pmcid: PMC3203257
 
+- author: C. O. Wilke
+  year: 2011
+  title: Transcriptional robustness complements nonsense-mediated decay in humans
+  ref: "PLoS Genet. 7:e1002296"
+  doi: 10.1371/journal.pgen.1002296
+  pmcid: PMC3192817
+
 - author: D. C. Ramsey, M. P. Scherrer, T. Zhou, C. O. Wilke
   year: 2011
   title: The relationship between relative solvent accessibility and evolutionary rate in protein evolution
@@ -454,6 +461,13 @@
   doi: 10.1128/JVI.01624-06
   pmcid: PMC1865999
 
+- author: J. D. Bloom, F. H. Arnold, C. O. Wilke
+  year: 2007
+  title: "Breaking proteins with mutations: threads and thresholds in evolution"
+  ref: "Mol. Syst. Biol. 3:76"
+  doi: 10.1038/msb4100119
+  pmcid: PMC1800353
+
 - author: S. F. Elena, C. O. Wilke, C. Ofria, R. E. Lenski
   year: 2007
   title: Effects of population size and mutation rate on the evolution of mutational robustness
@@ -499,6 +513,11 @@
   ref: "Mol. Biol. Evol. 23:327–337"
   doi: 10.1093/molbev/msj038
 
+- author: C. O. Wilke
+  year: 2006
+  title: Biology through the robustness lens
+  ref: "BioScience 56:695–696"
+  
 - author: C. O. Wilke, R. Forster, I. S. Novella
   year: 2006
   title: Quasispecies in time-dependent environments
@@ -526,6 +545,12 @@
   ref: "Biophys. J. 89:3714–3720"
   doi: 10.1529/biophysj.105.062125
   pmcid: PMC1366941
+
+- author: C. O. Wilke
+  year: 2005
+  title: "Molecular clocks: the heavy, the cold, and the slow"
+  ref: "Heredity 95:115"
+  doi: 10.1038/sj.hdy.6800681
 
 - author: D. A. Drummond, J. D. Bloom, C. Adami, C. O. Wilke, F. H. Arnold
   year: 2005
@@ -571,6 +596,11 @@
   title: Co-infection weakens selection against epistatic mutations in RNA viruses
   ref: "Genetics 168:9–19"
   pmcid: PMC1448111
+  
+- author: C. O. Wilke
+  year: 2004
+  title: Supplementary materials need the right format
+  ref: "Nature 430:291"
 
 - author: C. O. Wilke
   year: 2004
@@ -671,3 +701,98 @@
   year: 2002
   title: Optimal adaptive performance and delocalization in NK fitness landscapes
   ref: "Physica A 304:495–506"
+
+- author: C. O. Wilke
+  year: 2001
+  title: Selection for fitness vs. selection for robustness in RNA secondary structure folding
+  ref: "Evolution 55:2412–2420"
+
+- author: C. O. Wilke, J. L. Wang, C. Ofria, R. E. Lenski, C. Adami
+  year: 2001
+  title: Evolution of digital organisms at high mutation rate leads to survival of the flattest
+  ref: "Nature 412:331–333"
+  featured: Nature highlights, July 19, 2001
+  featured-url: "http://www.nature.com/nature/links/010719/010719-4.html"
+
+- author: C. Ronnewinkel, C. O. Wilke, T. Martinetz
+  year: 2001
+  title: Genetic algorithms in time-dependent environments
+  ref: In L. Kallel, B. Naudts and A. Rogers, editors, Theoretical Aspects of Evolutionary Computing, pp. 261–285. Natural Computing, Springer Verlag
+
+- author: C. O. Wilke
+  year: 2001
+  title: Adaptive evolution on neutral networks
+  ref: "Bull. Math. Biol. 63:715–730"
+
+- author: C. O. Wilke, C. Adami
+  year: 2001
+  title: Interaction between directional epistasis and average mutational effects
+  ref: "Proc. R. Soc. London B 268:1469–1474"
+  featured: National Georaphic News 07/2001
+  featured-url: "http://news.nationalgeographic.com/news/2001/07/0709_sexorigin.html"
+
+- author: C. O. Wilke, C. Ronnewinkel, T. Martinetz
+  year: 2001
+  title: Dynamic fitness landscapes in molecular evolution
+  ref: "Phys. Rep. 349:395–446"
+
+- author: C. O. Wilke, C. Ronnewinkel
+  year: 2001
+  title: "Dynamic fitness landscapes: Expansions for small mutation rates"
+  ref: "Physica A 290:475–490"
+
+- author: C. O. Wilke
+  year: 2000
+  title: Dynamische Fitnesslandschaften
+  ref: "KI 14:20–25 (in german)"
+  
+- author: C. O. Wilke, T. Martinetz
+  year: 1999
+  title: Adaptive walks on time-dependent fitness landscapes
+  ref: "Phys. Rev. E 60:2154–2159"
+
+- author: C. O. Wilke, T. Martinetz
+  year: 1999
+  title: Lifetimes of agents under external stress
+  ref: "Phys. Rev. E Rapid Communications 59:R2512–R2515"
+
+- author: C. O. Wilke, C. Ronnewinkel, T. Martinetz
+  year: 1999
+  title: Molecular Evolution in Time Dependent Environments
+  ref: "Lect. Notes. Artif. Int. 1674:417–421"
+
+- author: C. Wilke, T. Martinetz
+  year: 1998
+  title: Hierarchical noise in large systems of independent agents
+  ref: "Phys. Rev. E 58:7101–7108"
+
+- author: C. Wilke, S. Altmeyer, T. Martinetz
+  year: 1998
+  title: Aftershocks in coherent-noise models
+  ref: "Physica D 120:401–417"
+
+- author: S. Altmeyer, C. Wilke, T. Martinetz
+  year: 1998
+  title: How fast do structures emerge in hypercycle systems?
+  ref: In C. Wilke, S. Altmeyer, and T. Martinetz, editors, Third German Workshop on Artificial Life. Verlag Harri Deutsch
+
+- author: C. Wilke, S. Altmeyer, T. Martinetz
+  year: 1998
+  title: Large-scale evolution and extinction in a hierarchically structured environment
+  ref: In C. Adami, R. Belew, H. Kitano, and C. Taylor, editors, Proc. of Artificial Life VI, Los Angeles, June 26–29, 1998. MIT Press
+
+- author: C. Wilke, T. Martinetz
+  year: 1997
+  title: Simple model of evolution with variable system size
+  ref: "Phys. Rev. E 56:7128–7131"
+
+- author: M. Kachelrieß, C. Wilke, G. Wunner
+  year: 1997
+  title: Axion cyclotron emissivity of magnetized white dwarfs and neutron stars
+  ref: "Phys. Rev. D 56:1313–1319"
+
+- author: C. Wilke, G. Wunner
+  year: 1997
+  title: "Photon splitting in strong magnetic fields: asymptotic approximation formulae vs. accurate numerical results"
+  ref: "Phys. Rev. D 55:997–1000"
+  
