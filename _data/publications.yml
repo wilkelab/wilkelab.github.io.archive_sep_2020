@@ -344,6 +344,12 @@
   featured: Science Daily
   featured-url: "http://www.sciencedaily.com/releases/2009/08/090825082656.htm"
 
+- author: C. Ofria, D. M. Bryson, C. O. Wilke
+  year: 2009
+  title: "Avida: Evolution experiments with self-replicating computer programs"
+  ref: In A. Adamatzky and M. Komosinski, eds. Artificial Life Models in Software, 2nd ed. Springer, pp. 3–35
+  doi: 10.1007/978-1-84882-285-6_1
+
 - author: T. Zhou, M. Weems, C. O. Wilke
   year: 2009
   title: Translationally optimal codons associate with structurally sensitive sites in proteins
@@ -517,16 +523,19 @@
   year: 2006
   title: Biology through the robustness lens
   ref: "BioScience 56:695–696"
+  doi: 10.1641/0006-3568(2006)56[695:RAEILS]2.0.CO;2
   
 - author: C. O. Wilke, R. Forster, I. S. Novella
   year: 2006
   title: Quasispecies in time-dependent environments
   ref: "Curr. Topics Microbiol. Immun. 299:33–50"
+  doi: 10.1007/3-540-26397-7_2
   
 - author: C. Ofria, C. O. Wilke
   year: 2006
   title: "Avida: Evolution experiments with self-replicating computer programs"
   ref: In A. Adamatzky and M. Komosinski, eds. Artificial Life Models in Software. Springer, pp. 3–36
+  doi: 10.1007/1-84628-214-4_1
 
 - author: C. O. Wilke, S. S. Chow
   year: 2006
@@ -584,81 +593,96 @@
   year: 2004
   title: Molecular clock in neutral protein evolution
   ref: "BMC Genetics 5:25"
+  doi: 10.1186/1471-2156-5-25
   pmcid: PMC517495
 
 - author: S. S. Chow, C. O. Wilke, C. Ofria, R. E. Lenski, C. Adami
   year: 2004
   title: Adaptive radiation from resource competition in digital organisms
   ref: "Science 305:84–86"
+  doi: 10.1126/science.1096307
 
 - author: R. Froissart, C. O. Wilke, R. Montville, S. K. Remold, L. Chao, P. E. Turner
   year: 2004
   title: Co-infection weakens selection against epistatic mutations in RNA viruses
   ref: "Genetics 168:9–19"
+  doi: 10.1534/genetics.104.030205
   pmcid: PMC1448111
   
 - author: C. O. Wilke
   year: 2004
   title: Supplementary materials need the right format
   ref: "Nature 430:291"
+  doi: 10.1038/430291c
 
 - author: C. O. Wilke
   year: 2004
   title: The speed of adaptation in large asexual populations
   ref: "Genetics 167:2045–2053"
+  doi: 10.1534/genetics.104.027136
   pmcid: PMC1470994
 
 - author: J. D. Bloom, C. O. Wilke, F. H. Arnold, C. Adami
   year: 2004
   title: Stability and the evolvability of function in a model protein
   ref: "Biophys. J. 86:2758–2764"
+  doi: 10.1016/S0006-3495(04)74329-5
   pmcid: PMC1304146
 
 - author: I. S. Novella, D. D. Reissig, C. O. Wilke
   year: 2004
   title: Density-dependent selection in vesicular stomatitis virus
   ref: "J. Virol. 78:5799–5804"
+  doi: 10.1128/JVI.78.11.5799-5804.2004
   pmcid: PMC415817
 
 - author: C. O. Wilke, D. D. Reissig, I. S. Novella
   year: 2004
   title: Replication at periodically changing multiplicity of infection promotes stable coexistence of competing viral populations
   ref: "Evolution 58:900–905"
+  doi: 10.1111/j.0014-3820.2004.tb00422.x
   
 - author: C. Adami, C. O. Wilke
   year: 2004
-  title: Experiments in Evolution
+  title: Experiments in Digital Evolution
   ref: "Artificial Life 10:117–122"
+  doi: 10.1162/106454604773563540
 
 - author: Y. Li, C. O. Wilke
   year: 2004
   title: Digital Evolution in Time-Dependent Fitness Landscapes
   ref: "Artificial Life 10:123–134"
+  doi: 10.1162/106454604773563559
 
 - author: T. J. Johnson, C. O. Wilke
   year: 2004
   title: Evolution of Resource Competition Between Mutually Dependent Digital Organisms
   ref: "Artificial Life 10:145–156"
+  doi: 10.1162/106454604773563577
 
 - author: C. Ofria, C. O. Wilke
   year: 2004
   title: "Avida: A Software Platform for Research in Computational Evolutionary Biology"
   ref: "Artificial Life 10:191–229"
+  doi: 10.1162/106454604773563612
 
 - author: P. R. A. Campos, C. Adami, C. O. Wilke
   year: 2004
   title: Modelling Stochastic Clonal Interference
   ref: In G. Ciobanu and G. Rozenberg, eds., Modelling in Molecular Biology. Springer Series in Natural Computing, pp. 21–39
+  doi: 10.1007/978-3-642-18734-6_2
 
 - author: C. O. Wilke, I. S. Novella
   year: 2003
   title: Phenotypic mixing and hiding may contribute to memory in viral quasispecies
   ref: BMC Microbiology 3:11
+  doi: 10.1186/1471-2180-3-11
 
 - author: C. O. Wilke
   year: 2003
   title: Does the Red Queen reign in the kingdom of digital organisms?
   ref: "Lect. Notes. Artif. Int. 2801:405–414"
+  doi: 10.1007/978-3-540-39432-7_43
   
 - author: C. O. Wilke
   year: 2003
@@ -669,16 +693,19 @@
   year: 2003
   title: Compensatory mutations cause excess of antagonistic epistasis in RNA secondary structure folding
   ref: "BMC Evolutionary Biology 3:3"
+  doi: 10.1186/1471-2148-3-3
 
 - author: C. O. Wilke, C. Adami
   year: 2003
   title: Evolution of mutational robustness
   ref: "Mut. Res. 522:3–11"
+  doi: 10.1016/S0027-5107(02)00307-X
   
 - author: C. Kamp, C. O. Wilke, C. Adami, S. Bornholdt
   year: 2002
-  title: Viral evolution under the pressure of an adaptive immune system - optimal mutation rates for viral escape
+  title: Viral evolution under the pressure of an adaptive immune system – optimal mutation rates for viral escape
   ref: "Complexity 8:28–33"
+  doi: 10.1002/cplx.10067
   featured: Nature News and Views, Vol. 420:367-369 (2002)
   featured-url: "http://dx.doi.org/10.1038/420367a"
 
@@ -686,31 +713,37 @@
   year: 2002
   title: The biology of digital organisms
   ref: "Trends. Ecol. Evol. 17:528–532"
+  doi: 10.1016/S0169-5347(02)02612-5
 
 - author: C. O. Wilke, P. R. A. Campos, J. F. Fontanari
   year: 2002
-  title: The genealogical process in a correlated fitness landscape
-  ref: "J. Exp. Zool. (Mol. Dev. Evol.) 294:274–284"
+  title: Genealogical process on a correlated fitness landscape
+  ref: "J. Exp. Zool. 294:274–284"
+  doi: 10.1002/jez.10146
 
 - author: C. O. Wilke
   year: 2002
   title: Maternal effects in molecular evolution
   ref: "Phys. Rev. Lett. 88:078101"
+  doi: 10.1103/PhysRevLett.88.078101
 
 - author: P. R. A. Campos, C. Adami, C. O. Wilke
   year: 2002
   title: Optimal adaptive performance and delocalization in NK fitness landscapes
   ref: "Physica A 304:495–506"
+  doi: 10.1016/S0378-4371(01)00572-6
 
 - author: C. O. Wilke
   year: 2001
   title: Selection for fitness vs. selection for robustness in RNA secondary structure folding
   ref: "Evolution 55:2412–2420"
+  doi: 10.1111/j.0014-3820.2001.tb00756.x
 
 - author: C. O. Wilke, J. L. Wang, C. Ofria, R. E. Lenski, C. Adami
   year: 2001
   title: Evolution of digital organisms at high mutation rate leads to survival of the flattest
   ref: "Nature 412:331–333"
+  doi: 10.1038/35085569
   featured: Nature highlights, July 19, 2001
   featured-url: "http://www.nature.com/nature/links/010719/010719-4.html"
 
@@ -718,16 +751,19 @@
   year: 2001
   title: Genetic algorithms in time-dependent environments
   ref: In L. Kallel, B. Naudts and A. Rogers, editors, Theoretical Aspects of Evolutionary Computing, pp. 261–285. Natural Computing, Springer Verlag
+  doi: 10.1007/978-3-662-04448-3_13
 
 - author: C. O. Wilke
   year: 2001
   title: Adaptive evolution on neutral networks
   ref: "Bull. Math. Biol. 63:715–730"
+  doi: 10.1006/bulm.2001.0244
 
 - author: C. O. Wilke, C. Adami
   year: 2001
   title: Interaction between directional epistasis and average mutational effects
   ref: "Proc. R. Soc. London B 268:1469–1474"
+  doi: 10.1098/rspb.2001.1690
   featured: National Georaphic News 07/2001
   featured-url: "http://news.nationalgeographic.com/news/2001/07/0709_sexorigin.html"
 
@@ -735,11 +771,13 @@
   year: 2001
   title: Dynamic fitness landscapes in molecular evolution
   ref: "Phys. Rep. 349:395–446"
+  doi: 10.1016/S0370-1573(00)00118-6
 
 - author: C. O. Wilke, C. Ronnewinkel
   year: 2001
   title: "Dynamic fitness landscapes: Expansions for small mutation rates"
   ref: "Physica A 290:475–490"
+  doi: 10.1016/S0378-4371(00)00585-9
 
 - author: C. O. Wilke
   year: 2000
@@ -750,26 +788,31 @@
   year: 1999
   title: Adaptive walks on time-dependent fitness landscapes
   ref: "Phys. Rev. E 60:2154–2159"
+  doi: 10.1103/PhysRevE.60.2154
 
 - author: C. O. Wilke, T. Martinetz
   year: 1999
   title: Lifetimes of agents under external stress
   ref: "Phys. Rev. E Rapid Communications 59:R2512–R2515"
+  doi: 10.1103/PhysRevE.59.R2512
 
 - author: C. O. Wilke, C. Ronnewinkel, T. Martinetz
   year: 1999
   title: Molecular Evolution in Time Dependent Environments
   ref: "Lect. Notes. Artif. Int. 1674:417–421"
+  doi: 10.1007/3-540-48304-7_57
 
 - author: C. Wilke, T. Martinetz
   year: 1998
   title: Hierarchical noise in large systems of independent agents
   ref: "Phys. Rev. E 58:7101–7108"
+  doi: 10.1103/PhysRevE.58.7101
 
 - author: C. Wilke, S. Altmeyer, T. Martinetz
   year: 1998
   title: Aftershocks in coherent-noise models
   ref: "Physica D 120:401–417"
+  doi: 10.1016/S0167-2789(98)00092-X
 
 - author: S. Altmeyer, C. Wilke, T. Martinetz
   year: 1998
@@ -785,14 +828,17 @@
   year: 1997
   title: Simple model of evolution with variable system size
   ref: "Phys. Rev. E 56:7128–7131"
+  doi: 10.1103/PhysRevE.56.7128
 
 - author: M. Kachelrieß, C. Wilke, G. Wunner
   year: 1997
   title: Axion cyclotron emissivity of magnetized white dwarfs and neutron stars
   ref: "Phys. Rev. D 56:1313–1319"
+  doi: 10.1103/PhysRevD.56.1313
 
 - author: C. Wilke, G. Wunner
   year: 1997
   title: "Photon splitting in strong magnetic fields: asymptotic approximation formulae vs. accurate numerical results"
   ref: "Phys. Rev. D 55:997–1000"
+  doi: 10.1103/PhysRevD.55.997
   
