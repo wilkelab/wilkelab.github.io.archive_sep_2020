@@ -81,6 +81,34 @@ body, html {
     }
 }
 
+.people-icon {
+    display: inline-block;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin: 0px;
+    margin-top: 2px;
+    background: $text-color-light;
+    color: $brand-color-dark;
+    border-radius: 2px;
+
+    &:hover {
+        color: $brand-color;
+    }
+
+
+    > svg {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        vertical-align: middle;
+
+        path {
+            fill: $brand-color;
+        }
+    }
+}
+
+
 /***
  * Loader image
  */

@@ -3,6 +3,8 @@ layout: people
 title: People
 permalink: /people/
 ---
+{% include icons.html %}
+
 <div class="post">
 
   <h1 class="post-title">Current group members</h1>
@@ -15,15 +17,34 @@ permalink: /people/
           {{ person.joined }}–present
         {% endif %}<br/>
         {% if person.url %}
-          <a href="{{ person.url }}">Profile</a>&nbsp;&nbsp; 
+          <a href="{{ person.url }}" class="people-icon">
+            <svg title="Profile">
+              <use xlink:href="#svg-home-icon"/>
+            </svg>
+          </a> 
         {% endif %}
         {% if person.pubs %}
-          <a href="{{ person.pubs }}">Publications</a>&nbsp;&nbsp; 
+          <a href="{{ person.pubs }}" class="people-icon">
+            <svg title="Publications">
+              <use xlink:href="#svg-google-scholar-icon"/>
+            </svg>
+          </a> 
         {% endif %}
         {% if person.blog %}
-          <a href="{{ person.blog }}">Blog</a>&nbsp;&nbsp; 
+          <a href="{{ person.blog }}" class="people-icon">
+            <svg title="Blog">
+              <use xlink:href="#svg-blog-icon"/>
+            </svg>          
+          </a> 
         {% endif %}
-
+        {% if person.github %}
+          <a href="https://github.com/{{ person.github }}" class="people-icon">
+            <svg title="Github">
+              <use xlink:href="#svg-github-icon"/>
+            </svg>          
+          </a> 
+        {% endif %}
+        
       </li>
     {% endfor %}
   </ul>

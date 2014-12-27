@@ -19,6 +19,7 @@ $text-color-extra-light: #e0e0e0;
 $background-color: #fdfdfd;
 $brand-color:      #2a7ae2; /* used for links */
 $brand-color-light: lighten($brand-color, 20%);
+$brand-color-dark: darken($brand-color, 20%);
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);

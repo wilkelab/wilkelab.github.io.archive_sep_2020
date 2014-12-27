@@ -1,8 +1,9 @@
 - name: Claus O. Wilke
-  role: PI
+  role: Principal Investigator
   url: "http://integrativebio.utexas.edu/component/cobalt/item/7-integrative-biology/237-wilke-claus-o"
   pubs: "http://scholar.google.com/citations?user=Nc8U6E4AAAAJ"
   blog: "http://serialmentor.com/blog"
+  github: clauswilke
 
 - name: Art Covert
   role: Research Educator
@@ -14,45 +15,54 @@
   role: Research Associate
   joined: 2012
   pubs: "http://scholar.google.com/citations?user=UBvhRHgAAAAJ"
+  github: viswam78
   
 - name: M. Umut Çağlar
   role: Postdoc
   joined: 2014
   pubs: "http://scholar.google.com/citations?user=bdtVzlcAAAAJ"
+  github: umutcaglar
 
 - name: Austin G. Meyer
   role: Graduate Student (Biochem), Postdoc
   joined: 2010
   url: "http://www.meyerlab.org/"
   pubs: "http://scholar.google.com/citations?user=Vssu9d0AAAAJ"
+  github: ausmeyer
   
 - name: Dakota Derryberry
   role: Graduate Student (CMB)
   joined: 2010
+  github: dakotaz
   
 - name: Eleisha L. Jackson
   role: Graduate Student (EEB)
   joined: 2012
+  github: elj299
   
 - name: Amir Shahmoradi
   role: Graduate Student (Physics)
   joined: 2012 
   pubs: "http://scholar.google.com/citations?user=CEqJI2wAAAAJ"
-
+  github: shahmoradi
+ 
 - name: Stephanie J. Spielman
   role: Graduate Student (EEB) 
   joined: 2011
   url: "http://sjspielman.github.io"
   pubs: "http://scholar.google.com/citations?user=6xAqQtIAAAAJ"
+  github: sjspielman
   
 - name: Andrew Butler
   role: Undergraduate
-  joined: 2013 
+  joined: 2013
+  github: andrewwbutler 
 
 - name: Eric Dawson
   role: Undergraduate 
   joined: 2012 
   pubs: "http://scholar.google.com/citations?user=UIWzAQIAAAAJ"
+  github: edawson
   
 - name: Keerthana Kumar
   role: Undergraduate
