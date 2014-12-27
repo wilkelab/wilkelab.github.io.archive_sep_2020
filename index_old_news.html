@@ -8,7 +8,7 @@ permalink: /past_news/
   <h1 class="post-title">Older News</h1>
 
   <ul class="post-list">
-    {% for item in site.posts offset: 4%}
+    {% for item in site.posts offset:4 %}
       <li>
         <span class="post-meta">{{ item.date | date: "%b %-d, %Y" }}</span>
 
