@@ -83,6 +83,7 @@ body, html {
 
 .people-icon {
     display: inline-block;
+    position: relative;
     padding-left: 3px;
     padding-right: 3px;
     margin: 0px;
@@ -95,6 +96,27 @@ body, html {
         color: $brand-color;
     }
 
+    .icon-tooltip {
+        display: none;
+        position: absolute;
+        top: 26px;
+        left: 0px;
+        background-color: $text-color-extra-light;
+        color: $grey-color-dark;
+        border-color: $grey-color-dark;
+        border-style: solid;
+        border-width: 0.5px;
+        border-radius: 2px;
+        width: auto;
+        height: 1.3*$base-font-size;
+        padding: 1px;
+        padding-left: 2px;
+        padding-right: 2px;
+        z-index: 10000;
+    }
+    &:hover .icon-tooltip {
+        display: block;
+    }
 
     > svg {
         display: inline-block;

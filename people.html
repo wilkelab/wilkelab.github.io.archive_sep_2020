@@ -18,30 +18,34 @@ permalink: /people/
         {% endif %}<br/>
         {% if person.url %}
           <a href="{{ person.url }}" class="people-icon">
-            <svg title="Profile">
+            <svg>
               <use xlink:href="#svg-home-icon"/>
             </svg>
+            <div class="icon-tooltip"><p>Profile</p></div>
           </a> 
         {% endif %}
         {% if person.pubs %}
           <a href="{{ person.pubs }}" class="people-icon">
-            <svg title="Publications">
+            <svg>
               <use xlink:href="#svg-google-scholar-icon"/>
             </svg>
+            <div class="icon-tooltip"><p>Google&nbsp;Scholar</p></div>
           </a> 
         {% endif %}
         {% if person.blog %}
           <a href="{{ person.blog }}" class="people-icon">
-            <svg title="Blog">
+            <svg>
               <use xlink:href="#svg-blog-icon"/>
-            </svg>          
+            </svg> 
+            <div class="icon-tooltip"><p>Blog</p></div>         
           </a> 
         {% endif %}
         {% if person.github %}
           <a href="https://github.com/{{ person.github }}" class="people-icon">
-            <svg title="Github">
+            <svg>
               <use xlink:href="#svg-github-icon"/>
-            </svg>          
+            </svg> 
+            <div class="icon-tooltip"><p>Github</p></div>         
           </a> 
         {% endif %}
         
