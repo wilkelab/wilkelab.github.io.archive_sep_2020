@@ -1,0 +1,36 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=4, fig.width=4)
+```
+##In-class worksheet 1
+**Jan 20, 2015**
+
+Much of the work in this class will be done via R Markdown documents. R Markdown documents are documents that combine text, R code, and R output, including figures. They are a great way to produce self-contained and documented statistical analyses.
+
+In this first worksheet, you will learn how to do some basic markdown editing. After you have made a change to the document, press "Knit HTML" in R Studio and see what kind of a result you get.
+
+Edit only below this line.
+
+---------------------------------------------
+## 1. Basic Markdown editing
+Try out basic R Markdown features, as described [here.](http://rmarkdown.rstudio.com/authoring_basics.html) Write some text that is bold, and some that is in italics. Make a numbered list and a bulleted list. Make a nested list. Try the block-quote feature.
+
+## 2. Embedding R code
+
+R code embedded in R chunks will be executed and the output will be shown.
+```{r}
+x <- 5
+y <- 7
+z <- x * y
+z
+```
+
+Play around with some basic R code. E.g., take the built-in data set `cars`, which lists speed and stopping distance for cars from the 1920. Plot speed vs. distance, and/or perform a correlation analysis. Then write a few sentences describing what you see.
+
+## 3. If this was easy
+
+If this was easy, use Google to find out how to type-set mathematical formulas inside of R markdown.
+
+
+
+
