@@ -13,6 +13,13 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
     * Download RStudio from here: [http://www.rstudio.com/products/rstudio/download/](http://www.rstudio.com/products/rstudio/download/)
     * R Markdown basics: [http://rmarkdown.rstudio.com/authoring_basics.html](http://rmarkdown.rstudio.com/authoring_basics.html)
     * In-class worksheet: [class1.Rmd](/classes/SDS348/class1.Rmd)
+    
+- **Jan 22, 2015: R review, R Markdown**
+    * R tutorial (fairly long and detailed): [http://www.cyclismo.org/tutorial/R/index.html](http://www.cyclismo.org/tutorial/R/index.html)
+    
+- **Jan 27, 2015: Data visualization with ggplot2**
+    * ggplot2 video tutorial: [http://varianceexplained.org/RData/lessons/lesson2/segment1/](http://varianceexplained.org/RData/lessons/lesson2/segment1/)
+    * ggplot2 reference manual: [http://docs.ggplot2.org/current/](http://docs.ggplot2.org/current/) 
 
 ## Homeworks
 - Homework 1: [HW1.Rmd](/classes/SDS348/2015_spring_homeworks/HW1.Rmd) (due Jan 27, 2015)
