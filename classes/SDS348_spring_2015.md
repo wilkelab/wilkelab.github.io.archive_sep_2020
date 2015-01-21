@@ -21,7 +21,7 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
     
 **2. Jan 22, 2015 – R review, R Markdown**
 
-* Slides: [pdf](/classes/SDS348/2015_spring_slides/class2.pdf)
+* Slides: [class2.pdf](/classes/SDS348/2015_spring_slides/class2.pdf)
 * Biostats supplement on regression modeling: [statistical_modeling.pdf](/classes/SDS348/statistical_modeling.pdf)
 * General R tutorial (fairly long and detailed): [http://www.cyclismo.org/tutorial/R/index.html](http://www.cyclismo.org/tutorial/R/index.html)
 * In-class worksheet:
