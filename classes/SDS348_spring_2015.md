@@ -14,10 +14,14 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
 * Download RStudio from here: [http://www.rstudio.com/products/rstudio/download/](http://www.rstudio.com/products/rstudio/download/)
 * R Markdown basics: [http://rmarkdown.rstudio.com/authoring_basics.html](http://rmarkdown.rstudio.com/authoring_basics.html)
 * In-class worksheet: [class1.Rmd](/classes/SDS348/class1.Rmd)
+    - [Solutions, R Markdown](/classes/SDS348/class1_solutions.Rmd)
+    - [Solutions, HTML](/classes/SDS348/class1_solutions.html)
     
 **2. Jan 22, 2015 – R review, R Markdown**
 
 * R tutorial (fairly long and detailed): [http://www.cyclismo.org/tutorial/R/index.html](http://www.cyclismo.org/tutorial/R/index.html)
+* Biostats supplement on regression modeling: [statistical_modeling.pdf](/classes/SDS348/statistical_modeling.pdf)
+* In-class worksheet: [class2.Rmd](/classes/SDS348/class2.Rmd)
     
 **3. Jan 27, 2015 – Data visualization with ggplot2**
 
