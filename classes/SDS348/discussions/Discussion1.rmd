@@ -10,8 +10,6 @@ This discussion session reviews some of the basic concepts in R you should have 
 
 To begin, load the "ToothGrowth" dataset.
 ```{r}
-data(ToothGrowth)
-
 # Have a look at the data frame with the head() function
 head(ToothGrowth)
 ```
@@ -71,8 +69,7 @@ boxplot(ToothGrowth$len ~ ToothGrowth$supp, main = "", xlab = "Supplement", ylab
 
 Another important type of plot is the *scatterplot*, which is used to show the relationship between two numeric variables. To create a scatterplot, we'll use a different built-in dataset, "DNase," as the ToothGrowth dataset contains only a single numeric variable.
 ```{r}
-# Load and examine dataset
-data(DNAse)
+# Examine dataset
 head(DNase)
 levels(DNase$Run)
 ```

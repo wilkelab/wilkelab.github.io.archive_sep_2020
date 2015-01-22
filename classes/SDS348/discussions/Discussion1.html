@@ -57,9 +57,7 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <p><strong>Jan 21, 2015</strong> <br><br></p>
 <p>This discussion session reviews some of the basic concepts in R you should have encountered in Biostatistics (SDS328M). For this review, we’ll use two of R’s built-in datasets: ToothGrowth and DNase.</p>
 <p>To begin, load the “ToothGrowth” dataset.</p>
-<pre class="r"><code>data(ToothGrowth)
-
-# Have a look at the data frame with the head() function
+<pre class="r"><code># Have a look at the data frame with the head() function
 head(ToothGrowth)</code></pre>
 <pre><code>##    len supp dose
 ## 1  4.2   VC  0.5
@@ -122,10 +120,8 @@ boxplot(ToothGrowth$len ~ ToothGrowth$supp, main = &quot;&quot;, xlab = &quot;Su
 <div id="plotting-multiple-numeric-variables" class="section level5">
 <h5>Plotting multiple numeric variables</h5>
 <p>Another important type of plot is the <em>scatterplot</em>, which is used to show the relationship between two numeric variables. To create a scatterplot, we’ll use a different built-in dataset, “DNase,” as the ToothGrowth dataset contains only a single numeric variable.</p>
-<pre class="r"><code># Load and examine dataset
-data(DNAse)</code></pre>
-<pre><code>## Warning in data(DNAse): data set 'DNAse' not found</code></pre>
-<pre class="r"><code>head(DNase)</code></pre>
+<pre class="r"><code># Examine dataset
+head(DNase)</code></pre>
 <pre><code>##   Run       conc density
 ## 1   1 0.04882812   0.017
 ## 2   1 0.04882812   0.018
