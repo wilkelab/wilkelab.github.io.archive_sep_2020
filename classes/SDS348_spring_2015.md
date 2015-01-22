@@ -27,6 +27,7 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
 * In-class worksheet:
     - [R Markdown](/classes/SDS348/2015_spring_worksheets/class2.Rmd)
     - [HTML](/classes/SDS348/2015_spring_worksheets/class2.html)
+    - [Solutions](/classes/SDS348/2015_spring_worksheets/class2_solutions.html)
     
 **3. Jan 27, 2015 – Data visualization with ggplot2**
 
