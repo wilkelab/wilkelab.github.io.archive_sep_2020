@@ -26,3 +26,10 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
 
 ## Homeworks
 - Homework 1: [HW1.Rmd](/classes/SDS348/2015_spring_homeworks/HW1.Rmd) (due Jan 27, 2015)
+
+## Discussion sections
+
+**1. Jan. 21, 2015**
+
+* [Discussion 1: R and Biostatistics Review](/classes/SDS348/discussions/Discussion1.html)
+* [R colors PDF](http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf) 
