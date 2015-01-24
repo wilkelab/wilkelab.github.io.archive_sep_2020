@@ -41,5 +41,5 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
 
 **1. Jan. 21, 2015**
 
-* [Discussion 1: R and Biostatistics Review](/classes/SDS348/discussions/Discussion1.html)
+* [Discussion 1: R and Biostatistics Review](/classes/SDS348/2015_spring_discussions/Discussion1.html)
 * [R colors PDF](http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf) 
