@@ -31,11 +31,19 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
     
 **3. Jan 27, 2015 – Data visualization with ggplot2**
 
-* ggplot2 video tutorial: [http://varianceexplained.org/RData/lessons/lesson2/segment1/](http://varianceexplained.org/RData/lessons/lesson2/segment1/)
+* Slides: [class3.pdf](/classes/SDS348/2015_spring_slides/class3.pdf)
 * ggplot2 reference manual: [http://docs.ggplot2.org/current/](http://docs.ggplot2.org/current/) 
+* ggplot2 video tutorial: [http://varianceexplained.org/RData/lessons/lesson2/segment1/](http://varianceexplained.org/RData/lessons/lesson2/segment1/)
+* ggplot2 materials on the Cookbook for R site: [http://www.cookbook-r.com/Graphs/](http://www.cookbook-r.com/Graphs/)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2015_spring_worksheets/class3.Rmd)
+    - [HTML](/classes/SDS348/2015_spring_worksheets/class3.html)
+
 
 ## Homeworks
 - Homework 1: [HW1.Rmd](/classes/SDS348/2015_spring_homeworks/HW1.Rmd) (due Jan 27, 2015)
+- Homework 2: [HW1.Rmd](/classes/SDS348/2015_spring_homeworks/HW2.Rmd) (due Feb 3, 2015)
+
 
 ## Discussion sections
 

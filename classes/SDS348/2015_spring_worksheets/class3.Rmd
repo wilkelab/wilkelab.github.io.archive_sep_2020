@@ -1,0 +1,55 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=3, fig.width=4)
+library(ggplot2)
+theme_set(theme_bw(base_size=12))
+```
+##In-class worksheet 3
+**Jan 27, 2015**
+
+## 1. Plotting the iris data set.
+*Re-do question 3 from the homework with ggplot2: Make a scatter plot of petal length vs. sepal length for the three species. Then do the same plot but facet by species instead of coloring.*
+```{r }
+# R code goes here.
+```
+
+*Now see if you can reproduce the answer to question 2 from the homework, using ggplot2. In other words, make side-by-side boxplots of sepal lengths for the three species of iris. The geom you need to use is `geom_boxplot()`. See if you can guess the correct aesthetic mapping.*
+```{r}
+# R code goes here.
+```
+
+## 2. Plotting tree-growth data.
+*The data set `Sitka` from the MASS package contains repeated measurements of tree size for 79 Sitka spruce trees, which were grown either in ozone-enriched chambers or under control conditions.*
+
+```{r}
+library(MASS) # we need to load the MASS library to have access to this dataset
+head(Sitka)
+```
+
+*Make line plots of tree size vs. time, for each tree, faceted  by treatment. First, use the same color for all lines.*
+```{r}
+# R code goes here.
+```
+
+*Then, color by tree.*
+```{r}
+# R code goes here.
+```
+
+*Finally, color by size.*
+```{r}
+# R code goes here.
+```
+
+
+## 3. If this was easy
+
+*Show the 2d distribution of petal length vs. sepal length in the `iris` dataset, by making an x-y plot that shows the individual data points as well as contour lines indicating the density of points in a given spatial region.*
+```{r}
+# R code goes here.
+```
+
+*If this was still easy, now instead of contour lines add a fitted straight black line (not a curve, and no confidence band!) to each group of points.*
+```{r}
+# R code goes here.
+```
