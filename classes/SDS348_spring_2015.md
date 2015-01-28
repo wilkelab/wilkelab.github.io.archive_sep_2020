@@ -51,3 +51,8 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
 
 * [Discussion 1: R and Biostatistics Review](/classes/SDS348/2015_spring_discussions/Discussion1.html)
 * [R colors PDF](http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf) 
+
+
+**2. Jan. 28, 2015**
+
+* [Ramburii damselfly dataset](/classes/SDS348/2015_spring_discussions/ramburii.txt)
