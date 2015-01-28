@@ -55,4 +55,4 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
 
 **2. Jan. 28, 2015**
 
-* [Ramburii damselfly dataset](/classes/SDS348/2015_spring_discussions/ramburii.txt)
+* [Ramburii damselfly dataset](/classes/SDS348/2015_spring_discussions/ramburii.csv)
