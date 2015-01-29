@@ -50,7 +50,7 @@ head(bacteria)
 
 ## 3. Scales
 
-*Using the `movies` data set provided by ggplot2, make a scatter plot of the number of votes (`votes`) vs. the length of the movie (`lenght`). Use a log scale for both the x and the y axis.*
+*Using the `movies` data set provided by ggplot2, make a scatter plot of the number of votes (`votes`) vs. the length of the movie (`length`). Use a log scale for both the x and the y axis.*
 ```{r}
 # R code goes here.
 ```
