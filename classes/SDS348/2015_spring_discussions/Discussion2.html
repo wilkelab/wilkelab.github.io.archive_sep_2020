@@ -56,10 +56,9 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <h3>SDS348/385 Discussion 2</h3>
 <p><strong>Jan 28, 2015</strong></p>
 <p>The library ggplot2 is a very powerful resource in R for creating high-quality figures and plots. The basic anatomy of creating a ggplot object is <code>ggplot(&lt;data_frame&gt;, aes(...)) + geom_&lt;my_geom&gt;()</code>. Each ggplot object should begin with the function <code>ggplot()</code>. Provide the name of your data frame as your first argument and specify aesthetics (which map to your data set!) in the aes() argument. Next, add (with <code>+</code>) a particular geom to this ggplot function to specify the type of plot. Note that the initial call to <code>ggplot()</code> sets up a plotting environment, and extra additions with <code>+</code> will add more layers onto the foundation set up during the call to <code>ggplot()</code>. In other words, any arguments you provide to <code>ggplot()</code> will hold for all subsequent geoms, facets, etc.</p>
-<p>Here, we’ll make some basic ggplot figures using the <a href="http://wilkelab.org/classes/SDS348/2015_spring_discussions/ramburii.csv">Ramburii damselfly dataset</a> (if the file doesn’t automatically download but opens in your Browser, copy and paste the contents into either TextEdit or Notepad, and then save.) Set your R working directory (Session -&gt; Set Working Directory -&gt; Choose Directory) to the location on your computer where this dataset has been saved.</p>
-<p>Load the ggplot2 library as well as the damselfly the dataset, which you can examine with <code>head()</code>.</p>
+<p>Here, we’ll make some basic ggplot figures using the Ramburii damselfly dataset. R is able to download datasets from the internet simply from the command <code>read.csv</code>, so we’ll download/load the data set, as well as the ggplot2 library.</p>
 <pre class="r"><code>library(ggplot2)
-damsel &lt;- read.csv('ramburii.csv')
+damsel &lt;- read.csv(&quot;http://wilkelab.org/classes/SDS348/2015_spring_discussions/ramburii.csv&quot;)
 head(damsel)</code></pre>
 <pre><code>##   Location Island    Sex Morph Wing_centroid_pixels Mating_status
 ## 1      ANA    KAU female  gyno             2179.579         wheel
