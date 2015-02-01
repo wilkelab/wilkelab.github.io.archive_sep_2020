@@ -17,7 +17,7 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
     - [R Markdown](/classes/SDS348/2015_spring_worksheets/class1.Rmd)
     - [HTML](/classes/SDS348/2015_spring_worksheets/class1.html)
     - [Solutions, R Markdown](/classes/SDS348/2015_spring_worksheets/class1_solutions.Rmd)
-    - [Solutions, HTML](/classes/SDS348/2015_spring_worksheets/2015_spring_worksheets/class1_solutions.html)
+    - [Solutions, HTML](/classes/SDS348/2015_spring_worksheets/class1_solutions.html)
     
 **2. Jan 22, 2015 – R review, R Markdown**
 
