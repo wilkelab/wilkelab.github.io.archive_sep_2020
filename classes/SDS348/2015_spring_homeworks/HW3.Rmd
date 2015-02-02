@@ -1,0 +1,61 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=3, fig.width=4)
+library(ggplot2)
+theme_set(theme_bw(base_size=12))
+library(MASS)
+library(dplyr)
+```
+##Homework 3
+*Enter your name and EID here*
+
+**This homework is due on Feb 10, 2015 in class.**
+
+**Question 1: (4 pts)** *The datset `AirPassengers` built into R lists total numbers of international airline passengers, 1949 to 1960.*
+```{r}
+AirPassengers
+```
+*Is the dataset tidy? Explain why or why not.*
+
+Explanation goes here.
+
+*The datset `HairEyeColor` built into R contains the distribution of hair color, eye color, and sex in 592 statistics students.*
+```{r}
+HairEyeColor
+```
+*Is the dataset tidy? Explain why or why not.*
+ 
+Explanation goes here.
+
+**Question 2: (2 pts)** *The function `data()` lists all datasets that are available in R by default. Look through the list and identify a dataset that is tidy. Explain why the dataset is tidy.*
+
+I pick the dataset: ...
+```{r}
+# Display the first few rows of your chosen dataset:
+# head()
+```
+Explanation goes here.
+
+**Question 3: (2 pts)** *The package nycflights13 contains information about all flights departing from one of the NY City airports in 2013. In particular, the data table `flights` lists on-time departure and arrival information for 336,776 individual flights:*
+```{r}
+library(nycflights13)
+flights
+```
+
+*We would like to collect some information about arrival delays of United Airlines (UA) flights. Do the following: pick all UA departures with non-zero arrival delay, calculate the mean arrival delay for each of the corresponding flight numbers, and find the five flights with the largest mean delay.*
+
+```{r}
+# R code goes here.
+```
+Summary of finding goes here.
+
+**Question 4: (2 pts)** *In an in-class exercise, we made the following plot of the Sitka dataset:*
+
+```{r}
+ggplot(Sitka, aes(x=Time, y=size, group=tree)) + geom_line() + facet_wrap(~treat)
+```
+
+*Now modify the plot so that the line for each tree is colored according to the maximum size of the tree.* 
+```{r}
+# R code goes here.
+```
