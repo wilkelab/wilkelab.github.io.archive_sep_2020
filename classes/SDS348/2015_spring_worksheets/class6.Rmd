@@ -1,0 +1,68 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=3, fig.width=4)
+library(ggplot2)
+theme_set(theme_bw(base_size=12))
+library(dplyr)
+```
+##In-class worksheet 6
+**Feb 5, 2015**
+
+## 1. The diamonds dataset
+
+*The `diamonds` dataset provided by ggplot2 provides information about quality and price of 53940 diamonds:*
+```{r}
+head(diamonds)
+```
+
+*Make a table that contains the median price for each combination of `cut`, `color`, and `clarity`, and arrange the final table in descending order of median price (i) within given groups of `cut` and `color`, and (ii) globally for the entire table. *
+```{r}
+# R code goes here.
+```
+
+*The best cuts of diamonds are "Very Good", "Premium", and "Ideal". Make a table that selects only those diamonds, and find the minimum, median, and maximum price for each cut.*
+
+*Hint: The operator `%in%` is helpful for selecting the diamond cuts.*
+```{r}
+# R code goes here.
+```
+
+*For "Premium" cut diamonds, calculate the mean carat level near the minimum price and near the maximum price. Define "near" as "within 10% of".*
+```{r}
+# R code goes here.
+```
+
+
+## 2. The msleep dataset
+*Verify that the sum of total sleep time and total awake time for all animals in the `msleep` dataset adds up to 24h.*
+```{r}
+# R code goes here.
+```
+
+*For carnivores only, make a plot of the percent of time each animal is in REM sleep (out of the total sleep time) vs. the animal's body weight (plotted on a log scale).*
+```{r}
+# R code goes here.
+```
+
+*Tally how many vores are awake for at least 18 hours. Hint: use the function `tally()`.*
+```{r}
+# R code goes here.
+```
+
+*Make a list of all the domesticated species in the `msleep` dataset, in alphabetical order.*
+```{r}
+# R code goes here.
+```
+
+*Identify the top-10 least-awake animals, and list them from least awake to most awake. Explain why this analysis gives you 11 results instead of 10.*
+```{r}
+# R code goes here.
+```
+Explanation goes here.
+
+## 3. If this was easy
+
+*Go back to the `diamonds` data set, and using the function `do()`, fit a linear model of price vs. carat separately for each cut. Then make a table that holds the resulting intercepts and slopes.*
+```{r}
+# R code goes here.
+```
