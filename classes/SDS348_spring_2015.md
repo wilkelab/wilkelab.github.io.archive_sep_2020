@@ -61,6 +61,7 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
     - [Solutions](/classes/SDS348/2015_spring_worksheets/class5_solutions.html)
     
 **6. Feb 05, 2015 – Working with tidy data**    
+
 * In-class worksheet:
     - [R Markdown](/classes/SDS348/2015_spring_worksheets/class6.Rmd)
     - [HTML](/classes/SDS348/2015_spring_worksheets/class6.html)
