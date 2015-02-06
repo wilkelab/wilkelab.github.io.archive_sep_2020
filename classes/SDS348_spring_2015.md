@@ -62,6 +62,7 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
     
 **6. Feb 05, 2015 – Working with tidy data**    
 
+* Data-wrangling tutorial by Bradley Boehmke: [http://rpubs.com/bradleyboehmke/data_wrangling](http://rpubs.com/bradleyboehmke/data_wrangling)
 * In-class worksheet:
     - [R Markdown](/classes/SDS348/2015_spring_worksheets/class6.Rmd)
     - [HTML](/classes/SDS348/2015_spring_worksheets/class6.html)
@@ -69,8 +70,8 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
 
 
 ## Homeworks
-- Homework 1: [HW1.Rmd](/classes/SDS348/2015_spring_homeworks/HW1.Rmd) (due Jan 27, 2015)  [Answer Key](/classes/SDS348/2015_spring_homeworks/HW1-solution.html) 
-- Homework 2: [HW2.Rmd](/classes/SDS348/2015_spring_homeworks/HW2.Rmd) (due Feb 3, 2015)
+- Homework 1: [HW1.Rmd](/classes/SDS348/2015_spring_homeworks/HW1.Rmd) (due Jan 27, 2015) [Answer Key](/classes/SDS348/2015_spring_homeworks/HW1-solution.html) 
+- Homework 2: [HW2.Rmd](/classes/SDS348/2015_spring_homeworks/HW2.Rmd) (due Feb 3, 2015) [Answer Key](/classes/SDS348/2015_spring_homeworks/HW2-solution.html) 
 - Homework 3: [HW3.Rmd](/classes/SDS348/2015_spring_homeworks/HW3.Rmd) (due Feb 10, 2015)
 
 
