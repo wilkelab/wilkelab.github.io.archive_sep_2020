@@ -75,7 +75,7 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
 - Homework 3: [HW3.Rmd](/classes/SDS348/2015_spring_homeworks/HW3.Rmd) (due Feb 10, 2015)
 
 ## Projects
-- Project 1: [Project1.Rmd](/classes/SDS348/2015_spring_projects/Project1.Rmd) (due Feb 24, 2015)
+- Project 1: [Project1.Rmd](/classes/SDS348/2015_spring_projects/project1/Project1.Rmd) (due Feb 24, 2015)
 
 ## Discussion sections
 
