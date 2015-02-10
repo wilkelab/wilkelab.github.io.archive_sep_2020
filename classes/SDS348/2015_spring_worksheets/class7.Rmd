@@ -1,0 +1,61 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=3, fig.width=4)
+library(ggplot2)
+theme_set(theme_bw(base_size=12))
+library(dplyr)
+```
+##In-class worksheet 7
+**Feb 10, 2015**
+
+## 1. Relationship between arrival delay and age of plane
+
+*The nycflights13 data contains information about all planes departing fron New York City in 2013. The table `flights` contains information about individual departures:*
+```{r}
+library(nycflights13)
+flights
+```
+*Individual planes are indicated by their tail number (`tailnum` in the table). Calculate the mean arrival delay (`arr_delay`) for each tail number.*
+```{r}
+# R code goes here.
+```
+*Information about individual planes is availabe in the table `planes`:*
+```{r}
+planes
+```
+*In particular, this table lists the year each individual plane was manufactured. Make a combined table that holds tail number, mean arrival delay, and year of manufacture for each plane. Then plot mean arrival delay vs. year of manufacture.*
+```{r}
+# R code goes here.
+```
+
+## 2. Relationship between arrival delay and temperature
+*Now calculate the mean arrival delay for each day of the year. Note: you need to use `mean(arr_delay, na.rm=T)` to get meaningful results. The `na.rm=T` removes missing values before averaging. Without this line, almost all averaged end up as missing values (`NA`).*
+```{r}
+# R code goes here.
+```
+
+*We want to correlate these delay values with the temperature of each day. The data frame `weather` holds temperature measurements for each hour of each day:*
+```{r}
+weather
+```
+*First, calculate the mean temperature for each day:*
+```{r}
+# R code goes here.
+```
+*Now combine the mean delay and the mean temperature into one table, and then plot mean delay vs. mean temperature.*
+```{r}
+# R code goes here.
+```
+
+## 3. If this was easy
+
+*Find out for how many tail numbers in the `flights` data set we have no information in the `planes` data set. What do we have to pay attention to when joining the `flights` and `planes` tables?*
+```{r}
+# R code goes here.
+```
+
+*Calculate the mean arrival delay by plane model or plane engine. Sort in order of descending mean delay. Remove all tailnumbers for which no plane information is available.*
+```{r}
+# R code goes here.
+```
+

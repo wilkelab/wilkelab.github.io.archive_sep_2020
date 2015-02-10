@@ -1,0 +1,47 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=3, fig.width=4)
+library(ggplot2)
+theme_set(theme_bw(base_size=12))
+library(tidyr)
+library(dplyr)
+```
+##Homework 4
+*Enter your name and EID here*
+
+**This homework is due on Feb 17, 2015 in class.**
+
+
+**Question 1: (2 pts)** *For the `msleep` data set from ggplot2, calculate how many distinct orders there are within each "vore". Hint: use the functions `distinct()` and `tally()`.*
+
+```{r}
+# R code goes here.
+```
+
+ 
+**Question 2: (4 pts)** *Invent two simple data sets that allow you explain the difference between the dplyr functions `left_join()` and `inner_join()`. Explain which features of your data sets affect the behavior of these two functions.*
+```{r}
+# R code goes here.
+```
+Explanation goes here.
+
+**Question 3: (2 pts)** *The following code downloads a data set containing information about total international air passengers from 1950 to 1961:*
+```{r}
+air <- read.csv("http://wilkelab.org/classes/SDS348/data_sets/AirPassengers.csv")
+air
+```
+*Convert this data set into a table with three columns, one for the year, one for the month, and one for the number of passengers.*
+```{r}
+# R code goes here.
+```
+
+
+**Question 4: (2 pts)** *The `sleep` dataset contains amount of extra sleep (in hours) for ten students treated with two different drugs each. The drug treatment is indicated in the `group` column:*
+```{r}
+head(sleep)
+```
+
+*Convert this table into a wide table that has three columns, one for student ID, one for extra sleep under treatment 1, and one for extra sleep under treatment 2.* 
+```{r}
+# R code goes here.
+```
