@@ -1,0 +1,60 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=3, fig.width=4)
+library(ggplot2)
+theme_set(theme_bw(base_size=12))
+library(dplyr)
+library(tidyr)
+```
+##In-class worksheet 8
+**Feb 12, 2015**
+
+## 1. Making wide tables longer
+*Consider the following data set, which contains information about income and religious affiliation in the US:*
+```{r}
+pew <- read.csv("http://wilkelab.org/classes/SDS348/data_sets/pew.csv", stringsAsFactors=F, check.names=F)
+head(pew)
+```
+*This table is not tidy, because income levels are used as column headers rather than as levels of an `income` variable. Use `gather()` to turn this table into a table with three columns, one for religion, one for income (called `income`), and one for the count of people with the respective combination of income and religion (called `count`).*
+```{r}
+# R code goes here.
+```
+
+*Now call the income column `income_level` and the count column `number_of_people`.*
+```{r}
+# R code goes here.
+```
+
+*Now, instead of gathering data from all columns, gather only the data from columns `below10k`, `from20to30k`, and `from50to75k`.*
+```{r}
+# R code goes here.
+```
+
+## 2. Making long tables wider
+*Consider the following data set, which contains information about the sex, weight, and height of 200 individuals:*
+```{r}
+persons <- read.csv("http://wilkelab.org/classes/SDS348/data_sets/persons.csv", stringsAsFactors=F)
+head(persons)
+```
+*Is this data set tidy? And can you rearrange it so you have a column for subject, one for sex, one for weight, and one for height?*
+
+Explanation goes here.
+```{r}
+# R code goes here.
+```
+
+*For the data set `diamonds` from the ggplot2 package, calculate the mean price 
+for each combination of cut and clarity. Then use `spread()` to rearrange the table into a wide format, such that there is a column of mean prices for each cut level (Fair, Good, Very Good, etc.).*
+```{r}
+# R code goes here.
+```
+
+
+## 3. If this was easy
+
+*Consider the following code and its output. Can you explain why the result looks the way it does? Do you have any idea how to avoid the NAs?*
+
+```{r}
+# R code goes here.
+```
+Explanation goes here.
