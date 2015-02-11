@@ -80,6 +80,10 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
 
 * Slides: [class8.pdf](/classes/SDS348/2015_spring_slides/class8.pdf)
 * tidyr vignette: [http://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html](http://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2015_spring_worksheets/class8.Rmd)
+    - [HTML](/classes/SDS348/2015_spring_worksheets/class8.html)
+    
 
 ## Homeworks
 - Homework 1: [HW1.Rmd](/classes/SDS348/2015_spring_homeworks/HW1.Rmd) (due Jan 27, 2015) [Answer Key](/classes/SDS348/2015_spring_homeworks/HW1-solution.html) 
