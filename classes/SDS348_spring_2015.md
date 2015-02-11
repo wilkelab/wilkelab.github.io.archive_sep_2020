@@ -76,6 +76,10 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
     - [HTML](/classes/SDS348/2015_spring_worksheets/class7.html)
     - [Solutions](/classes/SDS348/2015_spring_worksheets/class7_solutions.html)
 
+**8. Feb 12, 2015 – Rearranging data tables with tidyr**    
+
+* Slides: [class8.pdf](/classes/SDS348/2015_spring_slides/class8.pdf)
+
 
 ## Homeworks
 - Homework 1: [HW1.Rmd](/classes/SDS348/2015_spring_homeworks/HW1.Rmd) (due Jan 27, 2015) [Answer Key](/classes/SDS348/2015_spring_homeworks/HW1-solution.html) 
