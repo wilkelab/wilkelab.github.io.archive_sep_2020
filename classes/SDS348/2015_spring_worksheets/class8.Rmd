@@ -25,7 +25,7 @@ head(pew)
 # R code goes here.
 ```
 
-*Now, instead of gathering data from all columns, gather only the data from columns `below10k`, `from20to30k`, and `from50to75k`.*
+*Now, instead of gathering data from all columns, gather only the data from columns `below10k`, `from20to30k`, and `from50to75k`, such that your final dataframe contains only these three income levels. Sort your final data frame according to religion, using income_level to break any ties.*
 ```{r}
 # R code goes here.
 ```
@@ -43,8 +43,8 @@ Explanation goes here.
 # R code goes here.
 ```
 
-*For the data set `diamonds` from the ggplot2 package, calculate the mean price 
-for each combination of cut and clarity. Then use `spread()` to rearrange the table into a wide format, such that there is a column of mean prices for each cut level (Fair, Good, Very Good, etc.).*
+*For the data set `diamonds` from the ggplot2 package, create a table displaying the mean price for each combination of cut and clarity. Then use `spread()` to rearrange this table into a wide format, such that there is a column of mean prices for each cut level (Fair, Good, Very Good, etc.).*
+
 ```{r}
 # R code goes here.
 ```
@@ -55,6 +55,6 @@ for each combination of cut and clarity. Then use `spread()` to rearrange the ta
 *Consider the following code and its output. Can you explain why the result looks the way it does? Do you have any idea how to avoid the NAs?*
 
 ```{r}
-# R code goes here.
+iris %>% select(Sepal.Length, Species) %>% spread(Species, Sepal.Length)
 ```
 Explanation goes here.

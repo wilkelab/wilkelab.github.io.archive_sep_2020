@@ -93,7 +93,7 @@ head(pew)</code></pre>
 ## 4           Catholic     below10k              418
 ## 5 Don't know/refused     below10k               15
 ## 6   Evangelical Prot     below10k              575</code></pre>
-<p><em>Now, instead of gathering data from all columns, gather only the data from columns <code>below10k</code>, <code>from20to30k</code>, and <code>from50to75k</code>.</em></p>
+<p><em>Now, instead of gathering data from all columns, gather only the data from columns <code>below10k</code>, <code>from20to30k</code>, and <code>from50to75k</code>, such that your final dataframe contains only these three income levels. Sort your final data frame according to religion, using income_level to break any ties.</em></p>
 <pre class="r"><code>pew %&gt;% select(religion, below10k, from20to30k, from50to75k) %&gt;% 
   gather(income_level, number_of_people, below10k:from50to75k) %&gt;%
   arrange(religion, income_level) %&gt;% head()</code></pre>
@@ -127,35 +127,35 @@ head(persons)</code></pre>
 ## 4       4    177   M     68
 ## 5       5    157   F     59
 ## 6       6    170   M     76</code></pre>
-<p><em>For the data set <code>diamonds</code> from the ggplot2 package, calculate the mean price for each combination of cut and clarity. Then use <code>spread()</code> to rearrange the table into a wide format, such that there is a column of mean prices for each cut level (Fair, Good, Very Good, etc.).</em></p>
-<pre class="r"><code>diamonds %&gt;% group_by(cut, clarity) %&gt;% summarize(mean=mean(price))</code></pre>
+<p><em>For the data set <code>diamonds</code> from the ggplot2 package, create a table displaying the mean price for each combination of cut and clarity. Then use <code>spread()</code> to rearrange this table into a wide format, such that there is a column of mean prices for each cut level (Fair, Good, Very Good, etc.).</em></p>
+<pre class="r"><code>diamonds %&gt;% group_by(cut, clarity) %&gt;% summarize(mean.price=mean(price))</code></pre>
 <pre><code>## Source: local data frame [40 x 3]
 ## Groups: cut
 ## 
-##     cut clarity mean
-## 1  Fair      I1 3704
-## 2  Fair     SI2 5174
-## 3  Fair     SI1 4208
-## 4  Fair     VS2 4175
-## 5  Fair     VS1 4165
-## 6  Fair    VVS2 3350
-## 7  Fair    VVS1 3871
-## 8  Fair      IF 1912
-## 9  Good      I1 3597
-## 10 Good     SI2 4580
-## ..  ...     ...  ...</code></pre>
-<pre class="r"><code>diamonds %&gt;% group_by(cut, clarity) %&gt;% summarize(mean=mean(price)) %&gt;% spread(cut, mean)</code></pre>
+##     cut clarity mean.price
+## 1  Fair      I1   3703.533
+## 2  Fair     SI2   5173.916
+## 3  Fair     SI1   4208.279
+## 4  Fair     VS2   4174.724
+## 5  Fair     VS1   4165.141
+## 6  Fair    VVS2   3349.768
+## 7  Fair    VVS1   3871.353
+## 8  Fair      IF   1912.333
+## 9  Good      I1   3596.635
+## 10 Good     SI2   4580.261
+## ..  ...     ...        ...</code></pre>
+<pre class="r"><code>diamonds %&gt;% group_by(cut, clarity) %&gt;% summarize(mean.price=mean(price)) %&gt;% spread(cut, mean.price)</code></pre>
 <pre><code>## Source: local data frame [8 x 6]
 ## 
-##   clarity Fair Good Very Good Premium Ideal
-## 1      I1 3704 3597      4078    3947  4336
-## 2     SI2 5174 4580      4989    5546  4756
-## 3     SI1 4208 3690      3932    4455  3752
-## 4     VS2 4175 4262      4216    4550  3285
-## 5     VS1 4165 3801      3805    4485  3490
-## 6    VVS2 3350 3079      3038    3795  3250
-## 7    VVS1 3871 2255      2459    2831  2468
-## 8      IF 1912 4098      4396    3856  2273</code></pre>
+##   clarity     Fair     Good Very Good  Premium    Ideal
+## 1      I1 3703.533 3596.635  4078.226 3947.332 4335.726
+## 2     SI2 5173.916 4580.261  4988.688 5545.937 4755.953
+## 3     SI1 4208.279 3689.533  3932.391 4455.269 3752.118
+## 4     VS2 4174.724 4262.236  4215.760 4550.331 3284.550
+## 5     VS1 4165.141 3801.446  3805.353 4485.462 3489.744
+## 6    VVS2 3349.768 3079.108  3037.765 3795.123 3250.290
+## 7    VVS1 3871.353 2254.774  2459.441 2831.206 2468.129
+## 8      IF 1912.333 4098.324  4396.216 3856.143 2272.913</code></pre>
 </div>
 <div id="if-this-was-easy" class="section level2">
 <h2>3. If this was easy</h2>
