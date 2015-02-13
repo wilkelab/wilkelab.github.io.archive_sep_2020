@@ -93,7 +93,7 @@ head(pew)</code></pre>
 ## 4           Catholic     below10k              418
 ## 5 Don't know/refused     below10k               15
 ## 6   Evangelical Prot     below10k              575</code></pre>
-<p><em>Now, instead of gathering data from all columns, gather only the data from columns <code>below10k</code>, <code>from20to30k</code>, and <code>from50to75k</code>.</em></p>
+<p><em>Now, instead of gathering data from all columns, gather only the data from columns <code>below10k</code>, <code>from20to30k</code>, and <code>from50to75k</code>, such that your final dataframe contains only these three income levels. Sort your final data frame according to religion, using income_level to break any ties.</em></p>
 <pre class="r"><code>pew %&gt;% select(religion, below10k, from20to30k, from50to75k) %&gt;% 
   gather(income_level, number_of_people, below10k:from50to75k) %&gt;%
   arrange(religion, income_level) %&gt;% head()</code></pre>
@@ -127,24 +127,24 @@ head(persons)</code></pre>
 ## 4       4    177   M     68
 ## 5       5    157   F     59
 ## 6       6    170   M     76</code></pre>
-<p><em>For the data set <code>diamonds</code> from the ggplot2 package, calculate the mean price for each combination of cut and clarity. Then use <code>spread()</code> to rearrange the table into a wide format, such that there is a column of mean prices for each cut level (Fair, Good, Very Good, etc.).</em></p>
-<pre class="r"><code>diamonds %&gt;% group_by(cut, clarity) %&gt;% summarize(mean=mean(price))</code></pre>
+<p><em>For the data set <code>diamonds</code> from the ggplot2 package, create a table displaying the mean price for each combination of cut and clarity. Then use <code>spread()</code> to rearrange this table into a wide format, such that there is a column of mean prices for each cut level (Fair, Good, Very Good, etc.).</em></p>
+<pre class="r"><code>diamonds %&gt;% group_by(cut, clarity) %&gt;% summarize(mean.price=mean(price))</code></pre>
 <pre><code>## Source: local data frame [40 x 3]
 ## Groups: cut
 ## 
-##     cut clarity mean
-## 1  Fair      I1 3704
-## 2  Fair     SI2 5174
-## 3  Fair     SI1 4208
-## 4  Fair     VS2 4175
-## 5  Fair     VS1 4165
-## 6  Fair    VVS2 3350
-## 7  Fair    VVS1 3871
-## 8  Fair      IF 1912
-## 9  Good      I1 3597
-## 10 Good     SI2 4580
-## ..  ...     ...  ...</code></pre>
-<pre class="r"><code>diamonds %&gt;% group_by(cut, clarity) %&gt;% summarize(mean=mean(price)) %&gt;% spread(cut, mean)</code></pre>
+##     cut clarity mean.price
+## 1  Fair      I1       3704
+## 2  Fair     SI2       5174
+## 3  Fair     SI1       4208
+## 4  Fair     VS2       4175
+## 5  Fair     VS1       4165
+## 6  Fair    VVS2       3350
+## 7  Fair    VVS1       3871
+## 8  Fair      IF       1912
+## 9  Good      I1       3597
+## 10 Good     SI2       4580
+## ..  ...     ...        ...</code></pre>
+<pre class="r"><code>diamonds %&gt;% group_by(cut, clarity) %&gt;% summarize(mean.price=mean(price)) %&gt;% spread(cut, mean.price)</code></pre>
 <pre><code>## Source: local data frame [8 x 6]
 ## 
 ##   clarity Fair Good Very Good Premium Ideal
@@ -313,25 +313,45 @@ head(persons)</code></pre>
 ## 149     NA         NA       6.2
 ## 150     NA         NA       5.9</code></pre>
 <p>The problem is that <code>spread()</code> does not like to put data into the same row if it isn’t sure that they actually belong together. In the iris table, there is no indication which “setosa” values, for example, should go with which “versicolor” values. Therefore, <code>spread()</code> puts them all into separate rows and fills the remaining species columns with NAs.</p>
-<p>We can avoid this issue by adding an <code>id</code> column that is repeated among the three groups. This trick forces the data for different species into the same row.</p>
+<p>We can avoid this issue by adding a <code>row</code> column that is repeated among the three groups. This column simply counts rows within each group, from 1 to 50 in this particular data set. This trick forces the data from the same rows for different species into one row. (That means, rows 1 of setosa, versicolor, and virginica get combined, then rows 2, and so on.)</p>
 <pre class="r"><code>iris %&gt;% select(Sepal.Length, Species) %&gt;% 
   group_by(Species) %&gt;%
-  mutate(id = 1:n()) %&gt;%
+  mutate(row = 1:n()) %&gt;%
   spread(Species, Sepal.Length)</code></pre>
 <pre><code>## Source: local data frame [50 x 4]
 ## 
-##    id setosa versicolor virginica
-## 1   1    5.1        7.0       6.3
-## 2   2    4.9        6.4       5.8
-## 3   3    4.7        6.9       7.1
-## 4   4    4.6        5.5       6.3
-## 5   5    5.0        6.5       6.5
-## 6   6    5.4        5.7       7.6
-## 7   7    4.6        6.3       4.9
-## 8   8    5.0        4.9       7.3
-## 9   9    4.4        6.6       6.7
-## 10 10    4.9        5.2       7.2
-## .. ..    ...        ...       ...</code></pre>
+##    row setosa versicolor virginica
+## 1    1    5.1        7.0       6.3
+## 2    2    4.9        6.4       5.8
+## 3    3    4.7        6.9       7.1
+## 4    4    4.6        5.5       6.3
+## 5    5    5.0        6.5       6.5
+## 6    6    5.4        5.7       7.6
+## 7    7    4.6        6.3       4.9
+## 8    8    5.0        4.9       7.3
+## 9    9    4.4        6.6       6.7
+## 10  10    4.9        5.2       7.2
+## .. ...    ...        ...       ...</code></pre>
+<p>At the end, if you want, you can delete this column again:</p>
+<pre class="r"><code>iris %&gt;% select(Sepal.Length, Species) %&gt;% 
+  group_by(Species) %&gt;%
+  mutate(row = 1:n()) %&gt;%
+  spread(Species, Sepal.Length) %&gt;%
+  select(-row)</code></pre>
+<pre><code>## Source: local data frame [50 x 3]
+## 
+##    setosa versicolor virginica
+## 1     5.1        7.0       6.3
+## 2     4.9        6.4       5.8
+## 3     4.7        6.9       7.1
+## 4     4.6        5.5       6.3
+## 5     5.0        6.5       6.5
+## 6     5.4        5.7       7.6
+## 7     4.6        6.3       4.9
+## 8     5.0        4.9       7.3
+## 9     4.4        6.6       6.7
+## 10    4.9        5.2       7.2
+## ..    ...        ...       ...</code></pre>
 </div>
 
 
