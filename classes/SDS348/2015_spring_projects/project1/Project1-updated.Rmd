@@ -1,0 +1,87 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=6, fig.width=6)
+library(ggplot2)
+theme_set(theme_bw(base_size=12))
+library(dplyr)
+library(tidyr)
+```
+
+##Project 1
+*Enter your name and EID here*
+
+###Instructions
+This knitted Rmarkdown HTML document should be handed in at the beginning of class on **Feb 24th, 2015**. In addition, you *must* hand in the raw Rmarkdown file used to generate the HTML document **via Canvas by 12:30 pm on Feb. 24th**. These two documents will be graded jointly, so they must be consistent (as in, don't change the Rmarkdown file without also updating the knitted HTML!).
+
+All results presented *must* have corresponding code. **Any answers/results given without the corresponding R code that generated the result will be considered absent.** To be clear: if you do calculations by hand instead of using R and then report the results from the calculations, **you will not receive credit** for those calculations. All code reported in your final project document should work properly. Please do not include any extraneous code or code which produces error messages.
+
+For this project, you will be using a recently-compiled dataset reporting fatalities from the on-going Zaire Ebolavirus (Ebola) outbreak in West Africa. You can open the dataset in R directly from the url:
+```{r}
+ebola <- read.csv("http://wilkelab.org/classes/SDS348/2015_spring_projects/project1/ebola.csv")
+head(ebola)
+# Execute the following line of code for R to interpret dates properly. Note that you can now perform summary statistics, etc. with this column. Try it out!
+ebola$Date <- as.Date(ebola$Date)
+summary(ebola$Date)
+```
+This dataset was compiled by humanitarian workers, mostly based in West Africa, to examine the spread and fatality associated with the current Ebola outbreak over time. This dataset particularly shows the cumulative number of Ebola cases and deaths at certain time periods. Specifically, data was compiled based on whether Ebola was the confirmed, suspected, or probable cause of illness/death (see levels in the `Indicator` column). Note that the levels in this column describing "all" cases and/or deaths indicate the cumulative sum of all confirmed, suspected, and probable Ebola occurrences.
+
+
+###Questions
+
+**Question 1: (10 pts)**
+Is this dataset tidy? Explain why or why not. Suggest a different way to represent this data set which *would* be tidy (as in, suggest column names and contents for a data-frame).
+
+*Discussion goes here.*
+
+
+**Question 2: (20 pts)**
+Select **three** (and only three!) indicactor levels from the `Indicator` column in this dataset. Create a new data-frame from the full Ebola dataset such that each of your selected indicators has its own column. The remaining indicators should not be included, but all other values in the dataset should be included. In other words, your final data-frame's columns should be named (with indicators named accordingly) as:
+
+  - Indicator 1
+  - Indicator 2
+  - Indicator 3
+  - Country
+  - Date 
+ 
+Once your data-frame is completed, create a second data-frame from it which has two additional columns displaying summary statistics of your choice. Be sure to display both resulting data-frames using the `head()` function (do *NOT* display the entire data-frame!). You do not need to write a corresponding discussion for this code, but you should incorporate brief explanatory comments throughout your code.
+
+
+
+```{r}
+# R code goes here
+```
+
+
+
+**Question 3: (40 pts)**
+
+   **a. (25 points)** Use the ggplot2 library to create a plot displaying Ebola cumulative fatality rates over time for **three** countries of your choice (be sure to select countries with at least 4 time-points of data). Fatality rates are computed as the ratio of the number of deaths to the total number of cases. Your plot should **only** consider those values associated with Indicators marked "all\_Ebola\_cases" and "all\_Ebola\_deaths". Your plot should display the points for each country in different colors, and the size of your points should reflect the cumulative number of cases. Your code should be well-commented describing the various steps you take to create this figure. 
+
+
+```{r}
+# R code goes here
+```
+
+
+  **b. (15 points)** Discuss the information (overarching trends, patterns, etc.) your final plot reveals. Be sure to include in your discussion the similarities/differences among countries and a clear, logical justification for why you selected the particular geom(s) used to represent this data. Please limit your full response to a maximum of 6 sentences.
+  
+  *Discussion goes here.*
+
+
+**Question 4: (30 pts)**
+Think of **two** (and only two!) questions to ask about this Ebola data set. For each question, use the ggplot2 library to create a figure which helps you visualize the trend you're interested in. For each plot, provide a clear explanation as to why this type of plot (e.g. boxplot, barplot, histogram, etc.) is best for representing your chosen trend. Interpret your plot and any trends it reveals, or does not reveal, as the case may be. Your two plots *must* use different primary geoms. Please limit the discussion for each question-plot pair to 4-6 sentences.
+
+**Plot One**
+```{r}
+# R code for plot 1 creation, analysis goes here
+```
+
+*Discussion for plot 1 goes here.*
+
+**Plot Two**
+```{r}
+# R code for plot 2 creation, analysis goes here
+```
+
+*Discussion for plot 2 goes here.*
+
