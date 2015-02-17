@@ -58,8 +58,9 @@ arrow_style <- arrow(length = unit(0.05, "inches"),
 ggplot(rotation_data) + 
   geom_segment(aes(xend=PC1, yend=PC2), x=0, y=0, arrow=arrow_style) + 
   geom_text(aes(x=PC1, y=PC2, label=variable), hjust=0, size=3, color='red') + 
-  xlim(-1,1) + 
-  ylim(-1,1)
+  xlim(-1.,1.25) + 
+  ylim(-1.,1.) +
+  coord_fixed() # fix aspect ratio to 1:1
 ```
 We can now see clearly that `Petal.Length`, `Petal.Width`, and `Sepal.Length` all contribute to PC1, and `Sepal.Width` dominates PC2.
 
