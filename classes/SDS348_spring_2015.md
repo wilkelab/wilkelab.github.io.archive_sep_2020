@@ -88,6 +88,7 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
 **9. Feb 17, 2015 – Principal Components Analysis (PCA)**    
 
 * Slides: [class9.pdf](/classes/SDS348/2015_spring_slides/class9.pdf)
+* Intro to PCA: [http://setosa.io/ev/principal-component-analysis/](http://setosa.io/ev/principal-component-analysis/)
 * In-class worksheet:
     - [R Markdown](/classes/SDS348/2015_spring_worksheets/class9.Rmd)
     - [HTML](/classes/SDS348/2015_spring_worksheets/class9.html)
