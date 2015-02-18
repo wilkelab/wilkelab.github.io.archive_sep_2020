@@ -97,6 +97,9 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
 **10. Feb 19, 2015 – k-means clustering**
 
 * Interactive k-means demonstration: [http://www.naftaliharris.com/blog/visualizing-k-means-clustering/](http://www.naftaliharris.com/blog/visualizing-k-means-clustering/)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2015_spring_worksheets/class10.Rmd)
+    - [HTML](/classes/SDS348/2015_spring_worksheets/class10.html)
 
 
 ## Homeworks
