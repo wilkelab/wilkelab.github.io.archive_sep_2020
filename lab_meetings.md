@@ -24,13 +24,13 @@ Lab meetings are held Fridays at 10:30 am in MBB 3.204.
 |3/20/15 || -         ||  -        || Spring break
 |3/27/15 || Eleisha   || Stephanie ||
 |4/3/15  || Austin    || Eleisha   ||
-|4/10/15 ||           || Austin    ||
-|4/17/15 ||           ||           ||
+|4/10/15 || Suyang    || Austin    ||
+|4/17/15 ||           || Suyang    ||
 |4/24/15 || Dakota    ||           ||
-|5/1/15  ||           || Dakota    ||
-|5/8/15  ||           ||           ||
-|5/15/15 || Umut      ||           ||
-|5/22/15 ||           || Umut      ||
-|5/29/15 ||           ||           ||
+|5/1/15  || Amir      || Dakota    ||
+|5/8/15  || Claire    || Amir      ||
+|5/15/15 || Umut      || Claire    ||
+|5/22/15 || Dacia     || Umut      ||
+|5/29/15 || Stephanie || Dacia     ||
 |------+---+--------------------+---+----------------------+---+-------|
 {:.widetable}
