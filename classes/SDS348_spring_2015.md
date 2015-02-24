@@ -107,7 +107,6 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
 
 * Slides: [class11.pdf](/classes/SDS348/2015_spring_slides/class11.pdf)
 * Wikipedia page on logistic regression: [http://en.wikipedia.org/wiki/Logistic_regression](http://en.wikipedia.org/wiki/Logistic_regression)
-
 * In-class worksheet:
     - [R Markdown](/classes/SDS348/2015_spring_worksheets/class11.Rmd)
     - [HTML](/classes/SDS348/2015_spring_worksheets/class11.html)
