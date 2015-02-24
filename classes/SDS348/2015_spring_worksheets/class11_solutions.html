@@ -141,7 +141,7 @@ plant3 &lt;- data.frame(Sepal.Length=6.7, Sepal.Width=3.3, Petal.Length=5.2, Pet
 <pre class="r"><code>predict(glm.out, plant1, type=&quot;response&quot;)</code></pre>
 <pre><code>##      1 
 ## 0.6935</code></pre>
-<p>Plant 1 has a 30% probability of being virginica. It is probably versicolor.</p>
+<p>Plant 1 has a 69% probability of being virginica. It may be a virginica.</p>
 <pre class="r"><code>predict(glm.out, plant2, type=&quot;response&quot;)</code></pre>
 <pre><code>##       1 
 ## 0.06003</code></pre>
@@ -149,7 +149,7 @@ plant3 &lt;- data.frame(Sepal.Length=6.7, Sepal.Width=3.3, Petal.Length=5.2, Pet
 <pre class="r"><code>predict(glm.out, plant3, type=&quot;response&quot;)</code></pre>
 <pre><code>## 1 
 ## 1</code></pre>
-<p>Plant 3 has a 0.99.9% probability of being virginica. It is very likely virginica.</p>
+<p>Plant 3 has a 99.9% probability of being virginica. It is very likely virginica.</p>
 </div>
 <div id="if-this-was-easy" class="section level1">
 <h1>3. If this was easy</h1>
