@@ -116,11 +116,12 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
 - Homework 2: [HW2.Rmd](/classes/SDS348/2015_spring_homeworks/HW2.Rmd) (due Feb 3, 2015) [Answer Key](/classes/SDS348/2015_spring_homeworks/HW2-solution.html) 
 - Homework 3: [HW3.Rmd](/classes/SDS348/2015_spring_homeworks/HW3.Rmd) (due Feb 10, 2015) [Answer Key](/classes/SDS348/2015_spring_homeworks/HW3-solution.html) 
 - Homework 4: [HW4.Rmd](/classes/SDS348/2015_spring_homeworks/HW4.Rmd) (due Feb 17, 2015) [Answer Key](/classes/SDS348/2015_spring_homeworks/HW4-solution.html) 
+- Homework 5: [HW5.Rmd](/classes/SDS348/2015_spring_homeworks/HW5.Rmd) (due Mar 3, 2015)
 
 ## Projects
 - Project 1: [Project1.Rmd](/classes/SDS348/2015_spring_projects/project1/Project1-updated.Rmd) (due Feb 24, 2015)
   
-  The knitted HTML document **must** be turned in on paper, and the corresponding Rmarkdown document *must* be turned in on Canvas. Emailed submissions will not be accepted (although exceptions may be pre-arranged on a *case-by-case* basis.)
+The knitted HTML document **must** be turned in on paper, and the corresponding Rmarkdown document *must* be turned in on Canvas. Emailed submissions will not be accepted (although exceptions may be pre-arranged on a *case-by-case* basis.)
 
 ## Discussion sections
 
