@@ -59,7 +59,7 @@ plant3 <- data.frame(Sepal.Length=6.7, Sepal.Width=3.3, Petal.Length=5.2, Petal.
 # R code goes here.
 ```
 
-*If we define a call of virginica as a positive and a call of versicolor as a negative, what are the true positive rate (sensitivity, true positives divided by all positives) and the true negative rate (specificity, true negatives divided by all negatives) in your analysis?*
+*If we define a call of virginica as a positive and a call of versicolor as a negative, what are the true positive rate (sensitivity, true positives divided by all possible positives) and the true negative rate (specificity, true negatives divided by all possible negatives) in your analysis?*
 ```{r}
 # R code goes here.
 ```

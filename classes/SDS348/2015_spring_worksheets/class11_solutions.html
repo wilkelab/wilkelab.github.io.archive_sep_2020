@@ -168,13 +168,13 @@ vers_true</code></pre>
 <pre><code>## [1] 48</code></pre>
 <pre class="r"><code>vers_false</code></pre>
 <pre><code>## [1] 2</code></pre>
-<p><em>If we define a call of virginica as a positive and a call of versicolor as a negative, what are the true positive rate (sensitivity, true positives divided by all positives) and the true negative rate (specificity, true negatives divided by all negatives) in your analysis?</em></p>
-<pre class="r"><code>tp &lt;- virg_true/(virg_true + vers_false)
-tn &lt;- vers_true/(vers_true + virg_false)
+<p><em>If we define a call of virginica as a positive and a call of versicolor as a negative, what are the true positive rate (sensitivity, true positives divided by all possible positives) and the true negative rate (specificity, true negatives divided by all possible negatives) in your analysis?</em></p>
+<pre class="r"><code>tp &lt;- virg_true/(virg_true + virg_false)
+tn &lt;- vers_true/(vers_true + vers_false)
 tp</code></pre>
-<pre><code>## [1] 0.9608</code></pre>
+<pre><code>## [1] 0.98</code></pre>
 <pre class="r"><code>tn</code></pre>
-<pre><code>## [1] 0.9796</code></pre>
+<pre><code>## [1] 0.96</code></pre>
 <p>The true-positive rate (sensitivity) is 96%.</p>
 <p>The true-negative rate (specificity) is 98%.</p>
 </div>
