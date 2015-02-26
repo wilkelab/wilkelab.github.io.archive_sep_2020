@@ -103,7 +103,7 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
     - [HTML](/classes/SDS348/2015_spring_worksheets/class10.html)
     - [Solutions](/classes/SDS348/2015_spring_worksheets/class10_solutions.html)
 
-**11. Feb 24, 2015 – binary prediction/logistic regression**
+**11. Feb 24, 2015 – Binary prediction/logistic regression**
 
 * Slides: [class11.pdf](/classes/SDS348/2015_spring_slides/class11.pdf)
 * Wikipedia page on logistic regression: [http://en.wikipedia.org/wiki/Logistic_regression](http://en.wikipedia.org/wiki/Logistic_regression)
@@ -111,6 +111,17 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
     - [R Markdown](/classes/SDS348/2015_spring_worksheets/class11.Rmd)
     - [HTML](/classes/SDS348/2015_spring_worksheets/class11.html)
     - [Solutions](/classes/SDS348/2015_spring_worksheets/class11_solutions.html)
+
+**12. Feb 26, 2015 – Sensitivity/Specificity, ROC curves**
+
+* Slides: [class12.pdf](/classes/SDS348/2015_spring_slides/class12.pdf)
+* Wikipedia page on sensitivity and specificity: [http://en.wikipedia.org/wiki/Sensitivity_and_specificity](http://en.wikipedia.org/wiki/Sensitivity_and_specificity)
+* Wikipedia page on ROC curves: [http://en.wikipedia.org/wiki/Receiver_operating_characteristic](http://en.wikipedia.org/wiki/Receiver_operating_characteristic)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2015_spring_worksheets/class12.Rmd)
+    - [HTML](/classes/SDS348/2015_spring_worksheets/class12.html)
+
+
 
 ## Homeworks
 - Homework 1: [HW1.Rmd](/classes/SDS348/2015_spring_homeworks/HW1.Rmd) (due Jan 27, 2015) [Answer Key](/classes/SDS348/2015_spring_homeworks/HW1-solution.html) 
