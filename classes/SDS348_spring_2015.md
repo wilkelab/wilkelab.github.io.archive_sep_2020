@@ -123,6 +123,15 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
     - [Solutions](/classes/SDS348/2015_spring_worksheets/class12_solutions.html)
 
 
+**13. Mar 3, 2015 – Training and test data sets, cross-validation**
+
+* Slides: [class13.pdf](/classes/SDS348/2015_spring_slides/class13.pdf)
+* Wikipedia page on cross-validation: [http://en.wikipedia.org/wiki/Cross-validation_%28statistics%29](http://en.wikipedia.org/wiki/Cross-validation_%28statistics%29)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2015_spring_worksheets/class13.Rmd)
+    - [HTML](/classes/SDS348/2015_spring_worksheets/class13.html)
+
+
 ## Homeworks
 - Homework 1: [HW1.Rmd](/classes/SDS348/2015_spring_homeworks/HW1.Rmd) (due Jan 27, 2015) [Answer Key](/classes/SDS348/2015_spring_homeworks/HW1-solution.html) 
 - Homework 2: [HW2.Rmd](/classes/SDS348/2015_spring_homeworks/HW2.Rmd) (due Feb 3, 2015) [Answer Key](/classes/SDS348/2015_spring_homeworks/HW2-solution.html) 
