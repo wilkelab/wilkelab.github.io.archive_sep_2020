@@ -1,0 +1,60 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=3, fig.width=4)
+library(ggplot2)
+theme_set(theme_bw(base_size=12))
+library(grid) # for `arrow()`
+library(dplyr)
+```
+##Homework 6
+*Enter your name and EID here*
+
+**This homework is due on Mar 10, 2015 in class.**
+
+In 1898, Hermon Bumpus, an American biologist working at Brown University, collected data on one of the first examples of natural selection directly observed in nature. Immediately following a bad winter storm, he collected 136 English house sparrows, *Passer domesticus*, and brought them indoors. Of these birds, 64 had died during the storm, but 72 recovered and survived. By comparing measurements of physical traits, Bumpus demonstrated physical differences between the dead and living birds. He interpreted this finding as evidence for natural selection as a result of this storm:
+
+```{r}
+bumpus <- read.csv("http://wilkelab.org/classes/SDS348/data_sets/bumpus_full.csv")
+head(bumpus)
+```
+
+The data set has three categorical variables (`Sex`, with levels `Male` and `Female`, `Age`, with levels `Adult` and `Young`, and `Survival`, with levels `Alive` and `Dead`) and nine numerical variables that hold various aspects of the birds' anatomy, such as wingspread, weight, etc.
+
+*Question 1 (5 pts): Make a logistic regression model that can predict survival status from all other predictor variables. (Include the categorical predictors `Sex` and `Age`.) Then do backwards selection, removing the predictors with the highest P value one by one, until you are only left with predictors that have P<0.1. How many and which predictors remain in the final model?*
+
+```{r}
+# Your R code goes here.
+```
+Your discussion goes here.
+
+*Question 2 (2 pt): Make ROC curves for the complete model (using all predictors) and the final, selected model (using only predictors with P<0.1) from Question 1 and plot them jointly in one figure. Use the function `calc_ROC()` given below. How do the two ROC curves differ?*
+
+```{r}
+calc_ROC <- function(probabilities, known_truth, model.name=NULL)
+  {
+  outcome <- as.numeric(factor(known_truth))-1
+  pos <- sum(outcome) # total known positives
+  neg <- sum(1-outcome) # total known negatives
+  pos_probs <- outcome*probabilities # probabilities for known positives
+  neg_probs <- (1-outcome)*probabilities # probabilities for known negatives
+  true_pos <- sapply(probabilities,
+                     function(x) sum(pos_probs>=x)/pos) # true pos. rate
+  false_pos <- sapply(probabilities,
+                     function(x) sum(neg_probs>=x)/neg)
+  if (is.null(model.name))
+    result <- data.frame(true_pos, false_pos)
+  else
+    result <- data.frame(true_pos, false_pos, model.name)
+  result %>% arrange(false_pos, true_pos)
+  }
+
+# Your R code goes here.
+```
+Your discussion goes here.
+
+*Question 3 (3 pt): Now split the data set into 70% training data and 30% test data, fit the final model on the training data set, and then evaluate the performance of the model on the test data set by calculating the area under the ROC curve for the test and the training data set. Adapt the code from the class 13 worksheet do accomplish this. What do you find?*
+
+```{r}
+# Your R code goes here.
+```
+Your discussion goes here.
