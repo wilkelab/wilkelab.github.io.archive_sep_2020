@@ -179,37 +179,38 @@ calc_AUC &lt;- function(data, model, train_fraction)
 }
 
 # function that does repeated random subsampling validation
-subsample_validate &lt;- function(data, model, train_fraction, repetitions)
+subsample_validate &lt;- function(data, model, train_fraction, replicates)
 {
-  result &lt;- calc_AUC(data, model, train_fraction) # first iteration
-  for (i in 2:repetitions)
-  {
-    row &lt;- calc_AUC(data, model, train_fraction)
-    result &lt;- rbind(result, row)
-  }
-  result %&gt;% summarize(mean.train.AUC=mean(training.AUC), sd.train.AUC=sd(training.AUC), mean.test.AUC=mean(test.AUC), sd.test.AUC=sd(test.AUC)) %&gt;%
-    mutate(train_fraction=train_fraction, repetitions=repetitions)
+  reps &lt;- data.frame(rep=1:replicates) # dummy data frame to iterate over
+  reps %&gt;% group_by(rep) %&gt;% # iterate over all replicates
+    do(calc_AUC(data, model, train_fraction)) %&gt;% # run calc_AUC for each replicate
+    ungroup() %&gt;%     # ungroup so we can summarize
+    summarize(mean.train.AUC=mean(training.AUC),        # summarize
+              sd.train.AUC=sd(training.AUC),
+              mean.test.AUC=mean(test.AUC),
+              sd.test.AUC=sd(test.AUC)) %&gt;%
+    mutate(train_fraction=train_fraction, replicates=replicates) # add columns containing meta data
 }
 
 train_fraction &lt;- 0.2 # fraction of data for training purposes
-repetitions &lt;- 10 # how many times do we want to randomly sample
+replicates &lt;- 10 # how many times do we want to randomly sample
 set.seed(116) # random seed
 model &lt;- outcome ~ clump_thickness + uniform_cell_shape + bare_nuclei # the model we want to fit
-subsample_validate(biopsy, model, train_fraction, repetitions)</code></pre>
+subsample_validate(biopsy, model, train_fraction, replicates)</code></pre>
 <pre><code>## Source: local data frame [1 x 6]
 ## 
 ##   mean.train.AUC sd.train.AUC mean.test.AUC sd.test.AUC train_fraction
 ## 1         0.9946      0.00523        0.9917    0.001848            0.2
-## Variables not shown: repetitions (dbl)</code></pre>
+## Variables not shown: replicates (dbl)</code></pre>
 <pre class="r"><code># redo with a different model
 model2 &lt;- outcome ~ clump_thickness + uniform_cell_size + uniform_cell_shape + marg_adhesion + epithelial_cell_size + 
   bare_nuclei + bland_chromatin + normal_nucleoli + mitoses
-subsample_validate(biopsy, model2, train_fraction, repetitions)</code></pre>
+subsample_validate(biopsy, model2, train_fraction, replicates)</code></pre>
 <pre><code>## Source: local data frame [1 x 6]
 ## 
 ##   mean.train.AUC sd.train.AUC mean.test.AUC sd.test.AUC train_fraction
 ## 1         0.9978     0.002213        0.9786     0.01462            0.2
-## Variables not shown: repetitions (dbl)</code></pre>
+## Variables not shown: replicates (dbl)</code></pre>
 </div>
 
 
