@@ -20,12 +20,12 @@ Lab meetings are held Fridays from 11 am - 12:30 pm in MBB 3.204.
 |2/20/15 || Dakota    || N/A       ||
 |2/27/15 || Amir      || Dakota    ||
 |3/6/15  || -         ||  -        || Claus out of town
-|3/13/15 || Stephanie || Amir      ||
+|3/13/15 || Suyang    || Amir      ||
 |3/20/15 || -         ||  -        || Spring break
-|3/27/15 || Sean      || Stephanie ||
+|3/27/15 || Sean      || Suyang    ||
 |4/3/15  || Austin    || Eleisha   ||
-|4/10/15 || Suyang    || Austin    ||
-|4/17/15 || Eleisha   || Suyang    ||
+|4/10/15 || Stephanie || Austin    ||
+|4/17/15 || Eleisha   || Stephanie ||
 |4/24/15 || Dakota    || Sean      ||
 |5/1/15  || Amir      || Dakota    ||
 |5/8/15  || Claire    || Amir      ||
