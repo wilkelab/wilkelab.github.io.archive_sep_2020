@@ -132,6 +132,11 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
     - [HTML](/classes/SDS348/2015_spring_worksheets/class13.html)
     - [Solutions](/classes/SDS348/2015_spring_worksheets/class13_solutions.html)
 
+**14. Mar 5, 2015 – Installing and running python**
+
+* Download python from here: [https://store.continuum.io/cshop/anaconda/](https://store.continuum.io/cshop/anaconda/)
+* Official python tutorial: [https://docs.python.org/2/tutorial/](https://docs.python.org/2/tutorial/)
+* Many more tutorials are available by googling "python tutorial"
 
 ## Homeworks
 - Homework 1: [HW1.Rmd](/classes/SDS348/2015_spring_homeworks/HW1.Rmd) (due Jan 27, 2015) [Answer Key](/classes/SDS348/2015_spring_homeworks/HW1-solution.html) 
