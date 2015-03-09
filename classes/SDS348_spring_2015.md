@@ -132,7 +132,9 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
     - [HTML](/classes/SDS348/2015_spring_worksheets/class13.html)
     - [Solutions](/classes/SDS348/2015_spring_worksheets/class13_solutions.html)
 
-**14. Mar 5, 2015 – Installing and running python**
+**14. Mar 5, 2015 – Cancelled due to inclement weather**
+
+**15. Mar 10, 2015 – Installing and running python**
 
 * Download python from here: [https://store.continuum.io/cshop/anaconda/](https://store.continuum.io/cshop/anaconda/)
 * Official python tutorial: [https://docs.python.org/2/tutorial/](https://docs.python.org/2/tutorial/)
