@@ -154,7 +154,6 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
 ## Projects
 - Project 1: [Project1.Rmd](/classes/SDS348/2015_spring_projects/project1/Project1-updated.Rmd) (due Feb 24, 2015)
   
-The knitted HTML document **must** be turned in on paper, and the corresponding Rmarkdown document *must* be turned in on Canvas. Emailed submissions will not be accepted (although exceptions may be pre-arranged on a *case-by-case* basis.)
 
 ## Discussion sections
 
