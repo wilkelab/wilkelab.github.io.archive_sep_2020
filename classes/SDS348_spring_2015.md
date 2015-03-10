@@ -141,6 +141,7 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
 * Many more tutorials are available by googling "python tutorial"
 * For Mac users: optional TextWrangler download from here: [http://www.barebones.com/products/textwrangler/](http://www.barebones.com/products/textwrangler/)
 * For Mac/PC/Linux users: optional SublimeText download from here: [http://www.sublimetext.com/2](http://www.sublimetext.com/2)
+* UT Biocomputing 2015 class materials: [https://github.com/sjspielman/UTbiocomputing2015](https://github.com/sjspielman/UTbiocomputing2015)
 
 ## Homeworks
 - Homework 1: [HW1.Rmd](/classes/SDS348/2015_spring_homeworks/HW1.Rmd) (due Jan 27, 2015) [Answer Key](/classes/SDS348/2015_spring_homeworks/HW1-solution.html) 
