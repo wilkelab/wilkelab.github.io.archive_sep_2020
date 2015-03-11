@@ -169,3 +169,18 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
 **2. Jan. 28, 2015**
 
 * [Discussion 2: Introduction to ggplot2](/classes/SDS348/2015_spring_discussions/Discussion2.html)
+
+**3. March 11, 2015**
+
+* Python 1: working with python data structures. iPython notebook [here](classes/SDS348/2015_spring_discussions/Python1.ipynb)
+
+
+
+
+
+
+
+
+
+
+
