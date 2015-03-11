@@ -1,0 +1,113 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=4, fig.width=5)
+library(ggplot2)
+theme_set(theme_bw(base_size=12))
+library(dplyr)
+library(tidyr)
+library(grid)
+```
+## Project 2 
+*Enter your name and EID here*
+
+###Instructions
+Both this completed Rmarkdown document and its knitted HTML, converted to PDF, should be handed in on Canvas **no later than 12:30 pm on March 31st, 2015**. These two documents will be graded jointly, so they must be consistent (as in, don't change the Rmarkdown file without also updating the knitted HTML!).
+
+All results presented **must** have corresponding code. Any answers/results given without the corresponding R code that generated the result will be considered absent. All code reported in your final project document should work properly. Please bear in mind that **you will lose points** for the following:
+
++ printing entire data-frames
++ an R-code chunk with no comments
++ code that produces error messages
++ results without corresponding R code
++ extraneous code which does not contribute to the question (if code raises errors or you decide not to use it, you should delete it rather than simply commenting it out!)
+
+For this project, you will work with a dataset collected from Pima Native American women. Studies have shown that Pima women have a much higher incidence of Type II Diabetes than the general population. Since the 1960s, NIH researchers have periodically asked Pima women to undergo various medical tests in order to assess possible diabetes risk factors. Consequently, data on Pima women has proven useful for predicting how likely an individual is to develop diabetes. (Source: J. W. Smith, J. E. Everhart, W. C. Dickson, W. C. Knowler, and R. S. Johannes (1988). Using the ADAP learning algorithm to forecast the onset of diabetes mellitus. In Symposium on Computer Applications in Medical Care, 261–265.)
+
+
+```{r}
+##### Use these datasets for part 1 (described below) #####
+# Dataset to use specifically for training in Part 1
+pima_training <- read.csv("http://wilkelab.org/classes/SDS348/2015_spring_projects/project2/pima_training.csv")
+# Dataset to use specifically for testing your model in Part 1
+pima_test <- read.csv("http://wilkelab.org/classes/SDS348/2015_spring_projects/project2/pima_test.csv")
+
+##### Use this dataset for part 2 (described below) #####
+# Complete Pima data, with a single observation per individual
+pima_full <- read.csv("http://wilkelab.org/classes/SDS348/2015_spring_projects/project2/pima.csv")
+
+head(pima_full)
+```
+The column contents are as follows:
+
++ **npreg**: number of times pregnant
++ **glucose**: plasma glucose concentration at 2 hours in an oral glucose tolerance test (units: mg/dL)
++ **dpb**: diastolic blood pressure (units: mm Hg)
++ **skin**: triceps skin-fold thickness (units: mm)
++ **insulin**: 2-hour serum insulin level (units: $\mu$U/mL)
++ **bmi**: Body Mass Index
++ **age**: age in years
++ **diabetic**: whether or not the individual has diabetes
+
+
+
+Your goal for this project is to analyze the Pima women dataset using several statistical approaches we have learned, in two parts:
+
+**Part 1 (60 points)**. We have divided the dataset, which consists of observations from 768 individuals, into a training and a test data set. Fit a logistic regression model (to predict diabetes incidence) on the training data set. When building your model, use backwards selection to choose predictors which are significant at your chosen significance level (be sure to report your chosen value!). Your code should be appropriately commented with high-level statements about the code's function.
+
+Using your final model, predict the outcome on the test data set, and plot and discuss your results. You should have two final plots: a plot with two ROC curves for the training and test data each, and a plot of the fitted probability of diabetes incidence as a function of the predictors, colored by diabetes, on the test data. Your discussion should, at least, cover the differences and similarities in model performance on the training vs. test data (including AUC) as well as a clear interpretation of each plot. Please limit your discussion to a maximum of 8 sentences.
+
+
+**Part 2 (40 points)**. Think of two questions to ask about this data set (for this, you are welcome to use either the training, test, or full data set). For each question, perform an exploratory statistical analysis (PCA, k-means, logistic regression, linear model, etc.) with a corresponding figure. Discuss your findings, in particular how your analysis' results reveal the trend of interest. Please limit each question's discussion to a maximum of 5 sentences.
+
+Project responses should be entered below.
+
+***  
+
+```{r}
+# This R code chunk contains the calc_ROC function.
+calc_ROC <- function(probabilities, known_truth, model.name=NULL)
+  {
+  outcome <- as.numeric(factor(known_truth))-1
+  pos <- sum(outcome) # total known positives
+  neg <- sum(1-outcome) # total known negatives
+  pos_probs <- outcome*probabilities # probabilities for known positives
+  neg_probs <- (1-outcome)*probabilities # probabilities for known negatives
+  true_pos <- sapply(probabilities,
+                     function(x) sum(pos_probs>=x)/pos) # true pos. rate
+  false_pos <- sapply(probabilities,
+                     function(x) sum(neg_probs>=x)/neg)
+  if (is.null(model.name))
+    result <- data.frame(true_pos, false_pos)
+  else
+    result <- data.frame(true_pos, false_pos, model.name)
+  result %>% arrange(false_pos, true_pos)
+  }
+```
+
+
+**Part 1**
+```{r}
+# R code for part 1 goes here.
+```
+*Discussion for part 1 goes here.*    
+
+<br><br><br>
+
+**Part 2**
+
+*Question 1 goes here.*
+```{r}
+# R code for question 1 goes here
+```
+*Discussion for question 1 goes here.*
+
+
+<br> 
+
+*Question 2 goes here.*
+```{r}
+# R code for question 2 goes here
+```
+*Discussion for question 2 goes here.*
+
+
