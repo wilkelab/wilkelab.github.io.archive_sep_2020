@@ -172,7 +172,7 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
 
 **3. March 11, 2015**
 
-* Python 1: working with python data structures. iPython notebook [here]()
+* Python 1: working with python data structures. iPython notebook [here](/classes/SDS348/2015_spring_discussions/Python1.ipynb)
 
 
 
