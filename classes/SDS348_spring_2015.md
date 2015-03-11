@@ -144,7 +144,6 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
 * For Mac/PC/Linux users: optional SublimeText download from here: [http://www.sublimetext.com/2](http://www.sublimetext.com/2)
 * UT Biocomputing 2015 class materials: [https://github.com/sjspielman/UTbiocomputing2015](https://github.com/sjspielman/UTbiocomputing2015)
 
-* [Lesson Plan]
 
 **16. Mar 12, 2015 – Data structures in python**
 
