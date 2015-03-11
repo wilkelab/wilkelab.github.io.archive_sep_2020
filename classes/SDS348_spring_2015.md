@@ -136,6 +136,7 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
 
 **15. Mar 10, 2015 – Installing and running python**
 
+* [Python I Lesson Plan](/classes/SDS348/2015_spring_slides/class15_python1.pdf)
 * Download python from here: [https://store.continuum.io/cshop/anaconda/](https://store.continuum.io/cshop/anaconda/)
 * Official python tutorial: [https://docs.python.org/2/tutorial/](https://docs.python.org/2/tutorial/)
 * Many more tutorials are available by googling "python tutorial"
@@ -143,11 +144,13 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
 * For Mac/PC/Linux users: optional SublimeText download from here: [http://www.sublimetext.com/2](http://www.sublimetext.com/2)
 * UT Biocomputing 2015 class materials: [https://github.com/sjspielman/UTbiocomputing2015](https://github.com/sjspielman/UTbiocomputing2015)
 
+* [Lesson Plan]
+
 **16. Mar 12, 2015 – Data structures in python**
 
 * Data structures iPython Notebook worksheet [here](/classes/SDS348/2015_spring_worksheets/Python1.ipynb/)
 * Data structures cheatsheet [here](/classes/SDS348/2015_spring_worksheets/python_datastructures.pdf/)
-
+* [Python I Lesson Plan](/classes/SDS348/2015_spring_slides/class15_python1.pdf)
 
 ## Homeworks
 - Homework 1: [HW1.Rmd](/classes/SDS348/2015_spring_homeworks/HW1.Rmd) (due Jan 27, 2015) [Answer Key](/classes/SDS348/2015_spring_homeworks/HW1-solution.html) 
