@@ -143,6 +143,12 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
 * For Mac/PC/Linux users: optional SublimeText download from here: [http://www.sublimetext.com/2](http://www.sublimetext.com/2)
 * UT Biocomputing 2015 class materials: [https://github.com/sjspielman/UTbiocomputing2015](https://github.com/sjspielman/UTbiocomputing2015)
 
+**16. Mar 12, 2015 – Data structures in python**
+
+* Data structures iPython Notebook worksheet [here](/classes/SDS348/2015_spring_worksheets/Python1.ipynb/)
+* Data structures cheatsheet [here](/classes/SDS348/2015_spring_worksheets/python_datastructures.pdf/)
+
+
 ## Homeworks
 - Homework 1: [HW1.Rmd](/classes/SDS348/2015_spring_homeworks/HW1.Rmd) (due Jan 27, 2015) [Answer Key](/classes/SDS348/2015_spring_homeworks/HW1-solution.html) 
 - Homework 2: [HW2.Rmd](/classes/SDS348/2015_spring_homeworks/HW2.Rmd) (due Feb 3, 2015) [Answer Key](/classes/SDS348/2015_spring_homeworks/HW2-solution.html) 
@@ -151,6 +157,7 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
 - Homework 5: [HW5.Rmd](/classes/SDS348/2015_spring_homeworks/HW5.Rmd) (due Mar 3, 2015)  [Answer Key](/classes/SDS348/2015_spring_homeworks/HW5-solution.html)
 - Homework 6: [HW6.Rmd](/classes/SDS348/2015_spring_homeworks/HW6.Rmd) (due Mar 10, 2015) [Answer Key](/classes/SDS348/2015_spring_homeworks/HW6-solution.html)
 - Homework 7: [HW7.ipynb](/classes/SDS348/2015_spring_homeworks/HW7.ipynb) (due Mar 24, 2015)
+
 
 
 
