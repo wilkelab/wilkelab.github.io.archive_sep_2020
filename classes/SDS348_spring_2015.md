@@ -164,6 +164,7 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
 
 ## Projects
 - Project 1: [Project1.Rmd](/classes/SDS348/2015_spring_projects/project1/Project1-updated.Rmd) (due Feb 24, 2015)
+- Project 2: [Project2.Rmd](/classes/SDS348/2015_spring_projects/project2/Project2.Rmd)         (due Mar 31, 2015)
   
 
 ## Discussion sections
