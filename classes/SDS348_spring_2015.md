@@ -147,8 +147,8 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
 
 **16. Mar 12, 2015 – Data structures in python**
 
-* Data structures iPython Notebook worksheet [here](/classes/SDS348/2015_spring_worksheets/Python1.ipynb/)
-* Data structures cheatsheet [here](/classes/SDS348/2015_spring_worksheets/python_datastructures.pdf/)
+* Data structures iPython Notebook worksheet [here](/classes/SDS348/2015_spring_worksheets/Python1.ipynb)
+* Data structures cheatsheet [here](/classes/SDS348/2015_spring_worksheets/python_datastructures.pdf)
 * [Python I Lesson Plan](/classes/SDS348/2015_spring_slides/class15_python1.pdf)
 
 ## Homeworks
