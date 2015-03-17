@@ -108,7 +108,7 @@ for item in my_list:
 
 <br><br>
 #### Examples: Combining if and for
-```
+```python
 # Find the sum of all the multiples of three below (and including!) 30.
 sum_div3 = 0.
 for x in range(1, 31):
