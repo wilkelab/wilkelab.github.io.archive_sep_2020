@@ -2,7 +2,54 @@
 
 
 <br><br>
-##FOR is for iterating over values in a list, string, dictionary, etc.
+### `if` is the basic decision making tool
+```
+# if can be used on its own
+if <logical statement is True>:
+	do this command
+	do that command
+	
+# if can be used with an "else". Code in "else" runs when the if condition is False.
+if <logical statement is True>:
+    do this command
+else:
+    do that command
+
+# if can be used with "elif" statements to test multiple conditions
+# you can have as many elif's as you want!
+# Once one condition is true, the rest of the if/elif/else construct will *not be executed*
+if <logical statement is True>:
+    do this command
+elif <some other logical statement is True>:
+    do that command
+elif <yet another logical statement is True>:
+    do those commands
+else: 
+    do this here command
+```
+
+Examples
+```python
+# Check if a certain sequence exists in a bigger sequence
+sequence='AGGGTGTGTCCTGA'
+if 'TGT' in sequence:
+	print "AGG is in the sequence!"
+if 'ACC' in sequence:
+    print "ACC is in the sequence!"
+
+# Test the sequence size
+if len(sequence) < 10:
+    print "This is a small sequence."
+elif len(sequence) > 100:
+    print "This is a big sequence."
+else:
+    print "This sequence is medium-sized."
+
+```
+
+
+<br><br>
+### `for` is for iterating over values in a list, string, dictionary, etc.
 ```														
 for item in container:
 	do this command
@@ -10,7 +57,7 @@ for item in container:
 	#return to for statement and move to next item
 ```
 
-```
+```python
 # Loop over a list
 for x in [1,2,3,4]:
     print x
@@ -46,51 +93,7 @@ for item in my_list:
     i += 1 # Use +=, -=, *=, /= to modify the variable in place!
 ```
 
-<br><br>
-##IF is the basic decision making tool
-```
-# if can be used on its own
-if <logical statement is True>:
-	do this command
-	do that command
-	
-# if can be used with an "else". Code in "else" runs when the if condition is False.
-if <logical statement is True>:
-    do this command
-else:
-    do that command
 
-# if can be used with "elif" statements to test multiple conditions
-# you can have as many elif's as you want!
-# Once one condition is true, the rest of the if/elif/else construct will *not be executed*
-if <logical statement is True>:
-    do this command
-elif <some other logical statement is True>:
-    do that command
-elif <yet another logical statement is True>:
-    do those commands
-else: 
-    do this here command
-```
-
-Example: check to see if a certain sequence is within a sequence
-```python
-# Check if a certain sequence exists in a bigger sequence
-sequence='AGGGTGTGTCCTGA'
-if 'TGT' in sequence:
-	print "AGG is in the sequence!"
-if 'ACC' in sequence:
-    print "ACC is in the sequence!"
-
-# Test the sequence size
-if len(sequence) < 10:
-    print "This is a small sequence."
-elif len(sequence) > 100:
-    print "This is a big sequence."
-else:
-    print "This sequence is medium-sized."
-
-```
 <br><br>
 ##Examples: Combining if and for
 ```
