@@ -2,7 +2,7 @@
 
 
 <br><br>
-### `if` is the basic decision making tool
+## `if` is the basic decision making tool
 ```
 # if can be used on its own
 if <logical statement is True>:
@@ -60,7 +60,7 @@ else:
 
 
 <br><br>
-### `for` is for iterating over values in a list, string, dictionary, etc.
+## `for` is for iterating over values in a list, string, dictionary, etc.
 ```														
 for item in container:
 	do this command
