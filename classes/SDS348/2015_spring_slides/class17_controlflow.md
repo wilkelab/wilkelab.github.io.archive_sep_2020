@@ -109,6 +109,12 @@ for item in my_list:
 <br><br>
 #### Examples: Combining if and for
 ```
+# Find the sum of all the multiples of three below (and including!) 30.
+sum_div3 = 0.
+for x in range(1, 31):
+	if x%3 == 0:
+		sum_div3 += x
+		
 # test whether sequence is RNA or DNA by seeing if there is a uracil
 seqs=['AUUGAC', 'AGACT', 'CGATAGCA', 'UCCAGAC', 'UGGACU', 'TAGCAGA']
 for seq in seqs:
@@ -120,10 +126,4 @@ for seq in seqs:
 	    print seq, "has both T and U. I don't know what it is!"
 	elif 'T' not in seq and 'U' not in seq:
 	    print seq, "has neither T nor U. I don't know what it is!"
-
-# Sum the numbers from 1-30, if the number is divisible by 3
-sum = 0.
-for x in range(1, 31):
-	if x%3 == 0:
-		sum += x
 ```
