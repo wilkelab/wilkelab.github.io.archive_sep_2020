@@ -28,8 +28,20 @@ else:
     do this here command
 ```
 
-Examples
+#### `if` examples
 ```python
+a = 6
+b = 22
+if a > b:
+	print a, "is greater than", b
+elif a < b:
+	print a, "is less than", b
+else:
+	print a, "is equal to", b
+
+
+
+
 # Check if a certain sequence exists in a bigger sequence
 sequence='AGGGTGTGTCCTGA'
 if 'TGT' in sequence:
@@ -38,13 +50,12 @@ if 'ACC' in sequence:
     print "ACC is in the sequence!"
 
 # Test the sequence size
-if len(sequence) < 10:
+if len(sequence) <= 10:
     print "This is a small sequence."
-elif len(sequence) > 100:
+elif len(sequence) >= 100:
     print "This is a big sequence."
 else:
     print "This sequence is medium-sized."
-
 ```
 
 
@@ -57,6 +68,7 @@ for item in container:
 	#return to for statement and move to next item
 ```
 
+#### Basic for loops
 ```python
 # Loop over a list
 for x in [1,2,3,4]:
@@ -75,11 +87,11 @@ for x in d:
 
 
 
-Examples
+#### `for` loop examples
 ```python
 # The range() function is often used when you need to loop a certain number of times. 
 for i in range(20):
-	print i 
+	print i # will print numbers 0 - 19 (range works like indexing!)
 	
 # Loop over a list
 my_list = ["a", "b", "c", "d", "e"]
@@ -95,7 +107,7 @@ for item in my_list:
 
 
 <br><br>
-##Examples: Combining if and for
+#### Examples: Combining if and for
 ```
 # test whether sequence is RNA or DNA by seeing if there is a uracil
 seqs=['AUUGAC', 'AGACT', 'CGATAGCA', 'UCCAGAC', 'UGGACU', 'TAGCAGA']
@@ -108,4 +120,10 @@ for seq in seqs:
 	    print seq, "has both T and U. I don't know what it is!"
 	elif 'T' not in seq and 'U' not in seq:
 	    print seq, "has neither T nor U. I don't know what it is!"
+
+# Sum the numbers from 1-30, if the number is divisible by 3
+sum = 0.
+for x in range(1, 31):
+	if x%3 == 0:
+		sum += x
 ```
