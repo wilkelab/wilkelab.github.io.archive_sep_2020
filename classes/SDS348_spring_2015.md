@@ -151,6 +151,14 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
 * Data structures cheatsheet [here](/classes/SDS348/2015_spring_worksheets/python_datastructures.pdf)
 * [Python I Lesson Plan](/classes/SDS348/2015_spring_slides/class15_python1.pdf)
 
+
+**17. Mar 12, 2015 – Control flow (if/for) in python**
+
+* Control flow lesson plan [here](/classes/SDS348/2015_spring_slides/class17_controlflow.html)
+* Worksheet [here](/classes/SDS348/2015_spring_worksheetsclass17_controlflow_wksht.ipynb)
+
+
+
 ## Homeworks
 - Homework 1: [HW1.Rmd](/classes/SDS348/2015_spring_homeworks/HW1.Rmd) (due Jan 27, 2015) [Answer Key](/classes/SDS348/2015_spring_homeworks/HW1-solution.html) 
 - Homework 2: [HW2.Rmd](/classes/SDS348/2015_spring_homeworks/HW2.Rmd) (due Feb 3, 2015) [Answer Key](/classes/SDS348/2015_spring_homeworks/HW2-solution.html) 
