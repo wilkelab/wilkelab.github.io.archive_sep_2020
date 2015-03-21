@@ -152,7 +152,7 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
 * [Python I Lesson Plan](/classes/SDS348/2015_spring_slides/class15_python1.pdf)
 
 
-**17. Mar 12, 2015 – Control flow (if/for) in python**
+**17. Mar 24, 2015 – Control flow (if/for) in python**
 
 * Control flow lesson plan [here](/classes/SDS348/2015_spring_slides/class17_controlflow.html)
 * Worksheet 
