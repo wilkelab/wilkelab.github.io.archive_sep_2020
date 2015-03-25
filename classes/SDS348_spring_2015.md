@@ -165,7 +165,7 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
 * Functions lesson plan [here](/classes/SDS348/2015_spring_slides/class18_functions.html)
 * Worksheet 
   * [iPython Notebook format](/classes/SDS348/2015_spring_worksheets/class18_functions_wksht.ipynb) 
-  * [HTML format](/classes/SDS348/2015_spring_worksheets/class17_functions_wksht.html)
+  * [HTML format](/classes/SDS348/2015_spring_worksheets/class18_functions_wksht.html)
 
 
 
