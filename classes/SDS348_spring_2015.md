@@ -155,9 +155,17 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
 **17. Mar 24, 2015 – Control flow (if/for) in python**
 
 * Control flow lesson plan [here](/classes/SDS348/2015_spring_slides/class17_controlflow.html)
-* Worksheet 
+* Worksheet
   * [iPython Notebook format](/classes/SDS348/2015_spring_worksheets/class17_controlflow_wksht.ipynb) 
   * [HTML format](/classes/SDS348/2015_spring_worksheets/class17_controlflow_wksht.html)
+  * [Solutions](/classes/SDS348/2015_spring_worksheets/class17_controlflow_wksht_solutions.ipynb)
+
+**18. Mar 26, 2015 – Functions in python**
+
+* Functions lesson plan [here](/classes/SDS348/2015_spring_slides/class18_functions.html)
+* Worksheet 
+  * [iPython Notebook format](/classes/SDS348/2015_spring_worksheets/class18_functions_wksht.ipynb) 
+  * [HTML format](/classes/SDS348/2015_spring_worksheets/class17_functions_wksht.html)
 
 
 
