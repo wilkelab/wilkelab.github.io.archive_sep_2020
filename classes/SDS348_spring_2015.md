@@ -186,7 +186,9 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
 - Project 2: [Project2.Rmd](/classes/SDS348/2015_spring_projects/project2/Project2.rmd)         (due Mar 31, 2015)
   - Project 2 Clarifications:
     - Regarding ROC curves for part 1: you should make a single plot containing two ROC curves. Both ROC curves should assess performance of the final, selected model. One of the curves should be made from the training data, and the other should be made from the test data. 
-    - Hint for making the logistic curve in part 1 - you will need to use the `predict()` function!
+    - Hint for making the logistic curve in part 1 - you will need to use the `predict()` (Class 13!) function!
+      - The general code `predict(model, data> type = "response")` will return an array of the **fitted values** (probabilities) from the given model fit to the given data.
+      - The general code `predict(model, data)` will return an array of the **linear predictors** from the given model fit to the given data. 
 
 ## Discussion sections
 
