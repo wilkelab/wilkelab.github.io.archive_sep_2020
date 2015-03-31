@@ -175,6 +175,7 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
 
 * Biopython website: [http://biopython.org](http://biopython.org)
 * Official Biopython tutorial: [http://biopython.org/DIST/docs/tutorial/Tutorial.html](http://biopython.org/DIST/docs/tutorial/Tutorial.html)
+* NCBI Entrez/PubMed website: [http://www.ncbi.nlm.nih.gov/pubmed](http://www.ncbi.nlm.nih.gov/pubmed)
 * In-class worksheet:
   - [iPython Notebook](/classes/SDS348/2015_spring_worksheets/class19.ipynb) 
   - [HTML](/classes/SDS348/2015_spring_worksheets/class19.html)
