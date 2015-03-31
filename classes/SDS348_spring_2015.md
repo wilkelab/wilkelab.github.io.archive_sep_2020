@@ -155,9 +155,17 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
 **17. Mar 24, 2015 – Control flow (if/for) in python**
 
 * Control flow lesson plan [here](/classes/SDS348/2015_spring_slides/class17_controlflow.html)
-* Worksheet 
+* Worksheet
   * [iPython Notebook format](/classes/SDS348/2015_spring_worksheets/class17_controlflow_wksht.ipynb) 
   * [HTML format](/classes/SDS348/2015_spring_worksheets/class17_controlflow_wksht.html)
+  * [Solutions](/classes/SDS348/2015_spring_worksheets/class17_controlflow_wksht_solutions.ipynb)
+
+**18. Mar 26, 2015 – Functions in python**
+
+* Functions lesson plan [here](/classes/SDS348/2015_spring_slides/class18_functions.html)
+* Worksheet 
+  * [iPython Notebook format](/classes/SDS348/2015_spring_worksheets/class18_functions_wksht.ipynb) 
+  * [HTML format](/classes/SDS348/2015_spring_worksheets/class18_functions_wksht.html)
 
 
 
@@ -168,9 +176,9 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
 - Homework 4: [HW4.Rmd](/classes/SDS348/2015_spring_homeworks/HW4.Rmd) (due Feb 17, 2015) [Answer Key](/classes/SDS348/2015_spring_homeworks/HW4-solution.html) 
 - Homework 5: [HW5.Rmd](/classes/SDS348/2015_spring_homeworks/HW5.Rmd) (due Mar 3, 2015)  [Answer Key](/classes/SDS348/2015_spring_homeworks/HW5-solution.html)
 - Homework 6: [HW6.Rmd](/classes/SDS348/2015_spring_homeworks/HW6.Rmd) (due Mar 10, 2015) [Answer Key](/classes/SDS348/2015_spring_homeworks/HW6-solution.html)
-- Homework 7: [HW7.ipynb](/classes/SDS348/2015_spring_homeworks/HW7.ipynb) (due **Thursday Mar 26**, 2015) 
+- Homework 7: [HW7.ipynb](/classes/SDS348/2015_spring_homeworks/HW7.ipynb) (due **Thursday Mar 26**, 2015)  [Answer Key](/classes/SDS348/2015_spring_homeworks/HW7-solution.html)
     - HW7 in HTML format: [HW7.html](/classes/SDS348/2015_spring_homeworks/HW7.html) 
-
+- Homework 8: [HW8.ipynb](/classes/SDS348/2015_spring_homeworks/HW8.ipynb) [HW8.html](/classes/SDS348/2015_spring_homeworks/HW8.html) (due Apr 7, 2015)
 
 
 ## Projects
@@ -178,7 +186,9 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
 - Project 2: [Project2.Rmd](/classes/SDS348/2015_spring_projects/project2/Project2.rmd)         (due Mar 31, 2015)
   - Project 2 Clarifications:
     - Regarding ROC curves for part 1: you should make a single plot containing two ROC curves. Both ROC curves should assess performance of the final, selected model. One of the curves should be made from the training data, and the other should be made from the test data. 
-  
+    - Hint for making the logistic curve in part 1 - you will need to use the `predict()` (Class 11!) function!
+      - The general code `predict(model, data, type = "response")` will return an array of the **fitted values** (probabilities) from the given model fit to the given data.
+      - The general code `predict(model, data)` will return an array of the **linear predictors** from the given model fit to the given data. 
 
 ## Discussion sections
 
