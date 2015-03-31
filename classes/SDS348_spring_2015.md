@@ -149,8 +149,9 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
 * Introduction to Python lesson plan: [class15_python1.pdf](/classes/SDS348/2015_spring_slides/class15_python1.pdf)
 * Data structures cheatsheet: [python_datastructures.pdf](/classes/SDS348/2015_spring_worksheets/python_datastructures.pdf)
 * In-class worksheet:
-    - [iPython Notebook](/classes/SDS348/2015_spring_worksheets/Python1.ipynb)
-    - [Solutions](/classes/SDS348/2015_spring_worksheets/Python1-solutions.ipynb)
+    - [iPython Notebook](/classes/SDS348/2015_spring_worksheets/class16.ipynb)
+    - [HTML](/classes/SDS348/2015_spring_worksheets/class16.html)
+    - [Solutions](/classes/SDS348/2015_spring_worksheets/class16_solutions.html)
 
 
 **17. Mar 24, 2015 – Control flow (if/for) in python**
