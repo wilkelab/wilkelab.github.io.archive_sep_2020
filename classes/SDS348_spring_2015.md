@@ -220,6 +220,11 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
 * Python 1: working with python data structures. [here](/classes/SDS348/2015_spring_discussions/Python1.html)
 
 
+**4. April 1, 2015**
+
+* Debugging python and fetching records from NCBI. 
+  + [iPython Notebook](/classes/SDS348/2015_spring_discussions/discussion_4.1.15.ipynb)
+  + [HTML format](/classes/SDS348/2015_spring_discussions/discussion_4.1.15.html)
 
 
 
