@@ -290,8 +290,8 @@ Influenza A virus (A/Texas/36/2013(H1N1)) segment 4 hemagglutinin (HA) gene, com
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Exercise-1:">Exercise 1:<a class="anchor-link" href="#Exercise-1:">&#182;</a></h2><p>The above example downloaded the sequence data and directly parsed it into sequence records. In practice, we would normally want to store the downloaded data in a file first, because we may want to do multiple analyses with the same data and don't want to download the data over and over.</p>
-<p>In the above code, you can use <code>handle.read()</code> to store the downloaded data in a python variable. You can then use the <code>open()</code> function to create an output file handle and use the <code>write()</code> function to store the data into that file. Name your file <code>influenza_HA.gb</code>.</p>
-<p>A good introduction to python file operations is available <a href="http://www.pythonforbeginners.com/files/reading-and-writing-files-in-python">here.</a></p>
+<p>In the above code, you can use <code>handle.read()</code> to store the downloaded data in a python variable. You can then use the <code>open()</code> function to create an output file handle and use the <code>write()</code> function to store the data into that file. Name your file <code>influenza_HA.gb</code>. A good introduction to python file operations is available <a href="http://www.pythonforbeginners.com/files/reading-and-writing-files-in-python">here.</a></p>
+<p>Then, read the data back in from the file you have created, and use <code>SeqIO.parse()</code> to turn it into a list of records.</p>
 
 </div>
 </div>
