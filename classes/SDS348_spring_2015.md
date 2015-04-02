@@ -179,7 +179,13 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
 * In-class worksheet:
   - [iPython Notebook](/classes/SDS348/2015_spring_worksheets/class19.ipynb) 
   - [HTML](/classes/SDS348/2015_spring_worksheets/class19.html)
+  - [Solutions](/classes/SDS348/2015_spring_worksheets/class19_solutions.html)
 
+**20. Apr. 2, 2015 – More Biopython**
+
+* In-class worksheet:
+  - [iPython Notebook](/classes/SDS348/2015_spring_worksheets/class20.ipynb) 
+  - [HTML](/classes/SDS348/2015_spring_worksheets/class20.html)
 
 
 ## Homeworks
