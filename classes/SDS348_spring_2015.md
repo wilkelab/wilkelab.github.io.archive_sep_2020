@@ -186,7 +186,7 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
 * In-class worksheet:
   - [iPython Notebook](/classes/SDS348/2015_spring_worksheets/class20.ipynb) 
   - [HTML](/classes/SDS348/2015_spring_worksheets/class20.html)
-  - [Introduction to file input/output](/classes/SDS348/2015_spring_worksheets/file_io.html)
+  - [Introduction to file input/output](/classes/SDS348/2015_spring_slides/file_io.html)
 
 
 ## Homeworks
