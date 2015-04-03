@@ -183,13 +183,13 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
 
 **20. Apr. 2, 2015 – More Biopython, File Input/Output**
 
+* Introduction to file input/output: [file_io.html](/classes/SDS348/2015_spring_slides/file_io.html)
 * Tutorial on reading and writing files in python: [http://www.pythonforbeginners.com/files/reading-and-writing-files-in-python](http://www.pythonforbeginners.com/files/reading-and-writing-files-in-python)
 * Official python documentation on file operations: [https://docs.python.org/2/tutorial/inputoutput.html#reading-and-writing-files](https://docs.python.org/2/tutorial/inputoutput.html#reading-and-writing-files)
 * In-class worksheet:
   - [iPython Notebook](/classes/SDS348/2015_spring_worksheets/class20.ipynb) 
   - [HTML](/classes/SDS348/2015_spring_worksheets/class20.html)
   - [Solutions](/classes/SDS348/2015_spring_worksheets/class20_solutions.html)
-
 
 ## Homeworks
 - Homework 1: [HW1.Rmd](/classes/SDS348/2015_spring_homeworks/HW1.Rmd) (due Jan 27, 2015) [Answer Key](/classes/SDS348/2015_spring_homeworks/HW1-solution.html) 
