@@ -191,7 +191,7 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
   - [HTML](/classes/SDS348/2015_spring_worksheets/class20.html)
   - [Solutions](/classes/SDS348/2015_spring_worksheets/class20_solutions.html)
 
-**20. Apr. 7, 2015 – Working with genomes**
+**21. Apr. 7, 2015 – Working with genomes**
 
 * In-class worksheet:
   - [iPython Notebook](/classes/SDS348/2015_spring_worksheets/class21.ipynb) 
