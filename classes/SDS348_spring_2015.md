@@ -241,6 +241,7 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
 * Creating csv files from python (which can be input into R!) 
   + [iPython Notebook](/classes/SDS348/2015_spring_discussions/discussion_4.8.15.ipynb)
   + [HTML format](/classes/SDS348/2015_spring_discussions/discussion_4.8.15.html)
+  + [Sequence file for processing](/classes/SDS348/2015_spring_discussions/pb2_human.fasta)
 
 
 
