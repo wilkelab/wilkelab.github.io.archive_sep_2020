@@ -196,6 +196,15 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
 * In-class worksheet:
   - [iPython Notebook](/classes/SDS348/2015_spring_worksheets/class21.ipynb) 
   - [HTML](/classes/SDS348/2015_spring_worksheets/class21.html)
+  - [Solutions](/classes/SDS348/2015_spring_worksheets/class21_solutions.html)
+
+**22. Apr. 9, 2015 – Regular expressions**
+
+* Regular expression tutorial: [https://developers.google.com/edu/python/regular-expressions](https://developers.google.com/edu/python/regular-expressions)
+* Official python regular expression documentation: [https://docs.python.org/2/howto/regex.html](https://docs.python.org/2/howto/regex.html)
+* Regular expression cheatsheet: [cheatsheet.pdf](https://github.com/tartley/python-regex-cheatsheet/releases/download/v0.3.3/cheatsheet.pdf)
+* Python regular expression editor: [http://pythex.org/](http://pythex.org/)
+
 
 ## Homeworks
 - Homework 1: [HW1.Rmd](/classes/SDS348/2015_spring_homeworks/HW1.Rmd) (due Jan 27, 2015) [Answer Key](/classes/SDS348/2015_spring_homeworks/HW1-solution.html) 
