@@ -204,7 +204,6 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
 * Official python regular expression documentation: [https://docs.python.org/2/howto/regex.html](https://docs.python.org/2/howto/regex.html)
 * Regular expression cheatsheet: [cheatsheet.pdf](https://github.com/tartley/python-regex-cheatsheet/releases/download/v0.3.3/cheatsheet.pdf)
 * Python regular expression editor: [http://pythex.org/](http://pythex.org/)
-* Regular expression tester: [http://regexpal.com](http://regexpal.com)
 * In-class worksheet:
   - [iPython Notebook](/classes/SDS348/2015_spring_worksheets/class22.ipynb) 
   - [HTML](/classes/SDS348/2015_spring_worksheets/class22.html)
