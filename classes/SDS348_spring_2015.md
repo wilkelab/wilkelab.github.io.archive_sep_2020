@@ -229,6 +229,9 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
     - Hint for making the logistic curve in part 1 - you will need to use the `predict()` (Class 11!) function!
       - The general code `predict(model, data, type = "response")` will return an array of the **fitted values** (probabilities) from the given model fit to the given data.
       - The general code `predict(model, data)` will return an array of the **linear predictors** from the given model fit to the given data. 
+- Project 3
+    - Link to a list of datasets in R and R packages: [http://vincentarelbundock.github.io/Rdatasets/datasets.html](http://vincentarelbundock.github.io/Rdatasets/datasets.html)
+
 
 ## Discussion sections
 
