@@ -207,7 +207,13 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
 * In-class worksheet:
   - [iPython Notebook](/classes/SDS348/2015_spring_worksheets/class22.ipynb) 
   - [HTML](/classes/SDS348/2015_spring_worksheets/class22.html)
+  - [Solutions](/classes/SDS348/2015_spring_worksheets/class22_solutions.html)
 
+**23. Apr. 14, 2015 – Regular expressions**
+
+* In-class worksheet:
+  - [iPython Notebook](/classes/SDS348/2015_spring_worksheets/class23.ipynb) 
+  - [HTML](/classes/SDS348/2015_spring_worksheets/class23.html)
 
 ## Homeworks
 - Homework 1: [HW1.Rmd](/classes/SDS348/2015_spring_homeworks/HW1.Rmd) (due Jan 27, 2015) [Answer Key](/classes/SDS348/2015_spring_homeworks/HW1-solution.html) 
