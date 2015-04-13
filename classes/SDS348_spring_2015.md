@@ -243,29 +243,29 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
 
 ## Discussion sections
 
-**1. Jan. 21, 2015**
+**Jan. 21, 2015**
 
 * [Discussion 1: R and Biostatistics Review](/classes/SDS348/2015_spring_discussions/Discussion1.html)
 * [R colors PDF](http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf) 
 
 
-**2. Jan. 28, 2015**
+**Jan. 28, 2015**
 
 * [Discussion 2: Introduction to ggplot2](/classes/SDS348/2015_spring_discussions/Discussion2.html)
 
-**3. March 11, 2015**
+**March 11, 2015**
 
 * Python 1: working with python data structures. [here](/classes/SDS348/2015_spring_discussions/Python1.html)
 
 
-**4. April 1, 2015**
+**April 1, 2015**
 
 * Debugging python and fetching records from NCBI. 
   + [iPython Notebook](/classes/SDS348/2015_spring_discussions/discussion_4.1.15.ipynb)
   + [HTML format](/classes/SDS348/2015_spring_discussions/discussion_4.1.15.html)
 
 
-**5. April 8, 2015**
+**April 8, 2015**
 
 * Creating csv files from python (which can be input into R!) 
   + [iPython Notebook](/classes/SDS348/2015_spring_discussions/discussion_4.8.15.ipynb)
