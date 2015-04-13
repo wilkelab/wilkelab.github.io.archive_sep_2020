@@ -224,7 +224,7 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
 - Homework 6: [HW6.Rmd](/classes/SDS348/2015_spring_homeworks/HW6.Rmd) (due Mar 10, 2015) [Answer Key](/classes/SDS348/2015_spring_homeworks/HW6-solution.html)
 - Homework 7: [HW7.ipynb](/classes/SDS348/2015_spring_homeworks/HW7.ipynb) (due **Thursday Mar 26**, 2015)  [Answer Key](/classes/SDS348/2015_spring_homeworks/HW7-solution.html)
     - HW7 in HTML format: [HW7.html](/classes/SDS348/2015_spring_homeworks/HW7.html) 
-- Homework 8: [HW8.ipynb](/classes/SDS348/2015_spring_homeworks/HW8.ipynb) [HW8.html](/classes/SDS348/2015_spring_homeworks/HW8.html) (due Apr 7, 2015)
+- Homework 8: [HW8.ipynb](/classes/SDS348/2015_spring_homeworks/HW8.ipynb) [HW8.html](/classes/SDS348/2015_spring_homeworks/HW8.html) (due Apr 7, 2015) [Answer Key](/classes/SDS348/2015_spring_homeworks/HW8-solution.html)
 - Homework 9: [HW9.pdf](/classes/SDS348/2015_spring_homeworks/HW9.pdf)
 
 ## Projects
@@ -235,6 +235,9 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
     - Hint for making the logistic curve in part 1 - you will need to use the `predict()` (Class 11!) function!
       - The general code `predict(model, data, type = "response")` will return an array of the **fitted values** (probabilities) from the given model fit to the given data.
       - The general code `predict(model, data)` will return an array of the **linear predictors** from the given model fit to the given data. 
+- Project 3
+    - Link to a list of datasets in R and R packages: [http://vincentarelbundock.github.io/Rdatasets/datasets.html](http://vincentarelbundock.github.io/Rdatasets/datasets.html)
+
 
 ## Discussion sections
 
@@ -266,6 +269,7 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
   + [iPython Notebook](/classes/SDS348/2015_spring_discussions/discussion_4.8.15.ipynb)
   + [HTML format](/classes/SDS348/2015_spring_discussions/discussion_4.8.15.html)
   + [Sequence file for processing](/classes/SDS348/2015_spring_discussions/pb2_human.fasta)
+  + [Solutions](/classes/SDS348/2015_spring_discussions/discussion_4.8.15_solutions.html)
 
 
 
