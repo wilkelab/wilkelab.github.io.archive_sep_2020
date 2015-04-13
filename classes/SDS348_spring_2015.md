@@ -222,10 +222,12 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
 - Homework 4: [HW4.Rmd](/classes/SDS348/2015_spring_homeworks/HW4.Rmd) (due Feb 17, 2015) [Answer Key](/classes/SDS348/2015_spring_homeworks/HW4-solution.html) 
 - Homework 5: [HW5.Rmd](/classes/SDS348/2015_spring_homeworks/HW5.Rmd) (due Mar 3, 2015)  [Answer Key](/classes/SDS348/2015_spring_homeworks/HW5-solution.html)
 - Homework 6: [HW6.Rmd](/classes/SDS348/2015_spring_homeworks/HW6.Rmd) (due Mar 10, 2015) [Answer Key](/classes/SDS348/2015_spring_homeworks/HW6-solution.html)
-- Homework 7: [HW7.ipynb](/classes/SDS348/2015_spring_homeworks/HW7.ipynb) (due **Thursday Mar 26**, 2015)  [Answer Key](/classes/SDS348/2015_spring_homeworks/HW7-solution.html)
-    - HW7 in HTML format: [HW7.html](/classes/SDS348/2015_spring_homeworks/HW7.html) 
+- Homework 7: [HW7.ipynb](/classes/SDS348/2015_spring_homeworks/HW7.ipynb) 
+[HW7.html](/classes/SDS348/2015_spring_homeworks/HW7.html) (due **Thursday Mar 26**, 2015)  [Answer Key](/classes/SDS348/2015_spring_homeworks/HW7-solution.html)
 - Homework 8: [HW8.ipynb](/classes/SDS348/2015_spring_homeworks/HW8.ipynb) [HW8.html](/classes/SDS348/2015_spring_homeworks/HW8.html) (due Apr 7, 2015) [Answer Key](/classes/SDS348/2015_spring_homeworks/HW8-solution.html)
-- Homework 9: [HW9.pdf](/classes/SDS348/2015_spring_homeworks/HW9.pdf)
+- Homework 9: [HW9.pdf](/classes/SDS348/2015_spring_homeworks/HW9.pdf) (due Apr 14, 2015)
+- Homework 10: [HW10.ipynb](/classes/SDS348/2015_spring_homeworks/HW10.ipynb) 
+[HW10.html](/classes/SDS348/2015_spring_homeworks/HW10.html) (due Apr 21, 2015)
 
 ## Projects
 - Project 1: [Project1.Rmd](/classes/SDS348/2015_spring_projects/project1/Project1-updated.Rmd) (due Feb 24, 2015)
