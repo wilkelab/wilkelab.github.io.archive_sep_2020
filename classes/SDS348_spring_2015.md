@@ -211,6 +211,7 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
 
 **23. Apr. 14, 2015 – Using regular expressions to analyze data**
 
+* E. coli genome: [Ecoli_K12.gb](/classes/SDS348/2015_spring_worksheets/Ecoli_K12.gb)
 * In-class worksheet:
   - [iPython Notebook](/classes/SDS348/2015_spring_worksheets/class23.ipynb) 
   - [HTML](/classes/SDS348/2015_spring_worksheets/class23.html)
