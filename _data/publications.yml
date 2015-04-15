@@ -22,25 +22,29 @@
   year: 2014
   title: Predicting growth conditions from internal metabolic fluxes in an in-silico model of E. coli
   ref: "PLOS ONE 9:e114608"
-  doi: 10.1371/journal.pone.0114608  
+  doi: 10.1371/journal.pone.0114608
+  pmcid: PMC4264753  
 
 - author: A. Shahmoradi, D. K. Sydykova, S. J. Spielman, E. L. Jackson, E. T. Dawson, A. G. Meyer, C. O. Wilke
   year: 2014
   title: "Predicting evolutionary site variability from structure in viral proteins: buriedness, packing, flexibility, and design"
   ref: "J. Mol. Evol. 79:130–142"
   doi: 10.1007/s00239-014-9644-x
+  pmcid: PMC4216736
 
 - author: R. W. Buckheit III, S. B. Sexauer, A. R. Sedaghat, C. O. Wilke, O. Laeyendecker, C. R. Basseth, J. N. Blankson
   year: 2014
   title: Long-term control of viral replication in a Group O, Human Immunodeficiency Virus Type 1-infected individual
   ref: "AIDS Research and Human Retroviruses 30:511–513"
   doi: 10.1089/aid.2014.0054
+  pmcid: PMC4046214
   
 - author: S. J. Spielman, E. T. Dawson, C. O. Wilke
   year: 2014
   title: Limited utility of residue masking for positive-selection inference
   ref: "Mol. Biol. Evol. 31:2496–2500"
   doi: 10.1093/molbev/msu183
+  pmcid: PMC4137709
 
 - author: A. R. Sedaghat, C. O. Wilke, M. J. Cunningham, S. L. Ishman
   year: 2014
