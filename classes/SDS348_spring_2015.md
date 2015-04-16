@@ -220,6 +220,8 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
 **24. Apr. 16, 2015 – Aligning sequences**
 
 * Slides: [class24.pdf](/classes/SDS348/2015_spring_slides/class24.pdf)
+* In class exercise + solutions: [class24_exercise+solution.pdf](/classes/SDS348/2015_spring_slides/class24_exercise+solution.pdf)
+* Wikipedia page on Needleman–Wunsch algorithm: [http://en.wikipedia.org/wiki/Needleman–Wunsch_algorithm](http://en.wikipedia.org/wiki/Needleman%E2%80%93Wunsch_algorithm)
 * Alignment software:
   - [MAFFT](http://mafft.cbrc.jp/alignment/software/)
   - [Clustal Omega](http://www.ebi.ac.uk/Tools/msa/clustalo/)
