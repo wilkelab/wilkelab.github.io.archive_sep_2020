@@ -216,6 +216,15 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
   - [iPython Notebook](/classes/SDS348/2015_spring_worksheets/class23.ipynb) 
   - [HTML](/classes/SDS348/2015_spring_worksheets/class23.html)
 
+**24. Apr. 16, 2015 – Aligning sequences**
+
+* Slides: [class24.pdf](/classes/SDS348/2015_spring_slides/class24.pdf)
+* Alignment software:
+  - [MAFFT](http://mafft.cbrc.jp/alignment/software/)
+  - [Clustal Omega](http://www.ebi.ac.uk/Tools/msa/clustalo/)
+  - [PRANK](http://wasabiapp.org/software/prank/)
+* [Example alignments](https://github.com/wilkelab/therm_constraints_rate_variation/tree/master/empirical_rate_calculations/protein_alignments/mafft_alignments)
+
 ## Homeworks
 - Homework 1: [HW1.Rmd](/classes/SDS348/2015_spring_homeworks/HW1.Rmd) (due Jan 27, 2015) [Answer Key](/classes/SDS348/2015_spring_homeworks/HW1-solution.html) 
 - Homework 2: [HW2.Rmd](/classes/SDS348/2015_spring_homeworks/HW2.Rmd) (due Feb 3, 2015) [Answer Key](/classes/SDS348/2015_spring_homeworks/HW2-solution.html) 
