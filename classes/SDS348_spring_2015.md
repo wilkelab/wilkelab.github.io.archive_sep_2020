@@ -240,6 +240,8 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
   - [File-format converter](http://www.ebi.ac.uk/Tools/sfc/readseq/)
   - [Phylogenetic-tree reconstruction](http://www.trex.uqam.ca/)
   - [Mammalian rhodopsin sequences (FASTA format)](/classes/SDS348/2015_spring_worksheets/class25_rhodopsin_aa.fasta)
+* Interpreting phylogenetic trees
+  - [Practice worksheet](/classes/SDS348/2015_spring_worksheets/tree_exercises.pdf) and [Solutions](/classes/SDS348/2015_spring_worksheets/tree_exercises_solutions.pdf)
 
 ## Homeworks
 - Homework 1: [HW1.Rmd](/classes/SDS348/2015_spring_homeworks/HW1.Rmd) (due Jan 27, 2015) [Answer Key](/classes/SDS348/2015_spring_homeworks/HW1-solution.html) 
