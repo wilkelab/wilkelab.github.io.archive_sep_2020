@@ -224,9 +224,18 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
 * Wikipedia page on Needleman–Wunsch algorithm: [http://en.wikipedia.org/wiki/Needleman–Wunsch_algorithm](http://en.wikipedia.org/wiki/Needleman%E2%80%93Wunsch_algorithm)
 * Alignment software:
   - [MAFFT](http://mafft.cbrc.jp/alignment/software/)
-  - [Clustal Omega](http://www.ebi.ac.uk/Tools/msa/clustalo/)
+  - [Clustal Omega](http://www.clustal.org/omega/)
   - [PRANK](http://wasabiapp.org/software/prank/)
-* [Example alignments](https://github.com/wilkelab/therm_constraints_rate_variation/tree/master/empirical_rate_calculations/protein_alignments/mafft_alignments)
+* [Example alignments](https://github.com/wilkelab/therm_constraints_rate_variation/tree/master/empirical_rate_calculations/protein_alignments/mafft_alignments)]
+
+**25. Apr. 21, 2015 – Multiple sequence alignments and phylogenetic trees**
+
+* Slides: [class25.pdf](/classes/SDS348/2015_spring_slides/class25.pdf)
+* Web-sites and materials for in-class exercises:
+  - [Multiple sequence alignments](http://www.ebi.ac.uk/Tools/msa/clustalo/)
+  - [File-format converter](http://www.ebi.ac.uk/Tools/sfc/readseq/)
+  - [Phylogenetic-tree reconstruction](http://www.trex.uqam.ca/)
+  - [Mammalian rhodopsin sequences (FASTA format)](/classes/SDS348/2015_spring_worksheets/class25_rhodopsin_aa.fasta)
 
 ## Homeworks
 - Homework 1: [HW1.Rmd](/classes/SDS348/2015_spring_homeworks/HW1.Rmd) (due Jan 27, 2015) [Answer Key](/classes/SDS348/2015_spring_homeworks/HW1-solution.html) 
