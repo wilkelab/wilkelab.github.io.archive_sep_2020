@@ -233,7 +233,7 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
 * Slides: [class25.pdf](/classes/SDS348/2015_spring_slides/class25.pdf)
 * Phylogenetic tree inference algorithms:
   - Neighbor joining: [http://en.wikipedia.org/wiki/Neighbor_joining](http://en.wikipedia.org/wiki/Neighbor_joining)
-  - Maximum parsimony, likelihood and others: [wikipedia article](http://en.wikipedia.org/wiki/Maximum_parsimony_\(phylogenetics\))
+  - Maximum parsimony, likelihood and others: [wikipedia article](http://en.wikipedia.org/wiki/Maximum_parsimony_(phylogenetics))
   - Bayesian methods: [http://en.wikipedia.org/wiki/Bayesian_inference_in_phylogeny](http://en.wikipedia.org/wiki/Bayesian_inference_in_phylogeny)
 * Web-sites and materials for in-class exercises:
   - [Multiple sequence alignments](http://www.ebi.ac.uk/Tools/msa/clustalo/)
