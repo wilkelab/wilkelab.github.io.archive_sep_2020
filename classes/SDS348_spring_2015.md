@@ -245,6 +245,7 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
 
 **26. Apr. 23, 2015 – BLAST**
 
+* Slides: [class26.pdf](/classes/SDS348/2015_spring_slides/class26.pdf)
 * NCBI BLAST search: [http://blast.ncbi.nlm.nih.gov/Blast.cgi](http://blast.ncbi.nlm.nih.gov/Blast.cgi)
 * Wikipedia page: [http://en.wikipedia.org/wiki/BLAST](http://en.wikipedia.org/wiki/BLAST)
 * Biopython BLAST documentation: [http://biopython.org/DIST/docs/tutorial/Tutorial.html#htoc84](http://biopython.org/DIST/docs/tutorial/Tutorial.html#htoc84)
