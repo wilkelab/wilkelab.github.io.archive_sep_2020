@@ -243,6 +243,16 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
 * Interpreting phylogenetic trees
   - [Practice worksheet](/classes/SDS348/2015_spring_worksheets/tree_exercises.pdf) and [Solutions](/classes/SDS348/2015_spring_worksheets/tree_exercises_solutions.pdf)
 
+**26. Apr. 23, 2015 – BLAST**
+
+* NCBI BLAST search: [http://blast.ncbi.nlm.nih.gov/Blast.cgi](http://blast.ncbi.nlm.nih.gov/Blast.cgi)
+* Wikipedia page: [http://en.wikipedia.org/wiki/BLAST](http://en.wikipedia.org/wiki/BLAST)
+* Biopython BLAST documentation: [http://biopython.org/DIST/docs/tutorial/Tutorial.html#htoc84](http://biopython.org/DIST/docs/tutorial/Tutorial.html#htoc84)
+* In-class worksheet:
+  - [iPython Notebook](/classes/SDS348/2015_spring_worksheets/class26.ipynb) 
+  - [HTML](/classes/SDS348/2015_spring_worksheets/class26.html)
+  - Example BLAST results: [Machupo_BLAST.xml](/classes/SDS348/2015_spring_worksheets/Machupo_BLAST.xml)
+
 ## Homeworks
 - Homework 1: [HW1.Rmd](/classes/SDS348/2015_spring_homeworks/HW1.Rmd) (due Jan 27, 2015) [Answer Key](/classes/SDS348/2015_spring_homeworks/HW1-solution.html) 
 - Homework 2: [HW2.Rmd](/classes/SDS348/2015_spring_homeworks/HW2.Rmd) (due Feb 3, 2015) [Answer Key](/classes/SDS348/2015_spring_homeworks/HW2-solution.html) 
