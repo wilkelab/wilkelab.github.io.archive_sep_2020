@@ -1,0 +1,2842 @@
+<?xml version="1.0"?>
+<!DOCTYPE BlastOutput PUBLIC "-//NCBI//NCBI BlastOutput/EN" "http://www.ncbi.nlm.nih.gov/dtd/NCBI_BlastOutput.dtd">
+<BlastOutput>
+  <BlastOutput_program>blastp</BlastOutput_program>
+  <BlastOutput_version>BLASTP 2.2.31+</BlastOutput_version>
+  <BlastOutput_reference>Stephen F. Altschul, Thomas L. Madden, Alejandro A. Sch&amp;auml;ffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997), &quot;Gapped BLAST and PSI-BLAST: a new generation of protein database search programs&quot;, Nucleic Acids Res. 25:3389-3402.</BlastOutput_reference>
+  <BlastOutput_db>nr</BlastOutput_db>
+  <BlastOutput_query-ID>Query_75455</BlastOutput_query-ID>
+  <BlastOutput_query-def>GI:45825963|Machupo virus glycoprotein</BlastOutput_query-def>
+  <BlastOutput_query-len>257</BlastOutput_query-len>
+  <BlastOutput_param>
+    <Parameters>
+      <Parameters_matrix>BLOSUM62</Parameters_matrix>
+      <Parameters_expect>10</Parameters_expect>
+      <Parameters_gap-open>11</Parameters_gap-open>
+      <Parameters_gap-extend>1</Parameters_gap-extend>
+      <Parameters_filter>F</Parameters_filter>
+    </Parameters>
+  </BlastOutput_param>
+<BlastOutput_iterations>
+<Iteration>
+  <Iteration_iter-num>1</Iteration_iter-num>
+  <Iteration_query-ID>Query_75455</Iteration_query-ID>
+  <Iteration_query-def>GI:45825963|Machupo virus glycoprotein</Iteration_query-def>
+  <Iteration_query-len>257</Iteration_query-len>
+<Iteration_hits>
+<Hit>
+  <Hit_num>1</Hit_num>
+  <Hit_id>gi|45825964|gb|AAS77647.1|</Hit_id>
+  <Hit_def>glycoprotein 1, partial [Machupo virus]</Hit_def>
+  <Hit_accession>AAS77647</Hit_accession>
+  <Hit_len>257</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>536.569</Hsp_bit-score>
+      <Hsp_score>1381</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>257</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>257</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>257</Hsp_identity>
+      <Hsp_positive>257</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>257</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_qseq>
+      <Hsp_hseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_hseq>
+      <Hsp_midline>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>2</Hit_num>
+  <Hit_id>gi|45826506|gb|AAS77879.1|</Hit_id>
+  <Hit_def>glycoprotein precursor [Machupo virus]</Hit_def>
+  <Hit_accession>AAS77879</Hit_accession>
+  <Hit_len>496</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>535.798</Hsp_bit-score>
+      <Hsp_score>1379</Hsp_score>
+      <Hsp_evalue>0</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>257</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>257</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>257</Hsp_identity>
+      <Hsp_positive>257</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>257</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_qseq>
+      <Hsp_hseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_hseq>
+      <Hsp_midline>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>3</Hit_num>
+  <Hit_id>gi|45825936|gb|AAS77633.1|</Hit_id>
+  <Hit_def>glycoprotein 1, partial [Machupo virus]</Hit_def>
+  <Hit_accession>AAS77633</Hit_accession>
+  <Hit_len>257</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>495.352</Hsp_bit-score>
+      <Hsp_score>1274</Hsp_score>
+      <Hsp_evalue>3.59902e-175</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>257</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>257</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>245</Hsp_identity>
+      <Hsp_positive>251</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>257</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_qseq>
+      <Hsp_hseq>MGQLVSFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLLLAGRSCSDGTFKIGLHTEFQSVTLTMQRLLANHSNELPSLCMLNNSFYYMKGGVNTFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSNALGHDWLMDPPMLCRNRTKKEGSNIQFNISKADDVRVYGKKIRNGMRHLFRGFHDPCEEGKVCYLTINQCGDPSSFDYCGTNYLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_hseq>
+      <Hsp_midline>MGQL+SFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFL LAGRSCSDGTFKIGLHTEFQSVT TMQRLLANHSNELPSLCMLNNSFYYMKGG N FLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFS ALGHDWLMDPPMLCRN+TKKEGSNIQFNISKAD+ RVYGKKIRNGMRHLFRGF+DPCEEGKVCY+TINQCGDPSSF+YCGTNYLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>4</Hit_num>
+  <Hit_id>gi|45825934|gb|AAS77632.1|</Hit_id>
+  <Hit_def>glycoprotein 1, partial [Machupo virus]</Hit_def>
+  <Hit_accession>AAS77632</Hit_accession>
+  <Hit_len>257</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>495.352</Hsp_bit-score>
+      <Hsp_score>1274</Hsp_score>
+      <Hsp_evalue>4.14901e-175</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>257</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>257</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>245</Hsp_identity>
+      <Hsp_positive>251</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>257</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_qseq>
+      <Hsp_hseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLLLAGRSCSDGTFKIGLHTEFQSVTLTMQRLLANHSNELPSLCMLNNSFYYMKGGVNTFLIRVSDISVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSNALGHDWLMDPPMLCRNRTKKEGSNIQFNISKADDVRVYGKKIRNGMRHLFRGFHDPCEEGKVCYLTINQCGDPSSFDYCGTNYLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_hseq>
+      <Hsp_midline>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFL LAGRSCSDGTFKIGLHTEFQSVT TMQRLLANHSNELPSLCMLNNSFYYMKGG N FLIRVSD+SVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFS ALGHDWLMDPPMLCRN+TKKEGSNIQFNISKAD+ RVYGKKIRNGMRHLFRGF+DPCEEGKVCY+TINQCGDPSSF+YCGTNYLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>5</Hit_num>
+  <Hit_id>gi|45825948|gb|AAS77639.1|</Hit_id>
+  <Hit_def>glycoprotein 1, partial [Machupo virus] &gt;gi|45825950|gb|AAS77640.1| glycoprotein 1, partial [Machupo virus]</Hit_def>
+  <Hit_accession>AAS77639</Hit_accession>
+  <Hit_len>257</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>493.426</Hsp_bit-score>
+      <Hsp_score>1269</Hsp_score>
+      <Hsp_evalue>2.28592e-174</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>257</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>257</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>243</Hsp_identity>
+      <Hsp_positive>251</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>257</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_qseq>
+      <Hsp_hseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLLLAGRSCSDGTFKIGLHTEFQSVTLTMQRLLANHSNELPSLCMLNNSFYYMKGGVNTFLIRVSDISVLMKEYDVSIYEPEDLGNCLNKSDSSWAIHWFSNALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADDARVYGKKIRNGMRHLFRGFHDPCEEGKVCYLTINQCGDPSSFDYCGVNHLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_hseq>
+      <Hsp_midline>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFL LAGRSCSDGTFKIGLHTEFQSVT TMQRLLANHSNELPSLCMLNNSFYYMKGG N FLIRVSD+SVLMKEYDVS+YEPEDLGNCLNKSDSSWAIHWFS ALGHDWLMDPPMLCRNKTKKEGSNIQFNISKAD++RVYGKKIRNGMRHLFRGF+DPCEEGKVCY+TINQCGDPSSF+YCG N+LSKCQFDHVNTLHFLVRSKTHLNF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>6</Hit_num>
+  <Hit_id>gi|45825952|gb|AAS77641.1|</Hit_id>
+  <Hit_def>glycoprotein 1, partial [Machupo virus] &gt;gi|45825954|gb|AAS77642.1| glycoprotein 1, partial [Machupo virus] &gt;gi|45825956|gb|AAS77643.1| glycoprotein 1, partial [Machupo virus] &gt;gi|45825958|gb|AAS77644.1| glycoprotein 1, partial [Machupo virus]</Hit_def>
+  <Hit_accession>AAS77641</Hit_accession>
+  <Hit_len>257</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>492.271</Hsp_bit-score>
+      <Hsp_score>1266</Hsp_score>
+      <Hsp_evalue>5.72946e-174</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>257</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>257</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>242</Hsp_identity>
+      <Hsp_positive>251</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>257</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_qseq>
+      <Hsp_hseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLLLAGRSCSDGTFKIGLHTEFQSVTLTMQRLLANHSNELPSLCMLNNSFYYMRGGVNTFLIRVSDISVLMKEYDVSIYEPEDLGNCLNKSDSSWAIHWFSNALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADDARVYGKKIRNGMRHLFRGFHDPCEEGKVCYLTINQCGDPSSFDYCGVNHLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_hseq>
+      <Hsp_midline>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFL LAGRSCSDGTFKIGLHTEFQSVT TMQRLLANHSNELPSLCMLNNSFYYM+GG N FLIRVSD+SVLMKEYDVS+YEPEDLGNCLNKSDSSWAIHWFS ALGHDWLMDPPMLCRNKTKKEGSNIQFNISKAD++RVYGKKIRNGMRHLFRGF+DPCEEGKVCY+TINQCGDPSSF+YCG N+LSKCQFDHVNTLHFLVRSKTHLNF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>7</Hit_num>
+  <Hit_id>gi|45825944|gb|AAS77637.1|</Hit_id>
+  <Hit_def>glycoprotein 1, partial [Machupo virus] &gt;gi|45825946|gb|AAS77638.1| glycoprotein 1, partial [Machupo virus]</Hit_def>
+  <Hit_accession>AAS77637</Hit_accession>
+  <Hit_len>257</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>490.73</Hsp_bit-score>
+      <Hsp_score>1262</Hsp_score>
+      <Hsp_evalue>2.48134e-173</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>257</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>257</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>241</Hsp_identity>
+      <Hsp_positive>251</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>257</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_qseq>
+      <Hsp_hseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLLLAGRSCSDGTFKIGLHTEFQSVTLTMQRLLANHSNELPSLCMLNNSFYYMKGGVNTFLIRVSDISVLMKEHDVSIYEPEDLGNCLNKSDSSWAIHWFSNALGHDWLMDPPMLCRNKTKREGSNIQFNISKADDARVYGKKIRNGMRHLFRGFHDPCEEGKVCYLTINQCGDPSSFDYCGVNHLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_hseq>
+      <Hsp_midline>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFL LAGRSCSDGTFKIGLHTEFQSVT TMQRLLANHSNELPSLCMLNNSFYYMKGG N FLIRVSD+SVLMKE+DVS+YEPEDLGNCLNKSDSSWAIHWFS ALGHDWLMDPPMLCRNKTK+EGSNIQFNISKAD++RVYGKKIRNGMRHLFRGF+DPCEEGKVCY+TINQCGDPSSF+YCG N+LSKCQFDHVNTLHFLVRSKTHLNF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>8</Hit_num>
+  <Hit_id>gi|45825960|gb|AAS77645.1|</Hit_id>
+  <Hit_def>glycoprotein 1, partial [Machupo virus]</Hit_def>
+  <Hit_accession>AAS77645</Hit_accession>
+  <Hit_len>257</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>489.189</Hsp_bit-score>
+      <Hsp_score>1258</Hsp_score>
+      <Hsp_evalue>9.63249e-173</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>257</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>257</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>240</Hsp_identity>
+      <Hsp_positive>251</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>257</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_qseq>
+      <Hsp_hseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLLLAGRSCSDGTFKIGLHTEFQSVTLTMQRLLANHSNELPSLCILNNNFYYMKGGVNTFLIRVSDISVLMKEYDVSIYEPEDLGNCLNKSDSSWAVHWFSNALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADDTRVYGKKIRNGMRHLFRGFHDPCEEGKVCYLTINQCGDPSSFDYCGVNHLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_hseq>
+      <Hsp_midline>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFL LAGRSCSDGTFKIGLHTEFQSVT TMQRLLANHSNELPSLC+LNN+FYYMKGG N FLIRVSD+SVLMKEYDVS+YEPEDLGNCLNKSDSSWA+HWFS ALGHDWLMDPPMLCRNKTKKEGSNIQFNISKAD++RVYGKKIRNGMRHLFRGF+DPCEEGKVCY+TINQCGDPSSF+YCG N+LSKCQFDHVNTLHFLVRSKTHLNF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>9</Hit_num>
+  <Hit_id>gi|45825932|gb|AAS77631.1|</Hit_id>
+  <Hit_def>glycoprotein 1, partial [Machupo virus]</Hit_def>
+  <Hit_accession>AAS77631</Hit_accession>
+  <Hit_len>257</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>488.804</Hsp_bit-score>
+      <Hsp_score>1257</Hsp_score>
+      <Hsp_evalue>1.39717e-172</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>257</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>257</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>241</Hsp_identity>
+      <Hsp_positive>250</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>257</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_qseq>
+      <Hsp_hseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLLLAGRSCSDGTFKIGLHTEFQSVTLTMQRLLANHSNELPSLCMLNNSFYYMRGGVNTFLIRVSDVSVLMKEYDVSIYEPEDLGNCLNKSDSSWAVHWFSNALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADDTKVYGKKIRNGMRHLFRGFHDLCEEGKVCYLTINQCGDPSSFDYCNTNYLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_hseq>
+      <Hsp_midline>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFL LAGRSCSDGTFKIGLHTEFQSVT TMQRLLANHSNELPSLCMLNNSFYYM+GG N FLIRVSDVSVLMKEYDVS+YEPEDLGNCLNKSDSSWA+HWFS ALGHDWLMDPPMLCRNKTKKEGSNIQFNISKAD+++VYGKKIRNGMRHLFRGF+D CEEGKVCY+TINQCGDPSSF+YC TNYLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>10</Hit_num>
+  <Hit_id>gi|45825912|gb|AAS77621.1|</Hit_id>
+  <Hit_def>glycoprotein 1, partial [Machupo virus] &gt;gi|45825914|gb|AAS77622.1| glycoprotein 1, partial [Machupo virus] &gt;gi|45825916|gb|AAS77623.1| glycoprotein 1, partial [Machupo virus] &gt;gi|45825918|gb|AAS77624.1| glycoprotein 1, partial [Machupo virus] &gt;gi|45825920|gb|AAS77625.1| glycoprotein 1, partial [Machupo virus] &gt;gi|45825922|gb|AAS77626.1| glycoprotein 1, partial [Machupo virus] &gt;gi|45825924|gb|AAS77627.1| glycoprotein 1, partial [Machupo virus] &gt;gi|45825926|gb|AAS77628.1| glycoprotein 1, partial [Machupo virus] &gt;gi|45825928|gb|AAS77629.1| glycoprotein 1, partial [Machupo virus] &gt;gi|45825930|gb|AAS77630.1| glycoprotein 1, partial [Machupo virus]</Hit_def>
+  <Hit_accession>AAS77621</Hit_accession>
+  <Hit_len>257</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>487.263</Hsp_bit-score>
+      <Hsp_score>1253</Hsp_score>
+      <Hsp_evalue>7.1292e-172</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>257</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>257</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>240</Hsp_identity>
+      <Hsp_positive>250</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>257</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_qseq>
+      <Hsp_hseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGVINLYKSGLFQFIFFLLLAGRSCSDGTFKIGLHTEFQSVTLTMQRLLANHSSELPSLCMLNNSFYYMKGGVNTFLIRVSDVSVLMKEYDVSIYEPEDLGNCLNKSDSSWAVHWFSNALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADDTKVYGKKIRNGMRHLFRGFHDLCEEGKVCYLTINQCGDPSSFDYCNTNYLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_hseq>
+      <Hsp_midline>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKG+INLYKSGLFQFIFFL LAGRSCSDGTFKIGLHTEFQSVT TMQRLLANHS+ELPSLCMLNNSFYYMKGG N FLIRVSDVSVLMKEYDVS+YEPEDLGNCLNKSDSSWA+HWFS ALGHDWLMDPPMLCRNKTKKEGSNIQFNISKAD+++VYGKKIRNGMRHLFRGF+D CEEGKVCY+TINQCGDPSSF+YC TNYLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>11</Hit_num>
+  <Hit_id>gi|45825942|gb|AAS77636.1|</Hit_id>
+  <Hit_def>glycoprotein 1, partial [Machupo virus]</Hit_def>
+  <Hit_accession>AAS77636</Hit_accession>
+  <Hit_len>257</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>486.108</Hsp_bit-score>
+      <Hsp_score>1250</Hsp_score>
+      <Hsp_evalue>1.95009e-171</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>257</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>257</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>240</Hsp_identity>
+      <Hsp_positive>249</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>257</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_qseq>
+      <Hsp_hseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLLLAGRSCSDGTFKIGLHTEFQSVTLTMQRLLANHSNELPSLCMLNNSFYYMKGGVNTFLIRVSDISVLMKEHDVSIYEPEDLGNCLNKSDSSWAIHWFSNALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADDVRVYGKKIRNGMRHLFRGFHDPCEEGKKCYLTINQCGDPSSFDYCGMDHLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_hseq>
+      <Hsp_midline>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFL LAGRSCSDGTFKIGLHTEFQSVT TMQRLLANHSNELPSLCMLNNSFYYMKGG N FLIRVSD+SVLMKE+DVS+YEPEDLGNCLNKSDSSWAIHWFS ALGHDWLMDPPMLCRNKTKKEGSNIQFNISKAD+ RVYGKKIRNGMRHLFRGF+DPCEEGK CY+TINQCGDPSSF+YCG ++LSKCQFDHVNTLHFLVRSKTHLNF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>12</Hit_num>
+  <Hit_id>gi|62766416|gb|AAX99337.1|</Hit_id>
+  <Hit_def>glycoprotein precursor [Machupo virus]</Hit_def>
+  <Hit_accession>AAX99337</Hit_accession>
+  <Hit_len>496</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>494.582</Hsp_bit-score>
+      <Hsp_score>1272</Hsp_score>
+      <Hsp_evalue>3.14266e-171</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>257</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>257</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>245</Hsp_identity>
+      <Hsp_positive>251</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>257</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_qseq>
+      <Hsp_hseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLLLAGRSCSDGTFKIGLHTEFQSVTLTMQRLLANHSNELPSLCMLNNSFYYMKGGVNTFLIRVSDISVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSNALGHDWLMDPPMLCRNRTKKEGSNIQFNISKADDVRVYGKKIRNGMRHLFRGFHDPCEEGKVCYLTINQCGDPSSFDYCGTNYLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_hseq>
+      <Hsp_midline>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFL LAGRSCSDGTFKIGLHTEFQSVT TMQRLLANHSNELPSLCMLNNSFYYMKGG N FLIRVSD+SVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFS ALGHDWLMDPPMLCRN+TKKEGSNIQFNISKAD+ RVYGKKIRNGMRHLFRGF+DPCEEGKVCY+TINQCGDPSSF+YCGTNYLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>13</Hit_num>
+  <Hit_id>gi|45825938|gb|AAS77634.1|</Hit_id>
+  <Hit_def>glycoprotein 1, partial [Machupo virus]</Hit_def>
+  <Hit_accession>AAS77634</Hit_accession>
+  <Hit_len>257</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>485.337</Hsp_bit-score>
+      <Hsp_score>1248</Hsp_score>
+      <Hsp_evalue>3.22523e-171</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>257</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>257</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>239</Hsp_identity>
+      <Hsp_positive>249</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>257</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_qseq>
+      <Hsp_hseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLLLAGRSCSDGTFKIGLHTEFQSVTLTMQRLLANHSNELPSLCMLNNSFYYMKGGVNTFLIRVSDISVLMKEHDVSIYEPEDLGNCLNKSDSSWAIHWFSNALGHDWLMDPPMLCRNKTKREGSNIQFNISKADDVRVYGKKIRNGMRHLFRGFHDPCEEGKKCYLTINQCGDPSSFDYCGTDHLSKCQFDHVNTLHFLVRRKTHLNF</Hsp_hseq>
+      <Hsp_midline>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFL LAGRSCSDGTFKIGLHTEFQSVT TMQRLLANHSNELPSLCMLNNSFYYMKGG N FLIRVSD+SVLMKE+DVS+YEPEDLGNCLNKSDSSWAIHWFS ALGHDWLMDPPMLCRNKTK+EGSNIQFNISKAD+ RVYGKKIRNGMRHLFRGF+DPCEEGK CY+TINQCGDPSSF+YCGT++LSKCQFDHVNTLHFLVR KTHLNF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>14</Hit_num>
+  <Hit_id>gi|45825940|gb|AAS77635.1|</Hit_id>
+  <Hit_def>glycoprotein 1, partial [Machupo virus]</Hit_def>
+  <Hit_accession>AAS77635</Hit_accession>
+  <Hit_len>257</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>483.026</Hsp_bit-score>
+      <Hsp_score>1242</Hsp_score>
+      <Hsp_evalue>2.93803e-170</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>257</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>257</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>238</Hsp_identity>
+      <Hsp_positive>248</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>257</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_qseq>
+      <Hsp_hseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLLLAGRSCSDGTFKIGLHTEFQSVTLTMQRLLANHSNELPSLCMLNNSFYYMKGGVNTFLIRVSDISVLTKEHDVSIYEPEDLGNCLNKSDSSWAIHWFSNALGHDWLMDPPMLCRNKTKREGSNIQFNISKADDVRVYGKKIRNGMRHLFRGFHDPCEEGKKCYLTINQCGDPSSLDYCGTDHLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_hseq>
+      <Hsp_midline>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFL LAGRSCSDGTFKIGLHTEFQSVT TMQRLLANHSNELPSLCMLNNSFYYMKGG N FLIRVSD+SVL KE+DVS+YEPEDLGNCLNKSDSSWAIHWFS ALGHDWLMDPPMLCRNKTK+EGSNIQFNISKAD+ RVYGKKIRNGMRHLFRGF+DPCEEGK CY+TINQCGDPSS +YCGT++LSKCQFDHVNTLHFLVRSKTHLNF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>15</Hit_num>
+  <Hit_id>gi|34365533|ref|NP_899212.1|</Hit_id>
+  <Hit_def>glycoprotein precursor [Machupo virus] &gt;gi|22901291|gb|AAN09942.1| glycoprotein precursor [Machupo virus] &gt;gi|23307851|gb|AAN05425.1| glycoprotein precursor [Machupo virus] &gt;gi|45826503|gb|AAS77877.1| glycoprotein precursor [Machupo virus] &gt;gi|48095766|gb|AAT40451.1| glycoprotein precursor [Machupo virus] &gt;gi|62766413|gb|AAX99335.1| glycoprotein precursor [Machupo virus] &gt;gi|365976987|gb|AEX08372.1| glycoprotein precursor [Machupo virus] &gt;gi|666915575|gb|AIG51558.1| glycoprotein precursor [Machupo virus]</Hit_def>
+  <Hit_accession>NP_899212</Hit_accession>
+  <Hit_len>496</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>491.886</Hsp_bit-score>
+      <Hsp_score>1265</Hsp_score>
+      <Hsp_evalue>4.53793e-170</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>257</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>257</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>242</Hsp_identity>
+      <Hsp_positive>251</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>257</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_qseq>
+      <Hsp_hseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLLLAGRSCSDGTFKIGLHTEFQSVTLTMQRLLANHSNELPSLCMLNNSFYYMRGGVNTFLIRVSDISVLMKEYDVSIYEPEDLGNCLNKSDSSWAIHWFSNALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADDARVYGKKIRNGMRHLFRGFHDPCEEGKVCYLTINQCGDPSSFDYCGVNHLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_hseq>
+      <Hsp_midline>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFL LAGRSCSDGTFKIGLHTEFQSVT TMQRLLANHSNELPSLCMLNNSFYYM+GG N FLIRVSD+SVLMKEYDVS+YEPEDLGNCLNKSDSSWAIHWFS ALGHDWLMDPPMLCRNKTKKEGSNIQFNISKAD++RVYGKKIRNGMRHLFRGF+DPCEEGKVCY+TINQCGDPSSF+YCG N+LSKCQFDHVNTLHFLVRSKTHLNF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>16</Hit_num>
+  <Hit_id>gi|62766419|gb|AAX99339.1|</Hit_id>
+  <Hit_def>glycoprotein precursor [Machupo virus]</Hit_def>
+  <Hit_accession>AAX99339</Hit_accession>
+  <Hit_len>496</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>487.263</Hsp_bit-score>
+      <Hsp_score>1253</Hsp_score>
+      <Hsp_evalue>2.76027e-168</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>257</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>257</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>241</Hsp_identity>
+      <Hsp_positive>250</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>257</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_qseq>
+      <Hsp_hseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLLLAGRSCSDGTFKIGLHTEFQSVTLTMQRLLANHSNELPSLCMLNNSFYYMRGGVNTFLIRVSDVSVLMKEYDVSIYEPEDLGNCLNKSDSSWAVHWFSNALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADDTKVYGKKIRNGMRHLFRGFHDLCEEGKVCYLTINQCGDPSSFDYCNTNYLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_hseq>
+      <Hsp_midline>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFL LAGRSCSDGTFKIGLHTEFQSVT TMQRLLANHSNELPSLCMLNNSFYYM+GG N FLIRVSDVSVLMKEYDVS+YEPEDLGNCLNKSDSSWA+HWFS ALGHDWLMDPPMLCRNKTKKEGSNIQFNISKAD+++VYGKKIRNGMRHLFRGF+D CEEGKVCY+TINQCGDPSSF+YC TNYLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>17</Hit_num>
+  <Hit_id>gi|62766404|gb|AAX99329.1|</Hit_id>
+  <Hit_def>glycoprotein precursor [Machupo virus]</Hit_def>
+  <Hit_accession>AAX99329</Hit_accession>
+  <Hit_len>496</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>485.723</Hsp_bit-score>
+      <Hsp_score>1249</Hsp_score>
+      <Hsp_evalue>1.0316e-167</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>257</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>257</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>240</Hsp_identity>
+      <Hsp_positive>250</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>257</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_qseq>
+      <Hsp_hseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGVINLYKSGLFQFIFFLLLAGRSCSDGTFKIGLHTEFQSVTLTMQRLLANHSSELPSLCMLNNSFYYMKGGVNTFLIRVSDVSVLMKEYDVSIYEPEDLGNCLNKSDSSWAVHWFSNALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADDTKVYGKKIRNGMRHLFRGFHDLCEEGKVCYLTINQCGDPSSFDYCNTNYLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_hseq>
+      <Hsp_midline>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKG+INLYKSGLFQFIFFL LAGRSCSDGTFKIGLHTEFQSVT TMQRLLANHS+ELPSLCMLNNSFYYMKGG N FLIRVSDVSVLMKEYDVS+YEPEDLGNCLNKSDSSWA+HWFS ALGHDWLMDPPMLCRNKTKKEGSNIQFNISKAD+++VYGKKIRNGMRHLFRGF+D CEEGKVCY+TINQCGDPSSF+YC TNYLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>18</Hit_num>
+  <Hit_id>gi|45825962|gb|AAS77646.1|</Hit_id>
+  <Hit_def>glycoprotein 1, partial [Machupo virus]</Hit_def>
+  <Hit_accession>AAS77646</Hit_accession>
+  <Hit_len>257</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>476.093</Hsp_bit-score>
+      <Hsp_score>1224</Hsp_score>
+      <Hsp_evalue>1.43332e-167</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>257</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>257</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>235</Hsp_identity>
+      <Hsp_positive>245</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>257</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_qseq>
+      <Hsp_hseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLLLAGRSCSDGTFKIGLHTEFQSVTLTMQRLLANHSNELPSLCMLNNSFYYMKGGVNTFLIRVSSVSVLMKEHDVSVYEPEDLGNCLNKSDSSWAVHWLSNALGHDWLMDSPMLCRNKTKMEGSNIQLNISKADDARVYGKKIRNGMRHLFRGFHDSCEEGKLCYLTINQCGDPSSFDYCSTNHLSKCQFDHVNTLHFLVRSKSHLNF</Hsp_hseq>
+      <Hsp_midline>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFL LAGRSCSDGTFKIGLHTEFQSVT TMQRLLANHSNELPSLCMLNNSFYYMKGG N FLIRVS VSVLMKE+DVSVYEPEDLGNCLNKSDSSWA+HW S ALGHDWLMD PMLCRNKTK EGSNIQ NISKAD++RVYGKKIRNGMRHLFRGF+D CEEGK+CY+TINQCGDPSSF+YC TN+LSKCQFDHVNTLHFLVRSK+HLNF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>19</Hit_num>
+  <Hit_id>gi|82002961|sp|Q6IUF7.1|GLYC_MACHU</Hit_id>
+  <Hit_def>RecName: Full=Pre-glycoprotein polyprotein GP complex; Contains: RecName: Full=Stable signal peptide; Short=SSP; Contains: RecName: Full=Glycoprotein G1; Short=GP1; Contains: RecName: Full=Glycoprotein G2; Short=GP2 [Machupo virus] &gt;gi|48525711|gb|AAT45081.1| glycoprotein precursor [Machupo virus] &gt;gi|62766401|gb|AAX99327.1| glycoprotein precursor [Machupo virus]</Hit_def>
+  <Hit_accession>Q6IUF7</Hit_accession>
+  <Hit_len>496</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>485.337</Hsp_bit-score>
+      <Hsp_score>1248</Hsp_score>
+      <Hsp_evalue>1.57779e-167</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>257</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>257</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>240</Hsp_identity>
+      <Hsp_positive>249</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>257</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_qseq>
+      <Hsp_hseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLLLAGRSCSDGTFKIGLHTEFQSVTLTMQRLLANHSNELPSLCMLNNSFYYMKGGVNTFLIRVSDISVLMKEHDVSIYEPEDLGNCLNKSDSSWAIHWFSNALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADDVRVYGKKIRNGMRHLFRGFHDPCEEGKKCYLTINQCGDPSSFDYCGMDHLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_hseq>
+      <Hsp_midline>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFL LAGRSCSDGTFKIGLHTEFQSVT TMQRLLANHSNELPSLCMLNNSFYYMKGG N FLIRVSD+SVLMKE+DVS+YEPEDLGNCLNKSDSSWAIHWFS ALGHDWLMDPPMLCRNKTKKEGSNIQFNISKAD+ RVYGKKIRNGMRHLFRGF+DPCEEGK CY+TINQCGDPSSF+YCG ++LSKCQFDHVNTLHFLVRSKTHLNF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>20</Hit_num>
+  <Hit_id>gi|62766410|gb|AAX99333.1|</Hit_id>
+  <Hit_def>glycoprotein precursor [Machupo virus]</Hit_def>
+  <Hit_accession>AAX99333</Hit_accession>
+  <Hit_len>496</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>481.485</Hsp_bit-score>
+      <Hsp_score>1238</Hsp_score>
+      <Hsp_evalue>4.98777e-166</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>257</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>257</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>237</Hsp_identity>
+      <Hsp_positive>248</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>257</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_qseq>
+      <Hsp_hseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLLLAGRSCSDGTFKIGLHTEFQSVTLTMQRLLANHSNELPSLCMLNNSFYYMKGGVNTFLIRVSDISVLTKEHDVSIYEPEDLGNCLNKSDSSWAIHWFSNALGHDWLMDPPMLCRNKTKREGSNIQFNISKADDVRVYGKKIRNGMRHLFRGFHDPCEEGRKCYLTINQCGDPSSLDYCGTDHLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_hseq>
+      <Hsp_midline>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFL LAGRSCSDGTFKIGLHTEFQSVT TMQRLLANHSNELPSLCMLNNSFYYMKGG N FLIRVSD+SVL KE+DVS+YEPEDLGNCLNKSDSSWAIHWFS ALGHDWLMDPPMLCRNKTK+EGSNIQFNISKAD+ RVYGKKIRNGMRHLFRGF+DPCEEG+ CY+TINQCGDPSS +YCGT++LSKCQFDHVNTLHFLVRSKTHLNF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>21</Hit_num>
+  <Hit_id>gi|48095772|gb|AAT40455.1|</Hit_id>
+  <Hit_def>glycoprotein precursor [Machupo virus]</Hit_def>
+  <Hit_accession>AAT40455</Hit_accession>
+  <Hit_len>496</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>471.855</Hsp_bit-score>
+      <Hsp_score>1213</Hsp_score>
+      <Hsp_evalue>3.03512e-162</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>257</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>257</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>234</Hsp_identity>
+      <Hsp_positive>244</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>257</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_qseq>
+      <Hsp_hseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLLLAGRSCSDGTFKIGLHTEFQSVTLTMQRLLANHSNELPSLCMLNNSLYYMKGGVNTFLIRVSSVSVLMKEHDVSVYEPEDLGNCLNKSDSSWAVHWLSNALGHDWLMDSPMLCRNKTKMEGSNIQLNISKADDARVYGKKIRNGMRHLFRGFHDSCEEGKLCYLTINQCGDPSSFDYCSTNHLSKCQFDHVNTLHFLVRSKSHLNF</Hsp_hseq>
+      <Hsp_midline>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFL LAGRSCSDGTFKIGLHTEFQSVT TMQRLLANHSNELPSLCMLNNS YYMKGG N FLIRVS VSVLMKE+DVSVYEPEDLGNCLNKSDSSWA+HW S ALGHDWLMD PMLCRNKTK EGSNIQ NISKAD++RVYGKKIRNGMRHLFRGF+D CEEGK+CY+TINQCGDPSSF+YC TN+LSKCQFDHVNTLHFLVRSK+HLNF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>22</Hit_num>
+  <Hit_id>gi|62766407|gb|AAX99331.1|</Hit_id>
+  <Hit_def>glycoprotein precursor [Machupo virus]</Hit_def>
+  <Hit_accession>AAX99331</Hit_accession>
+  <Hit_len>496</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>471.47</Hsp_bit-score>
+      <Hsp_score>1212</Hsp_score>
+      <Hsp_evalue>3.85679e-162</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>257</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>257</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>236</Hsp_identity>
+      <Hsp_positive>244</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>257</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_qseq>
+      <Hsp_hseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLLLAGRSCSDGTFKIGLHTEFQSVTLTMQRLLANHSNELPSLCMLNNSFYYMKGGVNTFLIRVSSVSVLSREHDVSVYEPEDLENCFNKSDSSWAIHWFSNALGHDWLMDPPMLCRNKTKVEGSNIQFNISKADDTKVYGKKIRNGMRHLFRGFYDLCEEGKVCYLTINQCGDPSSFDYCNTSYLSKCQFDHVNTLQFLVRSKTHLNF</Hsp_hseq>
+      <Hsp_midline>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFL LAGRSCSDGTFKIGLHTEFQSVT TMQRLLANHSNELPSLCMLNNSFYYMKGG N FLIRVS VSVL +E+DVSVYEPEDL NC NKSDSSWAIHWFS ALGHDWLMDPPMLCRNKTK EGSNIQFNISKAD+++VYGKKIRNGMRHLFRGFYD CEEGKVCY+TINQCGDPSSF+YC T+YLSKCQFDHVNTL FLVRSKTHLNF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>23</Hit_num>
+  <Hit_id>gi|365976993|gb|AEX08376.1|</Hit_id>
+  <Hit_def>glycoprotein precursor [Machupo virus]</Hit_def>
+  <Hit_accession>AEX08376</Hit_accession>
+  <Hit_len>496</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>465.692</Hsp_bit-score>
+      <Hsp_score>1197</Hsp_score>
+      <Hsp_evalue>6.94971e-160</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>257</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>257</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>232</Hsp_identity>
+      <Hsp_positive>241</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>257</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_qseq>
+      <Hsp_hseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLLLXGRSCSDGTFKIGLHTEFQSVTLTMQRLLANHSNELPSLCMLNNSXYYMKGGVNTFLIRVSSVSVLMKEXDVSVYEPEDLGNCLNKSDSSWAVHWLSNALGHDWLMDSPMLCRNKTXMEGSNIQLNISKADDARVYGKKIRNGMRHLFRGFHDSCEEGKLCYLTINQCGDPSSFDYCSTNHLSKCQFDHVNTLHFLVRSKSHLNF</Hsp_hseq>
+      <Hsp_midline>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFL L GRSCSDGTFKIGLHTEFQSVT TMQRLLANHSNELPSLCMLNNS YYMKGG N FLIRVS VSVLMKE DVSVYEPEDLGNCLNKSDSSWA+HW S ALGHDWLMD PMLCRNKT  EGSNIQ NISKAD++RVYGKKIRNGMRHLFRGF+D CEEGK+CY+TINQCGDPSSF+YC TN+LSKCQFDHVNTLHFLVRSK+HLNF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>24</Hit_num>
+  <Hit_id>gi|255648557|gb|ACU24736.1|</Hit_id>
+  <Hit_def>glycoprotein precursor [Machupo virus]</Hit_def>
+  <Hit_accession>ACU24736</Hit_accession>
+  <Hit_len>473</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>425.631</Hsp_bit-score>
+      <Hsp_score>1093</Hsp_score>
+      <Hsp_evalue>2.06438e-144</Hsp_evalue>
+      <Hsp_query-from>24</Hsp_query-from>
+      <Hsp_query-to>257</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>234</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>211</Hsp_identity>
+      <Hsp_positive>220</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>234</Hsp_align-len>
+      <Hsp_qseq>VAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_qseq>
+      <Hsp_hseq>VAVSLIAVIKGIINLYKSGLFQFIFFLLLAGRSCSDGTFKIGLHTEFQSVTLTMQGLLANHSNELPSLCMLNNSFYYMKGGVNTFLIRVSDISVLMKEHDVSIYEPEDLGNCLNKSDSSWAIHWFSNALGHDWLMDPPMLCRNKTKPEGSNIELNISKADDVRVYGKKIRNGMRHLFRGFHDSCEEGKKCYLTINQCGDPSSIDYCNTGHLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_hseq>
+      <Hsp_midline>VAVSLIAVIKGIINLYKSGLFQFIFFL LAGRSCSDGTFKIGLHTEFQSVT TMQ LLANHSNELPSLCMLNNSFYYMKGG N FLIRVSD+SVLMKE+DVS+YEPEDLGNCLNKSDSSWAIHWFS ALGHDWLMDPPMLCRNKTK EGSNI+ NISKAD+ RVYGKKIRNGMRHLFRGF+D CEEGK CY+TINQCGDPSS +YC T +LSKCQFDHVNTLHFLVRSKTHLNF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>25</Hit_num>
+  <Hit_id>gi|255648545|gb|ACU24728.1|</Hit_id>
+  <Hit_def>glycoprotein precursor [Machupo virus] &gt;gi|255648548|gb|ACU24730.1| glycoprotein precursor, partial [Machupo virus] &gt;gi|255648551|gb|ACU24732.1| glycoprotein precursor, partial [Machupo virus]</Hit_def>
+  <Hit_accession>ACU24728</Hit_accession>
+  <Hit_len>473</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>422.935</Hsp_bit-score>
+      <Hsp_score>1086</Hsp_score>
+      <Hsp_evalue>2.57383e-143</Hsp_evalue>
+      <Hsp_query-from>24</Hsp_query-from>
+      <Hsp_query-to>257</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>234</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>210</Hsp_identity>
+      <Hsp_positive>222</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>234</Hsp_align-len>
+      <Hsp_qseq>VAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_qseq>
+      <Hsp_hseq>VAVSLIAVIKGIINLYKSGLFQFIFFLLLAGRSCSDGTFKIGLHTEFQSVTLTMQRLLANHSNELPSLCMLNNSFYYMKGGVNTFLIRVSSISVLSREHDVLVHEPDDLENCLNKSDSSWAIHWFSNALGHDWLMDPPMLCRNKTKVEGSNIQFNISKADDTKVYGKKIRNGMRHLFRGFHDLCEEGKVCYLTINQCGDPSSFDYCSTSYLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_hseq>
+      <Hsp_midline>VAVSLIAVIKGIINLYKSGLFQFIFFL LAGRSCSDGTFKIGLHTEFQSVT TMQRLLANHSNELPSLCMLNNSFYYMKGG N FLIRVS +SVL +E+DV V+EP+DL NCLNKSDSSWAIHWFS ALGHDWLMDPPMLCRNKTK EGSNIQFNISKAD+++VYGKKIRNGMRHLFRGF+D CEEGKVCY+TINQCGDPSSF+YC T+YLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>26</Hit_num>
+  <Hit_id>gi|255648554|gb|ACU24734.1|</Hit_id>
+  <Hit_def>glycoprotein precursor [Machupo virus]</Hit_def>
+  <Hit_accession>ACU24734</Hit_accession>
+  <Hit_len>473</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>408.297</Hsp_bit-score>
+      <Hsp_score>1048</Hsp_score>
+      <Hsp_evalue>1.32849e-137</Hsp_evalue>
+      <Hsp_query-from>24</Hsp_query-from>
+      <Hsp_query-to>257</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>234</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>208</Hsp_identity>
+      <Hsp_positive>222</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>234</Hsp_align-len>
+      <Hsp_qseq>VAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_qseq>
+      <Hsp_hseq>VAVSLIAVIKGIINLYKSGLFQFIFFLLLAGRSCSDGTFKIGLHTEFQSVTLTMQGLLANHSNELPSLCMLNNSFYYMKGGVNTFLIRVSSVSVVSREHDVLVHEPEDLGNCLNESDSSWALHWFSNALGHDWLVDPPMLCRNKTKVEGSNIQFNISKADDTKVYGKKIRNGMRHLFRGFHDLCEEGKVCYLTINQCGDPSSFDYCDTNHLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_hseq>
+      <Hsp_midline>VAVSLIAVIKGIINLYKSGLFQFIFFL LAGRSCSDGTFKIGLHTEFQSVT TMQ LLANHSNELPSLCMLNNSFYYMKGG N FLIRVS VSV+ +E+DV V+EPEDLGNCLN+SDSSWA+HWFS ALGHDWL+DPPMLCRNKTK EGSNIQFNISKAD+++VYGKKIRNGMRHLFRGF+D CEEGKVCY+TINQCGDPSSF+YC TN+LSKCQFDHVNTLHFLVRSKTHLNF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>27</Hit_num>
+  <Hit_id>gi|240104274|pdb|2WFO|A</Hit_id>
+  <Hit_def>Chain A, Crystal Structure Of Machupo Virus Envelope Glycoprotein Gp1</Hit_def>
+  <Hit_accession>2WFO_A</Hit_accession>
+  <Hit_len>182</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>365.925</Hsp_bit-score>
+      <Hsp_score>938</Hsp_score>
+      <Hsp_evalue>3.6932e-125</Hsp_evalue>
+      <Hsp_query-from>87</Hsp_query-from>
+      <Hsp_query-to>257</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>171</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>171</Hsp_identity>
+      <Hsp_positive>171</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>171</Hsp_align-len>
+      <Hsp_qseq>ELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_qseq>
+      <Hsp_hseq>ELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_hseq>
+      <Hsp_midline>ELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSKTHLNF</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>28</Hit_num>
+  <Hit_id>gi|290790109|pdb|3KAS|B</Hit_id>
+  <Hit_def>Chain B, Machupo Virus Gp1 Bound To Human Transferrin Receptor 1</Hit_def>
+  <Hit_accession>3KAS_B</Hit_accession>
+  <Hit_len>162</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>328.561</Hsp_bit-score>
+      <Hsp_score>841</Hsp_score>
+      <Hsp_evalue>7.7833e-111</Hsp_evalue>
+      <Hsp_query-from>83</Hsp_query-from>
+      <Hsp_query-to>244</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>162</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>149</Hsp_identity>
+      <Hsp_positive>158</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>162</Hsp_align-len>
+      <Hsp_qseq>NHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNT</Hsp_qseq>
+      <Hsp_hseq>NHSNELPSLCMLNNSFYYMRGGVNTFLIRVSDISVLMKEYDVSIYEPEDLGNCLNKSDSSWAIHWFSNALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADDARVYGKKIRNGMRHLFRGFHDPCEEGKVCYLTINQCGDPSSFDYCGVNHLSKCQFDHVNT</Hsp_hseq>
+      <Hsp_midline>NHSNELPSLCMLNNSFYYM+GG N FLIRVSD+SVLMKEYDVS+YEPEDLGNCLNKSDSSWAIHWFS ALGHDWLMDPPMLCRNKTKKEGSNIQFNISKAD++RVYGKKIRNGMRHLFRGF+DPCEEGKVCY+TINQCGDPSSF+YCG N+LSKCQFDHVNT</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>29</Hit_num>
+  <Hit_id>gi|40807309|ref|NP_955756.1|</Hit_id>
+  <Hit_def>glycoprotein G1 [Junin virus]</Hit_def>
+  <Hit_accession>NP_955756</Hit_accession>
+  <Hit_len>247</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>278.1</Hsp_bit-score>
+      <Hsp_score>710</Hsp_score>
+      <Hsp_evalue>9.70338e-90</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>252</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>241</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>137</Hsp_identity>
+      <Hsp_positive>167</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>252</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSK</Hsp_qseq>
+      <Hsp_hseq>MGQFISFMQEIPTFLQEALNIALVAVSLIAIIKGIVNLYKSGLFQFFVFLALAGRSCTEEAFKIGLHTEFQTVSFSMVGLFSNNPHDLPLLCTLNKSHLYIKGGNASFQISFDDIAVLLPQYDVIIQHPADMSWCSKSDDQIWLSQWFMNAVGHDWHLDPPFLCRNRTKTEGFIFQVNTSKTGVNENYAKKFKTGMHHLYREYPDSCPNGKLCLMK----AQPTSWPL-------QCPLDHVNTLHFLTRGK</Hsp_hseq>
+      <Hsp_midline>MGQ ISF QEIP FLQEALNIALVAVSLIA+IKGI+NLYKSGLFQF  FL LAGRSC++  FKIGLHTEFQ+V+F+M  L +N+ ++LP LC LN S  Y+KGG   F I   D++VL+ +YDV +  P D+  C    D  W   WF  A+GHDW +DPP LCRN+TK EG   Q N SK   +  Y KK + GM HL+R + D C  GK+C +       P+S+         +C  DHVNTLHFL R K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>30</Hit_num>
+  <Hit_id>gi|115510974|gb|ABI99475.1|</Hit_id>
+  <Hit_def>glycoprotein precursor [Junin virus]</Hit_def>
+  <Hit_accession>ABI99475</Hit_accession>
+  <Hit_len>485</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>281.182</Hsp_bit-score>
+      <Hsp_score>718</Hsp_score>
+      <Hsp_evalue>8.32955e-88</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>252</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>241</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>138</Hsp_identity>
+      <Hsp_positive>168</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>252</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSK</Hsp_qseq>
+      <Hsp_hseq>MGQFISFMQEIPTFLQEALNIALVAVSLIAIIKGIVNLYKSGLFQFFVFLALAGRSCTEEAFKIGLHTEFQTVSFSMVGLLSNSPHDLPLLCTLNKSHLYIKGGNATFMITFDDIAVLLPQYDVVIQHPADMSWCSKSDDQIWLSQWFMNAVGHDWYLDPPFLCRNRTKTEGFIFQVNTSKTGVNENYAKKFKTGMHHLYREYPDSCLSGKLCLMK----AQPTSWPL-------QCPLDHVNTLHFLTRGK</Hsp_hseq>
+      <Hsp_midline>MGQ ISF QEIP FLQEALNIALVAVSLIA+IKGI+NLYKSGLFQF  FL LAGRSC++  FKIGLHTEFQ+V+F+M  LL+N  ++LP LC LN S  Y+KGG   F+I   D++VL+ +YDV +  P D+  C    D  W   WF  A+GHDW +DPP LCRN+TK EG   Q N SK   +  Y KK + GM HL+R + D C  GK+C +       P+S+         +C  DHVNTLHFL R K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>31</Hit_num>
+  <Hit_id>gi|114149953|gb|ABI51595.1|</Hit_id>
+  <Hit_def>glycoprotein precursor [Junin virus]</Hit_def>
+  <Hit_accession>ABI51595</Hit_accession>
+  <Hit_len>485</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>278.1</Hsp_bit-score>
+      <Hsp_score>710</Hsp_score>
+      <Hsp_evalue>1.05974e-86</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>252</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>241</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>137</Hsp_identity>
+      <Hsp_positive>168</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>252</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSK</Hsp_qseq>
+      <Hsp_hseq>MGQFISFMQEIPTFLQEALNIALVAVSLIAIIKGIVNLYKSGLFQFFVFLALAGRSCTEEAFKIGLHTEFQTVSFSMVGLFSNNPHDLPLLCTLNKSHLYIKGGNASFMISFDDIAVLLPQYDVVIQHPADMSWCSKSDDQIWLSQWFMNAVGHDWHLDPPFLCRNRTKTEGFIFQVNTSKTGVNENYAKKFKTGMHHLYREYPDSCLNGKLCLMK----AQPTSWPL-------QCPLDHVNTLHFLTRGK</Hsp_hseq>
+      <Hsp_midline>MGQ ISF QEIP FLQEALNIALVAVSLIA+IKGI+NLYKSGLFQF  FL LAGRSC++  FKIGLHTEFQ+V+F+M  L +N+ ++LP LC LN S  Y+KGG   F+I   D++VL+ +YDV +  P D+  C    D  W   WF  A+GHDW +DPP LCRN+TK EG   Q N SK   +  Y KK + GM HL+R + D C  GK+C +       P+S+         +C  DHVNTLHFL R K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>32</Hit_num>
+  <Hit_id>gi|2058466|gb|AAB65463.1|</Hit_id>
+  <Hit_def>glycoprotein precursor [Junin virus]</Hit_def>
+  <Hit_accession>AAB65463</Hit_accession>
+  <Hit_len>485</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>278.1</Hsp_bit-score>
+      <Hsp_score>710</Hsp_score>
+      <Hsp_evalue>1.08272e-86</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>252</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>241</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>137</Hsp_identity>
+      <Hsp_positive>168</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>252</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSK</Hsp_qseq>
+      <Hsp_hseq>MGQFISFMQEIPTFLQEALNIALVAVSLIAIIKGVVNLYKSGLFQFFVFLALAGRSCTEEAFKIGLHTEFQTVSFSMVGLFSNNPHDLPLLCTLNKSHLYIKGGNASFKISFDDIAVLLPEYDVIIQHPADMSWCSKSDDQIWLSQWFMNAVGHDWYLDPPFLCRNRTKTEGFIFQVNTSKTGINENYAKKFKTGMHHLYREYPDSCLDGKLCLMK----AQPTSWPV-------QCPLDHVNTLHFLTRGK</Hsp_hseq>
+      <Hsp_midline>MGQ ISF QEIP FLQEALNIALVAVSLIA+IKG++NLYKSGLFQF  FL LAGRSC++  FKIGLHTEFQ+V+F+M  L +N+ ++LP LC LN S  Y+KGG   F I   D++VL+ EYDV +  P D+  C    D  W   WF  A+GHDW +DPP LCRN+TK EG   Q N SK   +  Y KK + GM HL+R + D C +GK+C +       P+S+         +C  DHVNTLHFL R K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>33</Hit_num>
+  <Hit_id>gi|2058468|gb|AAB65464.1|</Hit_id>
+  <Hit_def>glycoprotein precursor [Junin virus]</Hit_def>
+  <Hit_accession>AAB65464</Hit_accession>
+  <Hit_len>485</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>278.1</Hsp_bit-score>
+      <Hsp_score>710</Hsp_score>
+      <Hsp_evalue>1.11814e-86</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>252</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>241</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>137</Hsp_identity>
+      <Hsp_positive>168</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>252</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSK</Hsp_qseq>
+      <Hsp_hseq>MGQFISFMQEIPTFLQEALNIALVAVSLIAIIKGVVNLYKSGLFQFFVFLALAGRSCTEEAFKIGLHTEFQTVSFSMVGLFSNNPHDLPLLCTLNKSHLYIKGGNASFKISFDDIAVLLPEYDVIIQHPADMSWCSKSDDQIWLSQWFMNAVGHDWYLDPPFLCRNRTKTEGFIFQVNTSKTGINENYAKKFKTGMHHLYREYPDSCLDGKLCLMK----AQPTSWPL-------QCPLDHVNTLHFLTRGK</Hsp_hseq>
+      <Hsp_midline>MGQ ISF QEIP FLQEALNIALVAVSLIA+IKG++NLYKSGLFQF  FL LAGRSC++  FKIGLHTEFQ+V+F+M  L +N+ ++LP LC LN S  Y+KGG   F I   D++VL+ EYDV +  P D+  C    D  W   WF  A+GHDW +DPP LCRN+TK EG   Q N SK   +  Y KK + GM HL+R + D C +GK+C +       P+S+         +C  DHVNTLHFL R K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>34</Hit_num>
+  <Hit_id>gi|50403729|sp|P26313.2|GLYC_JUNIN</Hit_id>
+  <Hit_def>RecName: Full=Pre-glycoprotein polyprotein GP complex; Contains: RecName: Full=Stable signal peptide; Short=SSP; Contains: RecName: Full=Glycoprotein G1; Short=GP1; Contains: RecName: Full=Glycoprotein G2; Short=GP2 [Junin virus] &gt;gi|2058464|gb|AAB65462.1| glycoprotein precursor [Junin virus] &gt;gi|45220433|dbj|BAA00964.2| glycoprotein precursor [Junin virus]</Hit_def>
+  <Hit_accession>P26313</Hit_accession>
+  <Hit_len>485</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>278.1</Hsp_bit-score>
+      <Hsp_score>710</Hsp_score>
+      <Hsp_evalue>1.19248e-86</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>252</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>241</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>137</Hsp_identity>
+      <Hsp_positive>168</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>252</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSK</Hsp_qseq>
+      <Hsp_hseq>MGQFISFMQEIPTFLQEALNIALVAVSLIAIIKGVVNLYKSGLFQFFVFLALAGRSCTEEAFKIGLHTEFQTVSFSMVGLFSNNPHDLPLLCTLNKSHLYIKGGNASFKISFDDIAVLLPEYDVIIQHPADMSWCSKSDDQIWLSQWFMNAVGHDWYLDPPFLCRNRTKTEGFIFQVNTSKTGINENYAKKFKTGMHHLYREYPDSCLDGKLCLMK----AQPTSWPL-------QCPLDHVNTLHFLTRGK</Hsp_hseq>
+      <Hsp_midline>MGQ ISF QEIP FLQEALNIALVAVSLIA+IKG++NLYKSGLFQF  FL LAGRSC++  FKIGLHTEFQ+V+F+M  L +N+ ++LP LC LN S  Y+KGG   F I   D++VL+ EYDV +  P D+  C    D  W   WF  A+GHDW +DPP LCRN+TK EG   Q N SK   +  Y KK + GM HL+R + D C +GK+C +       P+S+         +C  DHVNTLHFL R K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>35</Hit_num>
+  <Hit_id>gi|114149962|gb|ABI51601.1|</Hit_id>
+  <Hit_def>glycoprotein precursor [Junin virus] &gt;gi|114149969|gb|ABI51605.1| glycoprotein precursor [Junin virus] &gt;gi|114149981|gb|ABI51613.1| glycoprotein precursor [Junin virus] &gt;gi|375270193|gb|AFA43481.1| glycoprotein precurser [Junin virus]</Hit_def>
+  <Hit_accession>ABI51601</Hit_accession>
+  <Hit_len>485</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>278.1</Hsp_bit-score>
+      <Hsp_score>710</Hsp_score>
+      <Hsp_evalue>1.27177e-86</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>252</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>241</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>137</Hsp_identity>
+      <Hsp_positive>168</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>252</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSK</Hsp_qseq>
+      <Hsp_hseq>MGQFISFMQEIPTFLQEALNIALVAVSLIAIIKGIVNLYKSGLFQFFVFLALAGRSCTEEAFKIGLHTEFQTVSFSMVGLFSNNPHDLPLLCTLNKSHLYIKGGNASFMISFDDIAVLLPQYDVIIQHPADMSWCSKSDDQIWLSQWFMNAVGHDWHLDPPFLCRNRTKTEGFIFQVNTSKTGVNENYAKKFKTGMHHLYREYPDSCLNGKLCLMK----AQPTSWPL-------QCPLDHVNTLHFLTRGK</Hsp_hseq>
+      <Hsp_midline>MGQ ISF QEIP FLQEALNIALVAVSLIA+IKGI+NLYKSGLFQF  FL LAGRSC++  FKIGLHTEFQ+V+F+M  L +N+ ++LP LC LN S  Y+KGG   F+I   D++VL+ +YDV +  P D+  C    D  W   WF  A+GHDW +DPP LCRN+TK EG   Q N SK   +  Y KK + GM HL+R + D C  GK+C +       P+S+         +C  DHVNTLHFL R K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>36</Hit_num>
+  <Hit_id>gi|114149974|gb|ABI51607.1|</Hit_id>
+  <Hit_def>glycoprotein precursor [Junin virus]</Hit_def>
+  <Hit_accession>ABI51607</Hit_accession>
+  <Hit_len>485</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>277.715</Hsp_bit-score>
+      <Hsp_score>709</Hsp_score>
+      <Hsp_evalue>1.38574e-86</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>252</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>241</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>137</Hsp_identity>
+      <Hsp_positive>168</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>252</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSK</Hsp_qseq>
+      <Hsp_hseq>MGQFISFMQEIPTFLQEALNIALVAVSLIAIIKGIVNLYKSGLFQFFVFLALAGRSCTEEAFKIGLHTEFQTVSFSMVGLFSNNPHDLPLLCTLNKSHLYIKGGNASFMISFDDIAVLLPQYDVIIQHPADMSWCSKSDDQIWLSQWFMNAVGHDWHLDPPFLCRNRTKTEGFIFQVNTSKTGVNENYAKKFKTGMHHLYREYPDSCLNGKLCLMK----AQPASWPL-------QCPLDHVNTLHFLTRGK</Hsp_hseq>
+      <Hsp_midline>MGQ ISF QEIP FLQEALNIALVAVSLIA+IKGI+NLYKSGLFQF  FL LAGRSC++  FKIGLHTEFQ+V+F+M  L +N+ ++LP LC LN S  Y+KGG   F+I   D++VL+ +YDV +  P D+  C    D  W   WF  A+GHDW +DPP LCRN+TK EG   Q N SK   +  Y KK + GM HL+R + D C  GK+C +       P+S+         +C  DHVNTLHFL R K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>37</Hit_num>
+  <Hit_id>gi|114149984|gb|ABI51611.1|</Hit_id>
+  <Hit_def>glycoprotein precursor [Junin virus]</Hit_def>
+  <Hit_accession>ABI51611</Hit_accession>
+  <Hit_len>485</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>277.715</Hsp_bit-score>
+      <Hsp_score>709</Hsp_score>
+      <Hsp_evalue>1.46211e-86</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>252</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>241</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>136</Hsp_identity>
+      <Hsp_positive>169</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>252</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSK</Hsp_qseq>
+      <Hsp_hseq>MGQFISFMQEIPTFLQEALNIALVAVSLIAIIKGLVNLYKSGLFQFFVFLALAGRSCTEEAFKIGLHTEFQTVSFSMVGLFSNNPHDLPLLCTLNKSHLYIKGGNASFMISFDDITVLLPQYDVIIQHPADMSWCSESDDQIWLSQWFMNAVGHDWHLDPPFLCRNRTKTEGFIFQVNTSKAGVNENYAKKFKTGMHHLYREYPDSCLNGRLCLMK----AQPTSWPL-------QCPLDHVNTLHFLTRGK</Hsp_hseq>
+      <Hsp_midline>MGQ ISF QEIP FLQEALNIALVAVSLIA+IKG++NLYKSGLFQF  FL LAGRSC++  FKIGLHTEFQ+V+F+M  L +N+ ++LP LC LN S  Y+KGG   F+I   D++VL+ +YDV +  P D+  C    D  W   WF  A+GHDW +DPP LCRN+TK EG   Q N SKA  +  Y KK + GM HL+R + D C  G++C +       P+S+         +C  DHVNTLHFL R K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>38</Hit_num>
+  <Hit_id>gi|105969667|gb|ABF81670.1|</Hit_id>
+  <Hit_def>glycoprotein precursor [Junin virus]</Hit_def>
+  <Hit_accession>ABF81670</Hit_accession>
+  <Hit_len>485</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>277.33</Hsp_bit-score>
+      <Hsp_score>708</Hsp_score>
+      <Hsp_evalue>1.93249e-86</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>252</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>241</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>136</Hsp_identity>
+      <Hsp_positive>169</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>252</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSK</Hsp_qseq>
+      <Hsp_hseq>MGQFISFMQEIPTFLQEALNIALVAVSLIAIIKGLVNLYKSGLFQFFVFLALAGRSCTEEVFKIGLHTEFQTVSFSMVGLFSNNPHDLPLLCTLNKSHLYIKGGNASFMISFDDIAVLLPQYDVIIQHPADMSWCSKSDDQIWLSQWFMNAVGHDWHLDPPFLCRNRTKTEGFIFQVNTSKAGVNENYAKKFKTGMHHLYREYPDSCLNGRLCLMK----AQPTSWPL-------QCPLDHVNTLHFLTRGK</Hsp_hseq>
+      <Hsp_midline>MGQ ISF QEIP FLQEALNIALVAVSLIA+IKG++NLYKSGLFQF  FL LAGRSC++  FKIGLHTEFQ+V+F+M  L +N+ ++LP LC LN S  Y+KGG   F+I   D++VL+ +YDV +  P D+  C    D  W   WF  A+GHDW +DPP LCRN+TK EG   Q N SKA  +  Y KK + GM HL+R + D C  G++C +       P+S+         +C  DHVNTLHFL R K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>39</Hit_num>
+  <Hit_id>gi|34365530|ref|NP_899218.1|</Hit_id>
+  <Hit_def>glycoprotein precursor [Junin virus] &gt;gi|33868613|gb|AAQ55251.1| glycoprotein precursor [Junin virus]</Hit_def>
+  <Hit_accession>NP_899218</Hit_accession>
+  <Hit_len>485</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>277.33</Hsp_bit-score>
+      <Hsp_score>708</Hsp_score>
+      <Hsp_evalue>1.99569e-86</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>252</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>241</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>137</Hsp_identity>
+      <Hsp_positive>167</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>252</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSK</Hsp_qseq>
+      <Hsp_hseq>MGQFISFMQEIPTFLQEALNIALVAVSLIAIIKGIVNLYKSGLFQFFVFLALAGRSCTEEAFKIGLHTEFQTVSFSMVGLFSNNPHDLPLLCTLNKSHLYIKGGNASFQISFDDIAVLLPQYDVIIQHPADMSWCSKSDDQIWLSQWFMNAVGHDWHLDPPFLCRNRTKTEGFIFQVNTSKTGVNENYAKKFKTGMHHLYREYPDSCPNGKLCLMK----AQPTSWPL-------QCPLDHVNTLHFLTRGK</Hsp_hseq>
+      <Hsp_midline>MGQ ISF QEIP FLQEALNIALVAVSLIA+IKGI+NLYKSGLFQF  FL LAGRSC++  FKIGLHTEFQ+V+F+M  L +N+ ++LP LC LN S  Y+KGG   F I   D++VL+ +YDV +  P D+  C    D  W   WF  A+GHDW +DPP LCRN+TK EG   Q N SK   +  Y KK + GM HL+R + D C  GK+C +       P+S+         +C  DHVNTLHFL R K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>40</Hit_num>
+  <Hit_id>gi|48095760|gb|AAT40447.1|</Hit_id>
+  <Hit_def>glycoprotein precursor [Junin virus] &gt;gi|375333702|gb|AFA53093.1| glycoprotein precurser [Junin virus]</Hit_def>
+  <Hit_accession>AAT40447</Hit_accession>
+  <Hit_len>485</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>277.33</Hsp_bit-score>
+      <Hsp_score>708</Hsp_score>
+      <Hsp_evalue>2.24565e-86</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>252</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>241</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>137</Hsp_identity>
+      <Hsp_positive>167</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>252</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSK</Hsp_qseq>
+      <Hsp_hseq>MGQFISFMQEIPTFLQEALNIALVAVSLIAIIKGIVNLYKSGLFQFFVFLALAGRSCTEEAFKIGLHTEFQTVSFSMVGLFSNNPHDLPLLCTLNKSHLYIKGGNASFMISFDDIEVLLPQYDVIIQHPADMSWCSKSDDQIWLSQWFMNAVGHDWHLDPPFLCRNRTKTEGFIFQVNTSKTGVNENYAKKFKTGMHHLYREYPDSCLNGKLCLMK----AQPTSWPL-------QCPLDHVNTLHFLTRGK</Hsp_hseq>
+      <Hsp_midline>MGQ ISF QEIP FLQEALNIALVAVSLIA+IKGI+NLYKSGLFQF  FL LAGRSC++  FKIGLHTEFQ+V+F+M  L +N+ ++LP LC LN S  Y+KGG   F+I   D+ VL+ +YDV +  P D+  C    D  W   WF  A+GHDW +DPP LCRN+TK EG   Q N SK   +  Y KK + GM HL+R + D C  GK+C +       P+S+         +C  DHVNTLHFL R K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>41</Hit_num>
+  <Hit_id>gi|52222816|gb|AAU34180.1|</Hit_id>
+  <Hit_def>glycoprotein [Junin virus] &gt;gi|328679017|gb|AEB32436.1| glycoprotein precursor [Junin virus] &gt;gi|328679023|gb|AEB32440.1| glycoprotein precursor [Junin virus]</Hit_def>
+  <Hit_accession>AAU34180</Hit_accession>
+  <Hit_len>485</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>277.33</Hsp_bit-score>
+      <Hsp_score>708</Hsp_score>
+      <Hsp_evalue>2.34411e-86</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>252</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>241</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>137</Hsp_identity>
+      <Hsp_positive>167</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>252</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSK</Hsp_qseq>
+      <Hsp_hseq>MGQFISFMQEIPTFLQEALNIALVAVSLIAIIKGIVNLYKSGLFQFFVFLALAGRSCTEEAFKIGLHTEFQTVSFSMVGLFSNNPHDLPLLCTLNKSHLYIKGGNASFQISFDDIAVLLPQYDVIIQHPADMSWCSKSDDQIWLSQWFMNAVGHDWHLDPPFLCRNRAKTEGFIFQVNTSKTGVNGNYAKKFKTGMHHLYREYPDPCLNGKLCLMK----AQPTSWPL-------QCPLDHVNTLHFLTRGK</Hsp_hseq>
+      <Hsp_midline>MGQ ISF QEIP FLQEALNIALVAVSLIA+IKGI+NLYKSGLFQF  FL LAGRSC++  FKIGLHTEFQ+V+F+M  L +N+ ++LP LC LN S  Y+KGG   F I   D++VL+ +YDV +  P D+  C    D  W   WF  A+GHDW +DPP LCRN+ K EG   Q N SK   +  Y KK + GM HL+R + DPC  GK+C +       P+S+         +C  DHVNTLHFL R K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>42</Hit_num>
+  <Hit_id>gi|114149977|gb|ABI51609.1|</Hit_id>
+  <Hit_def>glycoprotein precursor [Junin virus]</Hit_def>
+  <Hit_accession>ABI51609</Hit_accession>
+  <Hit_len>485</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>277.33</Hsp_bit-score>
+      <Hsp_score>708</Hsp_score>
+      <Hsp_evalue>2.49995e-86</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>252</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>241</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>136</Hsp_identity>
+      <Hsp_positive>168</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>252</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSK</Hsp_qseq>
+      <Hsp_hseq>MGQFISFMQEIPTFLQEALNIALVAVSLIAIIKGVVNLYKSGLFQFFVFLALAGRSCTEEAFKIGLHTEFQTVSFSMVGLFSNNPHDLPLLCTLNKSHLYIKGGNASFMISFDDIAVLLPQYDVIIQHPADMNWCSKSDDQIWLSQWFMNAVGHDWHLDPPFLCRNRTKTEGFIFQVNTSKTGVNENYAKKFKTGMHHLYREYPDSCLNGKLCLMK----AQPTSWPL-------QCPLDHVNTLHFLTRGK</Hsp_hseq>
+      <Hsp_midline>MGQ ISF QEIP FLQEALNIALVAVSLIA+IKG++NLYKSGLFQF  FL LAGRSC++  FKIGLHTEFQ+V+F+M  L +N+ ++LP LC LN S  Y+KGG   F+I   D++VL+ +YDV +  P D+  C    D  W   WF  A+GHDW +DPP LCRN+TK EG   Q N SK   +  Y KK + GM HL+R + D C  GK+C +       P+S+         +C  DHVNTLHFL R K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>43</Hit_num>
+  <Hit_id>gi|114149956|gb|ABI51597.1|</Hit_id>
+  <Hit_def>glycoprotein precursor [Junin virus]</Hit_def>
+  <Hit_accession>ABI51597</Hit_accession>
+  <Hit_len>485</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>276.944</Hsp_bit-score>
+      <Hsp_score>707</Hsp_score>
+      <Hsp_evalue>2.72396e-86</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>252</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>241</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>136</Hsp_identity>
+      <Hsp_positive>168</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>252</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSK</Hsp_qseq>
+      <Hsp_hseq>MGQFISFMQEIPTFLQEALNIALVAVSLIAIIKGVVNLYKSGLFQFFVFLALAGRSCTEEAFKIGLHTEFQTVSFSMVGLFSNNPHDLPLLCALNKSHLYIKGGNASFMISFDDIAVLLPQYDVIIQHPADMNWCSKSDDQIWLSQWFMNAVGHDWHLDPPFLCRNRTKTEGFIFQVNTSKTGVNENYAKKFKTGMHHLYREYPDSCLNGKLCLMK----AQPTSWPL-------QCPLDHVNTLHFLTRGK</Hsp_hseq>
+      <Hsp_midline>MGQ ISF QEIP FLQEALNIALVAVSLIA+IKG++NLYKSGLFQF  FL LAGRSC++  FKIGLHTEFQ+V+F+M  L +N+ ++LP LC LN S  Y+KGG   F+I   D++VL+ +YDV +  P D+  C    D  W   WF  A+GHDW +DPP LCRN+TK EG   Q N SK   +  Y KK + GM HL+R + D C  GK+C +       P+S+         +C  DHVNTLHFL R K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>44</Hit_num>
+  <Hit_id>gi|264665555|gb|ACY70854.1|</Hit_id>
+  <Hit_def>glycoprotein precursor [Junin virus]</Hit_def>
+  <Hit_accession>ACY70854</Hit_accession>
+  <Hit_len>485</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>276.559</Hsp_bit-score>
+      <Hsp_score>706</Hsp_score>
+      <Hsp_evalue>4.09473e-86</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>252</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>241</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>136</Hsp_identity>
+      <Hsp_positive>167</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>252</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSK</Hsp_qseq>
+      <Hsp_hseq>MGQFISFMQEIPTFLQEALNIALVAVSLIAIIKGVVNLYKSGLFQFFVFLALAGRSCTEEAFKIGLHTEFQTVSFSMVGLFSNNPHDLPLLCTLNKSHLYIKGGNASFQISFDDIAVLLPQYDVIIQHPADMSWCSKSDDQIWLSQWFMNAVGHDWHLDPPFLCRNRAKTEGFIFQVNTSKTGVNGNYAKKFKTGMHHLYREYPDPCLNGKLCLMK----AQPTSWPL-------QCPLDHVNTLHFLTRGK</Hsp_hseq>
+      <Hsp_midline>MGQ ISF QEIP FLQEALNIALVAVSLIA+IKG++NLYKSGLFQF  FL LAGRSC++  FKIGLHTEFQ+V+F+M  L +N+ ++LP LC LN S  Y+KGG   F I   D++VL+ +YDV +  P D+  C    D  W   WF  A+GHDW +DPP LCRN+ K EG   Q N SK   +  Y KK + GM HL+R + DPC  GK+C +       P+S+         +C  DHVNTLHFL R K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>45</Hit_num>
+  <Hit_id>gi|105969672|gb|ABF81673.1|</Hit_id>
+  <Hit_def>glycoprotein precursor [Junin virus]</Hit_def>
+  <Hit_accession>ABF81673</Hit_accession>
+  <Hit_len>485</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>276.559</Hsp_bit-score>
+      <Hsp_score>706</Hsp_score>
+      <Hsp_evalue>4.22863e-86</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>252</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>241</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>136</Hsp_identity>
+      <Hsp_positive>167</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>252</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSK</Hsp_qseq>
+      <Hsp_hseq>MGQFISFMQEIPTFLQEALNIALVAVSLIAIIKGVVNLYKSGLFQFFVFLALAGRSCTEEAFKIGLHTEFQTVSFSMVGLFSNNPHDLPLLCTLNKSHLYIKGGNASFMISFDDIEVLLPQYDVIIQHPADMSWCSKSDDQIWLSQWFMNAVGHDWHLDPPFLCRNRTKTEGFIFQVNTSKTGVNENYAKKFKTGMHHLYREYPDSCLNGKLCLMK----AQPTSWPL-------QCPLDHVNTLHFLTRGK</Hsp_hseq>
+      <Hsp_midline>MGQ ISF QEIP FLQEALNIALVAVSLIA+IKG++NLYKSGLFQF  FL LAGRSC++  FKIGLHTEFQ+V+F+M  L +N+ ++LP LC LN S  Y+KGG   F+I   D+ VL+ +YDV +  P D+  C    D  W   WF  A+GHDW +DPP LCRN+TK EG   Q N SK   +  Y KK + GM HL+R + D C  GK+C +       P+S+         +C  DHVNTLHFL R K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>46</Hit_num>
+  <Hit_id>gi|226374506|gb|ACO52428.1|</Hit_id>
+  <Hit_def>glycoprotein precursor [Junin virus] &gt;gi|342309778|gb|AEL21323.1| glycoprotein precursor [Junin virus]</Hit_def>
+  <Hit_accession>ACO52428</Hit_accession>
+  <Hit_len>485</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>276.559</Hsp_bit-score>
+      <Hsp_score>706</Hsp_score>
+      <Hsp_evalue>5.18449e-86</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>252</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>241</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>137</Hsp_identity>
+      <Hsp_positive>167</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>252</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSK</Hsp_qseq>
+      <Hsp_hseq>MGQFISFMQEIPTFLQEALNIALVAVSLIAIIKGIVNLYKSGLFQFFVFLALAGRSCTEEAFKIGLHTEFQTVSFSMVGLFSNNPHDLPLLCTLNKSHLYIKGGNASFQISFDDIAVLLPQYDVIIQHPADMSWCSKSDDQIWLSQWFMNAVGHDWHLDPPFLCRNRTKTEGFIFQVNTSKTGVNENYAKKFKTGMHHLYREYPDSCLNGKLCLMK----AQPTSWPL-------QCPLDHVNTLHFLTRGK</Hsp_hseq>
+      <Hsp_midline>MGQ ISF QEIP FLQEALNIALVAVSLIA+IKGI+NLYKSGLFQF  FL LAGRSC++  FKIGLHTEFQ+V+F+M  L +N+ ++LP LC LN S  Y+KGG   F I   D++VL+ +YDV +  P D+  C    D  W   WF  A+GHDW +DPP LCRN+TK EG   Q N SK   +  Y KK + GM HL+R + D C  GK+C +       P+S+         +C  DHVNTLHFL R K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>47</Hit_num>
+  <Hit_id>gi|114149965|gb|ABI51603.1|</Hit_id>
+  <Hit_def>glycoprotein precursor [Junin virus]</Hit_def>
+  <Hit_accession>ABI51603</Hit_accession>
+  <Hit_len>485</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>276.174</Hsp_bit-score>
+      <Hsp_score>705</Hsp_score>
+      <Hsp_evalue>7.00052e-86</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>252</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>241</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>135</Hsp_identity>
+      <Hsp_positive>168</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>252</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSK</Hsp_qseq>
+      <Hsp_hseq>MGQFISFMQEIPTFLQEALNIALVAVSLIAIIKGVVNLYKSGLFQFFVFLALAGRSCTEEAFKIGLHTEFQTVSFSMVGLFSNNPHDLPLLCTLNKSHLYIKGGNASFMISFDDIAVLLPQYDVIIQHPADMSWCSKSDDQIWLSQWFMNAVGHDWHLDPPFLCRNRTKTEGFIFQVNTSKTGVNENYAKKFKTGMHHLYREYPDSCLNGKLCLMK----AQPTSWPL-------QCPLDHVNTLHFLTRGQ</Hsp_hseq>
+      <Hsp_midline>MGQ ISF QEIP FLQEALNIALVAVSLIA+IKG++NLYKSGLFQF  FL LAGRSC++  FKIGLHTEFQ+V+F+M  L +N+ ++LP LC LN S  Y+KGG   F+I   D++VL+ +YDV +  P D+  C    D  W   WF  A+GHDW +DPP LCRN+TK EG   Q N SK   +  Y KK + GM HL+R + D C  GK+C +       P+S+         +C  DHVNTLHFL R +</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>48</Hit_num>
+  <Hit_id>gi|114149959|gb|ABI51599.1|</Hit_id>
+  <Hit_def>glycoprotein precursor [Junin virus]</Hit_def>
+  <Hit_accession>ABI51599</Hit_accession>
+  <Hit_len>485</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>276.174</Hsp_bit-score>
+      <Hsp_score>705</Hsp_score>
+      <Hsp_evalue>7.076e-86</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>252</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>241</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>135</Hsp_identity>
+      <Hsp_positive>167</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>252</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSK</Hsp_qseq>
+      <Hsp_hseq>MGQFISFMQEIPTFLQEALNIALVAVSLIAIIKGVVNLYKSGLFQFFVFLALAGRSCTEEAFRIGLHTEFQTVSFSMVGLFSNSPHDLPLLCTLNKSHLYIKGGNASFMISFDDIAVLLPQYDVIIQHPADMSWCSKSDDQIWLSQWFMNAVGHDWHLDPPFLCRNRTKTEGFIFQVNTSKTGVNENYAKKFKTGMHHLYREYPDSCLNGKLCLMK----AQPTSWPL-------QCPLDHVNTLHFLTRGK</Hsp_hseq>
+      <Hsp_midline>MGQ ISF QEIP FLQEALNIALVAVSLIA+IKG++NLYKSGLFQF  FL LAGRSC++  F+IGLHTEFQ+V+F+M  L +N  ++LP LC LN S  Y+KGG   F+I   D++VL+ +YDV +  P D+  C    D  W   WF  A+GHDW +DPP LCRN+TK EG   Q N SK   +  Y KK + GM HL+R + D C  GK+C +       P+S+         +C  DHVNTLHFL R K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>49</Hit_num>
+  <Hit_id>gi|226374512|gb|ACO52432.1|</Hit_id>
+  <Hit_def>glycoprotein precursor [Junin virus]</Hit_def>
+  <Hit_accession>ACO52432</Hit_accession>
+  <Hit_len>485</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>275.404</Hsp_bit-score>
+      <Hsp_score>703</Hsp_score>
+      <Hsp_evalue>1.30398e-85</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>252</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>241</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>136</Hsp_identity>
+      <Hsp_positive>166</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>252</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSK</Hsp_qseq>
+      <Hsp_hseq>MGQFISFMQEIPTFLQEALNIALVAVSLIAIIKGIVNLYKSGLFQFFVFLALAGRSCTEEAFKIGLHTEFQTVSFSMVGLFSNNPHDLPLLCTLNKSHLYIKGGNASFQISFDDIAVLLPQYDVIIQHPADMSWCSKSDDQIWLSQWFMNAVGHDWHLDPPFLCRNRTKTEGFIFQVNTSKTGVNENYAKKFKTGMHHLYREYPDSCPNGKLCLMK----AQPTSWPL-------QCPLDHVNTLHLLTRGK</Hsp_hseq>
+      <Hsp_midline>MGQ ISF QEIP FLQEALNIALVAVSLIA+IKGI+NLYKSGLFQF  FL LAGRSC++  FKIGLHTEFQ+V+F+M  L +N+ ++LP LC LN S  Y+KGG   F I   D++VL+ +YDV +  P D+  C    D  W   WF  A+GHDW +DPP LCRN+TK EG   Q N SK   +  Y KK + GM HL+R + D C  GK+C +       P+S+         +C  DHVNTLH L R K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>50</Hit_num>
+  <Hit_id>gi|342360501|gb|AEL29740.1|</Hit_id>
+  <Hit_def>GPC [Junin virus] &gt;gi|342360504|gb|AEL29742.1| GPC [Junin virus] &gt;gi|342360507|gb|AEL29744.1| GPC [Junin virus]</Hit_def>
+  <Hit_accession>AEL29740</Hit_accession>
+  <Hit_len>485</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>274.633</Hsp_bit-score>
+      <Hsp_score>701</Hsp_score>
+      <Hsp_evalue>2.70361e-85</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>252</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>241</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>136</Hsp_identity>
+      <Hsp_positive>166</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>252</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSK</Hsp_qseq>
+      <Hsp_hseq>MGQFISFMQEIPTFLQEALNIALVAVSLIAIIKGIVNLYKSGLFQFFVFLALAGRSCTEEAFKIGLHTEFQTVSFSMVGLFSNNPHDLPLLCTLNKSHLYIKGGNASFQISFDDIAVLLPQYDVIIQHPADMSWCSKSDDQIWLSQWFMNAVGHDWHLDPPFLCRNRAKTEGFIFQVNTSKTGVNENYAKKFKTGMHHLYREYPDSCLNGKLCLMK----AQPTSWPL-------QCPLDHVNTLHFLTRGK</Hsp_hseq>
+      <Hsp_midline>MGQ ISF QEIP FLQEALNIALVAVSLIA+IKGI+NLYKSGLFQF  FL LAGRSC++  FKIGLHTEFQ+V+F+M  L +N+ ++LP LC LN S  Y+KGG   F I   D++VL+ +YDV +  P D+  C    D  W   WF  A+GHDW +DPP LCRN+ K EG   Q N SK   +  Y KK + GM HL+R + D C  GK+C +       P+S+         +C  DHVNTLHFL R K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>51</Hit_num>
+  <Hit_id>gi|342360498|gb|AEL29738.1|</Hit_id>
+  <Hit_def>GPC [Junin virus]</Hit_def>
+  <Hit_accession>AEL29738</Hit_accession>
+  <Hit_len>485</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>274.633</Hsp_bit-score>
+      <Hsp_score>701</Hsp_score>
+      <Hsp_evalue>2.73275e-85</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>252</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>241</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>136</Hsp_identity>
+      <Hsp_positive>166</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>252</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSK</Hsp_qseq>
+      <Hsp_hseq>MGQFISFMQEIPTFLQEALNIALVAVSLIAIIKGIVNLYKSGLFQFFVFLALAGRSCTEEAFKIGLHTEFQTVSFSMVGLFSNNPHDLPLLCTLNKSHLYIKGGNASFQISFDDIAVLLPQYDVIIQHPADMSWCSKSDDQIWLSQWFMNAVGHDWHLDPPFLCRNRAKTEGFIFQVNTSKTGVNENYAKKFKTGMHHLYREYPDSCLNGKLCLMK----AQPTSWPL-------QCPLDHVNTLHFLTRGK</Hsp_hseq>
+      <Hsp_midline>MGQ ISF QEIP FLQEALNIALVAVSLIA+IKGI+NLYKSGLFQF  FL LAGRSC++  FKIGLHTEFQ+V+F+M  L +N+ ++LP LC LN S  Y+KGG   F I   D++VL+ +YDV +  P D+  C    D  W   WF  A+GHDW +DPP LCRN+ K EG   Q N SK   +  Y KK + GM HL+R + D C  GK+C +       P+S+         +C  DHVNTLHFL R K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>52</Hit_num>
+  <Hit_id>gi|239736038|gb|ACS12870.1|</Hit_id>
+  <Hit_def>glycoproteins precursor [Junin virus]</Hit_def>
+  <Hit_accession>ACS12870</Hit_accession>
+  <Hit_len>485</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>273.863</Hsp_bit-score>
+      <Hsp_score>699</Hsp_score>
+      <Hsp_evalue>4.42729e-85</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>252</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>241</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>135</Hsp_identity>
+      <Hsp_positive>166</Hsp_positive>
+      <Hsp_gaps>11</Hsp_gaps>
+      <Hsp_align-len>252</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSK</Hsp_qseq>
+      <Hsp_hseq>MGQFISFMQEIPTFLQEALNIALVAVSLIAIIKGVVNLYKSGLFQFFVFLALAGRSCTEEAFKIGLHTEFQTVSFSMVGLFSNNPHDLPLLCTLNKSHLYIKGGNASFQISFDDIAVLLPQYDVIIQHPADMSWCSKSDDQIWLSQWFMNAVGHDWHLDPPFLCRNRAKTEGFIFQVNTSKTGVNENYAKKFKTGMHHLYREYPDSCLNGKLCLMK----AQPTSWPL-------QCPLDHVNTLHFLTRGK</Hsp_hseq>
+      <Hsp_midline>MGQ ISF QEIP FLQEALNIALVAVSLIA+IKG++NLYKSGLFQF  FL LAGRSC++  FKIGLHTEFQ+V+F+M  L +N+ ++LP LC LN S  Y+KGG   F I   D++VL+ +YDV +  P D+  C    D  W   WF  A+GHDW +DPP LCRN+ K EG   Q N SK   +  Y KK + GM HL+R + D C  GK+C +       P+S+         +C  DHVNTLHFL R K</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>53</Hit_num>
+  <Hit_id>gi|607235386|gb|AHW46355.1|</Hit_id>
+  <Hit_def>glycoprotein precursor [Tacaribe virus]</Hit_def>
+  <Hit_accession>AHW46355</Hit_accession>
+  <Hit_len>483</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>265.003</Hsp_bit-score>
+      <Hsp_score>676</Hsp_score>
+      <Hsp_evalue>1.38352e-81</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>252</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>239</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>128</Hsp_identity>
+      <Hsp_positive>173</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>252</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSK</Hsp_qseq>
+      <Hsp_hseq>MGQFISFMQEIPIFLQEALNIALVAVSLICIVKGLVNLYRCGLFQLMVFLVLAGRSCSEETFKIGMHTKFQEVSLSLSALLTNQSHELPMLCLANKTHLYLKSGRSSFKINIDSVTVLTRSADVFVHSPK-LGSCF-ESDEEWVVAWWIEAIGHRWDQDPGLLCRNKTKTEGKLIQINISRADGNVHYGWRLKNGLDHIYRGREEPCFEGEQCLIKIQP-----------EDWPTDCKADHTNTFHFLSRSQ</Hsp_hseq>
+      <Hsp_midline>MGQ ISF QEIP+FLQEALNIALVAVSLI ++KG++NLY+ GLFQ + FL LAGRSCS+ TFKIG+HT+FQ V+ ++  LL N S+ELP LC+ N +  Y+K G + F I +  V+VL +  DV V+ P+ LG+C  +SD  W + W+  A+GH W  DP +LCRNKTK EG  IQ NIS+AD +  YG +++NG+ H++RG  +PC EG+ C + I              ++ + C+ DH NT HFL RS+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>54</Hit_num>
+  <Hit_id>gi|401359|sp|P31842.1|GLYC_TACV7</Hit_id>
+  <Hit_def>RecName: Full=Pre-glycoprotein polyprotein GP complex; Short=Pre-GP-C; Contains: RecName: Full=Stable signal peptide; Short=SSP; Contains: RecName: Full=Glycoprotein G1; Short=GP1; Contains: RecName: Full=Glycoprotein G2; Short=GP2 [Tacaribe virus strain V7]</Hit_def>
+  <Hit_accession>P31842</Hit_accession>
+  <Hit_len>482</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>263.848</Hsp_bit-score>
+      <Hsp_score>673</Hsp_score>
+      <Hsp_evalue>3.34946e-81</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>252</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>239</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>128</Hsp_identity>
+      <Hsp_positive>172</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>252</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSK</Hsp_qseq>
+      <Hsp_hseq>MGQFISFMQEIPIFLQEALNIALVAVSLICIVKGLVNLYRCGLFQLMVFLVLAGRSCSEETFKIGMHTQFQEVSLSLSALLTNQSHELPMLCLANKTHLYLKSGRSSFKINIDSVTVLTRSADVFVHSPK-LGSCF-ESDEEWVVAWWIEAIGHRWDQDPGLLCRNKTKTEGKLIQINISRADGNVHYGWRLKNGLDHIYRGREEPCFEGKQCLIKIQP-----------EDWPTDCKADHTNTFRFLSRSQ</Hsp_hseq>
+      <Hsp_midline>MGQ ISF QEIP+FLQEALNIALVAVSLI ++KG++NLY+ GLFQ + FL LAGRSCS+ TFKIG+HT+FQ V+ ++  LL N S+ELP LC+ N +  Y+K G + F I +  V+VL +  DV V+ P+ LG+C  +SD  W + W+  A+GH W  DP +LCRNKTK EG  IQ NIS+AD +  YG +++NG+ H++RG  +PC EGK C + I              ++ + C+ DH NT  FL RS+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>55</Hit_num>
+  <Hit_id>gi|401360|sp|P31840.1|GLYC_TACVT</Hit_id>
+  <Hit_def>RecName: Full=Pre-glycoprotein polyprotein GP complex; Short=Pre-GP-C; Contains: RecName: Full=Stable signal peptide; Short=SSP; Contains: RecName: Full=Glycoprotein G1; Short=GP1; Contains: RecName: Full=Glycoprotein G2; Short=GP2 [Tacaribe virus strain TRVL 11598]</Hit_def>
+  <Hit_accession>P31840</Hit_accession>
+  <Hit_len>483</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>262.307</Hsp_bit-score>
+      <Hsp_score>669</Hsp_score>
+      <Hsp_evalue>1.1639e-80</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>252</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>239</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>127</Hsp_identity>
+      <Hsp_positive>172</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>252</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSK</Hsp_qseq>
+      <Hsp_hseq>MGQFISFMQEIPIFLQEALNIALVAVSLICIVKGLVNLYRCGLFQLMVFLVLAGRSCSEETFKIGMHTQFQEVSLSLSALLTNQSHELPMLCLANKTHLYLKSGRSSFKINIDSVTVLTRSADVFVHSPK-LGSCF-ESDEEWVVAWWIEAIGHRWDQDPGLLCRNKTKTEGKLIQINISRADGNVHYGWRLKNGLDHIYRGREEPCFEGEQCLIKIQP-----------EDWPTDCKADHTNTFRFLSRSQ</Hsp_hseq>
+      <Hsp_midline>MGQ ISF QEIP+FLQEALNIALVAVSLI ++KG++NLY+ GLFQ + FL LAGRSCS+ TFKIG+HT+FQ V+ ++  LL N S+ELP LC+ N +  Y+K G + F I +  V+VL +  DV V+ P+ LG+C  +SD  W + W+  A+GH W  DP +LCRNKTK EG  IQ NIS+AD +  YG +++NG+ H++RG  +PC EG+ C + I              ++ + C+ DH NT  FL RS+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>56</Hit_num>
+  <Hit_id>gi|401358|sp|P31841.1|GLYC_TACV5</Hit_id>
+  <Hit_def>RecName: Full=Pre-glycoprotein polyprotein GP complex; Short=Pre-GP-C; Contains: RecName: Full=Stable signal peptide; Short=SSP; Contains: RecName: Full=Glycoprotein G1; Short=GP1; Contains: RecName: Full=Glycoprotein G2; Short=GP2 [Tacaribe virus strain V5]</Hit_def>
+  <Hit_accession>P31841</Hit_accession>
+  <Hit_len>483</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>262.307</Hsp_bit-score>
+      <Hsp_score>669</Hsp_score>
+      <Hsp_evalue>1.35198e-80</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>252</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>239</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>127</Hsp_identity>
+      <Hsp_positive>172</Hsp_positive>
+      <Hsp_gaps>13</Hsp_gaps>
+      <Hsp_align-len>252</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSK</Hsp_qseq>
+      <Hsp_hseq>MGQFISFMQEIPIFLQEALNIALVAVSLICIVKGLVNLYRCGLFQLMVFLVLAGRSCSEETFKIGMHTQFQEVSLSLSALLTNQSHELPMLCLANKTHLYLKSGRSSFKINIDSVTVLTRSADVFVHSPK-LGSCF-ESDEEWVVAWWIEAIGHRWDQDPGLLCRNKTKTEGKLIQINISRADGNVHYGWRLKNGLDHIYRGREEPCFEGEQCLIKIQP-----------EDWPTDCKADHTNTFRFLSRSQ</Hsp_hseq>
+      <Hsp_midline>MGQ ISF QEIP+FLQEALNIALVAVSLI ++KG++NLY+ GLFQ + FL LAGRSCS+ TFKIG+HT+FQ V+ ++  LL N S+ELP LC+ N +  Y+K G + F I +  V+VL +  DV V+ P+ LG+C  +SD  W + W+  A+GH W  DP +LCRNKTK EG  IQ NIS+AD +  YG +++NG+ H++RG  +PC EG+ C + I              ++ + C+ DH NT  FL RS+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>57</Hit_num>
+  <Hit_id>gi|23334595|ref|NP_694849.1|</Hit_id>
+  <Hit_def>glycoprotein [Tacaribe virus] &gt;gi|138360|sp|P18141.1|GLYC_TACVF RecName: Full=Pre-glycoprotein polyprotein GP complex; Contains: RecName: Full=Stable signal peptide; Short=SSP; Contains: RecName: Full=Glycoprotein G1; Short=GP1; Contains: RecName: Full=Glycoprotein G2; Short=GP2 [Tacaribe virus strain Franze-Fernandez] &gt;gi|335151|gb|AAA47902.1| glycoprotein [Tacaribe virus]</Hit_def>
+  <Hit_accession>NP_694849</Hit_accession>
+  <Hit_len>495</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>253.447</Hsp_bit-score>
+      <Hsp_score>646</Hsp_score>
+      <Hsp_evalue>4.69671e-77</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>252</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>251</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>127</Hsp_identity>
+      <Hsp_positive>172</Hsp_positive>
+      <Hsp_gaps>25</Hsp_gaps>
+      <Hsp_align-len>264</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSV------------LMKEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSK</Hsp_qseq>
+      <Hsp_hseq>MGQFISFMQEIPIFLQEALNIALVAVSLICIVKGLVNLYRCGLFQLMVFLVLAGRSCSEETFKIGMHTKFQEVSLSLSALLTNQSHELPMLCLANKTHLYLKSGRSSFKINIDSVTVLTRSEVNLTSINLTRSIDVFVHSPK-LGSCF-ESDEEWVVAWWIEAIGHRWDQDPGLLCRNKTKTEGKLIQINISRADGNVHYGWRLKNGLDHIYRGREEPCFEGEQCLIKIQP-----------EDWPTDCKADHTNTFRFLSRSQ</Hsp_hseq>
+      <Hsp_midline>MGQ ISF QEIP+FLQEALNIALVAVSLI ++KG++NLY+ GLFQ + FL LAGRSCS+ TFKIG+HT+FQ V+ ++  LL N S+ELP LC+ N +  Y+K G + F I +  V+V            L +  DV V+ P+ LG+C  +SD  W + W+  A+GH W  DP +LCRNKTK EG  IQ NIS+AD +  YG +++NG+ H++RG  +PC EG+ C + I              ++ + C+ DH NT  FL RS+</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>58</Hit_num>
+  <Hit_id>gi|380710161|gb|AFD98839.1|</Hit_id>
+  <Hit_def>glycoprotein precursor [Ocozocoautla de Espinosa virus]</Hit_def>
+  <Hit_accession>AFD98839</Hit_accession>
+  <Hit_len>486</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>232.646</Hsp_bit-score>
+      <Hsp_score>592</Hsp_score>
+      <Hsp_evalue>4.32828e-69</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>255</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>245</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>128</Hsp_identity>
+      <Hsp_positive>165</Hsp_positive>
+      <Hsp_gaps>16</Hsp_gaps>
+      <Hsp_align-len>258</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLM---KEYDVSVYEPEDLGNCLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSKTHL</Hsp_qseq>
+      <Hsp_hseq>MGQFVSFIQEIPTFLQEALNIALAAVSLICVTKGLVNLYRSGLFQLVLFLLLAGKSCSEEVFKIGLHTRLQEVTLSPGVLLTNHDHELPVLCSVNRTHLYFKGGNFSFEVYIDDVVVLLMVEGGSDISIDSP-NLSACL-PDGQEWLVNWWIETIGHKWGLDPNMLCRNKTKPEGFLIQINISRADNNYRYGWKLKNGLDHIYRDRQEPCLEGKRCLLKIRPAGWPQS-----------CNVDHMNTLNFLIRGQKNM</Hsp_hseq>
+      <Hsp_midline>MGQ +SF QEIP FLQEALNIAL AVSLI V KG++NLY+SGLFQ + FL LAG+SCS+  FKIGLHT  Q VT +   LL NH +ELP LC +N +  Y KGG   F + + DV VL+      D+S+  P +L  CL      W ++W+   +GH W +DP MLCRNKTK EG  IQ NIS+AD +  YG K++NG+ H++R   +PC EGK C + I   G P S           C  DH+NTL+FL+R + ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>59</Hit_num>
+  <Hit_id>gi|8925441|gb|AAF81479.1|AF264198_1</Hit_id>
+  <Hit_def>glycoprotein 1, partial [Junin virus] &gt;gi|8925443|gb|AAF81480.1|AF264199_1 glycoprotein 1, partial [Junin virus] &gt;gi|8925445|gb|AAF81481.1|AF264200_1 glycoprotein 1, partial [Junin virus]</Hit_def>
+  <Hit_accession>AAF81479</Hit_accession>
+  <Hit_len>130</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>175.252</Hsp_bit-score>
+      <Hsp_score>443</Hsp_score>
+      <Hsp_evalue>3.4241e-51</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>129</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>85</Hsp_identity>
+      <Hsp_positive>102</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>129</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEP</Hsp_qseq>
+      <Hsp_hseq>MGQFISFMQEIPTFLQEALNIALVAVSLIAIIKGIVNLYKSGLFQFFVFLALAGRSCTEEAFKIGLHTEFQTVSFSMVGLLSNSPHDLPLLCTLNKSHLYIKGGNATFMITFDDIAVLLPQYDVVIQHP</Hsp_hseq>
+      <Hsp_midline>MGQ ISF QEIP FLQEALNIALVAVSLIA+IKGI+NLYKSGLFQF  FL LAGRSC++  FKIGLHTEFQ+V+F+M  LL+N  ++LP LC LN S  Y+KGG   F+I   D++VL+ +YDV +  P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>60</Hit_num>
+  <Hit_id>gi|8925515|gb|AAF81516.1|AF264235_1</Hit_id>
+  <Hit_def>glycoprotein 1, partial [Junin virus]</Hit_def>
+  <Hit_accession>AAF81516</Hit_accession>
+  <Hit_len>130</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>174.866</Hsp_bit-score>
+      <Hsp_score>442</Hsp_score>
+      <Hsp_evalue>4.06785e-51</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>129</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>85</Hsp_identity>
+      <Hsp_positive>103</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>129</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEP</Hsp_qseq>
+      <Hsp_hseq>MGQFISFMQEIPTFLQEALNIALVAVSLIAIIKGIVNLYKSGLFQFFVFLVLAGRSCTEETFKIGLHTEFQTVSFSMVGLFSNNPHDLPLLCTLNKSHLYIKGGNASFMISFDDIAVLLPQYDVIIQHP</Hsp_hseq>
+      <Hsp_midline>MGQ ISF QEIP FLQEALNIALVAVSLIA+IKGI+NLYKSGLFQF  FL LAGRSC++ TFKIGLHTEFQ+V+F+M  L +N+ ++LP LC LN S  Y+KGG   F+I   D++VL+ +YDV +  P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>61</Hit_num>
+  <Hit_id>gi|8925439|gb|AAF81478.1|AF264197_1</Hit_id>
+  <Hit_def>glycoprotein 1, partial [Junin virus]</Hit_def>
+  <Hit_accession>AAF81478</Hit_accession>
+  <Hit_len>130</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>174.096</Hsp_bit-score>
+      <Hsp_score>440</Hsp_score>
+      <Hsp_evalue>9.12088e-51</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>129</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>84</Hsp_identity>
+      <Hsp_positive>102</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>129</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEP</Hsp_qseq>
+      <Hsp_hseq>MGQFISFMQEIPTFLQEALNIALVAVSLIAIIKGIVNLYRSGLFQFFVFLALAGRSCTEEAFKIGLHTEFQTVSFSMVGLLSNSPHDLPLLCTLNKSHLYIKGGNATFMITFDDIAVLLPQYDVVIQHP</Hsp_hseq>
+      <Hsp_midline>MGQ ISF QEIP FLQEALNIALVAVSLIA+IKGI+NLY+SGLFQF  FL LAGRSC++  FKIGLHTEFQ+V+F+M  LL+N  ++LP LC LN S  Y+KGG   F+I   D++VL+ +YDV +  P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>62</Hit_num>
+  <Hit_id>gi|8925447|gb|AAF81482.1|AF264201_1</Hit_id>
+  <Hit_def>glycoprotein 1, partial [Junin virus] &gt;gi|8925449|gb|AAF81483.1|AF264202_1 glycoprotein 1, partial [Junin virus] &gt;gi|8925451|gb|AAF81484.1|AF264203_1 glycoprotein 1, partial [Junin virus]</Hit_def>
+  <Hit_accession>AAF81482</Hit_accession>
+  <Hit_len>130</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>174.096</Hsp_bit-score>
+      <Hsp_score>440</Hsp_score>
+      <Hsp_evalue>1.07192e-50</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>129</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>86</Hsp_identity>
+      <Hsp_positive>102</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>129</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEP</Hsp_qseq>
+      <Hsp_hseq>MGQFISFMQEIPTFLQEALNIALVAVSLIAIIKGIVNLYKSGLFQFFVFLTLAGRSCTEETFKIGLHTEFQTVSFSMVGLFSNNPHDLPLLCNLNKSHLYIKGGNATFQINFDDIAVLLPEYDVIIQHP</Hsp_hseq>
+      <Hsp_midline>MGQ ISF QEIP FLQEALNIALVAVSLIA+IKGI+NLYKSGLFQF  FL LAGRSC++ TFKIGLHTEFQ+V+F+M  L +N+ ++LP LC LN S  Y+KGG   F I   D++VL+ EYDV +  P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>63</Hit_num>
+  <Hit_id>gi|8925493|gb|AAF81505.1|AF264224_1</Hit_id>
+  <Hit_def>glycoprotein 1, partial [Junin virus]</Hit_def>
+  <Hit_accession>AAF81505</Hit_accession>
+  <Hit_len>130</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>173.711</Hsp_bit-score>
+      <Hsp_score>439</Hsp_score>
+      <Hsp_evalue>1.19375e-50</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>129</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>84</Hsp_identity>
+      <Hsp_positive>102</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>129</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEP</Hsp_qseq>
+      <Hsp_hseq>MGQFISFMQEIPTFLQEALNIALVAVSLIAIIKGVVNLYKSGLFQFFVFLALAGRSCTEEAFKIGLHTEFQAVSFSMVGLFSNNPHDLPLLCTLNKSHLYIKGGNASFMISFDDIAVLLPEYDVVIQHP</Hsp_hseq>
+      <Hsp_midline>MGQ ISF QEIP FLQEALNIALVAVSLIA+IKG++NLYKSGLFQF  FL LAGRSC++  FKIGLHTEFQ+V+F+M  L +N+ ++LP LC LN S  Y+KGG   F+I   D++VL+ EYDV +  P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>64</Hit_num>
+  <Hit_id>gi|8925483|gb|AAF81500.1|AF264219_1</Hit_id>
+  <Hit_def>glycoprotein 1, partial [Junin virus] &gt;gi|8925485|gb|AAF81501.1|AF264220_1 glycoprotein 1, partial [Junin virus] &gt;gi|8925487|gb|AAF81502.1|AF264221_1 glycoprotein 1, partial [Junin virus]</Hit_def>
+  <Hit_accession>AAF81500</Hit_accession>
+  <Hit_len>130</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>173.711</Hsp_bit-score>
+      <Hsp_score>439</Hsp_score>
+      <Hsp_evalue>1.3011e-50</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>129</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>84</Hsp_identity>
+      <Hsp_positive>102</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>129</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEP</Hsp_qseq>
+      <Hsp_hseq>MGQFISFMQEIPTFLQEALNIALVAVSLIAIIKGVVNLYKSGLFQFFVFLALAGRSCTDEAFKIGLHTEFQTVSFSMVGLFSNNPHDLPLLCTLNKSHLYIKGGNASFMISFDDIAVLLPQYDVIIQHP</Hsp_hseq>
+      <Hsp_midline>MGQ ISF QEIP FLQEALNIALVAVSLIA+IKG++NLYKSGLFQF  FL LAGRSC+D  FKIGLHTEFQ+V+F+M  L +N+ ++LP LC LN S  Y+KGG   F+I   D++VL+ +YDV +  P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>65</Hit_num>
+  <Hit_id>gi|8925467|gb|AAF81492.1|AF264211_1</Hit_id>
+  <Hit_def>glycoprotein 1, partial [Junin virus]</Hit_def>
+  <Hit_accession>AAF81492</Hit_accession>
+  <Hit_len>130</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>173.711</Hsp_bit-score>
+      <Hsp_score>439</Hsp_score>
+      <Hsp_evalue>1.52908e-50</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>129</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>85</Hsp_identity>
+      <Hsp_positive>102</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>129</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEP</Hsp_qseq>
+      <Hsp_hseq>MGQLISFMQEIPTFLQEALNIALVAVSLIAIIKGIVNLYKSGLFQFFVFLALAGRSCTEEAFKIGLHTEFQTVSFSMVGLFSNNPHDLPLLCTLNKSHLYIKGGNASFMISFDDIEVLLPQYDVIIQHP</Hsp_hseq>
+      <Hsp_midline>MGQLISF QEIP FLQEALNIALVAVSLIA+IKGI+NLYKSGLFQF  FL LAGRSC++  FKIGLHTEFQ+V+F+M  L +N+ ++LP LC LN S  Y+KGG   F+I   D+ VL+ +YDV +  P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>66</Hit_num>
+  <Hit_id>gi|8925479|gb|AAF81498.1|AF264217_1</Hit_id>
+  <Hit_def>glycoprotein 1, partial [Junin virus]</Hit_def>
+  <Hit_accession>AAF81498</Hit_accession>
+  <Hit_len>130</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>172.94</Hsp_bit-score>
+      <Hsp_score>437</Hsp_score>
+      <Hsp_evalue>2.45526e-50</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>129</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>83</Hsp_identity>
+      <Hsp_positive>103</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>129</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEP</Hsp_qseq>
+      <Hsp_hseq>MGQFISFMQEIPTFLQEALNIALVAVSLIAIIKGVVNLYKSGLFQFLVFLALAGRSCTEEAFKIGLHTEFQTVSFSMVGLFSNNPHDLPLLCTLNKSHLYIKGGNASFMISFDDIAVLLPQYDVIIQHP</Hsp_hseq>
+      <Hsp_midline>MGQ ISF QEIP FLQEALNIALVAVSLIA+IKG++NLYKSGLFQF+ FL LAGRSC++  FKIGLHTEFQ+V+F+M  L +N+ ++LP LC LN S  Y+KGG   F+I   D++VL+ +YDV +  P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>67</Hit_num>
+  <Hit_id>gi|8925497|gb|AAF81507.1|AF264226_1</Hit_id>
+  <Hit_def>glycoprotein 1, partial [Junin virus] &gt;gi|8925507|gb|AAF81512.1|AF264231_1 glycoprotein 1, partial [Junin virus] &gt;gi|8925509|gb|AAF81513.1|AF264232_1 glycoprotein 1, partial [Junin virus]</Hit_def>
+  <Hit_accession>AAF81507</Hit_accession>
+  <Hit_len>130</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>172.94</Hsp_bit-score>
+      <Hsp_score>437</Hsp_score>
+      <Hsp_evalue>2.64738e-50</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>129</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>84</Hsp_identity>
+      <Hsp_positive>102</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>129</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEP</Hsp_qseq>
+      <Hsp_hseq>MGQFISFMQEIPTFLQEALNIALVAVSLIAIIKGIVNLYKSGLFQFFVFLALAGRSCTEEAFKIGLHTEFQTVSFSMVGLFSNNPHDLPLLCTLNKSHLYIKGGNASFMISFDDIAVLLPQYDVVIQHP</Hsp_hseq>
+      <Hsp_midline>MGQ ISF QEIP FLQEALNIALVAVSLIA+IKGI+NLYKSGLFQF  FL LAGRSC++  FKIGLHTEFQ+V+F+M  L +N+ ++LP LC LN S  Y+KGG   F+I   D++VL+ +YDV +  P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>68</Hit_num>
+  <Hit_id>gi|8925457|gb|AAF81487.1|AF264206_1</Hit_id>
+  <Hit_def>glycoprotein 1, partial [Junin virus]</Hit_def>
+  <Hit_accession>AAF81487</Hit_accession>
+  <Hit_len>130</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>172.555</Hsp_bit-score>
+      <Hsp_score>436</Hsp_score>
+      <Hsp_evalue>3.57833e-50</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>129</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>83</Hsp_identity>
+      <Hsp_positive>103</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>129</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEP</Hsp_qseq>
+      <Hsp_hseq>MGQFISFMQEIPTFLQEALNIALVAVSLIAIIKGLVNLYKSGLFQFLVFLALAGRSCTEEAFKIGLHTEFQTVSFSMVGLFSNNPHDLPLLCTLNKSHLYIKGGNASFMISFDDIAVLLPQYDVIIQHP</Hsp_hseq>
+      <Hsp_midline>MGQ ISF QEIP FLQEALNIALVAVSLIA+IKG++NLYKSGLFQF+ FL LAGRSC++  FKIGLHTEFQ+V+F+M  L +N+ ++LP LC LN S  Y+KGG   F+I   D++VL+ +YDV +  P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>69</Hit_num>
+  <Hit_id>gi|8925455|gb|AAF81486.1|AF264205_1</Hit_id>
+  <Hit_def>glycoprotein 1, partial [Junin virus] &gt;gi|8925463|gb|AAF81490.1|AF264209_1 glycoprotein 1, partial [Junin virus] &gt;gi|8925465|gb|AAF81491.1|AF264210_1 glycoprotein 1, partial [Junin virus] &gt;gi|8925495|gb|AAF81506.1|AF264225_1 glycoprotein 1, partial [Junin virus] &gt;gi|8925503|gb|AAF81510.1|AF264229_1 glycoprotein 1, partial [Junin virus] &gt;gi|8925505|gb|AAF81511.1|AF264230_1 glycoprotein 1, partial [Junin virus] &gt;gi|8925511|gb|AAF81514.1|AF264233_1 glycoprotein 1, partial [Junin virus]</Hit_def>
+  <Hit_accession>AAF81486</Hit_accession>
+  <Hit_len>130</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>172.555</Hsp_bit-score>
+      <Hsp_score>436</Hsp_score>
+      <Hsp_evalue>3.65618e-50</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>129</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>84</Hsp_identity>
+      <Hsp_positive>102</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>129</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEP</Hsp_qseq>
+      <Hsp_hseq>MGQFISFMQEIPTFLQEALNIALVAVSLIAIIKGIVNLYKSGLFQFFVFLALAGRSCTEEAFKIGLHTEFQTVSFSMVGLFSNNPHDLPLLCTLNKSHLYIKGGNASFMISFDDIAVLLPQYDVIIQHP</Hsp_hseq>
+      <Hsp_midline>MGQ ISF QEIP FLQEALNIALVAVSLIA+IKGI+NLYKSGLFQF  FL LAGRSC++  FKIGLHTEFQ+V+F+M  L +N+ ++LP LC LN S  Y+KGG   F+I   D++VL+ +YDV +  P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>70</Hit_num>
+  <Hit_id>gi|8925459|gb|AAF81488.1|AF264207_1</Hit_id>
+  <Hit_def>glycoprotein 1, partial [Junin virus] &gt;gi|8925469|gb|AAF81493.1|AF264212_1 glycoprotein 1, partial [Junin virus]</Hit_def>
+  <Hit_accession>AAF81488</Hit_accession>
+  <Hit_len>130</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>172.17</Hsp_bit-score>
+      <Hsp_score>435</Hsp_score>
+      <Hsp_evalue>4.58321e-50</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>129</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>84</Hsp_identity>
+      <Hsp_positive>101</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>129</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEP</Hsp_qseq>
+      <Hsp_hseq>MGQFISFMQEIPTFLQEALNIALVAVSLIAIIKGIVNLYKSGLFQFFVFLALAGRSCTEEAFKIGLHTEFQTVSFSMVGLFSNNPHDLPLLCTLNKSHLYIKGGNASFMISFDDIEVLLPQYDVVIQHP</Hsp_hseq>
+      <Hsp_midline>MGQ ISF QEIP FLQEALNIALVAVSLIA+IKGI+NLYKSGLFQF  FL LAGRSC++  FKIGLHTEFQ+V+F+M  L +N+ ++LP LC LN S  Y+KGG   F+I   D+ VL+ +YDV +  P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>71</Hit_num>
+  <Hit_id>gi|8925481|gb|AAF81499.1|AF264218_1</Hit_id>
+  <Hit_def>glycoprotein 1, partial [Junin virus]</Hit_def>
+  <Hit_accession>AAF81499</Hit_accession>
+  <Hit_len>130</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>172.17</Hsp_bit-score>
+      <Hsp_score>435</Hsp_score>
+      <Hsp_evalue>5.27134e-50</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>129</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>83</Hsp_identity>
+      <Hsp_positive>102</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>129</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEP</Hsp_qseq>
+      <Hsp_hseq>MGQFISFMQEIPTFLQEALNIALVAVSLIAIIKGVVNLYKSGLFQFFVFLALAGRSCTEEAFKIGLHTEFQTVSFSMVGLFSNNPHDLPLLCTLNKSHLYIKGGNASFMISFDDIAVLLPQYDVIIQRP</Hsp_hseq>
+      <Hsp_midline>MGQ ISF QEIP FLQEALNIALVAVSLIA+IKG++NLYKSGLFQF  FL LAGRSC++  FKIGLHTEFQ+V+F+M  L +N+ ++LP LC LN S  Y+KGG   F+I   D++VL+ +YDV +  P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>72</Hit_num>
+  <Hit_id>gi|8925471|gb|AAF81494.1|AF264213_1</Hit_id>
+  <Hit_def>glycoprotein 1, partial [Junin virus] &gt;gi|8925473|gb|AAF81495.1|AF264214_1 glycoprotein 1, partial [Junin virus] &gt;gi|8925475|gb|AAF81496.1|AF264215_1 glycoprotein 1, partial [Junin virus] &gt;gi|8925477|gb|AAF81497.1|AF264216_1 glycoprotein 1, partial [Junin virus] &gt;gi|8925489|gb|AAF81503.1|AF264222_1 glycoprotein 1, partial [Junin virus]</Hit_def>
+  <Hit_accession>AAF81494</Hit_accession>
+  <Hit_len>130</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>172.17</Hsp_bit-score>
+      <Hsp_score>435</Hsp_score>
+      <Hsp_evalue>5.93368e-50</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>129</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>83</Hsp_identity>
+      <Hsp_positive>102</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>129</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEP</Hsp_qseq>
+      <Hsp_hseq>MGQFISFMQEIPTFLQEALNIALVAVSLIAIIKGVVNLYKSGLFQFFVFLALAGRSCTEEAFKIGLHTEFQTVSFSMVGLFSNNPHDLPLLCTLNKSHLYIKGGNASFMISFDDIAVLLPQYDVIIQHP</Hsp_hseq>
+      <Hsp_midline>MGQ ISF QEIP FLQEALNIALVAVSLIA+IKG++NLYKSGLFQF  FL LAGRSC++  FKIGLHTEFQ+V+F+M  L +N+ ++LP LC LN S  Y+KGG   F+I   D++VL+ +YDV +  P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>73</Hit_num>
+  <Hit_id>gi|8925461|gb|AAF81489.1|AF264208_1</Hit_id>
+  <Hit_def>glycoprotein 1, partial [Junin virus]</Hit_def>
+  <Hit_accession>AAF81489</Hit_accession>
+  <Hit_len>130</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>171.785</Hsp_bit-score>
+      <Hsp_score>434</Hsp_score>
+      <Hsp_evalue>6.60775e-50</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>129</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>84</Hsp_identity>
+      <Hsp_positive>101</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>129</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEP</Hsp_qseq>
+      <Hsp_hseq>MGQFISFMQEIPTFLQEALNIALVAVSLIAIIKGIVNLYKSGLFQFFVFLALAGRSCTEEAFKIGLHTEFQTVSFSMVGLFSNNPHDLPLLCTLNKSHLYIKGGNASFMISFDDIEVLLPQYDVIIQHP</Hsp_hseq>
+      <Hsp_midline>MGQ ISF QEIP FLQEALNIALVAVSLIA+IKGI+NLYKSGLFQF  FL LAGRSC++  FKIGLHTEFQ+V+F+M  L +N+ ++LP LC LN S  Y+KGG   F+I   D+ VL+ +YDV +  P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>74</Hit_num>
+  <Hit_id>gi|8925453|gb|AAF81485.1|AF264204_1</Hit_id>
+  <Hit_def>glycoprotein 1, partial [Junin virus]</Hit_def>
+  <Hit_accession>AAF81485</Hit_accession>
+  <Hit_len>130</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>171.785</Hsp_bit-score>
+      <Hsp_score>434</Hsp_score>
+      <Hsp_evalue>6.97296e-50</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>129</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>85</Hsp_identity>
+      <Hsp_positive>101</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>129</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEP</Hsp_qseq>
+      <Hsp_hseq>MGQFISFMQEIPTFLQEALNIALVAVSLIAIIKGIVNLYKSGLFQFFVFLTLAGRSCTEETFKIGLHTEFQTVSFSMVGLFSNNPHDLPLLCNLNKSHLYIKGGNATFQFSFDDIAVLLPEYDVIIQHP</Hsp_hseq>
+      <Hsp_midline>MGQ ISF QEIP FLQEALNIALVAVSLIA+IKGI+NLYKSGLFQF  FL LAGRSC++ TFKIGLHTEFQ+V+F+M  L +N+ ++LP LC LN S  Y+KGG   F     D++VL+ EYDV +  P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>75</Hit_num>
+  <Hit_id>gi|8925491|gb|AAF81504.1|AF264223_1</Hit_id>
+  <Hit_def>glycoprotein 1, partial [Junin virus]</Hit_def>
+  <Hit_accession>AAF81504</Hit_accession>
+  <Hit_len>130</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>171.785</Hsp_bit-score>
+      <Hsp_score>434</Hsp_score>
+      <Hsp_evalue>7.12464e-50</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>129</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>83</Hsp_identity>
+      <Hsp_positive>102</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>129</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEP</Hsp_qseq>
+      <Hsp_hseq>MGQFISFMQEIPTFLQEALNIALVAVSLIAIIKGVVNLYKSGLFQFFVFLALAGRSCTEEAFKIGLHTEFQTVSFSMVGLFSNNPHDLPLLCTLNKSHLYIKGGNASFMISFDDIAVLLPQYDVIIQHP</Hsp_hseq>
+      <Hsp_midline>MGQ ISF QEIP FLQEALNIALVAVSLIA+IKG++NLYKSGLFQF  FL LAGRSC++  FKIGLHTEFQ+V+F+M  L +N+ ++LP LC LN S  Y+KGG   F+I   D++VL+ +YDV +  P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>76</Hit_num>
+  <Hit_id>gi|8925513|gb|AAF81515.1|AF264234_1</Hit_id>
+  <Hit_def>glycoprotein 1, partial [Junin virus]</Hit_def>
+  <Hit_accession>AAF81515</Hit_accession>
+  <Hit_len>130</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>171.4</Hsp_bit-score>
+      <Hsp_score>433</Hsp_score>
+      <Hsp_evalue>9.52626e-50</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>129</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>83</Hsp_identity>
+      <Hsp_positive>102</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>129</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEP</Hsp_qseq>
+      <Hsp_hseq>MGQFISFMQEIPTFLQEALNIALVAVSLIAIIKGLVNLYKSGLFQFFVFLALAGRSCTEEAFKIGLHTEFQTVSFSMVGLFSNNPHDLPLLCTLNKSHLYIKGGNASFMISFDDIAVLLPQYDVIIQHP</Hsp_hseq>
+      <Hsp_midline>MGQ ISF QEIP FLQEALNIALVAVSLIA+IKG++NLYKSGLFQF  FL LAGRSC++  FKIGLHTEFQ+V+F+M  L +N+ ++LP LC LN S  Y+KGG   F+I   D++VL+ +YDV +  P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>77</Hit_num>
+  <Hit_id>gi|8925499|gb|AAF81508.1|AF264227_1</Hit_id>
+  <Hit_def>glycoprotein 1, partial [Junin virus]</Hit_def>
+  <Hit_accession>AAF81508</Hit_accession>
+  <Hit_len>130</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>171.014</Hsp_bit-score>
+      <Hsp_score>432</Hsp_score>
+      <Hsp_evalue>1.64891e-49</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>129</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>84</Hsp_identity>
+      <Hsp_positive>101</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>129</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEP</Hsp_qseq>
+      <Hsp_hseq>MGQFISFMQEIPTFLQEALNIALVAVSLIAIIKGIVNLYKSGLFQFFVFLALAGRSCTEEAFKIGLHTEFQTVSFSMVGLFSNNPHDLPLLCTLNKSHLYIKGGNASFQISFDDIAVLLPQYDVIIQHP</Hsp_hseq>
+      <Hsp_midline>MGQ ISF QEIP FLQEALNIALVAVSLIA+IKGI+NLYKSGLFQF  FL LAGRSC++  FKIGLHTEFQ+V+F+M  L +N+ ++LP LC LN S  Y+KGG   F I   D++VL+ +YDV +  P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>78</Hit_num>
+  <Hit_id>gi|8925501|gb|AAF81509.1|AF264228_1</Hit_id>
+  <Hit_def>glycoprotein 1, partial [Junin virus]</Hit_def>
+  <Hit_accession>AAF81509</Hit_accession>
+  <Hit_len>130</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>171.014</Hsp_bit-score>
+      <Hsp_score>432</Hsp_score>
+      <Hsp_evalue>1.66675e-49</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>129</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>129</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>84</Hsp_identity>
+      <Hsp_positive>101</Hsp_positive>
+      <Hsp_gaps>0</Hsp_gaps>
+      <Hsp_align-len>129</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVYEP</Hsp_qseq>
+      <Hsp_hseq>MGQFISFMQEIPTFLQEALNIALVAVSLIAIIKGIVNLYKSGLFQFFVFLALAGRSCTEEAFKIGLHTEFQTVSFSMVGLFSNNPHDLPLLCTLNKSHLYIKGGNASFKISFDDIAVLLPQYDVIIQHP</Hsp_hseq>
+      <Hsp_midline>MGQ ISF QEIP FLQEALNIALVAVSLIA+IKGI+NLYKSGLFQF  FL LAGRSC++  FKIGLHTEFQ+V+F+M  L +N+ ++LP LC LN S  Y+KGG   F I   D++VL+ +YDV +  P</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>79</Hit_num>
+  <Hit_id>gi|50916220|gb|AAT88082.1|</Hit_id>
+  <Hit_def>glycoprotein precursor [Guanarito virus]</Hit_def>
+  <Hit_accession>AAT88082</Hit_accession>
+  <Hit_len>479</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>160.229</Hsp_bit-score>
+      <Hsp_score>404</Hsp_score>
+      <Hsp_evalue>6.72432e-42</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>255</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>239</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>97</Hsp_identity>
+      <Hsp_positive>143</Hsp_positive>
+      <Hsp_gaps>26</Hsp_gaps>
+      <Hsp_align-len>260</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGAN---IFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDS-SWAIHWFSIALGHDWLMDPPMLCR-NKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSKTHL</Hsp_qseq>
+      <Hsp_hseq>MGQLISFFQDIPIFFEEALNVALAVVTLLAIIKGIVNIWKSGILQLLVYLILAGRSCS---FKVGHHTNFESFTVNLGGVF----HELPSLCRVNNSYSLIRLSHNSDQALSVEYVDVHPVLGSSSPTIF--DNYTQCIKDSPEFDWILGWTIKGLGHDFLRDPRICCEPKKTTNVEFTFQLNLTDSVETHHYRGKIEAGIRHLFGDYITNDSYPKMSVVMRN------------TTWEGQCPNSHVNTLRFLVKNAGYL</Hsp_hseq>
+      <Hsp_midline>MGQLISFFQ+IP+F +EALN+AL  V+L+A+IKGI+N++KSG+ Q + +L LAGRSCS   FK+G HT F+S T  +  +     +ELPSLC +NNS+  ++   N      +   DV  ++     +++  ++   C+  S    W + W    LGHD+L DP + C   KT       Q N++ + E+  Y  KI  G+RHLF  +       K+  V  N            T +  +C   HVNTL FLV++  +L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>80</Hit_num>
+  <Hit_id>gi|55775479|gb|AAV65020.1|</Hit_id>
+  <Hit_def>glycoprotein precursor [Guanarito virus]</Hit_def>
+  <Hit_accession>AAV65020</Hit_accession>
+  <Hit_len>479</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>159.844</Hsp_bit-score>
+      <Hsp_score>403</Hsp_score>
+      <Hsp_evalue>7.83052e-42</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>251</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>235</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>106</Hsp_identity>
+      <Hsp_positive>147</Hsp_positive>
+      <Hsp_gaps>46</Hsp_gaps>
+      <Hsp_align-len>266</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVS--VLMKEY-DVSVY----EPEDLGN----CLNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQF----NISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRS</Hsp_qseq>
+      <Hsp_hseq>MGQLISFFQDIPIFFEEALNVALAVVTLLAIIKGIVNVWKSGILQLLVFLVLAGRSCS---FKVGHHTNFESFTVNLGGVF----HELPSLCRVNNSYS---------LIRLSHSSNQALSVEYVDVSPVLCSSSPTILDNYTQCTMGSPEFDWILGWTIKGLGHDFLRDPRICCE---PKKSSNVEFRFQLNLTDSPETHHYRSKIEAGIRHLFGNYITNDSYSKMSIIMRN------------TTWENQCSNSHVNTLRFLVKN</Hsp_hseq>
+      <Hsp_midline>MGQLISFFQ+IP+F +EALN+AL  V+L+A+IKGI+N++KSG+ Q + FL LAGRSCS   FK+G HT F+S T  +  +     +ELPSLC +NNS+          LIR+S  S   L  EY DVS       P  L N     +   +  W + W    LGHD+L DP + C     K+ SN++F    N++ + E+  Y  KI  G+RHLF  +       K+  +  N            T + ++C   HVNTL FLV++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>81</Hit_num>
+  <Hit_id>gi|45239321|gb|AAS55656.1|</Hit_id>
+  <Hit_def>glycoprotein precursor [Guanarito virus] &gt;gi|50253979|gb|AAT72111.1| glycoprotein precursor [Guanarito virus]</Hit_def>
+  <Hit_accession>AAS55656</Hit_accession>
+  <Hit_len>479</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>159.844</Hsp_bit-score>
+      <Hsp_score>403</Hsp_score>
+      <Hsp_evalue>9.30534e-42</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>255</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>239</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>98</Hsp_identity>
+      <Hsp_positive>142</Hsp_positive>
+      <Hsp_gaps>26</Hsp_gaps>
+      <Hsp_align-len>260</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGAN---IFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDS-SWAIHWFSIALGHDWLMDPPMLCR-NKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSKTHL</Hsp_qseq>
+      <Hsp_hseq>MGQLISFFQDIPIFFEEALNVALAVVTLLAIIKGIVNVWKSGILQLFVFLVLAGRSCS---FKVGHHTNFESFTVKLGGVF----HELPSLCRVNNSYSLIRLSHNSNQALSVEYVDVHPVLCSSSPTIL--DNYTQCIKGSPEFDWILGWTIKGLGHDFLRDPRICCEPKKTTNTEFTFQLNLTDSPETHHYRSKIEVGIRHLFGNYITNDSYSKMSVVMRN------------TSWEGQCSNSHVNTLRFLVKNAGYL</Hsp_hseq>
+      <Hsp_midline>MGQLISFFQ+IP+F +EALN+AL  V+L+A+IKGI+N++KSG+ Q   FL LAGRSCS   FK+G HT F+S T  +  +     +ELPSLC +NNS+  ++   N      +   DV  ++     ++   ++   C+  S    W + W    LGHD+L DP + C   KT       Q N++ + E+  Y  KI  G+RHLF  +       K+  V  N            T++  +C   HVNTL FLV++  +L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>82</Hit_num>
+  <Hit_id>gi|34365539|ref|NP_899210.1|</Hit_id>
+  <Hit_def>glycoprotein precursor [Guanarito virus] &gt;gi|81945578|sp|Q8AYW1.1|GLYC_GTOVV RecName: Full=Pre-glycoprotein polyprotein GP complex; Contains: RecName: Full=Stable signal peptide; Short=SSP; Contains: RecName: Full=Glycoprotein G1; Short=GP1; Contains: RecName: Full=Glycoprotein G2; Short=GP2 [Guanarito virus] &gt;gi|22901285|gb|AAN09938.1| glycoprotein precursor [Guanarito virus] &gt;gi|23307848|gb|AAN05423.1| glycoprotein precursor [Guanarito virus]</Hit_def>
+  <Hit_accession>NP_899210</Hit_accession>
+  <Hit_len>479</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>159.458</Hsp_bit-score>
+      <Hsp_score>402</Hsp_score>
+      <Hsp_evalue>1.05104e-41</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>255</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>239</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>98</Hsp_identity>
+      <Hsp_positive>141</Hsp_positive>
+      <Hsp_gaps>26</Hsp_gaps>
+      <Hsp_align-len>260</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGAN---IFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDS-SWAIHWFSIALGHDWLMDPPMLCR-NKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSKTHL</Hsp_qseq>
+      <Hsp_hseq>MGQLISFFQDIPIFFEEALNVALAVVTLLAIIKGIVNVWKSGILQLFVFLVLAGRSCS---FKVGHHTNFESFTVKLGGVF----HELPSLCRVNNSYSLIRLSHNSNQALSVEYVDVHPVLCSSSPTIL--DNYTQCIKGSPEFDWILGWTIKGLGHDFLRDPRICCEPKKTTNAEFTFQLNLTDSPETHHYRSKIEVGIRHLFGNYITNDSYSKMSVVMRN------------TTWEGQCSNSHVNTLRFLVKNAGYL</Hsp_hseq>
+      <Hsp_midline>MGQLISFFQ+IP+F +EALN+AL  V+L+A+IKGI+N++KSG+ Q   FL LAGRSCS   FK+G HT F+S T  +  +     +ELPSLC +NNS+  ++   N      +   DV  ++     ++   ++   C+  S    W + W    LGHD+L DP + C   KT       Q N++ + E+  Y  KI  G+RHLF  +       K+  V  N            T +  +C   HVNTL FLV++  +L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>83</Hit_num>
+  <Hit_id>gi|50253970|gb|AAT72105.1|</Hit_id>
+  <Hit_def>glycoprotein precursor [Guanarito virus] &gt;gi|50253973|gb|AAT72107.1| glycoprotein precursor [Guanarito virus]</Hit_def>
+  <Hit_accession>AAT72105</Hit_accession>
+  <Hit_len>479</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>159.458</Hsp_bit-score>
+      <Hsp_score>402</Hsp_score>
+      <Hsp_evalue>1.27449e-41</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>255</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>239</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>97</Hsp_identity>
+      <Hsp_positive>141</Hsp_positive>
+      <Hsp_gaps>26</Hsp_gaps>
+      <Hsp_align-len>260</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGAN---IFLIRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDS-SWAIHWFSIALGHDWLMDPPMLCR-NKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSKTHL</Hsp_qseq>
+      <Hsp_hseq>MGQLISFFQDIPIFFEEALNVALAVVTLLAIIKGIVNVWKSGILQLFVFLVLAGRSCS---FKVGHHTNFESFTVKLGGVF----HELPSLCRVNNSYSLIRLSHNSNQALSVEYVDVHPVLCSSSPTIL--DNYTQCIKGSPEFDWILGWTIKGLGHDFLRDPRICCEPKKTTNAEFTFQLNLTDSPETHHYRSRIEAGIRHLFGNYITNDSYSKMSVVMRN------------TTWEGQCSNSHVNTLRFLVKNAGYL</Hsp_hseq>
+      <Hsp_midline>MGQLISFFQ+IP+F +EALN+AL  V+L+A+IKGI+N++KSG+ Q   FL LAGRSCS   FK+G HT F+S T  +  +     +ELPSLC +NNS+  ++   N      +   DV  ++     ++   ++   C+  S    W + W    LGHD+L DP + C   KT       Q N++ + E+  Y  +I  G+RHLF  +       K+  V  N            T +  +C   HVNTL FLV++  +L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>84</Hit_num>
+  <Hit_id>gi|50253976|gb|AAT72109.1|</Hit_id>
+  <Hit_def>glycoprotein precursor [Guanarito virus]</Hit_def>
+  <Hit_accession>AAT72109</Hit_accession>
+  <Hit_len>479</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>159.458</Hsp_bit-score>
+      <Hsp_score>402</Hsp_score>
+      <Hsp_evalue>1.27449e-41</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>255</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>239</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>108</Hsp_identity>
+      <Hsp_positive>145</Hsp_positive>
+      <Hsp_gaps>42</Hsp_gaps>
+      <Hsp_align-len>268</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVS--VLMKEYDVSVY------EPEDLGN---CLNKSDS-SWAIHWFSIALGHDWLMDPPMLCR-NKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSKTHL</Hsp_qseq>
+      <Hsp_hseq>MGQLISFFQDIPIFFEEALNVALAVVTLLAIIKGIVNVWKSGILQLFVFLILAGRSCS---FKVGHHTNFESFTVKLGGVF----HELPSLCRVNNSYS---------LIRLSHDSNQALSVEY-VDVHPVLCSSSPTILDNYTQCIKGSPEFDWVLGWTIKGLGHDFLRDPRICCEPKKTTNTEFTFQLNLTDSPETHHYRSKIEVGIRHLFGNYITNDSYSKMSVVMRN------------TSWEGQCSNSHVNTLRFLVKNAGYL</Hsp_hseq>
+      <Hsp_midline>MGQLISFFQ+IP+F +EALN+AL  V+L+A+IKGI+N++KSG+ Q   FL LAGRSCS   FK+G HT F+S T  +  +     +ELPSLC +NNS+          LIR+S  S   L  EY V V+       P  L N   C+  S    W + W    LGHD+L DP + C   KT       Q N++ + E+  Y  KI  G+RHLF  +       K+  V  N            T++  +C   HVNTL FLV++  +L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>85</Hit_num>
+  <Hit_id>gi|52627080|ref|YP_089665.1|</Hit_id>
+  <Hit_def>glycoprotein precursor [Sabia virus] &gt;gi|81959508|sp|Q90037.1|GLYC_SABVB RecName: Full=Pre-glycoprotein polyprotein GP complex; Contains: RecName: Full=Stable signal peptide; Short=SSP; Contains: RecName: Full=Glycoprotein G1; Short=GP1; Contains: RecName: Full=Glycoprotein G2; Short=GP2 [Sabia virus] &gt;gi|1480446|gb|AAC55091.1| glycoprotein precursor [Sabia virus] &gt;gi|375333696|gb|AFA53089.1| glycoprotein precurser [Sabia virus]</Hit_def>
+  <Hit_accession>YP_089665</Hit_accession>
+  <Hit_len>488</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>159.073</Hsp_bit-score>
+      <Hsp_score>401</Hsp_score>
+      <Hsp_evalue>2.10821e-41</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>249</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>241</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>96</Hsp_identity>
+      <Hsp_positive>147</Hsp_positive>
+      <Hsp_gaps>26</Hsp_gaps>
+      <Hsp_align-len>258</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANI---FLIRVSDVSVLMKEYDVSVYEPEDLGNCL-----NKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKK-EGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLV</Hsp_qseq>
+      <Hsp_hseq>MGQLFSFFEEVPNIIHEAINIALIAVSLIAALKGMINLWKSGLFQLIFFLTLAGRSCS---FRIGRSTELQNITFDMLKVFEDH----PTSCMVNHSTYYVHENKNATWCLEVSVTDVTLLMAEHDRQVL--NNLSNCVHPAVEHRSRMVGLLEWIFRALKYDFNHDPTPLCQKQTSTVNETRVQINITEGFGSHGFEDTILQRLGVLF--------GSRIAFSNIQDLGKKRFLLIRNSTWKNQCEMNHVNSMHLML</Hsp_hseq>
+      <Hsp_midline>MGQL SFF+E+P  + EA+NIAL+AVSLIA +KG+INL+KSGLFQ IFFL LAGRSCS   F+IG  TE Q++TF M ++  +H    P+ CM+N+S YY+    N      + V+DV++LM E+D  V    +L NC+     ++S     + W   AL +D+  DP  LC+ +T     + +Q NI++   S  +   I   +  LF          ++ +  I   G         + + ++C+ +HVN++H ++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>86</Hit_num>
+  <Hit_id>gi|50253967|gb|AAT72103.1|</Hit_id>
+  <Hit_def>glycoprotein precursor [Guanarito virus]</Hit_def>
+  <Hit_accession>AAT72103</Hit_accession>
+  <Hit_len>479</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>158.303</Hsp_bit-score>
+      <Hsp_score>399</Hsp_score>
+      <Hsp_evalue>2.83885e-41</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>255</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>239</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>102</Hsp_identity>
+      <Hsp_positive>144</Hsp_positive>
+      <Hsp_gaps>34</Hsp_gaps>
+      <Hsp_align-len>264</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVSVLMKEYDVSVY----EPEDLGN---CLNKSDS-SWAIHWFSIALGHDWLMDPPMLCR-NKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSKTHL</Hsp_qseq>
+      <Hsp_hseq>MGQLISFFQDIPIFFEEALNVALAVVTLLAIMKGIVNVWKSGILQLLVFLILAGRSCS---FKVGHHTNFESFTVNLGGVF----HELPSLCRVNNSYSLIRLSHN------SDQALSVEYVDVHPVLCSSSPTILDNYTQCIKGSPEFDWILGWTIKGLGHDFLRDPRICCEPKKTTNVEFTFQLNLTDSVETHHYRGKIEAGIRHLFGNYITNDSYPKMSVVMRN------------TTWEGQCPNSHVNTLRFLVKNAGYL</Hsp_hseq>
+      <Hsp_midline>MGQLISFFQ+IP+F +EALN+AL  V+L+A++KGI+N++KSG+ Q + FL LAGRSCS   FK+G HT F+S T  +  +     +ELPSLC +NNS+  ++   N      SD ++ ++  DV        P  L N   C+  S    W + W    LGHD+L DP + C   KT       Q N++ + E+  Y  KI  G+RHLF  +       K+  V  N            T +  +C   HVNTL FLV++  +L</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>87</Hit_num>
+  <Hit_id>gi|50253988|gb|AAT72117.1|</Hit_id>
+  <Hit_def>glycoprotein precursor [Guanarito virus]</Hit_def>
+  <Hit_accession>AAT72117</Hit_accession>
+  <Hit_len>479</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>155.606</Hsp_bit-score>
+      <Hsp_score>392</Hsp_score>
+      <Hsp_evalue>2.67918e-40</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>251</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>235</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>107</Hsp_identity>
+      <Hsp_positive>146</Hsp_positive>
+      <Hsp_gaps>48</Hsp_gaps>
+      <Hsp_align-len>267</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVS--VLMKEYDVSVY------EPEDLGN---CLNKSDS-SWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQF----NISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRS</Hsp_qseq>
+      <Hsp_hseq>MGQLISFFQDIPIFFEEALNVALAVVTLLAIIKGIVNVWRSGILQLFVFLILAGRSCS---FKVGHHTNFESFTVKLGGVF----HELPSLCRVNNSYS---------LIRLSHDSNQALSVEY-VDVHPVLCSSSPIILDNYTQCIEGSPEFDWILGWTIKGLGHDFLRDPRICCE---PKKATNIEFTFQLNLTDSPETHHYRSKIEVGIRHLFGNYITNDSYSKMSVVMRN------------TTWEGQCSNSHVNTLRFLVKN</Hsp_hseq>
+      <Hsp_midline>MGQLISFFQ+IP+F +EALN+AL  V+L+A+IKGI+N+++SG+ Q   FL LAGRSCS   FK+G HT F+S T  +  +     +ELPSLC +NNS+          LIR+S  S   L  EY V V+       P  L N   C+  S    W + W    LGHD+L DP + C     K+ +NI+F    N++ + E+  Y  KI  G+RHLF  +       K+  V  N            T +  +C   HVNTL FLV++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>88</Hit_num>
+  <Hit_id>gi|172088172|ref|YP_001816782.1|</Hit_id>
+  <Hit_def>glycoprotein precursor [Chapare virus] &gt;gi|221272005|sp|B2C4J0.1|GLYC_CHAVB RecName: Full=Pre-glycoprotein polyprotein GP complex; Contains: RecName: Full=Stable signal peptide; Short=SSP; Contains: RecName: Full=Glycoprotein G1; Short=GP1; Contains: RecName: Full=Glycoprotein G2; Short=GP2 [Chapare virus] &gt;gi|166361939|gb|ABY87068.1| glycoprotein precursor [Chapare virus]</Hit_def>
+  <Hit_accession>YP_001816782</Hit_accession>
+  <Hit_len>484</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>154.836</Hsp_bit-score>
+      <Hsp_score>390</Hsp_score>
+      <Hsp_evalue>5.67667e-40</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>254</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>242</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>100</Hsp_identity>
+      <Hsp_positive>150</Hsp_positive>
+      <Hsp_gaps>34</Hsp_gaps>
+      <Hsp_align-len>265</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFL---IRVSDVSVLMKEYDVSVYEPEDLGNCL-----NKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKK-EGSNIQFNISKADESRVYGKKIRNGMRHLF--RGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRSKTH</Hsp_qseq>
+      <Hsp_hseq>MGQLVSFFQEIPNIIQEAINIALIAVSLIAILKGLVNLWKSGLFQLLVFLILAGRSCS---FKIGRSTELQNITINMLKVFEDH----PISCTVNKTLYYIRESENATWCVEIAALDMSVLLSPHDPRVM--GNLSNCVHPDIKHRSELLGLLEWILRALKYDFLNYPPLLCEKVTSSVNETRIQINVSDSAGSHDFKETMLQRLAILFGTKLMFD--KTPKQFIVIRNQ------------TWVNQCKSNHVNTLHLMMANAGH</Hsp_hseq>
+      <Hsp_midline>MGQL+SFFQEIP  +QEA+NIAL+AVSLIA++KG++NL+KSGLFQ + FL LAGRSCS   FKIG  TE Q++T  M ++  +H    P  C +N + YY++   N      I   D+SVL+  +D  V    +L NC+     ++S+    + W   AL +D+L  PP+LC   T     + IQ N+S +  S  + + +   +  LF  +  +D  +  K   V  NQ             ++++C+ +HVNTLH ++ +  H</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>89</Hit_num>
+  <Hit_id>gi|164607215|ref|YP_001649222.1|</Hit_id>
+  <Hit_def>glycoprotein precursor [Cupixi virus] &gt;gi|81946048|sp|Q8B115.1|GLYC_CPXVB RecName: Full=Pre-glycoprotein polyprotein GP complex; Contains: RecName: Full=Stable signal peptide; Short=SSP; Contains: RecName: Full=Glycoprotein G1; Short=GP1; Contains: RecName: Full=Glycoprotein G2; Short=GP2 [Cupixi virus] &gt;gi|23452264|gb|AAN32963.1| glycoprotein precursor [Cupixi virus]</Hit_def>
+  <Hit_accession>YP_001649222</Hit_accession>
+  <Hit_len>480</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>152.14</Hsp_bit-score>
+      <Hsp_score>383</Hsp_score>
+      <Hsp_evalue>6.24972e-39</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>249</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>233</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>95</Hsp_identity>
+      <Hsp_positive>142</Hsp_positive>
+      <Hsp_gaps>28</Hsp_gaps>
+      <Hsp_align-len>255</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFL---IRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDS-SWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQF--NISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLV</Hsp_qseq>
+      <Hsp_hseq>MGQLVSFFQEIPVFFQEALNIALAVVTLLAIVKGVLNLWKSGLFQLLMFLILAGRSCS---FRIGYHTSFESFTMTIGGVF----HELPALCKVNDTYNLVRLSHNSSLALSVEYGDTGTVMCEHGHVV--SGNYTECTGASEEYNWVLDWVLRGLQHDFSRDPVICCEPK-KKTNAEFQFRLNLTQRHKGDHYQNKIKTALTHLFGPFAYNEKDPKI-FVTMRN-----------TTWTNQCVMSHTDSLRLLA</Hsp_hseq>
+      <Hsp_midline>MGQL+SFFQEIPVF QEALNIAL  V+L+A++KG++NL+KSGLFQ + FL LAGRSCS   F+IG HT F+S T T+  +     +ELP+LC +N+++  ++   N  L   +   D   +M E+   V    +   C   S+  +W + W    L HD+  DP + C  K KK  +  QF  N+++  +   Y  KI+  + HLF  F    ++ K+ +VT+             T + ++C   H ++L  L </Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>90</Hit_num>
+  <Hit_id>gi|408354940|gb|AFU54675.1|</Hit_id>
+  <Hit_def>glycoprotein precursor [North American arenavirus]</Hit_def>
+  <Hit_accession>AFU54675</Hit_accession>
+  <Hit_len>484</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>149.828</Hsp_bit-score>
+      <Hsp_score>377</Hsp_score>
+      <Hsp_evalue>3.48887e-38</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>251</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>238</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>91</Hsp_identity>
+      <Hsp_positive>147</Hsp_positive>
+      <Hsp_gaps>37</Hsp_gaps>
+      <Hsp_align-len>263</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANI---FLIRVSDVSVLMKEYDV-----SVYEPEDLGNCL----NKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRS</Hsp_qseq>
+      <Hsp_hseq>MGQLVSFFGEIPSIIHEALNVALMAVSIIAVVKGLINLWKSGILQLVAFLLLAGRSCS---VPIGHHIELEHITINASSVIP----FVPSTCSVNHTHFLIKGPFEARWGISLEITDIAVLV---DVDGGKQASIVPSNVSLCFEGNEDKRLVAFTLNWFLNGLGYDQKTDPKILCENTTVDQVSRLQINITNED----YCNKVFFKMKKIFGSFVDPCLNGQKKYILLKN-----------TSWINGCDGNHLSTLHLILQN</Hsp_hseq>
+      <Hsp_midline>MGQL+SFF EIP  + EALN+AL+AVS+IAV+KG+INL+KSG+ Q + FL LAGRSCS     IG H E + +T     ++      +PS C +N++ + +KG         + ++D++VL+   DV     +   P ++  C     +K   ++ ++WF   LG+D   DP +LC N T  + S +Q NI+  D    Y  K+   M+ +F  F DPC  G+  Y+ +             T++++ C  +H++TLH ++++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>91</Hit_num>
+  <Hit_id>gi|156753334|gb|ABU94341.1|</Hit_id>
+  <Hit_def>glycoprotein precursor [Tonto creek virus]</Hit_def>
+  <Hit_accession>ABU94341</Hit_accession>
+  <Hit_len>484</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>149.828</Hsp_bit-score>
+      <Hsp_score>377</Hsp_score>
+      <Hsp_evalue>4.05208e-38</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>251</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>238</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>90</Hsp_identity>
+      <Hsp_positive>146</Hsp_positive>
+      <Hsp_gaps>31</Hsp_gaps>
+      <Hsp_align-len>260</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGAN---IFLIRVSDVSVLMK-EYDVS-VYEPEDLGNCLNKSDSSWAIH----WFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRS</Hsp_qseq>
+      <Hsp_hseq>MGQLVSFFEGIPALLQEALNVALIAVSMIAILKGVINIWTSGVLQLITFLLLAGRSCS---IKVGHHIELQHVIVNSSSVIP----FAPGACKVNSTYFLLRGPFDAQWALGLDITEISVLVDVEAGTSRVIGAKNISNCFQGNRNSNQVHFTVKWLLDGLGHDFLHDPKILCDNVTQQQVFRIQINMTEDD----YCHKIFLKLTKIFGLFDDPCPKPGKVYILIKN-----------VSWAGQCQTSHLSTMHLILQN</Hsp_hseq>
+      <Hsp_midline>MGQL+SFF+ IP  LQEALN+AL+AVS+IA++KG+IN++ SG+ Q I FL LAGRSCS    K+G H E Q V      ++       P  C +N++++ ++G  +      + ++++SVL+  E   S V   +++ NC   + +S  +H    W    LGHD+L DP +LC N T+++   IQ N+++ D    Y  KI   +  +F  F DPC +    Y+ I              ++  +CQ  H++T+H ++++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>92</Hit_num>
+  <Hit_id>gi|50253985|gb|AAT72115.1|</Hit_id>
+  <Hit_def>glycoprotein precursor [Guanarito virus]</Hit_def>
+  <Hit_accession>AAT72115</Hit_accession>
+  <Hit_len>479</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>148.673</Hsp_bit-score>
+      <Hsp_score>374</Hsp_score>
+      <Hsp_evalue>8.67921e-38</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>251</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>235</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>109</Hsp_identity>
+      <Hsp_positive>150</Hsp_positive>
+      <Hsp_gaps>48</Hsp_gaps>
+      <Hsp_align-len>267</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFLIRVSDVS--VLMKEYDVSVY------EPEDLGN---CLNKSDS-SWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQF----NISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRS</Hsp_qseq>
+      <Hsp_hseq>MGQLISFFQDIPIFFEEALNVALAVVTLLAMIKGVVNVWRSGLLQLLVFLVLAGRSCS---FKVGHHTSFESFTVNLGGVF----HELPSLCRVNNSYS---------LIRLSHNSSQALSVEY-VDVHPVLCSSSPPILGNYTQCIEGSPEFDWILGWTMKGLGHDFLRDPKVCCE---PKKSTNIEFTFQLNLTDSPDTHHYRSKIEAGIRHLFGN-----------YITNDSCSKMSVIMR-NTTWESQCSNSHVNTLRFLVKN</Hsp_hseq>
+      <Hsp_midline>MGQLISFFQ+IP+F +EALN+AL  V+L+A+IKG++N+++SGL Q + FL LAGRSCS   FK+G HT F+S T  +  +     +ELPSLC +NNS+          LIR+S  S   L  EY V V+       P  LGN   C+  S    W + W    LGHD+L DP + C     K+ +NI+F    N++ + ++  Y  KI  G+RHLF             Y+T + C   S      T + S+C   HVNTL FLV++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>93</Hit_num>
+  <Hit_id>gi|159461057|gb|ABW96598.1|</Hit_id>
+  <Hit_def>glycoprotein precursor [North American arenavirus]</Hit_def>
+  <Hit_accession>ABW96598</Hit_accession>
+  <Hit_len>484</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>147.517</Hsp_bit-score>
+      <Hsp_score>371</Hsp_score>
+      <Hsp_evalue>3.05632e-37</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>251</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>238</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>92</Hsp_identity>
+      <Hsp_positive>146</Hsp_positive>
+      <Hsp_gaps>37</Hsp_gaps>
+      <Hsp_align-len>263</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKG---GANIFLIRVSDVSVLMKEY--DVSVYEPEDLGNC----LNKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNIS-KADESRVYGKKIRNGMRHLFRGFYDPC-EEGKV-CYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRS</Hsp_qseq>
+      <Hsp_hseq>MGQLFSFIGEIPSIVHEALNVALIAVSIISVLKGIINIWKSGLLQFIAFLLLAGRSCS---YRIGHHVELQHITLNGSYI----TPYVPLACMVNQSHFLLRGPFEAKWAIQLEITDITTLVETEGGSSSRVRLKNAGDCLTDRLDREEKVYTLRWFLSGLGDSEQFDPQILCNNGTSTAGLNVQINITEKGNCDHVFLR-----MRKIFGAFKNPCLSKGKLNMLLTIH-------------NWTDQCPRDHLSTMHLVIQN</Hsp_hseq>
+      <Hsp_midline>MGQL SF  EIP  + EALN+AL+AVS+I+V+KGIIN++KSGL QFI FL LAGRSCS   ++IG H E Q +T     +    +  +P  CM+N S + ++G         + ++D++ L++      S    ++ G+C    L++ +  + + WF   LG     DP +LC N T   G N+Q NI+ K +   V+ +     MR +F  F +PC  +GK+   +TI+             N+  +C  DH++T+H ++++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>94</Hit_num>
+  <Hit_id>gi|156753337|gb|ABU94343.1|</Hit_id>
+  <Hit_def>glycoprotein precursor [Tonto creek virus]</Hit_def>
+  <Hit_accession>ABU94343</Hit_accession>
+  <Hit_len>485</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>146.747</Hsp_bit-score>
+      <Hsp_score>369</Hsp_score>
+      <Hsp_evalue>5.21461e-37</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>251</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>239</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>91</Hsp_identity>
+      <Hsp_positive>144</Hsp_positive>
+      <Hsp_gaps>32</Hsp_gaps>
+      <Hsp_align-len>261</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGAN---IFLIRVSDVSVLMKEYDVS--VYEPEDLGNCLN-KSDSS---WAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPC-EEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRS</Hsp_qseq>
+      <Hsp_hseq>MGQLVSFFEGIPTLLQEALNVALIAVSTIAILKGVINIWRSGVLQLVTFLLLAGRSCS---IKVGHHIELQHVIVNSSSVIP----FAPGACKINNTYFLLRGPFDAQWALGLDITDTSVLVNTEGGSSRVIDVRNVSNCFQGNSDSDQVRFTFRWLLNGLGYDFLHDPKILCDNVTTDKVFRIQINITESD----YCHKLFLKLNKIFGLFSDPCPTEALKKYILIKN-----------VSWIGQCQTNHLSTMHLILQN</Hsp_hseq>
+      <Hsp_midline>MGQL+SFF+ IP  LQEALN+AL+AVS IA++KG+IN+++SG+ Q + FL LAGRSCS    K+G H E Q V      ++       P  C +NN+++ ++G  +      + ++D SVL+     S  V +  ++ NC    SDS    +   W    LG+D+L DP +LC N T  +   IQ NI+++D    Y  K+   +  +F  F DPC  E    Y+ I              +++ +CQ +H++T+H ++++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>95</Hit_num>
+  <Hit_id>gi|156753340|gb|ABU94345.1|</Hit_id>
+  <Hit_def>glycoprotein precursor [Big brushy tank virus]</Hit_def>
+  <Hit_accession>ABU94345</Hit_accession>
+  <Hit_len>485</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>145.206</Hsp_bit-score>
+      <Hsp_score>365</Hsp_score>
+      <Hsp_evalue>1.64481e-36</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>251</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>239</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>96</Hsp_identity>
+      <Hsp_positive>149</Hsp_positive>
+      <Hsp_gaps>32</Hsp_gaps>
+      <Hsp_align-len>261</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANI---FLIRVSDVSVLMKEYDVSVYE--PEDLGNCLNKSDS----SWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKV-CYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRS</Hsp_qseq>
+      <Hsp_hseq>MGQLVSFFGEIPSIINEALNVALIAVSIIAAIKGVINIWKSGILQLIFFLLLAGRSCS---ITIGHHVELQHVVLNMSTVIP----FVPSPCRLNNTHFLLRGPFEAPWGLQLTITDIAVLVNSTGGSSKELKPNNISVCFEDNNDLDHVSFTLGWLFKNLGHNFEHDPIILCDSVRQDKVFRIQLNITRTD----YSDKLLLKMKKIFGTFNDPCVKGEVKNYIQIN-----------NVSWTNQCQVNHLNSMHFILQS</Hsp_hseq>
+      <Hsp_midline>MGQL+SFF EIP  + EALN+AL+AVS+IA IKG+IN++KSG+ Q IFFL LAGRSCS     IG H E Q V   M  ++      +PS C LNN+ + ++G         + ++D++VL+     S  E  P ++  C   ++     S+ + W    LGH++  DP +LC +  + +   IQ NI++ D    Y  K+   M+ +F  F DPC +G+V  Y+ IN             ++ ++CQ +H+N++HF+++S</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>96</Hit_num>
+  <Hit_id>gi|164682562|ref|YP_001649208.1|</Hit_id>
+  <Hit_def>glycoprotein precursor [Amapari virus] &gt;gi|22901279|gb|AAN09934.1| glycoprotein precursor [Amapari virus]</Hit_def>
+  <Hit_accession>YP_001649208</Hit_accession>
+  <Hit_len>481</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>145.206</Hsp_bit-score>
+      <Hsp_score>365</Hsp_score>
+      <Hsp_evalue>1.6583e-36</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>251</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>235</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>100</Hsp_identity>
+      <Hsp_positive>146</Hsp_positive>
+      <Hsp_gaps>26</Hsp_gaps>
+      <Hsp_align-len>256</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFL---IRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDS-SWAIHWFSIALGHDWLMDPPMLCRNKTKKEGS-NIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRS</Hsp_qseq>
+      <Hsp_hseq>MGQLVSFFQDIQLFFQEALNVALAVVTVLAIIKGLVNLWKSGLFQFLFFLILAGRSCS---FRIGHHTTFESVTMSVGGVF----HELPALCRINNSHSLIQLSHNSSLALSVEYVDLCVVLESDQYLV--AGDYSNCTGEATGYNWVIDWTLKGLGHGLEGDPKLHCQPKRSTNAEFTLQLNISRRHTNDHYRERIETGIRHMFGPFKILTKEGKDCVILRN------------TTWKEQCVKSHYNTLAFLLKN</Hsp_hseq>
+      <Hsp_midline>MGQL+SFFQ+I +F QEALN+AL  V+++A+IKG++NL+KSGLFQF+FFL LAGRSCS   F+IG HT F+SVT ++  +     +ELP+LC +NNS   ++   N  L   +   D+ V+++     V    D  NC  ++   +W I W    LGH    DP + C+ K        +Q NIS+   +  Y ++I  G+RH+F  F    +EGK C +  N            T +  +C   H NTL FL+++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>97</Hit_num>
+  <Hit_id>gi|23452271|gb|AAN32967.1|</Hit_id>
+  <Hit_def>glycoprotein precursor [Amapari virus]</Hit_def>
+  <Hit_accession>AAN32967</Hit_accession>
+  <Hit_len>481</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>145.206</Hsp_bit-score>
+      <Hsp_score>365</Hsp_score>
+      <Hsp_evalue>1.70831e-36</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>251</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>235</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>100</Hsp_identity>
+      <Hsp_positive>146</Hsp_positive>
+      <Hsp_gaps>26</Hsp_gaps>
+      <Hsp_align-len>256</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKGGANIFL---IRVSDVSVLMKEYDVSVYEPEDLGNCLNKSDS-SWAIHWFSIALGHDWLMDPPMLCRNKTKKEGS-NIQFNISKADESRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRS</Hsp_qseq>
+      <Hsp_hseq>MGQLVSFFQDIQLFFQEALNVALAVVTVLAIIKGLVNLWKSGLFQFLFFLILAGRSCS---FRIGHHTTFESVTMSVGGVF----HELPALCRINNSHSLIQLSHNSSLALSVEYVDLCVVLESDQYLV--AGDYSNCTGEATGYNWVIDWTLKGLGHGLEGDPKLHCQPKRSTNAEFTLQLNISRRHTNDHYRERIETGIRHMFGPFKILTKEGKDCVILRN------------TTWKEQCVKSHYNTLAFLLKN</Hsp_hseq>
+      <Hsp_midline>MGQL+SFFQ+I +F QEALN+AL  V+++A+IKG++NL+KSGLFQF+FFL LAGRSCS   F+IG HT F+SVT ++  +     +ELP+LC +NNS   ++   N  L   +   D+ V+++     V    D  NC  ++   +W I W    LGH    DP + C+ K        +Q NIS+   +  Y ++I  G+RH+F  F    +EGK C +  N            T +  +C   H NTL FL+++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>98</Hit_num>
+  <Hit_id>gi|408354993|gb|AFU54702.1|</Hit_id>
+  <Hit_def>glycoprotein precursor, partial [Whitewater Arroyo virus]</Hit_def>
+  <Hit_accession>AFU54702</Hit_accession>
+  <Hit_len>282</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>141.354</Hsp_bit-score>
+      <Hsp_score>355</Hsp_score>
+      <Hsp_evalue>2.59117e-36</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>251</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>238</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>86</Hsp_identity>
+      <Hsp_positive>143</Hsp_positive>
+      <Hsp_gaps>33</Hsp_gaps>
+      <Hsp_align-len>261</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKG---GANIFLIRVSDVSVLMKEYDVSVYEP--EDLGNCL----NKSDSSWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADESRVYGKKIRNGMRHLFRGFYDPC-EEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRS</Hsp_qseq>
+      <Hsp_hseq>MGQLVSFIGEIPSIIHEALNIALIAVSIITVLKGIVNIWKSGILQLLIFLALTGRSCS---YTIGHHIELQHFTLNASYI----TPYVPMACMINDTHFLLKGPFEAEWVLQFEITDITILVDVEGGTSKRATTQNISECLTDYQNKEMVGFTLTWFLNGLGFNHQFNPQILCQNKTSTDENYIQLNMTE----RNHCDQIFLRMRKIFGAFKDPCVTEGKLNMV------------FKMKNWTNQCSRNHLSTMHLMIQN</Hsp_hseq>
+      <Hsp_midline>MGQL+SF  EIP  + EALNIAL+AVS+I V+KGI+N++KSG+ Q + FL L GRSCS   + IG H E Q  T     +    +  +P  CM+N++ + +KG      +    ++D+++L+     +      +++  CL    NK    + + WF   LG +   +P +LC+NKT  + + IQ N+++    R +  +I   MR +F  F DPC  EGK+  V            +   N+ ++C  +H++T+H ++++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>99</Hit_num>
+  <Hit_id>gi|188531118|ref|YP_001911113.1|</Hit_id>
+  <Hit_def>glycoprotein G1+G2 precursor [Whitewater Arroyo virus] &gt;gi|81959810|sp|Q911P0.1|GLYC_WWAVU RecName: Full=Pre-glycoprotein polyprotein GP complex; Contains: RecName: Full=Stable signal peptide; Short=SSP; Contains: RecName: Full=Glycoprotein G1; Short=GP1; Contains: RecName: Full=Glycoprotein G2; Short=GP2 [Whitewater Arroyo virus] &gt;gi|14333983|gb|AAK60497.1|AF228063_1 glycoprotein G1+G2 precursor [Whitewater Arroyo virus]</Hit_def>
+  <Hit_accession>YP_001911113</Hit_accession>
+  <Hit_len>480</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>144.436</Hsp_bit-score>
+      <Hsp_score>363</Hsp_score>
+      <Hsp_evalue>2.92142e-36</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>251</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>234</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>92</Hsp_identity>
+      <Hsp_positive>145</Hsp_positive>
+      <Hsp_gaps>33</Hsp_gaps>
+      <Hsp_align-len>259</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKG---GANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCL-NKSDS---SWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADE-SRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRS</Hsp_qseq>
+      <Hsp_hseq>MGQLISFFGEIPSIIHEALNIALIAVSIISILKGVINIWGSGLLQFIVFLLLAGRSCS---YKIGHHVELQHIILNASYI----TPYVPMPCMINDTHFLLRGPFEASWAIKLEITDVTTLVVDTD-NVANPTNISKCFANNQDERLLGFTMEWFLSGLEHDHHFTPQIICGNVSKGE-VNAQVNITMEDHCSQVFLK-----MRRIFGVFKNPCTSHGKQNVLISV-----------SNWTNQCSGNHLSSMHLIVQN</Hsp_hseq>
+      <Hsp_midline>MGQLISFF EIP  + EALNIAL+AVS+I+++KG+IN++ SGL QFI FL LAGRSCS   +KIG H E Q +      +    +  +P  CM+N++ + ++G    +    + ++DV+ L+ + D +V  P ++  C  N  D     + + WF   L HD    P ++C N +K E  N Q NI+  D  S+V+ K     MR +F  F +PC       V I+            +N+ ++C  +H++++H +V++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+<Hit>
+  <Hit_num>100</Hit_num>
+  <Hit_id>gi|22901303|gb|AAN09950.1|</Hit_id>
+  <Hit_def>glycoprotein precursor [Whitewater Arroyo virus]</Hit_def>
+  <Hit_accession>AAN09950</Hit_accession>
+  <Hit_len>480</Hit_len>
+  <Hit_hsps>
+    <Hsp>
+      <Hsp_num>1</Hsp_num>
+      <Hsp_bit-score>144.436</Hsp_bit-score>
+      <Hsp_score>363</Hsp_score>
+      <Hsp_evalue>3.03937e-36</Hsp_evalue>
+      <Hsp_query-from>1</Hsp_query-from>
+      <Hsp_query-to>251</Hsp_query-to>
+      <Hsp_hit-from>1</Hsp_hit-from>
+      <Hsp_hit-to>234</Hsp_hit-to>
+      <Hsp_query-frame>0</Hsp_query-frame>
+      <Hsp_hit-frame>0</Hsp_hit-frame>
+      <Hsp_identity>92</Hsp_identity>
+      <Hsp_positive>145</Hsp_positive>
+      <Hsp_gaps>33</Hsp_gaps>
+      <Hsp_align-len>259</Hsp_align-len>
+      <Hsp_qseq>MGQLISFFQEIPVFLQEALNIALVAVSLIAVIKGIINLYKSGLFQFIFFLFLAGRSCSDGTFKIGLHTEFQSVTFTMQRLLANHSNELPSLCMLNNSFYYMKG---GANIFLIRVSDVSVLMKEYDVSVYEPEDLGNCL-NKSDS---SWAIHWFSIALGHDWLMDPPMLCRNKTKKEGSNIQFNISKADE-SRVYGKKIRNGMRHLFRGFYDPCEEGKVCYVTINQCGDPSSFEYCGTNYLSKCQFDHVNTLHFLVRS</Hsp_qseq>
+      <Hsp_hseq>MGQLISFFGEIPSIIHEALNIALIAVSIISILKGVINIWGSGLLQFIVFLLLAGRSCS---YKIGHHVELQHIILNASYI----TPYVPMPCMINDTHFLLRGPFEASWAIKLEITDVTTLVVDTD-NVANPTNISKCFANNQDERLLGFTMEWFLSGLEHDHHFTPQIICGNVSKGE-VNAQVNITMEDHCSQVFLK-----MRRIFGVFKNPCTSHGKQNVLISV-----------SNWTNQCSGNHLSSMHLIVQN</Hsp_hseq>
+      <Hsp_midline>MGQLISFF EIP  + EALNIAL+AVS+I+++KG+IN++ SGL QFI FL LAGRSCS   +KIG H E Q +      +    +  +P  CM+N++ + ++G    +    + ++DV+ L+ + D +V  P ++  C  N  D     + + WF   L HD    P ++C N +K E  N Q NI+  D  S+V+ K     MR +F  F +PC       V I+            +N+ ++C  +H++++H +V++</Hsp_midline>
+    </Hsp>
+  </Hit_hsps>
+</Hit>
+</Iteration_hits>
+  <Iteration_stat>
+    <Statistics>
+      <Statistics_db-num>65404960</Statistics_db-num>
+      <Statistics_db-len>1956349619</Statistics_db-len>
+      <Statistics_hsp-len>0</Statistics_hsp-len>
+      <Statistics_eff-space>0</Statistics_eff-space>
+      <Statistics_kappa>0.041</Statistics_kappa>
+      <Statistics_lambda>0.267</Statistics_lambda>
+      <Statistics_entropy>0.14</Statistics_entropy>
+    </Statistics>
+  </Iteration_stat>
+</Iteration>
+</BlastOutput_iterations>
+</BlastOutput>
+
