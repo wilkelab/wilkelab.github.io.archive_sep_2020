@@ -226,7 +226,7 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
   - [MAFFT](http://mafft.cbrc.jp/alignment/software/)
   - [Clustal Omega](http://www.clustal.org/omega/)
   - [PRANK](http://wasabiapp.org/software/prank/)
-* [Example alignments](https://github.com/wilkelab/therm_constraints_rate_variation/tree/master/empirical_rate_calculations/protein_alignments/mafft_alignments)]
+* [Example alignments](https://github.com/wilkelab/therm_constraints_rate_variation/tree/master/empirical_rate_calculations/protein_alignments/mafft_alignments)
 
 **25. Apr. 21, 2015 – Multiple sequence alignments and phylogenetic trees**
 
@@ -252,6 +252,7 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
 * In-class worksheet:
   - [iPython Notebook](/classes/SDS348/2015_spring_worksheets/class26.ipynb) 
   - [HTML](/classes/SDS348/2015_spring_worksheets/class26.html)
+  - [Solutions](/classes/SDS348/2015_spring_worksheets/class26_solutions.html)
   - Example BLAST results: [Machupo_BLAST.xml](/classes/SDS348/2015_spring_worksheets/Machupo_BLAST.xml)
 
 ## Homeworks
