@@ -267,9 +267,9 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
 - Homework 8: [HW8.ipynb](/classes/SDS348/2015_spring_homeworks/HW8.ipynb) [HW8.html](/classes/SDS348/2015_spring_homeworks/HW8.html) (due Apr 7, 2015) [Answer Key](/classes/SDS348/2015_spring_homeworks/HW8-solutions.html)
 - Homework 9: [HW9.pdf](/classes/SDS348/2015_spring_homeworks/HW9.pdf) (due Apr 14, 2015)
 - Homework 10: [HW10.ipynb](/classes/SDS348/2015_spring_homeworks/HW10.ipynb) 
-[HW10.html](/classes/SDS348/2015_spring_homeworks/HW10.html) (due Apr 21, 2015)
+[HW10.html](/classes/SDS348/2015_spring_homeworks/HW10.html) (due Apr 21, 2015) [Answer Key](/classes/SDS348/2015_spring_homeworks/HW10-solutions.html)
 - Homework 11:
-[HW11.pdf](/classes/SDS348/2015_spring_homeworks/HW11.pdf) (due Apr 28, 2015)   [Answer Key](/classes/SDS348/2015_spring_homeworks/HW10-solutions.html)
+[HW11.pdf](/classes/SDS348/2015_spring_homeworks/HW11.pdf) (due Apr 28, 2015)  
 Sequence data: [cxcr4_aa.fasta](/classes/SDS348/2015_spring_homeworks/cxcr4_aa.fasta)
 
 ## Projects
