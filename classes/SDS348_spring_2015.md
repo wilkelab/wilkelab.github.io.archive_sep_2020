@@ -277,7 +277,8 @@ Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_s
 [HW10.html](/classes/SDS348/2015_spring_homeworks/HW10.html) (due Apr 21, 2015) [Answer Key](/classes/SDS348/2015_spring_homeworks/HW10-solutions.html)
 - Homework 11:
 [HW11.pdf](/classes/SDS348/2015_spring_homeworks/HW11.pdf) (due Apr 28, 2015)  
-Sequence data: [cxcr4_aa.fasta](/classes/SDS348/2015_spring_homeworks/cxcr4_aa.fasta)
+Sequence data: [cxcr4_aa.fasta](/classes/SDS348/2015_spring_homeworks/cxcr4_aa.fasta)  
+NJ tree: [NJ_tree.pdf](/classes/SDS348/2015_spring_homeworks/NJ_tree.pdf)
 
 ## Projects
 - Project 1: [Project1.Rmd](/classes/SDS348/2015_spring_projects/project1/Project1-updated.Rmd) (due Feb 24, 2015)
