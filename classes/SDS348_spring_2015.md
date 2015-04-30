@@ -291,7 +291,7 @@ NJ tree: [NJ_tree.pdf](/classes/SDS348/2015_spring_homeworks/NJ_tree.pdf)
     - Hint for making the logistic curve in part 1 - you will need to use the `predict()` (Class 11!) function!
       - The general code `predict(model, data, type = "response")` will return an array of the **fitted values** (probabilities) from the given model fit to the given data.
       - The general code `predict(model, data)` will return an array of the **linear predictors** from the given model fit to the given data. 
-- Project 3
+- Project 3: [Project3.pdf](/classes/SDS348/2015_spring_projects/project3/project3_instructions.pdf)         (due May7, 2015)
     - Link to a list of datasets in R and R packages: [http://vincentarelbundock.github.io/Rdatasets/datasets.html](http://vincentarelbundock.github.io/Rdatasets/datasets.html)
 
 
