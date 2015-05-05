@@ -271,6 +271,7 @@ Guest lecture by Austin Meyer
 
 Guest lecture by Steve Bellan
 
+* Slides: [class29_Bellan_Intro_to_Dis_Epi.pdf](class29_Bellan_Intro_to_Dis_Epi.pdf)
 
 ## Homeworks
 - Homework 1: [HW1.Rmd](/classes/SDS348/2015_spring_homeworks/HW1.Rmd) (due Jan 27, 2015) [Answer Key](/classes/SDS348/2015_spring_homeworks/HW1-solution.html) 
