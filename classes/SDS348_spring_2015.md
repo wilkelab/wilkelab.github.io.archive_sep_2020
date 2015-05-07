@@ -273,6 +273,11 @@ Guest lecture by Steve Bellan
 
 * Slides: [class29_Bellan_Intro_to_Dis_Epi.pdf](class29_Bellan_Intro_to_Dis_Epi.pdf)
 
+**30. May 7, 2015**
+
+Guest lecture by Howard Ochman
+
+
 ## Homeworks
 - Homework 1: [HW1.Rmd](/classes/SDS348/2015_spring_homeworks/HW1.Rmd) (due Jan 27, 2015) [Answer Key](/classes/SDS348/2015_spring_homeworks/HW1-solution.html) 
 - Homework 2: [HW2.Rmd](/classes/SDS348/2015_spring_homeworks/HW2.Rmd) (due Feb 3, 2015) [Answer Key](/classes/SDS348/2015_spring_homeworks/HW2-solution.html) 
