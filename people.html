@@ -16,6 +16,9 @@ permalink: /people/
         {{ person.role }}{% if person.joined %},
           {{ person.joined }}–present
         {% endif %}<br/>
+        {% if person.history %}
+        {{ person.history }}<br/>
+        {% endif %}
         {% if person.url %}
           <a href="{{ person.url }}" class="people-icon">
             <svg>
