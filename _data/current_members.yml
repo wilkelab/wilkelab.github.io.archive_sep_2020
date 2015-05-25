@@ -23,8 +23,16 @@
   history: Graduate Student (CMB), 2010–2014
   url: "http://www.meyerlab.org/"
   pubs: "http://scholar.google.com/citations?user=Vssu9d0AAAAJ"
-  github: ausmeyer
+  github: ausmeyer 
   
+- name: Amir Shahmoradi
+  role: Postdoc
+  joined: 2015
+  history: Graduate Student (Physics), 2012–2015
+  pubs: "http://scholar.google.com/citations?user=CEqJI2wAAAAJ"
+  url: "https://sites.google.com/site/amshportal/home"
+  github: shahmoradi
+ 
 - name: Dakota Derryberry
   role: Graduate Student (CMB)
   joined: 2010
@@ -40,13 +48,6 @@
   joined: 2012
   github: elj299
   
-- name: Amir Shahmoradi
-  role: Graduate Student (Physics)
-  joined: 2012 
-  pubs: "http://scholar.google.com/citations?user=CEqJI2wAAAAJ"
-  url: "https://sites.google.com/site/amshportal/home"
-  github: shahmoradi
- 
 - name: Stephanie J. Spielman
   role: Graduate Student (EEB) 
   joined: 2011
@@ -60,27 +61,11 @@
   history: Undergraduate, 2012–2014
   pubs: "https://scholar.google.com/citations?user=D5G8bBAAAAAJ&hl=en"
   github: dariyasydykova  
-
-- name: Andrew Butler
-  role: Undergraduate
-  joined: 2013
-  github: andrewwbutler 
-
-- name: Eric Dawson
-  role: Undergraduate 
-  joined: 2012 
-  pubs: "http://scholar.google.com/citations?user=UIWzAQIAAAAJ"
-  github: edawson
   
-- name: Keerthana Kumar
+- name: Larry Clay
   role: Undergraduate
-  joined: 2012
-  github: keerthanakumar
+  joined: 2015
   
-- name: Aakash Sur
-  role: Undergraduate
-  joined: 2014
-
 - name: Suyang Wan
   role: Undergraduate
   joined: 2015

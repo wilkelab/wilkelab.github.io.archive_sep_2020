@@ -38,12 +38,27 @@
   left: 2013
   currently: Market Development Biologist, Sapling Learning
 
+- name: Andrew Butler
+  role: Undergraduate
+  joined: 2013
+  left: 2015
+  github: andrewwbutler
+  currently: Graduate Student, New York University
+
 - name: Jared Carlson-Stevermer
   role: Undergraduate
   joined: 2011
   left: 2013
   currently: Graduate Student, University of Wisconsin
   url: "http://wid.wisc.edu/profile/jared-carlson-stevermer/"
+
+- name: Eric Dawson
+  role: Undergraduate 
+  joined: 2012 
+  left: 2015
+  currently: Graduate Student, Cambridge University and NIH
+  url: "http://scholar.google.com/citations?user=UIWzAQIAAAAJ"
+  github: edawson
 
 - name: Kevin Jia
   role: Undergraduate
@@ -62,6 +77,12 @@
   currently: Graduate Student, University of Chicago
   url: "http://www.researchgate.net/profile/Evan_Koch"
 
+- name: Keerthana Kumar
+  role: Undergraduate
+  joined: 2012
+  left: 2015
+  github: keerthanakumar
+  
 - name: Deng Madut
   role: Undergraduate
   joined: 2006
@@ -86,6 +107,11 @@
   left: 2010
   currently: MD/PhD student, Texas A&M Health Science Center
   url: "http://medicine.tamhsc.edu/md-phd/students/current/shelby-steinmeyer.html"
+  
+- name: Aakash Sur
+  role: Undergraduate
+  joined: 2014
+  left: 2015
   
 - name: Matthew Tien
   role: Undergraduate
