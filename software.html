@@ -1,0 +1,37 @@
+---
+layout: default
+title: Software
+permalink: /software/
+---
+
+<div class="post">
+
+  <h1 class="post-title">Software</h1>
+  
+  {% for sw in site.data.software %}
+    <strong>{{ sw.name }}</strong> –
+    {{ sw.tag_line }} <br/>
+    
+    {% if sw.author %}
+      Written by {{ sw.author }}</br>
+    {% endif %}   
+    
+    {% if sw.source_URL %}
+    <a href="{{ sw.source_URL }}">Source</a>&nbsp;&nbsp;
+    {% endif %}
+    
+    {% if sw.CRAN_URL %}
+    <a href="{{ sw.CRAN_URL }}">CRAN</a>&nbsp;&nbsp;
+    {% endif %}
+    
+    {% if sw.PyPI_URL %}
+    <a href="{{ sw.PyPI_URL }}">PyPI</a>&nbsp;&nbsp;
+    {% endif %}
+    
+    {% if sw.paper_URL %}
+    <a href="{{ sw.paper_URL }}">Paper</a>&nbsp;&nbsp;
+    {% endif %}
+    
+  <br/><br/>
+  {% endfor %}
+</div>
