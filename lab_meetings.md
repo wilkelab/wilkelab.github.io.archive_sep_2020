@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title:  Lab Meeting Schedule
 permalink: /more/lab_meetings.html
 ---

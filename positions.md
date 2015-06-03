@@ -1,9 +1,8 @@
 ---
-layout: default
-title: Open positions
+layout: page
+title: Joining the lab
 permalink: /positions/
 ---
-# Joining the lab
 
 The majority of our work in the lab is computational, but many of the ongoing projects provide ample opportunity to interact with experimental groups.  We are generally looking for candidates with a background or strong interest in computational biology, systems biology, statistics, theoretical physics, or computer science. Applicants with knowledge of R and/or python and with experience in high-performance computing environments are preferred.
 
