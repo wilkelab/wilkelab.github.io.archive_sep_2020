@@ -11,6 +11,10 @@
   PyPI_URL: https://pypi.python.org/pypi/Pyvolve/
   paper_URL: "http://biorxiv.org/content/early/2015/06/01/020214"
   
+- name: alignfigR
+  tag_line: R package to visualize large multiple sequence alignments
+  author: Stephanie J. Spielman
+  source_URL: "https://github.com/sjspielman/alignfigr"
 
 - name: PeptideBuilder
   tag_line: Simple Python library to generate model peptides
