@@ -13,18 +13,18 @@ Lab meetings are held Fridays from 11 am - 12:30 pm in MBB 3.204.
 | Date |    |Research |    |Literature |   | Notes |
 |:-----|----|:------------------|----|:--------------------|---|:------|
 |6/5/15  || Round Robin   || Stephanie ||
-|6/12/15 ||               ||      ||
-|6/19/15 ||               ||      ||
-|6/26/15 ||               ||      ||
-|7/3/15  || Stephanie     ||      ||
-|7/10/15 ||  -            ||  -   || Claus out of town
-|7/17/15 ||  -            ||  -   || Claus out of town
-|7/24/15 ||  -            ||  -   || Claus out of town
-|7/31/15 ||               ||      || 
-|8/7/15  ||               ||      ||
-|8/14/15 ||               ||      ||
-|8/21/15 ||               ||      ||
-|8/28/15 ||               ||      ||
+|6/12/15 || Umut          || Austin*   || *Austin's doing research, too
+|6/19/15 || Dakota(?)     || Umut      ||
+|6/26/15 || Ben           || Dakota(?) ||
+|7/3/15  || Stephanie     || Ben       ||
+|7/10/15 ||  -            ||  -        || Claus out of town
+|7/17/15 ||  -            ||  -        || Claus out of town
+|7/24/15 ||  -            ||  -        || Claus out of town
+|7/31/15 || Dariya        || Umut      || 
+|8/7/15  || Amir          || Dariya    ||
+|8/14/15 || Claire        || Amir      ||
+|8/21/15 || Eleisha       || Claire    ||
+|8/28/15 || Patrick(?)    || Eleisha   ||
 |------+---+--------------------+---+----------------------+---+-------|
 {:.widetable}
 
