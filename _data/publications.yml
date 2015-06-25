@@ -1,3 +1,13 @@
+- author: A. G. Meyer, S. J. Spielman, T. Bedford, C. O. Wilke
+  year: in press
+  title: On the time dependence of evolutionary metrics during the 2009 pandemic influenza virus outbreak
+  ref: "Virus Evolution"
+  
+- author: J. R. Houser, C. Barnhart, D. R. Boutz, S. M. Carroll, A. Dasgupta, J. K. Michener, B. D. Needham, O. Papoulas, V. Sridhara, D. K. Sydykova, C. J. Marx, M. S. Trent, J. E. Barrick, E. M. Marcotte, C. O. Wilke
+  year: in press
+  title: Controlled measurement and comparative analysis of cellular components in E. coli reveals broad regulatory changes under long-term starvation
+  ref: "PLOS Computational Biology"
+
 - author: A. G. Meyer, C. O. Wilke
   year: 2015
   title: Geometric constraints dominate the antigenic evolution of influenza H3N2 hemagglutinin
