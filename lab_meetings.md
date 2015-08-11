@@ -47,7 +47,7 @@ Lab meetings are held Fridays from 11 am - 12:30 pm in MBB 3.204.
 |7/24/15 ||  -            ||  -        || Claus out of town
 |7/31/15 || Dariya        || Umut      || 
 |8/7/15  || Amir          || Dariya    ||
-|8/14/15 || Claire        || Amir      ||
+|8/14/15 || Claire        || Stephanie ||
 |8/21/15 || Eleisha       || Claire    ||
 |8/28/15 || Patrick(?)    || Eleisha   ||
 |------+---+--------------------+---+----------------------+---+-------|
