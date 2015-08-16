@@ -4,9 +4,11 @@
   ref: "Virus Evolution"
   
 - author: J. R. Houser, C. Barnhart, D. R. Boutz, S. M. Carroll, A. Dasgupta, J. K. Michener, B. D. Needham, O. Papoulas, V. Sridhara, D. K. Sydykova, C. J. Marx, M. S. Trent, J. E. Barrick, E. M. Marcotte, C. O. Wilke
-  year: in press
+  year: 2015
   title: Controlled measurement and comparative analysis of cellular components in E. coli reveals broad regulatory changes under long-term starvation
-  ref: "PLOS Computational Biology"
+  ref: "PLOS Comput. Biol. 11:e1004400"
+  doi: 10.1371/journal.pcbi.1004400
+  pmcid: 
 
 - author: A. G. Meyer, C. O. Wilke
   year: 2015
