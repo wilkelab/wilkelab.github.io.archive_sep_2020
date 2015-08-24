@@ -4,27 +4,13 @@
   pubs: "http://scholar.google.com/citations?user=Nc8U6E4AAAAJ"
   blog: "http://serialmentor.com/blog"
   github: clauswilke
-
-- name: Viswanadham Sridhara
-  role: Research Associate
-  joined: 2012
-  pubs: "http://scholar.google.com/citations?user=UBvhRHgAAAAJ"
-  github: viswam78
   
 - name: M. Umut Çağlar
   role: Postdoc
   joined: 2014
   pubs: "http://scholar.google.com/citations?user=bdtVzlcAAAAJ"
   github: umutcaglar
-
-- name: Austin G. Meyer
-  role: Postdoc
-  joined: 2014
-  history: Graduate Student (CMB), 2010–2014
-  url: "http://www.meyerlab.org/"
-  pubs: "http://scholar.google.com/citations?user=Vssu9d0AAAAJ"
-  github: ausmeyer 
-  
+ 
 - name: Amir Shahmoradi
   role: Postdoc
   joined: 2015
@@ -66,7 +52,6 @@
   role: Undergraduate
   joined: 2015
   
-- name: Suyang Wan
+- name: Alishah Momin
   role: Undergraduate
   joined: 2015
-  github: Mycroft0121

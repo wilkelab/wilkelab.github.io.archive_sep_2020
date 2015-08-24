@@ -1,3 +1,10 @@
+- name: Viswanadham Sridhara
+  role: Research Associate
+  joined: 2012
+  left: 2015
+  currently: Computational Biologist at UT Southwestern Medical Center
+  url: "http://scholar.google.com/citations?user=UBvhRHgAAAAJ"
+
 - name: Art Covert
   role: Postdoc, Research Educator
   joined: 2010
@@ -17,6 +24,12 @@
   left: 2010
   currently: Research Assistant Professor, Arizona Health Sciences Center
   url: "http://deptmedicine.arizona.edu/faculty/tong-zhou-phd"
+
+- name: Austin G. Meyer
+  role: Graduate Student (CMB) & Postdoc
+  joined: 2010
+  left: 2015
+  url: "http://www.meyerlab.org/"
 
 - name: Thomas Keller
   role: Graduate Student (EEB)
@@ -119,3 +132,9 @@
   left: 2012
   currently: Graduate student, University of Chicago
   url: "https://scholar.google.com/citations?user=P150jCIAAAAJ&hl=en"
+
+- name: Suyang Wan
+  role: Undergraduate
+  joined: 2015
+  left: 2015
+  currently: Undergraduate, University of Minnesota
