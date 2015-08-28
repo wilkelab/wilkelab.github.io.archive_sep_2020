@@ -4,7 +4,7 @@ title:  Lab Meeting Schedule
 permalink: /more/lab_meetings.html
 ---
 
-Lab meetings are held Fridays from 11 am - 12:30 pm in MBB 3.204.
+Lab meetings are held Fridays from 10:30 am - 12:00 pm in MBB 3.204.
 <br><br>
 
 ### Fall 2015
@@ -12,20 +12,20 @@ Lab meetings are held Fridays from 11 am - 12:30 pm in MBB 3.204.
 |------+---+--------------------+---+----------------------+---+-------|
 | Date      |    |Research           |    |Literature |         |Notes      |
 |:----------|----|:------------------|----|:--------------------|---|:------|
-|  9/4/15  ||   ||  ||
-|  9/11/15 ||   ||  || 
-|  9/18/15 ||   ||  ||
-|  9/25/15 ||   ||  ||
-|  10/2/15 ||   ||  ||
-|  10/9/15 ||   ||  ||
-| 10/16/15 ||   ||  ||
-| 10/23/15 ||   ||  ||
-| 10/30/15 ||   ||  ||
-|  11/6/15 ||   ||  ||
-| 11/20/15 ||   ||  ||
+|  9/4/15  || Larry???  || Stephanie  ||
+|  9/11/15 || Dariya  || Larry??? || 
+|  9/18/15 || Umut   || Dariya  ||
+|  9/25/15 || Eleisha   || Umut ||
+|  10/2/15 || Stephanie  || Eleisha ||
+|  10/9/15 || Ben  || Stephanie  ||
+| 10/16/15 || -  || - ||  No lab meeting, Claus away
+| 10/23/15 || ??????  || Ben  ||
+| 10/30/15 || Dakota  || ?????? ||
+|  11/6/15 || ??????  || Dakota || 
+| 11/20/15 || Matt  || ??????? ||
 | 11/27/15 || --  || -- || Thanksgiving
-|  12/4/15 ||   ||  ||
-| 12/11/15 ||   ||  ||
+|  12/4/15 || Alishah  || Matt ||
+| 12/11/15 ||   || Alishah ||
 |------+---+--------------------+---+----------------------+---+-------|
 {:.widetable}
 
