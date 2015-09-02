@@ -12,8 +12,8 @@ Lab meetings are held Fridays from 10:30 am - 12:00 pm in MBB 3.204.
 |------+---+--------------------+---+----------------------+---+-------|
 | Date      |    |Research           |    |Literature |         |Notes      |
 |:----------|----|:------------------|----|:--------------------|---|:------|
-|  9/4/15  || Larry???  || Stephanie  ||
-|  9/11/15 || Ashley Teufel  || Larry??? || 
+|  9/4/15  || ??????  || Stephanie  ||
+|  9/11/15 || Ashley Teufel  || ?????? || 
 |  9/18/15 || Umut   || ??????  ||
 |  9/25/15 || Eleisha   || Umut ||
 |  10/2/15 || Stephanie  || Eleisha ||
@@ -21,8 +21,8 @@ Lab meetings are held Fridays from 10:30 am - 12:00 pm in MBB 3.204.
 | 10/16/15 || -  || - ||  No lab meeting, Claus away
 | 10/23/15 || Dariya  || Ben  ||
 | 10/30/15 || Dakota  || Dariya ||
-|  11/6/15 || ??????  || Dakota || 
-| 11/20/15 || Matt  || ??????? ||
+|  11/6/15 || Larry  || Dakota || 
+| 11/20/15 || Matt  || Larry ||
 | 11/27/15 || --  || -- || Thanksgiving
 |  12/4/15 || Alishah  || Matt ||
 | 12/11/15 ||   || Alishah ||
