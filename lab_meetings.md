@@ -14,9 +14,9 @@ Lab meetings are held Fridays from 10:30 am - 12:00 pm in MBB 3.204.
 |:----------|----|:------------------|----|:--------------------|---|:------|
 |  9/4/15  || Larry & Dacia  || -  ||
 |  9/11/15 || Ashley Teufel  || Stephanie || 
-|  9/18/15 || Umut   || ??????  ||
-|  9/25/15 || Eleisha   || Umut ||
-|  10/2/15 || Stephanie  || Eleisha ||
+|  9/18/15 || Eleisha   || Eleisha ||
+|  9/25/15 || Umut   || Claus||
+|  10/2/15 || Stephanie  || Umut ||
 |  10/9/15 || Ben  || Stephanie  ||
 | 10/16/15 || -  || - ||  No lab meeting, Claus away
 | 10/23/15 || Dariya  || Ben  ||
