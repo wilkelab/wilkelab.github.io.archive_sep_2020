@@ -35,3 +35,9 @@ Syllabus and schedule: [BIO384C_syllabus_fall2015.pdf](/classes/BIO384C/fall_201
 * In-class worksheets:
     - [Exercises and solutions](/classes/BIO384C/fall_2015/class06_Ex_copy_editing.pdf)
 
+**5. Sep. 17, 2015 – The Hook: Setting up the problem**
+
+**6. Sep. 22, 2015 – Outline for a Specific Aims page**
+
+* Reading assignment: [Blog post on critical need](http://serialmentor.com/blog/2013/10/17/the-critical-need-in-a-grant-application/)
+
