@@ -5,8 +5,8 @@ permalink: /classes/
 ---
 
 **Current:**
-- [BIO 384C](/classes/BIO384C_fall_2015.html) (fall 2015)
 
+- [BIO 384C](/classes/BIO384C_fall_2015.html) (fall 2015)
 - [SDS 348](/classes/SDS348_spring_2015.html) (spring 2015)
 
 **Past:**
