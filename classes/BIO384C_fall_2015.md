@@ -12,7 +12,7 @@ Syllabus and schedule: [BIO384C_syllabus_fall2015.pdf](/classes/BIO384C/fall2015
 
 **2. Sep. 1, 2015 – Becoming a better writer: Avoiding the official style**
 
-* Reading assignment: [COW blog post: Avoiding the official style](http://serialmentor.com/blog/2015/8/26/avoiding-the-official-style/)
+* Reading assignment: [Blog post on official style](http://serialmentor.com/blog/2015/8/26/avoiding-the-official-style/)
 * In-class worksheets:
     - [Exercise 1](/classes/BIO384C/fall2015/class02_Ex1_official_style.pdf)
     - [Solutions to Exercise 1](/classes/BIO384C/class02_Ex1_official_style_solutions.pdf)
@@ -22,7 +22,7 @@ Syllabus and schedule: [BIO384C_syllabus_fall2015.pdf](/classes/BIO384C/fall2015
 
 **4. Sep. 8, 2015 –  Becoming a better writer: Topic and stress position**
 
-* Reading assignment: [COW blog post: Topic and stress position](http://serialmentor.com/blog/2013/9/26/writing-paragraphs-that-make-sensethe-topic-and-the-stress-position/)
+* Reading assignment: [Blog post on topic and stress position](http://serialmentor.com/blog/2013/9/26/writing-paragraphs-that-make-sensethe-topic-and-the-stress-position/)
 * Slides: [class04.pdf](/classes/BIO384C/fall2015/class04.pdf)
 * In-class worksheets:
     - [Exercises and solutions](/classes/BIO384C/fall2015/class04_Ex_topic_and_stress.pdf)
