@@ -40,4 +40,5 @@ Syllabus and schedule: [BIO384C_syllabus_fall2015.pdf](/classes/BIO384C/fall_201
 **8. Sep. 22, 2015 – Outline for a Specific Aims page**
 
 * Reading assignment: [Blog post on critical need](http://serialmentor.com/blog/2013/10/17/the-critical-need-in-a-grant-application/)
-
+* [Proposal writing handout](/classes/BIO384C/fall_2015/class_08_ProposalWriting.pdf)
+* [Example grant application](/classes/BIO384C/fall_2015/class_08_NIH_R01_example.pdf)
