@@ -44,7 +44,7 @@ Syllabus and schedule: [BIO384C_syllabus_fall2015.pdf](/classes/BIO384C/fall_201
 
 * Readings:
     - [Pinker, Why academic writing stinks](/classes/BIO384C/fall_2015/Ochman_Week3_PinkerBooklet.pdf)
-    - [King and Wilson, evolution at two levels](/classes/BIO384C/fall_2015/Ochman_Week3_KingWilson_1975.pdf)
+    - [King and Wilson, Evolution at two levels](/classes/BIO384C/fall_2015/Ochman_Week3_KingWilson_1975.pdf)
 
 **6. Sep. 15, 2015 – Copy-editing text**  
 (Wilke)
@@ -64,6 +64,6 @@ Syllabus and schedule: [BIO384C_syllabus_fall2015.pdf](/classes/BIO384C/fall_201
 (Wilke)
 
 * Reading assignment: [Blog post on critical need](http://serialmentor.com/blog/2013/10/17/the-critical-need-in-a-grant-application/)
-* Additional reading materials:
+* Additional materials:
     - [Proposal writing handout](/classes/BIO384C/fall_2015/class08_ProposalWritingCheatSheet.pdf)
     - [Example grant application](/classes/BIO384C/fall_2015/class08_NIH_R01_example.pdf)
