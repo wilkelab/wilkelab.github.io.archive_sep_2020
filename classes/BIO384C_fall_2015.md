@@ -35,7 +35,7 @@ Syllabus and schedule: [BIO384C_syllabus_fall2015.pdf](/classes/BIO384C/fall_201
 (Wilke)
 
 * Reading assignment: [Blog post on topic and stress position](http://serialmentor.com/blog/2013/9/26/writing-paragraphs-that-make-sensethe-topic-and-the-stress-position/)
-* Slides: [class04.pdf](/classes/BIO384C/fall_2015/class04.pdf)
+* [Lecture slides](/classes/BIO384C/fall_2015/class04.pdf)
 * In-class worksheets:
     - [Exercises and solutions](/classes/BIO384C/fall_2015/class04_Ex_topic_and_stress.pdf)
 
@@ -49,7 +49,7 @@ Syllabus and schedule: [BIO384C_syllabus_fall2015.pdf](/classes/BIO384C/fall_201
 **6. Sep. 15, 2015 – Copy-editing text**  
 (Wilke)
 
-* Slides: [class06.pdf](/classes/BIO384C/fall_2015/class06.pdf)
+* [Lecture slides](/classes/BIO384C/fall_2015/class06.pdf)
 * In-class worksheets:
     - [Exercises and solutions](/classes/BIO384C/fall_2015/class06_Ex_copy_editing.pdf)
 
