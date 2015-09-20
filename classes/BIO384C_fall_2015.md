@@ -12,6 +12,7 @@ Syllabus and schedule: [BIO384C_syllabus_fall2015.pdf](/classes/BIO384C/fall_201
 (Ochman, Wilke)
 
 Readings:
+
     - [Gu and Bourne, 10 Rules for graduate students](/classes/BIO384C/fall_2015/Ochman_Week1_Gu_Bourne_rules_for_grad_students.pdf)
     - [Watson, Succeeding in science](/classes/BIO384C/fall_2015/Ochman_Week1_Watson_Rules_of_thumb.pdf)
 
@@ -28,6 +29,7 @@ Readings:
 (Ochman)
 
 Readings:
+
     - [Bargmann, Decisions](/classes/BIO384C/fall_2015/Ochman_Week2_Bargmann_decisions.pdf)
     - [Brenner, Graduate student](/classes/BIO384C/fall_2015/Ochman_Week2_grad_student.pdf)
     
@@ -43,6 +45,7 @@ Readings:
 (Ochman)
 
 Readings:
+
     - [Pinker, Why academic writing stinks](/classes/BIO384C/fall_2015/Ochman_Week3_PinkerBooklet.pdf)
     - [King and Wilson, Evolution at two levels](/classes/BIO384C/fall_2015/Ochman_Week3_KingWilson_1975.pdf)
 
@@ -57,6 +60,7 @@ Readings:
 (Ochman)
 
 Readings:
+
     - [Alon, How to choose a good scientific problem](/classes/BIO384C/fall_2015/Ochman_Week4_HowToChooseGoodProblem.pdf)
     - [Schwartz, The importance of stupidity](/classes/BIO384C/fall_2015/Ochman_Week4_ImportanceofStupidity.pdf)
 
