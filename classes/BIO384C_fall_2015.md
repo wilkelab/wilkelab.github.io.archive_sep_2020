@@ -13,8 +13,8 @@ Syllabus and schedule: [BIO384C_syllabus_fall2015.pdf](/classes/BIO384C/fall_201
 
 Readings:
 
-    - [Gu and Bourne, 10 Rules for graduate students](/classes/BIO384C/fall_2015/Ochman_Week1_Gu_Bourne_rules_for_grad_students.pdf)
-    - [Watson, Succeeding in science](/classes/BIO384C/fall_2015/Ochman_Week1_Watson_Rules_of_thumb.pdf)
+  - [Gu and Bourne, 10 Rules for graduate students](/classes/BIO384C/fall_2015/Ochman_Week1_Gu_Bourne_rules_for_grad_students.pdf)
+  - [Watson, Succeeding in science](/classes/BIO384C/fall_2015/Ochman_Week1_Watson_Rules_of_thumb.pdf)
 
 **2. Sep. 1, 2015 – Becoming a better writer: Avoiding the official style**  
 (Wilke)
@@ -30,8 +30,8 @@ Readings:
 
 Readings:
 
-    - [Bargmann, Decisions](/classes/BIO384C/fall_2015/Ochman_Week2_Bargmann_decisions.pdf)
-    - [Brenner, Graduate student](/classes/BIO384C/fall_2015/Ochman_Week2_grad_student.pdf)
+  - [Bargmann, Decisions](/classes/BIO384C/fall_2015/Ochman_Week2_Bargmann_decisions.pdf)
+  - [Brenner, Graduate student](/classes/BIO384C/fall_2015/Ochman_Week2_grad_student.pdf)
     
 **4. Sep. 8, 2015 –  Becoming a better writer: Topic and stress position**  
 (Wilke)
@@ -46,8 +46,8 @@ Readings:
 
 Readings:
 
-    - [Pinker, Why academic writing stinks](/classes/BIO384C/fall_2015/Ochman_Week3_PinkerBooklet.pdf)
-    - [King and Wilson, Evolution at two levels](/classes/BIO384C/fall_2015/Ochman_Week3_KingWilson_1975.pdf)
+  - [Pinker, Why academic writing stinks](/classes/BIO384C/fall_2015/Ochman_Week3_PinkerBooklet.pdf)
+  - [King and Wilson, Evolution at two levels](/classes/BIO384C/fall_2015/Ochman_Week3_KingWilson_1975.pdf)
 
 **6. Sep. 15, 2015 – Copy-editing text**  
 (Wilke)
@@ -61,8 +61,8 @@ Readings:
 
 Readings:
 
-    - [Alon, How to choose a good scientific problem](/classes/BIO384C/fall_2015/Ochman_Week4_HowToChooseGoodProblem.pdf)
-    - [Schwartz, The importance of stupidity](/classes/BIO384C/fall_2015/Ochman_Week4_ImportanceofStupidity.pdf)
+  - [Alon, How to choose a good scientific problem](/classes/BIO384C/fall_2015/Ochman_Week4_HowToChooseGoodProblem.pdf)
+  - [Schwartz, The importance of stupidity](/classes/BIO384C/fall_2015/Ochman_Week4_ImportanceofStupidity.pdf)
 
 **8. Sep. 22, 2015 – Outline for a Specific Aims page**  
 (Wilke)
