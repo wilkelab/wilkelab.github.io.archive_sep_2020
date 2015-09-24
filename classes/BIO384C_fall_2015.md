@@ -71,3 +71,19 @@ Readings:
 * Additional materials:
     - [Proposal writing handout](/classes/BIO384C/fall_2015/class08_ProposalWritingCheatSheet.pdf)
     - [Example grant application](/classes/BIO384C/fall_2015/class08_NIH_R01_example.pdf)
+
+**9. Sep. 24, 2015 – Punctuation**  
+(Ochman)
+
+Readings:
+
+  - [Zimmer, Inuit Study Adds Twist to Omega-3 Fatty Acids’ Health Story](http://www.nytimes.com/2015/09/22/science/inuit-study-adds-twist-to-omega-3-fatty-acids-health-story.html)
+
+
+**10. Sep. 29, 2015 – Outline for a Specific Aims page, Part II**  
+(Wilke)
+
+
+
+**11. OctS. 1, 2015 –  Combining writing style with writing contents: Thinking about the Specific Aims**  
+(Ochman)
