@@ -1,14 +1,14 @@
-- author: S. J. Spielman, C. O. Wilke
-  year: in press
-  title: A flexible Python module for simulating sequences along phylogenies
-  ref: "PLOS ONE, to appear"
-  doi: 10.1101/020214
-
 - author: S. A. Kerr, E. L. Jackson, O. I. Lungu, A. G. Meyer, A. Demogines, A. D. Ellington, G. Georgiou, C. O. Wilke, S. L. Sawyer 
   year: in press
   title: Computational and functional analysis of the virus-receptor interface reveals host range trade-offs in New World arenaviruses
   ref: "J. Virol., to appear"
   doi: 10.1128/JVI.01408-15
+
+- author: S. J. Spielman, C. O. Wilke
+  year: 2015
+  title: A flexible Python module for simulating sequences along phylogenies
+  ref: "PLOS ONE 10:e0139047"
+  doi: 10.1371/journal.pone.0139047
 
 - author: A. G. Meyer, S. J. Spielman, T. Bedford, C. O. Wilke
   year: 2015
