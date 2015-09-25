@@ -89,5 +89,6 @@ Readings:
 (Ochman)
 
 Readings:
+
   - [Brenner, On Publications](/classes/BIO384C/Ochman_Week_5_Brenner_OnPublications.pdf)
   - [Bourne, Getting Published](/classes/BIO384C/Ochman_Week_5_Bourne_getting Published.pdf)
