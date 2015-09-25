@@ -87,3 +87,7 @@ Readings:
 
 **11. Oct. 1, 2015 –  Combining writing style with writing contents: Thinking about the Specific Aims**  
 (Ochman)
+
+Readings:
+  - [Brenner, On Publications](/classes/BIO384C/Ochman_Week_5_Brenner_OnPublications.pdf)
+  - [Bourne, Getting Published](/classes/BIO384C/Ochman_Week_5_Bourne_getting Published.pdf)
