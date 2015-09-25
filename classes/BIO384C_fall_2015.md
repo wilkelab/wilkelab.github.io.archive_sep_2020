@@ -94,7 +94,7 @@ Readings:
   - [Bourne, Ten simple rules for getting published](/classes/BIO384C/fall_2015/Ochman_Week_5_Bourne_getting Published.pdf)
 
 
-**12. Oct. 6, 2015**
+**12. Oct. 6, 2015**  
 (Wilke)
 
 * Reading assignment: [Blog post on when to start writing a scientific paper](http://serialmentor.com/blog/2013/8/26/when-should-you-stop-doing-science-and-start-writing-a-paper/)
