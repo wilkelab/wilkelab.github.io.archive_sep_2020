@@ -91,4 +91,4 @@ Readings:
 Readings:
 
   - [Brenner, On Publications](/classes/BIO384C/fall_2015/Ochman_Week_5_Brenner_OnPublications.pdf)
-  - [Bourne, Getting Published](/classes/BIO384C/fall_2015/Ochman_Week_5_Bourne_getting Published.pdf)
+  - [Bourne, Ten simple rules for getting published](/classes/BIO384C/fall_2015/Ochman_Week_5_Bourne_getting Published.pdf)
