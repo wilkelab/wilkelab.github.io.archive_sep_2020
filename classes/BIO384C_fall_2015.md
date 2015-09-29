@@ -83,9 +83,12 @@ Readings:
 **10. Sep. 29, 2015 – Outline for a Specific Aims page, Part II**  
 (Wilke)
 
+* [Lecture slides](/classes/BIO384C/fall_2015/class10.pdf)
+* In-class worksheets:
+    - [Exercises and solutions](/classes/BIO384C/fall_2015/class10_Ex_faulty_connections.pdf)
 
 
-**11. Oct. 1, 2015 –  Combining writing style with writing contents: Thinking about the Specific Aims**  
+**11. Oct. 1, 2015 – Combining writing style with writing contents: Thinking about the Specific Aims**  
 (Ochman)
 
 Readings:
@@ -94,7 +97,10 @@ Readings:
   - [Bourne, Ten simple rules for getting published](/classes/BIO384C/fall_2015/Ochman_Week_5_Bourne_getting Published.pdf)
 
 
-**12. Oct. 6, 2015**  
+**12. Oct. 6, 2015 – Writing a scientific paper**  
 (Wilke)
 
-* Reading assignment: [Blog post on when to start writing a scientific paper](http://serialmentor.com/blog/2013/8/26/when-should-you-stop-doing-science-and-start-writing-a-paper/)
+* Reading assignments:
+
+    - [Blog post on when to start writing a scientific paper](http://serialmentor.com/blog/2013/8/26/when-should-you-stop-doing-science-and-start-writing-a-paper/)
+    - [Blog post on how to write a scientific paper](http://serialmentor.com/blog/2013/8/29/writing-a-scientific-paper-in-four-easy-steps/)
