@@ -103,3 +103,12 @@ Readings:
 * Reading assignments:
     - [Blog post on when to start writing a scientific paper](http://serialmentor.com/blog/2013/8/26/when-should-you-stop-doing-science-and-start-writing-a-paper/)
     - [Blog post on how to write a scientific paper](http://serialmentor.com/blog/2013/8/29/writing-a-scientific-paper-in-four-easy-steps/)
+
+**13. Oct. 8, 2015 – Evaluating scientific productivity**  
+(Ochman)
+
+Readings:
+
+    - [Hirsch, Index to quantify scientific research output](/classes/BIO384C/fall_2015/Ochman_Week6_Hirsh_PNAS.pdf)
+    - [Claus Wilke blog post on h index](http://serialmentor.com/blog/2014/12/8/relationship-between-h-index-and-total-citations-count/)
+
