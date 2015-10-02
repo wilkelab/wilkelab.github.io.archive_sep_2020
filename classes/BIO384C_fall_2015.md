@@ -109,6 +109,6 @@ Readings:
 
 Readings:
 
-- [Hirsch, Index to quantify scientific research output](/classes/BIO384C/fall_2015/Ochman_Week6_Hirsh_PNAS.pdf)
+- [Hirsch, Index to quantify scientific research output](/classes/BIO384C/fall_2015/Ochman_Week6_Hirsch_PNAS.pdf)
 - [Claus Wilke blog post on h index](http://serialmentor.com/blog/2014/12/8/relationship-between-h-index-and-total-citations-count/)
 
