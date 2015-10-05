@@ -104,6 +104,11 @@ Readings:
     - [Blog post on when to start writing a scientific paper](http://serialmentor.com/blog/2013/8/26/when-should-you-stop-doing-science-and-start-writing-a-paper/)
     - [Blog post on how to write a scientific paper](http://serialmentor.com/blog/2013/8/29/writing-a-scientific-paper-in-four-easy-steps/)
 
+* In-class exercises:
+    - [Universal paper outline](/classes/BIO384C/fall_2015/class12_UniversalPaperOutline.pdf)
+    - [Parmley et al., PLOS Biol 2007](/classes/BIO384C/fall_2015/class12_PLoSBiol_Parmley.pdf)
+    - [Musacchia et al., PNAS 2007](/classes/BIO384C/fall_2015/class12_PNAS-2007-Musachia.pdf)
+
 **13. Oct. 8, 2015 – Evaluating scientific productivity**  
 (Ochman)
 
