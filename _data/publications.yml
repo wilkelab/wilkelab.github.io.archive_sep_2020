@@ -1,11 +1,5 @@
-- author: A. G. Meyer, C. O. Wilke
-  year: 2015
-  title: The utility of protein structure as a predictor of site-wise dN/dS varies widely among HIV-1 proteins
-  ref: "J. R. Soc. Interface 12:20150579"
-  doi: 10.1098/rsif.2015.0579
-
 - author: C. O. Wilke
-  year: 2015
+  year: in press
   title: Evolutionary paths of least resistance
   ref: "Proc. Natl. Acad. Sci. USA, to appear"
   doi: 10.1073/pnas.1517390112
@@ -15,6 +9,12 @@
   title: Computational and functional analysis of the virus-receptor interface reveals host range trade-offs in New World arenaviruses
   ref: "J. Virol., to appear"
   doi: 10.1128/JVI.01408-15
+
+- author: A. G. Meyer, C. O. Wilke
+  year: 2015
+  title: The utility of protein structure as a predictor of site-wise dN/dS varies widely among HIV-1 proteins
+  ref: "J. R. Soc. Interface 12:20150579"
+  doi: 10.1098/rsif.2015.0579
   
 - author: S. J. Spielman, C. O. Wilke
   year: 2015
