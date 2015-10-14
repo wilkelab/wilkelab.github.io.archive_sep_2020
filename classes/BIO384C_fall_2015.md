@@ -117,3 +117,8 @@ Readings:
 - [Hirsch, Index to quantify scientific research output](/classes/BIO384C/fall_2015/Ochman_Week6_Hirsch_PNAS.pdf)
 - [Claus Wilke blog post on h index](http://serialmentor.com/blog/2014/12/8/relationship-between-h-index-and-total-citations-count/)
 
+**14. Oct. 13, 2015 – Factors to consider when making figures**  
+(Ochman)
+
+* [Lecture slides](/classes/BIO384C/fall_2015/Ochman_MakingFigures_10_13.pptx)
+
