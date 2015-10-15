@@ -122,3 +122,14 @@ Readings:
 
 * [Lecture slides](/classes/BIO384C/fall_2015/Ochman_MakingFigures_10_13.pptx)
 
+**15. Oct. 15, 2015**  
+(Ochman)
+
+**16. Oct. 20, 2015 – Making figures with R**  
+(Wilke)
+
+* Download R from here: [http://cran.r-project.org/](http://cran.r-project.org/)
+* Download RStudio from here: [http://www.rstudio.com/products/rstudio/download/](http://www.rstudio.com/products/rstudio/download/)
+* General R tutorial (read Sections 1-3): [http://www.cyclismo.org/tutorial/R/index.html](http://www.cyclismo.org/tutorial/R/index.html)
+
+
