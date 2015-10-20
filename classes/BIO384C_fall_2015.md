@@ -131,5 +131,9 @@ Readings:
 * Download R from here: [http://cran.r-project.org/](http://cran.r-project.org/)
 * Download RStudio from here: [http://www.rstudio.com/products/rstudio/download/](http://www.rstudio.com/products/rstudio/download/)
 * General R tutorial (read Sections 1-3): [http://www.cyclismo.org/tutorial/R/index.html](http://www.cyclismo.org/tutorial/R/index.html)
-
+* [Lecture slides](/classes/BIO384C/fall_2015/class16.pdf)
+* In-class worksheet:
+    - [html version](/classes/BIO384C/fall_2015/class16_worksheet.html)
+    - [R Markdown version](/classes/BIO384C/fall_2015/class16_worksheet.Rmd)
+    - [solutions](/classes/BIO384C/fall_2015/class16_worksheet_solutions.html)
 

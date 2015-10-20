@@ -1,0 +1,73 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=3, fig.width=4)
+```
+##In-class worksheet, class 16
+
+We will be using the R package **ggplot2** for all plots. To use it, we first need to load it:
+```{r}
+library(ggplot2)
+```
+
+The default theme of **ggplot2** is not the most beautiful. This code switches to a more pleasant theme:
+```{r}
+theme_set(theme_bw())
+```
+```{r include=FALSE}
+theme_set(theme_bw(base_size=12))
+```
+
+## 1. Plotting the iris data set.
+
+For this exercise we are using the `iris` data set available in R. This data set gives the measurements in centimeters of the variables sepal length and width and petal length and width, respectively, for 50 flowers from each of 3 species of iris. The species are *Iris setosa*, *versicolor*, and *virginica:*
+
+```{r}
+head(iris)
+```
+
+*Make a scatter plot of petal length vs. sepal length for the three species. Make a single plot that shows the data for all three species at once, in different colors. Then do the same plot but facet by species instead of coloring.*
+```{r }
+# R code goes here
+```
+
+*Now see if you can make side-by-side boxplots of sepal lengths for the three species of iris. The geom you need to use is `geom_boxplot()`. See if you can guess the correct aesthetic mapping.*
+```{r}
+# R code goes here
+```
+
+## 2. Plotting tree-growth data.
+*The data set `Sitka` from the MASS package contains repeated measurements of tree size for 79 Sitka spruce trees, which were grown either in ozone-enriched chambers or under control conditions.*
+
+```{r}
+library(MASS) # we need to load the MASS library to have access to this dataset
+head(Sitka)
+```
+
+*Make line plots of tree size vs. time, for each tree, faceted  by treatment. First, use the same color for all lines.*
+```{r}
+# R code goes here
+```
+
+*Then, color by tree.*
+```{r}
+# R code goes here
+```
+
+*Finally, color by size.*
+```{r}
+# R code goes here
+```
+In this last example, the lines actually change color from left to right. It would be nicer to have a single, uniform color for each tree, and, e.g., color by maximum size. To do this efficiently we need the **dplyr** package, which we will discuss later. If you have experience with **dplyr**, see if you can make a plot where the lines for each tree are of a uniform color determined by maximum size.
+
+
+## 3. If this was easy
+
+*Show the 2d distribution of petal length vs. sepal length in the `iris` dataset, by making an x-y plot that shows the individual data points as well as contour lines indicating the density of points in a given spatial region.*
+```{r}
+# R code goes here
+```
+
+*If this was still easy, now instead of contour lines add a fitted straight black line (not a curve, and no confidence band!) to each group of points.*
+```{r}
+# R code goes here                                                                         
+```
