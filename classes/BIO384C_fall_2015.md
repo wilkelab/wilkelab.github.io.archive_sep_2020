@@ -137,3 +137,16 @@ Readings:
     - [R Markdown version](/classes/BIO384C/fall_2015/class16_worksheet.Rmd)
     - [solutions](/classes/BIO384C/fall_2015/class16_worksheet_solutions.html)
 
+**16. Oct. 22, 2015**  
+(Ochman)
+
+**17. Oct. 27, 2015 – Making figures with R, Part 2**  
+(Wilke)
+
+**18. Oct. 29, 2015 – Giving presentations**  
+(Ochman)
+
+Readings:
+
+  - [Alon, How to give a good talk](/classes/BIO384C/fall_2015/Ochman_Week9_Alon_How_to_give_a_talk.pdf)
+  - [Roty, Giving a talk](/classes/BIO384C/fall_2015/Ochman_Week9_Roth_Giving_a_talk.pdf )
