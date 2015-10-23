@@ -10,7 +10,6 @@ The majority of our work in the lab is computational, but many of the ongoing pr
 
 
 **Postdocs.**
-
 The Wilke lab currently has several ongoing projects studying virus-host interactions on a cellular level, using a variety of high-throughput approaches. Most projects are computational, and potential research questions range from differential-equation or stochastic modeling of viral replication inside a cell to viral proteomics to high-throughput image analysis of single-cell virology experiments. We are also carrying out experiments in bacteriophage systems biology, in collaboration with the Bull lab at UT Austin. 
 
 Prospective postdocs should contact Claus Wilke by email (wilke@austin.utexas.edu) and send a current cv and a brief (~1 page) description of research interests. 
