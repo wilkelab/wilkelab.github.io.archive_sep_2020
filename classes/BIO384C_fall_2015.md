@@ -137,13 +137,18 @@ Readings:
     - [R Markdown version](/classes/BIO384C/fall_2015/class16_worksheet.Rmd)
     - [solutions](/classes/BIO384C/fall_2015/class16_worksheet_solutions.html)
 
-**16. Oct. 22, 2015**  
+**17. Oct. 22, 2015**  
 (Ochman)
 
-**17. Oct. 27, 2015 – Making figures with R, Part 2**  
+**18. Oct. 27, 2015 – Making figures with R, Part 2**  
 (Wilke)
 
-**18. Oct. 29, 2015 – Giving presentations**  
+* [Lecture slides](/classes/BIO384C/fall_2015/class18.pdf)
+* In-class worksheet:
+    - [html version](/classes/BIO384C/fall_2015/class18_worksheet.html)
+    - [R Markdown version](/classes/BIO384C/fall_2015/class18_worksheet.Rmd)
+
+**19. Oct. 29, 2015 – Giving presentations**  
 (Ochman)
 
 Readings:
