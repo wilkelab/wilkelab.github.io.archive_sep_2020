@@ -155,3 +155,9 @@ Readings:
 
   - [Alon, How to give a good talk](/classes/BIO384C/fall_2015/Ochman_Week9_Alon_How_to_give_a_talk.pdf)
   - [Roty, Giving a talk](/classes/BIO384C/fall_2015/Ochman_Week9_Roth_Giving_a_talk.pdf )
+
+**20. Nov. 3, 2015 – Giving presentations**  
+(Wilke)
+
+* [Lecture slides](/classes/BIO384C/fall_2015/class20_effective_presentations.pdf)
+
