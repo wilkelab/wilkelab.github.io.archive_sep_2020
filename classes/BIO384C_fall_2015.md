@@ -161,3 +161,24 @@ Readings:
 
 * [Lecture slides](/classes/BIO384C/fall_2015/class20_effective_presentations.pdf)
 
+**21. Nov. 5, 2015 – Student presentations**  
+(Ochman)
+
+**22. Nov. 10, 2015 – Student presentations**  
+(Ochman)
+
+**23. Nov. 12, 2015 – Student presentations**  
+(Ochman)
+
+**24. Nov. 17, 2015 – Student presentations**  
+(Wilke)
+
+**25. Nov. 19, 2015 – Avoiding Jargon**  
+(Ochman)
+
+Readings:
+
+  - [Baker, The 'Omes Puzzle](/classes/BIO384C/fall_2015/Nov19_Reading_Nature_Omes_2013.pdf)
+  - [Young, Rant against Jargon](/classes/BIO384C/fall_2015/Nov19_Reading_Young_2006.pdf)
+  - [Petsko, No place like Ome](/classes/BIO384C/fall_2015/Nov19_Reading_Pesko_2002.pdf)
+
