@@ -170,8 +170,11 @@ Readings:
 **23. Nov. 12, 2015 – Student presentations**  
 (Ochman)
 
-**24. Nov. 17, 2015 – Student presentations**  
+**24. Nov. 17, 2015 – Student presentations, parallel structure**  
 (Wilke)
+
+* [Lecture slides](/classes/BIO384C/fall_2015/class24.pdf)
+* [In-class worksheet & solutions](/classes/BIO384C/fall_2015/class24_Ex_parallel_structure.pdf)
 
 **25. Nov. 19, 2015 – Avoiding Jargon**  
 (Ochman)
