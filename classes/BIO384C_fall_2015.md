@@ -184,4 +184,12 @@ Readings:
   - [Baker, The 'Omes Puzzle](/classes/BIO384C/fall_2015/Nov19_Reading_Nature_Omes_2013.pdf)
   - [Young, Rant against Jargon](/classes/BIO384C/fall_2015/Nov19_Reading_Young_2006.pdf)
   - [Petsko, No place like Ome](/classes/BIO384C/fall_2015/Nov19_Reading_Pesko_2002.pdf)
+  
+**26. Nov. 24, 2015 – Significance & Inovation, figure captions**  
+(Wilke)
+
+Readings:
+
+* [NIH criteria for significance and inovation](/classes/BIO384C/fall_2015/class26_significance_and_innovation.pdf)
+
 
