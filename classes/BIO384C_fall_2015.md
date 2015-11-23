@@ -192,4 +192,7 @@ Readings:
 
 * [NIH criteria for significance and innovation](/classes/BIO384C/fall_2015/class26_significance_and_innovation.pdf)
 
+Assignments (please read carefully!):
 
+* [2-page research proposal (due Dec. 1)](/classes/BIO384C/fall_2015/proposal_assignment.pdf)
+* [Proposal review form (will be used to rank your proposal)](/classes/BIO384C/fall_2015/proposal_review_form.docx)
