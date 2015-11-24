@@ -188,6 +188,8 @@ Readings:
 **26. Nov. 24, 2015 – Significance & Innovation, figure captions**  
 (Wilke)
 
+* [Lecture slides](/classes/BIO384C/fall_2015/class26.pdf)
+
 Readings:
 
 * [NIH criteria for significance and innovation](/classes/BIO384C/fall_2015/class26_significance_and_innovation.pdf)
