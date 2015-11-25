@@ -1,11 +1,13 @@
 - author: S. J. Spielman, S. Wan, C. O. Wilke
   year: preprint
   title: One-rate models outperform two-rate models in site-specific dN/dS estimation
+  ref: "bioRxiv"
   doi: 10.1101/032805
   
 - author: A. Shahmoradi, C. O. Wilke
   year: preprint
   title: Dissecting the roles of local packing density and longer-range effects in protein sequence evolution
+  ref: "bioRxiv"
   doi: 10.1101/023499
 
 - author: C. O. Wilke
