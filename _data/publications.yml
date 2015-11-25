@@ -1,13 +1,23 @@
+- author: S. J. Spielman, S. Wan, C. O. Wilke
+  year: preprint
+  title: One-rate models outperform two-rate models in site-specific dN/dS estimation
+  doi: 10.1101/032805
+  
+- author: A. Shahmoradi, C. O. Wilke
+  year: preprint
+  title: Dissecting the roles of local packing density and longer-range effects in protein sequence evolution
+  doi: 10.1101/023499
+
 - author: C. O. Wilke
-  year: in press
+  year: 2015
   title: Evolutionary paths of least resistance
-  ref: "Proc. Natl. Acad. Sci. USA, to appear"
+  ref: "Proc. Natl. Acad. Sci. USA 112:12553–12554"
   doi: 10.1073/pnas.1517390112
   
 - author: S. A. Kerr, E. L. Jackson, O. I. Lungu, A. G. Meyer, A. Demogines, A. D. Ellington, G. Georgiou, C. O. Wilke, S. L. Sawyer 
-  year: in press
+  year: 2015
   title: Computational and functional analysis of the virus-receptor interface reveals host range trade-offs in New World arenaviruses
-  ref: "J. Virol., to appear"
+  ref: "J. Virol. 89:11643–11653"
   doi: 10.1128/JVI.01408-15
 
 - author: A. G. Meyer, C. O. Wilke
