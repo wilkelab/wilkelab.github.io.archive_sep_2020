@@ -11,13 +11,9 @@
   pubs: "http://scholar.google.com/citations?user=bdtVzlcAAAAJ"
   github: umutcaglar
  
-- name: Amir Shahmoradi
+- name: Ashley Teufel
   role: Postdoc
   joined: 2015
-  history: Graduate Student (Physics), 2012–2015
-  pubs: "http://scholar.google.com/citations?user=CEqJI2wAAAAJ"
-  url: "https://sites.google.com/site/amshportal/home"
-  github: shahmoradi
  
 - name: Dakota Derryberry
   role: Graduate Student (CMB)
@@ -51,7 +47,16 @@
 - name: Larry Clay
   role: Undergraduate
   joined: 2015
+
+- name: Jeff Du
+  role: Undergraduate
+  joined: 2014
+  
+- name: Walter Lenoir
+  role: Undergraduate
+  joined: 2015
   
 - name: Alishah Momin
   role: Undergraduate
   joined: 2015
+
