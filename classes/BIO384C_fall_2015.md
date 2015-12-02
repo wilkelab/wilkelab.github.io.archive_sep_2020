@@ -202,7 +202,7 @@ Assignments (please read carefully!):
 **27. Dec. 1, 2015 – Proposal review**  
 (Wilke)
 
-* [Review assingments](/classes/BIO384C/fall_2015/ReviewAssignments.pdf)
+* [Review assignments](/classes/BIO384C/fall_2015/ReviewAssignments.pdf)
 
 **28. Dec. 3, 2015 – Mock review panels**  
 (Ochman, Wilke)
