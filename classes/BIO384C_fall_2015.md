@@ -198,3 +198,11 @@ Assignments (please read carefully!):
 
 * [2-page research proposal (due Dec. 1)](/classes/BIO384C/fall_2015/proposal_assignment.pdf)
 * [Proposal review form (will be used to rank your proposal)](/classes/BIO384C/fall_2015/proposal_review_form.docx)
+
+**27. Dec. 1, 2015 – Proposal review**  
+(Wilke)
+
+* [Review assingments](/classes/BIO384C/fall_2015/ReviewAssignments.pdf)
+
+**28. Dec. 3, 2015 – Mock review panels**  
+(Ochman, Wilke)
