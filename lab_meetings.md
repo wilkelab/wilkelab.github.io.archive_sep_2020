@@ -25,7 +25,7 @@ Lab meetings are held Fridays from 10:30 am - 12:00 pm in MBB 3.204.
 | 11/20/15 || Matt  || Larry ||
 | 11/27/15 || --  || -- || Thanksgiving
 |  12/4/15 || Eleisha  || Matt ||
-| 12/11/15 || Stephanie || Dakota ||
+| 12/11/15 || Stephanie || Qian (also research) ||
 |------+---+--------------------+---+----------------------+---+-------|
 {:.widetable}
 
