@@ -27,12 +27,14 @@
   title: The utility of protein structure as a predictor of site-wise dN/dS varies widely among HIV-1 proteins
   ref: "J. R. Soc. Interface 12:20150579"
   doi: 10.1098/rsif.2015.0579
+  pmcid: PMC4614493
   
 - author: S. J. Spielman, C. O. Wilke
   year: 2015
   title: A flexible Python module for simulating sequences along phylogenies
   ref: "PLOS ONE 10:e0139047"
   doi: 10.1371/journal.pone.0139047
+  pmcid: PMC4580465 
 
 - author: A. G. Meyer, S. J. Spielman, T. Bedford, C. O. Wilke
   year: 2015
@@ -276,6 +278,7 @@
   title: Specific and nonspecific host adaptation during arboviral experimental evolution
   ref: "J. Mol. Microbiol. Biotech. 21:71–81"
   doi: 10.1159/000332752
+  pmcid: PMC3697271 
   
 - author: J. J. Bull, R. H. Heineman, C. O. Wilke
   year: 2011
@@ -310,6 +313,7 @@
   title: Dynamic constraints on the second phase compartment of HIV-infected cells
   ref: "AIDS Res. Hum. Retroviruses 27:759–761"
   doi: 10.1089/AID.2010.0199
+  pmcid: PMC3123527 
 
 - author: T. Zhou, C. O. Wilke
   year: 2011
@@ -344,6 +348,7 @@
   title: Phenotypic differences in viral immune-escape explained by linking within-host dynamics to host-population immunity
   ref: "J. Theor. Biol. 265:501–510"
   doi: 10.1016/j.jtbi.2010.05.036
+  pmcid: PMC4537168 
 
 - author: T. Zhou, W. Gu, C. O. Wilke
   year: 2010
@@ -357,12 +362,14 @@
   title: Does mutational robustness inhibit extinction by lethal mutagenesis in viral populations?
   ref: "PLoS Comp. Biol. 6:e1000811"
   doi: 10.1371/journal.pcbi.1000811
+  pmcid: PMC2883602
   
 - author: S. D. Smith-Tsurkan, C. O. Wilke, I. S. Novella
   year: 2010
   title: Incongruent fitness landscapes, not tradeoffs, dominate the adaptation of VSV to novel host types
   ref: "J. Gen. Virol. 91:1484–1493"
   doi: 10.1099/vir.0.017855-0
+  pmcid: PMC2888165
 
 - author: A. R. Sedaghat, D. A. Rastegar, K. A. O’Connell, J. B. Dinoso, C. O. Wilke, J. N. Blankson
   year: 2010
@@ -418,6 +425,7 @@
   title: Lethal mutagenesis in a structured environment
   ref: "J. Theor. Biol. 261:67–73"
   doi: 10.1016/j.jtbi.2009.07.014
+  pmcid: PMC2867491 
 
 - author: T. P. Brennan, J. O. Woods, A. R. Sedaghat, J. D. Siliciano, R. F. Siliciano, C. O. Wilke
   year: 2009
