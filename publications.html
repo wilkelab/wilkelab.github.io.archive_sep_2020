@@ -40,7 +40,9 @@ link-years:
       {% endif %}
       <li>
         {{ count | minus: forloop.index0 }}. 
-        {{ pub.author }} ({{ pub.year }}). {{ pub.title }}. {{ pub.ref }}.<br/>
+        {% comment %}
+        {{ pub.author }} ({{ pub.year }}). {{ pub.title }}. {{ pub.ref }}. <br/>
+        {% endcomment %}  
         {% if pub.doi %}
           doi: <a href="http://dx.doi.org/{{ pub.doi }}">{{pub.doi}}</a>&nbsp;&nbsp; 
         {% endif %}
