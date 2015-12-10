@@ -27,8 +27,6 @@ link-years:
   {% endfor %}
   </p>
 
-  For context, <a href="http://serialmentor.com/blog/2015/12/8/hiding-journal-names-from-your-publication-list-stinks/">read this.</a><br/><br/>
-
   {% comment %} Count publications backwards. {% endcomment %}  
   {% assign count = site.data.publications.size %}
   
@@ -42,12 +40,10 @@ link-years:
       {% endif %}
       <li>
         {{ count | minus: forloop.index0 }}. 
-        {% comment %}
         {{ pub.author }} ({{ pub.year }}). {{ pub.title }}. {{ pub.ref }}. <br/>
         {% if pub.doi %}
           doi: <a href="http://dx.doi.org/{{ pub.doi }}">{{pub.doi}}</a>&nbsp;&nbsp; 
         {% endif %}
-        {% endcomment %}  
         {% if pub.pmcid %}
           pmcid: <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/{{ pub.pmcid }}">{{pub.pmcid}}</a>&nbsp;&nbsp; 
         {% endif %}
@@ -58,6 +54,4 @@ link-years:
       </li>
     {% endfor %}
   </ul>
-  
-  Thank you for reading through my entire publication list. All my publication, with complete reference, can be found on my <a href=" https://scholar.google.com/citations?user=Nc8U6E4AAAAJ&hl=en">Google Scholar profile.</a>
 </div>

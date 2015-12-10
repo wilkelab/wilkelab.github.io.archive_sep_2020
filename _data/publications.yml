@@ -1,12 +1,12 @@
 - author: S. J. Spielman, S. Wan, C. O. Wilke
   year: preprint
-  title: One-rate models outperform two-rate models in site-specific dN/dS estimation
+  title: One-rate models outperform two-rate models in site-specific dN/dS estimation.
   ref: "bioRxiv"
   doi: 10.1101/032805
   
 - author: A. Shahmoradi, C. O. Wilke
   year: preprint
-  title: Dissecting the roles of local packing density and longer-range effects in protein sequence evolution
+  title: Dissecting the roles of local packing density and longer-range effects in protein sequence evolution.
   ref: "bioRxiv"
   doi: 10.1101/023499
 
@@ -18,341 +18,341 @@
   
 - author: S. A. Kerr, E. L. Jackson, O. I. Lungu, A. G. Meyer, A. Demogines, A. D. Ellington, G. Georgiou, C. O. Wilke, S. L. Sawyer 
   year: 2015
-  title: Computational and functional analysis of the virus-receptor interface reveals host range trade-offs in New World arenaviruses
+  title: Computational and functional analysis of the virus-receptor interface reveals host range trade-offs in New World arenaviruses.
   ref: "J. Virol. 89:11643–11653"
   doi: 10.1128/JVI.01408-15
 
 - author: A. G. Meyer, C. O. Wilke
   year: 2015
-  title: The utility of protein structure as a predictor of site-wise dN/dS varies widely among HIV-1 proteins
+  title: The utility of protein structure as a predictor of site-wise dN/dS varies widely among HIV-1 proteins.
   ref: "J. R. Soc. Interface 12:20150579"
   doi: 10.1098/rsif.2015.0579
   pmcid: PMC4614493
   
 - author: S. J. Spielman, C. O. Wilke
   year: 2015
-  title: A flexible Python module for simulating sequences along phylogenies
+  title: A flexible Python module for simulating sequences along phylogenies.
   ref: "PLOS ONE 10:e0139047"
   doi: 10.1371/journal.pone.0139047
   pmcid: PMC4580465 
 
 - author: A. G. Meyer, S. J. Spielman, T. Bedford, C. O. Wilke
   year: 2015
-  title: On the time dependence of evolutionary metrics during the 2009 pandemic influenza virus outbreak
+  title: On the time dependence of evolutionary metrics during the 2009 pandemic influenza virus outbreak.
   ref: "Virus Evolution 1:vev006"
   doi: 10.1093/ve/vev006 
   
 - author: J. R. Houser, C. Barnhart, D. R. Boutz, S. M. Carroll, A. Dasgupta, J. K. Michener, B. D. Needham, O. Papoulas, V. Sridhara, D. K. Sydykova, C. J. Marx, M. S. Trent, J. E. Barrick, E. M. Marcotte, C. O. Wilke
   year: 2015
-  title: Controlled measurement and comparative analysis of cellular components in E. coli reveals broad regulatory changes under long-term starvation
+  title: Controlled measurement and comparative analysis of cellular components in E. coli reveals broad regulatory changes under long-term starvation.
   ref: "PLOS Comput. Biol. 11:e1004400"
   doi: 10.1371/journal.pcbi.1004400
   pmcid: PMC4537216
 
 - author: A. G. Meyer, C. O. Wilke
   year: 2015
-  title: Geometric constraints dominate the antigenic evolution of influenza H3N2 hemagglutinin
+  title: Geometric constraints dominate the antigenic evolution of influenza H3N2 hemagglutinin.
   ref: "PLOS Pathogens 11:e1004940"
   doi: 10.1371/journal.ppat.1004940
   pmcid: PMC4447415
 
 - author: A. H. Kachroo, J. M. Laurent, C. M. Yellman, A. G. Meyer, C. O. Wilke, E. M. Marcotte
   year: 2015
-  title: Systematic humanization of yeast genes reveals conserved functions and genetic modularity
+  title: Systematic humanization of yeast genes reveals conserved functions and genetic modularity.
   ref: "Science 348:921–925"
   doi: 10.1126/science.aaa0769
 
 - author: S. J. Spielman, K. Kumar, C. O. Wilke
   year: 2015
-  title: Comprehensive, structurally-curated alignment and phylogeny of vertebrate biogenic amine receptors
+  title: Comprehensive, structurally-curated alignment and phylogeny of vertebrate biogenic amine receptors.
   ref: "PeerJ 3:e773"
   doi: 10.7717/peerj.773
   pmcid: PMC4338800
 
 - author: J. Echave, E. L. Jackson, C. O. Wilke
   year: 2015
-  title: Relationship between protein thermodynamic constraints and variation of evolutionary rates among sites
+  title: Relationship between protein thermodynamic constraints and variation of evolutionary rates among sites.
   ref: "Phys. Biol. 12:025002"
   doi: 10.1088/1478-3975/12/2/025002
   pmcid: PMC4391963
 
 - author: S. J. Spielman, C. O. Wilke
   year: 2015
-  title: The relationship between dN/dS and scaled selection coefficients
+  title: The relationship between dN/dS and scaled selection coefficients.
   ref: "Mol. Biol. Evol. 32:1097–1108"
   doi: 10.1093/molbev/msv003
   pmcid: PMC4379412
 
 - author: V. Sridhara, A. G. Meyer, P. Rai, J. E. Barrick, P. Ravikumar, D. Segrè, C. O. Wilke
   year: 2014
-  title: Predicting growth conditions from internal metabolic fluxes in an in-silico model of E. coli
+  title: Predicting growth conditions from internal metabolic fluxes in an in-silico model of E. coli.
   ref: "PLOS ONE 9:e114608"
   doi: 10.1371/journal.pone.0114608
   pmcid: PMC4264753  
 
 - author: A. Shahmoradi, D. K. Sydykova, S. J. Spielman, E. L. Jackson, E. T. Dawson, A. G. Meyer, C. O. Wilke
   year: 2014
-  title: "Predicting evolutionary site variability from structure in viral proteins: buriedness, packing, flexibility, and design"
+  title: "Predicting evolutionary site variability from structure in viral proteins: buriedness, packing, flexibility, and design."
   ref: "J. Mol. Evol. 79:130–142"
   doi: 10.1007/s00239-014-9644-x
   pmcid: PMC4216736
 
 - author: R. W. Buckheit III, S. B. Sexauer, A. R. Sedaghat, C. O. Wilke, O. Laeyendecker, C. R. Basseth, J. N. Blankson
   year: 2014
-  title: Long-term control of viral replication in a Group O, Human Immunodeficiency Virus Type 1-infected individual
+  title: Long-term control of viral replication in a Group O, Human Immunodeficiency Virus Type 1-infected individual.
   ref: "AIDS Research and Human Retroviruses 30:511–513"
   doi: 10.1089/aid.2014.0054
   pmcid: PMC4046214
   
 - author: S. J. Spielman, E. T. Dawson, C. O. Wilke
   year: 2014
-  title: Limited utility of residue masking for positive-selection inference
+  title: Limited utility of residue masking for positive-selection inference.
   ref: "Mol. Biol. Evol. 31:2496–2500"
   doi: 10.1093/molbev/msu183
   pmcid: PMC4137709
 
 - author: A. R. Sedaghat, C. O. Wilke, M. J. Cunningham, S. L. Ishman
   year: 2014
-  title: Socioeconomic disparities in the presentation of acute bacterial sinusitis complications in children
+  title: Socioeconomic disparities in the presentation of acute bacterial sinusitis complications in children.
   ref: "The Laryngoscope 124:1700–1706"
   doi: 10.1002/lary.24492
   
 - author: E. B. O’Dea, K. M. Pepin, B. A. Lopman, C. O. Wilke
   year: 2014
-  title: Fitting outbreak models to data from many small norovirus outbreaks
+  title: Fitting outbreak models to data from many small norovirus outbreaks.
   ref: "Epidemics 6:18–29"
   doi: 10.1016/j.epidem.2013.12.002
   pmcid: PMC4218779
   
 - author: A. G. Meyer​, S. L. Sawyer, A. D. Ellington, C. O. Wilke
   year: 2014
-  title: Analyzing Machupo virus-receptor binding by molecular dynamics simulations
+  title: Analyzing Machupo virus-receptor binding by molecular dynamics simulations.
   ref: "PeerJ 2:e266"
   doi: 10.7717/peerj.266
   pmcid: PMC3940602
   
 - author: M. Z. Tien, A. G. Meyer, D. K. Sydykova, S. J. Spielman, C. O. Wilke
   year: 2013
-  title: Maximum allowed solvent accessibilites of residues in proteins
+  title: Maximum allowed solvent accessibilites of residues in proteins.
   ref: "PLOS ONE 8:e80635"
   doi: 10.1371/journal.pone.0080635
   pmcid: PMC3836772
   
 - author: E. L. Jackson, N. Ollikainen, A. W. Covert III, T. Kortemme, C. O. Wilke
   year: 2013
-  title: Amino-acid site variability among natural and designed proteins
+  title: Amino-acid site variability among natural and designed proteins.
   ref: "PeerJ 1:e211"
   doi: 10.7717/peerj.211
   pmcid: PMC3828621
 
 - author: A. R. Sedaghat, S. T. Gray, K. J. Chambers, C. O. Wilke, D. S. Caradonna
   year: 2013
-  title: Sinonasal anatomic variants and asthma are associated with faster development of chronic rhinosinusitis in patients with allergic rhinitis
+  title: Sinonasal anatomic variants and asthma are associated with faster development of chronic rhinosinusitis in patients with allergic rhinitis.
   ref: "Int. Forum Allergy Rhinol. 3:755–761"
   doi: 10.1002/alr.21163
   
 - author: A. W. Covert, R. E. Lenski, C. O. Wilke, C. Ofria
   year: 2013
-  title: Experiments on the role of deleterious mutations as stepping stones in adaptive evolution
+  title: Experiments on the role of deleterious mutations as stepping stones in adaptive evolution.
   ref: "Proc. Natl. Acad. Sci. USA 110:E3171–E3178"
   doi: 10.1073/pnas.1313424110
   pmcid: PMC3752215
   
 - author: S. D. Smith-Tsurkan, R. A. Herr, S. Khuder, C. O. Wilke, I. S. Novella
   year: 2013
-  title: The role of environmental factors on the evolution of phenotypic diversity in vesicular stomatitis virus populations
+  title: The role of environmental factors on the evolution of phenotypic diversity in vesicular stomatitis virus populations.
   ref: "J. Gen. Virol. 94:860–868"
   doi: 10.1099/vir.0.048082-0
   pmcid: PMC3709682
   
 - author: I. S. Novella, J. B. Presloid, C. Beech, C. O. Wilke
   year: 2013
-  title: Congruent evolution of fitness and genetic robustness in VSV
+  title: Congruent evolution of fitness and genetic robustness in VSV.
   ref: "J. Virol. 87:4923–4928"
   doi: 10.1128/JVI.02796-12
   pmcid: PMC3624304
 
 - author: C. Lee, R. A. Harris, J. K. Wall, R. D. Mayfield, C. O Wilke
   year: 2013
-  title: RNaseIII and T4 Polynucleotide Kinase sequence biases and solutions during RNA-seq library construction
+  title: RNaseIII and T4 Polynucleotide Kinase sequence biases and solutions during RNA-seq library construction.
   ref: "Biology Direct 8:16"
   doi: 10.1186/1745-6150-8-16
   pmcid: PMC3710281
   
 - author: M. Z. Tien, D. K. Sydykova, A. G. Meyer, C. O. Wilke
   year: 2013
-  title: "PeptideBuilder: A simple Python library to generate model peptides"
+  title: "PeptideBuilder: A simple Python library to generate model peptides."
   ref: "PeerJ 1:e80"
   doi: 10.7717/peerj.80
   pmcid: PMC3661355
 
 - author: S. J. Spielman, C. O. Wilke
   year: 2013
-  title: Membrane environment imposes unique selection pressures on transmembrane domains of G protein-coupled receptors
+  title: Membrane environment imposes unique selection pressures on transmembrane domains of G protein-coupled receptors.
   ref: "J. Mol. Evol. 76:172–182"
   doi: 10.1007/s00239-012-9538-8
   pmcid: PMC3712645
   
 - author: A. G. Meyer, E. T. Dawson, C. O. Wilke
   year: 2013
-  title: Cross-species comparison of site-specific evolutionary-rate variation in influenza haemagglutinin
+  title: Cross-species comparison of site-specific evolutionary-rate variation in influenza haemagglutinin.
   ref: "Phil. Trans. R. Soc. B. 368:20120334"
   doi: 10.1098/rstb.2012.0334
   pmcid: PMC3678335
   
 - author: A. G. Meyer, C. O. Wilke
   year: 2013
-  title: Integrating sequence variation and protein structure to identify sites under selection
+  title: Integrating sequence variation and protein structure to identify sites under selection.
   ref: "Mol. Biol. Evol. 30:36–44"
   doi: 10.1093/molbev/mss217
   pmcid: PMC3525147
   
 - author: M. P. Scherrer, A. G. Meyer, C. O. Wilke
   year: 2012
-  title: Modeling coding-sequence evolution within the context of residue solvent accessibility
+  title: Modeling coding-sequence evolution within the context of residue solvent accessibility.
   ref: "BMC Evol. Biol. 12:179"
   doi: 10.1186/1471-2148-12-179
   pmcid: PMC3527230
   
 - author: J. J. Bull, I. J. Molineux, C. O. Wilke
   year: 2012
-  title: Slow fitness recovery in a codon-modified viral genome
+  title: Slow fitness recovery in a codon-modified viral genome.
   ref: "Mol. Biol. Evol. 29:2997–3004"
   doi: 10.1093/molbev/mss119
   pmcid: PMC3457771
   
 - author: A. R. Sedaghat, S. T. Gray, C. O. Wilke, D. S. Caradonna
   year: 2012
-  title: Risk factors for development of chronic rhinosinusitis in patients with allergic rhinitis
+  title: Risk factors for development of chronic rhinosinusitis in patients with allergic rhinitis.
   ref: "Int. Forum Allergy Rhinol. 2:370–375"
   doi: 10.1002/alr.21055
   
 - author: T. E. Keller, C. O. Wilke, J. J. Bull
   year: 2012
-  title: Interactions between evolutionary processes at high mutation rates
+  title: Interactions between evolutionary processes at high mutation rates.
   ref: "Evolution 66:2303–2314"
   doi: 10.1111/j.1558-5646.2012.01596.x
   pmcid: PMC3389706
   
 - author: C. O. Wilke
   year: 2012
-  title: Bringing molecules back into molecular evolution
+  title: Bringing molecules back into molecular evolution.
   ref: "PLoS Comp. Biol. 8:e1002572"
   doi: 10.1371/journal.pcbi.1002572
   pmcid: PMC3386153
   
 - author: A. W. Covert III, J. Carlson-Stevermer, D. Z. Derryberry, C. O. Wilke
   year: 2012
-  title: The role of deleterious mutations in the adaptation to a novel envrionment
+  title: The role of deleterious mutations in the adaptation to a novel envrionment.
   ref: "In Proceedings of the Thirteenth International Conference on the Simulation and Synthesis of Living Systems, C. Adami, D. M. Bryson, C. Ofria and R. T. Pennock, eds., pp. 27–31. MIT Press"
   doi: 10.7551/978-0-262-31050-5-ch004
   
 - author: A. W. Covert III, L. Smith, D. Z. Derryberry, C. O. Wilke
   year: 2012
-  title: "What does sex have to do with it: tracking the fate of deleterious mutations in sexual populations"
+  title: "What does sex have to do with it: tracking the fate of deleterious mutations in sexual populations."
   ref: "In Proceedings of the Thirteenth International Conference on the Simulation and Synthesis of Living Systems, C. Adami, D. M. Bryson, C. Ofria and R. T. Pennock, eds., pp. 32–36. MIT Press"
   doi: 10.7551/978-0-262-31050-5-ch005
   
 - author: T. E. Keller, S. D. Mis, K. E. Jia, C. O. Wilke
   year: 2012
-  title: Reduced mRNA secondary-structure stability near the start codon indicates functional genes in prokaryotes
+  title: Reduced mRNA secondary-structure stability near the start codon indicates functional genes in prokaryotes.
   ref: "Genome Biol. Evol. 4:80–88"
   doi: 10.1093/gbe/evr129
   pmcid: PMC3269970
   
 - author: D. Wang, M. K. Markey, C. O. Wilke, A. Arapostathis
   year: 2012
-  title: "Eigen-genomic System Dynamic-pattern Analysis (ESDA): Modeling mRNA degradation and self-regulation"
+  title: "Eigen-genomic System Dynamic-pattern Analysis (ESDA): Modeling mRNA degradation and self-regulation."
   ref: "IEEE/ACM Transactions on Computational Biology and Bioinformatics 9:430–437"
   doi: 10.1109/TCBB.2011.150
   
 - author: D. Wang, A. Arapostathis, C. O. Wilke, M. K. Markey
   year: 2012
-  title: Principal-oscillation-pattern analysis of gene expression
+  title: Principal-oscillation-pattern analysis of gene expression.
   ref: "PLOS ONE 7:e28805"
   doi: 10.1371/journal.pone.0028805
   pmcid: PMC3254616
 
 - author: I. S. Novella, J. B. Presloid, S. D. Smith, C. O. Wilke
   year: 2011
-  title: Specific and nonspecific host adaptation during arboviral experimental evolution
+  title: Specific and nonspecific host adaptation during arboviral experimental evolution.
   ref: "J. Mol. Microbiol. Biotech. 21:71–81"
   doi: 10.1159/000332752
   pmcid: PMC3697271 
   
 - author: J. J. Bull, R. H. Heineman, C. O. Wilke
   year: 2011
-  title: The phenotype-fitness map in experimental evolution of phages
+  title: The phenotype-fitness map in experimental evolution of phages.
   ref: "PLoS ONE 6:e27796"
   doi: 10.1371/journal.pone.0027796
   pmcid: PMC3222649
   
 - author: A. R. Sedaghat, C. O. Wilke
   year: 2011
-  title: Kinetics of the viral cycle influence pharmacodynamics of antiretroviral therapy
+  title: Kinetics of the viral cycle influence pharmacodynamics of antiretroviral therapy.
   ref: "Biology Direct 6:42"
   doi: 10.1186/1745-6150-6-42
   pmcid: PMC3203257
 
 - author: C. O. Wilke
   year: 2011
-  title: Transcriptional robustness complements nonsense-mediated decay in humans
+  title: Transcriptional robustness complements nonsense-mediated decay in humans.
   ref: "PLoS Genet. 7:e1002296"
   doi: 10.1371/journal.pgen.1002296
   pmcid: PMC3192817
 
 - author: D. C. Ramsey, M. P. Scherrer, T. Zhou, C. O. Wilke
   year: 2011
-  title: The relationship between relative solvent accessibility and evolutionary rate in protein evolution
+  title: The relationship between relative solvent accessibility and evolutionary rate in protein evolution.
   ref: "Genetics 188:479–488"
   doi: 10.1534/genetics.111.128025
   pmcid: PMC3122320
 
 - author: A. Spivak, A. Rabi, M. A. McMahon, L. Shan, A. R. Sedaghat, C. O. Wilke, R. Siliciano
   year: 2011
-  title: Dynamic constraints on the second phase compartment of HIV-infected cells
+  title: Dynamic constraints on the second phase compartment of HIV-infected cells.
   ref: "AIDS Res. Hum. Retroviruses 27:759–761"
   doi: 10.1089/AID.2010.0199
   pmcid: PMC3123527 
 
 - author: T. Zhou, C. O. Wilke
   year: 2011
-  title: Reduced stability of mRNA secondary structure near the translation-initiation site in dsDNA viruses
+  title: Reduced stability of mRNA secondary structure near the translation-initiation site in dsDNA viruses.
   ref: "BMC Evol. Biol. 11:59"
   doi: 10.1186/1471-2148-11-59
   pmcid: PMC3072339
 
 - author: A. T. Ciota, E. M. Koch, G. G. Willsey, L. J. Davis, G. V. S. Jerzak, D. J. Ehrbar, C. O. Wilke, L. D. Kramer
   year: 2011
-  title: Temporal and spatial alterations in mutant swarm size of St. Louis encephalitis virus in mosquito hosts
+  title: Temporal and spatial alterations in mutant swarm size of St. Louis encephalitis virus in mosquito hosts.
   ref: "Infection, Genetics and Evolution 11:460–468"
   doi: 10.1016/j.meegid.2010.12.007
   pmcid: PMC3251332
 
 - author: E. B. O'Dea, C. O. Wilke
   year: 2011
-  title: "Contact heterogeneity and phylodynamics: How contact networks shape parasite evolutionary trees"
+  title: "Contact heterogeneity and phylodynamics: How contact networks shape parasite evolutionary trees."
   ref: "Interdiscip. Persp. Inf. Dis. 2011:238743"
   doi: 10.1155/2011/238743
   pmcid: PMC2995904
   
 - author: Y. Lee, T. Zhou, G. G. Tartaglia, M. Vendruscolo, C. O. Wilke
   year: 2010
-  title: Translationally optimal codons associate with aggregation-prone sites in proteins
+  title: Translationally optimal codons associate with aggregation-prone sites in proteins.
   ref: "Proteomics 10:4163–4171"
   doi: 10.1002/pmic.201000229
   pmcid: PMC3037288
 
 - author: K. Pepin, I. Volkov, J. R. Banavar, C. O. Wilke, B. T. Grenfell
   year: 2010
-  title: Phenotypic differences in viral immune-escape explained by linking within-host dynamics to host-population immunity
+  title: Phenotypic differences in viral immune-escape explained by linking within-host dynamics to host-population immunity.
   ref: "J. Theor. Biol. 265:501–510"
   doi: 10.1016/j.jtbi.2010.05.036
   pmcid: PMC4537168 
 
 - author: T. Zhou, W. Gu, C. O. Wilke
   year: 2010
-  title: Detecting positive and purifying selection at synonymous sites in yeast and worm
+  title: Detecting positive and purifying selection at synonymous sites in yeast and worm.
   ref: "Mol. Biol. Evol. 27:1912–1922"
   doi: 10.1093/molbev/msq077
   pmcid: PMC2915641
@@ -366,41 +366,41 @@
   
 - author: S. D. Smith-Tsurkan, C. O. Wilke, I. S. Novella
   year: 2010
-  title: Incongruent fitness landscapes, not tradeoffs, dominate the adaptation of VSV to novel host types
+  title: Incongruent fitness landscapes, not tradeoffs, dominate the adaptation of VSV to novel host types.
   ref: "J. Gen. Virol. 91:1484–1493"
   doi: 10.1099/vir.0.017855-0
   pmcid: PMC2888165
 
 - author: A. R. Sedaghat, D. A. Rastegar, K. A. O’Connell, J. B. Dinoso, C. O. Wilke, J. N. Blankson
   year: 2010
-  title: Is it time to treat HIV elite controllers with combined antiretroviral therapy? - Reply
+  title: Is it time to treat HIV elite controllers with combined antiretroviral therapy? - Reply.
   ref: "Clinical Infectious Diseases 50:1425–1426"
   doi: 10.1086/652285
 
 - author: S. H. Steinmeyer, C. O. Wilke, K. M. Pepin
   year: 2010
-  title: "Methods of modeling viral disease dynamics across the within- and between-host scales: The impact of virus dose on host population immunity"
+  title: "Methods of modeling viral disease dynamics across the within- and between-host scales: The impact of virus dose on host population immunity."
   ref: "Phil. Trans. R. Soc. B 365:1931–1941"
   doi: 10.1098/rstb.2010.0065
   pmcid: PMC2880116
 
 - author: I. S. Novella, J. B. Presloid, T. Zhou, S. D. Smith-Tsurkan, B. E. Ebendick-Corpus, R. N. Dutta, K. L. Lust, C. O. Wilke
   year: 2010
-  title: Genomic evolution of vesicular stomatitis virus strains with differences in adaptability
+  title: Genomic evolution of vesicular stomatitis virus strains with differences in adaptability.
   ref: "J. Virol. 84:4960–4968"
   doi: 10.1128/JVI.00710-09
   pmcid: PMC2863795
   
 - author: C. O. Wilke, D. A. Drummond
   year: 2010
-  title: Signatures of protein biophysics in coding sequence evolution
+  title: Signatures of protein biophysics in coding sequence evolution.
   ref: "Cur. Opin. Struct. Biol. 20:385–389"
   doi: 10.1016/j.sbi.2010.03.004
   pmcid: PMC2905607
 
 - author: W. Gu, T. Zhou, C. O. Wilke
   year: 2010
-  title: A universal trend of reduced mRNA stability near the translation-initiation site in prokaryotes and eukaryotes
+  title: A universal trend of reduced mRNA stability near the translation-initiation site in prokaryotes and eukaryotes.
   ref: "PLoS Comput. Biol. 6:e1000664"
   doi: 10.1371/journal.pcbi.1000664
   pmcid: PMC2816680
@@ -408,28 +408,28 @@
   
 - author: D. A. Drummond, C. O. Wilke
   year: 2009
-  title: The evolutionary consequences of erroneous protein synthesis
+  title: The evolutionary consequences of erroneous protein synthesis.
   ref: "Nature Reviews Genetics 10:715–724"
   doi: 10.1038/nrg2662
   pmcid: PMC2764353
 
 - author: A. R. Sedaghat, D. A. Rastegar, K. A. O'Connell, J. B. Dionso, C. O. Wilke, J. N. Blankson
   year: 2009
-  title: T cell dynamics and the response to HAART in a cohort of HIV-1 infected elite suppressors
+  title: T cell dynamics and the response to HAART in a cohort of HIV-1 infected elite suppressors.
   ref: "Clin. Inf. Diseases 49:1763–1766"
   doi: 10.1086/648081
   pmcid: PMC2783537
 
 - author: S. H. Steinmeyer, C. O. Wilke
   year: 2009
-  title: Lethal mutagenesis in a structured environment
+  title: Lethal mutagenesis in a structured environment.
   ref: "J. Theor. Biol. 261:67–73"
   doi: 10.1016/j.jtbi.2009.07.014
   pmcid: PMC2867491 
 
 - author: T. P. Brennan, J. O. Woods, A. R. Sedaghat, J. D. Siliciano, R. F. Siliciano, C. O. Wilke
   year: 2009
-  title: Analysis of HIV-1 viremia and provirus in resting CD4+ T cells reveals a novel source of residual viremia in patients on antiretroviral therapy
+  title: Analysis of HIV-1 viremia and provirus in resting CD4+ T cells reveals a novel source of residual viremia in patients on antiretroviral therapy.
   ref: "J. Virol. 83:8470–8481"
   doi: 10.1128/JVI.02568-08
   pmcid: PMC2738142
@@ -438,47 +438,47 @@
 
 - author: C. Ofria, D. M. Bryson, C. O. Wilke
   year: 2009
-  title: "Avida: Evolution experiments with self-replicating computer programs"
+  title: "Avida: Evolution experiments with self-replicating computer programs."
   ref: In A. Adamatzky and M. Komosinski, eds. Artificial Life Models in Software, 2nd ed. Springer, pp. 3–35
   doi: 10.1007/978-1-84882-285-6_1
 
 - author: T. Zhou, M. Weems, C. O. Wilke
   year: 2009
-  title: Translationally optimal codons associate with structurally sensitive sites in proteins
+  title: Translationally optimal codons associate with structurally sensitive sites in proteins.
   ref: "Mol. Biol. Evol. 26:1571–1580"
   doi: 10.1093/molbev/msp070
   pmcid: PMC2734146
 
 - author: A. R. Sedaghat, R. F. Siliciano, C. O. Wilke
   year: 2009
-  title: Constraints on the dominant mechanism for HIV viral dynamics in patients on raltegravir
+  title: Constraints on the dominant mechanism for HIV viral dynamics in patients on raltegravir.
   ref: "Antiviral Therapy 14:263–271"
   pmcid: PMC2980788
 
 - author: T. Zhou, P. J. Enyeart, C. O. Wilke
   year: 2008
-  title: Detecting Clusters of Mutations
+  title: Detecting clusters of mutations.
   ref: "PLoS ONE 3:e3765"
   doi: 10.1371/journal.pone.0003765
   pmcid: PMC2582452
 
 - author: I. S. Novella, R. N. Dutta, C. O. Wilke
   year: 2008
-  title: A linear relationship between fitness and log critical bottleneck size in vesicular stomatitis virus
+  title: A linear relationship between fitness and log critical bottleneck size in vesicular stomatitis virus.
   ref: "J. Virol. 82:12589–12590"
   doi: 10.1128/JVI.01394-08
   pmcid: PMC2593322
 
 - author: J. J. Bull, C. O. Wilke
   year: 2008
-  title: Lethal mutagenesis of bacteria
+  title: Lethal mutagenesis of bacteria.
   ref: "Genetics 180:1061–1070"
   doi: 10.1534/genetics.108.091413
   pmcid: PMC2567356
 
 - author: D. A. Drummond, C. O. Wilke
   year: 2008
-  title: Mistranslation-induced protein misfolding as a dominant constraint on coding-sequence evolution
+  title: Mistranslation-induced protein misfolding as a dominant constraint on coding-sequence evolution.
   ref: "Cell 134:341–352"
   doi: 10.1016/j.cell.2008.05.042
   pmcid: PMC2696314
@@ -487,286 +487,286 @@
 
 - author: D. J. Whitehead, C. O. Wilke, D. Vernazobres, E. Bornberg-Bauer
   year: 2008
-  title: The look-ahead effect of phenotypic mutations
+  title: The look-ahead effect of phenotypic mutations.
   ref: "Biology Direct 3:18"
   doi: 10.1186/1745-6150-3-18
   pmcid: PMC2423361
 
 - author: É. Brunet, I. M. Rouzine, C. O. Wilke
   year: 2008
-  title: The stochastic edge in adaptive evolution
+  title: The stochastic edge in adaptive evolution.
   ref: "Genetics 179:603–620"
   doi: 10.1534/genetics.107.079319
   pmcid: PMC2390637
 
 - author: T. Zhou, D. A. Drummond, C. O. Wilke
   year: 2008
-  title: Contact density affects protein evolutionary rate from bacteria to animals
+  title: Contact density affects protein evolutionary rate from bacteria to animals.
   ref: "J. Mol. Evol. 66:395–404"
   doi: 10.1007/s00239-008-9094-4
 
 - author: R. N. Dutta, I. M. Rouzine, S. D. Smith, C. O. Wilke, I. S. Novella
   year: 2008
-  title: Rapid adaptive amplification of preexisting variation in an RNA virus
+  title: Rapid adaptive amplification of preexisting variation in an RNA virus.
   ref: "J. Virol. 82:4354–4362"
   doi: 10.1128/JVI.02446-07
   pmcid: PMC2293023
 
 - author: A. R. Sedaghat, J. B. Dinoso, L. Shen, C. O. Wilke, R. F. Siliciano
   year: 2008
-  title: Decay dynamics of HIV-1 depend on the inhibited stages of the viral life cycle
+  title: Decay dynamics of HIV-1 depend on the inhibited stages of the viral life cycle.
   ref: "Proc. Natl. Acad. Sci. USA 105:4832–4837"
   doi: 10.1073/pnas.0711372105
   pmcid: PMC2290747
 
 - author: J. J. Bull, R. Sanjuán, C. O. Wilke
   year: 2008
-  title: Lethal mutagenesis
+  title: Lethal mutagenesis.
   ref: "In E. Domingo, C. R. Parrish, and J. J. Holland, eds., Origin and Evolution of Viruses, 2nd ed., pp. 207–218"
 
 - author: I. M. Rouzine, É. Brunet, C. O. Wilke
   year: 2008
-  title: "The traveling-wave approach to asexual evolution: Muller's ratchet and speed of adaptation"
+  title: "The traveling-wave approach to asexual evolution: Muller's ratchet and speed of adaptation."
   ref: "Theor. Popul. Biol. 73:24–46"
   doi: 10.1016/j.tpb.2007.10.004
   pmcid: PMC2246079
 
 - author: A. R. Sedaghat, R. F. Siliciano, C. O. Wilke
   year: 2008
-  title: Low-level HIV-1 replication and the dynamics of the resting CD4+ T cell reservoir for HIV-1 in the setting of HAART
+  title: Low-level HIV-1 replication and the dynamics of the resting CD4+ T cell reservoir for HIV-1 in the setting of HAART.
   ref: "BMC Inf. Dis. 8:2"
   doi: 10.1186/1471-2334-8-2
   pmcid: PMC2254415
   
 - author: A. R. Sedaghat, J. D. Siliciano, T. P. Brennan, C. O. Wilke, R. F. Siliciano
   year: 2007
-  title: Limits on replenishment of the resting CD4+ T cell reservoir for HIV in patients on HAART
+  title: Limits on replenishment of the resting CD4+ T cell reservoir for HIV in patients on HAART.
   ref: "PLoS Pathogens 3:e122"
   doi: 10.1371/journal.ppat.0030122
   pmcid: PMC1959378
 
 - author: R. Forster, C. O. Wilke
   year: 2007
-  title: Frequency-dependent selection in a periodic environment
+  title: Frequency-dependent selection in a periodic environment.
   ref: "Physica A 381:255–264"
   doi: 10.1016/j.physa.2007.03.017
   pmcid: PMC2031831
 
 - author: J. J. Bull, R. Sanjuán, C. O. Wilke
   year: 2007
-  title: Theory of lethal mutagenesis for viruses
+  title: Theory of lethal mutagenesis for viruses.
   ref: "J. Virol. 81:2930–2939"
   doi: 10.1128/JVI.01624-06
   pmcid: PMC1865999
 
 - author: J. D. Bloom, F. H. Arnold, C. O. Wilke
   year: 2007
-  title: "Breaking proteins with mutations: threads and thresholds in evolution"
+  title: "Breaking proteins with mutations: threads and thresholds in evolution."
   ref: "Mol. Syst. Biol. 3:76"
   doi: 10.1038/msb4100119
   pmcid: PMC1800353
 
 - author: S. F. Elena, C. O. Wilke, C. Ofria, R. E. Lenski
   year: 2007
-  title: Effects of population size and mutation rate on the evolution of mutational robustness
+  title: Effects of population size and mutation rate on the evolution of mutational robustness.
   ref: "Evolution 61:666–674"
   doi: 10.1111/j.1558-5646.2007.00064.x
 
 - author: J. D. Bloom, A. Raval, C. O. Wilke
   year: 2007
-  title: Thermodynamics of neutral protein evolution
+  title: Thermodynamics of neutral protein evolution.
   ref: "Genetics 175:255–266"
   doi: 10.1534/genetics.106.061754
   pmcid: PMC1775007
   
 - author: R. Forster, C. Adami, C. O. Wilke
   year: 2006
-  title: Selection for mutational robustness in finite populations
+  title: Selection for mutational robustness in finite populations.
   ref: "J. Theor. Biol. 243:181–190"
   doi: 10.1016/j.jtbi.2006.06.020
 
 - author: J. D. Bloom, D. A. Drummond, F. H. Arnold, C. O. Wilke
   year: 2006
-  title: Structural determinants of the rate of protein evolution in yeast
+  title: Structural determinants of the rate of protein evolution in yeast.
   ref: "Mol. Biol. Evol. 23:1751–1761"
   doi: 10.1093/molbev/msl040
 
 - author: J. R. Bailey, A. R. Sedaghat, T. Kieffer, T. Brennan, P. K. Lee, M. Wind-Rotolo, C. M. Haggerty, A. R. Kamireddi, Y. Liu, J. Lee, D. Persaud, J. E. Gallant, J. Cofrancesco, Jr., T. C. Quinn, C. O. Wilke, S. C. Ray, J. D. Siliciano, R. E. Nettles, R. F. Siliciano
   year: 2006
-  title: Residual Human Immunodeficiency Virus Type 1 viremia in some patients on antiretroviral therapy is dominated by a small number of invariant clones rarely found in circulating CD4 T cells
+  title: Residual Human Immunodeficiency Virus Type 1 viremia in some patients on antiretroviral therapy is dominated by a small number of invariant clones rarely found in circulating CD4 T cells.
   ref: "J. Virol. 80:6441–6457"
   doi: 10.1128/JVI.00591-06
   pmcid: PMC1488985
 
 - author: C. O. Wilke, D. A. Drummond
   year: 2006
-  title: Population genetics of translational robustness
+  title: Population genetics of translational robustness.
   ref: "Genetics 173:473–481"
   doi: 10.1534/genetics.105.051300
   pmcid: PMC1461446
 
 - author: D. A. Drummond, A. Raval, C. O. Wilke
   year: 2006
-  title: A single determinant dominates the rate of yeast protein evolution
+  title: A single determinant dominates the rate of yeast protein evolution.
   ref: "Mol. Biol. Evol. 23:327–337"
   doi: 10.1093/molbev/msj038
 
 - author: C. O. Wilke
   year: 2006
-  title: Biology through the robustness lens
+  title: Biology through the robustness lens.
   ref: "BioScience 56:695–696"
   doi: 10.1641/0006-3568(2006)56[695:RAEILS]2.0.CO;2
   
 - author: C. O. Wilke, R. Forster, I. S. Novella
   year: 2006
-  title: Quasispecies in time-dependent environments
+  title: Quasispecies in time-dependent environments.
   ref: "Curr. Topics Microbiol. Immun. 299:33–50"
   doi: 10.1007/3-540-26397-7_2
   
 - author: C. Ofria, C. O. Wilke
   year: 2006
-  title: "Avida: Evolution experiments with self-replicating computer programs"
+  title: "Avida: Evolution experiments with self-replicating computer programs."
   ref: In A. Adamatzky and M. Komosinski, eds. Artificial Life Models in Software. Springer, pp. 3–36
   doi: 10.1007/1-84628-214-4_1
 
 - author: C. O. Wilke, S. S. Chow
   year: 2006
-  title: Exploring the evolution of ecosystems with digital organisms
+  title: Exploring the evolution of ecosystems with digital organisms.
   ref: In M. Pascual and J. Dunne, eds. Ecological Networks. Linking Structure to Dynamics in Food Webs. Oxford University Press
 
 - author: R. Forster, C. O. Wilke
   year: 2005
-  title: Tradeoff between short-term and long-term adaptation in a changing environment
+  title: Tradeoff between short-term and long-term adaptation in a changing environment.
   ref: "Phys. Rev. E 72:041922"
   doi: 10.1103/PhysRevE.72.041922
 
 - author: C. O. Wilke, J. D. Bloom, D. A. Drummond, A. Raval
   year: 2005
-  title: Predicting the tolerance of proteins to random amino acid substitution
+  title: Predicting the tolerance of proteins to random amino acid substitution.
   ref: "Biophys. J. 89:3714–3720"
   doi: 10.1529/biophysj.105.062125
   pmcid: PMC1366941
 
 - author: C. O. Wilke
   year: 2005
-  title: "Molecular clocks: the heavy, the cold, and the slow"
+  title: "Molecular clocks: the heavy, the cold, and the slow."
   ref: "Heredity 95:115"
   doi: 10.1038/sj.hdy.6800681
 
 - author: D. A. Drummond, J. D. Bloom, C. Adami, C. O. Wilke, F. H. Arnold
   year: 2005
-  title: Why highly expressed proteins evolve slowly
+  title: Why highly expressed proteins evolve slowly.
   ref: "Proc. Natl. Acad. Sci. USA 102:14338–14343"
   doi: 10.1073/pnas.0504070102
   pmcid: PMC1242296
 
 - author: C. O. Wilke
   year: 2005
-  title: Quasispecies theory in the context of population genetics
+  title: Quasispecies theory in the context of population genetics.
   ref: "BMC Evol. Biol. 5:44"
   doi: 10.1186/1471-2148-5-44
   pmcid: PMC1208876
 
 - author: D. A. Drummond, J. J. Silberg, M. M. Meyer, C. O. Wilke, F. H. Arnold
   year: 2005
-  title: On the conservative nature of intragenic recombination
+  title: On the conservative nature of intragenic recombination.
   ref: "Proc. Natl. Acad. Sci. USA 102:5380–5385"
   doi: 10.1073/pnas.0500729102
   pmcid: PMC556249
 
 - author: J. D. Bloom, J. J. Silberg, C. O. Wilke, D. A. Drummond, C. Adami, F. H. Arnold
   year: 2005
-  title: Thermodynamic prediction of protein neutrality
+  title: Thermodynamic prediction of protein neutrality.
   ref: "Proc. Natl. Acad. Sci. USA 102:606–611"
   doi: 10.1073/pnas.0406744102
   pmcid: PMC545518
   
 - author: C. O. Wilke
   year: 2004
-  title: Molecular clock in neutral protein evolution
+  title: Molecular clock in neutral protein evolution.
   ref: "BMC Genetics 5:25"
   doi: 10.1186/1471-2156-5-25
   pmcid: PMC517495
 
 - author: S. S. Chow, C. O. Wilke, C. Ofria, R. E. Lenski, C. Adami
   year: 2004
-  title: Adaptive radiation from resource competition in digital organisms
+  title: Adaptive radiation from resource competition in digital organisms.
   ref: "Science 305:84–86"
   doi: 10.1126/science.1096307
 
 - author: R. Froissart, C. O. Wilke, R. Montville, S. K. Remold, L. Chao, P. E. Turner
   year: 2004
-  title: Co-infection weakens selection against epistatic mutations in RNA viruses
+  title: Co-infection weakens selection against epistatic mutations in RNA viruses.
   ref: "Genetics 168:9–19"
   doi: 10.1534/genetics.104.030205
   pmcid: PMC1448111
   
 - author: C. O. Wilke
   year: 2004
-  title: Supplementary materials need the right format
+  title: Supplementary materials need the right format.
   ref: "Nature 430:291"
   doi: 10.1038/430291c
 
 - author: C. O. Wilke
   year: 2004
-  title: The speed of adaptation in large asexual populations
+  title: The speed of adaptation in large asexual populations.
   ref: "Genetics 167:2045–2053"
   doi: 10.1534/genetics.104.027136
   pmcid: PMC1470994
 
 - author: J. D. Bloom, C. O. Wilke, F. H. Arnold, C. Adami
   year: 2004
-  title: Stability and the evolvability of function in a model protein
+  title: Stability and the evolvability of function in a model protein.
   ref: "Biophys. J. 86:2758–2764"
   doi: 10.1016/S0006-3495(04)74329-5
   pmcid: PMC1304146
 
 - author: I. S. Novella, D. D. Reissig, C. O. Wilke
   year: 2004
-  title: Density-dependent selection in vesicular stomatitis virus
+  title: Density-dependent selection in vesicular stomatitis virus.
   ref: "J. Virol. 78:5799–5804"
   doi: 10.1128/JVI.78.11.5799-5804.2004
   pmcid: PMC415817
 
 - author: C. O. Wilke, D. D. Reissig, I. S. Novella
   year: 2004
-  title: Replication at periodically changing multiplicity of infection promotes stable coexistence of competing viral populations
+  title: Replication at periodically changing multiplicity of infection promotes stable coexistence of competing viral populations.
   ref: "Evolution 58:900–905"
   doi: 10.1111/j.0014-3820.2004.tb00422.x
   
 - author: C. Adami, C. O. Wilke
   year: 2004
-  title: Experiments in Digital Evolution
+  title: Experiments in digital evolution.
   ref: "Artificial Life 10:117–122"
   doi: 10.1162/106454604773563540
 
 - author: Y. Li, C. O. Wilke
   year: 2004
-  title: Digital Evolution in Time-Dependent Fitness Landscapes
+  title: Digital evolution in time-dependent fitness landscapes.
   ref: "Artificial Life 10:123–134"
   doi: 10.1162/106454604773563559
 
 - author: T. J. Johnson, C. O. Wilke
   year: 2004
-  title: Evolution of Resource Competition Between Mutually Dependent Digital Organisms
+  title: Evolution of resource competition between mutually dependent digital organisms.
   ref: "Artificial Life 10:145–156"
   doi: 10.1162/106454604773563577
 
 - author: C. Ofria, C. O. Wilke
   year: 2004
-  title: "Avida: A Software Platform for Research in Computational Evolutionary Biology"
+  title: "Avida: A software platform for research in computational evolutionary biology."
   ref: "Artificial Life 10:191–229"
   doi: 10.1162/106454604773563612
 
 - author: P. R. A. Campos, C. Adami, C. O. Wilke
   year: 2004
-  title: Modelling Stochastic Clonal Interference
+  title: Modelling stochastic clonal interference.
   ref: In G. Ciobanu and G. Rozenberg, eds., Modelling in Molecular Biology. Springer Series in Natural Computing, pp. 21–39
   doi: 10.1007/978-3-642-18734-6_2
 
 - author: C. O. Wilke, I. S. Novella
   year: 2003
-  title: Phenotypic mixing and hiding may contribute to memory in viral quasispecies
+  title: Phenotypic mixing and hiding may contribute to memory in viral quasispecies.
   ref: BMC Microbiology 3:11
   doi: 10.1186/1471-2180-3-11
 
@@ -778,24 +778,24 @@
   
 - author: C. O. Wilke
   year: 2003
-  title: Probability of fixation of an advantageous mutant in a viral quasispecies
+  title: Probability of fixation of an advantageous mutant in a viral quasispecies.
   ref: "Genetics 163:467–474"
 
 - author: C. O. Wilke, R. E. Lenski, C. Adami
   year: 2003
-  title: Compensatory mutations cause excess of antagonistic epistasis in RNA secondary structure folding
+  title: Compensatory mutations cause excess of antagonistic epistasis in RNA secondary structure folding.
   ref: "BMC Evolutionary Biology 3:3"
   doi: 10.1186/1471-2148-3-3
 
 - author: C. O. Wilke, C. Adami
   year: 2003
-  title: Evolution of mutational robustness
+  title: Evolution of mutational robustness.
   ref: "Mut. Res. 522:3–11"
   doi: 10.1016/S0027-5107(02)00307-X
   
 - author: C. Kamp, C. O. Wilke, C. Adami, S. Bornholdt
   year: 2002
-  title: Viral evolution under the pressure of an adaptive immune system – optimal mutation rates for viral escape
+  title: Viral evolution under the pressure of an adaptive immune system – optimal mutation rates for viral escape.
   ref: "Complexity 8:28–33"
   doi: 10.1002/cplx.10067
   featured: Nature News and Views, Vol. 420:367-369 (2002)
@@ -803,37 +803,37 @@
 
 - author: C. O. Wilke, C. Adami
   year: 2002
-  title: The biology of digital organisms
+  title: The biology of digital organisms.
   ref: "Trends. Ecol. Evol. 17:528–532"
   doi: 10.1016/S0169-5347(02)02612-5
 
 - author: C. O. Wilke, P. R. A. Campos, J. F. Fontanari
   year: 2002
-  title: Genealogical process on a correlated fitness landscape
+  title: Genealogical process on a correlated fitness landscape.
   ref: "J. Exp. Zool. 294:274–284"
   doi: 10.1002/jez.10146
 
 - author: C. O. Wilke
   year: 2002
-  title: Maternal effects in molecular evolution
+  title: Maternal effects in molecular evolution.
   ref: "Phys. Rev. Lett. 88:078101"
   doi: 10.1103/PhysRevLett.88.078101
 
 - author: P. R. A. Campos, C. Adami, C. O. Wilke
   year: 2002
-  title: Optimal adaptive performance and delocalization in NK fitness landscapes
+  title: Optimal adaptive performance and delocalization in NK fitness landscapes.
   ref: "Physica A 304:495–506"
   doi: 10.1016/S0378-4371(01)00572-6
 
 - author: C. O. Wilke
   year: 2001
-  title: Selection for fitness vs. selection for robustness in RNA secondary structure folding
+  title: Selection for fitness vs. selection for robustness in RNA secondary structure folding.
   ref: "Evolution 55:2412–2420"
   doi: 10.1111/j.0014-3820.2001.tb00756.x
 
 - author: C. O. Wilke, J. L. Wang, C. Ofria, R. E. Lenski, C. Adami
   year: 2001
-  title: Evolution of digital organisms at high mutation rate leads to survival of the flattest
+  title: Evolution of digital organisms at high mutation rate leads to survival of the flattest.
   ref: "Nature 412:331–333"
   doi: 10.1038/35085569
   featured: Nature highlights, July 19, 2001
@@ -841,19 +841,19 @@
 
 - author: C. Ronnewinkel, C. O. Wilke, T. Martinetz
   year: 2001
-  title: Genetic algorithms in time-dependent environments
+  title: Genetic algorithms in time-dependent environments.
   ref: In L. Kallel, B. Naudts and A. Rogers, editors, Theoretical Aspects of Evolutionary Computing, pp. 261–285. Natural Computing, Springer Verlag
   doi: 10.1007/978-3-662-04448-3_13
 
 - author: C. O. Wilke
   year: 2001
-  title: Adaptive evolution on neutral networks
+  title: Adaptive evolution on neutral networks.
   ref: "Bull. Math. Biol. 63:715–730"
   doi: 10.1006/bulm.2001.0244
 
 - author: C. O. Wilke, C. Adami
   year: 2001
-  title: Interaction between directional epistasis and average mutational effects
+  title: Interaction between directional epistasis and average mutational effects.
   ref: "Proc. R. Soc. London B 268:1469–1474"
   doi: 10.1098/rspb.2001.1690
   featured: National Georaphic News 07/2001
@@ -861,48 +861,48 @@
 
 - author: C. O. Wilke, C. Ronnewinkel, T. Martinetz
   year: 2001
-  title: Dynamic fitness landscapes in molecular evolution
+  title: Dynamic fitness landscapes in molecular evolution.
   ref: "Phys. Rep. 349:395–446"
   doi: 10.1016/S0370-1573(00)00118-6
 
 - author: C. O. Wilke, C. Ronnewinkel
   year: 2001
-  title: "Dynamic fitness landscapes: Expansions for small mutation rates"
+  title: "Dynamic fitness landscapes: Expansions for small mutation rates."
   ref: "Physica A 290:475–490"
   doi: 10.1016/S0378-4371(00)00585-9
 
 - author: C. O. Wilke
   year: 2000
-  title: Dynamische Fitnesslandschaften
+  title: Dynamische Fitnesslandschaften.
   ref: "KI 14:20–25 (in german)"
   
 - author: C. O. Wilke, T. Martinetz
   year: 1999
-  title: Adaptive walks on time-dependent fitness landscapes
+  title: Adaptive walks on time-dependent fitness landscapes.
   ref: "Phys. Rev. E 60:2154–2159"
   doi: 10.1103/PhysRevE.60.2154
 
 - author: C. O. Wilke, T. Martinetz
   year: 1999
-  title: Lifetimes of agents under external stress
+  title: Lifetimes of agents under external stress.
   ref: "Phys. Rev. E Rapid Communications 59:R2512–R2515"
   doi: 10.1103/PhysRevE.59.R2512
 
 - author: C. O. Wilke, C. Ronnewinkel, T. Martinetz
   year: 1999
-  title: Molecular Evolution in Time Dependent Environments
+  title: Molecular evolution in time dependent environments.
   ref: "Lect. Notes. Artif. Int. 1674:417–421"
   doi: 10.1007/3-540-48304-7_57
 
 - author: C. Wilke, T. Martinetz
   year: 1998
-  title: Hierarchical noise in large systems of independent agents
+  title: Hierarchical noise in large systems of independent agents.
   ref: "Phys. Rev. E 58:7101–7108"
   doi: 10.1103/PhysRevE.58.7101
 
 - author: C. Wilke, S. Altmeyer, T. Martinetz
   year: 1998
-  title: Aftershocks in coherent-noise models
+  title: Aftershocks in coherent-noise models.
   ref: "Physica D 120:401–417"
   doi: 10.1016/S0167-2789(98)00092-X
 
@@ -913,24 +913,24 @@
 
 - author: C. Wilke, S. Altmeyer, T. Martinetz
   year: 1998
-  title: Large-scale evolution and extinction in a hierarchically structured environment
+  title: Large-scale evolution and extinction in a hierarchically structured environment.
   ref: In C. Adami, R. Belew, H. Kitano, and C. Taylor, editors, Proc. of Artificial Life VI, Los Angeles, June 26–29, 1998. MIT Press
 
 - author: C. Wilke, T. Martinetz
   year: 1997
-  title: Simple model of evolution with variable system size
+  title: Simple model of evolution with variable system size.
   ref: "Phys. Rev. E 56:7128–7131"
   doi: 10.1103/PhysRevE.56.7128
 
 - author: M. Kachelrieß, C. Wilke, G. Wunner
   year: 1997
-  title: Axion cyclotron emissivity of magnetized white dwarfs and neutron stars
+  title: Axion cyclotron emissivity of magnetized white dwarfs and neutron stars.
   ref: "Phys. Rev. D 56:1313–1319"
   doi: 10.1103/PhysRevD.56.1313
 
 - author: C. Wilke, G. Wunner
   year: 1997
-  title: "Photon splitting in strong magnetic fields: asymptotic approximation formulae vs. accurate numerical results"
+  title: "Photon splitting in strong magnetic fields: asymptotic approximation formulae vs. accurate numerical results."
   ref: "Phys. Rev. D 55:997–1000"
   doi: 10.1103/PhysRevD.55.997
   
