@@ -12,6 +12,34 @@ Lab meetings are held Fridays from 10:30 am - 12:00 pm in MBB 3.204.
 |------+---+--------------------+---+----------------------+---+-------|
 | Date      |    |Research           |    |Literature |         |Notes      |
 |:----------|----|:------------------|----|:--------------------|---|:------|
+|  1/8/16  || Matt || New Year's Resolutions
+|  1/15/16 || Dariya  || Matt  || 
+|  1/22/16 || Ben   || Dariya ||
+|  1/29/16 || Umut   || Ben ||
+|   2/5/16 || Dakota   || Umut ||
+|  2/12/16 ||   || Dakota  ||
+|  2/19/16 || Stephanie  ||   ||  
+| 2/26/16  || Eleisha  || Stephanie  ||
+| 3/4/16   || Ashley  || Eleisha ||
+|  3/11/16 ||   || Ashley   || 
+| 3/18/16  || ---  || --- || Spring break
+| 3/25/16  || ||  || 
+|  4/1/16  ||   ||  ||
+| 4/8/16 ||  ||  ||
+| 4/15/16 ||     || 
+| 4/22/16 ||     || 
+| 4/29/16 ||     || 
+| 5/15/16 ||     || |------+---+--------------------+---+----------------------+---+-------|
+{:.widetable}
+ 
+ 
+ <br><br>
+
+### Fall 2015
+
+|------+---+--------------------+---+----------------------+---+-------|
+| Date      |    |Research           |    |Literature |         |Notes      |
+|:----------|----|:------------------|----|:--------------------|---|:------|
 |  9/4/15  || Larry & Dacia  || -  ||
 |  9/11/15 || Ashley Teufel  || Stephanie || 
 |  9/18/15 || Eleisha   || Eleisha ||
@@ -26,6 +54,7 @@ Lab meetings are held Fridays from 10:30 am - 12:00 pm in MBB 3.204.
 | 11/27/15 || --  || -- || Thanksgiving
 |  12/4/15 || Eleisha  || Matt ||
 | 12/11/15 || Stephanie || Qian (also research) ||
+| 12/18/15 || Ashley    || Scientific Reports Extravaganza
 |------+---+--------------------+---+----------------------+---+-------|
 {:.widetable}
 
