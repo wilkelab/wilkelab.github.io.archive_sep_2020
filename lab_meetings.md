@@ -12,8 +12,8 @@ Lab meetings are held Fridays from 10:30 am - 12:00 pm in MBB 3.204.
 |------+---+--------------------+---+----------------------+---+-------|
 | Date      |    |Research           |    |Literature |         |Notes      |
 |:----------|----|:------------------|----|:--------------------|---|:------|
-|  1/8/16  || Matt || New Year's Resolutions
-|  1/15/16 || Dariya  || Matt  || 
+|  1/8/16  || --- || --- || Cancelled. Attend Ferguson talk at 10am in CPE 2.222
+|  1/15/16 || Dariya, Matt  || ---  || 
 |  1/22/16 || Ben   || Dariya ||
 |  1/29/16 || Umut   || Ben ||
 |   2/5/16 || Dakota   || Umut ||
