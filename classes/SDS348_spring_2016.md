@@ -93,6 +93,6 @@ Guest lecture by Steve Bellan
 - Project 2: (due Mar 29, 2016)
 - Project 3: (due May 5, 2016)
 
-## Discussion sections
+## Labs
 
-**Jan. 20, 2016**
+**1. Jan. 20, 2016**
