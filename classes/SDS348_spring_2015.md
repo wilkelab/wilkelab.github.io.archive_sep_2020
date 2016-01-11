@@ -5,6 +5,8 @@ date:   2014-12-20 00:00:01
 ---
 This is the home page for class SDS 348, Computational Biology and Bioinformatics. All relevant course materials will be posted here.
 
+*(For the latest version of this class, with updated materials, please [check here.](/classes/))*
+
 Syllabus and schedule: [SDS348_syllabus_spring2015.pdf](/classes/SDS348/SDS348_syllabus_spring2015.pdf)
 
 ## Lectures
@@ -279,18 +281,18 @@ Guest lecture by Howard Ochman
 
 
 ## Homeworks
-- Homework 1: [HW1.Rmd](/classes/SDS348/2015_spring_homeworks/HW1.Rmd) (due Jan 27, 2015) [Answer Key](/classes/SDS348/2015_spring_homeworks/HW1-solution.html) 
-- Homework 2: [HW2.Rmd](/classes/SDS348/2015_spring_homeworks/HW2.Rmd) (due Feb 3, 2015) [Answer Key](/classes/SDS348/2015_spring_homeworks/HW2-solution.html) 
-- Homework 3: [HW3.Rmd](/classes/SDS348/2015_spring_homeworks/HW3.Rmd) (due Feb 10, 2015) [Answer Key](/classes/SDS348/2015_spring_homeworks/HW3-solution.html) 
-- Homework 4: [HW4.Rmd](/classes/SDS348/2015_spring_homeworks/HW4.Rmd) (due Feb 17, 2015) [Answer Key](/classes/SDS348/2015_spring_homeworks/HW4-solution.html) 
-- Homework 5: [HW5.Rmd](/classes/SDS348/2015_spring_homeworks/HW5.Rmd) (due Mar 3, 2015)  [Answer Key](/classes/SDS348/2015_spring_homeworks/HW5-solution.html)
-- Homework 6: [HW6.Rmd](/classes/SDS348/2015_spring_homeworks/HW6.Rmd) (due Mar 10, 2015) [Answer Key](/classes/SDS348/2015_spring_homeworks/HW6-solution.html)
+- Homework 1: [HW1.Rmd](/classes/SDS348/2015_spring_homeworks/HW1.Rmd) (due Jan 27, 2015) 
+- Homework 2: [HW2.Rmd](/classes/SDS348/2015_spring_homeworks/HW2.Rmd) (due Feb 3, 2015)
+- Homework 3: [HW3.Rmd](/classes/SDS348/2015_spring_homeworks/HW3.Rmd) (due Feb 10, 2015)
+- Homework 4: [HW4.Rmd](/classes/SDS348/2015_spring_homeworks/HW4.Rmd) (due Feb 17, 2015)
+- Homework 5: [HW5.Rmd](/classes/SDS348/2015_spring_homeworks/HW5.Rmd) (due Mar 3, 2015)
+- Homework 6: [HW6.Rmd](/classes/SDS348/2015_spring_homeworks/HW6.Rmd) (due Mar 10, 2015)
 - Homework 7: [HW7.ipynb](/classes/SDS348/2015_spring_homeworks/HW7.ipynb) 
-[HW7.html](/classes/SDS348/2015_spring_homeworks/HW7.html) (due **Thursday Mar 26**, 2015)  [Answer Key](/classes/SDS348/2015_spring_homeworks/HW7-solutions.html)
-- Homework 8: [HW8.ipynb](/classes/SDS348/2015_spring_homeworks/HW8.ipynb) [HW8.html](/classes/SDS348/2015_spring_homeworks/HW8.html) (due Apr 7, 2015) [Answer Key](/classes/SDS348/2015_spring_homeworks/HW8-solutions.html)
+[HW7.html](/classes/SDS348/2015_spring_homeworks/HW7.html) (due **Thursday Mar 26**, 2015)
+- Homework 8: [HW8.ipynb](/classes/SDS348/2015_spring_homeworks/HW8.ipynb) [HW8.html](/classes/SDS348/2015_spring_homeworks/HW8.html) (due Apr 7, 2015)
 - Homework 9: [HW9.pdf](/classes/SDS348/2015_spring_homeworks/HW9.pdf) (due Apr 14, 2015)
 - Homework 10: [HW10.ipynb](/classes/SDS348/2015_spring_homeworks/HW10.ipynb) 
-[HW10.html](/classes/SDS348/2015_spring_homeworks/HW10.html) (due Apr 21, 2015) [Answer Key](/classes/SDS348/2015_spring_homeworks/HW10-solutions.html)
+[HW10.html](/classes/SDS348/2015_spring_homeworks/HW10.html) (due Apr 21, 2015)
 - Homework 11:
 [HW11.pdf](/classes/SDS348/2015_spring_homeworks/HW11.pdf) (due Apr 28, 2015)  
 Sequence data: [cxcr4_aa.fasta](/classes/SDS348/2015_spring_homeworks/cxcr4_aa.fasta)  
