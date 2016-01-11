@@ -75,6 +75,8 @@ Guest lecture by Steve Bellan
 
 ## Homeworks
 
+All homeworks are due by 11:59pm on the day they are due. Homeworks need to be submitted as pdf files on Canvas.
+
 - Homework 1: (due Jan 26, 2016) 
 - Homework 2: (due Feb 2, 2016) 
 - Homework 3: (due Feb 9, 2016) 
@@ -88,6 +90,8 @@ Guest lecture by Steve Bellan
 - Homework 11: (due Apr 26, 2016)  
 
 ## Projects
+
+All projects are due by 11:59pm on the day they are due. Projects need to be submitted on Canvas, both in pdf format and as source code (plus data where needed).
 
 - Project 1: (due Feb 23, 2016)
 - Project 2: (due Mar 29, 2016)
