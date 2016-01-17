@@ -20,6 +20,7 @@ Syllabus: [SDS348_syllabus_spring2016.pdf](/classes/SDS348/SDS348_syllabus_sprin
     
 **2. Jan 21, 2016 – R review**
 
+* Slides: [class2.pdf](/classes/SDS348/2016_spring/slides/class2.pdf) 
 * Biostats supplement on regression modeling: [statistical_modeling.pdf](/classes/SDS348/statistical_modeling.pdf)
 * General R tutorial (fairly long and detailed): [http://www.cyclismo.org/tutorial/R/index.html](http://www.cyclismo.org/tutorial/R/index.html)
 * In-class worksheet:
