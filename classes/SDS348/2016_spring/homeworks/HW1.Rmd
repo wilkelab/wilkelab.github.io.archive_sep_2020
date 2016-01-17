@@ -1,0 +1,38 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=4, fig.width=4)
+```
+##Homework 1
+*Enter your name and EID here*
+
+**This homework is due on Jan. 26, 2016 at 11:59pm. Please submit as a pdf file on Canvas.**
+
+This homework uses the `InsectSprays` data set available in R. This data set contains counts of insects in agricultural experimental units (`count`) treated with different insecticides (`spray`). There are six different types of insect sprays tested in the data set (labeled A-F), each with 12 observations. 
+
+```{r}
+head(InsectSprays)
+```
+
+**Question 1: (4 pts)** We are interested in testing the effect of insect spray type on the number of insects observed. Since there are six different types of insect sprays in the data set, and therefore six groups of insect counts, we will use an analysis of variance (ANOVA) test. Conduct an ANOVA test and interpret your results in 1-2 sentences. HINT: You will first need to create a linear model object using the `lm()` function before you can use the `anova()` function.
+
+```{r}
+# your R code goes here
+```
+
+*Your answer goes here. 1-2 sentences only.*
+
+**Question 2: (3 pts)** Create a boxplot of the insect count data, separated by spray type. Based on this plot, is the mean insect count of Spray D the same or different from that of Spray F? Explain your answer.
+
+```{r}
+# your R code goes here
+```
+
+*Your answer goes here. 1-2 sentences only.*
+
+**Question 3: (3 pts)** Use a t test to determine if the mean insect count of Spray D is the same or different from that of Spray F. Interperet and explain your results in 1-2 sentences.
+
+```{r}
+# your R code goes here
+```
+
+*Your answer goes here. 1-2 sentences only.*
