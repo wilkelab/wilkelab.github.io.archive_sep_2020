@@ -8,7 +8,7 @@ This is the home page for class SDS 348, Computational Biology and Bioinformatic
 Syllabus: [SDS348_syllabus_spring2016.pdf](/classes/SDS348/SDS348_syllabus_spring2016.pdf)
 
 ## Lectures
-**1. Jan 19, 2016 – Introduction**
+**1. Jan 19, 2016 – Introduction, R Markdown**
 
 * Slides: [class1.pdf](/classes/SDS348/2016_spring/slides/class1.pdf) 
 * Download R from here: [http://cran.r-project.org/](http://cran.r-project.org/)
@@ -18,9 +18,14 @@ Syllabus: [SDS348_syllabus_spring2016.pdf](/classes/SDS348/SDS348_syllabus_sprin
     - [R Markdown](/classes/SDS348/2016_spring/worksheets/class1.Rmd)
     - [HTML](/classes/SDS348/2016_spring/worksheets/class1.html)
     
-**2. Jan 21, 2016 – R review, R Markdown**
+**2. Jan 21, 2016 – R review**
 
-    
+* Biostats supplement on regression modeling: [statistical_modeling.pdf](/classes/SDS348/statistical_modeling.pdf)
+* General R tutorial (fairly long and detailed): [http://www.cyclismo.org/tutorial/R/index.html](http://www.cyclismo.org/tutorial/R/index.html)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2016_spring/worksheets/class2.Rmd)
+    - [HTML](/classes/SDS348/2016_spring/worksheets/class2.html)
+
 
 **3. Jan 26, 2016 – Data visualization with ggplot2**
 
