@@ -9,11 +9,11 @@ Syllabus: [SDS348_syllabus_spring2016.pdf](/classes/SDS348/SDS348_syllabus_sprin
 
 ## Lectures
 **1. Jan 19, 2016 – Introduction**
-    
+
+* Slides: [class1.pdf](/classes/SDS348/2016_spring/slides/class1.pdf) 
 * Download R from here: [http://cran.r-project.org/](http://cran.r-project.org/)
 * Download RStudio from here: [http://www.rstudio.com/products/rstudio/download/](http://www.rstudio.com/products/rstudio/download/)
-* R Markdown basics: [http://rmarkdown.rstudio.com/authoring_basics.html](http://rmarkdown.rstudio.com/authoring_basics.html)
-    
+* R Markdown basics: [http://rmarkdown.rstudio.com/authoring_basics.html](http://rmarkdown.rstudio.com/authoring_basics.html) 
 * In-class worksheet:
     - [R Markdown](/classes/SDS348/2016_spring/worksheets/class1.Rmd)
     - [HTML](/classes/SDS348/2016_spring/worksheets/class1.html)
