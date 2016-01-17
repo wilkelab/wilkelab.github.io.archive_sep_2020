@@ -12,8 +12,14 @@ This is the home page for class SDS 348, Computational Biology and Bioinformatic
 * Download RStudio from here: [http://www.rstudio.com/products/rstudio/download/](http://www.rstudio.com/products/rstudio/download/)
 * R Markdown basics: [http://rmarkdown.rstudio.com/authoring_basics.html](http://rmarkdown.rstudio.com/authoring_basics.html)
     
-**2. Jan 21, 2016 – R review, R Markdown**
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2016_spring/worksheets/class1.Rmd)
+    - [HTML](/classes/SDS348/2016_spring/worksheets/class1.html)
     
+**2. Jan 21, 2016 – R review, R Markdown**
+
+    
+
 **3. Jan 26, 2016 – Data visualization with ggplot2**
 
 **4. Jan 28, 2016 – Data visualization with ggplot2**
