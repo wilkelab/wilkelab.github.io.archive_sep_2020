@@ -10,17 +10,17 @@ Syllabus: [SDS348_syllabus_spring2016.pdf](/classes/SDS348/SDS348_syllabus_sprin
 ## Lectures
 **1. Jan 19, 2016 – Introduction, R Markdown**
 
-* Slides: [class1.pdf](/classes/SDS348/2016_spring/slides/class1.pdf) 
+* Slides: [class1.pdf](/classes/SDS348/2016_spring/slides/class1.pdf)
 * Download R from here: [http://cran.r-project.org/](http://cran.r-project.org/)
 * Download RStudio from here: [http://www.rstudio.com/products/rstudio/download/](http://www.rstudio.com/products/rstudio/download/)
-* R Markdown basics: [http://rmarkdown.rstudio.com/authoring_basics.html](http://rmarkdown.rstudio.com/authoring_basics.html) 
+* R Markdown basics: [http://rmarkdown.rstudio.com/authoring_basics.html](http://rmarkdown.rstudio.com/authoring_basics.html)
 * In-class worksheet:
     - [R Markdown](/classes/SDS348/2016_spring/worksheets/class1.Rmd)
     - [HTML](/classes/SDS348/2016_spring/worksheets/class1.html)
-    
+
 **2. Jan 21, 2016 – R review**
 
-* Slides: [class2.pdf](/classes/SDS348/2016_spring/slides/class2.pdf) 
+* Slides: [class2.pdf](/classes/SDS348/2016_spring/slides/class2.pdf)
 * Biostats supplement on regression modeling: [statistical_modeling.pdf](/classes/SDS348/statistical_modeling.pdf)
 * General R tutorial (fairly long and detailed): [http://www.cyclismo.org/tutorial/R/index.html](http://www.cyclismo.org/tutorial/R/index.html)
 * In-class worksheet:
@@ -33,7 +33,7 @@ Syllabus: [SDS348_syllabus_spring2016.pdf](/classes/SDS348/SDS348_syllabus_sprin
 **4. Jan 28, 2016 – Data visualization with ggplot2**
 
 **5. Feb 2, 2016 – Working with tidy data**
-    
+
 **6. Feb 4, 2016 – Working with tidy data**    
 
 **7. Feb 9, 2016 – Working with tidy data**    
@@ -75,7 +75,7 @@ Guest lecture by Steve Bellan
 **24. Apr. 14, 2016 – Using regular expressions to analyze data**
 
 **25. Apr. 19, 2016 – Aligning sequences**
-	
+
 **26. Apr. 21, 2016 – Multiple sequence alignments and phylogenetic trees**
 
 **27. Apr. 26, 2016 – BLAST**
@@ -91,9 +91,9 @@ Guest lecture by Steve Bellan
 
 All homeworks are due by 11:59pm on the day they are due. Homeworks need to be submitted as pdf files on Canvas.
 
-- Homework 1: [HW1.Rmd](/classes/SDS348/2016_spring/homeworks/HW1.Rmd) (due Jan 26, 2016) 
-- Homework 2: (due Feb 2, 2016) 
-- Homework 3: (due Feb 9, 2016) 
+- Homework 1: [HW1.Rmd](/classes/SDS348/2016_spring/homeworks/HW1.Rmd) (due Jan 26, 2016)
+- Homework 2: (due Feb 2, 2016)
+- Homework 3: (due Feb 9, 2016)
 - Homework 4: (due Feb 16, 2016)
 - Homework 5: (due Mar 1, 2016)
 - Homework 6: (due Mar 8, 2016)
@@ -114,3 +114,6 @@ All projects are due by 11:59pm on the day they are due. Projects need to be sub
 ## Labs
 
 **1. Jan. 20, 2016**
+
+* Slides:
+* Guide to converting from HTML to PDF: [html_to_pdf_guide.pdf](/classes/SDS348/2016_spring/labs/html_to_pdf_guide.pdf)
