@@ -115,5 +115,8 @@ All projects are due by 11:59pm on the day they are due. Projects need to be sub
 
 **1. Jan. 20, 2016**
 
-* Slides:
+* Slides: [lab1_slides.pdf](/classes/SDS348/2016_spring/labs/lab1_slides.pdf)
 * Guide to converting from HTML to PDF: [html_to_pdf_guide.pdf](/classes/SDS348/2016_spring/labs/html_to_pdf_guide.pdf)
+* Lab worksheet:
+    - [R Markdown](/classes/SDS348/2016_spring/labs/lab1.Rmd)
+    - [HTML](/classes/SDS348/2016_spring/labs/lab1.html)
