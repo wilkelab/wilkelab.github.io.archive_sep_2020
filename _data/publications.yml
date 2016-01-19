@@ -10,9 +10,15 @@
   ref: "bioRxiv"
   doi: 10.1101/023499
 
+- author: D. Z. Derryberry, M. C. Cowperthwaite, C. O. Wilke
+  year: 2016
+  title: Reproducibility of SNV-calling in multiple sequencing runs from single tumors.
+  ref: "PeerJ 4:e1508"
+  doi: 10.7717/peerj.1508
+
 - author: C. O. Wilke
   year: 2015
-  title: Evolutionary paths of least resistance
+  title: Evolutionary paths of least resistance.
   ref: "Proc. Natl. Acad. Sci. USA 112:12553–12554"
   doi: 10.1073/pnas.1517390112
   
@@ -41,6 +47,7 @@
   title: On the time dependence of evolutionary metrics during the 2009 pandemic influenza virus outbreak.
   ref: "Virus Evolution 1:vev006"
   doi: 10.1093/ve/vev006 
+  pmcid: PMC4710376
   
 - author: J. R. Houser, C. Barnhart, D. R. Boutz, S. M. Carroll, A. Dasgupta, J. K. Michener, B. D. Needham, O. Papoulas, V. Sridhara, D. K. Sydykova, C. J. Marx, M. S. Trent, J. E. Barrick, E. M. Marcotte, C. O. Wilke
   year: 2015
