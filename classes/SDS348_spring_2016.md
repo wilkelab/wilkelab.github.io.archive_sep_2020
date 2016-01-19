@@ -17,6 +17,8 @@ Syllabus: [SDS348_syllabus_spring2016.pdf](/classes/SDS348/SDS348_syllabus_sprin
 * In-class worksheet:
     - [R Markdown](/classes/SDS348/2016_spring/worksheets/class1.Rmd)
     - [HTML](/classes/SDS348/2016_spring/worksheets/class1.html)
+    - [Solutions, R Markdown](/classes/SDS348/2016_spring/worksheets/class1_solutions.Rmd)
+    - [Solutions, HTML](/classes/SDS348/2016_spring/worksheets/class1_solutions.html)
 
 **2. Jan 21, 2016 – R review**
 
