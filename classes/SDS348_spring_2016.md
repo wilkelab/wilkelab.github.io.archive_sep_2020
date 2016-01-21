@@ -28,6 +28,7 @@ Syllabus: [SDS348_syllabus_spring2016.pdf](/classes/SDS348/SDS348_syllabus_sprin
 * In-class worksheet:
     - [R Markdown](/classes/SDS348/2016_spring/worksheets/class2.Rmd)
     - [HTML](/classes/SDS348/2016_spring/worksheets/class2.html)
+    - [Solutions](/classes/SDS348/2016_spring/worksheets/class2_solutions.html)
 
 
 **3. Jan 26, 2016 – Data visualization with ggplot2**
