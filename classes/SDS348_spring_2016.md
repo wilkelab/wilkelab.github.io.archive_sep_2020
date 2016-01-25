@@ -139,3 +139,9 @@ All projects are due by 11:59pm on the day they are due. Projects need to be sub
     - [R Markdown](/classes/SDS348/2016_spring/labs/lab1.Rmd)
     - [HTML](/classes/SDS348/2016_spring/labs/lab1.html)
     - [Solutions, HTML](/classes/SDS348/2016_spring/labs/lab1-solution.html)
+
+**2. Feb. 3, 2016**
+
+* Lab worksheet:
+    - [R Markdown](/classes/SDS348/2016_spring/labs/lab2.Rmd)
+    - [HTML](/classes/SDS348/2016_spring/labs/lab2.html)
