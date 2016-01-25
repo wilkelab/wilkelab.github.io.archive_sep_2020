@@ -44,6 +44,12 @@ Syllabus: [SDS348_syllabus_spring2016.pdf](/classes/SDS348/SDS348_syllabus_sprin
 
 **4. Jan 28, 2016 – Data visualization with ggplot2**
 
+* Slides: [class4.pdf](/classes/SDS348/2016_spring/slides/class4.pdf)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2016_spring/worksheets/class4.Rmd)
+    - [HTML](/classes/SDS348/2016_spring/worksheets/class4.html)
+
+
 **5. Feb 2, 2016 – Working with tidy data**
 
 **6. Feb 4, 2016 – Working with tidy data**    
