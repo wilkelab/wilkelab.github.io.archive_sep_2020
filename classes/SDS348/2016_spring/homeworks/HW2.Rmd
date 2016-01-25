@@ -1,0 +1,42 @@
+```{r global_options, include=FALSE}
+library(knitr)
+library(ggplot2)
+opts_chunk$set(fig.align="center", fig.height=4, fig.width=4)
+```
+##Homework 2
+*Enter your name and EID here*
+
+**This homework is due on Feb. 2, 2016 at 11:59pm. Please submit as a PDF file on Canvas.**
+
+This homework uses Austin housing data from the `txhousing` data set available in R. I have already isolated the Austin housing data and placed it in a data frame called `atxhousing`. Each observation in the data frame contains information from one month of housing sales in Austin. This information includes the year, the month, number of houses sold in that month (`sales`), the total value of houses sold in dollars (`volume`), the median house price in dollars (`median`), the number of listings on the market at the end of the month (`listings`), the amount of time that it would take to sell all of the current listings at the current rate of sales (`inventory`), and the date in years in a precise decimal form (`date`). 
+
+```{r}
+atxhousing <- txhousing[txhousing$city == 'Austin', ]
+head(atxhousing)
+```
+
+**Question 1: (3 pts)** Use ggplot2 to create a line plot of the median housing prices in Austin over time. In the same plot, fit a curve to these data using `geom_smooth()`. In one sentence, what broad trend do you observe in median housing prices over time? **HINT:** Use the `date` column as a measurement of time.
+
+```{r}
+# your R code goes here
+```
+
+*Your answer goes here. 1 sentence only.*
+
+**Question 2: (3 pts)** Next, create a line plot of the number of sales per month over time, facetted by year. In general, assuming that Month 1 is January, Month 2 is February, and so on, is the number of homes sold higher in the summer or the winter? State your answer in one sentence.
+
+```{r, fig.width=8, fig.height=7}
+# your R code goes here
+```
+
+*Your answer goes here. 1 sentence only.*
+
+**Question 3: (2 pts)** Make up a simple data set (5-10 data points) and plot it twice, once using `geom_histogram()` and once using `geom_density()`. 
+
+```{r}
+# your R code goes here
+```
+
+**Question 4: (2 pts)** What does the y-axis in your histogram represent? In your density plot, what is the *total* area under the curve? Please give a single number as your answer. **HINT**: You do not need to do any additional calculations to determine the area under the curve.
+
+*Your answer goes here. 1-2 sentence only.*
