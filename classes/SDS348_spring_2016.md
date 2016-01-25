@@ -110,7 +110,7 @@ Guest lecture by Steve Bellan
 All homeworks are due by 11:59pm on the day they are due. Homeworks need to be submitted as pdf files on Canvas.
 
 - Homework 1: [HW1.Rmd](/classes/SDS348/2016_spring/homeworks/HW1.Rmd) (due Jan 26, 2016)
-- Homework 2: [HW2.Rmd](/classes/SDS348/2016_spring/homeworks/HW1.Rmd) (due Feb 2, 2016)
+- Homework 2: [HW2.Rmd](/classes/SDS348/2016_spring/homeworks/HW2.Rmd) (due Feb 2, 2016)
 - Homework 3: (due Feb 9, 2016)
 - Homework 4: (due Feb 16, 2016)
 - Homework 5: (due Mar 1, 2016)
