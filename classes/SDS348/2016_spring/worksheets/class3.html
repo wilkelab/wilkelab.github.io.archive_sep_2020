@@ -71,8 +71,8 @@ img {
 <h2>In-class worksheet 3</h2>
 <p><strong>Jan 26, 2016</strong></p>
 </div>
-<div id="plotting-the-iris-data-set." class="section level2">
-<h2>1. Plotting the iris data set.</h2>
+<div id="plotting-the-iris-data-set" class="section level2">
+<h2>1. Plotting the iris data set</h2>
 <p>We will work with the <code>iris</code> data set available in R. This data set gives the measurements in centimeters of the variables sepal length and width and petal length and width, respectively, for 50 flowers from each of 3 species of iris. The species are <em>Iris setosa</em>, <em>versicolor</em>, and <em>virginica:</em></p>
 <pre class="r"><code>head(iris)</code></pre>
 <pre><code>##   Sepal.Length Sepal.Width Petal.Length Petal.Width Species
@@ -90,8 +90,8 @@ theme_set(theme_bw(base_size=12)) # set the default plot theme for the ggplot2 l
 <p>Now make side-by-side boxplots of sepal lengths for the three species of iris. The geom you need to use is <code>geom_boxplot()</code>. See if you can guess the correct aesthetic mapping.</p>
 <pre class="r"><code># R code goes here.</code></pre>
 </div>
-<div id="plotting-tree-growth-data." class="section level2">
-<h2>2. Plotting tree-growth data.</h2>
+<div id="plotting-tree-growth-data" class="section level2">
+<h2>2. Plotting tree-growth data</h2>
 <p>The data set <code>sitka</code> contains repeated measurements of tree size for 79 Sitka spruce trees, which were grown either in ozone-enriched chambers or under control conditions. It contains four columns: <code>size</code> measures the size of the tree (height times diameter squared, on a log scale). <code>Time</code> measures the time, in days since Jan. 1, 1988. <code>tree</code> indicates the tree we are working with, consecutively numbered from 1 to 79. <code>treat</code> indcates the treatment trees were subjected to, either <code>ozone</code> for an ozone-enriched chamber or <code>control</code>.</p>
 <pre class="r"><code># download the sitka data set:
 sitka &lt;- read.csv(&quot;http://wilkelab.org/classes/SDS348/data_sets/sitka.csv&quot;)

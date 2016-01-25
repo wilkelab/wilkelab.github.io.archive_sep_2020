@@ -5,7 +5,7 @@ opts_chunk$set(fig.align="center", fig.height=3, fig.width=4)
 ##In-class worksheet 3
 **Jan 26, 2016**
 
-## 1. Plotting the iris data set.
+## 1. Plotting the iris data set
 
 We will work with the `iris` data set available in R. This data set gives the measurements in centimeters of the variables sepal length and width and petal length and width, respectively, for 50 flowers from each of 3 species of iris. The species are *Iris setosa*, *versicolor*, and *virginica:*
 
@@ -29,7 +29,7 @@ Now make side-by-side boxplots of sepal lengths for the three species of iris. T
 # R code goes here.
 ```
 
-## 2. Plotting tree-growth data.
+## 2. Plotting tree-growth data
 The data set `sitka` contains repeated measurements of tree size for 79 Sitka spruce trees, which were grown either in ozone-enriched chambers or under control conditions. It contains four columns: `size` measures the size of the tree (height times diameter squared, on a log scale). `Time` measures the time, in days since Jan. 1, 1988. `tree` indicates the tree we are working with, consecutively numbered from 1 to 79. `treat` indcates the treatment trees were subjected to, either `ozone` for an ozone-enriched chamber or `control`.
 
 ```{r}
