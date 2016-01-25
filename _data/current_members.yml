@@ -11,9 +11,16 @@
   pubs: "http://scholar.google.com/citations?user=bdtVzlcAAAAJ"
   github: umutcaglar
  
+- name: Bart Smith
+  role: Postdoc
+  joined: 2016
+  github: HelloImBart
+ 
 - name: Ashley Teufel
   role: Postdoc
   joined: 2015
+  pubs: "https://scholar.google.com/citations?user=QqyRBHIAAAAJ"
+  github: a-teufel
  
 - name: Dakota Derryberry
   role: Graduate Student (CMB)
