@@ -33,6 +33,15 @@ Syllabus: [SDS348_syllabus_spring2016.pdf](/classes/SDS348/SDS348_syllabus_sprin
 
 **3. Jan 26, 2016 – Data visualization with ggplot2**
 
+* Slides: [class3.pdf](/classes/SDS348/2016_spring/slides/class3.pdf)
+* ggplot2 reference manual: [http://docs.ggplot2.org/current/](http://docs.ggplot2.org/current/) 
+* ggplot2 video tutorial: [http://varianceexplained.org/RData/lessons/lesson2/segment1/](http://varianceexplained.org/RData/lessons/lesson2/segment1/)
+* ggplot2 materials on the Cookbook for R site: [http://www.cookbook-r.com/Graphs/](http://www.cookbook-r.com/Graphs/)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2016_spring/worksheets/class3.Rmd)
+    - [HTML](/classes/SDS348/2016_spring/worksheets/class3.html)
+ 
+
 **4. Jan 28, 2016 – Data visualization with ggplot2**
 
 **5. Feb 2, 2016 – Working with tidy data**
