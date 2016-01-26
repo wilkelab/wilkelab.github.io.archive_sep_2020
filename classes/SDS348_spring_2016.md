@@ -34,14 +34,13 @@ Syllabus: [SDS348_syllabus_spring2016.pdf](/classes/SDS348/SDS348_syllabus_sprin
 **3. Jan 26, 2016 – Data visualization with ggplot2**
 
 * Slides: [class3.pdf](/classes/SDS348/2016_spring/slides/class3.pdf)
-* ggplot2 reference manual: [http://docs.ggplot2.org/current/](http://docs.ggplot2.org/current/) 
+* ggplot2 reference manual: [http://docs.ggplot2.org/current/](http://docs.ggplot2.org/current/)
 * ggplot2 video tutorial: [http://varianceexplained.org/RData/lessons/lesson2/segment1/](http://varianceexplained.org/RData/lessons/lesson2/segment1/)
 * ggplot2 materials on the Cookbook for R site: [http://www.cookbook-r.com/Graphs/](http://www.cookbook-r.com/Graphs/)
 * In-class worksheet:
     - [R Markdown](/classes/SDS348/2016_spring/worksheets/class3.Rmd)
     - [HTML](/classes/SDS348/2016_spring/worksheets/class3.html)
     - [Solutions](/classes/SDS348/2016_spring/worksheets/class3_solutions.html)
-
 
 **4. Jan 28, 2016 – Data visualization with ggplot2**
 
@@ -111,7 +110,7 @@ Guest lecture by Steve Bellan
 All homeworks are due by 11:59pm on the day they are due. Homeworks need to be submitted as pdf files on Canvas.
 
 - Homework 1: [HW1.Rmd](/classes/SDS348/2016_spring/homeworks/HW1.Rmd) (due Jan 26, 2016)
-- Homework 2: (due Feb 2, 2016)
+- Homework 2: [HW2.Rmd](/classes/SDS348/2016_spring/homeworks/HW2.Rmd) (due Feb 2, 2016)
 - Homework 3: (due Feb 9, 2016)
 - Homework 4: (due Feb 16, 2016)
 - Homework 5: (due Mar 1, 2016)
@@ -140,3 +139,9 @@ All projects are due by 11:59pm on the day they are due. Projects need to be sub
     - [R Markdown](/classes/SDS348/2016_spring/labs/lab1.Rmd)
     - [HTML](/classes/SDS348/2016_spring/labs/lab1.html)
     - [Solutions, HTML](/classes/SDS348/2016_spring/labs/lab1-solution.html)
+
+**2. Jan. 27, 2016**
+
+* Lab worksheet:
+    - [R Markdown](/classes/SDS348/2016_spring/labs/lab2.Rmd)
+    - [HTML](/classes/SDS348/2016_spring/labs/lab2.html)
