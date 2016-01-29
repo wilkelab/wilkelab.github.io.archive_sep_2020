@@ -17,10 +17,10 @@ Lab meetings are held Fridays from 10:30 am - 12:00 pm in MBB 3.204.
 |  1/22/16 || Ben   || Ashley ||
 |  1/29/16 || Umut   || Ben ||
 |   2/5/16 || Bart   || Umut ||
-|  2/12/16 || ?????  || Bart  ||
-|  2/19/16 || Ashley  || Stephanie  ||  
-| 2/26/16  || Eleisha  || Dariya  ||
-| 3/4/16   || Stephanie  || Eleisha ||
+|  2/12/16 || Eleisha  || Bart  ||
+|  2/19/16 || Ashley  || Eleisha  ||  
+| 2/26/16  || Dariya  || Stephanie  ||
+| 3/4/16   || Stephanie  || Dariya ||
 |  3/11/16 || Dakota   || Matt   || 
 | 3/18/16  || ---  || --- || Spring break
 | 3/25/16  || || Dakota || 
