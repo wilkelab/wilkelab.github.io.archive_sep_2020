@@ -53,7 +53,23 @@ Syllabus: [SDS348_syllabus_spring2016.pdf](/classes/SDS348/SDS348_syllabus_sprin
 
 **5. Feb 2, 2016 – Working with tidy data**
 
+* Slides: [class5.pdf](/classes/SDS348/2016_spring/slides/class5.pdf)
+* Tidy data paper by Wickham: [J. Stat. Soft. 59:10, 2014](http://www.jstatsoft.org/v59/i10/paper)
+* Introduction to dplyr: [http://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html](http://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html) 
+* dplyr package on CRAN: [http://cran.r-project.org/web/packages/dplyr/index.html](http://cran.r-project.org/web/packages/dplyr/index.html)
+* dplyr video tutorial: [http://rpubs.com/justmarkham/dplyr-tutorial](http://rpubs.com/justmarkham/dplyr-tutorial)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2016_spring/worksheets/class5.Rmd)
+    - [HTML](/classes/SDS348/2016_spring/worksheets/class5.html)
+
 **6. Feb 4, 2016 – Working with tidy data**    
+
+* Slides: [class6.pdf](/classes/SDS348/2016_spring/slides/class6.pdf)
+* Data-wrangling tutorial by Bradley Boehmke: [http://rpubs.com/bradleyboehmke/data_wrangling](http://rpubs.com/bradleyboehmke/data_wrangling)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2016_spring/worksheets/class6.Rmd)
+    - [HTML](/classes/SDS348/2016_spring/worksheets/class6.html)
+
 
 **7. Feb 9, 2016 – Working with tidy data**    
 

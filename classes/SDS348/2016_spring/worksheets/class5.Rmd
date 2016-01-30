@@ -1,0 +1,89 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=3, fig.width=4)
+```
+##In-class worksheet 5
+**Feb 2, 2016**
+
+## 1. Tidy data
+
+Is the `iris` dataset tidy? Explain why or why not.
+```{r}
+head(iris)
+```
+*Your answer goes here.*
+
+Is the `HairEyeColor` dataset tidy? Explain why or why not.
+```{r}
+HairEyeColor
+```
+*Your answer goes here.*
+
+## 2. Selecting rows and columns
+All subsequent code will be based on the dplyr library. So we first have to load this library:
+```{r message=FALSE}
+library(dplyr)
+```
+
+Now, using the dplyr function `filter()`, pick all the rows in the `iris` dataset that pertain to species setosa, and store them in a new table called `iris.setosa`.
+```{r }
+# R code goes here.
+```
+
+Pick all the rows in the `iris` dataset where species virginica has a sepal length > 7.
+```{r }
+# R code goes here.
+```
+
+Are there any cases in the `iris` dataset for which the ratio of sepal length to sepal width exceeds the ratio of petal length to petal width? Use `filter()` to find out.
+```{r }
+# R code goes here.
+```
+
+
+Create a pared-down table which contains only data for species setosa and which only has the columns `Sepal.Length` and `Sepal.Width`. Store the result in a table called `iris.pared`.
+```{r }
+# R code goes here.
+```
+
+## 3. Creating new data, arranging
+
+Using the function `mutate()`, create a new data column that holds the ratio of sepal length to sepal width. Store the resulting table in a variable called `iris.ratio`.
+```{r }
+# R code goes here.
+```
+
+Order the `iris.ratio` table by species name and by increasing values of sepal length-to-width ratio.
+```{r}
+# R code goes here.
+```
+
+## 4. Grouping and summarizing
+
+Calculate the mean and standard deviation of the sepal lengths for each species. Do this by first creating a table grouped by species, which you call `iris.grouped`. Then run `summarize()` on that table.
+```{r }
+# R code goes here.
+```
+
+Use the function `n()` to count the number of observations for each species.
+```{r }
+# R code goes here.
+```
+
+For each species, calculate the percentage of cases with sepal length > 5.5.
+```{r }
+# R code goes here.
+```
+
+
+## 5. If this was easy
+
+Take the `iris.ratio` data set you have created and plot the distribution of sepal length-to-width ratios for the three species.
+```{r }
+# R code goes here.
+```
+
+Now plot sepal length-to-width ratios vs. sepal lengths. Does it look like there is a relationship between the length-to-width ratios and the lengths? Does it matter whether you consider each species individually or all together? How could you find out?
+```{r }
+# R code goes here.
+```
