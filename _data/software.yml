@@ -8,8 +8,8 @@
   tag_line: Flexible Python module for simulating sequences along phylogenies
   author: Stephanie J. Spielman
   source_URL: "https://github.com/sjspielman/pyvolve"
-  PyPI_URL: https://pypi.python.org/pypi/Pyvolve/
-  paper_URL: "http://biorxiv.org/content/early/2015/06/01/020214"
+  PyPI_URL: "https://pypi.python.org/pypi/Pyvolve/"
+  paper_URL: "http://dx.doi.org/10.1371/journal.pone.0139047"
   
 - name: alignfigR
   tag_line: R package to visualize large multiple sequence alignments
@@ -20,4 +20,5 @@
   tag_line: Simple Python library to generate model peptides
   author: Matthew Z. Tien and Dariya K. Sydykova
   paper_URL: "http://dx.doi.org/10.7717/peerj.80"
+  PyPI_URL: "https://pypi.python.org/pypi/PeptideBuilder"
   source_URL: "https://github.com/mtien/PeptideBuilder"
