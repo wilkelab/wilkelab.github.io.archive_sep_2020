@@ -131,7 +131,7 @@ All homeworks are due by 11:59pm on the day they are due. Homeworks need to be s
 - Homework 2: [HW2.Rmd](/classes/SDS348/2016_spring/homeworks/HW2.Rmd) (due Feb 2, 2016)
     - [Creating your own data frames](/classes/SDS348/2016_spring/homeworks/creating_data_frames.html)
 - Homework 3: [HW3.Rmd](/classes/SDS348/2016_spring/homeworks/HW3.Rmd) (due Feb 9, 2016)
-    - This homework requires the *gapminder* package. Install it by running "install.packages('gapminder')" in the R console.
+    - This homework requires the *gapminder* package. Install it by running `install.packages('gapminder')` in the R console.
 - Homework 4: (due Feb 16, 2016)
 - Homework 5: (due Mar 1, 2016)
 - Homework 6: (due Mar 8, 2016)
