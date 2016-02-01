@@ -55,7 +55,7 @@ Syllabus: [SDS348_syllabus_spring2016.pdf](/classes/SDS348/SDS348_syllabus_sprin
 
 * Slides: [class5.pdf](/classes/SDS348/2016_spring/slides/class5.pdf)
 * Tidy data paper by Wickham: [J. Stat. Soft. 59:10, 2014](http://www.jstatsoft.org/v59/i10/paper)
-* Introduction to dplyr: [http://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html](http://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html) 
+* Introduction to dplyr: [http://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html](http://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html)
 * dplyr package on CRAN: [http://cran.r-project.org/web/packages/dplyr/index.html](http://cran.r-project.org/web/packages/dplyr/index.html)
 * dplyr video tutorial: [http://rpubs.com/justmarkham/dplyr-tutorial](http://rpubs.com/justmarkham/dplyr-tutorial)
 * In-class worksheet:
@@ -126,9 +126,12 @@ Guest lecture by Steve Bellan
 
 All homeworks are due by 11:59pm on the day they are due. Homeworks need to be submitted as pdf files on Canvas.
 
-- Homework 1: [HW1.Rmd](/classes/SDS348/2016_spring/homeworks/HW1.Rmd)  (due Jan 26, 2016), [Solutions](/classes/SDS348/2016_spring/homeworks/HW1-solution.html)
-- Homework 2: [HW2.Rmd](/classes/SDS348/2016_spring/homeworks/HW2.Rmd) (due Feb 2, 2016), [Creating your own data frames](/classes/SDS348/2016_spring/homeworks/creating_data_frames.html)
-- Homework 3: (due Feb 9, 2016)
+- Homework 1: [HW1.Rmd](/classes/SDS348/2016_spring/homeworks/HW1.Rmd)  (due Jan 26, 2016)
+    - [Solutions](/classes/SDS348/2016_spring/homeworks/HW1-solution.html)
+- Homework 2: [HW2.Rmd](/classes/SDS348/2016_spring/homeworks/HW2.Rmd) (due Feb 2, 2016)
+    - [Creating your own data frames](/classes/SDS348/2016_spring/homeworks/creating_data_frames.html)
+- Homework 3: [HW3.Rmd](/classes/SDS348/2016_spring/homeworks/HW3.Rmd) (due Feb 9, 2016)
+    - This homework requires the *gapminder* package. Install it by running `install.packages('gapminder')` in the R console.
 - Homework 4: (due Feb 16, 2016)
 - Homework 5: (due Mar 1, 2016)
 - Homework 6: (due Mar 8, 2016)
