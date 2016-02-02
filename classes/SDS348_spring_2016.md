@@ -171,6 +171,7 @@ All projects are due by 11:59pm on the day they are due. Projects need to be sub
 
 **3. Feb. 3, 2016**
 
+* Slides: [lab3_slides.pdf](/classes/SDS348/2016_spring/labs/lab3_slides.pdf)
 * Lab worksheet:
     - [R Markdown](/classes/SDS348/2016_spring/labs/lab3.Rmd)
     - [HTML](/classes/SDS348/2016_spring/labs/lab3.html)
