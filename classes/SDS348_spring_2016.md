@@ -176,6 +176,7 @@ All projects are due by 11:59pm on the day they are due. Projects need to be sub
 * Lab worksheet:
     - [R Markdown](/classes/SDS348/2016_spring/labs/lab3.Rmd)
     - [HTML](/classes/SDS348/2016_spring/labs/lab3.html)
+    - [Solutions, HTML](/classes/SDS348/2016_spring/labs/lab3-solution.html)
 * [R Studio cheat sheets](https://www.rstudio.com/resources/cheatsheets/):
     - [Data Visualization with ggplot2](http://www.rstudio.com/wp-content/uploads/2015/12/ggplot2-cheatsheet-2.0.pdf)
     - [Data Wrangling with tidyr and dplyr](http://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf)
