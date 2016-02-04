@@ -45,7 +45,7 @@ State which continent and year you chose here.
 
 Your answer goes here. 1 sentence only.
 
-**Question 4: (4 pts)** *Which countries experienced the largest change in life expectancy between **1988 and 2007**? List at least the top 5 and state your answer in a sentence. **HINT:** Use the functions `max()` and `min()` to determine the net change in life expectancy.*
+**Question 3: (4 pts)** *Which countries experienced the largest change in life expectancy between **1988 and 2007**? List at least the top 5 and state your answer in a sentence. **HINT:** Use the functions `max()` and `min()` to determine the net change in life expectancy.*
 
 ```{r}
 # R code goes here
