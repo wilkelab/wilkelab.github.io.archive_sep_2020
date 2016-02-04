@@ -56,6 +56,11 @@ The best cuts of diamonds are "Very Good", "Premium", and "Ideal". Make a table 
 # R code goes here.
 ```
 
+For each of the different diamond cuts, calculate the mean carat level among the diamonds whose price falls within 10% of the most expensive diamond for that cut.
+```{r}
+# R code goes here.
+```
+
 For each of the different diamond cuts, calculate the mean carat level among the top-10% most expensive diamonds.
 ```{r}
 # R code goes here.
