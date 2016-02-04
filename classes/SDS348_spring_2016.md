@@ -132,6 +132,7 @@ All homeworks are due by 11:59pm on the day they are due. Homeworks need to be s
     - [Solutions](/classes/SDS348/2016_spring/homeworks/HW1-solution.html)
 - Homework 2: [HW2.Rmd](/classes/SDS348/2016_spring/homeworks/HW2.Rmd) (due Feb 2, 2016)
     - [Creating your own data frames](/classes/SDS348/2016_spring/homeworks/creating_data_frames.html)
+    - [Solutions](/classes/SDS348/2016_spring/homeworks/HW2-solution.html)
 - Homework 3: [HW3.Rmd](/classes/SDS348/2016_spring/homeworks/HW3.Rmd) (due Feb 9, 2016)
     - This homework requires the *gapminder* package. Install it by running `install.packages('gapminder')` in the R console.
 - Homework 4: (due Feb 16, 2016)
@@ -172,9 +173,11 @@ All projects are due by 11:59pm on the day they are due. Projects need to be sub
 
 **3. Feb. 3, 2016**
 
+* Slides: [lab3_slides.pdf](/classes/SDS348/2016_spring/labs/lab3_slides.pdf)
 * Lab worksheet:
     - [R Markdown](/classes/SDS348/2016_spring/labs/lab3.Rmd)
     - [HTML](/classes/SDS348/2016_spring/labs/lab3.html)
+    - [Solutions, HTML](/classes/SDS348/2016_spring/labs/lab3-solution.html)
 * [R Studio cheat sheets](https://www.rstudio.com/resources/cheatsheets/):
     - [Data Visualization with ggplot2](http://www.rstudio.com/wp-content/uploads/2015/12/ggplot2-cheatsheet-2.0.pdf)
     - [Data Wrangling with tidyr and dplyr](http://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf)
