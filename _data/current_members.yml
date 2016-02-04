@@ -4,53 +4,55 @@
   pubs: "http://scholar.google.com/citations?user=Nc8U6E4AAAAJ"
   blog: "http://serialmentor.com/blog"
   github: clauswilke
-  
+
 - name: M. Umut Çağlar
   role: Postdoc
   joined: 2014
   pubs: "http://scholar.google.com/citations?user=bdtVzlcAAAAJ"
   github: umutcaglar
- 
+
 - name: Bart Smith
   role: Postdoc
   joined: 2016
   github: HelloImBart
- 
+
 - name: Ashley Teufel
   role: Postdoc
   joined: 2015
   pubs: "https://scholar.google.com/citations?user=QqyRBHIAAAAJ"
   github: a-teufel
- 
+
 - name: Dakota Derryberry
   role: Graduate Student (CMB)
   joined: 2010
   github: dakotaz
-  
+
 - name: Benjamin Jack
   role: Graduate Student (CMB)
   joined: 2015
+  url: "http://benjack.io"
+  pubs: "https://scholar.google.com/citations?user=b98WUfYAAAAJ"
   github: benjaminjack
 
 - name: Eleisha L. Jackson
   role: Graduate Student (EEB)
   joined: 2012
   github: elj299
-  
+
 - name: Stephanie J. Spielman
-  role: Graduate Student (EEB) 
+  role: Graduate Student (EEB)
   joined: 2011
   url: "http://sjspielman.org"
   pubs: "http://scholar.google.com/citations?user=6xAqQtIAAAAJ"
   github: sjspielman
-  
+
 - name: Dariya K. Sydykova
   role: Graduate Student (CMB)
   joined: 2015
   history: Undergraduate, 2012–2014
   pubs: "https://scholar.google.com/citations?user=D5G8bBAAAAAJ&hl=en"
-  github: dariyasydykova  
-  
+  github: dariyasydykova
+
 - name: Larry Clay
   role: Undergraduate
   joined: 2015
@@ -58,12 +60,11 @@
 - name: Jeff Du
   role: Undergraduate
   joined: 2014
-  
+
 - name: Walter Lenoir
   role: Undergraduate
   joined: 2015
-  
+
 - name: Alishah Momin
   role: Undergraduate
   joined: 2015
-
