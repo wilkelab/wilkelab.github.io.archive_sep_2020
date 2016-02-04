@@ -70,6 +70,7 @@ Syllabus: [SDS348_syllabus_spring2016.pdf](/classes/SDS348/SDS348_syllabus_sprin
 * In-class worksheet:
     - [R Markdown](/classes/SDS348/2016_spring/worksheets/class6.Rmd)
     - [HTML](/classes/SDS348/2016_spring/worksheets/class6.html)
+    - [Solutions](/classes/SDS348/2016_spring/worksheets/class6_solutions.html)
 
 
 **7. Feb 9, 2016 – Working with tidy data**    
