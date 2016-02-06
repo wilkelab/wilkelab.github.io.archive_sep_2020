@@ -75,7 +75,19 @@ Syllabus: [SDS348_syllabus_spring2016.pdf](/classes/SDS348/SDS348_syllabus_sprin
 
 **7. Feb 9, 2016 – Working with tidy data**    
 
+* Slides: [class7.pdf](/classes/SDS348/2016_spring/slides/class7.pdf)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2016_spring/worksheets/class7.Rmd)
+    - [HTML](/classes/SDS348/2016_spring/worksheets/class7.html)
+
 **8. Feb 11, 2016 – Rearranging data tables with tidyr**    
+
+* Slides: [class8.pdf](/classes/SDS348/2016_spring/slides/class8.pdf)
+* tidyr vignette: [http://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html](http://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2016_spring/worksheets/class8.Rmd)
+    - [HTML](/classes/SDS348/2016_spring/worksheets/class8.html)
+
 
 **9. Feb 16, 2016 – Principal Components Analysis (PCA)**    
 
