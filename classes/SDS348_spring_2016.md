@@ -195,3 +195,7 @@ All projects are due by 11:59pm on the day they are due. Projects need to be sub
     - [Data Wrangling with tidyr and dplyr](http://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf)
 
 **4. Feb. 10, 2016**
+
+* Lab worksheet:
+    - [R Markdown](/classes/SDS348/2016_spring/labs/lab4.Rmd)
+    - [HTML](/classes/SDS348/2016_spring/labs/lab4.html)
