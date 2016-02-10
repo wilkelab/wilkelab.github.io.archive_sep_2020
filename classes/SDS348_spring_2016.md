@@ -148,6 +148,7 @@ All homeworks are due by 11:59pm on the day they are due. Homeworks need to be s
     - [Solutions](/classes/SDS348/2016_spring/homeworks/HW2-solution.html)
 - Homework 3: [HW3.Rmd](/classes/SDS348/2016_spring/homeworks/HW3.Rmd) (due Feb 9, 2016)
     - This homework requires the *gapminder* package. Install it by running `install.packages('gapminder')` in the R console.
+    - [Solutions](/classes/SDS348/2016_spring/homeworks/HW3-solution.html)
 - Homework 4: [HW4.Rmd](/classes/SDS348/2016_spring/homeworks/HW4.Rmd) (due Feb 16, 2016)
 - Homework 5: (due Mar 1, 2016)
 - Homework 6: (due Mar 8, 2016)
@@ -200,3 +201,5 @@ All projects are due by 11:59pm on the day they are due. Projects need to be sub
 * Lab worksheet:
     - [R Markdown](/classes/SDS348/2016_spring/labs/lab4.Rmd)
     - [HTML](/classes/SDS348/2016_spring/labs/lab4.html)
+    - [Solutions, HTML](/classes/SDS348/2016_spring/labs/lab4-solution.html)
+* [Removing variables from local environment](/classes/SDS348/2016_spring/labs/remove_variables.html)
