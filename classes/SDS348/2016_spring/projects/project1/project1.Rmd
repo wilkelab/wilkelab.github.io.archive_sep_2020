@@ -1,0 +1,84 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=6, fig.width=6)
+library(ggplot2)
+theme_set(theme_bw(base_size=12))
+library(dplyr)
+library(tidyr)
+```
+
+##Project 1
+*Enter your name and EID here*
+
+###Instructions
+This knitted R Markdown document (as a PDF) *and* the raw R Markdown file (as .Rmd) should both be submitted to Canvas by 11:59pm on **Feb 23rd, 2015**. These two documents will be graded jointly, so they must be consistent (as in, don't change the R Markdown file without also updating the knitted document!).
+
+All results presented *must* have corresponding code. **Any answers/results given without the corresponding R code that generated the result will be considered absent.** To be clear: if you do calculations by hand instead of using R and then report the results from the calculations, **you will not receive credit** for those calculations. All code reported in your final project document should work properly. Please do not include any extraneous code or code which produces error messages. (Code which produces warnings is acceptable, as long as you understand what the warnings mean.)
+
+For this project, you will be using the gapminder data set. You should be familiar with the gapminder data set from Homework 3.
+```{r}
+library(gapminder)
+head(gapminder)
+```
+This data set contains life expectancies, population counts, and GDP per capita for 192 countries. Data are provided in five-year increments from 1952 to 2007. These data were compiled by the Gapminder non-profit organization as part of the Ignorance Project. You can learn more about the Ignorance Project [here](http://www.gapminder.org/ignorance/).
+
+
+###Questions
+
+**Question 1: (5 pts)**
+Is this data set tidy? Explain why or why not. If you conclude that the data set is not tidy, suggest a different way to represent this data set which *would* be tidy.
+
+*Discussion goes here. Four or fewer sentences.*
+
+
+**Question 2: (25 pts)**
+Select a year between 1952 and 2007 (remember that the gapminder data set only has data in five-year increments). In the year that you chose, group all countries in the data set into quartiles (i.e. four evenly-sized groups) based on population size.  Again, *in just the year that you chose*, compute a Pearson correlation coefficient between life exptectancy and GDP per capita *for each quartile*. Display your data-frame with the correlation coefficients *and p-values* below.
+
+**HINTS:** You can break data into quartiles using the function `ntile()` provided by the dplyr package. You can calculate Pearson correlation coefficients and p-values using the function `cor.test()`. 
+
+```{r}
+# R code goes here
+```
+
+Are these correlations statistically significant? What conclusions, if any, can you draw from your analyses?
+
+*Discussion goes here. Four or fewer sentences.*
+
+**Question 3: (40 pts)**
+
+   **a. (30 points)** Use the ggplot2 library to create a plot displaying life expectancy over time for **three** countries of your choice. Your plot should display the points for each country in different colors, and the size of your points should reflect GDP per capita. Your code should be well-commented and describe the various steps you take to create this figure. 
+
+
+```{r}
+# R code goes here
+```
+
+
+  **b. (10 points)** Discuss the information (overarching trends, patterns, etc.) your final plot reveals. Be sure to include in your discussion the similarities/differences among countries and a clear, logical justification for why you selected the particular geom(s) used to represent this data. Please limit your full response to a maximum of 6 sentences.
+  
+  *Discussion goes here.*
+
+
+**Question 4: (30 pts)**
+Think of **two** (and only two!) questions to ask about the gapminder data set. Clearly state each question in the spaces provided. For each question, use the ggplot2 library to create a plot that can help you find an answer to the question. For each plot, provide a clear explanation as to why this type of plot (e.g. boxplot, barplot, histogram, etc.) is best for providing the information you are asking about. Answer your questions by interpreting your plot and any trends it reveals, or does not reveal, as the case may be. Your two plots *must* use different primary geoms. Please limit the discussion for each question-plot pair to 4-6 sentences.
+
+**Question 1**
+
+*State your first question here.*
+
+```{r}
+# R code for plot 1 creation, analysis goes here
+```
+
+*Answer to question 1 goes here.*
+
+**Question 2**
+
+*State your second question here.*
+
+```{r}
+# R code for plot 2 creation, analysis goes here
+```
+
+*Answer to question 2 goes here.*
+

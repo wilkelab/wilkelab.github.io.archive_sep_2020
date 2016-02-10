@@ -1,0 +1,86 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=3, fig.width=4)
+library(ggplot2)
+theme_set(theme_bw(base_size=12))
+library(dplyr)
+library(tidyr)
+```
+##Homework 4
+*Enter your name and EID here*
+
+**This homework is due on Feb. 16, 2016 at 11:59pm. Please submit as a PDF file on Canvas.**
+
+**Question 1: (4 pts)** *Recall the `HairEyeColor` data set from an earlier in-class exercise. This data set contains counts of males and females with different combinations of hair and eye color.*
+
+```{r}
+HairEyeColor
+```
+
+*I have split the data set into two data-frames, one `male` and one `female`. Using the `dplyr` and `tidyr` packages, make these data-frames tidy and then combine them into a single data-frame. Make sure that your final data-frame has a `sex` column indicating which data-frame the observations originally came from. **HINT**: You can use the `bind_rows` function to add rows from one data-frame onto another as long as both data-frames have identical column names.* 
+
+```{r}
+male <- read.table(text="
+Hair    Brown Blue Hazel Green
+  Black    32   11    10     3
+  Brown    53   50    25    15
+  Red      10   10     7     7
+  Blond     3   30     5     8
+", head=T)
+
+female <- read.table(text="
+Hair    Brown Blue Hazel Green
+  Black    36    9     5     2
+  Brown    66   34    29    14
+  Red      16    7     7     7
+  Blond     4   64     5     8
+", head=T)
+
+# R code goes here.
+
+```
+
+*Using the data-frame you created above, compute the total counts for each sex (i.e., the sum of the counts for each sex).*
+
+```{r}
+
+# R code goes here.
+
+```
+
+**Question 2: (3 pts)** *Recall that the `InsectSprays` data-set contains information about the effectiveness of different insecticides. The different insecticides are labeled A through F in the `spray` column. I have created a new data-frame (`spray_names`), that contains the full names of each insecticide. Using one of the `dplyr` join functions, combine the two data-frames so that there is an additional `full_name` column and all of the original columns and rows in `InsectSprays` are retained. Which join function is most appropriate to use and why?*
+
+```{r}
+head(InsectSprays)
+
+spray_names <- read.table(text="
+spray full_name
+A Brigade
+B Dimilin
+C Movento
+D Synapse
+E Timectin
+F Tombstone
+", head=T)
+
+# R code goes here.
+
+```
+
+Discussion goes here. 1-2 sentences.
+
+**Question 3: (3 pts)** *Make up your own data set which is **not** tidy. First, explain why it is not tidy. Then, using `dplyr` and/or `tidyr`, convert it into a tidy data set.*
+
+```{r}
+
+# Your data set goes here.
+
+```
+
+Explain why your data set is not tidy here. 2-3 sentences.
+
+```{r}
+
+# R code to make your data set tidy goes here.
+
+```
