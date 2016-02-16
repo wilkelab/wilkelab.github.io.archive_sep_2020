@@ -1,0 +1,108 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=3, fig.width=4)
+set.seed(456) # make document knit the same every time
+```
+##In-class worksheet 10
+**Feb 18, 2016**
+
+In this worksheet, we will use the libraries ggplot2, and dplyr:
+```{r message=FALSE}
+library(ggplot2)
+theme_set(theme_bw(base_size=12)) # set default ggplot2 theme
+library(dplyr)
+```
+
+
+# 1. k-means clustering of the iris data set
+
+We can do k-means clustering in R using the function `kmeans()`. The primary argument to this function is `centers`, which tells the function how many cluster centers we want to use:
+```{r}
+iris %>% select(-Species) %>% # remove Species column
+  kmeans(centers=3) ->        # do k-means clustering with 3 centers
+  km                          # store result as `km`
+
+# now display the results from the analysis
+km
+```
+The cluster means give us the locations of the centroids of the three clusters. We can access them directly via `km$centers`:
+```{r}
+km$centers
+```
+
+The clustering vector tells us for each data point to which cluster it belongs. We can access this vector directly via `km$cluster`:
+```{r}
+km$cluster
+```
+
+We can add this vector to the iris data frame and then plot, coloring by cluster and using different symbol shapes according to species, for comparison:
+```{r}
+# we use `factor(km$cluster)` to tell R that the cluster numbers represent distinct categories,
+# not continuous values 
+iris_clustered <- data.frame(iris, cluster=factor(km$cluster))
+ggplot(iris_clustered, aes(x=Petal.Width, y=Sepal.Width, color=cluster, shape=Species)) + geom_point()
+```
+Let's do everything once more:
+```{r}
+iris %>% select(-Species) %>% kmeans(centers=3) -> km
+iris_clustered <- data.frame(iris, cluster=factor(km$cluster))
+ggplot(iris_clustered, aes(x=Petal.Width, y=Sepal.Width, color=cluster, shape=Species)) + geom_point()
+```
+You see that the results do not look the same. This happens because the k-means algorithm uses a random starting point. To make the results less random, we can set the parameter `nstart` to a value other than 1, e.g. `nstart=10`:
+```{r}
+iris %>% select(-Species) %>% kmeans(centers=3, nstart=10) -> km
+iris_clustered <- data.frame(iris, cluster=factor(km$cluster))
+ggplot(iris_clustered, aes(x=Petal.Width, y=Sepal.Width, color=cluster, shape=Species)) + geom_point()
+```
+
+To determine the best number of clusters in a systematic way, we can plot the within-groups sum of squares against the number of clusters and look for a characteristic slowdown in the decline:
+```{r}
+iris_numeric <- select(iris, -Species) # make a data table with only the numeric measurements from iris
+wss <- (nrow(iris_numeric)-1)*sum(apply(iris_numeric,2,var))
+  for (i in 2:15) wss[i] <- sum(kmeans(iris_numeric,
+                                       nstart=10,
+                                       centers=i)$withinss)
+wss_data <- data.frame( centers=1:15, wss)
+ggplot(wss_data, aes(x=centers, y=wss)) + geom_point() + geom_line() +
+  xlab("Number of Clusters") + ylab("Within groups sum of squares")
+```
+We see that around 3 clusters, the decline slows down a lot. We would then choose 3 or 4 clusters for this data set.
+
+For more information about choosing the number of clusters, read [this post](http://stackoverflow.com/a/15376462/4975218) on stackoverflow.com.
+
+
+# 2. Clustering the biopsy data set
+
+Take the `biopsy` data set, cluster it into 2, 3, or 4 clusters, and display the clusters in principal-component space. (In other words, plot PC2 vs PC1 and color by cluster. You can set the plotting symbol by outcome, to see how clustering compares with known outcomes.)
+```{r}
+# load in the biopsy data set
+biopsy <- read.csv("http://wilkelab.org/classes/SDS348/data_sets/biopsy.csv")
+head(biopsy)
+# do PCA on biopsy data set
+biopsy %>% select(-outcome) %>% scale() %>% prcomp() -> pca
+```
+
+Hint: To create the plot, you will have to make a new data frame out of the pca coordinates (`pca$x`) and the clustering results (`km$cluster`).
+```{r}
+# your R code goes here
+```
+
+# 3. If this was easy
+
+For the `biopsy` dataset, plot the within-group sum of squares against the number of clusters, to determine the appropriate number of clusters.
+```{r}
+# your R code goes here
+```
+
+
+Now, go back to the original clustering of the `iris` data set, with 3 clusters:
+```{r}
+iris %>% select(-Species) %>% kmeans(centers=3, nstart=10) -> km
+iris_clustered <- data.frame(iris, cluster=factor(km$cluster))
+ggplot(iris_clustered, aes(x=Petal.Width, y=Sepal.Width, color=cluster, shape=Species)) + geom_point()
+```
+Take this plot and add to it the location of the centroids for each cluster, plotted as large, colored circles with a black outline.
+
+```{r}
+# your R code goes here
+```

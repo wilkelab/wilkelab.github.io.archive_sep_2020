@@ -103,6 +103,14 @@ Syllabus: [SDS348_syllabus_spring2016.pdf](/classes/SDS348/SDS348_syllabus_sprin
 
 **10. Feb 18, 2016 – k-means clustering**
 
+* Slides: [class10.pdf](/classes/SDS348/2016_spring/slides/class10.pdf)
+* Interactive k-means demonstration: [http://www.naftaliharris.com/blog/visualizing-k-means-clustering/](http://www.naftaliharris.com/blog/visualizing-k-means-clustering/)
+* Stackoverflow post on [choosing the right number of clusters](http://stackoverflow.com/a/15376462/4975218)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2016_spring/worksheets/class10.Rmd)
+    - [HTML](/classes/SDS348/2016_spring/worksheets/class10.html)
+
+
 **11. Feb 23, 2016 – Binary prediction/logistic regression**
 
 **12. Feb 25, 2016 – Guest lecture: Epidemiology**
