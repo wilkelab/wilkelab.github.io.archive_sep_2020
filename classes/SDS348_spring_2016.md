@@ -187,6 +187,7 @@ All homeworks are due by 11:59pm on the day they are due. Homeworks need to be s
 All projects are due by 11:59pm on the day they are due. Projects need to be submitted on Canvas, both in pdf format and as source code (plus data where needed).
 
 - Project 1: [project1.Rmd](/classes/SDS348/2016_spring/projects/project1/project1.Rmd) (due Feb 23, 2016)
+    - Hints: [Quantiles and Correlations with dplyr](/classes/SDS348/2016_spring/projects/project1/project1_hints.html)
 - Project 2: (due Mar 29, 2016)
 - Project 3: (due May 5, 2016)
 
@@ -227,3 +228,9 @@ All projects are due by 11:59pm on the day they are due. Projects need to be sub
     - [HTML](/classes/SDS348/2016_spring/labs/lab4.html)
     - [Solutions, HTML](/classes/SDS348/2016_spring/labs/lab4-solution.html)
 * [Removing variables from local environment](/classes/SDS348/2016_spring/labs/remove_variables.html)
+
+**5. Feb. 17, 2016**
+
+* Lab worksheet:
+    - [R Markdown](/classes/SDS348/2016_spring/labs/lab5.Rmd)
+    - [HTML](/classes/SDS348/2016_spring/labs/lab5.html)

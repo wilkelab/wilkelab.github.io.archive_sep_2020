@@ -1,0 +1,66 @@
+```{r setup, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=6, fig.width=6)
+library(dplyr)
+```
+
+## Quantiles and Correlations with dplyr
+
+### Dividing a data-frame into quantiles with `ntile()`
+
+The dplyr function `ntile()` divides a data-frame into `n` evenly-sized groups. It takes two arguments: a column name with which to rank the data, and the number of groups that the data should be split into. As an example, we will split the iris data-frame into 5 groups based on `Petal.Length`:
+
+```{r}
+head(iris)
+# Divide iris data-frame into 5 evenly sized groups based on Petal.Length
+iris %>% mutate(quintile = ntile(Petal.Length, 5)) -> iris_five
+head(iris_five)
+```
+
+Each row has been assigned a group that is stored in the column `quintile`. **At this point, we have only added a variable (`quintile`), but we have not yet "grouped" the data-frame.** To use other dplyr functions such as `summarize()` and `mutate()` with the newly-created quintiles, we must explicitly group the data-frame using `group_by()`. We will now group the data by the `quintile` column, and then compute the mean Sepal.Length and mean Sepal.Width for each quintile.
+
+```{r}
+iris_five %>% group_by(quintile) %>% # Group by quintile
+  summarize(mean_sepal_length = mean(Sepal.Length), mean_sepal_width = mean(Sepal.Width), count = n()) %>%
+  head()
+```
+
+After splitting `iris` into 5 groups, each row now corresponds to a quintile. As you can see from the `count` column, each group contains an equal number of observations.
+
+### Extracting p-values and correlation coefficients from `cor.test()`
+
+When computing a Pearson correlation coefficient, it is often useful to also retrieve a p-value to determine if the correlation is significant. The base R function `cor.test()` can provide us with both a correlation coefficient and a p-value. We'll again use the `iris` data-frame as an example:
+
+```{r}
+head(iris)
+# Compute a correlation between Sepal.Length and Sepal.Width
+sepal_cor <- cor.test(iris$Sepal.Length, iris$Sepal.Width)
+sepal_cor
+```
+
+We are interested in both the correlation coefficient and the p-value. We can extract these values from `sepal.cor`:
+
+```{r}
+# The correlation coefficient is stored as 'estimate'
+sepal_cor$estimate
+
+# The p-value is stored as 'p.value'
+sepal_cor$p.value
+```
+
+We can take a shortcut and extract a correlation coefficient and p-value without storing any information in `sepal_cor`:
+
+```{r}
+cor.test(iris$Sepal.Length, iris$Sepal.Width)$estimate
+cor.test(iris$Sepal.Length, iris$Sepal.Width)$p.value
+```
+
+Lastly, `cor.test` will play nicely with dplyr's `summarize` function, as long as `cor.test` only returns a single value. Here's an example:
+
+```{r}
+# This calculates the correlation coefficient and the degrees of freedom
+iris %>% summarize(sepal_cor = cor.test(Sepal.Length, Sepal.Width)$estimate,
+                   sepal_df = cor.test(Sepal.Length, Sepal.Width)$parameter)
+```
+
+Note that *within* the `cor.test` function, I did not use any `$` symbols. Carefully compare the above code block with the code blocks preceding it. If you want `cor.test` (or any function that you use with `summarize`) to respect dplyr groupings, you must use **only** the column names by themselves. 
