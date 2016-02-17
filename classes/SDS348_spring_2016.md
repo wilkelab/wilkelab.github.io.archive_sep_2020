@@ -99,6 +99,7 @@ Syllabus: [SDS348_syllabus_spring2016.pdf](/classes/SDS348/SDS348_syllabus_sprin
 * In-class worksheet:
     - [R Markdown](/classes/SDS348/2016_spring/worksheets/class9.Rmd)
     - [HTML](/classes/SDS348/2016_spring/worksheets/class9.html)
+    - [Solutions](/classes/SDS348/2016_spring/worksheets/class9_solutions.html)
 
 
 **10. Feb 18, 2016 – k-means clustering**
@@ -112,6 +113,12 @@ Syllabus: [SDS348_syllabus_spring2016.pdf](/classes/SDS348/SDS348_syllabus_sprin
 
 
 **11. Feb 23, 2016 – Binary prediction/logistic regression**
+
+* Slides: [class11.pdf](/classes/SDS348/2016_spring/slides/class11.pdf)
+* Wikipedia page on logistic regression: [http://en.wikipedia.org/wiki/Logistic_regression](http://en.wikipedia.org/wiki/Logistic_regression)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2016_spring/worksheets/class11.Rmd)
+    - [HTML](/classes/SDS348/2016_spring/worksheets/class11.html)
 
 **12. Feb 25, 2016 – Guest lecture: Epidemiology**
 
