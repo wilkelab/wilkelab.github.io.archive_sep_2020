@@ -174,6 +174,7 @@ All homeworks are due by 11:59pm on the day they are due. Homeworks need to be s
     - This homework requires the *gapminder* package. Install it by running `install.packages('gapminder')` in the R console.
     - [Solutions](/classes/SDS348/2016_spring/homeworks/HW3-solution.html)
 - Homework 4: [HW4.Rmd](/classes/SDS348/2016_spring/homeworks/HW4.Rmd) (due Feb 16, 2016)
+    - [Solutions](/classes/SDS348/2016_spring/homeworks/HW4-solution.html)
 - Homework 5: (due Mar 1, 2016)
 - Homework 6: (due Mar 8, 2016)
 - Homework 7: (due Mar 22, 2016)
