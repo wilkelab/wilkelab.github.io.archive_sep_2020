@@ -19,21 +19,24 @@ Lab meetings are held Fridays from 10:30 am - 12:00 pm in MBB 3.204.
 |   2/5/16 || Bart   || Umut ||
 |  2/12/16 || Eleisha  || Bart  ||
 |  2/19/16 || Ashley  || Eleisha  ||  
-| 2/26/16  || Dariya  || Stephanie  ||
-| 3/4/16   || Stephanie  || Dariya ||
-|  3/11/16 || Dakota   || Matt   || 
+| 2/26/16  || ---  || ---  || Canceled, Claus out of town
+| 3/4/16   || Stephanie  & Umut || Both research, no literature
+|  3/11/16 || Dakota  & Dariya  || Both research, no literature
 | 3/18/16  || ---  || --- || Spring break
-| 3/25/16  || || Dakota || 
-|  4/1/16  ||   ||  ||
-| 4/8/16   ||   ||  ||
-| 4/15/16  ||   ||  || 
-| 4/22/16  ||   ||  || 
-| 4/29/16  ||   ||  || 
-| 5/15/16  ||   ||  ||
+| 3/25/16  || Ben || Dakota || 
+|  4/1/16  || Spencer  || Ben ||
+| 4/8/16   || ---  || --- || Canceled, Protein Folding Meeting
+| 4/15/16  || Ashley  || Spencer || 
+| 4/22/16  || Matt  || Ashley || 
+| 4/29/16  || Qian  || Matt || 
+| 5/6/16  || Bart  || ??? ||
+| 5/13/16  || Umut  || Bart ||
+| 5/20/16  ||   || Umut ||
+| 5/27/16  ||   ||  ||
 |------+---+--------------------+---+----------------------+---+-------|
 {:.widetable}
  
- 
+  
  <br><br>
 
 ### Fall 2015
