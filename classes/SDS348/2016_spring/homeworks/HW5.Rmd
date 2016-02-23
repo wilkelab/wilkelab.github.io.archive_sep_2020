@@ -1,0 +1,48 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=4, fig.width=6)
+library(ggplot2)
+theme_set(theme_bw(base_size=12))
+library(dplyr)
+```
+##Homework 5
+*Enter your name and EID here*
+
+**This homework is due on Mar. 1, 2016 at 11:59pm. Please submit as a PDF file on Canvas.**
+
+*For this homework you will use the `wine` data set. The `wine` data set contains concentrations of 13 different chemical compounds (`chem1`-`chem13`) in 178 samples of wines grown in Italy. Each row is a different sample of wine, and the data set contains three different cultivars (`cultivar`) of wine.*
+
+```{r}
+wine <- read.csv("http://wilkelab.org/classes/SDS348/data_sets/wine.csv", colClasses = c("cultivar" = "factor"))
+head(wine)
+```
+
+**Question 1 (3 pts):** *Perform a principal components analysis (PCA). Since the chemical concentrations may span several orders of magnitude across different compounds, be sure to **scale** the data (using `scale`) before doing PCA. Create a scatterplot of PC1 vs. PC2 and color each point by cultivar. What do you observe? Visually, and without doing any calculations, do the cultivars cluster together in principal-component space?*
+
+```{r}
+
+# R code goes here.
+
+```
+
+*Discussion goes here. 1-2 sentences.*
+
+**Question 2 (4 pts):** *Now take your matrix of **principal components coordinates** (not the raw chemical concentration data!) from Question 1 above and cluster the wines into 3 groups (`centers=3`) using k-means clustering with 10 random starts (`nstart=10`). Create a scatterplot of PC1 vs. PC2. This time, color each point by **cluster** and set the plotting symbol by **cultivar**. What do you observe?*
+
+```{r}
+
+# R code goes here.
+
+```
+
+*Discussion goes here. 1-2 sentences.*
+
+**Question 3 (3 pts):** *Create a bar plot that shows the percent variance explained by each principal component. State how much variance is explained by each of the principal components 1 through 4.*
+
+```{r}
+
+# R code goes here
+
+```
+
+*Discussion goes here. 1-2 sentences.*
