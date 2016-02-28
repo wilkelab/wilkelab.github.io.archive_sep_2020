@@ -1,0 +1,99 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=3, fig.width=4)
+```
+##In-class worksheet 13
+**March 1, 2016**
+
+In this worksheet, we will use the libraries ggplot2 and dplyr:
+```{r message=FALSE}
+library(ggplot2)
+theme_set(theme_bw(base_size=12)) # set default ggplot2 theme
+library(dplyr)
+```
+
+# 1. True positive and true negative rates
+
+We continue working with the two species virginica and versicolor from the `iris` data set. As was done in the previous class, the following code makes a reduced data set, fits a logistic regression model (this time using only `Sepal.Length` as predictor), and then combines the predicted probabilities and the known species identity into one data frame called `pred_data`:
+```{r}
+# make a reduced iris data set that only contains virginica and versicolor species
+iris.small <- filter(iris, Species %in% c("virginica", "versicolor"))
+# fit logistic regression model
+glm.out <- glm(Species ~ Sepal.Length,
+               data = iris.small,
+               family = binomial)
+# combine fitted values and Species identity
+pred_data <- data.frame(probability=glm.out$fitted.values, Species=iris.small$Species)
+```
+
+Pick a probability cutoff at which you would decide that a specimen belongs to virginica rather than versicolor. Calculate how many virginicas you call correctly and how many incorrectly given that cutoff. Hint: use the functions `filter()` and `tally()`.
+```{r}
+# your R code goes here.
+```
+
+Now do the same calculation for versicolor.
+```{r}
+# your R code goes here.
+```
+
+If we define a call of virginica as a positive and a call of versicolor as a negative, what are the true positive rate (sensitivity, true positives divided by all possible positives, i.e., by the total count of virginicas) and the true negative rate (specificity, true negatives divided by all possible negatives, i.e., by the total count of versicolors) in your analysis?
+```{r}
+# your R code goes here.
+```
+
+Recalculate the true-positive rate and the true-negative rate for a different probability cutoff.
+```{r}
+# your R code goes here.
+```
+
+# 2. ROC curves
+
+The following function calculates a ROC curve from predicted probabilities and the known truth. This function uses some R features we have not yet discussed in this class. Don't worry if you don't understand how it works. Below you will learn how to use this function to generate ROC curves from your fitted model.
+```{r}
+calc_ROC <- function(probabilities, known_truth, model.name=NULL)
+  {
+  outcome <- as.numeric(factor(known_truth))-1
+  pos <- sum(outcome) # total known positives
+  neg <- sum(1-outcome) # total known negatives
+  pos_probs <- outcome*probabilities # probabilities for known positives
+  neg_probs <- (1-outcome)*probabilities # probabilities for known negatives
+  true_pos <- sapply(probabilities,
+                     function(x) sum(pos_probs>=x)/pos) # true pos. rate
+  false_pos <- sapply(probabilities,
+                     function(x) sum(neg_probs>=x)/neg)
+  if (is.null(model.name))
+    result <- data.frame(true_pos, false_pos)
+  else
+    result <- data.frame(true_pos, false_pos, model.name)
+  result %>% arrange(false_pos, true_pos)
+  }
+```
+
+Example of how to use the `calc_ROC()` function:
+```{r}
+glm.out <- glm(Species ~ Petal.Width,
+               data = iris.small,
+               family = binomial)
+ROC1 <- calc_ROC(probabilities=glm.out$fitted.values, # predicted probabilities
+                 known_truth=iris.small$Species,      # the known truth, i.e., true species assignment
+                 model.name="Petal.Width")            # an arbitrary name to distinguish different ROC curves
+head(ROC1)
+```
+
+Now make a few additional models, calculate ROC curves for them, and then make a plot showing the various ROC curves in one graph.
+```{r fig.width=5}
+# your R code goes here.
+```
+
+
+# 3. If this was easy
+
+Calculate the area under the ROC curve (AUC) for your first model (stored previously in the variable `ROC1`). (Hint: the function `lag()` makes this calculation very easy.)
+```{r}
+# your R code goes here.
+```
+
+Now combine all ROCs from before into one big table, calculate the AUC for all of them, and arrange in descending order. Hint: you can combine separate data frames with the function `rbind()`. (The `r` in `rbind` stands for rows and indicates that we want to combine data frames by rows.)
+```{r}
+# your R code goes here.
+```

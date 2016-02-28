@@ -128,7 +128,21 @@ Guest lecture by Steve Bellan
 
 **13. Mar 1, 2016 – Sensitivity/Specificity, ROC curves**
 
+* Slides: [class13.pdf](/classes/SDS348/2016_spring/slides/class13.pdf)
+* Wikipedia page on sensitivity and specificity: [http://en.wikipedia.org/wiki/Sensitivity_and_specificity](http://en.wikipedia.org/wiki/Sensitivity_and_specificity)
+* Wikipedia page on ROC curves: [http://en.wikipedia.org/wiki/Receiver_operating_characteristic](http://en.wikipedia.org/wiki/Receiver_operating_characteristic)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2016_spring/worksheets/class13.Rmd)
+    - [HTML](/classes/SDS348/2016_spring/worksheets/class13.html)
+
 **14. Mar 3, 2016 – Training and test data sets, cross-validation**
+
+* Slides: [class14.pdf](/classes/SDS348/2016_spring/slides/class14.pdf)
+* Wikipedia page on cross-validation: [here](http://en.wikipedia.org/wiki/Cross-validation_%28statistics%29)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2016_spring/worksheets/class14.Rmd)
+    - [HTML](/classes/SDS348/2016_spring/worksheets/class14.html)
+
 
 **15. Mar 8, 2016 – Installing and running python**
 
