@@ -134,6 +134,7 @@ Guest lecture by Steve Bellan
 * In-class worksheet:
     - [R Markdown](/classes/SDS348/2016_spring/worksheets/class13.Rmd)
     - [HTML](/classes/SDS348/2016_spring/worksheets/class13.html)
+    - [Solutions](/classes/SDS348/2016_spring/worksheets/class13_solutions.html)
 
 **14. Mar 3, 2016 – Training and test data sets, cross-validation**
 
