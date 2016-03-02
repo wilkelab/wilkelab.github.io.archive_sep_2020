@@ -206,6 +206,7 @@ All projects are due by 11:59pm on the day they are due. Projects need to be sub
 
 - Project 1: [project1.Rmd](/classes/SDS348/2016_spring/projects/project1/project1.Rmd) (due Feb 23, 2016)
     - Hints: [Quantiles and correlations with dplyr](/classes/SDS348/2016_spring/projects/project1/project1_hints.html)
+    - [Solutions, HTML](/classes/SDS348/2016_spring/projects/project1/project1_solution.html)
 - Project 2: (due Mar 29, 2016)
 - Project 3: (due May 5, 2016)
 
