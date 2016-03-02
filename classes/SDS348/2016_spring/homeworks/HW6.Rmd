@@ -1,0 +1,90 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=4, fig.width=6)
+library(ggplot2)
+theme_set(theme_bw(base_size=12))
+library(dplyr)
+```
+##Homework 6
+*Enter your name and EID here*
+
+**This homework is due on Mar. 8, 2016 at 11:59pm. Please submit as a PDF file on Canvas.**
+
+*For this homework you will use the `wine` data set from the previous homework. For this homework, however, we have removed samples from cultivar 3. The `wine` data set contains concentrations of 13 different chemical compounds (`chem1`-`chem13`) in 130 samples of wines grown in Italy. Each row is a different sample of wine, and the data set now contains just two different cultivars (`cultivar`) of wine.*
+
+```{r}
+wine <- read.csv("http://wilkelab.org/classes/SDS348/data_sets/wine.csv", colClasses = c("cultivar" = "factor")) %>% filter(cultivar != 3)
+head(wine)
+```
+
+###Problem 1 
+  
+**A. (1 pt)** *Make a logistic regression model that predicts the cultivar from the concentrations of **three chemical compounds of your choosing** (not all of them!) in the `wine` data set. Show the summary (using `summary`) of your model below.* 
+
+I choose...
+
+```{r}
+
+# R code goes here
+
+```
+
+**B. (1 pt)** *Make a plot of the fitted probability as a function of the linear predictor, colored by cultivar.*
+
+```{r}
+
+# R code goes here
+
+```
+
+**C. (3 pts)** *Choose a probability cut-off for classifying a given sample of wine as cultivar 1 or cultivar 2. State the cut-off that you chose. Calculate the **true positive rate** and **false positive rate** and interpret these rates in the context of the `wine` data set. Your answer should mention something about cultivars and the three chemical compounds you chose in part A.*
+
+I choose a cut-off of...
+
+```{r}
+
+# R code goes here
+
+```
+
+Discussion goes here. 2-3 sentences.
+
+###Problem 2
+
+**A (1pt).** *Using the `roc_curve` function below (which we also used in class), plot an ROC curve for the model that you created in Problem 1A. Does the model perform better than a model in which you randomly classify a wine sample as cultivar 1 or cultivar 2? Explain your answer in 1-2 sentences.*
+
+```{r}
+calc_ROC <- function(probabilities, known_truth, model.name=NULL)
+  {
+  outcome <- as.numeric(factor(known_truth))-1
+  pos <- sum(outcome) # total known positives
+  neg <- sum(1-outcome) # total known negatives
+  pos_probs <- outcome*probabilities # probabilities for known positives
+  neg_probs <- (1-outcome)*probabilities # probabilities for known negatives
+  true_pos <- sapply(probabilities,
+                     function(x) sum(pos_probs>=x)/pos) # true pos. rate
+  false_pos <- sapply(probabilities,
+                     function(x) sum(neg_probs>=x)/neg)
+  if (is.null(model.name))
+    result <- data.frame(true_pos, false_pos)
+  else
+    result <- data.frame(true_pos, false_pos, model.name)
+  result %>% arrange(false_pos, true_pos)
+  }
+
+# R code goes here
+```
+
+Discussion goes here. 2-3 sentences.
+
+**B. (4 pts)** *Choose a new set of predictor variables (different from the variables that you chose in Problem 1A), and create a logistic regression model. Plot an ROC curve for your newly-created model and, on the same plot, add an ROC curve from your model in Problem 1A. What can you conclude from your plot? Which model performs better and why? Support your conclusions **with AUC values for each model**.*
+
+I choose...
+
+```{r}
+
+# R code goes here.
+
+```
+
+Discussion goes here. 2-3 sentences.
