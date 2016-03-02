@@ -348,7 +348,7 @@ true_pos_rate</code></pre>
 <pre><code>## [1] 0.875</code></pre>
 <pre class="r"><code>true_neg_rate</code></pre>
 <pre><code>## [1] 0.625</code></pre>
-<p>The true positive rate is 87.5% and the true negative rate is is 62.5%. Thus, the model from Problem 1A correctly identifies 87.5% of birds that survived, and 62.5% of birds that did not survive.</p>
+<p>The true positive rate is 87.5% and the true negative rate is is 62.5%. Thus, the model from Problem 1 correctly identifies 87.5% of birds that survived, and 62.5% of birds that did not survive.</p>
 <p><strong>Problem 3:</strong> <em>Make ROC curves for the complete model (using all predictors) and the final, selected model (using only predictors with P&lt;0.1) from Question 1 and plot them jointly in one figure. Use the function <code>calc_ROC()</code> given below. How do the two ROC curves differ?</em></p>
 <pre class="r"><code>calc_ROC &lt;- function(probabilities, known_truth, model.name=NULL)
   {
