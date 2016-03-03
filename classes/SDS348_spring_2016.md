@@ -194,7 +194,8 @@ All homeworks are due by 11:59pm on the day they are due. Homeworks need to be s
 - Homework 4: [HW4.Rmd](/classes/SDS348/2016_spring/homeworks/HW4.Rmd) (due Feb 16, 2016)
     - [Solutions](/classes/SDS348/2016_spring/homeworks/HW4-solution.html)
 - Homework 5: [HW5.Rmd](/classes/SDS348/2016_spring/homeworks/HW5.Rmd) (due Mar 1, 2016)
-- Homework 6: (due Mar 8, 2016)
+    - [Solutions](/classes/SDS348/2016_spring/homeworks/HW5-solution.html)
+- Homework 6: [HW6.Rmd](/classes/SDS348/2016_spring/homeworks/HW6.Rmd) (due Mar 8, 2016)
 - Homework 7: (due Mar 22, 2016)
 - Homework 8: (due Apr 5, 2016)
 - Homework 9: (due Apr 12, 2016)
@@ -262,3 +263,10 @@ All projects are due by 11:59pm on the day they are due. Projects need to be sub
     - [R Markdown](/classes/SDS348/2016_spring/labs/lab6.Rmd)
     - [HTML](/classes/SDS348/2016_spring/labs/lab6.html)
     - [Solutions, HTML](/classes/SDS348/2016_spring/labs/lab6-solution.html)
+
+**7. Mar. 2, 2016**
+
+* Lab worksheet:
+    - [R Markdown](/classes/SDS348/2016_spring/labs/lab7.Rmd)
+    - [HTML](/classes/SDS348/2016_spring/labs/lab7.html)
+    - [Solutions, HTML](/classes/SDS348/2016_spring/labs/lab7-solution.html)
