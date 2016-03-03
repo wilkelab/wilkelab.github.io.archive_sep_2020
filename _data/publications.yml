@@ -50,7 +50,7 @@
   
 - author: S. J. Spielman, C. O. Wilke
   year: 2015
-  title: A flexible Python module for simulating sequences along phylogenies.
+  title: "Pyvolve: A flexible flexible Python module for simulating sequences along phylogenies."
   ref: "PLOS ONE 10:e0139047"
   doi: 10.1371/journal.pone.0139047
   pmcid: PMC4580465 

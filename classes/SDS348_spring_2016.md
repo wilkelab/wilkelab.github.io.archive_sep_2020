@@ -143,6 +143,7 @@ Guest lecture by Steve Bellan
 * In-class worksheet:
     - [R Markdown](/classes/SDS348/2016_spring/worksheets/class14.Rmd)
     - [HTML](/classes/SDS348/2016_spring/worksheets/class14.html)
+    - [Solutions](/classes/SDS348/2016_spring/worksheets/class14_solutions.html)
 
 
 **15. Mar 8, 2016 – Installing and running python**
