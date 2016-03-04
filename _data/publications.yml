@@ -11,10 +11,14 @@
   doi: 10.1101/032805
   
 - author: A. Shahmoradi, C. O. Wilke
-  year: preprint
+  year: 2016
   title: Dissecting the roles of local packing density and longer-range effects in protein sequence evolution.
-  ref: "bioRxiv"
-  doi: 10.1101/023499
+  ref: "PROTEINS: Structure, Function, and Bioinformatics, in press"
+  
+- author: E. L. Jackson, A. Shahmoradi, S. J. Spielman, B. R. Jack, C. O. Wilke
+  year: 2016
+  title: Intermediate divergence levels maximize the strength of structure–sequence correlations in enzymes and viral proteins.
+  ref: "Protein Science, in press"
   
 - author: J. Echave, S. J. Spielman, C. O. Wilke
   year: 2016
