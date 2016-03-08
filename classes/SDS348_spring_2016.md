@@ -155,6 +155,7 @@ Guest lecture by Steve Bellan
 * In-class worksheet:
     - [IPython Notebook](/classes/SDS348/2016_spring/worksheets/class15.ipynb)
     - [HTML](/classes/SDS348/2016_spring/worksheets/class15.html)
+    - [Solutions](/classes/SDS348/2016_spring/worksheets/class15_solutions.html)
 
 **16. Mar 10, 2016 – Control flow in python**
 
