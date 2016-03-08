@@ -146,13 +146,21 @@ Guest lecture by Steve Bellan
     - [Solutions](/classes/SDS348/2016_spring/worksheets/class14_solutions.html)
 
 
-**15. Mar 8, 2016 – Installing and running python**
+**15. Mar 8, 2016 – Installing and running python, basic data structures**
 
-**16. Mar 10, 2016 – Data structures in python**
+* Slides: [class15.pdf](/classes/SDS348/2016_spring/slides/class15.pdf)
+* Download the Anaconda Python distribution from here: [https://www.continuum.io/downloads](https://www.continuum.io/downloads)
+* Official Python3 tutorial: [https://docs.python.org/3/tutorial/](https://docs.python.org/3/tutorial/)
+* An informal introduction: [Chapter 3 of official tutorial](https://docs.python.org/3/tutorial/introduction.html)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2016_spring/worksheets/class15.ipynb)
+    - [HTML](/classes/SDS348/2016_spring/worksheets/class15.html)
 
-**17. Mar 22, 2016 – Control flow (if/for) in python**
+**16. Mar 10, 2016 – Control flow in python**
 
-**18. Mar 24, 2016 – Functions in python**
+**17. Mar 22, 2016 – Functions in python**
+
+**18. Mar 24, 2016 – More on python data structures**
 
 **19. Mar 29, 2016 – Working with files**
 
