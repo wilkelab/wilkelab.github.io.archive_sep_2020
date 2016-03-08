@@ -28,13 +28,13 @@ We have already subdivided the full data set into training and test data sets (`
 ```{r}
 ##### Use these datasets for part 1 (described below) #####
 # Dataset to use specifically for training in Part 1
-pima_training <- read.csv("pima_training.csv")
+pima_training <- read.csv("http://wilkelab.org/classes/SDS348/2016_spring/projects/project2/pima_training.csv")
 # Dataset to use specifically for testing your model in Part 1
-pima_test <- read.csv("pima_test.csv")
+pima_test <- read.csv("http://wilkelab.org/classes/SDS348/2016_spring/projects/project2/pima_test.csv")
 
 ##### Use this dataset for part 2 (described below) #####
 # Complete Pima data, with a single observation per individual
-pima_full <- read.csv("pima.csv")
+pima_full <- read.csv("http://wilkelab.org/classes/SDS348/2016_spring/projects/project2/pima.csv")
 
 head(pima_full)
 ```
