@@ -153,7 +153,7 @@ Guest lecture by Steve Bellan
 * Official Python3 tutorial: [https://docs.python.org/3/tutorial/](https://docs.python.org/3/tutorial/)
 * An informal introduction: [Chapter 3 of official tutorial](https://docs.python.org/3/tutorial/introduction.html)
 * In-class worksheet:
-    - [R Markdown](/classes/SDS348/2016_spring/worksheets/class15.ipynb)
+    - [IPython Notebook](/classes/SDS348/2016_spring/worksheets/class15.ipynb)
     - [HTML](/classes/SDS348/2016_spring/worksheets/class15.html)
 
 **16. Mar 10, 2016 – Control flow in python**
