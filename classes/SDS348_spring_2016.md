@@ -288,5 +288,5 @@ All projects are due by 11:59pm on the day they are due. Projects need to be sub
 
 * A free Python book: [Think Python: How to Think Like a Computer Scientist](http://greenteapress.com/wp/think-python-2e/)
 * Lab worksheet:
-    - [R Markdown](/classes/SDS348/2016_spring/labs/lab8.ipynb)
+    - [IPython Notebook](/classes/SDS348/2016_spring/labs/lab8.ipynb)
     - [HTML](/classes/SDS348/2016_spring/labs/lab8.html)
