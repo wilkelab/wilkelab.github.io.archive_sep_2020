@@ -151,13 +151,20 @@ Guest lecture by Steve Bellan
 * Slides: [class15.pdf](/classes/SDS348/2016_spring/slides/class15.pdf)
 * Download the Anaconda Python distribution from here: [https://www.continuum.io/downloads](https://www.continuum.io/downloads)
 * Official Python3 tutorial: [https://docs.python.org/3/tutorial/](https://docs.python.org/3/tutorial/)
-* An informal introduction: [Chapter 3 of official tutorial](https://docs.python.org/3/tutorial/introduction.html)
+* Chapter 3 of official tutorial: [An informal introduction](https://docs.python.org/3/tutorial/introduction.html)
 * In-class worksheet:
     - [IPython Notebook](/classes/SDS348/2016_spring/worksheets/class15.ipynb)
     - [HTML](/classes/SDS348/2016_spring/worksheets/class15.html)
     - [Solutions](/classes/SDS348/2016_spring/worksheets/class15_solutions.html)
 
+
 **16. Mar 10, 2016 – Control flow in python**
+
+* Slides: [class16.pdf](/classes/SDS348/2016_spring/slides/class16.pdf)
+* Chapter 4.1–4.5 of official tutorial: [More Control Flow Tools](https://docs.python.org/3/tutorial/controlflow.html)
+* In-class worksheet:
+    - [IPython Notebook](/classes/SDS348/2016_spring/worksheets/class16.ipynb)
+    - [HTML](/classes/SDS348/2016_spring/worksheets/class16.html)
 
 **17. Mar 22, 2016 – Functions in python**
 
