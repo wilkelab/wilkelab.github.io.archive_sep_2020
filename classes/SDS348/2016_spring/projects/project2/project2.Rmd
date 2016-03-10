@@ -11,7 +11,7 @@ library(grid)
 *Enter your name and EID here*
 
 ###Instructions
-Please submit both this completed Rmarkdown document and its knitted HTML, converted to PDF, on Canvas **no later than 11:59 pm on March 29th, 2015**. These two documents will be graded jointly, so they must be consistent (as in, don't change the Rmarkdown file without also updating the knitted HTML!).
+Please submit both this completed Rmarkdown document and its knitted HTML, converted to PDF, on Canvas **no later than 11:59 pm on March 29th, 2016**. These two documents will be graded jointly, so they must be consistent (as in, don't change the Rmarkdown file without also updating the knitted HTML!).
 
 All results presented **must** have corresponding code. Any answers/results given without the corresponding R code that generated the result will be considered absent. All code reported in your final project document should work properly. Please bear in mind that **you will lose points** for the following:
 

@@ -212,7 +212,8 @@ All homeworks are due by 11:59pm on the day they are due. Homeworks need to be s
 - Homework 5: [HW5.Rmd](/classes/SDS348/2016_spring/homeworks/HW5.Rmd) (due Mar 1, 2016)
     - [Solutions](/classes/SDS348/2016_spring/homeworks/HW5-solution.html)
 - Homework 6: [HW6.Rmd](/classes/SDS348/2016_spring/homeworks/HW6.Rmd) (due Mar 8, 2016)
-- Homework 7: (due Mar 22, 2016)
+    - [Solutions]((/classes/SDS348/2016_spring/homeworks/HW6-solution.html))
+- Homework 7: [HW7.ipynb](/classes/SDS348/2016_spring/homeworks/HW7.ipynb) (due Mar 22, 2016)
 - Homework 8: (due Apr 5, 2016)
 - Homework 9: (due Apr 12, 2016)
 - Homework 10: (due Apr 19, 2016)
@@ -222,13 +223,13 @@ All homeworks are due by 11:59pm on the day they are due. Homeworks need to be s
 
 All projects are due by 11:59pm on the day they are due. Projects need to be submitted on Canvas, both in pdf format and as source code (plus data where needed).
 
-- Project 1: 
+- Project 1:
     - [HTML](/classes/SDS348/2016_spring/projects/project1/project1.html)
     - [R Markdown](/classes/SDS348/2016_spring/projects/project1/project1.Rmd) (due Feb 23, 2016)
     - Hints: [Quantiles and correlations with dplyr](/classes/SDS348/2016_spring/projects/project1/project1_hints.html)
     - [Solutions, HTML](/classes/SDS348/2016_spring/projects/project1/project1_solution.html)
-- Project 2: 
-    - [HTML](/classes/SDS348/2016_spring/projects/project2/project2.html) 
+- Project 2:
+    - [HTML](/classes/SDS348/2016_spring/projects/project2/project2.html)
     - [R Markdown](/classes/SDS348/2016_spring/projects/project2/project2.Rmd) (due Mar 29, 2016)
 - Project 3: (due May 5, 2016)
 
@@ -290,3 +291,12 @@ All projects are due by 11:59pm on the day they are due. Projects need to be sub
     - [R Markdown](/classes/SDS348/2016_spring/labs/lab7.Rmd)
     - [HTML](/classes/SDS348/2016_spring/labs/lab7.html)
     - [Solutions, HTML](/classes/SDS348/2016_spring/labs/lab7-solution.html)
+
+**8. Mar. 9, 2016**
+
+* Slides: [lab8_slides.pdf](/classes/SDS348/2016_spring/labs/lab8_slides.pdf)
+* A free Python book: [Think Python: How to Think Like a Computer Scientist](http://greenteapress.com/wp/think-python-2e/)
+* Lab worksheet:
+    - [IPython Notebook](/classes/SDS348/2016_spring/labs/lab8.ipynb)
+    - [HTML](/classes/SDS348/2016_spring/labs/lab8.html)
+    - [Solutions, HTML](/classes/SDS348/2016_spring/labs/lab8-solution.html)
