@@ -165,6 +165,8 @@ Guest lecture by Steve Bellan
 * In-class worksheet:
     - [IPython Notebook](/classes/SDS348/2016_spring/worksheets/class16.ipynb)
     - [HTML](/classes/SDS348/2016_spring/worksheets/class16.html)
+    - [Solutions](/classes/SDS348/2016_spring/worksheets/class16_solutions.html)
+
 
 **17. Mar 22, 2016 – Functions in python**
 
