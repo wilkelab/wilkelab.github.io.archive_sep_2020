@@ -28,7 +28,7 @@ Lab meetings are held Fridays from 10:30 am - 12:00 pm in MBB 3.204.
 | 4/8/16   || ---  || --- || Canceled, Protein Folding Meeting
 | 4/15/16  || Ashley  || Spencer || 
 | 4/22/16  || Matt  || Ashley || 
-| 4/29/16  || Qian  || Matt || 
+| 4/29/16  || Qian  || Dariya (Qualifying Exam Practice) || 
 | 5/6/16  || Bart  || ??? ||
 | 5/13/16  || Umut  || Bart ||
 | 5/20/16  ||   || Umut ||
