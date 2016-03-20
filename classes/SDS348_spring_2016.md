@@ -170,6 +170,12 @@ Guest lecture by Steve Bellan
 
 **17. Mar 22, 2016 – Functions in python**
 
+* Slides: [class17.pdf](/classes/SDS348/2016_spring/slides/class17.pdf)
+* Chapter 4.6, 4.7 of official tutorial: [Defining functions](https://docs.python.org/3/tutorial/controlflow.html#defining-functions)
+* In-class worksheet:
+    - [IPython Notebook](/classes/SDS348/2016_spring/worksheets/class17.ipynb)
+    - [HTML](/classes/SDS348/2016_spring/worksheets/class17.html)
+
 **18. Mar 24, 2016 – More on python data structures**
 
 **19. Mar 29, 2016 – Working with files**
