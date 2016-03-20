@@ -151,7 +151,7 @@ Guest lecture by Steve Bellan
 * Slides: [class15.pdf](/classes/SDS348/2016_spring/slides/class15.pdf)
 * Download the Anaconda Python distribution from here: [https://www.continuum.io/downloads](https://www.continuum.io/downloads)
 * Official Python3 tutorial: [https://docs.python.org/3/tutorial/](https://docs.python.org/3/tutorial/)
-* Chapter 3 of official tutorial: [An informal introduction](https://docs.python.org/3/tutorial/introduction.html)
+* Chapter 3 of the official tutorial: [An informal introduction](https://docs.python.org/3/tutorial/introduction.html)
 * In-class worksheet:
     - [IPython Notebook](/classes/SDS348/2016_spring/worksheets/class15.ipynb)
     - [HTML](/classes/SDS348/2016_spring/worksheets/class15.html)
@@ -161,7 +161,7 @@ Guest lecture by Steve Bellan
 **16. Mar 10, 2016 – Control flow in python**
 
 * Slides: [class16.pdf](/classes/SDS348/2016_spring/slides/class16.pdf)
-* Chapter 4.1–4.5 of official tutorial: [More Control Flow Tools](https://docs.python.org/3/tutorial/controlflow.html)
+* Chapter 4.1–4.5 of the official tutorial: [More Control Flow Tools](https://docs.python.org/3/tutorial/controlflow.html)
 * In-class worksheet:
     - [IPython Notebook](/classes/SDS348/2016_spring/worksheets/class16.ipynb)
     - [HTML](/classes/SDS348/2016_spring/worksheets/class16.html)
@@ -171,12 +171,14 @@ Guest lecture by Steve Bellan
 **17. Mar 22, 2016 – Functions in python**
 
 * Slides: [class17.pdf](/classes/SDS348/2016_spring/slides/class17.pdf)
-* Chapter 4.6, 4.7 of official tutorial: [Defining functions](https://docs.python.org/3/tutorial/controlflow.html#defining-functions)
+* Chapter 4.6, 4.7 of the official tutorial: [Defining functions](https://docs.python.org/3/tutorial/controlflow.html#defining-functions)
 * In-class worksheet:
     - [IPython Notebook](/classes/SDS348/2016_spring/worksheets/class17.ipynb)
     - [HTML](/classes/SDS348/2016_spring/worksheets/class17.html)
 
-**18. Mar 24, 2016 – More on python data structures**
+**18. Mar 24, 2016 – More on python data structures, classes**
+
+* Chapter 9 of the official tutorial: [Classes](https://docs.python.org/3/tutorial/classes.html)
 
 **19. Mar 29, 2016 – Working with files**
 
