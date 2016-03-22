@@ -178,7 +178,12 @@ Guest lecture by Steve Bellan
 
 **18. Mar 24, 2016 – More on python data structures, classes**
 
+* Slides: [class18.pdf](/classes/SDS348/2016_spring/slides/class18.pdf)
 * Chapter 9 of the official tutorial: [Classes](https://docs.python.org/3/tutorial/classes.html)
+* In-class worksheet:
+    - [IPython Notebook](/classes/SDS348/2016_spring/worksheets/class18.ipynb)
+    - [HTML](/classes/SDS348/2016_spring/worksheets/class18.html)
+
 
 **19. Mar 29, 2016 – Working with files**
 
