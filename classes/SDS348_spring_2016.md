@@ -175,6 +175,7 @@ Guest lecture by Steve Bellan
 * In-class worksheet:
     - [IPython Notebook](/classes/SDS348/2016_spring/worksheets/class17.ipynb)
     - [HTML](/classes/SDS348/2016_spring/worksheets/class17.html)
+    - [Solutions](/classes/SDS348/2016_spring/worksheets/class17_solutions.html)
 
 **18. Mar 24, 2016 – More on python data structures, classes**
 
