@@ -177,7 +177,7 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="In-class-worksheet-17">In-class worksheet 17<a class="anchor-link" href="#In-class-worksheet-17">&#182;</a></h1><p><strong>Mar 22, 2016</strong></p>
-<h2 id="Introduction-to-functions-in-Python">Introduction to functions in <code>Python</code><a class="anchor-link" href="#Introduction-to-functions-in-Python">&#182;</a></h2><p>Python, like all computer languages, contains many built-in functions, such as <code>print()</code>, <code>range()</code>, <code>len()</code>. These functions carry out commonly-used tasks. Because most programming problems have their own commonly-sued tasks specific to the given problem, it is often necessary to write custom functions. In fact, functions are an integral part of programming, allowing your code to be moduluar, repeatable, and readable.</p>
+<h2 id="Introduction-to-functions-in-Python">Introduction to functions in <code>Python</code><a class="anchor-link" href="#Introduction-to-functions-in-Python">&#182;</a></h2><p>Python, like all computer languages, contains many built-in functions, such as <code>print()</code>, <code>range()</code>, <code>len()</code>. These functions carry out commonly-used tasks. Because most programming problems have their own commonly-used tasks specific to the given problem, it is often necessary to write custom functions. In fact, functions are an integral part of programming, allowing your code to be modular, repeatable, and readable.</p>
 <p>In Python, functions are defined with the <code>def</code> command. Similar to <code>if</code> and <code>for</code>, code following the <code>def</code> command must be indented. Functions generally take arguments as input and return results from the computation as output. To end the function and return a result, we use the command <code>return</code>.</p>
 <p>The basic format for defining a function is:</p>
 
@@ -197,7 +197,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c1"># Define a function called `add`. </span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Define a function called `add`. </span>
 <span class="c1"># This function takes 2 arguments and returns their sum.</span>
 <span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
@@ -246,7 +246,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="n">result</span> <span class="o">=</span> <span class="mi">15</span> <span class="c1"># define variable `result`</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">result</span> <span class="o">=</span> <span class="mi">15</span> <span class="c1"># define variable `result`</span>
 
 <span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span> <span class="c1"># define function `add`, which uses a variable `result`</span>
     <span class="n">result</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
@@ -292,7 +292,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c1"># Use 0 as default value for y. If it is not given, the add</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Use 0 as default value for y. If it is not given, the add</span>
 <span class="c1"># function adds nothing:</span>
 <span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">0</span><span class="p">):</span>
     <span class="n">result</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
@@ -337,7 +337,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c1"># Simple divide function</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Simple divide function</span>
 <span class="k">def</span> <span class="nf">divide</span><span class="p">(</span><span class="n">numerator</span><span class="p">,</span> <span class="n">denominator</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">numerator</span> <span class="o">/</span> <span class="n">denominator</span>
 
@@ -380,7 +380,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c1"># Define a function to divide two numbers.</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Define a function to divide two numbers.</span>
 <span class="c1"># The function returns both the dividend and remainder:</span>
 <span class="k">def</span> <span class="nf">divide_remain</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
     <span class="n">div</span> <span class="o">=</span> <span class="n">x</span> <span class="o">/</span> <span class="n">y</span>
@@ -421,7 +421,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c1"># Alternatively, returned values can be saved to a single variable</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Alternatively, returned values can be saved to a single variable</span>
 <span class="c1"># and then indexed</span>
 <span class="n">results</span> <span class="o">=</span> <span class="n">divide_remain</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
 
@@ -471,7 +471,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c1"># Code for Problem 1a goes here.</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Code for Problem 1a goes here.</span>
 </pre></div>
 
 </div>
@@ -484,7 +484,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c1"># Code for Problem 1b goes here.</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Code for Problem 1b goes here.</span>
 </pre></div>
 
 </div>
@@ -515,7 +515,7 @@ print("The sum of all multiples of 3 which are &lt;= 30 is", result)</code></pre
 <div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c1"># Code for Problem 2 goes here.</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Code for Problem 2 goes here.</span>
 </pre></div>
 
 </div>
@@ -540,7 +540,7 @@ print("The sum of all multiples of 3 which are &lt;= 30 is", result)</code></pre
 <div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c1"># Your function goes here.</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Your function goes here.</span>
 
 <span class="c1"># Use this dictionary in your function</span>
 <span class="n">amino_weights</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;A&#39;</span><span class="p">:</span><span class="mf">89.09</span><span class="p">,</span><span class="s1">&#39;R&#39;</span><span class="p">:</span><span class="mf">174.20</span><span class="p">,</span><span class="s1">&#39;N&#39;</span><span class="p">:</span><span class="mf">132.12</span><span class="p">,</span><span class="s1">&#39;D&#39;</span><span class="p">:</span><span class="mf">133.10</span><span class="p">,</span>
@@ -564,7 +564,8 @@ print("The sum of all multiples of 3 which are &lt;= 30 is", result)</code></pre
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="If-this-was-easy">If this was easy<a class="anchor-link" href="#If-this-was-easy">&#182;</a></h2><p>For Problem 3 above, write code that automatically tests whether the <code>calc_mol_weight</code> function returns the correct result for <code>protseq1</code> and <code>protseq2</code>.</p>
+<h2 id="If-this-was-easy">If this was easy<a class="anchor-link" href="#If-this-was-easy">&#182;</a></h2><p><strong>Problem 4:</strong></p>
+<p>For Problem 3 above, write code that automatically tests whether the <code>calc_mol_weight</code> function returns the correct result for <code>protseq1</code> and <code>protseq2</code>.</p>
 
 </div>
 </div>
@@ -574,7 +575,37 @@ print("The sum of all multiples of 3 which are &lt;= 30 is", result)</code></pre
 <div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span class="c1"># Your code goes here.</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Your code goes here.</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Problem 5:</strong></p>
+<p>The Fibonacci Sequence is the sequence of numbers, starting with 0 and 1, where the next number is the sum of the two previous numbers:</p>
+<blockquote><p>0, 1, 1, 2, 3, 5, 8, 13, 21, 34, ...</p>
+</blockquote>
+<p>Mathematically, we can write the <em>i</em>th number <em>n</em><sub>*i*</sub> as</p>
+<blockquote><p><em>n</em><sub>*i*</sub> = <em>n</em><sub>*i*-1</sub> + <em>n</em><sub>*i*-2</sub>.</p>
+</blockquote>
+<p>Implement a function that calculates the <em>i</em>th Fibonacci number. (Hint: this is easiest by making the function call itself to obtain the previous Fibonacci numbers. This programming style is called "recursion".) Then use this function to print out the first 20 Fibonacci numbers.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Your code goes here.</span>
 </pre></div>
 
 </div>

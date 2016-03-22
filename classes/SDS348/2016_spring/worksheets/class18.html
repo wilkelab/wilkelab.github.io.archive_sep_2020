@@ -469,7 +469,8 @@ Buddy can do these tricks: [&apos;play dead&apos;]
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="If-this-was-easy">If this was easy<a class="anchor-link" href="#If-this-was-easy">&#182;</a></h2><p>Take the modified <code>Dog</code> class from Problem 2 and add a function <code>add_tricks_from</code> that takes as argument another dog and adds all the tricks from that dog to the current dog. Make sure that tricks are not added twice; if the dog knows a trick already then that trick shouldn't be added again. Also, don't access the list <code>self.tricks</code> directly in the new function you are adding. Use the functions <code>add_trick</code> and <code>knows_trick</code> instead.</p>
+<h2 id="If-this-was-easy">If this was easy<a class="anchor-link" href="#If-this-was-easy">&#182;</a></h2><p><strong>Problem 3:</strong></p>
+<p>Take the modified <code>Dog</code> class from Problem 2 and add a function <code>add_tricks_from</code> that takes as argument another dog and adds all the tricks from that dog to the current dog. Make sure that tricks are not added twice; if the dog knows a trick already then that trick shouldn't be added again. Also, don't access the list <code>self.tricks</code> directly in the new function you are adding. Use the functions <code>add_trick</code> and <code>knows_trick</code> instead.</p>
 
 </div>
 </div>
@@ -480,6 +481,39 @@ Buddy can do these tricks: [&apos;play dead&apos;]
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Your code goes here.</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Problem 4:</strong></p>
+<p>Take the basic <code>Dog</code> class (with functions <code>__init__()</code> and <code>add_trick()</code>) and modify it so that it keeps track of the total number of dogs in existence. You should be able to retrieve this number from a member variable <code>Dog.num_dogs</code>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Basic Dog class</span>
+<span class="k">class</span> <span class="nc">Dog</span><span class="p">:</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tricks</span> <span class="o">=</span> <span class="p">[]</span>    <span class="c1"># creates a new empty list for each dog</span>
+
+    <span class="k">def</span> <span class="nf">add_trick</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">trick</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tricks</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">trick</span><span class="p">)</span>
+ 
 </pre></div>
 
 </div>
