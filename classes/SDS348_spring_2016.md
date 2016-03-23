@@ -316,3 +316,8 @@ All projects are due by 11:59pm on the day they are due. Projects need to be sub
     - [IPython Notebook](/classes/SDS348/2016_spring/labs/lab8.ipynb)
     - [HTML](/classes/SDS348/2016_spring/labs/lab8.html)
     - [Solutions, HTML](/classes/SDS348/2016_spring/labs/lab8-solution.html)
+
+**9. Mar. 23, 2016**
+* Lab worksheet:
+    - [IPython Notebook](/classes/SDS348/2016_spring/labs/lab9.ipynb)
+    - [HTML](/classes/SDS348/2016_spring/labs/lab9.html)
