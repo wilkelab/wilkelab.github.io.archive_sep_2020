@@ -184,6 +184,7 @@ Guest lecture by Steve Bellan
 * In-class worksheet:
     - [IPython Notebook](/classes/SDS348/2016_spring/worksheets/class18.ipynb)
     - [HTML](/classes/SDS348/2016_spring/worksheets/class18.html)
+    - [Solutions](/classes/SDS348/2016_spring/worksheets/class18_solutions.html)
 
 
 **19. Mar 29, 2016 – Working with files**
