@@ -189,6 +189,11 @@ Guest lecture by Steve Bellan
 
 **19. Mar 29, 2016 – Working with files**
 
+* Chapter 7.2 of the official tutorial: [Reading and writing files](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files)
+* In-class worksheet:
+    - [IPython Notebook](/classes/SDS348/2016_spring/worksheets/class19.ipynb)
+    - [HTML](/classes/SDS348/2016_spring/worksheets/class19.html)
+
 **20. Mar 31, 2016 – Introduction to Biopython**
 
 **21. Apr 5, 2016 – More Biopython**
