@@ -278,7 +278,7 @@ This is line three of the file.
 <span class="n">file_lines</span> <span class="o">=</span> <span class="n">file_handle</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span> <span class="c1"># Read contents of file</span>
 <span class="n">file_handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span> <span class="c1"># Close file</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">file_contents</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">file_lines</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -291,10 +291,7 @@ This is line three of the file.
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>This is line one of the file.
-This is line two of the file.
-This is line three of the file.
-
+<pre>[&apos;This is line one of the file.\n&apos;, &apos;This is line two of the file.\n&apos;, &apos;This is line three of the file.\n&apos;]
 </pre>
 </div>
 </div>
@@ -555,7 +552,7 @@ I&apos;m writing another line to this existing file.
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Problem 1:</strong></p>
 <p>Download the file <a href="http://wilkelab.org/classes/SDS348/data_sets/road_not_taken.txt"><code>"road_not_taken.txt"</code></a> from the class website. This file contains the famous poem "The Road not Taken" by Robert Frost.</p>
-<p>(a) Write a program that read the file in one go and prints out the file contents.</p>
+<p>(a) Write a program that reads the file in one go and prints out the file contents.</p>
 <p>(b) Write a program that reads in the file line by line and counts the total number of lines.</p>
 <p>(c) Write a program that counts the number of letters in the file. Use the function <code>count_letters()</code> we have discussed in a previous class. Then print out how offen the different vowels (a, e, i, o, u) are used in this document.</p>
 
