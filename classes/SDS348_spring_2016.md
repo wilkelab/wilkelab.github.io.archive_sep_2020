@@ -202,7 +202,7 @@ Guest lecture by Steve Bellan
 * Slides: [class20.pdf](/classes/SDS348/2016_spring/slides/class20.pdf)
 * Biopython website: [http://biopython.org](http://biopython.org)
 * Official Biopython tutorial: [http://biopython.org/DIST/docs/tutorial/Tutorial.html](http://biopython.org/DIST/docs/tutorial/Tutorial.html)
-* NCBI Entrez/PubMed website: [http://www.ncbi.nlm.nih.gov/pubmed](http://www.ncbi.nlm.nih.gov/pubmed)
+* NCBI Entrez/PubMed website: [http://www.ncbi.nlm.nih.gov/](http://www.ncbi.nlm.nih.gov/)
 * In-class worksheet:
     - [IPython Notebook](/classes/SDS348/2016_spring/worksheets/class20.ipynb)
     - [HTML](/classes/SDS348/2016_spring/worksheets/class20.html)
@@ -349,4 +349,3 @@ All projects are due by 11:59pm on the day they are due. Projects need to be sub
 * Lab worksheet:
     - [IPython Notebook](/classes/SDS348/2016_spring/labs/lab10.ipynb)
     - [HTML](/classes/SDS348/2016_spring/labs/lab10.html)
-    - [Solutions, HTML](/classes/SDS348/2016_spring/labs/lab10-solution.html)
