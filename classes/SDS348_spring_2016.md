@@ -206,6 +206,7 @@ Guest lecture by Steve Bellan
 * In-class worksheet:
     - [IPython Notebook](/classes/SDS348/2016_spring/worksheets/class20.ipynb)
     - [HTML](/classes/SDS348/2016_spring/worksheets/class20.html)
+    - [Solutions](/classes/SDS348/2016_spring/worksheets/class20_solutions.html)
 
 
 **21. Apr 5, 2016 – More Biopython**
