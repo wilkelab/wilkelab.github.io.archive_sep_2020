@@ -199,6 +199,7 @@ Guest lecture by Steve Bellan
 
 **20. Mar 31, 2016 – Introduction to Biopython**
 
+* Slides: [class20.pdf](/classes/SDS348/2016_spring/slides/class20.pdf)
 * Biopython website: [http://biopython.org](http://biopython.org)
 * Official Biopython tutorial: [http://biopython.org/DIST/docs/tutorial/Tutorial.html](http://biopython.org/DIST/docs/tutorial/Tutorial.html)
 * NCBI Entrez/PubMed website: [http://www.ncbi.nlm.nih.gov/pubmed](http://www.ncbi.nlm.nih.gov/pubmed)
