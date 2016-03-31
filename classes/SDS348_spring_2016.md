@@ -194,8 +194,18 @@ Guest lecture by Steve Bellan
 * In-class worksheet:
     - [IPython Notebook](/classes/SDS348/2016_spring/worksheets/class19.ipynb)
     - [HTML](/classes/SDS348/2016_spring/worksheets/class19.html)
+    - [Solutions](/classes/SDS348/2016_spring/worksheets/class19_solutions.html)
+
 
 **20. Mar 31, 2016 – Introduction to Biopython**
+
+* Biopython website: [http://biopython.org](http://biopython.org)
+* Official Biopython tutorial: [http://biopython.org/DIST/docs/tutorial/Tutorial.html](http://biopython.org/DIST/docs/tutorial/Tutorial.html)
+* NCBI Entrez/PubMed website: [http://www.ncbi.nlm.nih.gov/pubmed](http://www.ncbi.nlm.nih.gov/pubmed)
+* In-class worksheet:
+    - [IPython Notebook](/classes/SDS348/2016_spring/worksheets/class20.ipynb)
+    - [HTML](/classes/SDS348/2016_spring/worksheets/class20.html)
+
 
 **21. Apr 5, 2016 – More Biopython**
 
