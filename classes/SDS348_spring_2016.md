@@ -209,9 +209,15 @@ Guest lecture by Steve Bellan
     - [Solutions](/classes/SDS348/2016_spring/worksheets/class20_solutions.html)
 
 
-**21. Apr 5, 2016 – More Biopython**
+**21. Apr 5, 2016 – Working with gene features and genomes**
 
-**22. Apr 7, 2016 – Working with genomes**
+* Biopython Tutorial on sequence features: [SeqFeature objects](http://biopython.org/DIST/docs/tutorial/Tutorial.html#htoc38)
+
+
+**22. Apr 7, 2016 – Running queries on Entrez**
+
+* Biopython SeqIO documentation: [SeqIO](http://biopython.org/wiki/SeqIO)
+
 
 **23. Apr 12, 2016 – Regular expressions**
 
