@@ -211,8 +211,12 @@ Guest lecture by Steve Bellan
 
 **21. Apr 5, 2016 – Working with gene features and genomes**
 
+* Slides: [class21.pdf](/classes/SDS348/2016_spring/slides/class21.pdf)
 * Biopython Tutorial on sequence features: [SeqFeature objects](http://biopython.org/DIST/docs/tutorial/Tutorial.html#htoc38)
-
+* Official feature documentation from the International Nucleotide Sequence Database Collaboration: [Feature Key Reference](http://www.insdc.org/files/feature_table.html#7.2)
+* In-class worksheet:
+    - [IPython Notebook](/classes/SDS348/2016_spring/worksheets/class21.ipynb)
+    - [HTML](/classes/SDS348/2016_spring/worksheets/class21.html)
 
 **22. Apr 7, 2016 – Running queries on Entrez**
 
