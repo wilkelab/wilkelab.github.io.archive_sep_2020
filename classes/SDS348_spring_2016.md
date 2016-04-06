@@ -361,3 +361,7 @@ All projects are due by 11:59pm on the day they are due. Projects need to be sub
     - [IPython Notebook](/classes/SDS348/2016_spring/labs/lab10.ipynb)
     - [HTML](/classes/SDS348/2016_spring/labs/lab10.html)
     - [Solutions, HTML](/classes/SDS348/2016_spring/labs/lab10-solution.html)
+
+**11. April 6, 2016**
+
+* Complete the in-class worksheet, including the "If that was easy..." questions, from Class 21.
