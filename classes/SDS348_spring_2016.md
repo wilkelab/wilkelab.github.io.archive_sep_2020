@@ -217,10 +217,14 @@ Guest lecture by Steve Bellan
 * In-class worksheet:
     - [IPython Notebook](/classes/SDS348/2016_spring/worksheets/class21.ipynb)
     - [HTML](/classes/SDS348/2016_spring/worksheets/class21.html)
+    - [Solutions](/classes/SDS348/2016_spring/worksheets/class21_solutions.html)
 
 **22. Apr 7, 2016 – Running queries on Entrez**
 
 * Biopython SeqIO documentation: [SeqIO](http://biopython.org/wiki/SeqIO)
+* In-class worksheet:
+    - [IPython Notebook](/classes/SDS348/2016_spring/worksheets/class22.ipynb)
+    - [HTML](/classes/SDS348/2016_spring/worksheets/class22.html)
 
 
 **23. Apr 12, 2016 – Regular expressions**
