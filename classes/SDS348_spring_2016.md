@@ -364,4 +364,4 @@ All projects are due by 11:59pm on the day they are due. Projects need to be sub
 
 **11. April 6, 2016**
 
-* Complete the in-class worksheet, including the "If that was easy..." questions, from Class 21.
+* Complete the in-class worksheet from Class 21, including the "If that was easy..." questions.
