@@ -225,9 +225,17 @@ Guest lecture by Steve Bellan
 * In-class worksheet:
     - [IPython Notebook](/classes/SDS348/2016_spring/worksheets/class22.ipynb)
     - [HTML](/classes/SDS348/2016_spring/worksheets/class22.html)
-
+    - [Solutions](/classes/SDS348/2016_spring/worksheets/class22_solutions.html)
 
 **23. Apr 12, 2016 – Regular expressions**
+
+* Python regular expression editor: [http://pythex.org/](http://pythex.org/)
+* Official Python regular expression documentation: [Regular Expression HOWTO](https://docs.python.org/3/howto/regex.html)
+* Alternative regular expression tutorial: [https://developers.google.com/edu/python/regular-expressions](https://developers.google.com/edu/python/regular-expressions)
+* In-class worksheet:
+    - [IPython Notebook](/classes/SDS348/2016_spring/worksheets/class23.ipynb)
+    - [HTML](/classes/SDS348/2016_spring/worksheets/class23.html)
+
 
 **24. Apr. 14, 2016 – Using regular expressions to analyze data**
 
