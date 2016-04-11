@@ -229,9 +229,10 @@ Guest lecture by Steve Bellan
 
 **23. Apr 12, 2016 – Regular expressions**
 
+* Slides: [class23.pdf](/classes/SDS348/2016_spring/slides/class23.pdf)
 * Python regular expression editor: [http://pythex.org/](http://pythex.org/)
 * Official Python regular expression documentation: [Regular Expression HOWTO](https://docs.python.org/3/howto/regex.html)
-* Alternative regular expression tutorial: [https://developers.google.com/edu/python/regular-expressions](https://developers.google.com/edu/python/regular-expressions)
+* Alternative regular expression tutorial: [Python Regular Expressions](https://developers.google.com/edu/python/regular-expressions)
 * In-class worksheet:
     - [IPython Notebook](/classes/SDS348/2016_spring/worksheets/class23.ipynb)
     - [HTML](/classes/SDS348/2016_spring/worksheets/class23.html)
