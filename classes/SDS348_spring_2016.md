@@ -276,7 +276,7 @@ All homeworks are due by 11:59pm on the day they are due. Homeworks need to be s
 - Homework 8: [HW8.ipynb](/classes/SDS348/2016_spring/homeworks/HW8.ipynb) (due Apr 5, 2016)
     - [Solutions](/classes/SDS348/2016_spring/homeworks/HW8-solution.html)
 - Homework 9: [HW9.pdf](/classes/SDS348/2016_spring/homeworks/HW9.pdf) (due Apr 12, 2016)
-- Homework 10: (due Apr 19, 2016)
+- Homework 10: [HW10.ipynb](/classes/SDS348/2016_spring/homeworks/HW10.ipynb) (due Apr 19, 2016)
 - Homework 11: (due Apr 26, 2016)  
 
 ## Projects
