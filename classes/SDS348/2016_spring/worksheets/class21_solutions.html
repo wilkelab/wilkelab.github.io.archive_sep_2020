@@ -676,12 +676,13 @@ Fraction: 20.43 %
 
 <span class="k">for</span> <span class="n">feature</span> <span class="ow">in</span> <span class="n">record</span><span class="o">.</span><span class="n">features</span><span class="p">:</span>
     <span class="k">if</span> <span class="n">feature</span><span class="o">.</span><span class="n">type</span> <span class="o">==</span> <span class="s1">&#39;CDS&#39;</span><span class="p">:</span>
+        <span class="n">locus_tag</span> <span class="o">=</span> <span class="n">feature</span><span class="o">.</span><span class="n">qualifiers</span><span class="p">[</span><span class="s1">&#39;locus_tag&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
         <span class="k">if</span> <span class="n">locus_tag</span> <span class="o">==</span> <span class="s1">&#39;T7p45&#39;</span><span class="p">:</span>
             <span class="n">target_feature</span> <span class="o">=</span> <span class="n">feature</span>
             <span class="k">break</span>
             
-<span class="nb">print</span><span class="p">(</span><span class="n">feature</span><span class="p">)</span>
-<span class="n">DNA_seq</span> <span class="o">=</span> <span class="n">feature</span><span class="o">.</span><span class="n">extract</span><span class="p">(</span><span class="n">record</span><span class="p">)</span><span class="o">.</span><span class="n">seq</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">target_feature</span><span class="p">)</span>
+<span class="n">DNA_seq</span> <span class="o">=</span> <span class="n">target_feature</span><span class="o">.</span><span class="n">extract</span><span class="p">(</span><span class="n">record</span><span class="p">)</span><span class="o">.</span><span class="n">seq</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;DNA:&quot;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">DNA_seq</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;protein:&quot;</span><span class="p">,</span> <span class="n">DNA_seq</span><span class="o">.</span><span class="n">translate</span><span class="p">())</span>
 </pre></div>
@@ -697,19 +698,19 @@ Fraction: 20.43 %
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>type: CDS
-location: [39388:39538](+)
+location: [22966:24004](+)
 qualifiers:
     Key: codon_start, Value: [&apos;1&apos;]
-    Key: db_xref, Value: [&apos;GI:9627485&apos;, &apos;UniProtKB/Swiss-Prot:P03804&apos;, &apos;GeneID:1261068&apos;]
-    Key: locus_tag, Value: [&apos;T7p60&apos;]
-    Key: note, Value: [&apos;gene 19.5&apos;]
-    Key: product, Value: [&apos;hypothetical protein&apos;]
-    Key: protein_id, Value: [&apos;NP_042013.1&apos;]
+    Key: db_xref, Value: [&apos;GI:9627469&apos;, &apos;GOA:P19726&apos;, &apos;UniProtKB/Swiss-Prot:P19726&apos;, &apos;GeneID:1261026&apos;]
+    Key: locus_tag, Value: [&apos;T7p45&apos;]
+    Key: note, Value: [&apos;major capsid protein. Involved in F-exclusion of wt T7 phage. A minor capsid protein (gp10B) is produced from gene 10 by a -1 frameshift towards the end of 10A, resulting in a slightly larger protein. Other names: gp10A.&apos;]
+    Key: product, Value: [&apos;major capsid protein&apos;]
+    Key: protein_id, Value: [&apos;NP_041998.1&apos;]
     Key: transl_table, Value: [&apos;11&apos;]
-    Key: translation, Value: [&apos;MFRLLLNLLRHRVTYRFLVVLCAALGYASLTGDLSSLESVVCSILTCSD&apos;]
+    Key: translation, Value: [&apos;MASMTGGQQMGTNQGKGVVAAGDKLALFLKVFGGEVLTAFARTSVTTSRHMVRSISSGKSAQFPVLGRTQAAYLAPGENLDDKRKDIKHTEKVITIDGLLTADVLIYDIEDAMNHYDVRSEYTSQLGESLAMAADGAVLAEIAGLCNVESKYNENIEGLGTATVIETTQNKAALTDQVALGKEIIAALTKARAALTKNYVPAADRVFYCDPDSYSAILAALMPNAANYAALIDPEKGSIRNVMGFEVVEVPHLTAGGAGTAREGTTGQKHVFPANKGEGNVKVAKDNVIGLFMHRSAVGTVKLRDLALERARRANFQADQIIAKYAMGHGGLRPEAAGAVVFKVE&apos;]
 
-DNA: ATGTTCCGCTTATTGTTGAACCTACTGCGGCATAGAGTCACCTACCGATTTCTTGTGGTACTTTGTGCTGCCCTTGGGTACGCATCTCTTACTGGAGACCTCAGTTCACTGGAGTCTGTCGTTTGCTCTATACTCACTTGTAGCGATTAG
-protein: MFRLLLNLLRHRVTYRFLVVLCAALGYASLTGDLSSLESVVCSILTCSD*
+DNA: ATGGCTAGCATGACTGGTGGACAGCAAATGGGTACTAACCAAGGTAAAGGTGTAGTTGCTGCTGGAGATAAACTGGCGTTGTTCTTGAAGGTATTTGGCGGTGAAGTCCTGACTGCGTTCGCTCGTACCTCCGTGACCACTTCTCGCCACATGGTACGTTCCATCTCCAGCGGTAAATCCGCTCAGTTCCCTGTTCTGGGTCGCACTCAGGCAGCGTATCTGGCTCCGGGCGAGAACCTCGACGATAAACGTAAGGACATCAAACACACCGAGAAGGTAATCACCATTGACGGTCTCCTGACGGCTGACGTTCTGATTTATGATATTGAGGACGCGATGAACCACTACGACGTTCGCTCTGAGTATACCTCTCAGTTGGGTGAATCTCTGGCGATGGCTGCGGATGGTGCGGTTCTGGCTGAGATTGCCGGTCTGTGTAACGTGGAAAGCAAATATAATGAGAACATCGAGGGCTTAGGTACTGCTACCGTAATTGAGACCACTCAGAACAAGGCCGCACTTACCGACCAAGTTGCGCTGGGTAAGGAGATTATTGCGGCTCTGACTAAGGCTCGTGCGGCTCTGACCAAGAACTATGTTCCGGCTGCTGACCGTGTGTTCTACTGTGACCCAGATAGCTACTCTGCGATTCTGGCAGCACTGATGCCGAACGCAGCAAACTACGCTGCTCTGATTGACCCTGAGAAGGGTTCTATCCGCAACGTTATGGGCTTTGAGGTTGTAGAAGTTCCGCACCTCACCGCTGGTGGTGCTGGTACCGCTCGTGAGGGCACTACTGGTCAGAAGCACGTCTTCCCTGCCAATAAAGGTGAGGGTAATGTCAAGGTTGCTAAGGACAACGTTATCGGCCTGTTCATGCACCGCTCTGCGGTAGGTACTGTTAAGCTGCGTGACTTGGCTCTGGAGCGCGCTCGCCGTGCTAACTTCCAAGCGGACCAGATTATCGCTAAGTACGCAATGGGCCACGGTGGTCTTCGCCCAGAAGCTGCTGGTGCAGTGGTTTTCAAAGTGGAGTAA
+protein: MASMTGGQQMGTNQGKGVVAAGDKLALFLKVFGGEVLTAFARTSVTTSRHMVRSISSGKSAQFPVLGRTQAAYLAPGENLDDKRKDIKHTEKVITIDGLLTADVLIYDIEDAMNHYDVRSEYTSQLGESLAMAADGAVLAEIAGLCNVESKYNENIEGLGTATVIETTQNKAALTDQVALGKEIIAALTKARAALTKNYVPAADRVFYCDPDSYSAILAALMPNAANYAALIDPEKGSIRNVMGFEVVEVPHLTAGGAGTAREGTTGQKHVFPANKGEGNVKVAKDNVIGLFMHRSAVGTVKLRDLALERARRANFQADQIIAKYAMGHGGLRPEAAGAVVFKVE*
 </pre>
 </div>
 </div>

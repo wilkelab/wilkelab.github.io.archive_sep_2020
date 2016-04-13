@@ -236,6 +236,7 @@ Guest lecture by Steve Bellan
 * In-class worksheet:
     - [IPython Notebook](/classes/SDS348/2016_spring/worksheets/class23.ipynb)
     - [HTML](/classes/SDS348/2016_spring/worksheets/class23.html)
+    - [Solutions](/classes/SDS348/2016_spring/worksheets/class23_solutions.html)
 
 
 **24. Apr. 14, 2016 – Using regular expressions to analyze data**
