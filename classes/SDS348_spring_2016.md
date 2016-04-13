@@ -384,6 +384,7 @@ All projects are due by 11:59pm on the day they are due. Projects need to be sub
 
 **12. April 13, 2016**
 
+* Another regular expressions resource: [regex101.com](http://www.regex101.com)
 * Lab worksheet:
     - [IPython Notebook](/classes/SDS348/2016_spring/labs/lab12.ipynb)
     - [HTML](/classes/SDS348/2016_spring/labs/lab12.html)
