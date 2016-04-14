@@ -241,6 +241,13 @@ Guest lecture by Steve Bellan
 
 **24. Apr. 14, 2016 – Using regular expressions to analyze data**
 
+* Slides: [class24.pdf](/classes/SDS348/2016_spring/slides/class24.pdf)
+* Python regular expression editor: [http://pythex.org/](http://pythex.org/)
+* In-class worksheet:
+    - [IPython Notebook](/classes/SDS348/2016_spring/worksheets/class24.ipynb)
+    - [HTML](/classes/SDS348/2016_spring/worksheets/class24.html)
+
+
 **25. Apr. 19, 2016 – Aligning sequences**
 
 **26. Apr. 21, 2016 – Multiple sequence alignments and phylogenetic trees**
