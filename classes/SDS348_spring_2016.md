@@ -388,3 +388,13 @@ All projects are due by 11:59pm on the day they are due. Projects need to be sub
 
 * Complete the in-class worksheet from Class 21, including the "If that was easy..." questions.
     - [Solutions](/classes/SDS348/2016_spring/worksheets/class21_solutions.html)
+
+**12. April 13, 2016**
+
+* Another regular expressions resource: [regex101.com](http://www.regex101.com)
+* Lab worksheet:
+    - [IPython Notebook](/classes/SDS348/2016_spring/labs/lab12.ipynb)
+    - [HTML](/classes/SDS348/2016_spring/labs/lab12.html)
+    - [Solutions, HTML](/classes/SDS348/2016_spring/labs/lab12-solution.html)
+
+* Influenza sequences: [influenza_HA.gb](/classes/SDS348/2016_spring/labs/influenza_HA.gb)
