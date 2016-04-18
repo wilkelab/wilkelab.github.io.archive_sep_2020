@@ -246,6 +246,7 @@ Guest lecture by Steve Bellan
 * In-class worksheet:
     - [IPython Notebook](/classes/SDS348/2016_spring/worksheets/class24.ipynb)
     - [HTML](/classes/SDS348/2016_spring/worksheets/class24.html)
+    - [Solutions](/classes/SDS348/2016_spring/worksheets/class24_solutions.html)
 
 
 **25. Apr. 19, 2016 – Aligning sequences**
