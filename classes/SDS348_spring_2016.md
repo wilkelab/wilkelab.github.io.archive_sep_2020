@@ -312,7 +312,8 @@ All projects are due by 11:59pm on the day they are due. Projects need to be sub
 - Project 2:
     - [HTML](/classes/SDS348/2016_spring/projects/project2/project2.html)
     - [R Markdown](/classes/SDS348/2016_spring/projects/project2/project2.Rmd) (due Mar 29, 2016)
-- Project 3: (due May 5, 2016)
+- Project 3:
+    - [project3_instructions.pdf](/classes/SDS348/2016_spring/projects/project3/project3_instructions.pdf) (due May 5, 2016)
 
 ## Labs
 
