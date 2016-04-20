@@ -410,3 +410,9 @@ All projects are due by 11:59pm on the day they are due. Projects need to be sub
     - [Solutions, HTML](/classes/SDS348/2016_spring/labs/lab12-solution.html)
 
 * Influenza sequences: [influenza_HA.gb](/classes/SDS348/2016_spring/labs/influenza_HA.gb)
+
+**13. April 20, 2016**
+
+* Lab worksheet:
+    - [IPython Notebook](/classes/SDS348/2016_spring/labs/lab13.ipynb)
+    - [HTML](/classes/SDS348/2016_spring/labs/lab13.html)
