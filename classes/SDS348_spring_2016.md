@@ -297,7 +297,8 @@ All homeworks are due by 11:59pm on the day they are due. Homeworks need to be s
     - [Solutions](/classes/SDS348/2016_spring/homeworks/HW8-solution.html)
 - Homework 9: [HW9.pdf](/classes/SDS348/2016_spring/homeworks/HW9.pdf) (due Apr 12, 2016)
 - Homework 10: [HW10.ipynb](/classes/SDS348/2016_spring/homeworks/HW10.ipynb) (due Apr 19, 2016)
-- Homework 11: (due Apr 26, 2016)  
+    - [Solutions](/classes/SDS348/2016_spring/homeworks/HW10-solution.html)
+- Homework 11: [HW11.ipynb](/classes/SDS348/2016_spring/homeworks/HW11.ipynb) (Problem 2 due Apr 26, 2016, Problem 1 due Apr 27, 2016)  
 
 ## Projects
 
@@ -311,7 +312,8 @@ All projects are due by 11:59pm on the day they are due. Projects need to be sub
 - Project 2:
     - [HTML](/classes/SDS348/2016_spring/projects/project2/project2.html)
     - [R Markdown](/classes/SDS348/2016_spring/projects/project2/project2.Rmd) (due Mar 29, 2016)
-- Project 3: (due May 5, 2016)
+- Project 3:
+    - [project3_instructions.pdf](/classes/SDS348/2016_spring/projects/project3/project3_instructions.pdf) (due May 5, 2016)
 
 ## Labs
 
@@ -410,3 +412,10 @@ All projects are due by 11:59pm on the day they are due. Projects need to be sub
     - [Solutions, HTML](/classes/SDS348/2016_spring/labs/lab12-solution.html)
 
 * Influenza sequences: [influenza_HA.gb](/classes/SDS348/2016_spring/labs/influenza_HA.gb)
+
+**13. April 20, 2016**
+
+* Lab worksheet:
+    - [IPython Notebook](/classes/SDS348/2016_spring/labs/lab13.ipynb)
+    - [HTML](/classes/SDS348/2016_spring/labs/lab13.html)
+    - [Solutions, HTML](/classes/SDS348/2016_spring/labs/lab13-solution.html)
