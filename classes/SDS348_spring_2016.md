@@ -260,11 +260,22 @@ Guest lecture by Steve Bellan
 * [Example alignments](https://github.com/wilkelab/therm_constraints_rate_variation/tree/master/empirical_rate_calculations/protein_alignments/mafft_alignments)
 * In-class worksheet:
     - [PDF](/classes/SDS348/2016_spring/worksheets/class25.pdf)
+    - [Solutions](/classes/SDS348/2016_spring/worksheets/class25_solutions.pdf)
+
+**26. Apr. 21, 2016 – Global and local alignments, BLAST**
+
+* Slides: [class26.pdf](/classes/SDS348/2016_spring/slides/class26.pdf)
+* Wikipedia page on the Smith-Waterman algorithm: [Smith-Waterman algorithm](https://en.wikipedia.org/wiki/Smith%E2%80%93Waterman_algorithm)
+* NCBI BLAST search: [http://blast.ncbi.nlm.nih.gov/Blast.cgi](http://blast.ncbi.nlm.nih.gov/Blast.cgi)
+* Wikipedia page on BLAST: [BLAST](http://en.wikipedia.org/wiki/BLAST)
+* Biopython BLAST documentation: [Chapter 7: BLAST](http://biopython.org/DIST/docs/tutorial/Tutorial.html#htoc85)
+* In-class worksheet:
+    - [Smith-Waterman exercise](/classes/SDS348/2016_spring/worksheets/class26_SW-exercise.pdf)
+    - [IPython Notebook](/classes/SDS348/2016_spring/worksheets/class26.ipynb)
+    - [HTML](/classes/SDS348/2016_spring/worksheets/class26.html)
 
 
-**26. Apr. 21, 2016 – Multiple sequence alignments and phylogenetic trees**
-
-**27. Apr. 26, 2016 – BLAST**
+**27. Apr. 26, 2016 – Multiple sequence alignments and phylogenetic trees**
 
 **28. Apr. 28, 2016 – Working with protein structures**
 
