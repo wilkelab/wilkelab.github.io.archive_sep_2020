@@ -271,6 +271,7 @@ Guest lecture by Steve Bellan
 * Biopython BLAST documentation: [Chapter 7: BLAST](http://biopython.org/DIST/docs/tutorial/Tutorial.html#htoc85)
 * In-class worksheet:
     - [Smith-Waterman exercise](/classes/SDS348/2016_spring/worksheets/class26_SW-exercise.pdf)
+    - [Smith-Waterman exercise solutions](/classes/SDS348/2016_spring/worksheets/class26_SW-exercise_solutions.pdf)
     - [IPython Notebook](/classes/SDS348/2016_spring/worksheets/class26.ipynb)
     - [HTML](/classes/SDS348/2016_spring/worksheets/class26.html)
 
