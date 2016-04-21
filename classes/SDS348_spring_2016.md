@@ -252,7 +252,7 @@ Guest lecture by Steve Bellan
 **25. Apr. 19, 2016 – Aligning sequences**
 
 * Slides: [class25.pdf](/classes/SDS348/2016_spring/slides/class25.pdf)
-* Wikipedia page on the Needleman–Wunsch algorithm: [Needleman–Wunsch_algorithm](http://en.wikipedia.org/wiki/Needleman%E2%80%93Wunsch_algorithm)
+* Wikipedia page on the Needleman–Wunsch algorithm: [Needleman–Wunsch algorithm](http://en.wikipedia.org/wiki/Needleman%E2%80%93Wunsch_algorithm)
 * Alignment software:
   - [MAFFT](http://mafft.cbrc.jp/alignment/software/)
   - [Clustal Omega](http://www.clustal.org/omega/)
