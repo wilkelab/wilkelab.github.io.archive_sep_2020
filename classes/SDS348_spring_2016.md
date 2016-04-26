@@ -274,10 +274,18 @@ Guest lecture by Steve Bellan
     - [Smith-Waterman exercise solutions](/classes/SDS348/2016_spring/worksheets/class26_SW-exercise_solutions.pdf)
     - [IPython Notebook](/classes/SDS348/2016_spring/worksheets/class26.ipynb)
     - [HTML](/classes/SDS348/2016_spring/worksheets/class26.html)
-
+    - [Solutions](/classes/SDS348/2016_spring/worksheets/class26_solutions.html)
 
 **27. Apr. 26, 2016 – Multiple sequence alignments and phylogenetic trees**
 
+* Slides: [class27.pdf](/classes/SDS348/2016_spring/slides/class27.pdf)
+* Wikipedia page on multiple sequence alignments:
+[Multiple sequence alignment](https://en.wikipedia.org/wiki/Multiple_sequence_alignment)
+* Wikipedia page on phylogenetic trees:
+[Phylogenetic trees](https://en.wikipedia.org/wiki/Phylogenetic_tree)
+* In-class exercises:
+    - [EMBL-EBI web interface](http://www.ebi.ac.uk/Tools/msa/)
+    
 **28. Apr. 28, 2016 – Working with protein structures**
 
 **29. May 3, 2016 – PDB’s, protein structure, and dynamics**
