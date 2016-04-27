@@ -290,7 +290,7 @@ Guest lecture by Steve Bellan
 
 * Slides: [class28.pdf](/classes/SDS348/2016_spring/slides/class28.pdf)
 * Obtain PyMOL: [Educational-use PyMOL](http://pymol.org/edu/?q=educational/)
-* PyMOL tutorial: [here](http://www.pymolwiki.org/index.php/Practical_Pymol_for_Beginners)
+* PyMOL tutorial: [Practical PyMOL for Beginners](http://www.pymolwiki.org/index.php/Practical_Pymol_for_Beginners)
 * Protein data bank: [http://www.rcsb.org/](http://www.rcsb.org/)
 
 **29. May 3, 2016 – PDB’s, protein structure, and dynamics**
