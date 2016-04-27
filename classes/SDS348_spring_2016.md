@@ -285,7 +285,7 @@ Guest lecture by Steve Bellan
 [Phylogenetic trees](https://en.wikipedia.org/wiki/Phylogenetic_tree)
 * In-class exercises:
     - [EMBL-EBI web interface](http://www.ebi.ac.uk/Tools/msa/)
-    
+
 **28. Apr. 28, 2016 – Working with protein structures**
 
 * Slides: [class28.pdf](/classes/SDS348/2016_spring/slides/class28.pdf)
@@ -444,3 +444,9 @@ All projects are due by 11:59pm on the day they are due. Projects need to be sub
     - [IPython Notebook](/classes/SDS348/2016_spring/labs/lab13.ipynb)
     - [HTML](/classes/SDS348/2016_spring/labs/lab13.html)
     - [Solutions, HTML](/classes/SDS348/2016_spring/labs/lab13-solution.html)
+
+**14. April 27, 2016**
+
+* Lab worksheet:
+    - [lab14.pdf](/classes/SDS348/2016_spring/labs/lab14.pdf)
+    - [cxcr4_aa.fasta](/classes/SDS348/2016_spring/labs/cxcr4_aa.fasta)
