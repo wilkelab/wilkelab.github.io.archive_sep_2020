@@ -12,7 +12,7 @@
 
 - author: S. J. Spielman, S. Wan, C. O. Wilke
   year: preprint
-  title: One-rate models outperform two-rate models in site-specific dN/dS estimation.
+  title: A comparison of one-rate and two-rate inference frameworks for site-specific dN/dS estimation.
   ref: "bioRxiv"
   doi: 10.1101/032805
 
