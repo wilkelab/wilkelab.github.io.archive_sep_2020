@@ -295,7 +295,7 @@ Guest lecture by Steve Bellan
 
 **29. May 3, 2016 – Protein structure and PyMOL scripting**
 
-* Slides: [class28.pdf](/classes/SDS348/2016_spring/slides/class29.pdf)
+* Slides: [class29.pdf](/classes/SDS348/2016_spring/slides/class29.pdf)
 * A cross-platform, open source text editor: [Atom](http://www.atom.io)
 * PyMOL selector syntax: [Command Syntax and Atom Selections](http://pymol.sourceforge.net/newman/user/S0220commands.html
 )
