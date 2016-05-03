@@ -297,7 +297,7 @@ Guest lecture by Steve Bellan
 
 * Slides: [class29.pdf](/classes/SDS348/2016_spring/slides/class29.pdf)
 * A cross-platform, open source text editor: [Atom](http://www.atom.io)
-* PyMOL selector syntax: [Command Syntax and Atom Selections](http://pymol.sourceforge.net/newman/user/S0220commands.html
+* PyMOL selector syntax: [Property Selectors](http://pymolwiki.org/index.php/Property_Selectors
 )
 
 **30. May 5, 2016 – Molecular evolution of proteins**
