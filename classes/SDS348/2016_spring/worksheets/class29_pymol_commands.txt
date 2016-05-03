@@ -1,0 +1,13 @@
+# Problem 1
+fetch 3KAS
+hide all
+show cartoon, all
+select chain_a, chain A
+color blue, chain_a
+
+# Problem 2
+fetch 1DLW
+hide all
+show cartoon, all
+select heme, resn HEM
+show sticks, (heme)
