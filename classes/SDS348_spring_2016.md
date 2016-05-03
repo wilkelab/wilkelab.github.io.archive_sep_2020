@@ -293,7 +293,12 @@ Guest lecture by Steve Bellan
 * PyMOL tutorial: [Practical PyMOL for Beginners](http://www.pymolwiki.org/index.php/Practical_Pymol_for_Beginners)
 * Protein data bank: [http://www.rcsb.org/](http://www.rcsb.org/)
 
-**29. May 3, 2016 – PDB’s, protein structure, and dynamics**
+**29. May 3, 2016 – Protein structure and PyMOL scripting**
+
+* Slides: [class28.pdf](/classes/SDS348/2016_spring/slides/class29.pdf)
+* A cross-platform, open source text editor: [Atom](http://www.atom.io)
+* PyMOL selector syntax: [Command Syntax and Atom Selections](http://pymol.sourceforge.net/newman/user/S0220commands.html
+)
 
 **30. May 5, 2016 – Molecular evolution of proteins**
 
