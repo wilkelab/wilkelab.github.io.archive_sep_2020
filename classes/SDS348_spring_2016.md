@@ -464,3 +464,5 @@ All projects are due by 11:59pm on the day they are due. Projects need to be sub
 
 * Lab worksheet:
     - [lab15.pdf](/classes/SDS348/2016_spring/labs/lab15.pdf)
+* Running a script inside qtconsole: [IPython %run](http://ipython.readthedocs.io/en/stable/interactive/magics.html?highlight=run#magic-run)
+* PyCharm, a python integrated development environment (IDE): [PyCharm](https://www.jetbrains.com/pycharm/)
