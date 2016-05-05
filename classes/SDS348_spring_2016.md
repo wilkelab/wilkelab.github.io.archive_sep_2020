@@ -299,6 +299,9 @@ Guest lecture by Steve Bellan
 * A cross-platform, open source text editor: [Atom](http://www.atom.io)
 * PyMOL selector syntax: [Property Selectors](http://pymolwiki.org/index.php/Property_Selectors
 )
+* Solutions to in-class exercises:
+    - [class29_pymol_commands.txt](/classes/SDS348/2016_spring/worksheets/class29_pymol_commands.txt)
+    - [class29_solutions.py](/classes/SDS348/2016_spring/worksheets/class29_solutions.py)
 
 **30. May 5, 2016 – Molecular evolution of proteins**
 
@@ -461,3 +464,10 @@ All projects are due by 11:59pm on the day they are due. Projects need to be sub
 * Lab worksheet:
     - [lab14.pdf](/classes/SDS348/2016_spring/labs/lab14.pdf)
     - [cxcr4_aa.fasta](/classes/SDS348/2016_spring/labs/cxcr4_aa.fasta)
+
+**15. May 4, 2016**
+
+* Lab worksheet:
+    - [lab15.pdf](/classes/SDS348/2016_spring/labs/lab15.pdf)
+* Running a script inside qtconsole: [IPython %run](http://ipython.readthedocs.io/en/stable/interactive/magics.html?highlight=run#magic-run)
+* PyCharm, a python integrated development environment (IDE): [PyCharm](https://www.jetbrains.com/pycharm/)
