@@ -7,13 +7,34 @@ permalink: /more/lab_meetings.html
 Lab meetings are held Fridays from 10:30 am - 12:00 pm in MBB 3.204.
 <br><br>
 
+### Summer 2016
+
+|------+---+--------------------+---+----------------------+---+-------|
+| Date      |    |Research           |    |Literature |         |Notes      |
+|:----------|----|:------------------|----|:--------------------|---|:------|
+| 5/27/16  || Ben || Umut ||
+| 6/3/16   || Bart || Ben ||
+| 6/10/16  || Umut || Bart ||
+| 6/17/16  || Ashley || Umut ||
+| 6/24/16  || Ben || Ashley ||
+| 7/1/16   || Matt || ??? ||
+| 7/8/16   || --- || --- || Canceled, SMBE, WHO, Claus out of town
+| 7/15/16  || --- || --- || Canceled, Claus out of town
+| 7/22/16  || --- || --- || Canceled, Claus out of town
+| 7/29/16  || --- || --- || Canceled, Claus out of town
+| 8/5/16   || Larry || Matt ||
+| 8/12/16  || --- || --- || Canceled, BEACON Congress
+| 8/19/16  || Corey || Larry ||
+| 8/26/16  || ??? || Corey ||
+
+
 ### Spring 2016
 
 |------+---+--------------------+---+----------------------+---+-------|
 | Date      |    |Research           |    |Literature |         |Notes      |
 |:----------|----|:------------------|----|:--------------------|---|:------|
 |  1/8/16  || --- || --- || Cancelled. Attend Ferguson talk at 10am in CPE 2.222
-|  1/15/16 || Dariya, Matt  || ---  || 
+|  1/15/16 || Dariya, Matt  || ---  ||
 |  1/22/16 || Ben   || Ashley ||
 |  1/29/16 || Umut   || Ben ||
 |   2/5/16 || Bart   || Umut ||
@@ -23,20 +44,20 @@ Lab meetings are held Fridays from 10:30 am - 12:00 pm in MBB 3.204.
 | 3/4/16   || Stephanie  & Umut || Both research, no literature
 |  3/11/16 || Dakota  & Dariya  || Both research, no literature
 | 3/18/16  || ---  || --- || Spring break
-| 3/25/16  || Ben || Dakota || 
+| 3/25/16  || Ben || Dakota ||
 |  4/1/16  || Spencer  || Ben ||
 | 4/8/16   || ---  || --- || Canceled, Protein Folding Meeting
-| 4/15/16  || Ashley  || Spencer || 
-| 4/22/16  || Matt  || Ashley || 
-| 4/29/16  || Qian  || Dariya (Qualifying Exam Practice) || 
+| 4/15/16  || Ashley  || Spencer ||
+| 4/22/16  || Matt  || Ashley ||
+| 4/29/16  || Qian  || Dariya (Qualifying Exam Practice) ||
 | 5/6/16  || Bart  || ??? ||
 | 5/13/16  || Umut  || Bart ||
 | 5/20/16  ||   || Umut ||
 | 5/27/16  ||   ||  ||
 |------+---+--------------------+---+----------------------+---+-------|
 {:.widetable}
- 
-  
+
+
  <br><br>
 
 ### Fall 2015
@@ -45,7 +66,7 @@ Lab meetings are held Fridays from 10:30 am - 12:00 pm in MBB 3.204.
 | Date      |    |Research           |    |Literature |         |Notes      |
 |:----------|----|:------------------|----|:--------------------|---|:------|
 |  9/4/15  || Larry & Dacia  || -  ||
-|  9/11/15 || Ashley Teufel  || Stephanie || 
+|  9/11/15 || Ashley Teufel  || Stephanie ||
 |  9/18/15 || Eleisha   || Eleisha ||
 |  9/25/15 || Umut   || Dacia ||
 |  10/2/15 || Stephanie  || Umut ||
@@ -53,7 +74,7 @@ Lab meetings are held Fridays from 10:30 am - 12:00 pm in MBB 3.204.
 | 10/16/15 || -  || - ||  No lab meeting, Claus away
 | 10/23/15 || Dariya  || Ben  ||
 | 10/30/15 || Dakota  || Dariya ||
-|  11/6/15 || Larry  || - || 
+|  11/6/15 || Larry  || - ||
 | 11/20/15 || Matt  || Larry ||
 | 11/27/15 || --  || -- || Thanksgiving
 |  12/4/15 || Eleisha  || Matt ||
@@ -78,7 +99,7 @@ Lab meetings are held Fridays from 10:30 am - 12:00 pm in MBB 3.204.
 |7/10/15 ||  -            ||  -        || Claus out of town
 |7/17/15 ||  -            ||  -        || Claus out of town
 |7/24/15 ||  -            ||  -        || Claus out of town
-|7/31/15 || Dariya        || Umut      || 
+|7/31/15 || Dariya        || Umut      ||
 |8/7/15  || Amir          || Dariya    ||
 |8/14/15 || Claire        || Stephanie ||
 |8/21/15 || -             || -         || Claus out of town @ dept chair retreat
