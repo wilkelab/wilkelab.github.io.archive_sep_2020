@@ -13,7 +13,7 @@ Lab meetings are held Fridays from 10:30 am - 12:00 pm in MBB 3.204.
 | Date      |    |Research           |    |Literature |         |Notes      |
 |:----------|----|:------------------|----|:--------------------|---|:------|
 | 5/27/16  || Ben || Umut ||
-| 6/3/16   || Bart || Ben ||
+| 6/3/16   || Bart || ??? ||
 | 6/10/16  || Umut || Bart ||
 | 6/17/16  || Ashley || Umut ||
 | 6/24/16  || Ben || Ashley ||
@@ -25,7 +25,7 @@ Lab meetings are held Fridays from 10:30 am - 12:00 pm in MBB 3.204.
 | 8/5/16   || Larry || Matt ||
 | 8/12/16  || --- || --- || Canceled, BEACON Congress
 | 8/19/16  || Corey || Larry ||
-| 8/26/16  || ??? || Corey ||
+| 8/26/16  || Qian || Corey ||
 |------+---+--------------------+---+----------------------+---+-------|
 {:.widetable}
 
