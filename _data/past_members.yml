@@ -54,6 +54,13 @@
   currently: Data Science Fellow, Insight Data Science
   url: "https://www.linkedin.com/in/mpscherrer"
 
+- name: Stephanie J. Spielman
+  role: Graduate Student (EEB)
+  joined: 2011
+  left: 2016
+  currently: Postdoc, Temple University
+  url: "http://sjspielman.org"
+
 - name: Amir Shahmoradi
   role: Graduate Student (Physics) & Postdoc
   joined: 2012
@@ -83,6 +90,11 @@
   url: "http://scholar.google.com/citations?user=UIWzAQIAAAAJ"
   github: edawson
 
+- name: Jeff Du
+  role: Undergraduate
+  joined: 2014
+  left: 2016
+
 - name: Kevin Jia
   role: Undergraduate
   joined: 2010
@@ -106,6 +118,11 @@
   left: 2015
   github: keerthanakumar
   
+- name: Walter Lenoir
+  role: Undergraduate
+  joined: 2015
+  left: 2016
+
 - name: Deng Madut
   role: Undergraduate
   joined: 2006
@@ -117,6 +134,11 @@
   role: Undergraduate
   joined: 2010 
   left: 2012
+ 
+- name: Alishah Momin
+  role: Undergraduate
+  joined: 2015
+  left: 2016
  
 - name: Grace Shiau
   role: High School Student & Undergraduate
