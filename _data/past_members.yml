@@ -19,19 +19,26 @@
   currently: Assistant Professor, The University of Chicago
   url: "http://drummondlab.org/"
 
-- name: Tong Zhou
-  role: Postdoc
-  joined: 2006
-  left: 2010
-  currently: Research Assistant Professor, Arizona Health Sciences Center
-  url: "http://deptmedicine.arizona.edu/faculty/tong-zhou-phd"
-
 - name: Austin G. Meyer
   role: Graduate Student (CMB) & Postdoc
   joined: 2010
   left: 2015
   currently: MD student, Texas Tech University Health Sciences Center
   url: "http://www.meyerlab.org/"
+
+- name: Amir Shahmoradi
+  role: Graduate Student (Physics) & Postdoc
+  joined: 2012
+  left: 2015
+  currently: Postdoc, UT Austin
+  url: "http://www.shahmoradi.org/" 
+
+- name: Tong Zhou
+  role: Postdoc
+  joined: 2006
+  left: 2010
+  currently: Research Assistant Professor, Arizona Health Sciences Center
+  url: "http://deptmedicine.arizona.edu/faculty/tong-zhou-phd"
 
 - name: Thomas Keller
   role: Graduate Student (EEB)
@@ -60,13 +67,6 @@
   left: 2016
   currently: Postdoc, Temple University
   url: "http://sjspielman.org"
-
-- name: Amir Shahmoradi
-  role: Graduate Student (Physics) & Postdoc
-  joined: 2012
-  left: 2015
-  currently: Postdoc, UT Austin
-  url: "http://www.shahmoradi.org/" 
 
 - name: Andrew Butler
   role: Undergraduate
