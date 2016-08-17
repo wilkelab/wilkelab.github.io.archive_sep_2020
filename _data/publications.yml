@@ -10,23 +10,31 @@
   ref: "bioRxiv"
   doi: 10.1101/038364
 
+- author: S. J. Spielman, C. O. Wilke
+  year: 2016
+  title: Extensively parameterized mutation–selection models reliably capture site-specific selective constraint
+  ref: "Mol. Biol. Evol., in press"
+  doi: 10.1093/molbev/msw171
+
 - author: S. J. Spielman, S. Wan, C. O. Wilke
-  year: preprint
+  year: 2016
   title: A comparison of one-rate and two-rate inference frameworks for site-specific dN/dS estimation.
-  ref: "bioRxiv"
-  doi: 10.1101/032805
+  ref: "Genetics, in press"
+  doi: 10.1534/genetics.115.185264
 
 - author: C. O. Wilke, S. L. Sawyer
   year: 2016
   title: "Adaptive evolution: At the mercy of viruses."
   ref: "eLife 5:e16758"
   doi: 10.7554/eLife.16758
+  pmcid: PMC4869909
 
 - author: B. R. Jack, A. G. Meyer, J. Echave, C. O. Wilke
   year: 2016
   title: Functional sites induce long-range evolutionary constraints in enzymes.
   ref: "PLOS Biol 14:e1002452"
   doi: 10.1371/journal.pbio.1002452
+  pmcid: PMC4854464
 
 - author: C. O. Wilke, J. D. Bloom
   year: 2016
@@ -43,8 +51,9 @@
 - author: E. L. Jackson, A. Shahmoradi, S. J. Spielman, B. R. Jack, C. O. Wilke
   year: 2016
   title: Intermediate divergence levels maximize the strength of structure–sequence correlations in enzymes and viral proteins.
-  ref: "Protein Science, in press"
+  ref: "Protein Science 25:1341–1353"
   doi: 10.1002/pro.2920
+  pmcid: PMC4918415
   
 - author: J. Echave, S. J. Spielman, C. O. Wilke
   year: 2016
