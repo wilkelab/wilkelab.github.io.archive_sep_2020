@@ -7,6 +7,33 @@ permalink: /more/lab_meetings.html
 Lab meetings are held Fridays from 10:30 am - 12:00 pm in MBB 3.204.
 <br><br>
 
+
+### Fall 2016
+
+|------+---+--------------------+---+----------------------+---+-------|
+| Date      |    |Research           |    |Literature |         |Notes      |
+|:----------|----|:------------------|----|:--------------------|---|:------|
+| 9/2/16  || Bart || Ben ||
+| 9/9/16   || Spencer || Bart ||
+| 9/16/16  || Dakota || Spencer ||
+| 9/23/16  || --- || --- || Canceled, Claus at CNS Fall Business Meeting
+| 9/30/16  || Ben || Dakota ||
+| 10/7/16   || Dariya || Ben ||
+| 10/14/16   || Matt || Dariya || 
+| 10/21/16  || --- || --- || Canceled, Claus out of town
+| 10/28/16  || Ashley || Matt || 
+| 11/4/16  || Umut || Ashley || 
+| 11/11/16   || --- || --- || Canceled, Claus out of town
+| 11/18/16  || Qian || Umut || 
+| 11/25/16  || --- || --- || Canceled, Thanksgiving Weekend
+| 12/2/16  || undergrad? || Qian ||
+| 12/9/16  || Dakota || ??? ||
+| 12/16/16  || ??? || ??? ||
+|------+---+--------------------+---+----------------------+---+-------|
+{:.widetable}
+
+<br /><br />
+
 ### Summer 2016
 
 |------+---+--------------------+---+----------------------+---+-------|
