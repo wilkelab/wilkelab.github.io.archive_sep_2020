@@ -46,11 +46,14 @@
   pubs: "https://scholar.google.com/citations?user=D5G8bBAAAAAJ&hl=en"
   github: dariyasydykova
 
-- name: Larry Clay
-  role: Visiting Researcher
-  history: Undergraduate, 2015–2016
-  joined: 2016
-
 - name: Nelson Morrow
   role: Undergraduate
+  joined: 2016
+  
+- name: Connie Liu
+  role: Undergraduate
+  joined: 2016
+  
+- name: Aaron Pierron
+  role: High school intern
   joined: 2016
