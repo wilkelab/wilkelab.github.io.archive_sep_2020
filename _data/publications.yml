@@ -1,14 +1,26 @@
+- author: E. L. Jackson, S. J. Spielman, C. O. Wilke
+  year: preprint
+  title: Computational prediction of the tolerance to amino-acid deletion in green-fluorescent protein.
+  ref: "bioRxiv"
+  doi: 10.1101/079061
+  
+- author: J. Echave, C. O. Wilke
+  year: preprint
+  title: "Biophysical models of protein evolution: Understanding the patterns of evolutionary sequence divergence."
+  ref: "bioRxiv"
+  doi: 10.1101/072223
+
 - author: C. W. Brown, V. Sridhara, D. R. Boutz, M. D. Person, E. M. Marcotte, J. E. Barrick, C. O. Wilke
   year: preprint
   title: Large-scale analysis of post-translational modifications in E. coli under glucose-limiting conditions.
   ref: "bioRxiv"
   doi: 10.1101/051185
 
-- author: C. McWhite, A. G. Meyer, C. O. Wilke
-  year: preprint
-  title: Serial passaging causes extensive positive selection in seasonal influenza A hemagglutinin.
-  ref: "bioRxiv"
-  doi: 10.1101/038364
+- author: C. D. McWhite, A. G. Meyer, C. O. Wilke
+  year: 2016
+  title: Sequence amplification via cell passaging creates spurious signals of positive adaptation in influenza virus H3N2 hemagglutinin.
+  ref: "Virus Evol. 2:vew026"
+  doi: 10.1093/ve/vew026
 
 - author: S. J. Spielman, C. O. Wilke
   year: 2016
