@@ -19,7 +19,7 @@ Readings:
 **2. Sep. 1, 2015 – Becoming a better writer: Avoiding the official style**  
 (Wilke)
 
-* Reading assignment: [Blog post on official style](http://serialmentor.com/blog/2015/8/26/avoiding-the-official-style/)
+* Reading assignment: [Blog post on official style](http://serialmentor.com/blog/2015/8/26/avoiding-the-official-style)
 * In-class worksheets:
     - [Exercise 1](/classes/BIO384C/fall_2015/class02_Ex1_official_style.pdf)
     - [Solutions to Exercise 1](/classes/BIO384C/fall_2015/class02_Ex1_official_style_solutions.pdf)
@@ -36,7 +36,7 @@ Readings:
 **4. Sep. 8, 2015 –  Becoming a better writer: Topic and stress position**  
 (Wilke)
 
-* Reading assignment: [Blog post on topic and stress position](http://serialmentor.com/blog/2013/9/26/writing-paragraphs-that-make-sensethe-topic-and-the-stress-position/)
+* Reading assignment: [Blog post on topic and stress position](http://serialmentor.com/blog/2013/9/26/writing-paragraphs-that-make-sensethe-topic-and-the-stress-position)
 * [Lecture slides](/classes/BIO384C/fall_2015/class04.pdf)
 * In-class worksheets:
     - [Exercises and solutions](/classes/BIO384C/fall_2015/class04_Ex_topic_and_stress.pdf)
@@ -67,7 +67,7 @@ Readings:
 **8. Sep. 22, 2015 – Outline for a Specific Aims page**  
 (Wilke)
 
-* Reading assignment: [Blog post on critical need](http://serialmentor.com/blog/2013/10/17/the-critical-need-in-a-grant-application/)
+* Reading assignment: [Blog post on critical need](http://serialmentor.com/blog/2013/10/17/the-critical-need-in-a-grant-application)
 * Additional materials:
     - [Proposal writing handout](/classes/BIO384C/fall_2015/class08_ProposalWritingCheatSheet.pdf)
     - [Example grant application](/classes/BIO384C/fall_2015/class08_NIH_R01_example.pdf)
@@ -101,8 +101,8 @@ Readings:
 (Wilke)
 
 * Reading assignments:
-    - [Blog post on when to start writing a scientific paper](http://serialmentor.com/blog/2013/8/26/when-should-you-stop-doing-science-and-start-writing-a-paper/)
-    - [Blog post on how to write a scientific paper](http://serialmentor.com/blog/2013/8/29/writing-a-scientific-paper-in-four-easy-steps/)
+    - [Blog post on when to start writing a scientific paper](http://serialmentor.com/blog/2013/8/26/when-should-you-stop-doing-science-and-start-writing-a-paper)
+    - [Blog post on how to write a scientific paper](http://serialmentor.com/blog/2013/8/29/writing-a-scientific-paper-in-four-easy-steps)
 
 * In-class exercises:
     - [Universal paper outline](/classes/BIO384C/fall_2015/class12_UniversalPaperOutline.pdf)
@@ -115,7 +115,7 @@ Readings:
 Readings:
 
 - [Hirsch, Index to quantify scientific research output](/classes/BIO384C/fall_2015/Ochman_Week6_Hirsch_PNAS.pdf)
-- [Claus Wilke blog post on h index](http://serialmentor.com/blog/2014/12/8/relationship-between-h-index-and-total-citations-count/)
+- [Claus Wilke blog post on h index](http://serialmentor.com/blog/2014/12/8/relationship-between-h-index-and-total-citations-count)
 
 **14. Oct. 13, 2015 – Factors to consider when making figures**  
 (Ochman)
