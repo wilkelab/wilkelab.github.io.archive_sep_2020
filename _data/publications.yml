@@ -22,6 +22,12 @@
   title: Large-scale analysis of post-translational modifications in E. coli under glucose-limiting conditions.
   ref: "bioRxiv"
   doi: 10.1101/051185
+  
+- author: M. Lipsitch, W. Barclay, R. Raman, C. J. Russell, J. A. Belser, S. Cobey, P. M. Kasson, J. O. Lloyd-Smith, S. Maurer-Stroh, S. Riley, C. A. A. Beauchemin, T. Bedford, T. C. Friedrich, A. Handel, S. Herfst, P. R. Murcia, B. Roche, C. O. Wilke, C. A. Russell
+  year: 2016
+  title: Viral factors in influenza pandemic risk assessment.
+  ref: "eLife, in press"
+  doi: 10.7554/eLife.18491
 
 - author: C. D. McWhite, A. G. Meyer, C. O. Wilke
   year: 2016
@@ -38,7 +44,7 @@
 - author: S. J. Spielman, S. Wan, C. O. Wilke
   year: 2016
   title: A comparison of one-rate and two-rate inference frameworks for site-specific dN/dS estimation.
-  ref: "Genetics, in press"
+  ref: "Genetics 204:499–511"
   doi: 10.1534/genetics.115.185264
 
 - author: C. O. Wilke, S. L. Sawyer
