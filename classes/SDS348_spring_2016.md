@@ -316,28 +316,18 @@ Guest lecture by Steve Bellan
 All homeworks are due by 11:59pm on the day they are due. Homeworks need to be submitted as pdf files on Canvas.
 
 - Homework 1: [HW1.Rmd](/classes/SDS348/2016_spring/homeworks/HW1.Rmd)  (due Jan 26, 2016)
-    - [Solutions](/classes/SDS348/2016_spring/homeworks/HW1-solution.html)
 - Homework 2: [HW2.Rmd](/classes/SDS348/2016_spring/homeworks/HW2.Rmd) (due Feb 2, 2016)
     - [Creating your own data frames](/classes/SDS348/2016_spring/homeworks/creating_data_frames.html)
-    - [Solutions](/classes/SDS348/2016_spring/homeworks/HW2-solution.html)
 - Homework 3: [HW3.Rmd](/classes/SDS348/2016_spring/homeworks/HW3.Rmd) (due Feb 9, 2016)
     - This homework requires the *gapminder* package. Install it by running `install.packages('gapminder')` in the R console.
-    - [Solutions](/classes/SDS348/2016_spring/homeworks/HW3-solution.html)
 - Homework 4: [HW4.Rmd](/classes/SDS348/2016_spring/homeworks/HW4.Rmd) (due Feb 16, 2016)
-    - [Solutions](/classes/SDS348/2016_spring/homeworks/HW4-solution.html)
 - Homework 5: [HW5.Rmd](/classes/SDS348/2016_spring/homeworks/HW5.Rmd) (due Mar 1, 2016)
-    - [Solutions](/classes/SDS348/2016_spring/homeworks/HW5-solution.html)
 - Homework 6: [HW6.Rmd](/classes/SDS348/2016_spring/homeworks/HW6.Rmd) (due Mar 8, 2016)
-    - [Solutions](/classes/SDS348/2016_spring/homeworks/HW6-solution.html)
 - Homework 7: [HW7.ipynb](/classes/SDS348/2016_spring/homeworks/HW7.ipynb) (due Mar 22, 2016)
-    - [Solutions](/classes/SDS348/2016_spring/homeworks/HW7-solution.html)
 - Homework 8: [HW8.ipynb](/classes/SDS348/2016_spring/homeworks/HW8.ipynb) (due Apr 5, 2016)
-    - [Solutions](/classes/SDS348/2016_spring/homeworks/HW8-solution.html)
 - Homework 9: [HW9.pdf](/classes/SDS348/2016_spring/homeworks/HW9.pdf) (due Apr 12, 2016)
 - Homework 10: [HW10.ipynb](/classes/SDS348/2016_spring/homeworks/HW10.ipynb) (due Apr 19, 2016)
-    - [Solutions](/classes/SDS348/2016_spring/homeworks/HW10-solution.html)
 - Homework 11: [HW11.ipynb](/classes/SDS348/2016_spring/homeworks/HW11.ipynb) (Problem 2 due Apr 26, 2016, Problem 1 due Apr 27, 2016)
-    - [Solutions](/classes/SDS348/2016_spring/homeworks/HW11-solution.html)
 
 ## Projects
 
@@ -363,7 +353,6 @@ All projects are due by 11:59pm on the day they are due. Projects need to be sub
 * Lab worksheet:
     - [R Markdown](/classes/SDS348/2016_spring/labs/lab1.Rmd)
     - [HTML](/classes/SDS348/2016_spring/labs/lab1.html)
-    - [Solutions, HTML](/classes/SDS348/2016_spring/labs/lab1-solution.html)
 
 **2. Jan. 27, 2016**
 
