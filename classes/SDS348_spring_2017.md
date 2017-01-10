@@ -6,7 +6,7 @@ date:   2016-01-10 00:00:01
 This is the home page for class SDS 348, Computational Biology and Bioinformatics. All relevant course materials will be posted here.
 
 ## Lectures
-**1. Jan 19, 2016 – Introduction, R Markdown**
+**1. Jan 17, 2017 – Introduction, R Markdown**
 
 * Slides: [class1.pdf](/classes/SDS348/2017_spring/slides/class1.pdf)
 * Download R from here: [http://cran.r-project.org/](http://cran.r-project.org/)
@@ -23,7 +23,7 @@ All homeworks are due by 11:59pm on the day they are due. Homeworks need to be s
 
 ## Labs
 
-**1. Jan. 18, 2016**
+**1. Jan. 18, 2017**
 
 * Guide to converting from HTML to PDF: [html_to_pdf_guide.pdf](/classes/SDS348/2017_spring/labs/html_to_pdf_guide.pdf)
 
