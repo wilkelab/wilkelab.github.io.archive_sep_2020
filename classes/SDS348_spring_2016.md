@@ -317,7 +317,7 @@ Guest lecture by Steve Bellan
 
 All homeworks are due by 11:59pm on the day they are due. Homeworks need to be submitted as pdf files on Canvas.
 
-- Homework 1: [HW1.Rmd](/classes/SDS348/2016_spring/homeworks/HW1.Rmd)  (due Jan 26, 2016)
+- Homework 1: [HW1.Rmd](/classes/SDS348/2016_spring/homeworks/HW1.Rmd) (due Jan 26, 2016)
 - Homework 2: [HW2.Rmd](/classes/SDS348/2016_spring/homeworks/HW2.Rmd) (due Feb 2, 2016)
     - [Creating your own data frames](/classes/SDS348/2016_spring/homeworks/creating_data_frames.html)
 - Homework 3: [HW3.Rmd](/classes/SDS348/2016_spring/homeworks/HW3.Rmd) (due Feb 9, 2016)

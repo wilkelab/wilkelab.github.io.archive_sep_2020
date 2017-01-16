@@ -1,0 +1,39 @@
+---
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=5, fig.width=8)
+```
+##Homework 1
+*Enter your name and EID here*
+
+**This homework is due on Jan. 24, 2017 at 7:00pm. Please submit as a pdf file on Canvas.**
+
+This homework uses the `chickwts` data set available in R. This data set contains the weight of chicks (`weight`) after being fed different feed supplements (`feed`). There are six different types of feed supplements observed in the data set (labeled `casein`, `horsebean`, `linseed`, `meatmeal`, `soybean`, `sunflower`), each with 10--14 observations. 
+
+```{r}
+head(chickwts)
+```
+
+**Problem 1: (4 pts)** We are interested in testing the effectiveness of various feed supplements on the growth rate of chickens. Since there are six different types of supplements in the data set, and therefore six groups of weight measurements, we will use an analysis of variance (ANOVA) test. Conduct an ANOVA test and interpret your results in 1-2 sentences. HINT: You will first need to create a linear model object using the `lm()` function before you can use the `anova()` function.
+
+```{r}
+# your R code goes here
+```
+
+*Your answer goes here. 1-2 sentences only.*
+
+**Problem 2: (3 pts)** Create a boxplot of the chick weights, separated by feed supplement type. Based on this plot, is the mean weight of horsebean the same or different from that of sunflower? Explain your answer.
+
+```{r}
+# your R code goes here
+```
+
+*Your answer goes here. 1-2 sentences only.*
+
+**Problem 3: (3 pts)** Use a t test to determine if the mean weight of horsebean is the same or different from that of sunflower. Interperet and explain your results in 1-2 sentences.
+
+```{r}
+# your R code goes here
+```
+
+*Your answer goes here. 1-2 sentences only.*
