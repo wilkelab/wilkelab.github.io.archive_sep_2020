@@ -21,7 +21,7 @@ Syllabus: [SDS348_syllabus_spring2017.pdf](/classes/SDS348/SDS348_syllabus_sprin
     
 ## Homeworks
 
-All homeworks are due by 11:59pm on the day they are due. Homeworks need to be submitted as pdf files on Canvas.
+All homeworks are due by 7:00pm on the day they are due. Homeworks need to be submitted as pdf files on Canvas.
 
 ## Labs
 
