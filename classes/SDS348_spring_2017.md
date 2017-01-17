@@ -30,7 +30,10 @@ All homeworks are due by 7:00pm on the day they are due. Homeworks need to be su
 **1. Jan. 18, 2017**
 
 * Guide to converting from HTML to PDF: [html_to_pdf_guide.pdf](/classes/SDS348/2017_spring/labs/html_to_pdf_guide.pdf)
-
+* Lab worksheet:
+    - [R Markdown](/classes/SDS348/2017_spring/labs/lab1.Rmd)
+    - [HTML](/classes/SDS348/2017_spring/labs/lab1.html)
+    
 ## Projects
 
 All projects are due by 11:59pm on the day they are due. Projects need to be submitted on Canvas, both in pdf format and as source code (plus data where needed).
