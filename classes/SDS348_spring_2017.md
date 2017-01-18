@@ -29,6 +29,7 @@ All homeworks are due by 7:00pm on the day they are due. Homeworks need to be su
 
 **1. Jan. 18, 2017**
 
+* Slides: [lab1_slides.pdf](/classes/SDS348/2017_spring/labs/lab1_slides.pdf)
 * Guide to converting from HTML to PDF: [html_to_pdf_guide.pdf](/classes/SDS348/2017_spring/labs/html_to_pdf_guide.pdf)
 * Lab worksheet:
     - [R Markdown](/classes/SDS348/2017_spring/labs/lab1.Rmd)
