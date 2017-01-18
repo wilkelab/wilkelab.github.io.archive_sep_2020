@@ -1,0 +1,66 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=4, fig.width=4)
+```
+##In-class worksheet 2
+**Jan 19, 2017**
+
+## 1. t test
+
+We will try the t test on the built-in data set `PlantGrowth`. However, first we need to reformat the data set, which we do with the function `unstack()`. We store the reformatted data set in a variable `plants`:
+
+```{r}
+head(PlantGrowth)
+plants <- unstack(PlantGrowth)
+head(plants)
+```
+
+The data set contains plant growth yield (dry weight) under one control and two treatment conditions:
+```{r}
+boxplot(plants)
+```
+
+**Question:** Is the mean control weight significantly different from the mean weight under treatment 1? Is the mean weight under treatment 1 significantly different from the mean weight under treatment 2? Use the function `t.test()` to find out.
+
+```{r}
+# R code goes here.
+```
+
+## 2. Correlation
+
+We will try the correlation test on the built-in data set `cars`. The data set contains the speed of cars and the distances taken to stop, measured in the 1920s:
+
+```{r}
+head(cars)
+```
+
+Is there a relationship between speed and stopping distance? Use the function `cor.test()` to find out. Then make a scatterplot of speed vs. stopping distance, using the function `plot()`.
+
+```{r}
+# R code goes here.
+```
+
+## 3. Regression
+
+We will do a regression analysis on the data set `cabbages` from the R package MASS. The data set contains the weight (`HeadWt`), vitamin C content (`VitC`), the cultivar (`Cult`), and the planting date (`Date`) for 60 cabbage heads:
+
+```{r}
+library(MASS) # load the MASS library to make the data set available
+head(cabbages)
+```
+
+Use a multivariate regression to find out whether weight and cultivar have an effect on the vitamin C content. You will need to use the functions `lm()` and `summary()`.
+
+```{r}
+# R code goes here.
+```
+
+## 4. If this was easy
+
+Look into the function `predict()`. Can you use it to estimate the vitamin C content of a c52 cultivar with a weight of 4? Can you use it to calculate the residuals of the regression model?
+
+```{r}
+# R code goes here.
+```
+
+
