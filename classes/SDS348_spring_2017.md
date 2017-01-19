@@ -28,6 +28,9 @@ Syllabus: [SDS348_syllabus_spring2017.pdf](/classes/SDS348/SDS348_syllabus_sprin
 * In-class worksheet:
     - [R Markdown](/classes/SDS348/2017_spring/worksheets/class2.Rmd)
     - [HTML](/classes/SDS348/2017_spring/worksheets/class2.html)
+    - [Solutions](/classes/SDS348/2017_spring/worksheets/class2_solutions.html)
+
+
     
 ## Homeworks
 
