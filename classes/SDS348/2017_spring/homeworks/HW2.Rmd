@@ -1,0 +1,42 @@
+```{r global_options, include=FALSE}
+library(knitr)
+library(ggplot2)
+opts_chunk$set(fig.align="center", fig.height=4, fig.width=6)
+```
+##Homework 2
+*Enter your name and EID here*
+
+**This homework is due on Jan. 31, 2017 at 7:00pm. Please submit as a PDF file on Canvas.**
+
+This homework uses data from the `Cars93` data set available in `MASS` package. Each observation in the data frame contains information on passenger cars from 1993. This is a big data frame with 27 columns. We are interested in the information on manufacturer (`Manufacturer`), car model (`Model`), type of car (`Type`), passanger capacity (`Passangers`), midrange price in $1000 (`Price`), maximum horsepower (`Horsepower`), company origin (`Origin`), and fuel tank capacity in gallons (`Fuel.tank.capacity`). 
+
+```{r}
+library(MASS)
+head(Cars93)
+```
+
+**Problem 1: (2 pts)** Use ggplot2 to create a scatter plot of the fuel tank capacity versus the car prices. In the same plot, fit a curve to these data using `geom_smooth()`. In one sentence, what broad trend do you observe in fuel tank capacity for different car prices? 
+
+```{r}
+# your R code goes here
+```
+
+*Your answer goes here*
+
+**Problem 2: (4 pts)** Next, create a scatter plot of horsepower against car price, facetted by origin. Make two observations about the data from this plot. State each in 1 sentence.
+
+```{r}
+# your R code goes here
+```
+
+*Your answer goes here*
+
+**Problem 3: (2 pts)** Plot the distribution of price, once using `geom_histogram()` and once using `geom_density()`. 
+
+```{r}
+# your R code goes here
+```
+
+**Problem 4: (2 pts)** What does the y-axis in your histogram represent? In your density plot, what is the *total* area under the curve? Please give a single number as your answer. **HINT**: You do not need to do any additional calculations to determine the area under the curve.
+
+*Your answer goes here*
