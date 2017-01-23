@@ -1,0 +1,74 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=3, fig.width=4)
+```
+##In-class worksheet 3
+**Jan 24, 2017**
+
+## 1. Plotting the iris data set
+
+We will work with the `iris` data set available in R. This data set gives the measurements in centimeters of the variables sepal length and width and petal length and width, respectively, for 50 flowers from each of 3 species of iris. The species are *Iris setosa*, *versicolor*, and *virginica:*
+
+```{r}
+head(iris)
+```
+
+In this worksheet, we will work with the library ggplot2, so we need to load it. We also set a theme that doesn't use a gray background grid:
+```{r}
+library(ggplot2) # load ggplot2 library
+theme_set(theme_bw(base_size=12)) # set the default plot theme for the ggplot2 library
+```
+
+Using ggplot, make a scatter plot of petal length vs. sepal length for the three species. Then do the same plot but facet by species instead of coloring.
+```{r }
+# R code goes here.
+```
+
+Now make side-by-side boxplots of sepal lengths for the three species of iris. The geom you need to use is `geom_boxplot()`. See if you can guess the correct aesthetic mapping.
+```{r}
+# R code goes here.
+```
+
+## 2. Plotting tree-growth data
+The data set `sitka` contains repeated measurements of tree size for 79 Sitka spruce trees, which were grown either in ozone-enriched chambers or under control conditions. It contains four columns: `size` measures the size of the tree (height times diameter squared, on a log scale). `Time` measures the time, in days since Jan. 1, 1988. `tree` indicates the tree we are working with, consecutively numbered from 1 to 79. `treat` indcates the treatment trees were subjected to, either `ozone` for an ozone-enriched chamber or `control`.
+
+```{r}
+# download the sitka data set:
+sitka <- read.csv("http://wilkelab.org/classes/SDS348/data_sets/sitka.csv")
+head(sitka)
+```
+
+Make line plots of tree size vs. time, for each tree, faceted  by treatment. First, use the same color for all lines. Hint: you will need to use the `group` aesthetic to tell ggplot that you want to have a separate line for each tree.
+```{r}
+# R code goes here.
+```
+
+Now, make a variant of this plot where each tree has a separate color.
+```{r}
+# R code goes here.
+```
+
+Finally, color each tree by its by size.
+```{r}
+# R code goes here.
+```
+
+## 3. If this was easy
+
+In the sitka tree example, when you colored each tree by a different color, do you understand why ggplot used a continuous color scale? And how would you make it use a discrete color scale with a different color for each tree?
+
+```{r fig.height=6, fig.width=10}
+# R code goes here.
+```
+
+*(Note that I have told R Markdown to make a larger figure, by starting the code block with* `{r fig.height=6, fig.width=10}` *instead of* `{r}`*, because the default figure size is too small to show the resulting legend.)*
+
+For the `iris` data set, make a plot of the 2d distribution of petal length vs. sepal length, by making an x-y plot that shows the individual data points as well as contour lines indicating the density of points in a given spatial region.
+```{r}
+# R code goes here.
+```
+
+If this was still easy, now instead of contour lines add a fitted straight black line (not a curve, and no confidence band!) to each group of points.
+```{r}
+# R code goes here.                                                 
+```

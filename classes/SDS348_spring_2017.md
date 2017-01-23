@@ -30,6 +30,22 @@ Syllabus: [SDS348_syllabus_spring2017.pdf](/classes/SDS348/SDS348_syllabus_sprin
     - [HTML](/classes/SDS348/2017_spring/worksheets/class2.html)
     - [Solutions](/classes/SDS348/2017_spring/worksheets/class2_solutions.html)
 
+**3. Jan 24, 2017 – Data visualization with ggplot2**
+
+* Slides: [class3.pdf](/classes/SDS348/2017_spring/slides/class3.pdf)
+* ggplot2 reference manual: [http://docs.ggplot2.org/current/](http://docs.ggplot2.org/current/)
+* ggplot2 video tutorial: [http://varianceexplained.org/RData/lessons/lesson2/segment1/](http://varianceexplained.org/RData/lessons/lesson2/segment1/)
+* ggplot2 materials on the Cookbook for R site: [http://www.cookbook-r.com/Graphs/](http://www.cookbook-r.com/Graphs/)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2017_spring/worksheets/class3.Rmd)
+    - [HTML](/classes/SDS348/2017_spring/worksheets/class3.html)
+
+**4. Jan 26, 2017 – Data visualization with ggplot2**
+
+* Slides: [class4.pdf](/classes/SDS348/2017_spring/slides/class4.pdf)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2017_spring/worksheets/class4.Rmd)
+    - [HTML](/classes/SDS348/2017_spring/worksheets/class4.html)
 
     
 ## Homeworks

@@ -1,0 +1,97 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=3, fig.width=4)
+```
+##In-class worksheet 4
+**Jan 26, 2017**
+
+We will again be working with the ggplot2 package, so we need to load it:
+```{r}
+library(ggplot2) # load ggplot2 library
+theme_set(theme_bw(base_size=12)) # set the default plot theme for the ggplot2 library
+```
+
+## 1. Bar plots
+
+
+The `bacteria` data set contains data from tests of the presence of the bacterium *H. influenzae* in children with otitis media in the Northern Territory of Australia. We are interested in two columns of this data set: `presence` reports the presence (`y`) or absence (`n`) of the bacterium. `treatment` reports the treatment, which was `placebo`, `drug`, or `drug+` (drug plus high adherence).
+```{r }
+# download the bacteria data set:
+bacteria <- read.csv("http://wilkelab.org/classes/SDS348/data_sets/bacteria.csv")
+head(bacteria)
+```
+
+Using `geom_bar()`, make a bar plot that shows the absolute number of cases with or without the bacterium, stacked on top of each other, for each treatment.
+```{r }
+# R code goes here
+```
+
+Now modify the plot so that bars representing the absolute number of cases with or without the bacterium are shown side-by-side. Hint: This requires the argument `position='dodge'` in `geom_bar()`.
+```{r }
+# R code goes here
+```
+
+Now modify the plot so that bars represent the relative number of cases with or without the bacterium. What is the appropriate `position` option in `geom_bar()` to achieve this effect?
+```{r }
+# R code goes here
+```
+
+## 2. Histograms and density plots
+
+Make a histogram plot of sepal lengths in the `iris` data set, using the default histogram settings. Then make two more such plots, with different bin widths. Use `geom_histogram()`
+```{r }
+# R code goes here
+```
+
+Instead of `geom_histogram()`, now use `geom_density()` and fill the area under the curves by species identity.
+```{r}
+# R code goes here
+```
+
+Now make the areas under the curve partially transparent, so the overlap of the various distributions becomes clearly visible.
+```{r}
+# R code goes here
+```
+
+
+
+## 3. Scales
+
+The `movies` data set provided in the package ggplot2movies containes data from the internet movie database (IMDB) about 28819 different movies. It contains information such as the length of the movie, the year the movie was released, number of votes the movie has received on the IMDB, and so on. To use the data set, you first need to load it in:
+```{r}
+library(ggplot2movies)
+head(movies)
+```
+
+Now, using this data set, make a scatter plot of the number of votes (`votes`) vs. the length of the movie (`length`). Use a log scale for both the x and the y axis.
+```{r}
+# R code goes here
+```
+
+Now color the points by year and use a color gradient that goes from yellow to blue. You can change the color scale using `scale_color_gradient()`.
+```{r}
+# R code goes here
+```
+
+Now zoom in to movies that are between 1 and 20 minutes long, using `xlim()` instead of `scale_x_log10()`.
+```{r}
+# R code goes here
+```
+
+## 4. If this was easy
+
+Take the log-log plot of `votes` vs. `length` from the `movies` data set and plot only movies that are between 1 and 20 minutes long, but keep the log scale.
+```{r}
+# R code goes here
+```
+
+Make a log-log plot of `votes` vs. `length` from the `movies` data set, faceted by year. Plot a trend line onto each facet, without confidence band.
+```{r fig.height=10, fig.width=10}
+# R code goes here
+```
+
+Go back to the `bacteria` dataset, make a bar plot that shows the total number of cases within each treatment, and plot the number of such cases on top of each bar.
+```{r }
+# R code goes here
+```
+
