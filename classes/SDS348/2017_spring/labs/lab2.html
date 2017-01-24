@@ -122,6 +122,18 @@ $(document).ready(function () {
 <div id="lab-worksheet-2" class="section level2">
 <h2>Lab Worksheet 2</h2>
 <p>We will be working with the <code>msleep</code> data set that is provided with ggplot2. The data set contains information about the sleep habits of 83 mammals. Enter <code>?msleep</code> on the R command line to learn more about the dataset.</p>
+<pre class="r"><code>head(msleep)</code></pre>
+<pre><code>## # A tibble: 6 × 11
+##                         name      genus  vore        order conservation
+##                        &lt;chr&gt;      &lt;chr&gt; &lt;chr&gt;        &lt;chr&gt;        &lt;chr&gt;
+## 1                    Cheetah   Acinonyx carni    Carnivora           lc
+## 2                 Owl monkey      Aotus  omni     Primates         &lt;NA&gt;
+## 3            Mountain beaver Aplodontia herbi     Rodentia           nt
+## 4 Greater short-tailed shrew    Blarina  omni Soricomorpha           lc
+## 5                        Cow        Bos herbi Artiodactyla domesticated
+## 6           Three-toed sloth   Bradypus herbi       Pilosa         &lt;NA&gt;
+## # ... with 6 more variables: sleep_total &lt;dbl&gt;, sleep_rem &lt;dbl&gt;,
+## #   sleep_cycle &lt;dbl&gt;, awake &lt;dbl&gt;, brainwt &lt;dbl&gt;, bodywt &lt;dbl&gt;</code></pre>
 <p><strong>Problem 1:</strong> Make the following plots: (i) a plot of total time awake vs. body weight, colored by “vore” (carnivore, herbivore, etc.); (ii) a plot of body weight vs. brain weight, colored by “vore”. When you plot body weight and/or brain weight, consider whether a linear scale or a logarithmic scale seems more appropriate, and explain your reasoning in 1-2 sentences. <strong>HINT:</strong> Use the functions <code>scale_x_log10()</code> and <code>scale_y_log10()</code> to change the scales.</p>
 <pre class="r"><code># your R code goes here</code></pre>
 <p><em>Your answer goes here.</em></p>
