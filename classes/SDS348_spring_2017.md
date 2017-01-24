@@ -36,6 +36,7 @@ Syllabus: [SDS348_syllabus_spring2017.pdf](/classes/SDS348/SDS348_syllabus_sprin
 * ggplot2 reference manual: [http://docs.ggplot2.org/current/](http://docs.ggplot2.org/current/)
 * ggplot2 video tutorial: [http://varianceexplained.org/RData/lessons/lesson2/segment1/](http://varianceexplained.org/RData/lessons/lesson2/segment1/)
 * ggplot2 materials on the Cookbook for R site: [http://www.cookbook-r.com/Graphs/](http://www.cookbook-r.com/Graphs/)
+* R for Data Science: [http://r4ds.had.co.nz/](http://r4ds.had.co.nz/)
 * In-class worksheet:
     - [R Markdown](/classes/SDS348/2017_spring/worksheets/class3.Rmd)
     - [HTML](/classes/SDS348/2017_spring/worksheets/class3.html)
