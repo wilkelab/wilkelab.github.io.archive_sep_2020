@@ -45,9 +45,11 @@ Syllabus: [SDS348_syllabus_spring2017.pdf](/classes/SDS348/SDS348_syllabus_sprin
 **4. Jan 26, 2017 – Data visualization with ggplot2**
 
 * Slides: [class4.pdf](/classes/SDS348/2017_spring/slides/class4.pdf)
+* Animated Christmas card made with ggplot: [Data driven Christmas card animation](https://www.r-bloggers.com/data-driven-christmas-card-animation-with-voronoi-tiles/)
 * In-class worksheet:
     - [R Markdown](/classes/SDS348/2017_spring/worksheets/class4.Rmd)
     - [HTML](/classes/SDS348/2017_spring/worksheets/class4.html)
+    - [Solutions](/classes/SDS348/2017_spring/worksheets/class4_solutions.html)
 
     
 ## Homeworks
