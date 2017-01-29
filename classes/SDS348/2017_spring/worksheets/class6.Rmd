@@ -1,0 +1,80 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=3, fig.width=4)
+```
+##In-class worksheet 6
+**Feb 2, 2017**
+
+In this worksheet, we will use the libraries ggplot2 and dplyr:
+```{r message=FALSE}
+library(ggplot2)
+library(dplyr)
+```
+
+## 1. The msleep dataset
+
+The `msleep` dataset, provided with ggplot2, contains information about sleep and awake times of different mammals:
+```{r}
+msleep
+```
+
+Verify that the sum of total sleep time (column `sleep_total`) and total awake time (column `awake`)  adds up to 24h for all animals in the `msleep` dataset.
+```{r}
+# R code goes here.
+```
+
+Make a list of all the domesticated species in the `msleep` dataset, in alphabetical order. Hint: domesticated species have the entry "domesticated" in the column `conservation`.
+```{r}
+# R code goes here.
+```
+
+For the different vore classifications, tally how many species are awake for at least 18 hours. Hint: use the function `tally()`.
+```{r}
+# R code goes here.
+```
+
+Using the function `top_n()`, identify the top-10 least-awake animals, and list them from least awake to most awake. Explain why this analysis gives you 11 results instead of 10.
+```{r}
+# R code goes here.
+```
+
+Considering only carnivores and herbivores, make a plot of the percent of time each animal is in REM sleep (out of the total sleep time) vs. the animal's total sleep time. Hint: Use the operator `|` to indicate logical OR in the `filter()` function.
+```{r}
+# R code goes here.
+```
+
+
+## 2. The diamonds dataset
+
+The `diamonds` dataset provided by ggplot2 provides information about quality and price of 53940 diamonds:
+```{r}
+head(diamonds)
+```
+
+The best cuts of diamonds are "Very Good", "Premium", and "Ideal". Make a table that selects only those diamonds, and find the minimum, median, and maximum price for each cut. Hint: The operator `%in%` is helpful for selecting the diamond cuts.
+```{r}
+# R code goes here.
+```
+
+For each of the different diamond cuts, calculate the mean carat level among the diamonds whose price falls within 10% of the most expensive diamond for that cut.
+```{r}
+# R code goes here.
+```
+
+For each of the different diamond cuts, calculate the mean carat level among the top-10% most expensive diamonds.
+```{r}
+# R code goes here.
+```
+
+Make a table that contains the median price for each combination of `cut` and `clarity`, and arrange the final table in descending order of median price. Do you notice something odd about the ordering?
+```{r}
+# R code goes here.
+```
+
+
+## 3. If this was easy
+
+For the `diamonds` data set, using the function `do()`, fit a linear model of price vs. carat separately for each cut. Then make a table that holds the resulting intercepts and slopes.
+```{r}
+# R code goes here.
+```

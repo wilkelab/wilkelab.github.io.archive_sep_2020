@@ -51,7 +51,27 @@ Syllabus: [SDS348_syllabus_spring2017.pdf](/classes/SDS348/SDS348_syllabus_sprin
     - [HTML](/classes/SDS348/2017_spring/worksheets/class4.html)
     - [Solutions](/classes/SDS348/2017_spring/worksheets/class4_solutions.html)
 
-    
+**5. Jan 31, 2017 – Working with tidy data**
+
+* Slides: [class5.pdf](/classes/SDS348/2017_spring/slides/class5.pdf)
+* Tidy data paper by Wickham: [J. Stat. Soft. 59:10, 2014](http://www.jstatsoft.org/v59/i10/paper)
+* Introduction to dplyr: [http://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html](http://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html)
+* dplyr package on CRAN: [http://cran.r-project.org/web/packages/dplyr/index.html](http://cran.r-project.org/web/packages/dplyr/index.html)
+* dplyr video tutorial: [http://rpubs.com/justmarkham/dplyr-tutorial](http://rpubs.com/justmarkham/dplyr-tutorial)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2017_spring/worksheets/class5.Rmd)
+    - [HTML](/classes/SDS348/2017_spring/worksheets/class5.html)
+
+**6. Feb 2, 2017 – Working with tidy data**    
+
+* Slides: [class6.pdf](/classes/SDS348/2017_spring/slides/class6.pdf)
+* Data-wrangling tutorial by Bradley Boehmke: [http://rpubs.com/bradleyboehmke/data_wrangling](http://rpubs.com/bradleyboehmke/data_wrangling)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2017_spring/worksheets/class6.Rmd)
+    - [HTML](/classes/SDS348/2017_spring/worksheets/class6.html)
+
+
+
 ## Homeworks
 
 All homeworks are due by 7:00pm on the day they are due. Homeworks need to be submitted as pdf files on Canvas.
