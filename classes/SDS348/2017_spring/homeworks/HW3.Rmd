@@ -1,0 +1,58 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=3, fig.width=4)
+library(ggplot2)
+theme_set(theme_bw(base_size=12))
+library(dplyr)
+```
+##Homework 3
+*Enter your name and EID here*
+
+**This homework is due on Feb. 7, 2017 at 7:00pm. Please submit as a PDF file on Canvas.**
+
+In this homework, you are asked to evaluate two data sets and determine if they are tidy data sets. *We are referring to a very specific definition of "tidy", so if this term is unfamiliar to you, please review the lecture materials*.
+
+**Problem 1: (2 pts)** The dataset `mdeaths` built into R lists monthly deaths from lung diseases in the UK in 1974-1979. You can run `?mdeaths` to learn more about this data set.
+```{r}
+mdeaths
+```
+Using the formal definition of tidy data that we learned in lecture, is this data set tidy? Explain why or why not.
+
+*Your answer goes here. 2-3 sentences only.*
+
+The data set `CO2` built into R contains CO2 uptake of plants from Quebec and Mississipi measured at different levels of ambient CO2 concentrations. You can run `?CO2` to learn more about this data set.
+```{r}
+head(CO2)
+```
+Using the formal definition of tidy data that we learned in lecture, is this data set tidy? Explain why or why not.
+ 
+*Your answer goes here. 2-3 sentences only.*
+ 
+**Problem 2: (2 pts)** The `Cars93` dataset from the "MASS" package contains information about passenger car models from 1993. You should be familiar with this data set from Homework 2.
+
+```{r}
+library(MASS)
+head(Cars93)
+```
+
+Pick a car type and a car origin of your choosing. What is the **median** price of the cars with the type and origin that you chose? State your answer in a sentence.
+
+*State which car type and origin you chose here.*
+
+```{r}
+# R code goes here
+```
+
+*Your answer goes here. 1 sentence only*
+
+**Problem 3: (4 pts)** Which manufacturer has the largest difference between city MPG and highway MPG for large cars? List at least the top 5 and state your answer in a sentence. **HINT:** Use the functions `max()` and `min()` to determine the difference in MPG.
+
+```{r}
+# R code goes here
+```
+
+*Your answer goes here. 1-2 sentences only.*
+
+**Problem 4: (2 pts)** Ask a question about the `Cars93` data set. Describe in 1-2 sentences how you would answer this question with an analysis or a graph.
+
+*Your answer goes here. 2-3 sentences only.*
