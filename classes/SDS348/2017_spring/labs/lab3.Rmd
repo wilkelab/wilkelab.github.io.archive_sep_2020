@@ -1,0 +1,55 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=3, fig.width=4)
+library(ggplot2)
+theme_set(theme_bw(base_size=12))
+library(dplyr)
+```
+##Lab Worksheet 3
+
+**Problem 1:** The data set `AirPassengers` built into R lists total numbers of international airline passengers, 1949 to 1960.
+```{r}
+AirPassengers
+```
+Is the dataset tidy? Explain why or why not.
+
+*Your answer goes here.*
+
+**Problem 2:** The function `data()` lists all data sets that are available in R by default. Look through the list and identify a data set that is tidy. Explain why the data set is tidy.
+
+*I pick the data set... :*
+```{r}
+# R code goes here
+```
+*Your answer goes here.*
+
+**Problem 3:** In an in-class exercise, we made the following plot of the Sitka dataset:
+
+```{r}
+# download the sitka data set:
+sitka <- read.csv("http://wilkelab.org/classes/SDS348/data_sets/sitka.csv")
+head(sitka)
+ggplot(sitka, aes(x=Time, y=size, group=tree)) + geom_line() + facet_wrap(~treat)
+```
+
+Now modify the plot so that the line for each tree is colored according to the maximum size of the tree. 
+```{r}
+# R code goes here
+```
+
+### If that was easy...
+
+**Problem 4:** The package nycflights13 contains information about all flights departing from one of the NY City airports in 2013. In particular, the data table `flights` lists on-time departure and arrival information for 336,776 individual flights:
+```{r}
+library(nycflights13)
+flights
+```
+
+We would like to collect some information about arrival delays of United Airlines (UA) flights. Do the following: pick all UA departures with non-zero arrival delay and calculate the mean arrival delay for each of the corresponding flight numbers. Which flight had the longest mean arrival delay and how long was that delay?
+
+```{r}
+# R code goes here.
+```
+
+*Your answer goes here.*
+

@@ -78,7 +78,7 @@ All homeworks are due by 7:00pm on the day they are due. Homeworks need to be su
 
 - Homework 1: [HW1.Rmd](/classes/SDS348/2017_spring/homeworks/HW1.Rmd) (due Jan 24, 2017) [Solutions, HTML](/classes/SDS348/2017_spring/homeworks/HW1-solution.html) 
 - Homework 2: [HW2.Rmd](/classes/SDS348/2017_spring/homeworks/HW2.Rmd) (due Jan 31, 2017)
-- Homework 3: [HW2.Rmd](/classes/SDS348/2017_spring/homeworks/HW3.Rmd) (due Feb 7, 2017)
+- Homework 3: [HW3.Rmd](/classes/SDS348/2017_spring/homeworks/HW3.Rmd) (due Feb 7, 2017)
 
 ## Labs
 
@@ -98,6 +98,12 @@ All homeworks are due by 7:00pm on the day they are due. Homeworks need to be su
     - [R Markdown](/classes/SDS348/2017_spring/labs/lab2.Rmd)
     - [HTML](/classes/SDS348/2017_spring/labs/lab2.html)
     - [Solutions, HTML](/classes/SDS348/2017_spring/labs/lab2-solution.html)
+
+**1. Feb. 1, 2017**
+
+* Lab worksheet:
+    - [R Markdown](/classes/SDS348/2017_spring/labs/lab3.Rmd)
+    - [HTML](/classes/SDS348/2017_spring/labs/lab3.html)
 
 ## Projects
 
