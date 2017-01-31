@@ -101,6 +101,7 @@ All homeworks are due by 7:00pm on the day they are due. Homeworks need to be su
 
 **1. Feb. 1, 2017**
 
+* Slides: [lab3.pdf](/classes/SDS348/2017_spring/labs/lab3_slides.pdf)
 * Lab worksheet:
     - [R Markdown](/classes/SDS348/2017_spring/labs/lab3.Rmd)
     - [HTML](/classes/SDS348/2017_spring/labs/lab3.html)
