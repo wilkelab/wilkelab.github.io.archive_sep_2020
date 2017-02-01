@@ -77,7 +77,7 @@ Syllabus: [SDS348_syllabus_spring2017.pdf](/classes/SDS348/SDS348_syllabus_sprin
 All homeworks are due by 7:00pm on the day they are due. Homeworks need to be submitted as pdf files on Canvas.
 
 - Homework 1: [HW1.Rmd](/classes/SDS348/2017_spring/homeworks/HW1.Rmd) (due Jan 24, 2017) [Solutions, HTML](/classes/SDS348/2017_spring/homeworks/HW1-solution.html) 
-- Homework 2: [HW2.Rmd](/classes/SDS348/2017_spring/homeworks/HW2.Rmd) (due Jan 31, 2017)
+- Homework 2: [HW2.Rmd](/classes/SDS348/2017_spring/homeworks/HW2.Rmd) (due Jan 31, 2017) [Solutions, HTML](/classes/SDS348/2017_spring/homeworks/HW2-solution.html) 
 - Homework 3: [HW3.Rmd](/classes/SDS348/2017_spring/homeworks/HW3.Rmd) (due Feb 7, 2017)
 
 ## Labs
