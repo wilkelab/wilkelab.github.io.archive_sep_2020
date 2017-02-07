@@ -109,7 +109,7 @@ All homeworks are due by 7:00pm on the day they are due. Homeworks need to be su
     - [HTML](/classes/SDS348/2017_spring/labs/lab1.html)
     - [Solutions, HTML](/classes/SDS348/2017_spring/labs/lab1-solution.html)
 
-**1. Jan. 25, 2017**
+**2. Jan. 25, 2017**
 
 * Slides: [lab2.pdf](/classes/SDS348/2017_spring/labs/lab2_slides.pdf)
 * Lab worksheet:
@@ -117,7 +117,7 @@ All homeworks are due by 7:00pm on the day they are due. Homeworks need to be su
     - [HTML](/classes/SDS348/2017_spring/labs/lab2.html)
     - [Solutions, HTML](/classes/SDS348/2017_spring/labs/lab2-solution.html)
 
-**1. Feb. 1, 2017**
+**3. Feb. 1, 2017**
 
 * Slides: [lab3.pdf](/classes/SDS348/2017_spring/labs/lab3_slides.pdf)
 * Lab worksheet:
@@ -125,7 +125,7 @@ All homeworks are due by 7:00pm on the day they are due. Homeworks need to be su
     - [HTML](/classes/SDS348/2017_spring/labs/lab3.html)
     - [Solutions, HTML](/classes/SDS348/2017_spring/labs/lab3-solution.html)
 
-**1. Feb. 8, 2017**
+**4. Feb. 8, 2017**
 
 * Slides: [lab4.pdf](/classes/SDS348/2017_spring/labs/lab4_slides.pdf)
 * Lab worksheet:
