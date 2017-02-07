@@ -18,7 +18,7 @@ Lab meetings are held Fridays from 10:30 am - 12:00 pm in MBB 3.204.
 | 2/3/17  || Literature || || 
 | 2/10/17  || Research || Bart ||
 | 2/17/17   || Literature || ||
-| 2/24/17   || Research || Cory || 
+| 2/24/17   || Research || Cory, Ben || 
 | 3/3/17  || Literature || ||
 | 3/10/17  || Literature ||  || 
 | 3/17/17  || Research || Matt || 

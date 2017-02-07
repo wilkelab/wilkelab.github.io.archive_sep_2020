@@ -1,0 +1,69 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=3, fig.width=4)
+```
+##In-class worksheet 8
+**Feb 9, 2017**
+
+In this worksheet, we will use the libraries ggplot2, dplyr, and tidyr:
+```{r message=FALSE}
+library(ggplot2) # for the diamonds data set only
+library(dplyr)
+library(tidyr)
+```
+
+## 1. Making wide tables longer
+Consider the following data set, which contains information about income and religious affiliation in the US:
+```{r}
+pew <- read.csv("http://wilkelab.org/classes/SDS348/data_sets/pew.csv", stringsAsFactors=F, check.names=F)
+head(pew)
+```
+This table is not tidy, because income levels are used as column headers rather than as levels of an `income` variable.
+
+Use `gather()` to turn this table into a table with three columns, one for religion, one for income (called `income`), and one for the count of people with the respective combination of income and religion (called `count`).
+```{r}
+# R code goes here.
+```
+
+Now call the income column `income_level` and the count column `number_of_people`.
+```{r}
+# R code goes here.
+```
+
+Now, instead of gathering data from all columns, gather only the data from columns `below10k`, `from20to30k`, and `from50to75k`, such that your final dataframe contains only these three income levels. Sort your final data frame according to religion and then income_level.
+```{r}
+# R code goes here.
+```
+
+## 2. Making long tables wider
+
+Consider the following data set, which contains information about the sex, weight, and height of 200 individuals:
+```{r}
+persons <- read.csv("http://wilkelab.org/classes/SDS348/data_sets/persons.csv", stringsAsFactors=F)
+head(persons)
+```
+Is this data set tidy? And can you rearrange it so that you have one column for subject, one for sex, one for weight, and one for height?
+
+```{r}
+# R code goes here.
+```
+
+For the data set `diamonds` from the ggplot2 package, create a table displaying the mean price for each combination of cut and clarity. Then use `spread()` to rearrange this table into a wide format, such that there is a column of mean prices for each cut level (Fair, Good, Very Good, etc.).
+```{r}
+# R code goes here.
+```
+
+
+## 3. If this was easy
+
+Take the sepal lengths from the `iris` dataset and put them into a wide table so that is one data column per species. You might be tempted to do this with the following code, which however doesn't work. Can you explain why? 
+```{r}
+# If you remove the # sign in the line below you will get an error; this code doesn't work
+# iris %>% select(Sepal.Length, Species) %>% spread(Species, Sepal.Length)
+```
+
+*Explanation goes here.*
+
+```{r}
+# R code goes here.
+```
