@@ -95,7 +95,7 @@ All homeworks are due by 7:00pm on the day they are due. Homeworks need to be su
 
 - Homework 1: [HW1.Rmd](/classes/SDS348/2017_spring/homeworks/HW1.Rmd) (due Jan 24, 2017) [Solutions, HTML](/classes/SDS348/2017_spring/homeworks/HW1-solution.html) 
 - Homework 2: [HW2.Rmd](/classes/SDS348/2017_spring/homeworks/HW2.Rmd) (due Jan 31, 2017) [Solutions, HTML](/classes/SDS348/2017_spring/homeworks/HW2-solution.html) 
-- Homework 3: [HW3.Rmd](/classes/SDS348/2017_spring/homeworks/HW3.Rmd) (due Feb 7, 2017)
+- Homework 3: [HW3.Rmd](/classes/SDS348/2017_spring/homeworks/HW3.Rmd) (due Feb 7, 2017) [Solutions, HTML](/classes/SDS348/2017_spring/homeworks/HW3-solution.html) 
 - Homework 4: [HW4.Rmd](/classes/SDS348/2017_spring/homeworks/HW4.Rmd) (due Feb 14, 2017)
 
 ## Labs
@@ -131,7 +131,8 @@ All homeworks are due by 7:00pm on the day they are due. Homeworks need to be su
 * Lab worksheet:
     - [R Markdown](/classes/SDS348/2017_spring/labs/lab4.Rmd)
     - [HTML](/classes/SDS348/2017_spring/labs/lab4.html)
-
+	- [Solutions, HTML](/classes/SDS348/2017_spring/labs/lab4-solution.html)
+	
 ## Projects
 
 All projects are due by 7:00pm on the day they are due. Projects need to be submitted on Canvas, both in pdf format and as source code (plus data where needed).
