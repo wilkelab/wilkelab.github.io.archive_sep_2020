@@ -1,0 +1,81 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=3, fig.width=4)
+library(ggplot2)
+theme_set(theme_bw(base_size=12))
+library(dplyr)
+library(tidyr)
+```
+##Homework 4
+*Enter your name and EID here*
+
+**This homework is due on Feb. 14, 2017 at 7:00pm. Please submit as a PDF file on Canvas.**
+
+**Problem 1: (4 pts)** Recall the `HairEyeColor` data set from an earlier in-class exercise. This data set contains counts of males and females with different combinations of hair and eye color.
+
+```{r}
+HairEyeColor
+```
+
+I have split the data set into two data-frames, one `male` and one `female`. Using the `dplyr` and `tidyr` packages, make these data-frames tidy and then combine them into a single data-frame. Make sure that your final data-frame has a `sex` column indicating which data-frame the observations originally came from. **HINT**: You can use the `bind_rows` function to add rows from one data-frame onto another as long as both data-frames have identical column names.
+
+```{r}
+male <- read.table(text="
+Hair    Brown Blue Hazel Green
+  Black    32   11    10     3
+  Brown    53   50    25    15
+  Red      10   10     7     7
+  Blond     3   30     5     8
+", head=T)
+
+female <- read.table(text="
+Hair    Brown Blue Hazel Green
+  Black    36    9     5     2
+  Brown    66   34    29    14
+  Red      16    7     7     7
+  Blond     4   64     5     8
+", head=T)
+
+# R code goes here
+```
+
+Using the data-frame you created above, compute the total counts for each sex (i.e., the sum of the counts for each sex).
+
+```{r}
+# R code goes here
+```
+
+**Problem 2: (3 pts)** Recall that the `chickwts` data set contains information on the weight of chicks after being fed different feed supplements. The different feed supplements are labeled casein, horsebean, linseed, meatmeal, soybean, and sunflower in the `feed` column. I have created a new data-frame (`feed_names`), that contains the abbreviated names of different feed supplements. Using one of the `dplyr` join functions, combine the two data-frames so that there is an additional `feed_abbr` column and all of the original columns and rows in `chickwts` are retained. Which join function is most appropriate to use and why?
+
+```{r}
+head(chickwts)
+
+feed_names <- read.table(text="
+feed feed_abbr
+casein cs
+whey wh
+linseed  ls
+meatmeal mm
+fishmeal fm
+soybean sb
+sunflower sf
+corn co
+wheatbran wb
+", head=T)
+
+# R code goes here
+```
+
+*Your answer goes here. 1-2 sentences only.*
+
+**Problem 3: (3 pts)** Make up your own data set which is **not** tidy and input it into R via the `text` option of `read.table()`. First, explain why it is not tidy. Then, using `dplyr` and/or `tidyr` convert it into a tidy data set.
+
+```{r}
+# R code goes here
+```
+
+*Your answer goes here*
+
+```{r}
+# R code goes here
+```
