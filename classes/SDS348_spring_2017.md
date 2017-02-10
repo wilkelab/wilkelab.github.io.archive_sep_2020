@@ -138,3 +138,7 @@ All homeworks are due by 7:00pm on the day they are due. Homeworks need to be su
 ## Projects
 
 All projects are due by 7:00pm on the day they are due. Projects need to be submitted on Canvas, both in pdf format and as source code (plus data where needed).
+
+- Project 1:
+    - [HTML](/classes/SDS348/2017_spring/projects/project1/project1.html)
+    - [R Markdown](/classes/SDS348/2017_spring/projects/project1/project1.Rmd) (due Feb 21, 2017)

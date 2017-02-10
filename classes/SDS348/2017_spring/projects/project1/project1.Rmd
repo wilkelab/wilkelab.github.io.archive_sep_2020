@@ -1,0 +1,83 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=6, fig.width=8)
+library(ggplot2)
+theme_set(theme_bw(base_size=12))
+library(dplyr)
+library(tidyr)
+```
+
+##Project 1
+*Enter your name and EID here*
+
+###Instructions
+This knitted R Markdown document (as a PDF) *and* the raw R Markdown file (as .Rmd) should both be submitted to Canvas by 7:00pm on **Feb 21st, 2017**. These two documents will be graded jointly, so they must be consistent (as in, don't change the R Markdown file without also updating the knitted document!).
+
+All results presented *must* have corresponding code. **Any answers/results given without the corresponding R code that generated the result will be considered absent.** To be clear: if you do calculations by hand instead of using R and then report the results from the calculations, **you will not receive credit** for those calculations. All code reported in your final project document should work properly. Please do not include any extraneous code or code which produces error messages. (Code which produces warnings is acceptable, as long as you understand what the warnings mean.)
+
+For this project, you will be using the data set `Titanic` available in R and data sets `airlines`, `airports`, `flights`, `planes`, and `weather` in the `nycflights13` package. You should be familiar with the `flights` data set from class 7. 
+```{r}
+Titanic
+library(nycflights13)
+head(flights)
+```
+
+###Problems
+
+**Problem 1: (5 pts)**
+The data set `Titanic` is not tidy. Suggest a different way to represent this data set that *would* be tidy. What columns would you need? What would the individual rows represent?
+
+*Your answer goes here*
+
+**Problem 2: (25 pts)**
+Combine the data sets `flights` and `airlines` such that all the information in the `flights` data set is retained. Using the combined data set and the full name of airline carriers, find the carrier with the longest and the shortest mean departure delay. Perform a statistical test to determine whether there is a significant difference in the departure delays between these two carriers, and interpret your findings.
+
+```{r}
+# your R code goes here
+```
+
+*Your answer goes here. 1-2 sentences only.* 
+
+**Problem 3: (40 pts)**
+
+**a. (30 points)**
+Using the `flights` data set, find the mean distance and mean air time in each month for flights from the three New York airports. Now make one plot that visualizes all this information at once. Your code should be well-commented and describe the various steps you take to create this figure. 
+
+```{r}
+# your R code goes here
+```
+
+  **b. (10 points)** Discuss the information (overarching trends, patterns, etc.) your final plot reveals. Be sure to include in your discussion the similarities/differences among the three New York airports and a clear, logical justification for why you selected the particular geom(s) used to represent this data. Please limit your full response to a maximum of 6 sentences.
+ 
+*Your answer goes here*
+ 
+**Problem 4: (30 pts)**
+Think of **two** (and only two!) questions to ask about any of the data sets in `nycflights13`. Clearly state each question in the spaces provided. For each question, use the ggplot2 library to create a plot that can help you find an answer to the question. For each plot, provide a clear explanation as to why this type of plot (e.g. boxplot, barplot, histogram, etc.) is best for providing the information you are asking about. Answer your questions by interpreting your plot and any trends it reveals, or does not reveal, as the case may be. Your two plots *must* use different primary geoms. Please limit the discussion for each question-plot pair to 4-6 sentences.
+
+**You cannot reuse the questions about the data sets in `nycflights13` from class.**
+
+*To receive full credit for Problem 4, we looked for the following for each question:*
+
+  - *A clear, coherent question about the data. (Questions end in a question mark!)*
+  - *A plot that helps answer your proposed question, with a justification for why you chose to make the type of plot that you made.*
+  - *An interpretation of your plot and a response to your proposed question.*
+
+**Question 1**
+
+*State your first question here.*
+
+```{r}
+# R code for plot 1 creation, analysis goes here
+```
+
+*Answer to question 1 goes here.*
+
+**Question 2**
+
+*State your second question here.*
+
+```{r}
+# R code for plot 2 creation, analysis goes here
+```
+
+*Answer to question 2 goes here.*
