@@ -22,6 +22,11 @@
   pubs: "https://scholar.google.com/citations?user=QqyRBHIAAAAJ"
   github: a-teufel
 
+- name: Cory DuBois
+  role: Graduate Student (CMB)
+  joined: 2017
+  github: corydubois
+
 - name: Dakota Derryberry
   role: Graduate Student (CMB)
   joined: 2010
@@ -33,11 +38,6 @@
   url: "http://benjack.io"
   pubs: "https://scholar.google.com/citations?user=b98WUfYAAAAJ"
   github: benjaminjack
-
-- name: Eleisha L. Jackson
-  role: Graduate Student (EEB)
-  joined: 2012
-  github: elj299
 
 - name: Dariya K. Sydykova
   role: Graduate Student (CMB)
@@ -53,7 +53,3 @@
 - name: Nelson Morrow
   role: Undergraduate
   joined: 2016  
-  
-- name: Aaron Pierron
-  role: High School Intern
-  joined: 2016
