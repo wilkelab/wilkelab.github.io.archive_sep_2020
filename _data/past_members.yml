@@ -40,11 +40,18 @@
   currently: Assistant Professor, University of Nevada School of Medicine
   url: "https://scholar.google.com/citations?user=OUYEkUIAAAAJ&hl=en"
 
+- name: Eleisha L. Jackson
+  role: Graduate Student (EEB)
+  joined: 2012
+  left: 2016
+  currently: Data Scientist, Livongo
+  url: "https://www.linkedin.com/in/eleishajackson"
+
 - name: Thomas Keller
   role: Graduate Student (EEB)
   joined: 2008
   left: 2012
-  currently: Postdoc, Georgia Tech
+  currently: Research Technician, Georgia Tech
   url: "https://scholar.google.com/citations?user=HIBfsy4AAAAJ&hl=en"
     
 - name: Eamon O'Dea
