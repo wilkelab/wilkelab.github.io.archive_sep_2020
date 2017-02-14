@@ -26,4 +26,5 @@
 - name: parsemf
   tag_line: Parse ThermoFisher MSF files and estimate protein abundances
   author: Benjamin R. Jack
+  source_URL: "https://github.com/benjaminjack/parsemsf"
   CRAN_URL: "https://cran.r-project.org/package=parsemsf"
