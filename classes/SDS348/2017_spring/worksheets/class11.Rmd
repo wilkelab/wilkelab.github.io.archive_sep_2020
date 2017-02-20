@@ -1,0 +1,66 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=3, fig.width=4)
+library(ggplot2)
+theme_set(theme_bw(base_size=12))
+library(dplyr)
+```
+##In-class worksheet 11
+**Feb 23, 2016**
+
+
+# 1. Fitting a logistic regression model to the iris data set
+
+We will work with the `iris` data set. Specifically, with a subset of the data that consists only of the species virginica and versicolor:
+```{r}
+# make a reduced iris data set that only contains virginica and versicolor species
+iris.small <- filter(iris, Species %in% c("virginica", "versicolor"))
+```
+
+Fit a logistic regression model to the `iris.small` data set. Then successively remove predictors until only predictors with a p value less than 0.1 remain.
+```{r}
+# your R code goes here
+```
+
+Make a plot of the fitted probability as a function of the linear predictor, colored by species identity. Hint: you will have to make a new data frame combining data from the fitted model with data from the `iris.small` data frame.
+
+```{r}
+# your R code goes here
+```
+
+Make a density plot that shows how the two species are separated by the linear predictor.
+```{r}
+# your R code goes here
+```
+
+# 2. Predicting the species
+
+Assume you have obtained samples from three plants, with measurements as listed below. Predict the likelihood that each of these plants belongs to the species virginica.
+```{r}
+plant1 <- data.frame(Sepal.Length=6.4, Sepal.Width=2.8, Petal.Length=4.6, Petal.Width=1.8)
+plant2 <- data.frame(Sepal.Length=6.3, Sepal.Width=2.5, Petal.Length=4.1, Petal.Width=1.7)
+plant3 <- data.frame(Sepal.Length=6.7, Sepal.Width=3.3, Petal.Length=5.2, Petal.Width=2.3)
+```
+
+```{r}
+# your R code goes here
+```
+
+
+# 3. If this was easy
+
+Pick a cutoff predictor value at which you would decide that a specimen belongs to virginica rather than versicolor. Calculate how many virginicas you call correctly and how many incorrectly given that choice.
+
+```{r}
+# your R code goes here
+```
+
+Now do the same calculation for versicolor.
+```{r}
+# your R code goes here
+```
+
+If we define a call of virginica as a positive and a call of versicolor as a negative, what are the true positive rate (sensitivity, true positives divided by all possible positives) and the true negative rate (specificity, true negatives divided by all possible negatives) in your analysis?
+```{r}
+# your R code goes here
+```

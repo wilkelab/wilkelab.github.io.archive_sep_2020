@@ -109,6 +109,24 @@ Syllabus: [SDS348_syllabus_spring2017.pdf](/classes/SDS348/SDS348_syllabus_sprin
 * In-class worksheet:
     - [R Markdown](/classes/SDS348/2017_spring/worksheets/class10.Rmd)
     - [HTML](/classes/SDS348/2017_spring/worksheets/class10.html)
+	- [Solutions](/classes/SDS348/2017_spring/worksheets/class10_solutions.html)
+
+**11. Feb 21, 2017 – Binary prediction/logistic regression**
+
+* Slides: [class11.pdf](/classes/SDS348/2017_spring/slides/class11.pdf)
+* Wikipedia page on logistic regression: [http://en.wikipedia.org/wiki/Logistic_regression](http://en.wikipedia.org/wiki/Logistic_regression)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2017_spring/worksheets/class11.Rmd)
+    - [HTML](/classes/SDS348/2017_spring/worksheets/class11.html)
+
+**12. Feb 23, 2017 – Sensitivity/Specificity, ROC curves**
+
+* Slides: [class12.pdf](/classes/SDS348/2017_spring/slides/class12.pdf)
+* Wikipedia page on sensitivity and specificity: [http://en.wikipedia.org/wiki/Sensitivity_and_specificity](http://en.wikipedia.org/wiki/Sensitivity_and_specificity)
+* Wikipedia page on ROC curves: [http://en.wikipedia.org/wiki/Receiver_operating_characteristic](http://en.wikipedia.org/wiki/Receiver_operating_characteristic)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2017_spring/worksheets/class12.Rmd)
+    - [HTML](/classes/SDS348/2017_spring/worksheets/class12.html)
 
 
 ## Homeworks
