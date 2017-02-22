@@ -118,6 +118,7 @@ Syllabus: [SDS348_syllabus_spring2017.pdf](/classes/SDS348/SDS348_syllabus_sprin
 * In-class worksheet:
     - [R Markdown](/classes/SDS348/2017_spring/worksheets/class11.Rmd)
     - [HTML](/classes/SDS348/2017_spring/worksheets/class11.html)
+    - [Solutions](/classes/SDS348/2017_spring/worksheets/class11_solutions.html)
 
 **12. Feb 23, 2017 – Sensitivity/Specificity, ROC curves**
 
