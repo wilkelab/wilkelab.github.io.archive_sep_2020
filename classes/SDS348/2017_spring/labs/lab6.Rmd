@@ -1,0 +1,46 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=3, fig.width=4)
+library(ggplot2)
+theme_set(theme_bw(base_size=12))
+library(dplyr)
+```
+## Lab Worksheet 6
+
+In 1898, Hermon Bumpus, an American biologist working at Brown University, collected data on one of the first examples of natural selection directly observed in nature. Immediately following a bad winter storm, he collected 136 English house sparrows, *Passer domesticus*, and brought them indoors. Of these birds, 64 had died during the storm, but 72 recovered and survived. By comparing measurements of physical traits, Bumpus demonstrated physical differences between the dead and living birds. He interpreted this finding as evidence for natural selection as a result of this storm:
+
+```{r}
+bumpus <- read.csv("http://wilkelab.org/classes/SDS348/data_sets/bumpus_full.csv")
+head(bumpus)
+```
+
+The data set has three categorical variables (`Sex`, with levels `Male` and `Female`, `Age`, with levels `Adult` and `Young`, and `Survival`, with levels `Alive` and `Dead`) and nine numerical variables that hold various aspects of the birds' anatomy, such as wingspread, weight, etc.
+
+**Problem 1:** *Make a logistic regression model that can predict survival status from all other predictor variables. (Include the categorical predictors `Sex` and `Age`.) Then do backwards selection, removing the predictors with the highest P value one by one, until you are only left with predictors that have P<0.1. How many and which predictors remain in the final model?*
+
+```{r}
+
+# R code goes here.
+
+```
+
+Discussion goes here.
+
+**Problem 2:** *Make a plot of the fitted probability as a function of the linear predictor, colored by survival. Make a density plot that shows how the two species are separated by the linear predictor. Interperet your plots in 1-2 sentences. If you had to choose a cut-off value for alive or dead, where would it be?*
+```{r}
+
+# R code goes here.
+
+```
+
+Discussion goes here.
+
+**Problem 3:** *Add rugs to both the top and bottom of the plot above. **BONUS:** Add a curve for the logistic function. Explain how you created this curve in 1-2 sentences.*
+
+```{r}
+
+# R code goes here.
+
+```
+
+Discussion here.
