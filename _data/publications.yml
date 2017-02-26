@@ -11,12 +11,6 @@
   ref: "PeerJ Preprints 5:e2739v1"
   doi: 10.7287/peerj.preprints.2739v1
   
-- author: A. I. Teufel, C. O. Wilke
-  year: preprint
-  title: Accelerated simulation of evolutionary trajectories in origin-fixation models.
-  ref: "bioRxiv"
-  doi: 10.1101/087700
-
 - author: M. U. Caglar, J. R. Houser, C. S. Barnhart, D. R. Boutz, S. M. Carroll, A. Dasgupta, W. F. Lenoir, B. L. Smith, V. Sridhara, D. K. Sydykova, D. Vander Wood, C. J. Marx, E. M. Marcotte, J. E. Barrick, C. O. Wilke
   year: preprint
   title: The E. coli molecular phenotype under different growth conditions.
@@ -40,6 +34,12 @@
   title: Large-scale analysis of post-translational modifications in E. coli under glucose-limiting conditions.
   ref: "bioRxiv"
   doi: 10.1101/051185
+
+- author: A. I. Teufel, C. O. Wilke
+  year: 2017
+  title: Accelerated simulation of evolutionary trajectories in origin-fixation models.
+  ref: "J. R. Soc. Interface 14:20160906"
+  doi: 10.1098/rsif.2016.0906
   
 - author: M. Lipsitch, W. Barclay, R. Raman, C. J. Russell, J. A. Belser, S. Cobey, P. M. Kasson, J. O. Lloyd-Smith, S. Maurer-Stroh, S. Riley, C. A. A. Beauchemin, T. Bedford, T. C. Friedrich, A. Handel, S. Herfst, P. R. Murcia, B. Roche, C. O. Wilke, C. A. Russell
   year: 2016
