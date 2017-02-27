@@ -1,0 +1,87 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=3, fig.width=4)
+```
+##In-class worksheet 13
+**Feb 28, 2017**
+
+In this worksheet, we will use the libraries ggplot2, dplyr, and tidyr:
+```{r message=FALSE}
+library(ggplot2)
+theme_set(theme_bw(base_size=12)) # set default ggplot2 theme
+library(dplyr)
+library(tidyr)
+```
+
+# 1. Working with training and test data sets
+
+We continue working with the biopsy data set:
+```{r}
+biopsy <- read.csv("http://wilkelab.org/classes/SDS348/data_sets/biopsy.csv")
+```
+
+We will need this function from the last class, which calculates ROC curves: 
+```{r}
+calc_ROC <- function(probabilities, known_truth, model.name=NULL)
+  {
+  outcome <- as.numeric(factor(known_truth))-1
+  pos <- sum(outcome) # total known positives
+  neg <- sum(1-outcome) # total known negatives
+  pos_probs <- outcome*probabilities # probabilities for known positives
+  neg_probs <- (1-outcome)*probabilities # probabilities for known negatives
+  true_pos <- sapply(probabilities,
+                     function(x) sum(pos_probs>=x)/pos) # true pos. rate
+  false_pos <- sapply(probabilities,
+                     function(x) sum(neg_probs>=x)/neg)
+  if (is.null(model.name))
+    result <- data.frame(true_pos, false_pos)
+  else
+    result <- data.frame(true_pos, false_pos, model.name)
+  result %>% arrange(false_pos, true_pos)
+  }
+```
+
+The following code splits the biopsy data set into a random training and test set:
+```{r}
+train_fraction <- 0.4 # fraction of data for training purposes
+set.seed(126)  # set the seed to make your partition reproductible
+train_size <- floor(train_fraction * nrow(biopsy)) # number of observations in training set
+train_indices <- sample(1:nrow(biopsy), size = train_size)
+
+train_data <- biopsy[train_indices, ] # get training data
+test_data <- biopsy[-train_indices, ] # get test data
+```
+
+Fit a logistic regression model on the training data set, then predict the outcome on the test data set, and plot the resulting ROC curves. Limit the x-axis range from 0 to 0.25 to zoom into the ROC curve.
+```{r}
+# model to use: 
+# outcome ~ clump_thickness + uniform_cell_size + uniform_cell_shape
+
+# Your R code goes here.
+```
+
+# 2. Area under the ROC curves
+
+The following code (commented out) calculates the area under multiple ROC curves:
+```{r}
+#ROCs %>% group_by(model.name) %>% 
+#  mutate(delta=false_pos-lag(false_pos)) %>%
+#  summarize(AUC=sum(delta*true_pos, na.rm=T)) %>%
+#  arrange(desc(AUC))
+```
+
+Use this code to calculate the area under the training and test curve for this following model.
+```{r}
+# model to use:
+# outcome ~ clump_thickness
+
+# Your R code goes here.
+```
+
+# 3. If this was easy
+
+Write code that generates an arbitrary number of random subdivisions of the data into training and test sets, fits a given model, calculates the area under the curve for each test data set, and then calculates the average and standard deviation of these values.
+```{r warning=FALSE}
+# Your R code goes here.
+```
+
