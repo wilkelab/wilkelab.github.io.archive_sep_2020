@@ -131,7 +131,7 @@ Syllabus: [SDS348_syllabus_spring2017.pdf](/classes/SDS348/SDS348_syllabus_sprin
 
 **13. Feb 28, 2017 – Training and test data sets, cross-validation**
 
-* Slides: [class14.pdf](/classes/SDS348/2017_spring/slides/class13.pdf)
+* Slides: [class13.pdf](/classes/SDS348/2017_spring/slides/class13.pdf)
 * Wikipedia page on cross-validation: [here](http://en.wikipedia.org/wiki/Cross-validation_%28statistics%29)
 * In-class worksheet:
     - [R Markdown](/classes/SDS348/2017_spring/worksheets/class13.Rmd)
@@ -139,13 +139,13 @@ Syllabus: [SDS348_syllabus_spring2017.pdf](/classes/SDS348/SDS348_syllabus_sprin
 
 **14. Mar 2, 2017 – Installing and running python, basic data structures**
 
-* Slides: [class15.pdf](/classes/SDS348/2017_spring/slides/class14.pdf)
+* Slides: [class14.pdf](/classes/SDS348/2017_spring/slides/class14.pdf)
 * Download the Anaconda Python distribution from here: [https://www.continuum.io/downloads](https://www.continuum.io/downloads)
 * Alternative to Anaconda:  [Sage Math Cloud](https://cloud.sagemath.com/)
 * Official Python3 tutorial: [https://docs.python.org/3/tutorial/](https://docs.python.org/3/tutorial/)
 * Chapter 3 of the official tutorial: [An informal introduction](https://docs.python.org/3/tutorial/introduction.html)
 * In-class worksheet:
-    - [IPython Notebook](/classes/SDS348/2017_spring/worksheets/class14.ipynb)
+    - [Jupyter Notebook](/classes/SDS348/2017_spring/worksheets/class14.ipynb)
     - [HTML](/classes/SDS348/2017_spring/worksheets/class14.html)
 
 
