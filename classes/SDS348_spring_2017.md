@@ -139,6 +139,7 @@ All homeworks are due by 7:00pm on the day they are due. Homeworks need to be su
 - Homework 3: [HW3.Rmd](/classes/SDS348/2017_spring/homeworks/HW3.Rmd) (due Feb 7, 2017) [Solutions, HTML](/classes/SDS348/2017_spring/homeworks/HW3-solution.html) 
 - Homework 4: [HW4.Rmd](/classes/SDS348/2017_spring/homeworks/HW4.Rmd) (due Feb 14, 2017) [Solutions, HTML](/classes/SDS348/2017_spring/homeworks/HW4-solution.html) 
 - Homework 5: [HW5.Rmd](/classes/SDS348/2017_spring/homeworks/HW5.Rmd) (due Feb 28, 2017) 
+- Homework 6: [HW6.Rmd](/classes/SDS348/2017_spring/homeworks/HW6.Rmd) (due Mar 7, 2017) 
 
 ## Labs
 
