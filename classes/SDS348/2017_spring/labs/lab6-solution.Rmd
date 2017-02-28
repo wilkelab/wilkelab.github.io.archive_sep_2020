@@ -67,17 +67,17 @@ Our predictors do not cleanly separate the two survival outcomes alive and dead.
 ```{r}
 
 # extract data for alive and dead
-alive_data <- filter(reg_data, Survival=="alive")
-dead_data <- filter(reg_data, Survival=="dead")
+alive_data <- filter(reg_data, Survival=="Alive")
+dead_data <- filter(reg_data, Survival=="Dead")
 # make data frame with logistic function spanning the minimum predictor value to the maximum
 predictor <- seq(min(reg_data$predictor), max(reg_data$predictor), 0.1)
 prob <- exp(predictor)/(1+exp(predictor))
 log_fun_data <- data.frame(predictor, prob)
 # plot
-ggplot(reg_data, aes(x=predictor, y=prob, color=Survival)) + 
+ggplot(reg_data , aes(x=predictor, y=prob, color=Survival)) + 
     geom_line(data=log_fun_data, color="black") +
     geom_point() +
-    geom_rug(data=reg_data, sides='b') +
-    geom_rug(data=reg_data, sides='t')
+    geom_rug(data=alive_data, sides='b') +
+    geom_rug(data=dead_data, sides='t')
 
 ```

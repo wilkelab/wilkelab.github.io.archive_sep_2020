@@ -1,0 +1,78 @@
+```{r global_options, include=FALSE, message=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=3, fig.width=4)
+library(ggplot2)
+theme_set(theme_bw(base_size=12))
+library(grid) # for `arrow()`
+library(dplyr)
+library(tidyr)
+```
+##Lab Worksheet 7
+
+In 1898, Hermon Bumpus, an American biologist working at Brown University, collected data on one of the first examples of natural selection directly observed in nature. Immediately following a bad winter storm, he collected 136 English house sparrows, *Passer domesticus*, and brought them indoors. Of these birds, 64 had died during the storm, but 72 recovered and survived. By comparing measurements of physical traits, Bumpus demonstrated physical differences between the dead and living birds. He interpreted this finding as evidence for natural selection as a result of this storm:
+
+```{r}
+bumpus <- read.csv("http://wilkelab.org/classes/SDS348/data_sets/bumpus_full.csv")
+head(bumpus)
+```
+
+The data set has three categorical variables (`Sex`, with levels `Male` and `Female`, `Age`, with levels `Adult` and `Young`, and `Survival`, with levels `Alive` and `Dead`) and nine numerical variables that hold various aspects of the birds' anatomy, such as wingspread, weight, etc.
+
+We will need this function from the last class, which calculates ROC curves: 
+```{r}
+calc_ROC <- function(probabilities, known_truth, model.name=NULL)
+  {
+  outcome <- as.numeric(factor(known_truth))-1
+  pos <- sum(outcome) # total known positives
+  neg <- sum(1-outcome) # total known negatives
+  pos_probs <- outcome*probabilities # probabilities for known positives
+  neg_probs <- (1-outcome)*probabilities # probabilities for known negatives
+  true_pos <- sapply(probabilities,
+                     function(x) sum(pos_probs>=x)/pos) # true pos. rate
+  false_pos <- sapply(probabilities,
+                     function(x) sum(neg_probs>=x)/neg)
+  if (is.null(model.name))
+    result <- data.frame(true_pos, false_pos)
+  else
+    result <- data.frame(true_pos, false_pos, model.name)
+  result %>% arrange(false_pos, true_pos)
+  }
+```
+
+Split the `bumpus` data set into a random training and test set. Use 70% of the data as a training set. 
+```{r}
+# Your R code goes here.
+```
+
+Fit a logistic regression model on the training data set, then predict the survival on the test data set, and plot the resulting ROC curves. 
+```{r}
+# model to use: 
+# Survival ~ Sex + Length + Weight + Humerus_Length + Sternum_Length
+
+# Your R code goes here.
+```
+
+# 2. Area under the ROC curves
+
+The following code (commented out) calculates the area under multiple ROC curves:
+```{r}
+#ROCs %>% group_by(model.name) %>% 
+#  mutate(delta=false_pos-lag(false_pos)) %>%
+#  summarize(AUC=sum(delta*true_pos, na.rm=T)) %>%
+#  arrange(desc(AUC))
+```
+
+Use this code to calculate the area under the training and test curve for this following model.
+```{r}
+# model to use:
+# Survival ~ Weight + Humerus_Length
+
+# Your R code goes here.
+```
+
+# 3. If this was easy
+
+Write code that generates an arbitrary number of random subdivisions of the data into training and test sets, fits a given model, calculates the area under the curve for each test data set, and then calculates the average and standard deviation of these values.
+```{r warning=FALSE}
+# Your R code goes here.
+```
