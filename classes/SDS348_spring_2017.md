@@ -136,6 +136,7 @@ Syllabus: [SDS348_syllabus_spring2017.pdf](/classes/SDS348/SDS348_syllabus_sprin
 * In-class worksheet:
     - [R Markdown](/classes/SDS348/2017_spring/worksheets/class13.Rmd)
     - [HTML](/classes/SDS348/2017_spring/worksheets/class13.html)
+    - [Solutions](/classes/SDS348/2017_spring/worksheets/class13_solutions.html)
 
 **14. Mar 2, 2017 – Installing and running python, basic data structures**
 
