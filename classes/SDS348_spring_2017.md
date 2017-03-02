@@ -128,7 +128,7 @@ Syllabus: [SDS348_syllabus_spring2017.pdf](/classes/SDS348/SDS348_syllabus_sprin
 * In-class worksheet:
     - [R Markdown](/classes/SDS348/2017_spring/worksheets/class12.Rmd)
     - [HTML](/classes/SDS348/2017_spring/worksheets/class12.html)
-     - [Solutions](/classes/SDS348/2017_spring/worksheets/class12_solutions.html)
+    - [Solutions](/classes/SDS348/2017_spring/worksheets/class12_solutions.html)
 
 **13. Feb 28, 2017 – Training and test data sets, cross-validation**
 
@@ -224,3 +224,5 @@ All projects are due by 7:00pm on the day they are due. Projects need to be subm
 - Project 1:
     - [HTML](/classes/SDS348/2017_spring/projects/project1/project1.html)
     - [R Markdown](/classes/SDS348/2017_spring/projects/project1/project1.Rmd) (due Feb 21, 2017)
+	- [Solutions, HTML](/classes/SDS348/2017_spring/project1/project1_solution.html)
+
