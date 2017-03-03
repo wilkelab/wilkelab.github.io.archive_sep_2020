@@ -47,9 +47,26 @@ Your answer goes here. 2-3 sentences only.
 
 ###Problem 2
 
-**A (1pt).** *Using the `roc_curve` function below (which we also used in class), plot an ROC curve for the model that you created in Problem 1A. Does the model perform better than a model in which you randomly classify a wine sample as cultivar 1 or cultivar 2? Explain your answer in 1-2 sentences.*
+**A (1pt).** *Using the `calc_ROC` function below (which we also used in class), plot an ROC curve for the model that you created in Problem 1A. Does the model perform better than a model in which you randomly classify a wine sample as cultivar 1 or cultivar 2? Explain your answer in 1-2 sentences.*
 
 ```{r}
+calc_ROC <- function(probabilities, known_truth, model.name=NULL)
+  {
+  outcome <- as.numeric(factor(known_truth))-1
+  pos <- sum(outcome) # total known positives
+  neg <- sum(1-outcome) # total known negatives
+  pos_probs <- outcome*probabilities # probabilities for known positives
+  neg_probs <- (1-outcome)*probabilities # probabilities for known negatives
+  true_pos <- sapply(probabilities,
+                     function(x) sum(pos_probs>=x)/pos) # true pos. rate
+  false_pos <- sapply(probabilities,
+                     function(x) sum(neg_probs>=x)/neg)
+  if (is.null(model.name))
+    result <- data.frame(true_pos, false_pos)
+  else
+    result <- data.frame(true_pos, false_pos, model.name)
+  result %>% arrange(false_pos, true_pos)
+  }
 # your R code goes here
 ```
 
