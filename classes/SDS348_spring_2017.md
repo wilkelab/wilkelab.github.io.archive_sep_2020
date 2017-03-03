@@ -217,6 +217,7 @@ All homeworks are due by 7:00pm on the day they are due. Homeworks need to be su
 * Lab worksheet:
     - [R Markdown](/classes/SDS348/2017_spring/labs/lab7.Rmd)
     - [HTML](/classes/SDS348/2017_spring/labs/lab7.html)
+	- [Solutions, HTML](/classes/SDS348/2017_spring/labs/lab7-solution.html)
 
 ## Projects
 
