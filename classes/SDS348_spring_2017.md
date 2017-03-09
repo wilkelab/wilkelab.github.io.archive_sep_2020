@@ -159,6 +159,7 @@ Syllabus: [SDS348_syllabus_spring2017.pdf](/classes/SDS348/SDS348_syllabus_sprin
 * In-class worksheet:
     - [Jupyter Notebook](/classes/SDS348/2017_spring/worksheets/class15.ipynb)
     - [HTML](/classes/SDS348/2017_spring/worksheets/class15.html)
+    - [Solutions](/classes/SDS348/2017_spring/worksheets/class15_solutions.html)
 
 
 **16. Mar 9, 2017 – Functions in python**
