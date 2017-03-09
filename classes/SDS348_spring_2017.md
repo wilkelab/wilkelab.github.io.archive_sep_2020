@@ -243,7 +243,8 @@ All homeworks are due by 7:00pm on the day they are due. Homeworks need to be su
 * Lab worksheet:
     - [Jupyter Notebook](/classes/SDS348/2017_spring/labs/lab8.ipynb)
     - [HTML](/classes/SDS348/2017_spring/labs/lab8.html)
-
+	- [Solutions, HTML](/classes/SDS348/2017_spring/labs/lab8-solution.html)
+	
 ## Projects
 
 All projects are due by 7:00pm on the day they are due. Projects need to be submitted on Canvas, both in pdf format and as source code (plus data where needed).
