@@ -1,0 +1,117 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=4, fig.width=5)
+library(ggplot2)
+theme_set(theme_bw(base_size=12))
+library(dplyr)
+library(tidyr)
+library(grid)
+```
+## Project 2 
+*Enter your name and EID here*
+
+###Instructions
+Please submit both this completed Rmarkdown document and its knitted HTML, converted to PDF, on Canvas **no later than 7:00 pm on March 28th, 2017**. These two documents will be graded jointly, so they must be consistent (as in, don't change the Rmarkdown file without also updating the knitted HTML!).
+
+All results presented **must** have corresponding code. Any answers/results given without the corresponding R code that generated the result will be considered absent. All code reported in your final project document should work properly. Please bear in mind that **you will lose points** for the following:
+
++ an R-code chunk with no comments
++ results without corresponding R code
++ extraneous code which does not contribute to the question
+
+For this project, you will work with a dataset collected by John Holcomb from the North Carolina State Center for Health and Environmental Statistics. This data set contains 1409 birth records from North Carolina in 2001. Your goal for this project is to analyze the births dataset using several statistical approaches we have learned, in two parts.
+
+We have already subdivided the full data set into training and test data sets (`train_data` and `test_data`). And we also provide the full data set (`NCbirths`). Please use the training and test data sets for Part 1 and either data set for Part 2. 
+
+```{r}
+NCbirths <- read.csv("http://wilkelab.org/classes/SDS348/data_sets/NCbirths.csv")
+
+train_fraction <- 0.8 # fraction of data for training purposes
+set.seed(123)  # set the seed to make your partition reproductible
+train_size <- floor(train_fraction * nrow(NCbirths)) # number of observations in training set
+train_indices <- sample(1:nrow(NCbirths), size = train_size)
+
+train_data <- NCbirths[train_indices, ] # get training data
+test_data <- NCbirths[-train_indices, ] # get test data
+
+head(NCbirths)
+```
+
+The column contents are as follows:
+
++ **Plural**: 1=single birth, 2=twins, 3=triplets.
++ **Sex**: Sex of the baby 1=male 2=female.
++ **MomAge**: Mother's age (in years).
++ **Weeks**: Completed weeks of gestation.
++ **Gained**: Weight gained during pregnancy (in pounds).
++ **BirthWeightGm**: Birth weight in grams.
++ **Low**: Indicator for low birth weight, 1=2500 grams or less, 0=otherwise.
++ **Premie**: Indicator for premature birth, 1=36 weeks or sooner, 0=otherwise.
++ **Marital**: Marital status: 0=married or 1=not married.
+
+**Part 1 (40 points)**. We have divided the dataset, which consists of observations from 1409 individuals, into a training and a test data set. Fit a logistic regression model to predict marital status on the training data set. When building your model, use backwards selection to choose predictors which are significant **at your chosen significance level (be sure to report your chosen value!)**. Your code should be appropriately commented with high-level statements about the code's function.
+
+Using your final model, predict the outcome on the test data set, and plot and discuss your results. You should have two final plots: a plot with two ROC curves for the training and test data each, and a plot of the fitted probability of marital status as a function of the predictors, colored by marital status, on the test data. Your discussion should, at least, cover the differences and similarities in model performance on the training vs. test data (including AUC) as well as a clear interpretation of each plot. Please limit your discussion to a maximum of 8 sentences.
+
+**Part 2 (60 points)**. Think of two **scientific** questions to ask about this data set (for this, you are welcome to use either the training, test, or full data set). Scientific questions should not be procedural, they should be **conceptual**. (For example, "What is the distribution of ages?" is a **procedural** question because all it asks you to do is plot a distribution, but, "Are incidence of diabetes higher in older women or in younger women?" is a **conceptual** question because you have to determine which type of plot is appropriate for the question and interperet that plot.) For each question, perform an exploratory statistical analysis (PCA, k-means, logistic regression, linear model, etc.) with a corresponding figure. Discuss your findings, in particular how your analysis' results reveal (or don't reveal) an answer your proposed question. Please limit each question's discussion to a maximum of 5 sentences.
+
+*To receive full credit for Part II, you will have to do the following:*
+
+  - *Come up with two clear, coherent, conceptual questions about the data, as explained above.*
+  - *At least one of the two questions should be multivariate, i.e., involve more than two columns of the dataset.*
+  - *Your questions should not repeat any part of the analysis of Part 1.*
+  - *For each question, provide one clear and easily understandable plot answering the question.*
+  - *For each plot, provide a justification for why you chose to make the type of plot that you made.*
+  - *For each plot/question, provide an interpretation of your results and a response to your question.*
+  - *Use different primary geoms for the different plots.*
+
+Project responses should be entered below.
+
+***  
+
+```{r}
+# This R code chunk contains the calc_ROC function.
+calc_ROC <- function(probabilities, known_truth, model.name=NULL)
+  {
+  outcome <- as.numeric(factor(known_truth))-1
+  pos <- sum(outcome) # total known positives
+  neg <- sum(1-outcome) # total known negatives
+  pos_probs <- outcome*probabilities # probabilities for known positives
+  neg_probs <- (1-outcome)*probabilities # probabilities for known negatives
+  true_pos <- sapply(probabilities,
+                     function(x) sum(pos_probs>=x)/pos) # true pos. rate
+  false_pos <- sapply(probabilities,
+                     function(x) sum(neg_probs>=x)/neg)
+  if (is.null(model.name))
+    result <- data.frame(true_pos, false_pos)
+  else
+    result <- data.frame(true_pos, false_pos, model.name)
+  result %>% arrange(false_pos, true_pos)
+  }
+```
+
+**Part 1**
+
+```{r}
+# R code for part 1 goes here.
+```
+*Discussion for part 1 goes here.*    
+
+<br><br><br>
+
+**Part 2**
+
+*Question 1 goes here.*
+```{r}
+# R code for question 1 goes here
+```
+*Discussion for question 1 goes here.*
+
+<br> 
+
+*Question 2 goes here.*
+```{r}
+# R code for question 2 goes here
+```
+*Discussion for question 2 goes here.*
+

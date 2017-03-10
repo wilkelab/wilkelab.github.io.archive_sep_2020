@@ -253,5 +253,8 @@ All projects are due by 7:00pm on the day they are due. Projects need to be subm
 - Project 1:
     - [HTML](/classes/SDS348/2017_spring/projects/project1/project1.html)
     - [R Markdown](/classes/SDS348/2017_spring/projects/project1/project1.Rmd) (due Feb 21, 2017)
-	- [Solutions, HTML](/classes/SDS348/2017_spring/projects/project1/project1_solution.html)
+	- [Solutions, HTML](/classes/SDS348/2017_spring/projects/project1/project1-solution.html)
 
+- Project 2:
+    - [HTML](/classes/SDS348/2017_spring/projects/project2/project2.html)
+    - [R Markdown](/classes/SDS348/2017_spring/projects/project2/project2.Rmd) (due Mar 28, 2017)
