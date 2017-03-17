@@ -22,16 +22,16 @@ Lab meetings are held Fridays from 10:30 am - 12:00 pm in MBB 3.204.
 | 3/3/17  || Literature || ||
 | 3/10/17  || Literature ||  || 
 | 3/17/17  || Research || Matt || 
-| 3/24/17   || Research || || 
+| 3/24/17   || Research || Ashley, Spencer || 
 | 3/31/17  || Literature ||  || 
 | 4/7/17  || Literature ||  || 
-| 4/14/17  || Research || Dariya ||
+| 4/14/17  || Research || Dakota, Umut || 
 | 4/21/17  || Literature || ||
-| 4/28/17  || Research || ||
+| 4/28/17  || Research || Seung, Dariya ||
 | 5/5/17  || Literature ||  || 
-| 5/12/17  || Research || ||
-| 5/19/17  || Literature || ||
-| 5/26/17  || Research || ||
+| 5/12/17  || Research || Qian, Ben || 
+| 5/19/17  || Research, Literature || Cory ||
+| 5/26/17  || Research, Literature ||  ||
 |------+---+--------------------+---+----------------------+---+-------|
 {:.widetable}
 
