@@ -169,6 +169,7 @@ Syllabus: [SDS348_syllabus_spring2017.pdf](/classes/SDS348/SDS348_syllabus_sprin
 * In-class worksheet:
     - [Jupyter Notebook](/classes/SDS348/2017_spring/worksheets/class16.ipynb)
     - [HTML](/classes/SDS348/2017_spring/worksheets/class16.html)
+    - [Solutions](/classes/SDS348/2017_spring/worksheets/class16_solutions.html)
 
 **17. Mar 21, 2017 – More on python data structures, classes**
 
@@ -177,6 +178,8 @@ Syllabus: [SDS348_syllabus_spring2017.pdf](/classes/SDS348/SDS348_syllabus_sprin
 * In-class worksheet:
     - [IPython Notebook](/classes/SDS348/2017_spring/worksheets/class17.ipynb)
     - [HTML](/classes/SDS348/2017_spring/worksheets/class17.html)
+    - [Solutions](/classes/SDS348/2017_spring/worksheets/class17_solutions.html)
+
 
 **18. Mar 23, 2016 – Working with files**
 
