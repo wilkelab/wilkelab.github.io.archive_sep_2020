@@ -16,13 +16,7 @@
   title: The E. coli molecular phenotype under different growth conditions.
   ref: "bioRxiv"
   doi: 10.1101/082032
-
-- author: E. L. Jackson, S. J. Spielman, C. O. Wilke
-  year: preprint
-  title: Computational prediction of the tolerance to amino-acid deletion in green-fluorescent protein.
-  ref: "bioRxiv"
-  doi: 10.1101/079061
-  
+    
 - author: J. Echave, C. O. Wilke
   year: preprint
   title: "Biophysical models of protein evolution: Understanding the patterns of evolutionary sequence divergence."
@@ -34,6 +28,12 @@
   title: Large-scale analysis of post-translational modifications in E. coli under glucose-limiting conditions.
   ref: "bioRxiv"
   doi: 10.1101/051185
+
+- author: E. L. Jackson, S. J. Spielman, C. O. Wilke
+  year: 2017
+  title: Computational prediction of the tolerance to amino-acid deletion in green-fluorescent protein.
+  ref: "PLoS ONE 12(4): e0164905"
+  doi: 10.1371/journal.pone.0164905
 
 - author: A. I. Teufel, C. O. Wilke
   year: 2017
