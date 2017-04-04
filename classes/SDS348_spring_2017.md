@@ -176,7 +176,7 @@ Syllabus: [SDS348_syllabus_spring2017.pdf](/classes/SDS348/SDS348_syllabus_sprin
 * Slides: [class17.pdf](/classes/SDS348/2017_spring/slides/class17.pdf)
 * Chapter 9 of the official tutorial: [Classes](https://docs.python.org/3/tutorial/classes.html)
 * In-class worksheet:
-    - [IPython Notebook](/classes/SDS348/2017_spring/worksheets/class17.ipynb)
+    - [Jupyter Notebook](/classes/SDS348/2017_spring/worksheets/class17.ipynb)
     - [HTML](/classes/SDS348/2017_spring/worksheets/class17.html)
     - [Solutions](/classes/SDS348/2017_spring/worksheets/class17_solutions.html)
 
@@ -186,7 +186,7 @@ Syllabus: [SDS348_syllabus_spring2017.pdf](/classes/SDS348/SDS348_syllabus_sprin
 * Slides: [class18.pdf](/classes/SDS348/2017_spring/slides/class18.pdf)
 * Chapter 7.2 of the official tutorial: [Reading and writing files](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files)
 * In-class worksheet:
-    - [IPython Notebook](/classes/SDS348/2017_spring/worksheets/class18.ipynb)
+    - [Jupyter Notebook](/classes/SDS348/2017_spring/worksheets/class18.ipynb)
     - [HTML](/classes/SDS348/2017_spring/worksheets/class18.html)
     - [Solutions](/classes/SDS348/2017_spring/worksheets/class18_solutions.html)
 
@@ -197,7 +197,7 @@ Syllabus: [SDS348_syllabus_spring2017.pdf](/classes/SDS348/SDS348_syllabus_sprin
 * Official Biopython tutorial: [http://biopython.org/DIST/docs/tutorial/Tutorial.html](http://biopython.org/DIST/docs/tutorial/Tutorial.html)
 * NCBI Entrez/PubMed website: [http://www.ncbi.nlm.nih.gov/](http://www.ncbi.nlm.nih.gov/)
 * In-class worksheet:
-    - [IPython Notebook](/classes/SDS348/2017_spring/worksheets/class19.ipynb)
+    - [Jupyter Notebook](/classes/SDS348/2017_spring/worksheets/class19.ipynb)
     - [HTML](/classes/SDS348/2017_spring/worksheets/class19.html)
     - [Solutions](/classes/SDS348/2017_spring/worksheets/class19_solutions.html)
 
@@ -208,7 +208,7 @@ Syllabus: [SDS348_syllabus_spring2017.pdf](/classes/SDS348/SDS348_syllabus_sprin
 * Biopython Tutorial on sequence features: [SeqFeature objects](http://biopython.org/DIST/docs/tutorial/Tutorial.html#htoc38)
 * Official feature documentation from the International Nucleotide Sequence Database Collaboration: [Feature Key Reference](http://www.insdc.org/files/feature_table.html#7.2)
 * In-class worksheet:
-    - [IPython Notebook](/classes/SDS348/2017_spring/worksheets/class20.ipynb)
+    - [Jupyter Notebook](/classes/SDS348/2017_spring/worksheets/class20.ipynb)
     - [HTML](/classes/SDS348/2017_spring/worksheets/class20.html)
     - [Solutions](/classes/SDS348/2017_spring/worksheets/class20_solutions.html)
 
@@ -217,8 +217,9 @@ Syllabus: [SDS348_syllabus_spring2017.pdf](/classes/SDS348/SDS348_syllabus_sprin
 * Slides: [class21.pdf](/classes/SDS348/2017_spring/slides/class21.pdf)
 * Biopython SeqIO documentation: [SeqIO](http://biopython.org/wiki/SeqIO)
 * In-class worksheet:
-    - [IPython Notebook](/classes/SDS348/2017_spring/worksheets/class21.ipynb)
+    - [Jupyter Notebook](/classes/SDS348/2017_spring/worksheets/class21.ipynb)
     - [HTML](/classes/SDS348/2017_spring/worksheets/class21.html)
+    - [Solutions](/classes/SDS348/2017_spring/worksheets/class21_solutions.html)
 
 **22. Apr 6, 2017 – Regular expressions**
 
@@ -227,7 +228,7 @@ Syllabus: [SDS348_syllabus_spring2017.pdf](/classes/SDS348/SDS348_syllabus_sprin
 * Official Python regular expression documentation: [Regular Expression HOWTO](https://docs.python.org/3/howto/regex.html)
 * Alternative regular expression tutorial: [Python Regular Expressions](https://developers.google.com/edu/python/regular-expressions)
 * In-class worksheet:
-    - [IPython Notebook](/classes/SDS348/2017_spring/worksheets/class22.ipynb)
+    - [Jupyter Notebook](/classes/SDS348/2017_spring/worksheets/class22.ipynb)
     - [HTML](/classes/SDS348/2017_spring/worksheets/class22.html)
 
 ## Homeworks
