@@ -230,6 +230,16 @@ Syllabus: [SDS348_syllabus_spring2017.pdf](/classes/SDS348/SDS348_syllabus_sprin
 * In-class worksheet:
     - [Jupyter Notebook](/classes/SDS348/2017_spring/worksheets/class22.ipynb)
     - [HTML](/classes/SDS348/2017_spring/worksheets/class22.html)
+    - [Solutions](/classes/SDS348/2017_spring/worksheets/class22_solutions.html)
+    
+**23. Apr. 11, 2017 – Using regular expressions to analyze data**
+
+* Slides: [class23.pdf](/classes/SDS348/2016_spring/slides/class23.pdf)
+* Python regular expression editor: [http://pythex.org/](http://pythex.org/)
+* In-class worksheet:
+    - [IPython Notebook](/classes/SDS348/2017_spring/worksheets/class23.ipynb)
+    - [HTML](/classes/SDS348/2017_spring/worksheets/class23.html)
+
 
 ## Homeworks
 
