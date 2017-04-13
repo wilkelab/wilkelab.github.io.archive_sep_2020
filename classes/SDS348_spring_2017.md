@@ -249,6 +249,20 @@ Syllabus: [SDS348_syllabus_spring2017.pdf](/classes/SDS348/SDS348_syllabus_sprin
 * In-class worksheet:
     - [IPython Notebook](/classes/SDS348/2017_spring/worksheets/class24.ipynb)
     - [HTML](/classes/SDS348/2017_spring/worksheets/class24.html)
+    - [Solutions](/classes/SDS348/2017_spring/worksheets/class24_solutions.html)
+
+**25. Apr. 18, 2017 – Aligning sequences**
+
+* Slides: [class25.pdf](/classes/SDS348/2017_spring/slides/class25.pdf)
+* Wikipedia page on the Needleman–Wunsch algorithm: [Needleman–Wunsch algorithm](http://en.wikipedia.org/wiki/Needleman%E2%80%93Wunsch_algorithm)
+* Alignment software:
+  - [MAFFT](http://mafft.cbrc.jp/alignment/software/)
+  - [Clustal Omega](http://www.clustal.org/omega/)
+  - [PRANK](http://wasabiapp.org/software/prank/)
+* [Example alignments](https://github.com/wilkelab/therm_constraints_rate_variation/tree/master/empirical_rate_calculations/protein_alignments/mafft_alignments)
+* In-class worksheet:
+    - [PDF](/classes/SDS348/2017_spring/worksheets/class25.pdf)
+
 
 ## Homeworks
 
