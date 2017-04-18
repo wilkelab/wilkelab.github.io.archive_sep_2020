@@ -11,13 +11,6 @@
   ref: "PeerJ Preprints 5:e2739v1"
   doi: 10.7287/peerj.preprints.2739v1
   
-
-- author: C. W. Brown, V. Sridhara, D. R. Boutz, M. D. Person, E. M. Marcotte, J. E. Barrick, C. O. Wilke
-  year: preprint
-  title: Large-scale analysis of post-translational modifications in E. coli under glucose-limiting conditions.
-  ref: "bioRxiv"
-  doi: 10.1101/051185
-
 - author: J. Echave, C. O. Wilke
   year: 2017
   title: "Biophysical models of protein evolution: Understanding the patterns of evolutionary sequence divergence."
@@ -35,6 +28,12 @@
   title: The evolution of logic circuits for the purpose of protein contact map prediction.
   ref: "PeerJ 5:e3139"
   doi: 10.7717/peerj.3139
+
+- author: C. W. Brown, V. Sridhara, D. R. Boutz, M. D. Person, E. M. Marcotte, J. E. Barrick, C. O. Wilke
+  year: 2017
+  title: Large-scale analysis of post-translational modifications in E. coli under glucose-limiting conditions.
+  ref: "BMC Genomics 18:301"
+  doi: 10.1186/s12864-017-3676-8
 
 - author: E. L. Jackson, S. J. Spielman, C. O. Wilke
   year: 2017
