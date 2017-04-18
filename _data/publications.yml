@@ -11,11 +11,6 @@
   ref: "PeerJ Preprints 5:e2739v1"
   doi: 10.7287/peerj.preprints.2739v1
   
-- author: M. U. Caglar, J. R. Houser, C. S. Barnhart, D. R. Boutz, S. M. Carroll, A. Dasgupta, W. F. Lenoir, B. L. Smith, V. Sridhara, D. K. Sydykova, D. Vander Wood, C. J. Marx, E. M. Marcotte, J. E. Barrick, C. O. Wilke
-  year: preprint
-  title: The E. coli molecular phenotype under different growth conditions.
-  ref: "bioRxiv"
-  doi: 10.1101/082032
     
 - author: J. Echave, C. O. Wilke
   year: preprint
@@ -29,10 +24,22 @@
   ref: "bioRxiv"
   doi: 10.1101/051185
 
+- author: M. U. Caglar, J. R. Houser, C. S. Barnhart, D. R. Boutz, S. M. Carroll, A. Dasgupta, W. F. Lenoir, B. L. Smith, V. Sridhara, D. K. Sydykova, D. Vander Wood, C. J. Marx, E. M. Marcotte, J. E. Barrick, C. O. Wilke
+  year: 2017
+  title: The E. coli molecular phenotype under different growth conditions.
+  ref: "Scientific Reports 7:45303"
+  doi: 10.1038/srep45303
+  
+- author: S. D. Chapman, C. Adami, C. O. Wilke, D. B. KC
+  year: 2017
+  title: The evolution of logic circuits for the purpose of protein contact map prediction.
+  ref: "PeerJ 5:e3139"
+  doi: 10.7717/peerj.3139
+
 - author: E. L. Jackson, S. J. Spielman, C. O. Wilke
   year: 2017
   title: Computational prediction of the tolerance to amino-acid deletion in green-fluorescent protein.
-  ref: "PLoS ONE 12(4): e0164905"
+  ref: "PLoS ONE 12:e0164905"
   doi: 10.1371/journal.pone.0164905
 
 - author: A. I. Teufel, C. O. Wilke
