@@ -237,7 +237,7 @@ Syllabus: [SDS348_syllabus_spring2017.pdf](/classes/SDS348/SDS348_syllabus_sprin
 * Slides: [class23.pdf](/classes/SDS348/2017_spring/slides/class23.pdf)
 * Python regular expression editor: [http://pythex.org/](http://pythex.org/)
 * In-class worksheet:
-    - [IPython Notebook](/classes/SDS348/2017_spring/worksheets/class23.ipynb)
+    - [Jupyter Notebook](/classes/SDS348/2017_spring/worksheets/class23.ipynb)
     - [HTML](/classes/SDS348/2017_spring/worksheets/class23.html)
     - [Solutions](/classes/SDS348/2017_spring/worksheets/class23_solutions.html)
 
@@ -247,7 +247,7 @@ Syllabus: [SDS348_syllabus_spring2017.pdf](/classes/SDS348/SDS348_syllabus_sprin
 * Python regular expression editor: [http://pythex.org/](http://pythex.org/)
 * Regex crosswords: [regexcrossword.com](https://regexcrossword.com/)
 * In-class worksheet:
-    - [IPython Notebook](/classes/SDS348/2017_spring/worksheets/class24.ipynb)
+    - [Jupyter Notebook](/classes/SDS348/2017_spring/worksheets/class24.ipynb)
     - [HTML](/classes/SDS348/2017_spring/worksheets/class24.html)
     - [Solutions](/classes/SDS348/2017_spring/worksheets/class24_solutions.html)
 
