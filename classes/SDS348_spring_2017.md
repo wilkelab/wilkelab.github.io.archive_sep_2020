@@ -277,7 +277,7 @@ All homeworks are due by 7:00pm on the day they are due. Homeworks need to be su
 - Homework 7: [HW7.ipynb](/classes/SDS348/2017_spring/homeworks/HW7.ipynb) (due Mar 21, 2017) [Solutions, HTML](/classes/SDS348/2017_spring/homeworks/HW7-solution.html) 
 - Homework 8: [HW8.ipynb](/classes/SDS348/2017_spring/homeworks/HW8.ipynb) (due Apr 4, 2017) [Solutions, HTML](/classes/SDS348/2017_spring/homeworks/HW8-solution.html) 
 - Homework 9: [HW9.pdf](/classes/SDS348/2017_spring/homeworks/HW9.pdf) (due Apr 11, 2017) 
-- Homework 10: [HW10.ipynb](/classes/SDS348/2017_spring/homeworks/HW10.ipynb) (due Apr 18, 2017) 
+- Homework 10: [HW10.ipynb](/classes/SDS348/2017_spring/homeworks/HW10.ipynb) (due Apr 18, 2017) [Solutions, HTML](/classes/SDS348/2017_spring/homeworks/HW10-solution.html)  
 - Homework 11: [HW11.ipynb](/classes/SDS348/2017_spring/homeworks/HW11.ipynb) (due Apr 25, 2017) 
 
 ## Labs
@@ -376,7 +376,8 @@ All homeworks are due by 7:00pm on the day they are due. Homeworks need to be su
 * Lab worksheet:
     - [Jupyter Notebook](/classes/SDS348/2017_spring/labs/lab13.ipynb)
     - [HTML](/classes/SDS348/2017_spring/labs/lab13.html)
-
+	- [Solutions, HTML](/classes/SDS348/2017_spring/labs/lab13-solution.html)
+	
 ## Projects
 
 All projects are due by 7:00pm on the day they are due. Projects need to be submitted on Canvas, both in pdf format and as source code (plus data where needed).
