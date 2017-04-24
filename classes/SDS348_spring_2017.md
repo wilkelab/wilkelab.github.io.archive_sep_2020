@@ -276,6 +276,17 @@ Syllabus: [SDS348_syllabus_spring2017.pdf](/classes/SDS348/SDS348_syllabus_sprin
     - [Jupyter Notebook](/classes/SDS348/2017_spring/worksheets/class26.ipynb)
     - [HTML](/classes/SDS348/2017_spring/worksheets/class26.html)
 
+**27. Apr. 26, 2016 – Multiple sequence alignments and phylogenetic trees**
+
+* Slides: [class27.pdf](/classes/SDS348/2017_spring/slides/class27.pdf)
+* Wikipedia page on multiple sequence alignments:
+[Multiple sequence alignment](https://en.wikipedia.org/wiki/Multiple_sequence_alignment)
+* Wikipedia page on phylogenetic trees:
+[Phylogenetic trees](https://en.wikipedia.org/wiki/Phylogenetic_tree)
+* In-class exercises:
+    - [EMBL-EBI web interface](http://www.ebi.ac.uk/Tools/msa/)
+
+
 ## Homeworks
 
 All homeworks are due by 7:00pm on the day they are due. Homeworks need to be submitted as pdf files on Canvas.
@@ -403,3 +414,6 @@ All projects are due by 7:00pm on the day they are due. Projects need to be subm
     - [HTML](/classes/SDS348/2017_spring/projects/project2/project2.html)
     - [R Markdown](/classes/SDS348/2017_spring/projects/project2/project2.Rmd) (due Mar 28, 2017)
 	- [Solutions, HTML](/classes/SDS348/2017_spring/projects/project2/project2-solution.html)
+	
+- Project 3:
+	- [Instructions, pdf](/classes/SDS348/2017_spring/projects/project3/project3_instructions.pdf)
