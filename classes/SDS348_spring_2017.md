@@ -275,8 +275,9 @@ Syllabus: [SDS348_syllabus_spring2017.pdf](/classes/SDS348/SDS348_syllabus_sprin
     - [Smith-Waterman exercise](/classes/SDS348/2017_spring/worksheets/class26_SW-exercise.pdf)
     - [Jupyter Notebook](/classes/SDS348/2017_spring/worksheets/class26.ipynb)
     - [HTML](/classes/SDS348/2017_spring/worksheets/class26.html)
+    - [Solutions](/classes/SDS348/2017_spring/worksheets/class26_solutions.html)
 
-**27. Apr. 26, 2016 – Multiple sequence alignments and phylogenetic trees**
+**27. Apr. 25, 2017 – Multiple sequence alignments and phylogenetic trees**
 
 * Slides: [class27.pdf](/classes/SDS348/2017_spring/slides/class27.pdf)
 * Wikipedia page on multiple sequence alignments:
