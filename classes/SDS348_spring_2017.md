@@ -288,6 +288,14 @@ Syllabus: [SDS348_syllabus_spring2017.pdf](/classes/SDS348/SDS348_syllabus_sprin
 * In-class exercises:
     - [EMBL-EBI web interface](http://www.ebi.ac.uk/Tools/msa/)
 
+**28. Apr. 27, 2017 – Working with protein structures**
+
+* Slides: [class28.pdf](/classes/SDS348/2017_spring/slides/class28.pdf)
+* Obtain PyMOL: [Educational-use PyMOL](http://pymol.org/edu/?q=educational/)
+* PyMOL tutorial: [Practical PyMOL for Beginners](http://www.pymolwiki.org/index.php/Practical_Pymol_for_Beginners)
+* Protein data bank: [http://www.rcsb.org/](http://www.rcsb.org/)
+
+
 
 ## Homeworks
 
