@@ -295,6 +295,13 @@ Syllabus: [SDS348_syllabus_spring2017.pdf](/classes/SDS348/SDS348_syllabus_sprin
 * PyMOL tutorial: [Practical PyMOL for Beginners](http://www.pymolwiki.org/index.php/Practical_Pymol_for_Beginners)
 * Protein data bank: [http://www.rcsb.org/](http://www.rcsb.org/)
 
+**29. May 2, 2017 – Protein structure and PyMOL scripting**
+
+* Slides: [class29.pdf](/classes/SDS348/2017_spring/slides/class29.pdf)
+* A cross-platform, open source text editor: [Atom](http://www.atom.io)
+* PyMOL wiki: [pymolwiki.org](http://pymolwiki.org/)
+* PyMOL selector syntax: [Property Selectors](http://pymolwiki.org/index.php/Property_Selectors
+)
 
 
 ## Homeworks
