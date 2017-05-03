@@ -418,6 +418,11 @@ All homeworks are due by 7:00pm on the day they are due. Homeworks need to be su
     - [HTML](/classes/SDS348/2017_spring/labs/lab14.html)
 	- [Solutions, HTML](/classes/SDS348/2017_spring/labs/lab14-solution.html)
 
+**15. May 2, 2017**
+
+* Lab worksheet:
+    - [PDF](/classes/SDS348/2017_spring/labs/lab15.pdf)
+    
 ## Projects
 
 All projects are due by 7:00pm on the day they are due. Projects need to be submitted on Canvas, both in pdf format and as source code (plus data where needed).
