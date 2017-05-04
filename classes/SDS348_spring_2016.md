@@ -307,7 +307,7 @@ Guest lecture by Steve Bellan
 
 **30. May 5, 2016 – Molecular evolution of proteins**
 
-* Slides: [class30.pdf](/classes/SDS348/2016_spring/slides/class29.pdf)
+* Slides: [class30.pdf](/classes/SDS348/2016_spring/slides/class30.pdf)
 * Relevant papers:
     - B. R. Jack, A. G. Meyer, J. Echave, C. O. Wilke (2016). Functional sites induce long-range evolutionary constraints in enzymes. PLOS Biol 14:e1002452. doi: [10.1371/journal.pbio.1002452](http://dx.doi.org/10.1371/journal.pbio.1002452)
     - A. H. Kachroo, J. M. Laurent, C. M. Yellman, A. G. Meyer, C. O. Wilke, E. M. Marcotte (2015). Systematic humanization of yeast genes reveals conserved functions and genetic modularity. Science 348:921–925. doi: [10.1126/science.aaa0769](http://dx.doi.org/10.1126/science.aaa0769)

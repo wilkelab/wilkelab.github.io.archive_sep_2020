@@ -303,6 +303,16 @@ Syllabus: [SDS348_syllabus_spring2017.pdf](/classes/SDS348/SDS348_syllabus_sprin
 * PyMOL selector syntax: [Property Selectors](http://pymolwiki.org/index.php/Property_Selectors
 )
 
+**30. May 4, 2017 – Molecular evolution of proteins**
+
+* Slides: [class30.pdf](/classes/SDS348/2017_spring/slides/class30.pdf)
+* Relevant papers:
+	- J. Echave, S. J. Spielman, C. O. Wilke (2016). Causes of evolutionary rate variation among protein sites. Nature Rev. Genet. 17:109–121. 
+doi: [10.1038/nrg.2015.18](http://dx.doi.org/10.1038/nrg.2015.18)
+    - B. R. Jack, A. G. Meyer, J. Echave, C. O. Wilke (2016). Functional sites induce long-range evolutionary constraints in enzymes. PLOS Biol 14:e1002452. doi: [10.1371/journal.pbio.1002452](http://dx.doi.org/10.1371/journal.pbio.1002452)
+    - A. H. Kachroo, J. M. Laurent, C. M. Yellman, A. G. Meyer, C. O. Wilke, E. M. Marcotte (2015). Systematic humanization of yeast genes reveals conserved functions and genetic modularity. Science 348:921–925. doi: [10.1126/science.aaa0769](http://dx.doi.org/10.1126/science.aaa0769)
+    - C. D. McWhite, A. G. Meyer, C. O. Wilke (2016). Sequence amplification via cell passaging creates spurious signals of positive adaptation in influenza virus H3N2 hemagglutinin. Virus Evol. 2:vew026. doi: [10.1093/ve/vew026](http://dx.doi.org/10.1093/ve/vew026)
+
 
 ## Homeworks
 
