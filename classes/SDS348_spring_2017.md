@@ -456,3 +456,4 @@ All projects are due by 7:00pm on the day they are due. Projects need to be subm
 	
 - Project 3:
 	- [Instructions, pdf](/classes/SDS348/2017_spring/projects/project3/project3_instructions.pdf)
+	- [Grading rubric](/classes/SDS348/2017_spring/projects/project3/project3_grading_rubric.pdf)
