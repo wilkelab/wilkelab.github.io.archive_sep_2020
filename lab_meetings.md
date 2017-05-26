@@ -17,17 +17,19 @@ Lab meetings are held Fridays from 10:30 am - 12:00 pm in MBB 3.204.
 | 6/16/17  || Matt || Nelson ||
 | 6/23/17  || Ashley || Matt || 
 | 6/30/17  || Ben || Ashley ||
-| 7/7/17   ||  || || SMBE, no lab meeting
-| 7/14/17   || || || Claus out of town 
-| 7/21/17  || || || Claus out of town
+| 7/7/17   || --- || --- || SMBE, no lab meeting
+| 7/14/17   || --- || --- || Claus out of town 
+| 7/21/17  || --- || --- || Claus out of town
 | 7/28/17  || Dariya || Ben || 
-| 8/4/17  ||  || || BEACON Congress, no lab meeting 
+| 8/4/17  || --- || --- || BEACON Congress, no lab meeting 
 | 8/11/17   || Cory || Dariya  || 
 | 8/18/17  || Adam || Cory || 
 | 8/25/17  || Bart || Adam  || 
 | 9/1/17  || Umut || Bart || 
 |------+---+--------------------+---+----------------------+---+-------|
 {:.widetable}
+
+<br /><br />
 
 ### Spring 2017
 
