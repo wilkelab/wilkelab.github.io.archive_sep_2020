@@ -23,9 +23,9 @@ Lab meetings are held Fridays from 10:30 am - 12:00 pm in MBB 3.204.
 | 7/28/17  || Dariya || Adam || 
 | 8/4/17  || --- || --- || BEACON Congress, no lab meeting 
 | 8/11/17   || Cory || Dariya  || 
-| 8/18/17  || Adam || Cory || 
-| 8/25/17  || Bart || Adam  || 
-| 9/1/17  || Umut || Bart || 
+| 8/18/17  || Bart || Cory || 
+| 8/25/17  || Adam || Bart  || 
+| 9/1/17  || Umut || Adam || 
 |------+---+--------------------+---+----------------------+---+-------|
 {:.widetable}
 
