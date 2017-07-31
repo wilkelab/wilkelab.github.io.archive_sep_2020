@@ -1,3 +1,9 @@
+- author: M. Umut Caglar​, Ashley I. Teufel, Claus O Wilke
+  year: preprint
+  title: "Sicegar: R package for sigmoidal and double-sigmoidal curve fitting."
+  ref: "PeerJ Preprints 5:e3116v1"
+  doi: 10.7287/peerj.preprints.3116v1
+
 - author: B. L. Smith, C. O. Wilke
   year: 2017
   title: "Virus Evolution: A new twist in measuring mutation rates."
