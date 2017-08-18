@@ -7,6 +7,31 @@ permalink: /more/lab_meetings.html
 Lab meetings are held Fridays from 10:30 am - 12:00 pm in MBB 3.204.
 <br><br>
 
+### Fall 2017
+
+|------+---+--------------------+---+----------------------+---+-------|
+| Date      |    |Research       |    |Literature |         |Notes      |
+|:----------|----|:------------------|----|:--------------------|---|:------|
+| 9/8/17  || Umut || Bart || 
+| 9/15/17   || Nelson || Umut ||
+| 9/22/17  || Ashley || Nelson ||
+| 9/29/17  || Adam || Ashley || 
+| 10/6/17  || Dariya || Adam ||
+| 10/13/17   || Cory || Dariya ||
+| 10/20/17   || Ben || Cory || 
+| 10/27/17  || Bart || Ben ||
+| 11/3/17  || Mackenzie || Bart || 
+| 11/10/17  || Kevin || Mackenzie || 
+| 11/17/17   || Umut || Kevin  ||
+| 11/24/17 || --- || --- || Thanksgiving, no lab meeting
+| 12/1/17  || Ashley || Umut || 
+| 12/8/17  || Adam || Ashley  || 
+| 12/15/17  || Dariya || Adam ||
+|------+---+--------------------+---+----------------------+---+-------|
+{:.widetable}
+
+<br /><br />
+
 ### Summer 2017
 
 |------+---+--------------------+---+----------------------+---+-------|
@@ -24,8 +49,8 @@ Lab meetings are held Fridays from 10:30 am - 12:00 pm in MBB 3.204.
 | 8/4/17  || --- || --- || BEACON Congress, no lab meeting 
 | 8/11/17   || Cory || Dariya  || 
 | 8/18/17  || Bart || Cory || 
-| 8/25/17  || Adam || Bart  || 
-| 9/1/17  || Umut || Adam || 
+| 8/25/17  || --- || ---  || Literature only 
+| 9/1/17  || --- || --- || Literature only
 |------+---+--------------------+---+----------------------+---+-------|
 {:.widetable}
 
