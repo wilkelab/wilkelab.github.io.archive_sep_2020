@@ -11,6 +11,12 @@
   pubs: "http://scholar.google.com/citations?user=bdtVzlcAAAAJ"
   github: umutcaglar
 
+- name: Adam Hockenberry
+  role: Postdoc
+  joined: 2017
+  pubs: "https://scholar.google.com/citations?user=W5qqC2wAAAAJ&hl=en"
+  github: adamhockenberry
+
 - name: Bart Smith
   role: Postdoc
   joined: 2016
@@ -27,17 +33,16 @@
   joined: 2017
   github: corydubois
 
-- name: Dakota Derryberry
-  role: Graduate Student (CMB)
-  joined: 2010
-  github: dakotaz
-
 - name: Benjamin Jack
   role: Graduate Student (CMB)
   joined: 2015
   url: "http://benjack.io"
   pubs: "https://scholar.google.com/citations?user=b98WUfYAAAAJ"
   github: benjaminjack
+
+- name: Mackenzie M. Johnson
+  role: Graduate Student (EEB)
+  joined: 2017
 
 - name: Dariya K. Sydykova
   role: Graduate Student (CMB)
