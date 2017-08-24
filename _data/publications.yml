@@ -1,3 +1,9 @@
+- author: Q. Jiang, A. I. Teufel, E. L. Jackson, C. O. Wilke
+  year: preprint
+  title: "Beyond thermodynamic constraints: Evolutionary history shapes protein sequence variation"
+  ref: "bioRxiv 180331"
+  doi: 10.1101/180331
+
 - author: M. Umut Caglar​, Ashley I. Teufel, Claus O Wilke
   year: preprint
   title: "Sicegar: R package for sigmoidal and double-sigmoidal curve fitting."
