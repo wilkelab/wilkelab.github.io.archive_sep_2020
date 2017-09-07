@@ -4,7 +4,7 @@
   ref: "bioRxiv 180331"
   doi: 10.1101/180331
 
-- author: M. Umut Caglar​, Ashley I. Teufel, Claus O Wilke
+- author: M. Umut Caglar, Ashley I. Teufel, Claus O Wilke
   year: preprint
   title: "Sicegar: R package for sigmoidal and double-sigmoidal curve fitting."
   ref: "PeerJ Preprints 5:e3116v1"
@@ -19,7 +19,7 @@
 - author: B. R. Jack, D. R. Boutz, M. L. Paff, B. L. Smith, J. J. Bull, C. O. Wilke
   year: 2017
   title: Reduced protein expression in a virus attenuated by codon deoptimization.
-  ref: "G3: GENES, GENOMES, GENETICS, in press"
+  ref: "G3: GENES, GENOMES, GENETICS 7:2957–2968"
   doi: 10.1534/g3.117.041020
 
 - author: D. K. Sydykova, C. O. Wilke
