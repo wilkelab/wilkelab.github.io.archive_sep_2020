@@ -1,6 +1,6 @@
 - author: Q. Jiang, A. I. Teufel, E. L. Jackson, C. O. Wilke
   year: preprint
-  title: "Beyond thermodynamic constraints: Evolutionary history shapes protein sequence variation"
+  title: "Beyond thermodynamic constraints: Evolutionary history shapes protein sequence variation."
   ref: "bioRxiv 180331"
   doi: 10.1101/180331
 
@@ -9,6 +9,12 @@
   title: "Sicegar: R package for sigmoidal and double-sigmoidal curve fitting."
   ref: "PeerJ Preprints 5:e3116v1"
   doi: 10.7287/peerj.preprints.3116v1
+
+- author: D. K. Sydykova, B. R. Jack, S. J. Spielman, C. O. Wilke
+  year: 2017
+  title: "Measuring evolutionary rates of proteins in a structural context [version 1; referees: awaiting peer review]."
+  ref: "F1000Research 2017, 6:1845"
+  doi: 10.12688/f1000research.12874.1
 
 - author: B. L. Smith, C. O. Wilke
   year: 2017
