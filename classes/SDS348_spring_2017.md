@@ -318,17 +318,17 @@ doi: [10.1038/nrg.2015.18](http://dx.doi.org/10.1038/nrg.2015.18)
 
 All homeworks are due by 7:00pm on the day they are due. Homeworks need to be submitted as pdf files on Canvas.
 
-- Homework 1: [HW1.Rmd](/classes/SDS348/2017_spring/homeworks/HW1.Rmd) (due Jan 24, 2017) [Solutions, HTML](/classes/SDS348/2017_spring/homeworks/HW1-solution.html) 
-- Homework 2: [HW2.Rmd](/classes/SDS348/2017_spring/homeworks/HW2.Rmd) (due Jan 31, 2017) [Solutions, HTML](/classes/SDS348/2017_spring/homeworks/HW2-solution.html) 
-- Homework 3: [HW3.Rmd](/classes/SDS348/2017_spring/homeworks/HW3.Rmd) (due Feb 7, 2017) [Solutions, HTML](/classes/SDS348/2017_spring/homeworks/HW3-solution.html) 
-- Homework 4: [HW4.Rmd](/classes/SDS348/2017_spring/homeworks/HW4.Rmd) (due Feb 14, 2017) [Solutions, HTML](/classes/SDS348/2017_spring/homeworks/HW4-solution.html) 
-- Homework 5: [HW5.Rmd](/classes/SDS348/2017_spring/homeworks/HW5.Rmd) (due Feb 28, 2017) [Solutions, HTML](/classes/SDS348/2017_spring/homeworks/HW5-solution.html) 
-- Homework 6: [HW6.Rmd](/classes/SDS348/2017_spring/homeworks/HW6.Rmd) (due Mar 7, 2017) [Solutions, HTML](/classes/SDS348/2017_spring/homeworks/HW6-solution.html) 
-- Homework 7: [HW7.ipynb](/classes/SDS348/2017_spring/homeworks/HW7.ipynb) (due Mar 21, 2017) [Solutions, HTML](/classes/SDS348/2017_spring/homeworks/HW7-solution.html) 
-- Homework 8: [HW8.ipynb](/classes/SDS348/2017_spring/homeworks/HW8.ipynb) (due Apr 4, 2017) [Solutions, HTML](/classes/SDS348/2017_spring/homeworks/HW8-solution.html) 
+- Homework 1: [HW1.Rmd](/classes/SDS348/2017_spring/homeworks/HW1.Rmd) (due Jan 24, 2017) 
+- Homework 2: [HW2.Rmd](/classes/SDS348/2017_spring/homeworks/HW2.Rmd) (due Jan 31, 2017)
+- Homework 3: [HW3.Rmd](/classes/SDS348/2017_spring/homeworks/HW3.Rmd) (due Feb 7, 2017)
+- Homework 4: [HW4.Rmd](/classes/SDS348/2017_spring/homeworks/HW4.Rmd) (due Feb 14, 2017)
+- Homework 5: [HW5.Rmd](/classes/SDS348/2017_spring/homeworks/HW5.Rmd) (due Feb 28, 2017)
+- Homework 6: [HW6.Rmd](/classes/SDS348/2017_spring/homeworks/HW6.Rmd) (due Mar 7, 2017)
+- Homework 7: [HW7.ipynb](/classes/SDS348/2017_spring/homeworks/HW7.ipynb) (due Mar 21, 2017) 
+- Homework 8: [HW8.ipynb](/classes/SDS348/2017_spring/homeworks/HW8.ipynb) (due Apr 4, 2017)
 - Homework 9: [HW9.pdf](/classes/SDS348/2017_spring/homeworks/HW9.pdf) (due Apr 11, 2017) 
-- Homework 10: [HW10.ipynb](/classes/SDS348/2017_spring/homeworks/HW10.ipynb) (due Apr 18, 2017) [Solutions, HTML](/classes/SDS348/2017_spring/homeworks/HW10-solution.html)  
-- Homework 11: [HW11.ipynb](/classes/SDS348/2017_spring/homeworks/HW11.ipynb) (due Apr 25, 2017) [Solutions, HTML](/classes/SDS348/2017_spring/homeworks/HW11-solution.html) 
+- Homework 10: [HW10.ipynb](/classes/SDS348/2017_spring/homeworks/HW10.ipynb) (due Apr 18, 2017)  
+- Homework 11: [HW11.ipynb](/classes/SDS348/2017_spring/homeworks/HW11.ipynb) (due Apr 25, 2017)
 
 ## Labs
 
@@ -447,12 +447,10 @@ All projects are due by 7:00pm on the day they are due. Projects need to be subm
 - Project 1:
     - [HTML](/classes/SDS348/2017_spring/projects/project1/project1.html)
     - [R Markdown](/classes/SDS348/2017_spring/projects/project1/project1.Rmd) (due Feb 21, 2017)
-	- [Solutions, HTML](/classes/SDS348/2017_spring/projects/project1/project1-solution.html)
 
 - Project 2:
     - [HTML](/classes/SDS348/2017_spring/projects/project2/project2.html)
     - [R Markdown](/classes/SDS348/2017_spring/projects/project2/project2.Rmd) (due Mar 28, 2017)
-	- [Solutions, HTML](/classes/SDS348/2017_spring/projects/project2/project2-solution.html)
 	
 - Project 3:
 	- [Instructions, pdf](/classes/SDS348/2017_spring/projects/project3/project3_instructions.pdf)
