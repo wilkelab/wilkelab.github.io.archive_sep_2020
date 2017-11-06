@@ -4,7 +4,7 @@
   ref: "bioRxiv 180331"
   doi: 10.1101/180331
 
-- author: M. Umut Caglar, Ashley I. Teufel, Claus O Wilke
+- author: M. U. Caglar, A. I. Teufel, C. O. Wilke
   year: preprint
   title: "Sicegar: R package for sigmoidal and double-sigmoidal curve fitting."
   ref: "PeerJ Preprints 5:e3116v1"
@@ -12,7 +12,7 @@
 
 - author: D. K. Sydykova, B. R. Jack, S. J. Spielman, C. O. Wilke
   year: 2017
-  title: "Measuring evolutionary rates of proteins in a structural context [version 1; referees: awaiting peer review]."
+  title: "Measuring evolutionary rates of proteins in a structural context [version 1; referees: 2 approved]."
   ref: "F1000Research 2017, 6:1845"
   doi: 10.12688/f1000research.12874.1
 
