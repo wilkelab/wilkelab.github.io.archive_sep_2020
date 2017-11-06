@@ -22,10 +22,10 @@ Lab meetings are held Fridays from 10:30 am - 12:00 pm in MBB 3.204.
 | 10/27/17  || Bart || Ben ||
 | 11/3/17  || Mackenzie || Bart || 
 | 11/10/17  || Kevin || Mackenzie || 
-| 11/17/17   || Umut || Kevin  ||
+| 11/17/17   || Ashley || Kevin  ||
 | 11/24/17 || --- || --- || Thanksgiving, no lab meeting
-| 12/1/17  || Ashley || Umut || 
-| 12/8/17  || Adam || Ashley  || 
+| 12/1/17  || Umut || Ashley || 
+| 12/8/17  || Adam || Umut  || 
 | 12/15/17  || Dariya || Adam ||
 |------+---+--------------------+---+----------------------+---+-------|
 {:.widetable}
