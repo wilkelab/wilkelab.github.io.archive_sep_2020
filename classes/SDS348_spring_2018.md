@@ -23,6 +23,10 @@ Syllabus: [SDS348_syllabus_spring2018.pdf](/classes/SDS348/SDS348_syllabus_sprin
 
 All homeworks are due by 7:00pm on the day they are due. Homeworks need to be submitted as pdf files on Canvas.
 
+* Homework 1 (due Jan 23, 2018)
+	- [R Markdown](/classes/SDS348/2018_spring/homeworks/HW1.Rmd)
+	- [HTML](/classes/SDS348/2018_spring/homeworks/HW1.html) 	
+	
 ## Labs
 
 **1. Jan. 17, 2018**
@@ -32,6 +36,7 @@ All homeworks are due by 7:00pm on the day they are due. Homeworks need to be su
 * Lab worksheet:
     - [R Markdown](/classes/SDS348/2018_spring/labs/lab1.Rmd)
     - [HTML](/classes/SDS348/2018_spring/labs/lab1.html)
+    - [Solutions, HTML](/classes/SDS348/2018_spring/labs/lab1-solution.html)
     
 ## Projects
 
