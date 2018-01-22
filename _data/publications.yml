@@ -11,16 +11,16 @@
   doi: 10.1101/180331
 
 - author: M. U. Caglar, A. I. Teufel, C. O. Wilke
-  year: preprint
+  year: 2018
   title: "Sicegar: R package for sigmoidal and double-sigmoidal curve fitting."
-  ref: "PeerJ Preprints 5:e3116v1"
-  doi: 10.7287/peerj.preprints.3116v1
+  ref: "PeerJ 6:e4251"
+  doi: 10.7717/peerj.4251
 
 - author: A. T. Tucker, S. P. Leonard, C. D. DuBois, G. A. Knauf, A. L. Cunningham, C. O. Wilke, S. Trent, B. W. Davies
   year: 2018
   title: Discovery of next-generation antimicrobials through bacterial self-screening of surface-displayed peptide libraries
   ref: "Cell, in press"
-  doi: https://doi.org/10.1016/j.cell.2017.12.009
+  doi: 10.1016/j.cell.2017.12.009
   
 - author: F. Guo, S. Li, M. U. Caglar, Z. Mao, W. Liu, A. Woodman, J. J. Arnold, C. O. Wilke, T. J. Huang, C. E. Cameron
   year: 2017

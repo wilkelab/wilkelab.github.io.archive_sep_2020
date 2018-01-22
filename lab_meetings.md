@@ -7,6 +7,32 @@ permalink: /more/lab_meetings.html
 Lab meetings are held Fridays from 10:30 am - 12:00 pm in MBB 3.204.
 <br><br>
 
+### Spring 2018
+
+|------+---+--------------------+---+----------------------+---+-------|
+| Date      |    |Research       |    |Literature |         |Notes      |
+|:----------|----|:------------------|----|:--------------------|---|:------|
+| 1/12/18 || Umut || --- ||
+| 1/19/18 || Ashley || Umut ||
+| 1/26/18 || Matt || Ashley ||
+| 2/2/18 || Bart || Matt ||
+| 2/9/18 || Adam || Bart ||
+| 2/16/18 || Cory || Adam ||
+| 2/23/18 || Ben || Cory ||
+| 3/2/18 || Dariya || Ben ||
+| 3/9/18 || Mackenzie || Dariya ||
+| 3/16/18 || --- || Mackenzie ||
+| 3/23/18 || Undergrads || --- ||
+| 3/30/18 || Umut || Undergrads ||
+| 4/6/18 || Ashley || Umut ||
+| 4/13/18 || Bart || Ashley ||
+| 4/27/18 || Cory || Bart || 
+| 5/4/18 || Ben || Cory ||
+|------+---+--------------------+---+----------------------+---+-------|
+{:.widetable}
+
+<br /><br />
+
 ### Fall 2017
 
 |------+---+--------------------+---+----------------------+---+-------|
