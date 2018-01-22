@@ -48,13 +48,20 @@ All homeworks are due by 7:00pm on the day they are due. Homeworks need to be su
 
 **1. Jan. 17, 2018**
 
-* Slides: [lab1.pdf](/classes/SDS348/2018_spring/labs/lab1_slides.pdf)
+* Slides: [lab1.pdf](/classes/SDS348/2018_spring/labs/lab1-slides.pdf)
 * Guide to converting from HTML to PDF: [html_to_pdf_guide.pdf](/classes/SDS348/2018_spring/labs/html_to_pdf_guide.pdf)
 * Lab worksheet:
     - [R Markdown](/classes/SDS348/2018_spring/labs/lab1.Rmd)
     - [HTML](/classes/SDS348/2018_spring/labs/lab1.html)
     - [Solutions, HTML](/classes/SDS348/2018_spring/labs/lab1-solution.html)
-    
+ 
+**1. Jan. 17, 2018**
+
+* Slides: [lab2.pdf](/classes/SDS348/2018_spring/labs/lab2-slides.pdf)
+* Lab worksheet:
+    - [R Markdown](/classes/SDS348/2018_spring/labs/lab2.Rmd)
+    - [HTML](/classes/SDS348/2018_spring/labs/lab2.html)
+   
 ## Projects
 
 All projects are due by 7:00pm on the day they are due. Projects need to be submitted on Canvas, both in pdf format and as source code (plus data where needed).
