@@ -39,6 +39,7 @@ Syllabus: [SDS348_syllabus_spring2018.pdf](/classes/SDS348/SDS348_syllabus_sprin
 * In-class worksheet:
     - [R Markdown](/classes/SDS348/2018_spring/worksheets/class3.Rmd)
     - [HTML](/classes/SDS348/2018_spring/worksheets/class3.html)
+    - [Solutions](/classes/SDS348/2018_spring/worksheets/class3_solutions.html)
 
 **4. Jan 26, 2017 – Data visualization with ggplot2**
 
