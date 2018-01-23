@@ -72,7 +72,7 @@ All homeworks are due by 7:00pm on the day they are due. Homeworks need to be su
     - [HTML](/classes/SDS348/2018_spring/labs/lab1.html)
     - [Solutions, HTML](/classes/SDS348/2018_spring/labs/lab1-solution.html)
  
-**1. Jan. 24, 2018**
+**2. Jan. 24, 2018**
 
 * Slides: [lab2.pdf](/classes/SDS348/2018_spring/labs/lab2-slides.pdf)
 * Lab worksheet:
