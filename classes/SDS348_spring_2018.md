@@ -30,6 +30,24 @@ Syllabus: [SDS348_syllabus_spring2018.pdf](/classes/SDS348/SDS348_syllabus_sprin
     - [HTML](/classes/SDS348/2018_spring/worksheets/class2.html)
     - [Solutions, HTML](/classes/SDS348/2018_spring/worksheets/class2_solutions.html)
 
+**3. Jan 23, 2018 – Data visualization with ggplot2**
+
+* Slides: [class3.pdf](/classes/SDS348/2018_spring/slides/class3.pdf)
+* R for Data Science: [http://r4ds.had.co.nz/](http://r4ds.had.co.nz/)
+* ggplot2 reference manual: [http://ggplot2.tidyverse.org/](http://ggplot2.tidyverse.org/)
+* ggplot2 video tutorial: [http://varianceexplained.org/RData/lessons/lesson2/segment1/](http://varianceexplained.org/RData/lessons/lesson2/segment1/)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2018_spring/worksheets/class3.Rmd)
+    - [HTML](/classes/SDS348/2018_spring/worksheets/class3.html)
+    - [Solutions](/classes/SDS348/2018_spring/worksheets/class3_solutions.html)
+
+**4. Jan 26, 2017 – Data visualization with ggplot2**
+
+* Slides: [class4.pdf](/classes/SDS348/2018_spring/slides/class4.pdf)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2018_spring/worksheets/class4.Rmd)
+    - [HTML](/classes/SDS348/2018_spring/worksheets/class4.html)
+
 
 ## Homeworks
 
@@ -55,7 +73,7 @@ All homeworks are due by 7:00pm on the day they are due. Homeworks need to be su
     - [HTML](/classes/SDS348/2018_spring/labs/lab1.html)
     - [Solutions, HTML](/classes/SDS348/2018_spring/labs/lab1-solution.html)
  
-**1. Jan. 24, 2018**
+**2. Jan. 24, 2018**
 
 * Slides: [lab2.pdf](/classes/SDS348/2018_spring/labs/lab2-slides.pdf)
 * Lab worksheet:
