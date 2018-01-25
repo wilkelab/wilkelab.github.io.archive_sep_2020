@@ -44,6 +44,7 @@ Syllabus: [SDS348_syllabus_spring2018.pdf](/classes/SDS348/SDS348_syllabus_sprin
 **4. Jan 26, 2017 – Data visualization with ggplot2**
 
 * Slides: [class4.pdf](/classes/SDS348/2018_spring/slides/class4.pdf)
+* Sample chapters of visualization book: [Fundamentals of Data Visualization](http://serialmentor.com/dataviz/)
 * In-class worksheet:
     - [R Markdown](/classes/SDS348/2018_spring/worksheets/class4.Rmd)
     - [HTML](/classes/SDS348/2018_spring/worksheets/class4.html)
