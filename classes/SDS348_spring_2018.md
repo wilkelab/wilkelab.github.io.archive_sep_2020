@@ -41,7 +41,7 @@ Syllabus: [SDS348_syllabus_spring2018.pdf](/classes/SDS348/SDS348_syllabus_sprin
     - [HTML](/classes/SDS348/2018_spring/worksheets/class3.html)
     - [Solutions](/classes/SDS348/2018_spring/worksheets/class3_solutions.html)
 
-**4. Jan 26, 2017 – Data visualization with ggplot2**
+**4. Jan 25, 2018 – Data visualization with ggplot2**
 
 * Slides: [class4.pdf](/classes/SDS348/2018_spring/slides/class4.pdf)
 * Sample chapters of visualization book: [Fundamentals of Data Visualization](http://serialmentor.com/dataviz/)
@@ -49,6 +49,23 @@ Syllabus: [SDS348_syllabus_spring2018.pdf](/classes/SDS348/SDS348_syllabus_sprin
     - [R Markdown](/classes/SDS348/2018_spring/worksheets/class4.Rmd)
     - [HTML](/classes/SDS348/2018_spring/worksheets/class4.html)
     - [Solutions](/classes/SDS348/2018_spring/worksheets/class4_solutions.html)
+
+**5. Jan 30, 2018 – Working with tidy data**
+
+* Slides: [class5.pdf](/classes/SDS348/2018_spring/slides/class5.pdf)
+* dplyr chapter in R for Data Science: [Chapter 5: Data transformation](http://r4ds.had.co.nz/transform.html)
+* dplyr package on the tidyverse website: [http://dplyr.tidyverse.org/](http://dplyr.tidyverse.org/)
+* Tidy data paper by Wickham: [J. Stat. Soft. 59:10, 2014](http://www.jstatsoft.org/v59/i10/paper)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2018_spring/worksheets/class5.Rmd)
+    - [HTML](/classes/SDS348/2018_spring/worksheets/class5.html)
+
+**6. Feb 1, 2018 – Working with tidy data**    
+
+* Slides: [class6.pdf](/classes/SDS348/2018_spring/slides/class6.pdf)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2018_spring/worksheets/class6.Rmd)
+    - [HTML](/classes/SDS348/2018_spring/worksheets/class6.html)
 
 
 ## Homeworks
