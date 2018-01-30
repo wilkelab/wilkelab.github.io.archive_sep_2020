@@ -1,0 +1,56 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=3, fig.width=4)
+library(ggplot2)
+theme_set(theme_bw(base_size=12))
+library(dplyr)
+```
+##Homework 3
+*Enter your name and EID here*
+
+**This homework is due on Feb. 6, 2018 at 7:00pm. Please submit as a PDF file on Canvas.**
+
+In this homework, you are asked to evaluate two data sets and determine if they are tidy data sets. *We are referring to a very specific definition of "tidy", so if this term is unfamiliar to you, please review the lecture materials*.
+
+**Problem 1: (2 pts)** The dataset `WorldPhones` built into R contains the number of telephones (in thousands) in various regions of the world for the years 1951 and 1956-1961. You can run `?WorldPhones` to learn more about this data set.
+```{r}
+WorldPhones
+```
+Explain the variables present in this dataset. Using the variables in this dataset and the formal definition of tidy data that we learned in lecture, is this data set tidy? Explain why or why not.
+
+*Your answer goes here.*
+
+The dataset `ToothGrowth` built into R contains data on the effect of vitamin C on tooth growth in 60 Guinea pigs. You can run `?ToothGrowth` to learn more about this data set.
+```{r}
+head(ToothGrowth)
+```
+Explain the variables present in this dataset. Using the variables in this dataset and the formal definition of tidy data that we learned in lecture, is this data set tidy? Explain why or why not.
+
+*Your answer goes here.*
+ 
+**Problem 2: (2 pts)** The `MedGPA` dataset contains information about medical school admission. The dataset has 55 observations and 11 columns. It contains information on acceptance status (`Accept`) with levels `A` for accepted and `D` for denied, indicator for acceptance status (`Acceptance`) with levels 1 for accepted and 0 for denied, sex of a student (`Sex`), Biology/Chemistry/Physics/Math grade point average (`BCPM`), college grade point average (`GPA`), MCAT exam's verbal reasoning score (`VR`), MCAT exam's physical sciences score (`PS`), MCAT exam's writing sample score (`WS`), MCAT exam's biological science score (`BS`), MCAT exam's total score (sum of `VR`+`PS`+`WS`+`BS`), and the number of medical schools the student applied to (`Apps`).
+
+```{r}
+MedGPA <- read.csv("http://wilkelab.org/classes/SDS348/data_sets/MedGPA.csv")
+head(MedGPA)
+```
+
+What are the **mean** GPA and the **mean** MCAT exam score for students that were accepted and for students that were denied? State your answer in a sentence.
+
+```{r}
+# R code goes here
+```
+
+*Your answer goes here. 1-2 sentences only.*
+
+**Problem 3: (3 pts)** For female students that were accepted, what was the minimum and the maximum number of medical schools the students applied to? **HINT:** Use the functions `max()` and `min()` to determine the maximum and the minimum number of schools applied. 
+
+```{r}
+# R code goes here
+```
+
+*Your answer goes here. 1-2 sentences only.*
+
+**Problem 4: (3 pts)** Ask a question about the `MedGPA` data set. Describe in 1-2 sentences how you would answer this question with an analysis or a graph.
+
+*Your answer goes here. 2-3 sentences only.*
