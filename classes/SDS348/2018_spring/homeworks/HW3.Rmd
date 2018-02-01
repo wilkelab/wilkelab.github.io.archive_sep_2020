@@ -51,6 +51,6 @@ What are the **mean** GPA and the **mean** MCAT exam score for students that wer
 
 *Your answer goes here. 1-2 sentences only.*
 
-**Problem 4: (3 pts)** Ask a question about the `MedGPA` data set. Your question should not repeat the questions in Problems 2 or 3. Describe in 1-2 sentences how you would answer this question with an analysis or a graph.
+**Problem 4: (3 pts)** Ask a question about the `MedGPA` data set. Your question should not repeat the questions in problems 2 or 3. Describe in 1-2 sentences how you would answer this question with an analysis or a graph.
 
 *Your answer goes here. 2-3 sentences only.*
