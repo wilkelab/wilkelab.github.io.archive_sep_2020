@@ -1,0 +1,85 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=3, fig.width=4)
+library(ggplot2)
+theme_set(theme_bw(base_size=12))
+library(tidyr)
+library(dplyr)
+```
+##Lab Worksheet 4
+
+### Part 1: The dplyr pipe
+
+The following questions in Part 1 are from Lab Worksheet 3. Answer these questions again, but this time use the dplyr pipe (`%>%`) in your answer.
+
+**Problem 1:** *In an in-class exercise, we made the following plot of the Sitka dataset:*
+
+```{r}
+# download the sitka data set:
+sitka <- read.csv("http://wilkelab.org/classes/SDS348/data_sets/sitka.csv")
+head(sitka)
+ggplot(sitka, aes(x=Time, y=size, group=tree)) + geom_line() + facet_wrap(~treat)
+```
+
+*Now modify the plot so that the line for each tree is colored according to the maximum size of the tree.* 
+```{r}
+sitka %>% group_by(tree) %>% mutate(max_size = max(size)) -> sitka_new
+ggplot(sitka_new, aes(x=Time, y=size, group=tree, color=max_size)) + geom_line() + facet_wrap(~treat)
+```
+
+**Problem 2:** *The package nycflights13 contains information about all flights departing from one of the NY City airports in 2013. In particular, the data table `flights` lists on-time departure and arrival information for 336,776 individual flights:*
+```{r}
+library(nycflights13)
+flights
+```
+
+*We would like to collect some information about arrival delays of United Airlines (UA) flights. Do the following: pick all UA departures with non-zero arrival delay and calculate the mean arrival delay for each of the corresponding flight numbers. Which flight had the longest mean arrival delay and how long was that delay?*
+
+```{r}
+flights %>% filter(carrier == "UA" & arr_delay != 0) %>% 
+  group_by(flight) %>% 
+  summarize(mean_delay = mean(arr_delay)) %>% 
+  filter(mean_delay == max(mean_delay))
+```
+
+Flight 1510 had the longest delay, with an average arrival delay of 283 minutes.
+
+###Part 2: Combining data-frames with dplyr
+
+**Problem 1:** *Invent two simple data sets that allow you explain the difference between the dplyr functions `left_join()` and `inner_join()`. Explain which features of your data sets affect the behavior of these two functions.*
+```{r}
+# data set 1
+d1 <- read.table(text="
+label number1
+A 1
+B 2
+C 4", head=T)
+
+# data set 2
+d2 <- read.table(text="
+label number2
+A 2
+C 4
+D 6
+", head=T)
+
+d1
+d2
+left_join(d1, d2)
+inner_join(d1, d2)
+```
+We join the two data sets by `label`. `left_join()` finds all rows in the second data set that match to rows in the first data set. Therefore, we don't get a value for `number2` corresponding to label B. By contrast, `inner_join()` only keeps the matching rows that exist in both data sets. Therefore, the resulting table has only two rows, one for label A and one for label C.
+
+**Problem 2:** *I have split the sitka data set into two data-frames. First, look up the documentation for the `bind_rows` function. What does `bind_rows` do? Next, use `bind_rows` to combine `sitka1` and `sitka2` back into a single data-frame.*
+
+The `bind_rows` function adds rows from one data-frame to another as long as both data-frames have the same number of columns and identical column names.
+
+```{r}
+sitka1 <- sitka[1:100,]
+sitka2 <- sitka[101:395,]
+head(sitka1)
+head(sitka2)
+
+sitka_combined <- bind_rows(sitka1, sitka2)
+sitka_combined
+```
