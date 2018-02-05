@@ -67,6 +67,23 @@ Syllabus: [SDS348_syllabus_spring2018.pdf](/classes/SDS348/SDS348_syllabus_sprin
 * In-class worksheet:
     - [R Markdown](/classes/SDS348/2018_spring/worksheets/class6.Rmd)
     - [HTML](/classes/SDS348/2018_spring/worksheets/class6.html)
+    - [Solutions](/classes/SDS348/2018_spring/worksheets/class6_solutions.html)
+
+**7. Feb 6, 2018 – Working with tidy data**    
+
+* Slides: [class7.pdf](/classes/SDS348/2018_spring/slides/class7.pdf)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2018_spring/worksheets/class7.Rmd)
+    - [HTML](/classes/SDS348/2018_spring/worksheets/class7.html)
+
+**8. Feb 8, 2017 – Rearranging data tables with tidyr**    
+
+* Slides: [class8.pdf](/classes/SDS348/2018_spring/slides/class8.pdf)
+* tidyr vignette: [http://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html](http://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2018_spring/worksheets/class8.Rmd)
+    - [HTML](/classes/SDS348/2018_spring/worksheets/class8.html)
+
 
 
 ## Homeworks
