@@ -1,0 +1,73 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=3, fig.width=4)
+library(ggplot2)
+theme_set(theme_bw(base_size=12))
+library(dplyr)
+library(tidyr)
+```
+##Homework 4
+*Enter your name and EID here*
+
+**This homework is due on Feb. 13, 2018 at 7:00pm. Please submit as a PDF file on Canvas.**
+
+**Problem 1: (4 pts)** *The `Titanic` data set contains the information about the passengers of the ocean liner Titanic.*
+
+```{r}
+Titanic
+```
+
+*We have extracted data from `Titanic` about the passengers that survived. We placed that information into two data-frames, one `Adult` and one `Child`. Using the `dplyr` and `tidyr` packages, make these data-frames tidy and then combine them into a single data-frame. Make sure that your final data-frame has an `Age` column indicating which data-frame the observations originally came from. **HINT**: You can use the `bind_rows` function to add rows from one data-frame onto another as long as both data-frames have identical column names.* 
+
+```{r}
+Adult <- read.table(text="
+Class  Male Female
+1st    57    140
+2nd    14     80
+3rd    75     76
+Crew  192     20
+", head=T)
+
+Child <- read.table(text="
+Class  Male Female
+1st     5      1
+2nd    11     13
+3rd    13     14
+Crew    0      0
+", head=T)
+
+# R code goes here
+```
+
+*Using the data-frame you created above, compute the total counts for each age group (i.e., the sum of the counts for each age).*
+
+```{r}
+# R code goes here
+```
+
+**Problem 2: (3 pts)** *Recall that the `Alfalfa` data set contains the height of alfalfa sprouts after four days (`Ht4`) grown indoors in different acidic environments (`Acid`). The  column `Row` contains information on the amount of daylight the plants received. The rows were indicated with values `a` through `e`, where `a` indicates the row farthest from the window and `e` indicates the row closest to the window. We have created a new data-frame (`Row_numbers`), that contains row information as numbers. Using one of the `dplyr` join functions, combine the data-frames `Alfalfa` and `Row_numbers` so that there is an additional `Row_num` column and all of the original columns and rows in `Alfalfa` are retained. Which join function is most appropriate to use and why?*
+
+```{r}
+Alfalfa <- read.csv("http://wilkelab.org/classes/SDS348/data_sets/Alfalfa.csv")
+head(Alfalfa)
+
+Row_numbers <- data.frame(Row=c("a","b","c","d","e","f","g"),
+                         Row_num=c(1:7))
+Row_numbers
+
+# R code goes here
+```
+
+*Your answer goes here. 1-2 sentences only.*
+
+**Problem 3: (3 pts)** *Make up your own data set which is **not** tidy and input it into R via the `text` option of `read.table()`. First, explain why it is not tidy. Then, using `dplyr` and/or `tidyr` convert it into a tidy data set.*
+
+```{r}
+# R code goes here
+```
+
+*Your answer goes here*
+
+```{r}
+# R code goes here
+```
