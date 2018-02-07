@@ -75,6 +75,7 @@ Syllabus: [SDS348_syllabus_spring2018.pdf](/classes/SDS348/SDS348_syllabus_sprin
 * In-class worksheet:
     - [R Markdown](/classes/SDS348/2018_spring/worksheets/class7.Rmd)
     - [HTML](/classes/SDS348/2018_spring/worksheets/class7.html)
+    - [Solutions](/classes/SDS348/2018_spring/worksheets/class7_solutions.html)
 
 **8. Feb 8, 2017 – Rearranging data tables with tidyr**    
 
