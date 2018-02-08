@@ -1,0 +1,120 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=6, fig.width=8)
+library(ggplot2)
+theme_set(theme_bw(base_size=12))
+library(dplyr)
+library(tidyr)
+```
+
+## Project 1
+*Enter your name and EID here*
+
+### Instructions
+
+This knitted R Markdown document (as a PDF) *and* the raw R Markdown file (as .Rmd) should both be submitted to Canvas by 7:00pm on **Feb 20th, 2018**. These two documents will be graded jointly, so they must be consistent (as in, don't change the R Markdown file without also updating the knitted document!).
+
+All results presented *must* have corresponding code. **Any answers/results given without the corresponding R code that generated the result will be considered absent.** To be clear: if you do calculations by hand instead of using R and then report the results from the calculations, **you will not receive credit** for those calculations. All code reported in your final project document should work properly. Please do not include any extraneous code or code which produces error messages. (Code which produces warnings is acceptable, as long as you understand what the warnings mean.)
+
+For this project, you will be using the data set `ais` that contains characteristics of body size and blood of Australian athletes.
+```{r}
+ais <- read.csv("http://wilkelab.org/classes/SDS348/data_sets/ais.csv")
+head(ais)
+```
+
+The column contents are as follows:
+
++ **rcc**: red blood cell count (in 10^12^ per liter).
++ **wcc**: white blood cell count (in 10^12^ per liter).
++ **hc**: percent hematocrit.
++ **hg**: hemaglobin concentration (in grams per decaliter).
++ **ferr**: plasma ferritins (in nanograms per decaliter).
++ **bmi**: body mass index (kilograms per centimeter^2^ x 10^2^).
++ **ssf**: sum of skin folds (the units were not reported).
++ **pcBfat**: percent body fat.
++ **lbm**: lean body mass (in kilograms).
++ **ht**: height (in centimeters).
++ **wt**: weight (in kilograms).
++ **sex**: sex of an athlete, f=female or m=male.
++ **sport**: type of sport. 
+
+### Problems
+
+**Problem 1: (5 pts)**
+Write R code that counts the number of athletes present for each combination of sport and sex. Order your output by sport and sex. Which sports contain observations only for one of the two sexes?
+```{r}
+# R code goes here
+```
+*Your answer goes here. 1-2 sentences only.*
+
+**Problem 2: (25 pts)** The following data set provides the full name for each sport. Note that it uses the same name ("Track") for the two categories "T_Sprnt" and "T_400m".
+
+```{r}
+sport_name <- read.csv(text="
+sport,full_name
+Gym,Gymnastics
+Tennis,Tennis
+T_Sprnt,Track
+W_Polo,Water polo
+Field,Field
+Swim,Swimming
+Netball,Netball
+B_Ball,Basketball
+T_400m,Track
+Row,Rowing")
+```
+
+Combine the data set `ais` with the data set `sport_name` such that all the information in the `ais` data set is retained. Using the combined data set, on the basis of the data column `full_name`, find the sport with the highest mean BMI for male athletes and the sport with the lowest mean BMI for male athletes. Perform a statistical test to determine whether there is a significant difference in the male athlete's mean BMI between these two sports, and interpret your findings.
+
+```{r}
+# R code goes here
+```
+
+*Your answer goes here. 1-2 sentences only.*
+
+**Problem 3: (40 pts)**
+
+**a. (30 points)**
+Using the `ais` data set, extract all the rows corresponding to sports for which there is data for both sexes. Then make one plot that visualizes the distributions of percent body fat (data column `pcBfat`) for each sex in the different sports. Your code should be well-commented and describe the various steps you take to create this figure.  
+
+```{r}
+# R code goes here
+```
+
+**b. (10 points)** Discuss the information (overarching trends, patterns, etc.) your plot reveals. Be sure to include in your discussion the similarities/differences among the different sports and sexes. Be sure to also include a clear, logical justification for why you selected the particular geom(s) used to represent this data. Please limit your full response to a maximum of 6 sentences.
+
+*Your answer goes here.*
+  
+**Problem 4: (30 pts)**
+Think of **two** (and only two!) conceptual questions to ask about the data set `ais`. Clearly state each question in the spaces provided below. For each question, use the ggplot2 library to create a plot that can help you find an answer to the question. For each plot, provide a clear explanation as to why this type of plot (e.g. boxplot, barplot, histogram, etc.) is best for providing the information you are asking about. Answer your questions by interpreting your plot and identifying any trends it reveals, or does not reveal, as the case may be. Your two plots *must* use different primary geoms. Please limit the discussion for each question-plot pair to 4-6 sentences.
+
+*To receive full credit for Problem 4, we look for the following for each question:*
+
+  - *A clear, coherent question about the data. (Questions end in a question mark!)*
+  - *The question should be conceptual and **should not** prompt a specific analysis or plot*.
+  - *A plot that helps answer your proposed question, with a justification for why you chose to make the type of plot that you made.*
+  - *An interpretation of your plot and a response to your proposed question.*
+  - *Statistical analysis **is not** necessary. Just interpret your plot.*
+
+**You cannot reuse the questions about the `ais` data set from the previous problems.**
+
+
+**Question 1**
+
+*State your first question here.*
+
+```{r}
+# R code for plot 1 creation, analysis goes here
+```
+
+*Answer to question 1 goes here.*
+
+**Question 2**
+
+*State your second question here.*
+
+```{r}
+# R code for plot 2 creation, analysis goes here
+```
+
+*Answer to question 2 goes here.*
