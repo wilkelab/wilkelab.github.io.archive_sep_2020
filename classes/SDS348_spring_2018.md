@@ -94,6 +94,7 @@ Syllabus: [SDS348_syllabus_spring2018.pdf](/classes/SDS348/SDS348_syllabus_sprin
 * In-class worksheet:
     - [R Markdown](/classes/SDS348/2018_spring/worksheets/class9.Rmd)
     - [HTML](/classes/SDS348/2018_spring/worksheets/class9.html)
+    - [Solutions](/classes/SDS348/2018_spring/worksheets/class9_solutions.html)
 
 **10. Feb 15, 2018 – k-means clustering**
 
