@@ -77,7 +77,7 @@ Syllabus: [SDS348_syllabus_spring2018.pdf](/classes/SDS348/SDS348_syllabus_sprin
     - [HTML](/classes/SDS348/2018_spring/worksheets/class7.html)
     - [Solutions](/classes/SDS348/2018_spring/worksheets/class7_solutions.html)
 
-**8. Feb 8, 2017 – Rearranging data tables with tidyr**    
+**8. Feb 8, 2018 – Rearranging data tables with tidyr**    
 
 * Slides: [class8.pdf](/classes/SDS348/2018_spring/slides/class8.pdf)
 * tidyr vignette: [http://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html](http://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html)
@@ -86,6 +86,24 @@ Syllabus: [SDS348_syllabus_spring2018.pdf](/classes/SDS348/SDS348_syllabus_sprin
     - [HTML](/classes/SDS348/2018_spring/worksheets/class8.html)
     - [Solutions](/classes/SDS348/2018_spring/worksheets/class8_solutions.html)
 
+**9. Feb 13, 2018 – Principal Components Analysis (PCA)**    
+
+* Slides: [class9.pdf](/classes/SDS348/2018_spring/slides/class9.pdf)
+* Intro to PCA: [http://setosa.io/ev/principal-component-analysis/](http://setosa.io/ev/principal-component-analysis/)
+* PCA tutorial with mathematical background: [http://arxiv.org/pdf/1404.1100.pdf](http://arxiv.org/pdf/1404.1100.pdf)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2018_spring/worksheets/class9.Rmd)
+    - [HTML](/classes/SDS348/2018_spring/worksheets/class9.html)
+    - [Solutions](/classes/SDS348/2018_spring/worksheets/class9_solutions.html)
+
+**10. Feb 15, 2018 – k-means clustering**
+
+* Slides: [class10.pdf](/classes/SDS348/2018_spring/slides/class10.pdf)
+* Interactive k-means demonstration: [http://www.naftaliharris.com/blog/visualizing-k-means-clustering/](http://www.naftaliharris.com/blog/visualizing-k-means-clustering/)
+* Stackoverflow post on [choosing the right number of clusters](http://stackoverflow.com/a/15376462/4975218)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2018_spring/worksheets/class10.Rmd)
+    - [HTML](/classes/SDS348/2018_spring/worksheets/class10.html)
 
 
 ## Homeworks
