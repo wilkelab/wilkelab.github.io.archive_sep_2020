@@ -101,9 +101,11 @@ Syllabus: [SDS348_syllabus_spring2018.pdf](/classes/SDS348/SDS348_syllabus_sprin
 * Slides: [class10.pdf](/classes/SDS348/2018_spring/slides/class10.pdf)
 * Interactive k-means demonstration: [http://www.naftaliharris.com/blog/visualizing-k-means-clustering/](http://www.naftaliharris.com/blog/visualizing-k-means-clustering/)
 * Stackoverflow post on [choosing the right number of clusters](http://stackoverflow.com/a/15376462/4975218)
+* Medium article: [The 5 clustering algorithms data scientists need to know.](https://towardsdatascience.com/the-5-clustering-algorithms-data-scientists-need-to-know-a36d136ef68)
 * In-class worksheet:
     - [R Markdown](/classes/SDS348/2018_spring/worksheets/class10.Rmd)
     - [HTML](/classes/SDS348/2018_spring/worksheets/class10.html)
+    - [Solutions](/classes/SDS348/2018_spring/worksheets/class10_solutions.html)
 
 
 ## Homeworks
