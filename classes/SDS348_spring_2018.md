@@ -107,6 +107,16 @@ Syllabus: [SDS348_syllabus_spring2018.pdf](/classes/SDS348/SDS348_syllabus_sprin
     - [HTML](/classes/SDS348/2018_spring/worksheets/class10.html)
     - [Solutions](/classes/SDS348/2018_spring/worksheets/class10_solutions.html)
 
+**11. Feb 20, 2018 – Binary prediction/logistic regression**
+
+* Slides: [class11.pdf](/classes/SDS348/2018_spring/slides/class11.pdf)
+* Wikipedia page on logistic regression: [http://en.wikipedia.org/wiki/Logistic_regression](http://en.wikipedia.org/wiki/Logistic_regression)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2018_spring/worksheets/class11.Rmd)
+    - [HTML](/classes/SDS348/2018_spring/worksheets/class11.html)
+    - [Solutions](/classes/SDS348/2018_spring/worksheets/class11_solutions.html)
+
+
 
 ## Homeworks
 
