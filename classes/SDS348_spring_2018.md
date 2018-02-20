@@ -115,6 +115,15 @@ Syllabus: [SDS348_syllabus_spring2018.pdf](/classes/SDS348/SDS348_syllabus_sprin
     - [R Markdown](/classes/SDS348/2018_spring/worksheets/class11.Rmd)
     - [HTML](/classes/SDS348/2018_spring/worksheets/class11.html)
 
+**12. Feb 22, 2018 – Sensitivity/Specificity, ROC curves**
+
+* Slides: [class12.pdf](/classes/SDS348/2018_spring/slides/class12.pdf)
+* Wikipedia page on sensitivity and specificity: [http://en.wikipedia.org/wiki/Sensitivity_and_specificity](http://en.wikipedia.org/wiki/Sensitivity_and_specificity)
+* Wikipedia page on ROC curves: [http://en.wikipedia.org/wiki/Receiver_operating_characteristic](http://en.wikipedia.org/wiki/Receiver_operating_characteristic)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2018_spring/worksheets/class12.Rmd)
+    - [HTML](/classes/SDS348/2018_spring/worksheets/class12.html)
+
 
 ## Homeworks
 
