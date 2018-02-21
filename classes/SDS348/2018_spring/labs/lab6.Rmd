@@ -4,6 +4,7 @@ opts_chunk$set(fig.align="center", fig.height=3, fig.width=4)
 library(ggplot2)
 theme_set(theme_bw(base_size=12))
 library(dplyr)
+library(ggthemes)
 ```
 ## Lab Worksheet 6
 
