@@ -26,7 +26,7 @@ The data set has three categorical variables (`Sex`, with levels `Male` and `Fem
 
 Discussion goes here.
 
-**Problem 2:** *Make a plot of the fitted probability as a function of the linear predictor, colored by survival. Make a density plot that shows how the two species are separated by the linear predictor. Interperet your plots in 1-2 sentences. If you had to choose a cut-off value for alive or dead, where would it be?*
+**Problem 2:** *Make a plot of the fitted probability as a function of the linear predictor, colored by survival. Make a density plot that shows how the two outcomes are separated by the linear predictor. Interperet your plots in 1-2 sentences. If you had to choose a cut-off value for alive or dead, where would it be?*
 ```{r}
 
 # R code goes here.
