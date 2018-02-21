@@ -114,6 +114,7 @@ Syllabus: [SDS348_syllabus_spring2018.pdf](/classes/SDS348/SDS348_syllabus_sprin
 * In-class worksheet:
     - [R Markdown](/classes/SDS348/2018_spring/worksheets/class11.Rmd)
     - [HTML](/classes/SDS348/2018_spring/worksheets/class11.html)
+    - [Solutions](/classes/SDS348/2018_spring/worksheets/class11_solutions.html)
 
 **12. Feb 22, 2018 – Sensitivity/Specificity, ROC curves**
 
@@ -148,6 +149,10 @@ All homeworks are due by 7:00pm on the day they are due. Homeworks need to be su
 	- [R Markdown](/classes/SDS348/2018_spring/homeworks/HW4.Rmd)
 	- [HTML](/classes/SDS348/2018_spring/homeworks/HW4.html) 
     - [Solutions, HTML](/classes/SDS348/2018_spring/homeworks/HW4-solution.html)	
+    
+* Homework 5 (due Feb 27, 2018)
+	- [R Markdown](/classes/SDS348/2018_spring/homeworks/HW5.Rmd)
+	- [HTML](/classes/SDS348/2018_spring/homeworks/HW5.html) 
 
 ## Labs
 
@@ -190,6 +195,12 @@ All homeworks are due by 7:00pm on the day they are due. Homeworks need to be su
     - [R Markdown](/classes/SDS348/2018_spring/labs/lab5.Rmd)
     - [HTML](/classes/SDS348/2018_spring/labs/lab5.html)
     - [Solutions, HTML](/classes/SDS348/2018_spring/labs/lab5-solution.html)
+
+**6. Feb. 21, 2018**
+
+* Lab worksheet:
+    - [R Markdown](/classes/SDS348/2018_spring/labs/lab6.Rmd)
+    - [HTML](/classes/SDS348/2018_spring/labs/lab6.html)
 
 ## Projects
 
