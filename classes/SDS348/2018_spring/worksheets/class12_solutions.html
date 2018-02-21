@@ -443,8 +443,8 @@ ggplot(df_combined, aes(d = known_truth, m = predictor, color = model)) +
 <h1>3. If this was easy</h1>
 <p>Calculate the area under the ROC curve (AUC) for your first model, using the function <code>calc_auc()</code> from the plotROC package. This function needs to be called on a plot containing a <code>geom_roc()</code> statement.</p>
 <pre class="r"><code># make plot and save as p
-p &lt;- ggplot(data = NULL, aes(d = known_truth, m = predictor, color = model)) + 
-  geom_roc(data = df1, n.cuts = 0)
+p &lt;- ggplot(df1, aes(d = known_truth, m = predictor, color = model)) + 
+  geom_roc(n.cuts = 0)
 
 # calculate AUC
 calc_auc(p)</code></pre>
