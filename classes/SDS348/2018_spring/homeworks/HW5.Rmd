@@ -46,7 +46,7 @@ Given the plots from Problem 1 and the arrow plot you made, how do you interpret
 
 *Your answer goes here.*
 
-**Problem 3 (3 pts):** Create a bar plot that shows the percent variance explained by the first 10 principal components. State how much variance is explained by each of the principal components 1 through 4.
+**Problem 3 (3 pts):** Create a bar plot that shows the percent variance explained by each principal component. State how much variance is explained by each of the principal components 1 through 4.
 
 ```{r}
 # your R code goes here
