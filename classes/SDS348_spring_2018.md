@@ -126,6 +126,14 @@ Syllabus: [SDS348_syllabus_spring2018.pdf](/classes/SDS348/SDS348_syllabus_sprin
     - [HTML](/classes/SDS348/2018_spring/worksheets/class12.html)
     - [Solutions](/classes/SDS348/2018_spring/worksheets/class12_solutions.html)
 
+**13. Feb 27, 2018 – Training and test data sets, cross-validation**
+
+* Slides: [class13.pdf](/classes/SDS348/2018_spring/slides/class13.pdf)
+* Wikipedia page on cross-validation: [here](http://en.wikipedia.org/wiki/Cross-validation_%28statistics%29)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2018_spring/worksheets/class13.Rmd)
+    - [HTML](/classes/SDS348/2018_spring/worksheets/class13.html)
+
 
 ## Homeworks
 
