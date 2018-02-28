@@ -215,6 +215,19 @@ calc_auc(p)</code></pre>
 <pre><code>##   PANEL group       AUC
 ## 1     1     1 0.6966463
 ## 2     1     2 0.7661290</code></pre>
+<pre class="r"><code>model &lt;- unique(df_combined$data_name)
+model_info &lt;- data.frame(model,
+                         group = order(model))
+
+left_join(model_info, calc_auc(p)) %&gt;%
+  select(-group, -PANEL) %&gt;%
+  arrange(desc(AUC))</code></pre>
+<pre><code>## Warning in verify_d(data$d): D not labeled 0/1, assuming Alive = 0 and Dead
+## = 1!</code></pre>
+<pre><code>## Joining, by = &quot;group&quot;</code></pre>
+<pre><code>##      model       AUC
+## 1     test 0.7661290
+## 2 training 0.6966463</code></pre>
 </div>
 <div id="if-this-was-easy" class="section level1">
 <h1>3. If this was easy</h1>
