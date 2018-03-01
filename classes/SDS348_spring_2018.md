@@ -135,7 +135,18 @@ Syllabus: [SDS348_syllabus_spring2018.pdf](/classes/SDS348/SDS348_syllabus_sprin
     - [HTML](/classes/SDS348/2018_spring/worksheets/class13.html)
     - [Solutions](/classes/SDS348/2018_spring/worksheets/class13_solutions.html)
 
+**14. Mar 1, 2018 – Installing and running python, basic data structures**
 
+* Slides: [class14.pdf](/classes/SDS348/2018_spring/slides/class14.pdf)
+* Download the Anaconda Python distribution from here: [https://www.continuum.io/downloads](https://www.continuum.io/downloads)
+* Alternative 1 to Anaconda (free): [Google Collaboratorium](https://colab.research.google.com)
+* Alternative 2 to Anaconda ($7/month):  [Sage Math Cloud](https://cloud.sagemath.com/)
+* Official Python3 tutorial: [https://docs.python.org/3/tutorial/](https://docs.python.org/3/tutorial/)
+* Chapter 3 of the official tutorial: [An informal introduction](https://docs.python.org/3/tutorial/introduction.html)
+* In-class worksheet:
+    - [Jupyter Notebook](/classes/SDS348/2018_spring/worksheets/class14.ipynb)
+    - [HTML](/classes/SDS348/2018_spring/worksheets/class14.html)
+ 
 ## Homeworks
 
 All homeworks are due by 7:00pm on the day they are due. Homeworks need to be submitted as pdf files on Canvas.
