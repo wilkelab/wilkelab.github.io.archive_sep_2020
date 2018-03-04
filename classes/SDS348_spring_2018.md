@@ -147,7 +147,26 @@ Syllabus: [SDS348_syllabus_spring2018.pdf](/classes/SDS348/SDS348_syllabus_sprin
     - [Jupyter Notebook](/classes/SDS348/2018_spring/worksheets/class14.ipynb)
     - [HTML](/classes/SDS348/2018_spring/worksheets/class14.html)
     - [Solutions](/classes/SDS348/2018_spring/worksheets/class14_solutions.html)
- 
+
+**15. Mar 6, 2018 – Control flow in python**
+
+* Slides: [class15.pdf](/classes/SDS348/2018_spring/slides/class15.pdf)
+* Chapter 4.1–4.5 of the official tutorial: [More Control Flow Tools](https://docs.python.org/3/tutorial/controlflow.html)
+* Chapter 5.5 of the official tutorial: [Dictionaries](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)
+* In-class worksheet:
+    - [Jupyter Notebook](/classes/SDS348/2018_spring/worksheets/class15.ipynb)
+    - [HTML](/classes/SDS348/2018_spring/worksheets/class15.html)
+
+
+**16. Mar 8, 2018 – Functions in python**
+
+* Slides: [class16.pdf](/classes/SDS348/2018_spring/slides/class16.pdf)
+* Chapter 4.6, 4.7 of the official tutorial: [Defining functions](https://docs.python.org/3/tutorial/controlflow.html#defining-functions)
+* In-class worksheet:
+    - [Jupyter Notebook](/classes/SDS348/2018_spring/worksheets/class16.ipynb)
+    - [HTML](/classes/SDS348/2018_spring/worksheets/class16.html)
+
+
 ## Homeworks
 
 All homeworks are due by 7:00pm on the day they are due. Homeworks need to be submitted as pdf files on Canvas.
