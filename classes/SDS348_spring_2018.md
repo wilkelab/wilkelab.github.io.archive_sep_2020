@@ -200,6 +200,7 @@ All homeworks are due by 7:00pm on the day they are due. Homeworks need to be su
 * Homework 6 (due Mar 6, 2018)
 	- [R Markdown](/classes/SDS348/2018_spring/homeworks/HW6.Rmd)
 	- [HTML](/classes/SDS348/2018_spring/homeworks/HW6.html) 
+    - [Solutions, HTML](/classes/SDS348/2018_spring/homeworks/HW6-solution.html)	
 
 * Homework 7 (due Mar 20, 2018)
 	- [Jupyter Notebook](/classes/SDS348/2018_spring/homeworks/HW7.ipynb)
@@ -267,6 +268,7 @@ All homeworks are due by 7:00pm on the day they are due. Homeworks need to be su
 * Lab worksheet:
     - [Jupyter Notebook](/classes/SDS348/2018_spring/labs/lab8.ipynb)
     - [HTML](/classes/SDS348/2018_spring/labs/lab8.html)
+    - [Solutions, HTML](/classes/SDS348/2018_spring/labs/lab8-solution.html)
 
 ## Projects
 
