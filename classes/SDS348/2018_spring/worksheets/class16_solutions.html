@@ -12129,13 +12129,13 @@ div#notebook {
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Code for Problem 1b goes here.</span>
 
-<span class="k">def</span> <span class="nf">convert_temperature</span><span class="p">(</span><span class="n">temp</span><span class="p">,</span> <span class="n">target_unit</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">convert_temperature</span><span class="p">(</span><span class="n">temp</span><span class="p">,</span> <span class="n">target_unit</span> <span class="o">=</span> <span class="s1">&#39;f&#39;</span><span class="p">):</span>
     <span class="c1"># we first convert the unit string to lower case, so we </span>
     <span class="c1"># need to test fewer cases in the following `if` statement</span>
     <span class="n">target_unit</span> <span class="o">=</span> <span class="n">target_unit</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
     <span class="k">if</span> <span class="n">target_unit</span> <span class="o">==</span> <span class="s1">&#39;c&#39;</span> <span class="ow">or</span> <span class="n">target_unit</span> <span class="o">==</span> <span class="s1">&#39;celsius&#39;</span><span class="p">:</span>
         <span class="k">return</span> <span class="p">(</span><span class="n">temp</span> <span class="o">-</span> <span class="mf">32.</span><span class="p">)</span> <span class="o">*</span> <span class="mf">5.</span><span class="o">/</span><span class="mf">9.</span>
-    <span class="k">else</span><span class="p">:</span>                 <span class="c1"># convert from F to C by default</span>
+    <span class="k">else</span><span class="p">:</span>                 <span class="c1"># convert from C to F by default</span>
         <span class="k">return</span> <span class="p">(</span><span class="mf">9.</span><span class="o">/</span><span class="mf">5.</span><span class="p">)</span> <span class="o">*</span> <span class="n">temp</span> <span class="o">+</span> <span class="mf">32.</span>
     
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;0C in F:&quot;</span><span class="p">,</span> <span class="n">convert_temperature</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;F&quot;</span><span class="p">))</span>

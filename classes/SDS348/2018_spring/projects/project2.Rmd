@@ -1,0 +1,111 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=4, fig.width=5)
+library(ggplot2)
+theme_set(theme_bw(base_size=12))
+library(dplyr)
+library(tidyr)
+library(plotROC)
+library(ggthemes)
+```
+## Project 2 
+*Enter your name and EID here*
+
+### Instructions
+
+Please submit both this completed Rmarkdown document and its knitted HTML, converted to PDF, on Canvas **no later than 7:00 pm on March 27th, 2018**. These two documents will be graded jointly, so they must be consistent (as in, don't change the Rmarkdown file without also updating the knitted HTML!).
+
+All results presented **must** have corresponding code. Any answers/results given without the corresponding R code that generated the result will be considered absent. All code reported in your final project document should work properly. Please bear in mind that **you will lose points** for the following:
+
++ an R-code chunk with no comments
++ results without corresponding R code
++ extraneous code which does not contribute to the question
++ printing out the entire data table
+
+For this project, you will work with a dataset that contains information about the passengers on board of the ocean liner Titanic. 
+
+We have already subdivided the full data set into training and test data sets (`train_data` and `test_data`). And we also provide the full data set (`Titanic`). Please use the training and test data sets for Part 1 and either data set for Part 2. 
+
+```{r}
+Titanic <- read.csv("http://wilkelab.org/classes/SDS348/data_sets/Titanic.csv")
+
+train_fraction <- 0.8 # fraction of data for training purposes
+set.seed(123)  # set the seed to make your partition reproductible
+train_size <- floor(train_fraction * nrow(Titanic)) # number of observations in training set
+train_indices <- sample(1:nrow(Titanic), size = train_size)
+
+train_data <- Titanic[train_indices, ] # get training data
+test_data <- Titanic[-train_indices, ] # get test data
+
+head(Titanic)
+```
+
+The column contents are as follows:
+
++ **Name**: Passenger name.
++ **PClass**: Passenger class: 1st, 2nd, or 3rd.
++ **Age**: Age in years.
++ **Sex**: Sex of the passenger: male or female.
++ **Survived**: Survival status: 1=survived, 0=died.
++ **SexCode**: 1=female, 0=male.
+
+**Part 1 (40 points)**. We have divided the dataset, which consists of observations from 1313 individuals, into a training and a test data set. Fit a logistic regression model to predict survival status on the training data set. Justify the predictor variables you use to predict survival status. When building your model, choose predictors which are significant **at your chosen significance level (be sure to report your chosen value!)**. Your code should be appropriately commented with high-level statements about the code's function.
+
+Using your final model, predict the outcome on the test data set, and plot and discuss your results. You should have two final plots: a plot with two ROC curves, one for the training and one for the test data set, and a density plot that shows how the linear predictor separates the two survival outcomes in the test data. Your discussion should, at least, cover the differences and similarities in model performance on the training vs. test data (including AUC) as well as a clear interpretation of each plot. Please limit your discussion to a maximum of 15 sentences.
+
+**Part 2 (60 points)**. Think of one overarching question to ask about this data set. Then, think of two (and only two) analysis questions that can jointly provide an answer to your overarching question. The overarching question **must be conceptual**, and the two analysis questions can be either **conceptual** or **procedural**. You are welcome to use either the training, test, or full data set for this part.
+
+For each analysis question, perform an exploratory statistical analysis (PCA, logistic regression, linear model, ANOVA, etc.) with a corresponding figure. Discuss your findings, in particular how your analysis' results reveal (or don't reveal) an answer to your proposed questions. Then, write a concluding discussion that discusses how your results reveal (or don't reveal) an answer to your overarching question. Please limit each question's discussion to a maximum of 10 sentences.
+
+*To receive full credit for Part II, you will have to do the following:*
+
+  - *Come up with one clear, overarching conceptual question about the data, as explained above.*
+  - *Come up with two clear, coherent, conceptual or procedural analysis questions that will help you elaborate on the overarching question.*
+  - *The work for at least one of the two analysis questions must be multivariate (involve more than two columns of the data set at once.*
+  - *None of your questions must repeat any part of the analysis of Part 1.*
+  - *For each analysis question, provide one clear and easily understandable plot answering the question.*
+  - *For each plot, provide a justification for why you chose to make the type of plot that you made.*
+  - *For each plot/question, provide an interpretation of your results and a response to your question.*
+  - *Use different primary geoms for the different plots.*
+
+Project responses should be entered below.
+
+***  
+
+### Part 1
+
+```{r}
+# R code for part 1 goes here
+```
+*Discussion for part 1 goes here.*
+
+<br><br><br>
+
+### Part 2
+
+**Overarching conceptual question:** *Please write your overarching question here.*
+
+**Analysis question 1:** *Please write your analysis question 1 here.*
+
+```{r}
+# R code for analysis question 1 goes here
+```
+*Discussion for analysis question 1 goes here.*
+
+
+<br> 
+
+**Analysis question 2:** *Please write your analysis question 2 here.*
+
+```{r}
+# R code for analysis question 2 goes here
+```
+*Discussion for analysis question 2 goes here.*
+
+<br> 
+
+**Concluding Discussion**
+
+*Discussion for the overarching question goes here.*
+
+
