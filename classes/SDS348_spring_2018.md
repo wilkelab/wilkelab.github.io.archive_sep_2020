@@ -168,6 +168,23 @@ Syllabus: [SDS348_syllabus_spring2018.pdf](/classes/SDS348/SDS348_syllabus_sprin
     - [HTML](/classes/SDS348/2018_spring/worksheets/class16.html)
     - [Solutions](/classes/SDS348/2018_spring/worksheets/class16_solutions.html)
 
+**17. Mar 20, 2018 – More on python data structures, classes**
+
+* Slides: [class17.pdf](/classes/SDS348/2018_spring/slides/class17.pdf)
+* Chapter 9 of the official tutorial: [Classes](https://docs.python.org/3/tutorial/classes.html)
+* In-class worksheet:
+    - [Jupyter Notebook](/classes/SDS348/2018_spring/worksheets/class17.ipynb)
+    - [HTML](/classes/SDS348/2018_spring/worksheets/class17.html)
+
+
+**18. Mar 22, 2018 – Working with files**
+
+* Slides: [class18.pdf](/classes/SDS348/2018_spring/slides/class18.pdf)
+* Chapter 7.2 of the official tutorial: [Reading and writing files](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files)
+* In-class worksheet:
+    - [Jupyter Notebook](/classes/SDS348/2018_spring/worksheets/class18.ipynb)
+    - [HTML](/classes/SDS348/2018_spring/worksheets/class18.html)
+
 
 ## Homeworks
 
