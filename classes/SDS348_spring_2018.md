@@ -175,6 +175,7 @@ Syllabus: [SDS348_syllabus_spring2018.pdf](/classes/SDS348/SDS348_syllabus_sprin
 * In-class worksheet:
     - [Jupyter Notebook](/classes/SDS348/2018_spring/worksheets/class17.ipynb)
     - [HTML](/classes/SDS348/2018_spring/worksheets/class17.html)
+    - [Solutions](/classes/SDS348/2018_spring/worksheets/class17_solutions.html)
 
 
 **18. Mar 22, 2018 – Working with files**
