@@ -11773,14 +11773,14 @@ div#notebook {
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">NameSet</span><span class="p">:</span>
     
-    <span class="n">unique</span> <span class="o">=</span> <span class="p">[]</span>    <span class="c1"># creates a new empty list for each unique name</span>
+    <span class="n">unique</span> <span class="o">=</span> <span class="p">[]</span>    <span class="c1"># creates an empty list to keep unique names</span>
 
-    <span class="k">def</span> <span class="nf">add_name</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>   <span class="c1">#if a name is unique, adds it to the list</span>
+    <span class="k">def</span> <span class="nf">add_name</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>   <span class="c1"># if a name is unique, adds it to the list</span>
         
-        <span class="k">if</span> <span class="n">name</span><span class="o">.</span><span class="n">capitalize</span><span class="p">()</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">unique</span><span class="p">:</span>
-            <span class="k">pass</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">unique</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">name</span><span class="o">.</span><span class="n">capitalize</span><span class="p">())</span>
+        <span class="k">if</span> <span class="n">name</span><span class="o">.</span><span class="n">capitalize</span><span class="p">()</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">unique</span><span class="p">:</span> <span class="c1"># check if a name is in the list</span>
+            <span class="k">pass</span> <span class="c1"># do nothing</span>
+        <span class="k">else</span><span class="p">:</span> <span class="c1"># if the name is not in the list </span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">unique</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">name</span><span class="o">.</span><span class="n">capitalize</span><span class="p">())</span> <span class="c1"># add the name to the list </span>
 
 <span class="n">names</span><span class="o">=</span><span class="n">NameSet</span><span class="p">()</span>
 <span class="n">names</span><span class="o">.</span><span class="n">add_name</span><span class="p">(</span><span class="s2">&quot;Tonya&quot;</span><span class="p">)</span>
@@ -11824,24 +11824,25 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[55]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">CountNuc</span><span class="p">:</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">nuc_dict</span> <span class="o">=</span> <span class="p">{}</span>   <span class="c1"># creates a dictionary to keep counts of nucleotides</span>
     
-    <span class="n">nuc_dict</span> <span class="o">=</span> <span class="p">{}</span>   <span class="c1"># creates a dictionary to keep counts of nucleotides</span>
-    
-    <span class="k">def</span> <span class="nf">add_nuc</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nuc</span><span class="p">):</span>   <span class="c1">#increments the count for a nucleotide by 1</span>
-        <span class="n">nuc</span> <span class="o">=</span> <span class="n">nuc</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
-        <span class="k">if</span> <span class="n">nuc</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">nuc_dict</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">nuc_dict</span><span class="p">[</span><span class="n">nuc</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">nuc_dict</span><span class="p">[</span><span class="n">nuc</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">def</span> <span class="nf">add_nuc</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nuc</span><span class="p">):</span>   <span class="c1"># increments the count for a nucleotide by 1</span>
+        <span class="n">nuc</span> <span class="o">=</span> <span class="n">nuc</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>    <span class="c1"># convert a nucleotide to upper case</span>
+        <span class="k">if</span> <span class="n">nuc</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">nuc_dict</span><span class="p">:</span> <span class="c1"># check if nucleotide is in the dictionary</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">nuc_dict</span><span class="p">[</span><span class="n">nuc</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span> <span class="c1"># increment the count of a nucleotide by 1</span>
+        <span class="k">else</span><span class="p">:</span> <span class="c1"># if nucleotide is not in the dictionary</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">nuc_dict</span><span class="p">[</span><span class="n">nuc</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1"># set the count for a nucleotide to 1</span>
 
 <span class="c1"># test class CountNuc</span>
 <span class="n">test_string</span> <span class="o">=</span> <span class="s2">&quot;AGct&quot;</span>
 
-<span class="n">nuc_count1</span><span class="o">=</span><span class="n">CountNuc</span><span class="p">()</span>
+<span class="n">nuc_count1</span><span class="o">=</span><span class="n">CountNuc</span><span class="p">()</span> 
 <span class="k">for</span> <span class="n">N</span> <span class="ow">in</span> <span class="n">test_string</span><span class="p">:</span>
     <span class="n">nuc_count1</span><span class="o">.</span><span class="n">add_nuc</span><span class="p">(</span><span class="n">N</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">nuc_count1</span><span class="o">.</span><span class="n">nuc_dict</span><span class="p">)</span>
@@ -11865,7 +11866,7 @@ div#notebook {
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>{&#39;A&#39;: 1, &#39;G&#39;: 1, &#39;C&#39;: 1, &#39;T&#39;: 1}
-{&#39;A&#39;: 14, &#39;G&#39;: 9, &#39;C&#39;: 8, &#39;T&#39;: 10}
+{&#39;A&#39;: 13, &#39;T&#39;: 9, &#39;C&#39;: 7, &#39;G&#39;: 8}
 </pre>
 </div>
 </div>
