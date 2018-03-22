@@ -1,3 +1,9 @@
+- author: A. J. Hockenberry, L. A. N. Amaral, M. C. Jewett, C. O. Wilke
+  year: preprint
+  title: "Selection removes Shine-Dalgarno-like sequences from within protein coding genes."
+  ref: "bioRxiv 278689"
+  doi: 10.1101/278689
+  
 - author: D. C. Wu, J. Yao, K. S. Ho, A. M. Lambowitz, C. O. Wilke
   year: preprint
   title: "Limitation of alignment-free tools in total RNA-seq quantification."
@@ -9,6 +15,13 @@
   title: "Beyond thermodynamic constraints: Evolutionary history shapes protein sequence variation."
   ref: "Genetics, early online January 30, 2018"
   doi: 10.1534/genetics.118.300699
+
+- author: D. K. Sydykova, B. R. Jack, S. J. Spielman, C. O. Wilke
+  year: 2018
+  title: "Measuring evolutionary rates of proteins in a structural context [version 2; referees: 4 approved]."
+  ref: "F1000Research 2018, 6:1845"
+  doi: 10.12688/f1000research.12874.2
+  pmcid: PMC5676193 
 
 - author: M. U. Caglar, A. I. Teufel, C. O. Wilke
   year: 2018
@@ -28,13 +41,6 @@
   ref: "Cell Reports 21:1692–1704"
   doi: 10.1016/j.celrep.2017.10.051
   pmcid: PMC5689460 
-
-- author: D. K. Sydykova, B. R. Jack, S. J. Spielman, C. O. Wilke
-  year: 2017
-  title: "Measuring evolutionary rates of proteins in a structural context [version 1; referees: 2 approved]."
-  ref: "F1000Research 2017, 6:1845"
-  doi: 10.12688/f1000research.12874.1
-  pmcid: PMC5676193 
 
 - author: B. L. Smith, C. O. Wilke
   year: 2017
