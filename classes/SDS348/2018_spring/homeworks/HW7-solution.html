@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>lab9-solution</title>
+<title>HW7-solution</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -11751,7 +11751,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Lab-Worksheet-9-Solutions">Lab Worksheet 9 Solutions<a class="anchor-link" href="#Lab-Worksheet-9-Solutions">&#182;</a></h1>
+<h1 id="Homework-7-Solutions">Homework 7 Solutions<a class="anchor-link" href="#Homework-7-Solutions">&#182;</a></h1>
 </div>
 </div>
 </div>
@@ -11760,8 +11760,16 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Problem 1:</strong> Write a class <code>NameSet</code> that collects a unique set of names. Within the class, names should be stored in a list. <code>NameSet</code> should accept names in any format (upper case, lower case, etc.), but keep them capitalized.</p>
-<p>Hint - when solving this question, these string functions may be useful: <code>upper()</code>, <code>lower()</code>, and <code>capitalize()</code>.</p>
+<p><em>Enter your name and EID here</em></p>
+<p><strong>This homework is due on Mar. 20, 2018 at 7:00pm. Please submit as a PDF file on Canvas. Before submission, please re-run all cells by clicking "Kernel" and selecting "Restart &amp; Run All."</strong></p>
+<p><strong>Problem 1 (5 pts)</strong>: Create a list with the names of your favorite animals. Your list should contain at least 5 animals. Then, complete the following steps using python. <em>Each step should be completed in a different cell and your results should be printed with <code>print()</code>.</em></p>
+<ol>
+<li>Sort the list so that the names appear in alphabetical order.</li>
+<li>How many items are in the list? <em>Hint:</em> use the function <code>len()</code>.</li>
+<li>Remove an animal from your list and print the length of the list again.</li>
+<li>Add the animal "ostrich" to your list.</li>
+<li>Make a new list in which every animal name in your original list is repeated 3 times.</li>
+</ol>
 
 </div>
 </div>
@@ -11771,25 +11779,22 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">NameSet</span><span class="p">:</span>
-    
-    <span class="n">unique</span> <span class="o">=</span> <span class="p">[]</span>    <span class="c1"># creates an empty list to keep unique names</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">animals</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;zebra&#39;</span><span class="p">,</span> <span class="s1">&#39;polar bear&#39;</span><span class="p">,</span> <span class="s1">&#39;penguin&#39;</span><span class="p">,</span> <span class="s1">&#39;parrot&#39;</span><span class="p">,</span> <span class="s1">&#39;giraffe&#39;</span><span class="p">]</span>
+</pre></div>
 
-    <span class="k">def</span> <span class="nf">add_name</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>   <span class="c1"># if a name is unique, adds it to the list</span>
-        
-        <span class="k">if</span> <span class="n">name</span><span class="o">.</span><span class="n">capitalize</span><span class="p">()</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">unique</span><span class="p">:</span> <span class="c1"># check if a name is in the list</span>
-            <span class="k">pass</span> <span class="c1"># do nothing</span>
-        <span class="k">else</span><span class="p">:</span> <span class="c1"># if the name is not in the list </span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">unique</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">name</span><span class="o">.</span><span class="n">capitalize</span><span class="p">())</span> <span class="c1"># add the name to the list </span>
+</div>
+</div>
+</div>
 
-<span class="n">names</span><span class="o">=</span><span class="n">NameSet</span><span class="p">()</span>
-<span class="n">names</span><span class="o">.</span><span class="n">add_name</span><span class="p">(</span><span class="s2">&quot;Tonya&quot;</span><span class="p">)</span>
-<span class="n">names</span><span class="o">.</span><span class="n">add_name</span><span class="p">(</span><span class="s2">&quot;Maria&quot;</span><span class="p">)</span>
-<span class="n">names</span><span class="o">.</span><span class="n">add_name</span><span class="p">(</span><span class="s2">&quot;Joseph&quot;</span><span class="p">)</span>
-<span class="n">names</span><span class="o">.</span><span class="n">add_name</span><span class="p">(</span><span class="s2">&quot;maria&quot;</span><span class="p">)</span>
-<span class="n">names</span><span class="o">.</span><span class="n">add_name</span><span class="p">(</span><span class="s2">&quot;WILLIAM&quot;</span><span class="p">)</span>
-<span class="n">names</span><span class="o">.</span><span class="n">add_name</span><span class="p">(</span><span class="s2">&quot;william&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">names</span><span class="o">.</span><span class="n">unique</span><span class="p">)</span>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">animals</span><span class="p">)</span>
+<span class="n">animals</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">animals</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -11802,7 +11807,119 @@ div#notebook {
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[&#39;Tonya&#39;, &#39;Maria&#39;, &#39;Joseph&#39;, &#39;William&#39;]
+<pre>[&#39;zebra&#39;, &#39;polar bear&#39;, &#39;penguin&#39;, &#39;parrot&#39;, &#39;giraffe&#39;]
+[&#39;giraffe&#39;, &#39;parrot&#39;, &#39;penguin&#39;, &#39;polar bear&#39;, &#39;zebra&#39;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">animals</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>5
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">animals</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s1">&#39;parrot&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">animals</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>4
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">animals</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;ostrich&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">animals</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[&#39;giraffe&#39;, &#39;penguin&#39;, &#39;polar bear&#39;, &#39;zebra&#39;, &#39;ostrich&#39;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">new_animals</span> <span class="o">=</span> <span class="n">animals</span> <span class="o">*</span> <span class="mi">3</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">new_animals</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[&#39;giraffe&#39;, &#39;penguin&#39;, &#39;polar bear&#39;, &#39;zebra&#39;, &#39;ostrich&#39;, &#39;giraffe&#39;, &#39;penguin&#39;, &#39;polar bear&#39;, &#39;zebra&#39;, &#39;ostrich&#39;, &#39;giraffe&#39;, &#39;penguin&#39;, &#39;polar bear&#39;, &#39;zebra&#39;, &#39;ostrich&#39;]
 </pre>
 </div>
 </div>
@@ -11816,43 +11933,25 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><br><br></p>
-<p><strong>Problem 2:</strong> Write a class <code>CountNuc</code> that stores the counts of A's, C's, G's, and T's in a DNA sequence. Your class should be able to accept both upper and lower case DNA sequences. Nucleotide counts in <code>CountNuc</code> should be stored in a dictionary. Once your class has been written, confirm your class operates correctly on a test string "AGct". After that, determine the counts of A's, C's, G's, and T's in <code>dna_string</code> string given below, and print the counts.</p>
+<p><strong>Problem 2 (5 pts)</strong>: Now imagine that you have gone to the zoo to see your favorite animals listed in Problem 1. Create a dictionary that contains the names of the animals as keys and counts for each animal as the values. (For example, if there are 3 giraffes at the zoo, the key would be "giraffe" and the value would be 3.) The counts should just be made-up counts. Then, complete the following steps using python. <em>Each step should be completed in a different cell and your results should be printed with <code>print()</code>.</em></p>
+<ol>
+<li>Write code that counts how many animals total you observed. (In other words, add up all of the animal counts.)</li>
+<li>Add an animal "monkey" to your dictionary and give it a count of 5.</li>
+<li>Print out a list of the <em>keys</em> and a list of the <em>values</em> in your dictionary (i.e., the animal names and the counts).</li>
+<li>Change the count for one of the animals in your dictionary (i.e., monkey's count 5 to 8).</li>
+<li>Remove a key-value pair from your dictionary.</li>
+</ol>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">CountNuc</span><span class="p">:</span>
-
-    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">nuc_dict</span> <span class="o">=</span> <span class="p">{}</span>   <span class="c1"># creates a dictionary to keep counts of nucleotides</span>
-    
-    <span class="k">def</span> <span class="nf">add_nuc</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nuc</span><span class="p">):</span>   <span class="c1"># increments the count for a nucleotide by 1</span>
-        <span class="n">nuc</span> <span class="o">=</span> <span class="n">nuc</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>    <span class="c1"># convert a nucleotide to upper case</span>
-        <span class="k">if</span> <span class="n">nuc</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">nuc_dict</span><span class="p">:</span> <span class="c1"># check if nucleotide is in the dictionary</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">nuc_dict</span><span class="p">[</span><span class="n">nuc</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span> <span class="c1"># increment the count of a nucleotide by 1</span>
-        <span class="k">else</span><span class="p">:</span> <span class="c1"># if nucleotide is not in the dictionary</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">nuc_dict</span><span class="p">[</span><span class="n">nuc</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1"># set the count for a nucleotide to 1</span>
-
-<span class="c1"># test class CountNuc</span>
-<span class="n">test_string</span> <span class="o">=</span> <span class="s2">&quot;AGct&quot;</span>
-
-<span class="n">nuc_count1</span><span class="o">=</span><span class="n">CountNuc</span><span class="p">()</span> 
-<span class="k">for</span> <span class="n">N</span> <span class="ow">in</span> <span class="n">test_string</span><span class="p">:</span>
-    <span class="n">nuc_count1</span><span class="o">.</span><span class="n">add_nuc</span><span class="p">(</span><span class="n">N</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">nuc_count1</span><span class="o">.</span><span class="n">nuc_dict</span><span class="p">)</span>
-
-<span class="n">dna_string</span> <span class="o">=</span> <span class="s2">&quot;ATCGAGCTataCCGATACAGGcTGGTATAAAAgatTC&quot;</span>
-
-<span class="n">nuc_count2</span><span class="o">=</span><span class="n">CountNuc</span><span class="p">()</span>
-<span class="k">for</span> <span class="n">N</span> <span class="ow">in</span> <span class="n">dna_string</span><span class="p">:</span>
-    <span class="n">nuc_count2</span><span class="o">.</span><span class="n">add_nuc</span><span class="p">(</span><span class="n">N</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">nuc_count2</span><span class="o">.</span><span class="n">nuc_dict</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">animal_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;zebra&#39;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="s1">&#39;polar bear&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;penguin&#39;</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span> <span class="s1">&#39;parrot&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;giraffe&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">}</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">animal_dict</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -11865,8 +11964,7 @@ div#notebook {
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>{&#39;A&#39;: 1, &#39;G&#39;: 1, &#39;C&#39;: 1, &#39;T&#39;: 1}
-{&#39;A&#39;: 13, &#39;T&#39;: 9, &#39;C&#39;: 7, &#39;G&#39;: 8}
+<pre>{&#39;zebra&#39;: 5, &#39;polar bear&#39;: 2, &#39;penguin&#39;: 7, &#39;parrot&#39;: 1, &#39;giraffe&#39;: 3}
 </pre>
 </div>
 </div>
@@ -11877,13 +11975,143 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">animal_dict</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+    <span class="n">total</span> <span class="o">+=</span> <span class="n">animal_dict</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">total</span><span class="p">)</span>
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>18
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">animal_dict</span><span class="p">[</span><span class="s1">&#39;monkey&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">animal_dict</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{&#39;zebra&#39;: 5, &#39;polar bear&#39;: 2, &#39;penguin&#39;: 7, &#39;parrot&#39;: 1, &#39;giraffe&#39;: 3, &#39;monkey&#39;: 5}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">animal_dict</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">animal_dict</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>dict_keys([&#39;zebra&#39;, &#39;polar bear&#39;, &#39;penguin&#39;, &#39;parrot&#39;, &#39;giraffe&#39;, &#39;monkey&#39;])
+dict_values([5, 2, 7, 1, 3, 5])
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">animal_dict</span><span class="p">[</span><span class="s1">&#39;monkey&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">8</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">animal_dict</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{&#39;zebra&#39;: 5, &#39;polar bear&#39;: 2, &#39;penguin&#39;: 7, &#39;parrot&#39;: 1, &#39;giraffe&#39;: 3, &#39;monkey&#39;: 8}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">del</span> <span class="n">animal_dict</span><span class="p">[</span><span class="s1">&#39;giraffe&#39;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">animal_dict</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{&#39;zebra&#39;: 5, &#39;polar bear&#39;: 2, &#39;penguin&#39;: 7, &#39;parrot&#39;: 1, &#39;monkey&#39;: 8}
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
