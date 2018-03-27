@@ -227,6 +227,10 @@ All homeworks are due by 7:00pm on the day they are due. Homeworks need to be su
 	- [HTML](/classes/SDS348/2018_spring/homeworks/HW7.html) 
     - [Solutions, HTML](/classes/SDS348/2018_spring/homeworks/HW7-solution.html)	
 
+* Homework 8 (due Apr 3, 2018)
+	- [Jupyter Notebook](/classes/SDS348/2018_spring/homeworks/HW8.ipynb)
+	- [HTML](/classes/SDS348/2018_spring/homeworks/HW8.html) 
+
 ## Labs
 
 **1. Jan. 17, 2018**
