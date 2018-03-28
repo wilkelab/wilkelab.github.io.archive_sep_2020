@@ -11794,7 +11794,7 @@ Identical(y/n): y y n n n y</code></pre>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Problem 1:</strong> Write code that outputs the example above to a CSV file. The CSV file should be written in <strong>tidy</strong> format, and it should contain one column for <code>position</code>, one column for <code>Sequence 1</code>, one column for <code>Sequence 2</code>, and one column for <code>Identical</code>. Use <code>seq1</code> and <code>seq2</code> to write a CSV file. Your code should generate number for a position and check each position for a match. Once you produce a file, verify that the file was written correctly by opening it in R Studio.</p>
+<p><strong>Problem 1:</strong> Write code that outputs the example above to a CSV file. The CSV file should be written in <strong>tidy</strong> format, and it should contain one column for <code>position</code>, one column for <code>Sequence 1</code>, one column for <code>Sequence 2</code>, and one column for <code>Identical</code>. Use <code>sequence1</code> and <code>sequence2</code> to write a CSV file. Your code should generate a number for a position and check each position for a match. Once you produced a file, verify that the file was written correctly by opening it in R Studio.</p>
 
 </div>
 </div>
@@ -11804,8 +11804,8 @@ Identical(y/n): y y n n n y</code></pre>
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">seq1</span> <span class="o">=</span> <span class="s2">&quot;ATCGTA&quot;</span>
-<span class="n">seq2</span> <span class="o">=</span> <span class="s2">&quot;ATGAGA&quot;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sequence1</span> <span class="o">=</span> <span class="s2">&quot;ATCGTA&quot;</span>
+<span class="n">sequence2</span> <span class="o">=</span> <span class="s2">&quot;ATGAGA&quot;</span>
 
 <span class="c1"># open a file for writing</span>
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;sequence_identity.csv&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
@@ -11814,17 +11814,17 @@ Identical(y/n): y y n n n y</code></pre>
     <span class="n">file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;position,sequence_1,sequence_2,identical</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
     
     <span class="c1"># loop over the positions</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">seq1</span><span class="p">)):</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">sequence1</span><span class="p">)):</span>
         
         <span class="c1"># check a position for a match</span>
-        <span class="k">if</span> <span class="n">seq1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="n">seq2</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
+        <span class="k">if</span> <span class="n">sequence1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="n">sequence2</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
             <span class="n">identical</span> <span class="o">=</span> <span class="s2">&quot;y&quot;</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="n">identical</span> <span class="o">=</span> <span class="s2">&quot;n&quot;</span>
             
         <span class="c1"># new line with values separated by &quot;,&quot;</span>
-        <span class="n">line</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;,&quot;</span> <span class="o">+</span> <span class="n">seq1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;,&quot;</span> <span class="o">+</span> <span class="n">seq2</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;,&quot;</span> <span class="o">+</span> <span class="n">identical</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span>
-        
+        <span class="n">line</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;,&quot;</span> <span class="o">+</span> <span class="n">sequence1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;,&quot;</span> <span class="o">+</span> <span class="n">sequence2</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;,&quot;</span> <span class="o">+</span> <span class="n">identical</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span>
+                
         <span class="c1"># write the line to the file</span>
         <span class="n">file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
         
@@ -11853,8 +11853,6 @@ Identical(y/n): y y n n n y</code></pre>
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">mouse_histone</span> <span class="o">=</span> <span class="s2">&quot;MARTKQTARKSTGGKAPRKQLATKAARKSAPATGGVKKPHRYRPLTVALREIRRYQKSTELLIRKLPFQRLVREIAQDFKTDLRFQSSAVMALQEACEAYLVGLFEDTNLCAIHAKRVTIMPKDIQLARRIRGERA&quot;</span>
 <span class="n">human_histone</span> <span class="o">=</span> <span class="s2">&quot;MARTKQTARKSTGGKAPRKQLATKAQRKSARATGGVKKPHRYRPGTVALREIRRYQKSTELLIRKLPFQRLVTEIAQDFKTDLRFQSSAVNALQEACEAYLVGLFEDTNLCAIHAKRVTIMPKDIQLARRIRGERA&quot;</span>
-
-<span class="c1"># Your code goes here.</span>
 
 <span class="k">def</span> <span class="nf">calc_seq_identity</span><span class="p">(</span><span class="n">seq1</span><span class="p">,</span> <span class="n">seq2</span><span class="p">):</span>
     
@@ -11945,6 +11943,7 @@ Identical(y/n): y y n n n y</code></pre>
         <span class="k">for</span> <span class="n">aa</span> <span class="ow">in</span> <span class="n">aa_list</span><span class="p">:</span>
             <span class="c1"># new line with values separated by &quot;,&quot;</span>
             <span class="n">line</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">aa</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;,&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">aa_dict</span><span class="p">[</span><span class="n">aa</span><span class="p">])</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span>
+            
             <span class="c1"># write to the file</span>
             <span class="n">file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
     
