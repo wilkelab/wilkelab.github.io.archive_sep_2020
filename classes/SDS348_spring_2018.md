@@ -196,6 +196,7 @@ Syllabus: [SDS348_syllabus_spring2018.pdf](/classes/SDS348/SDS348_syllabus_sprin
 * In-class worksheet:
     - [Jupyter Notebook](/classes/SDS348/2018_spring/worksheets/class19.ipynb)
     - [HTML](/classes/SDS348/2018_spring/worksheets/class19.html)
+    - [Solutions](/classes/SDS348/2018_spring/worksheets/class19_solutions.html)
 
 **20. Mar 29, 2018 – Working with gene features and genomes**
 
@@ -205,6 +206,7 @@ Syllabus: [SDS348_syllabus_spring2018.pdf](/classes/SDS348/SDS348_syllabus_sprin
 * In-class worksheet:
     - [Jupyter Notebook](/classes/SDS348/2018_spring/worksheets/class20.ipynb)
     - [HTML](/classes/SDS348/2018_spring/worksheets/class20.html)
+    - [Solutions](/classes/SDS348/2018_spring/worksheets/class20_solutions.html)
 
 ## Homeworks
 
