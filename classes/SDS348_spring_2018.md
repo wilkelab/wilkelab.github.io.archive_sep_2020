@@ -206,6 +206,26 @@ Syllabus: [SDS348_syllabus_spring2018.pdf](/classes/SDS348/SDS348_syllabus_sprin
 * In-class worksheet:
     - [Jupyter Notebook](/classes/SDS348/2018_spring/worksheets/class20.ipynb)
     - [HTML](/classes/SDS348/2018_spring/worksheets/class20.html)
+    - [Solutions](/classes/SDS348/2018_spring/worksheets/class20_solutions.html)
+
+**21. Apr 3, 2018 – Running queries on Entrez**
+
+* Slides: [class21.pdf](/classes/SDS348/2018_spring/slides/class21.pdf)
+* Biopython SeqIO documentation: [SeqIO](http://biopython.org/wiki/SeqIO)
+* In-class worksheet:
+    - [Jupyter Notebook](/classes/SDS348/2018_spring/worksheets/class21.ipynb)
+    - [HTML](/classes/SDS348/2018_spring/worksheets/class21.html)
+
+**22. Apr 5, 2018 – Regular expressions**
+
+* Slides: [class22.pdf](/classes/SDS348/2018_spring/slides/class22.pdf)
+* Python regular expression editor: [http://pythex.org/](http://pythex.org/)
+* Official Python regular expression documentation: [Regular Expression HOWTO](https://docs.python.org/3/howto/regex.html)
+* Alternative regular expression tutorial: [Python Regular Expressions](https://developers.google.com/edu/python/regular-expressions)
+* In-class worksheet:
+    - [Jupyter Notebook](/classes/SDS348/2018_spring/worksheets/class22.ipynb)
+    - [HTML](/classes/SDS348/2018_spring/worksheets/class22.html)
+
 
 ## Homeworks
 
