@@ -276,7 +276,7 @@ All homeworks are due by 7:00pm on the day they are due. Homeworks need to be su
 	
 ## Labs
 
-**1. Jan. 17, 2018**
+**1. Jan 17, 2018**
 
 * Slides: [lab1.pdf](/classes/SDS348/2018_spring/labs/lab1-slides.pdf)
 * Guide to converting from HTML to PDF: [html_to_pdf_guide.pdf](/classes/SDS348/2018_spring/labs/html_to_pdf_guide.pdf)
@@ -285,7 +285,7 @@ All homeworks are due by 7:00pm on the day they are due. Homeworks need to be su
     - [HTML](/classes/SDS348/2018_spring/labs/lab1.html)
     - [Solutions, HTML](/classes/SDS348/2018_spring/labs/lab1-solution.html)
  
-**2. Jan. 24, 2018**
+**2. Jan 24, 2018**
 
 * Slides: [lab2.pdf](/classes/SDS348/2018_spring/labs/lab2-slides.pdf)
 * Lab worksheet:
@@ -293,7 +293,7 @@ All homeworks are due by 7:00pm on the day they are due. Homeworks need to be su
     - [HTML](/classes/SDS348/2018_spring/labs/lab2.html)
     - [Solutions, HTML](/classes/SDS348/2018_spring/labs/lab2-solution.html)
 
-**3. Jan. 31, 2018**
+**3. Jan 31, 2018**
 
 * Slides: [lab3.pdf](/classes/SDS348/2018_spring/labs/lab3-slides.pdf)
 * Lab worksheet:
@@ -301,7 +301,7 @@ All homeworks are due by 7:00pm on the day they are due. Homeworks need to be su
     - [HTML](/classes/SDS348/2018_spring/labs/lab3.html)
     - [Solutions, HTML](/classes/SDS348/2018_spring/labs/lab3-solution.html)
 
-**4. Feb. 7, 2018**
+**4. Feb 7, 2018**
 
 * Slides: [lab4.pdf](/classes/SDS348/2018_spring/labs/lab4-slides.pdf)
 * Lab worksheet:
@@ -309,47 +309,53 @@ All homeworks are due by 7:00pm on the day they are due. Homeworks need to be su
     - [HTML](/classes/SDS348/2018_spring/labs/lab4.html)
     - [Solutions, HTML](/classes/SDS348/2018_spring/labs/lab4-solution.html)
 
-**5. Feb. 14, 2018**
+**5. Feb 14, 2018**
 
 * Lab worksheet:
     - [R Markdown](/classes/SDS348/2018_spring/labs/lab5.Rmd)
     - [HTML](/classes/SDS348/2018_spring/labs/lab5.html)
     - [Solutions, HTML](/classes/SDS348/2018_spring/labs/lab5-solution.html)
 
-**6. Feb. 21, 2018**
+**6. Feb 21, 2018**
 
 * Lab worksheet:
     - [R Markdown](/classes/SDS348/2018_spring/labs/lab6.Rmd)
     - [HTML](/classes/SDS348/2018_spring/labs/lab6.html)
     - [Solutions, HTML](/classes/SDS348/2018_spring/labs/lab6-solution.html)
 
-**7. Feb. 28, 2018**
+**7. Feb 28, 2018**
 
 * Lab worksheet:
     - [R Markdown](/classes/SDS348/2018_spring/labs/lab7.Rmd)
     - [HTML](/classes/SDS348/2018_spring/labs/lab7.html)
     - [Solutions, HTML](/classes/SDS348/2018_spring/labs/lab7-solution.html)
 
-**8. Mar. 7, 2018**
+**8. Mar 7, 2018**
 
 * Lab worksheet:
     - [Jupyter Notebook](/classes/SDS348/2018_spring/labs/lab8.ipynb)
     - [HTML](/classes/SDS348/2018_spring/labs/lab8.html)
     - [Solutions, HTML](/classes/SDS348/2018_spring/labs/lab8-solution.html)
 
-**9. Mar. 21, 2018**
+**9. Mar 21, 2018**
 
 * Lab worksheet:
     - [Jupyter Notebook](/classes/SDS348/2018_spring/labs/lab9.ipynb)
     - [HTML](/classes/SDS348/2018_spring/labs/lab9.html)
     - [Solutions, HTML](/classes/SDS348/2018_spring/labs/lab9-solution.html)
 
-**10. Mar. 28, 2018**
+**10. Mar 28, 2018**
 
 * Lab worksheet:
     - [Jupyter Notebook](/classes/SDS348/2018_spring/labs/lab10.ipynb)
     - [HTML](/classes/SDS348/2018_spring/labs/lab10.html)
     - [Solutions, HTML](/classes/SDS348/2018_spring/labs/lab10-solution.html)
+
+**11. Apr 4, 2018**
+
+* Lab worksheet:
+    - [Jupyter Notebook](/classes/SDS348/2018_spring/labs/lab11.ipynb)
+    - [HTML](/classes/SDS348/2018_spring/labs/lab11.html)
 
 ## Projects
 
