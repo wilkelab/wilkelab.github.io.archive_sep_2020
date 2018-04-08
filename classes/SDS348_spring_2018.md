@@ -229,6 +229,23 @@ Syllabus: [SDS348_syllabus_spring2018.pdf](/classes/SDS348/SDS348_syllabus_sprin
     - [Solutions](/classes/SDS348/2018_spring/worksheets/class22_solutions.html)
 
 
+**23. Apr. 10, 2018 – Using regular expressions to analyze data**
+
+* Slides: [class23.pdf](/classes/SDS348/2018_spring/slides/class23.pdf)
+* Python regular expression editor: [http://pythex.org/](http://pythex.org/)
+* Regex crosswords: [regexcrossword.com](https://regexcrossword.com/)
+* In-class worksheet:
+    - [Jupyter Notebook](/classes/SDS348/2018_spring/worksheets/class23.ipynb)
+    - [HTML](/classes/SDS348/2018_spring/worksheets/class23.html)
+
+**24. Apr. 12, 2018 – Using regular expressions to analyze data**
+
+* Slides: [class24.pdf](/classes/SDS348/2018_spring/slides/class24.pdf)
+* Python regular expression editor: [http://pythex.org/](http://pythex.org/)
+* In-class worksheet:
+    - [Jupyter Notebook](/classes/SDS348/2018_spring/worksheets/class24.ipynb)
+    - [HTML](/classes/SDS348/2018_spring/worksheets/class24.html)
+
 ## Homeworks
 
 All homeworks are due by 7:00pm on the day they are due. Homeworks need to be submitted as pdf files on Canvas.
