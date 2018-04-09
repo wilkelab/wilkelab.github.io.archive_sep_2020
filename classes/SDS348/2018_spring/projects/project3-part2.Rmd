@@ -1,0 +1,36 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=4, fig.width=5)
+library(ggplot2)
+theme_set(theme_bw(base_size=12))
+```
+
+## Project 3, Part II 
+*Enter your name and EID here*
+
+### Statistical analysis
+
+```{r}
+# R code for statistical analysis goes here
+```
+*Discussion for statistical analysis goes here.*
+
+### Plot 1
+
+```{r}
+# R code for plot 1 goes here
+```
+*Discussion for plot 1 goes here.*
+
+### Plot 2
+
+```{r}
+# R code for plot 2 goes here
+```
+*Discussion for plot 2 goes here.*
+
+### Concluding Discussion
+
+*Discussion for the overarching question goes here.*
+
+

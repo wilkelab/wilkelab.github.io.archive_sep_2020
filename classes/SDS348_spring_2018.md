@@ -391,3 +391,13 @@ All projects are due by 7:00pm on the day they are due. Projects need to be subm
     - [HTML](/classes/SDS348/2018_spring/projects/project2.html)
     - [R Markdown](/classes/SDS348/2018_spring/projects/project2.Rmd) (due Mar 27, 2018)
     - [Solutions, HTML](/classes/SDS348/2018_spring/projects/project2-solution.html)
+    
+- Project 3:
+    - [Instructions](/classes/SDS348/2018_spring/projects/project3_instructions.pdf) (due May 3, 2018)
+    - [Part I, Jupyter Notebook](/classes/SDS348/2018_spring/projects/project3-part1.ipynb)
+    - [Part I, HTML](/classes/SDS348/2018_spring/projects/project3-part1.html)
+    - [Part II, R Markdown](/classes/SDS348/2018_spring/projects/project3-part2.Rmd)
+    - [Part II, HTML](/classes/SDS348/2018_spring/projects/project3-part2.html)
+
+
+
