@@ -294,6 +294,7 @@ All homeworks are due by 7:00pm on the day they are due. Homeworks need to be su
 * Homework 9 (due Apr 10, 2018)
 	- [Jupyter Notebook](/classes/SDS348/2018_spring/homeworks/HW9.ipynb)
 	- [HTML](/classes/SDS348/2018_spring/homeworks/HW9.html) 
+    - [Solutions, HTML](/classes/SDS348/2018_spring/homeworks/HW9-solution.html)	
 
 * Homework 10 (due Apr 17, 2018)
 	- [PDF](/classes/SDS348/2018_spring/homeworks/HW10.pdf) 
@@ -388,6 +389,7 @@ All homeworks are due by 7:00pm on the day they are due. Homeworks need to be su
 * Lab worksheet:
     - [Jupyter Notebook](/classes/SDS348/2018_spring/labs/lab12.ipynb)
     - [HTML](/classes/SDS348/2018_spring/labs/lab12.html)
+    - [Solutions, HTML](/classes/SDS348/2018_spring/labs/lab12-solution.html)
 
 ## Projects
 
