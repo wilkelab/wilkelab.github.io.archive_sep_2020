@@ -9,11 +9,22 @@
   source_URL: "https://github.com/clauswilke/codon_tools"
   PyPI_URL: "https://pypi.python.org/pypi/codon_tools"
 
+- name: colorblindr
+  tag_line: An R package to simulate colorblindness on R figures
+  author: Claire D. McWhite and Claus O. Wilke
+  source_URL: https://github.com/clauswilke/colorblindr
+  
 - name: cowplot
   tag_line: Streamlined plot theme and plot annotations for ggplot2
   author: Claus O. Wilke
   source_URL: "https://github.com/wilkelab/cowplot"
   CRAN_URL: "https://cran.r-project.org/package=cowplot"
+
+- name: ggridges
+  tag_line: Ridgeline plots in ggplot2
+  author: Claus O. Wilke
+  source_URL: "https://github.com/clauswilke/ggridges"
+  CRAN_URL: "https://CRAN.R-project.org/package=ggridges"
 
 - name: parsemsf
   tag_line: Parse ThermoFisher MSF files and estimate protein abundances
