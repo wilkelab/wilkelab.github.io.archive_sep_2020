@@ -44,5 +44,11 @@
   author: Stephanie J. Spielman
   source_URL: "https://github.com/sjspielman/pyvolve"
   PyPI_URL: "https://pypi.python.org/pypi/Pyvolve/"
-  paper_URL: "http://dx.doi.org/10.1371/journal.pone.0139047"
+  paper_URL: "https://dx.doi.org/10.1371/journal.pone.0139047"
   
+- name: sicegar
+  tag_line: Analysis of single-cell viral growth curves
+  author: M. Umut Caglar and Claus O. Wilke
+  source_URL: "https://github.com/wilkelab/sicegar"
+  CRAN_URL: "https://CRAN.R-project.org/package=sicegar"
+  paper_URL: "https://dx.doi.org/10.7717/peerj.4251"
