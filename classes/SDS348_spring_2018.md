@@ -259,6 +259,7 @@ Syllabus: [SDS348_syllabus_spring2018.pdf](/classes/SDS348/SDS348_syllabus_sprin
 * [Example alignments](https://github.com/wilkelab/therm_constraints_rate_variation/tree/master/empirical_rate_calculations/protein_alignments/mafft_alignments)
 * In-class worksheet:
     - [PDF](/classes/SDS348/2018_spring/worksheets/class25.pdf)
+    - [Solutions](/classes/SDS348/2018_spring/worksheets/class25_solutions.pdf)
 
 **26. Apr. 19, 2018 – Global and local alignments, BLAST**
 
