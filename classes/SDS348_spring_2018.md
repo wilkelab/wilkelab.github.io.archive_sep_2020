@@ -427,7 +427,7 @@ All homeworks are due by 7:00pm on the day they are due. Homeworks need to be su
 * Lab worksheet:
     - [Jupyter Notebook](/classes/SDS348/2018_spring/labs/lab13.ipynb)
     - [HTML](/classes/SDS348/2018_spring/labs/lab13.html)
-
+    - [Solutions, HTML](/classes/SDS348/2018_spring/labs/lab13-solution.html)
 
 ## Projects
 
