@@ -271,7 +271,6 @@ Syllabus: [SDS348_syllabus_spring2018.pdf](/classes/SDS348/SDS348_syllabus_sprin
 * In-class worksheet:
     - [Smith-Waterman exercise](/classes/SDS348/2018_spring/worksheets/class26_SW-exercise.pdf)
     - [Smith-Waterman solutions](/classes/SDS348/2018_spring/worksheets/class26_SW-exercise_solutions.pdf)
-
     - [Jupyter Notebook](/classes/SDS348/2018_spring/worksheets/class26.ipynb)
     - [HTML](/classes/SDS348/2018_spring/worksheets/class26.html)
     - [Solutions](/classes/SDS348/2018_spring/worksheets/class26_solutions.html)
