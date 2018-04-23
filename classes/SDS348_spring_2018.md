@@ -286,6 +286,13 @@ Syllabus: [SDS348_syllabus_spring2018.pdf](/classes/SDS348/SDS348_syllabus_sprin
     - [EMBL-EBI MSA interface](http://www.ebi.ac.uk/Tools/msa/)
     - [EMBL-EBI sequence conversion interface](https://www.ebi.ac.uk/Tools/sfc/emboss_seqret/)
 
+**28. Apr. 26, 2018 – Working with protein structures**
+
+* Slides: [class28.pdf](/classes/SDS348/2018_spring/slides/class28.pdf)
+* Obtain PyMOL: [Educational-use PyMOL](http://pymol.org/edu/?q=educational/)
+* PyMOL tutorial: [Practical PyMOL for Beginners](http://www.pymolwiki.org/index.php/Practical_Pymol_for_Beginners)
+* Protein data bank: [http://www.rcsb.org/](http://www.rcsb.org/)
+
 
 ## Homeworks
 
