@@ -270,8 +270,28 @@ Syllabus: [SDS348_syllabus_spring2018.pdf](/classes/SDS348/SDS348_syllabus_sprin
 * Biopython BLAST documentation: [Chapter 7: BLAST](http://biopython.org/DIST/docs/tutorial/Tutorial.html#htoc87)
 * In-class worksheet:
     - [Smith-Waterman exercise](/classes/SDS348/2018_spring/worksheets/class26_SW-exercise.pdf)
+    - [Smith-Waterman solutions](/classes/SDS348/2018_spring/worksheets/class26_SW-exercise_solutions.pdf)
     - [Jupyter Notebook](/classes/SDS348/2018_spring/worksheets/class26.ipynb)
     - [HTML](/classes/SDS348/2018_spring/worksheets/class26.html)
+    - [Solutions](/classes/SDS348/2018_spring/worksheets/class26_solutions.html)
+
+**27. Apr. 24, 2018 – Multiple sequence alignments and phylogenetic trees**
+
+* Slides: [class27.pdf](/classes/SDS348/2018_spring/slides/class27.pdf)
+* Wikipedia page on multiple sequence alignments:
+[Multiple sequence alignment](https://en.wikipedia.org/wiki/Multiple_sequence_alignment)
+* Wikipedia page on phylogenetic trees:
+[Phylogenetic trees](https://en.wikipedia.org/wiki/Phylogenetic_tree)
+* In-class exercises:
+    - [EMBL-EBI MSA interface](http://www.ebi.ac.uk/Tools/msa/)
+    - [EMBL-EBI sequence conversion interface](https://www.ebi.ac.uk/Tools/sfc/emboss_seqret/)
+
+**28. Apr. 26, 2018 – Working with protein structures**
+
+* Slides: [class28.pdf](/classes/SDS348/2018_spring/slides/class28.pdf)
+* Obtain PyMOL: [Educational-use PyMOL](http://pymol.org/edu/?q=educational/)
+* PyMOL tutorial: [Practical PyMOL for Beginners](http://www.pymolwiki.org/index.php/Practical_Pymol_for_Beginners)
+* Protein data bank: [http://www.rcsb.org/](http://www.rcsb.org/)
 
 
 ## Homeworks
