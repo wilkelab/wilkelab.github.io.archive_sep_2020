@@ -300,6 +300,10 @@ Syllabus: [SDS348_syllabus_spring2018.pdf](/classes/SDS348/SDS348_syllabus_sprin
 * PyMOL wiki: [pymolwiki.org](http://pymolwiki.org/)
 * PyMOL selector syntax: [Property Selectors](http://pymolwiki.org/index.php/Property_Selectors
 )
+* Solutions to in-class exercises:
+    - [class29_pymol_commands.txt](/classes/SDS348/2018_spring/worksheets/class29_pymol_commands.txt)
+    - [class29_3KAS.py](/classes/SDS348/2018_spring/worksheets/class29_3KAS.py)
+    - [class29_1DLW.py](/classes/SDS348/2018_spring/worksheets/class29_1DLW.py)
 
 **30. May 3, 2018 – Molecular evolution of proteins**
 
