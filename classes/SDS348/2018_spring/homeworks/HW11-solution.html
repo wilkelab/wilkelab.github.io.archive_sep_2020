@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>lab12-solution</title>
+<title>HW11-solution</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -11751,7 +11751,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Lab-Worksheet-12-Solutions">Lab Worksheet 12 Solutions<a class="anchor-link" href="#Lab-Worksheet-12-Solutions">&#182;</a></h1>
+<h1 id="Homework-11-Solutions">Homework 11 Solutions<a class="anchor-link" href="#Homework-11-Solutions">&#182;</a></h1>
 </div>
 </div>
 </div>
@@ -11760,42 +11760,141 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Problem 1:</strong> Use Biopython to download 10 influenza hemagglutinin sequences like we did in the Class 21 worksheet. Print the list of genbank identifiers, then fetch and save all of the records to a file called "influenza_HA.gb".</p>
+<p><em>Enter your name and EID here</em></p>
+<p><strong>Problem 2 of this homework is due on April 24, 2018 at 7:00pm. Please submit Part 2 as a PDF file on Canvas. Before submission, please re-run all cells by clicking "Kernel" and selecting "Restart &amp; Run All."</strong></p>
+<p><strong>Problem 1 is due, on paper, at the beginning of lab on April 25, 2018. Problem 1 should not contain any code!</strong></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Problem 1 (5 points):</strong> Using <strong>Smith-Waterman</strong> (not Needleman-Wunsch!), align the following two sequences by hand:</p>
+
+<pre><code>ACAGC
+ACAAGT</code></pre>
+<p>Draw out a score matrix, <strong>with the back-tracing arrows</strong>, using the following scoring function:</p>
+
+<pre><code>Match: +2
+Mismatch: -2
+Gap: -1</code></pre>
+<p>After you have filled out your score matrix, be sure to <strong>write out the final alignment</strong>.</p>
+<p><img src="http://wilkelab.org/classes/SDS348/2018_spring/homeworks/HW11-SW-matrix1.png" width="500" /></p>
+<p>Alignment:</p>
+
+<pre><code>ACA-G
+ACAAG</code></pre>
+<p><img src="http://wilkelab.org/classes/SDS348/2018_spring/homeworks/HW11-SW-matrix2.png" width="500" /></p>
+<p>Alignment:</p>
+
+<pre><code>AC-AG
+ACAAG</code></pre>
+<p>Both alignments have a score of 7.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Problem 2 (5 points):</strong> Modify the code from the Lab 13 Worksheet, Part 1 so that it runs the <strong>Smith-Waterman</strong> algorithm. Several helper functions are provided for you below. Your function final should produce the matrix of scores only. You <strong>do not</strong> need to do back-tracing. Use the same scoring function as in Problem 1.</p>
+<p>Run the sequences from Problem 1 through your function and print the output using <code>print_matrix()</code>.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># You will need Entrez and Medline to solve this problem</span>
-<span class="kn">from</span> <span class="nn">Bio</span> <span class="k">import</span> <span class="n">Entrez</span><span class="p">,</span> <span class="n">SeqIO</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Use these values to calculate scores</span>
+<span class="n">match_award</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">mismatch_penalty</span> <span class="o">=</span> <span class="o">-</span><span class="mi">2</span>
+<span class="n">gap_penalty</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
 
-<span class="n">Entrez</span><span class="o">.</span><span class="n">email</span> <span class="o">=</span> <span class="s2">&quot;dariya.k.sydykova@utexas.edu&quot;</span>
+<span class="c1"># Make a score matrix with these two sequences</span>
+<span class="n">seq1</span> <span class="o">=</span> <span class="s2">&quot;ACAGC&quot;</span>
+<span class="n">seq2</span> <span class="o">=</span> <span class="s2">&quot;ACAAGT&quot;</span>
 
-<span class="c1"># let&#39;s do a search for influenza H1N1 viruses from Texas</span>
-<span class="n">handle</span> <span class="o">=</span> <span class="n">Entrez</span><span class="o">.</span><span class="n">esearch</span><span class="p">(</span><span class="n">db</span><span class="o">=</span><span class="s2">&quot;nucleotide&quot;</span><span class="p">,</span>  <span class="c1"># database to search</span>
-                        <span class="n">term</span><span class="o">=</span><span class="s2">&quot;influenza a virus texas h1n1 hemagglutinin complete cds&quot;</span><span class="p">,</span>  <span class="c1"># search term</span>
-                        <span class="n">retmax</span><span class="o">=</span><span class="mi">10</span>  <span class="c1"># number of results that are returned</span>
-                        <span class="p">)</span>
-<span class="n">record</span> <span class="o">=</span> <span class="n">Entrez</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">handle</span><span class="p">)</span>
-<span class="n">handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="c1"># Here is a helper function to print out matrices</span>
+<span class="k">def</span> <span class="nf">print_matrix</span><span class="p">(</span><span class="n">mat</span><span class="p">):</span>
+    <span class="c1"># Loop over all rows</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">mat</span><span class="p">)):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[&quot;</span><span class="p">,</span> <span class="n">end</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+        <span class="c1"># Loop over each column in row i</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">mat</span><span class="p">[</span><span class="n">i</span><span class="p">])):</span>
+            <span class="c1"># Print out the value in row i, column j</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">mat</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">],</span> <span class="n">end</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+            <span class="c1"># Only add a tab if we&#39;re not in the last column</span>
+            <span class="k">if</span> <span class="n">j</span> <span class="o">!=</span> <span class="nb">len</span><span class="p">(</span><span class="n">mat</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="o">-</span> <span class="mi">1</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">end</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;]</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
 
-<span class="n">gi_list</span> <span class="o">=</span> <span class="n">record</span><span class="p">[</span><span class="s2">&quot;IdList&quot;</span><span class="p">]</span> <span class="c1"># list of genbank identifiers found</span>
+<span class="c1"># A function for making a matrix of zeroes</span>
+<span class="k">def</span> <span class="nf">zeros</span><span class="p">(</span><span class="n">rows</span><span class="p">,</span> <span class="n">cols</span><span class="p">):</span>
+    <span class="c1"># Define an empty list</span>
+    <span class="n">retval</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="c1"># Set up the rows of the matrix</span>
+    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">rows</span><span class="p">):</span>
+        <span class="c1"># For each row, add an empty list</span>
+        <span class="n">retval</span><span class="o">.</span><span class="n">append</span><span class="p">([])</span>
+        <span class="c1"># Set up the columns in each row</span>
+        <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">cols</span><span class="p">):</span>
+            <span class="c1"># Add a zero to each column in each row</span>
+            <span class="n">retval</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+    <span class="c1"># Return the matrix of zeros</span>
+    <span class="k">return</span> <span class="n">retval</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">gi_list</span><span class="p">)</span>
+<span class="c1"># A function for determining the score between any two bases in alignment</span>
+<span class="k">def</span> <span class="nf">match_score</span><span class="p">(</span><span class="n">alpha</span><span class="p">,</span> <span class="n">beta</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">alpha</span> <span class="o">==</span> <span class="n">beta</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">match_award</span>
+    <span class="k">elif</span> <span class="n">alpha</span> <span class="o">==</span> <span class="s1">&#39;-&#39;</span> <span class="ow">or</span> <span class="n">beta</span> <span class="o">==</span> <span class="s1">&#39;-&#39;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">gap_penalty</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">mismatch_penalty</span>
 
-<span class="c1"># Fetch records from the database</span>
-<span class="n">handle</span> <span class="o">=</span> <span class="n">Entrez</span><span class="o">.</span><span class="n">efetch</span><span class="p">(</span><span class="n">db</span><span class="o">=</span><span class="s2">&quot;nucleotide&quot;</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="n">gi_list</span><span class="p">,</span> <span class="n">rettype</span><span class="o">=</span><span class="s2">&quot;gb&quot;</span><span class="p">,</span> <span class="n">retmode</span><span class="o">=</span><span class="s2">&quot;text&quot;</span><span class="p">)</span>
-<span class="n">data</span> <span class="o">=</span> <span class="n">handle</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-<span class="n">handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span> <span class="c1"># close the handle</span>
-
-<span class="c1"># Write data to a file</span>
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;influenza_HA.gb&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">outfile</span><span class="p">:</span>
-    <span class="n">outfile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="c1"># The function that actually fills out a matrix of scores</span>
+<span class="k">def</span> <span class="nf">smith_waterman</span><span class="p">(</span><span class="n">seq1</span><span class="p">,</span> <span class="n">seq2</span><span class="p">):</span>
     
+    <span class="c1"># length of two sequences</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">seq1</span><span class="p">)</span>
+    <span class="n">m</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">seq2</span><span class="p">)</span>  
+    
+    <span class="c1"># Generate matrix of zeros to store scores</span>
+    <span class="n">score</span> <span class="o">=</span> <span class="n">zeros</span><span class="p">(</span><span class="n">m</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+   
+    <span class="c1"># Calculate score table</span>
+    
+    <span class="c1"># Your code goes here</span>
+    
+    <span class="c1"># Fill out first column</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">m</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="n">score</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+    
+    <span class="c1"># Fill out first row</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="n">score</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+    
+    <span class="c1"># Fill out all other values in the score matrix</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">m</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+            <span class="c1"># Calculate the score by checking the top, left, and diagonal cells</span>
+            <span class="n">match</span> <span class="o">=</span> <span class="n">score</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">][</span><span class="n">j</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">match_score</span><span class="p">(</span><span class="n">seq1</span><span class="p">[</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">seq2</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+            <span class="n">delete</span> <span class="o">=</span> <span class="n">score</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">+</span> <span class="n">gap_penalty</span>
+            <span class="n">insert</span> <span class="o">=</span> <span class="n">score</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">gap_penalty</span>
+            <span class="c1"># Record the maximum score from the three possible scores calculated above</span>
+            <span class="n">score</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">match</span><span class="p">,</span> <span class="n">delete</span><span class="p">,</span> <span class="n">insert</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">score</span>
+
+<span class="n">print_matrix</span><span class="p">(</span><span class="n">smith_waterman</span><span class="p">(</span><span class="n">seq1</span><span class="p">,</span> <span class="n">seq2</span><span class="p">))</span>
 </pre></div>
 
 </div>
@@ -11808,75 +11907,20 @@ div#notebook {
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[&#39;1376161075&#39;, &#39;1376159812&#39;, &#39;1371433702&#39;, &#39;1371433691&#39;, &#39;1371433664&#39;, &#39;1371433653&#39;, &#39;1371433629&#39;, &#39;1371431946&#39;, &#39;1365502012&#39;, &#39;1365501991&#39;]
-</pre>
-</div>
-</div>
+<pre>[0	0	0	0	0	0]
 
-</div>
-</div>
+[0	2	1	2	1	0]
 
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Problem 2:</strong> Restriction enzymes cut DNA by recognizing specific motifs (patterns in the DNA sequence usually less than 10 nucleotides). Some restriction enzymes recognize degenerate motifs. That is, they recognize multiple motifs that differ by only 1 or 2 nucleotides.</p>
-<p>Using your sequence file from Problem 1 and <strong>regular expressions</strong>, determine if any of the influenza sequences contain the following restriction sites:</p>
-<ul>
-<li>EcoRI: GAATTC</li>
-<li>BisI: GCNGC, where N represents any nucleotide</li>
-</ul>
+[0	1	4	3	2	3]
 
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">re</span>
+[0	2	3	6	5	4]
 
-<span class="c1"># Your code goes here</span>
+[0	2	2	5	4	3]
 
-<span class="c1"># Open the genbank file with flu sequences</span>
-<span class="n">in_handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;influenza_HA.gb&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span>
-<span class="n">records</span> <span class="o">=</span> <span class="n">SeqIO</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">in_handle</span><span class="p">,</span> <span class="s2">&quot;genbank&quot;</span><span class="p">)</span>
+[0	1	1	4	7	6]
 
-<span class="c1"># Start counters for EcoRI and BisI restriction sites</span>
-<span class="n">eco_count</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">bis_count</span> <span class="o">=</span> <span class="mi">0</span>
+[0	0	0	3	6	5]
 
-<span class="c1"># Loop over each sequence</span>
-<span class="k">for</span> <span class="n">record</span> <span class="ow">in</span> <span class="n">records</span><span class="p">:</span>
-    <span class="c1"># Match </span>
-    <span class="n">match_eco</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s2">r&quot;GAATTC&quot;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">record</span><span class="o">.</span><span class="n">seq</span><span class="p">))</span>
-    <span class="n">match_bis</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s2">r&quot;GC[ATCG]GC&quot;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">record</span><span class="o">.</span><span class="n">seq</span><span class="p">))</span>
-    <span class="k">if</span> <span class="n">match_eco</span><span class="p">:</span>
-        <span class="n">eco_count</span> <span class="o">+=</span> <span class="mi">1</span>
-    <span class="k">if</span> <span class="n">match_bis</span><span class="p">:</span>
-        <span class="n">bis_count</span> <span class="o">+=</span> <span class="mi">1</span>
-
-<span class="c1"># Remember to close the file handle!   </span>
-<span class="n">in_handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;There are EcoRI restriction sites in&quot;</span><span class="p">,</span> <span class="n">eco_count</span><span class="p">,</span> <span class="s2">&quot;sequences.&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;There are BisI restriction sites in&quot;</span><span class="p">,</span> <span class="n">bis_count</span><span class="p">,</span> <span class="s2">&quot;sequences.&quot;</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>There are EcoRI restriction sites in 0 sequences.
-There are BisI restriction sites in 10 sequences.
 </pre>
 </div>
 </div>

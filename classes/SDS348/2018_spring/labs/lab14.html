@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>lab12-solution</title>
+<title>lab14</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -11751,7 +11751,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Lab-Worksheet-12-Solutions">Lab Worksheet 12 Solutions<a class="anchor-link" href="#Lab-Worksheet-12-Solutions">&#182;</a></h1>
+<h1 id="Lab-Worksheet-14">Lab Worksheet 14<a class="anchor-link" href="#Lab-Worksheet-14">&#182;</a></h1>
 </div>
 </div>
 </div>
@@ -11760,7 +11760,27 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Problem 1:</strong> Use Biopython to download 10 influenza hemagglutinin sequences like we did in the Class 21 worksheet. Print the list of genbank identifiers, then fetch and save all of the records to a file called "influenza_HA.gb".</p>
+<p>The web interface to BLAST is available here: <a href="http://blast.ncbi.nlm.nih.gov/Blast.cgi">http://blast.ncbi.nlm.nih.gov/Blast.cgi</a></p>
+<p>Let's search for proteins related to the following query sequence, which is the human chemokine receptor 4 (a receptor that plays a fundamental role in the immune system):</p>
+
+<pre><code>&gt;human
+MSIPLPLLQIYTSDNYTEEMGSGDYDSMKEPCFREENANFNKIFLPTIYSIIFLTGIVGN
+GLVILVMGYQKKLRSMTDKYRLHLSVADLLFVITLPFWAVDAVANWYFGNFLCKAVHVIY
+TVNLYSSVLILAFISLDRYLAIVHATNSQRPRKLLAEKVVYVGVWIPALLLTIPDFIFAN
+VSEADDRYICDRFYPNDLWVVVFQFQHIMVGLILPGIVILSCYCIIISKLSHSKGHQKRK
+ALKTTVILILAFFACWLPYYIGISIDSFILLEIIKQGCEFENTVHKWISITEALAFFHCC
+LNPILYAFLGAKFKTSAQHALTSVSRGSSLKILSKGKRGGHSSVSTESESSSFHSS</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Problems">Problems<a class="anchor-link" href="#Problems">&#182;</a></h2><p><strong>Problem 1:</strong></p>
+<p>Download the blast results from the NCBI website in XML format and store them as <code>cxcr4_BLAST.xml</code>. Extract the genbank identifiers (written as gb|string|, where string is the actual identifier, consisting of letters, numbers, and the period symbol) for all matches with a score greater than or equal to 1600 and less than or equal 1800, and store them in a python list. For matches that list multiple genbank identifiers, only extract the first one.</p>
 
 </div>
 </div>
@@ -11770,49 +11790,10 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># You will need Entrez and Medline to solve this problem</span>
-<span class="kn">from</span> <span class="nn">Bio</span> <span class="k">import</span> <span class="n">Entrez</span><span class="p">,</span> <span class="n">SeqIO</span>
-
-<span class="n">Entrez</span><span class="o">.</span><span class="n">email</span> <span class="o">=</span> <span class="s2">&quot;dariya.k.sydykova@utexas.edu&quot;</span>
-
-<span class="c1"># let&#39;s do a search for influenza H1N1 viruses from Texas</span>
-<span class="n">handle</span> <span class="o">=</span> <span class="n">Entrez</span><span class="o">.</span><span class="n">esearch</span><span class="p">(</span><span class="n">db</span><span class="o">=</span><span class="s2">&quot;nucleotide&quot;</span><span class="p">,</span>  <span class="c1"># database to search</span>
-                        <span class="n">term</span><span class="o">=</span><span class="s2">&quot;influenza a virus texas h1n1 hemagglutinin complete cds&quot;</span><span class="p">,</span>  <span class="c1"># search term</span>
-                        <span class="n">retmax</span><span class="o">=</span><span class="mi">10</span>  <span class="c1"># number of results that are returned</span>
-                        <span class="p">)</span>
-<span class="n">record</span> <span class="o">=</span> <span class="n">Entrez</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">handle</span><span class="p">)</span>
-<span class="n">handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-
-<span class="n">gi_list</span> <span class="o">=</span> <span class="n">record</span><span class="p">[</span><span class="s2">&quot;IdList&quot;</span><span class="p">]</span> <span class="c1"># list of genbank identifiers found</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">gi_list</span><span class="p">)</span>
-
-<span class="c1"># Fetch records from the database</span>
-<span class="n">handle</span> <span class="o">=</span> <span class="n">Entrez</span><span class="o">.</span><span class="n">efetch</span><span class="p">(</span><span class="n">db</span><span class="o">=</span><span class="s2">&quot;nucleotide&quot;</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="n">gi_list</span><span class="p">,</span> <span class="n">rettype</span><span class="o">=</span><span class="s2">&quot;gb&quot;</span><span class="p">,</span> <span class="n">retmode</span><span class="o">=</span><span class="s2">&quot;text&quot;</span><span class="p">)</span>
-<span class="n">data</span> <span class="o">=</span> <span class="n">handle</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-<span class="n">handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span> <span class="c1"># close the handle</span>
-
-<span class="c1"># Write data to a file</span>
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;influenza_HA.gb&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">outfile</span><span class="p">:</span>
-    <span class="n">outfile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-    
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Your code goes here</span>
 </pre></div>
 
 </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[&#39;1376161075&#39;, &#39;1376159812&#39;, &#39;1371433702&#39;, &#39;1371433691&#39;, &#39;1371433664&#39;, &#39;1371433653&#39;, &#39;1371433629&#39;, &#39;1371431946&#39;, &#39;1365502012&#39;, &#39;1365501991&#39;]
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -11822,11 +11803,12 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Problem 2:</strong> Restriction enzymes cut DNA by recognizing specific motifs (patterns in the DNA sequence usually less than 10 nucleotides). Some restriction enzymes recognize degenerate motifs. That is, they recognize multiple motifs that differ by only 1 or 2 nucleotides.</p>
-<p>Using your sequence file from Problem 1 and <strong>regular expressions</strong>, determine if any of the influenza sequences contain the following restriction sites:</p>
+<p><strong>Problem 2:</strong></p>
+<p>Using the list of genbank identifiers obtained in the previous exercise, download the corresponding sequences from genbank and print them out in FASTA format.</p>
+<p>Hints:</p>
 <ul>
-<li>EcoRI: GAATTC</li>
-<li>BisI: GCNGC, where N represents any nucleotide</li>
+<li>You will have to specify the database as "protein" for this to work, since the previous exercise generated identifiers for protein sequences.</li>
+<li>Use the function <code>SeqIO.write()</code> to output your results in FASTA format, and use <code>sys.stdout</code> from the <code>sys</code> module as your output handle.</li>
 </ul>
 
 </div>
@@ -11837,66 +11819,24 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">re</span>
-
-<span class="c1"># Your code goes here</span>
-
-<span class="c1"># Open the genbank file with flu sequences</span>
-<span class="n">in_handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;influenza_HA.gb&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span>
-<span class="n">records</span> <span class="o">=</span> <span class="n">SeqIO</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">in_handle</span><span class="p">,</span> <span class="s2">&quot;genbank&quot;</span><span class="p">)</span>
-
-<span class="c1"># Start counters for EcoRI and BisI restriction sites</span>
-<span class="n">eco_count</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">bis_count</span> <span class="o">=</span> <span class="mi">0</span>
-
-<span class="c1"># Loop over each sequence</span>
-<span class="k">for</span> <span class="n">record</span> <span class="ow">in</span> <span class="n">records</span><span class="p">:</span>
-    <span class="c1"># Match </span>
-    <span class="n">match_eco</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s2">r&quot;GAATTC&quot;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">record</span><span class="o">.</span><span class="n">seq</span><span class="p">))</span>
-    <span class="n">match_bis</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s2">r&quot;GC[ATCG]GC&quot;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">record</span><span class="o">.</span><span class="n">seq</span><span class="p">))</span>
-    <span class="k">if</span> <span class="n">match_eco</span><span class="p">:</span>
-        <span class="n">eco_count</span> <span class="o">+=</span> <span class="mi">1</span>
-    <span class="k">if</span> <span class="n">match_bis</span><span class="p">:</span>
-        <span class="n">bis_count</span> <span class="o">+=</span> <span class="mi">1</span>
-
-<span class="c1"># Remember to close the file handle!   </span>
-<span class="n">in_handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;There are EcoRI restriction sites in&quot;</span><span class="p">,</span> <span class="n">eco_count</span><span class="p">,</span> <span class="s2">&quot;sequences.&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;There are BisI restriction sites in&quot;</span><span class="p">,</span> <span class="n">bis_count</span><span class="p">,</span> <span class="s2">&quot;sequences.&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Your code goes here</span>
 </pre></div>
 
 </div>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>There are EcoRI restriction sites in 0 sequences.
-There are BisI restriction sites in 10 sequences.
-</pre>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Problem 3:</strong></p>
+<p>Use the FASTA format of the sequences from problem 2 and make a multiple sequence alignment and phylogenetic tree with the Clustal Omega web interface: <a href="http://www.ebi.ac.uk/Tools/msa/clustalo/">http://www.ebi.ac.uk/Tools/msa/clustalo/</a>.</p>
 
 </div>
 </div>
-</div>
-
 </div>
     </div>
   </div>
