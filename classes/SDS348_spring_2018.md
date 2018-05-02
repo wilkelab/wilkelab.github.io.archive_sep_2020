@@ -482,6 +482,7 @@ All homeworks are due by 7:00pm on the day they are due. Homeworks need to be su
 
 * Lab worksheet:
     - [PDF](/classes/SDS348/2018_spring/labs/lab15.pdf)
+    - [lab15.py](/classes/SDS348/2018_spring/labs/lab15.py)
 
 ## Projects
 
