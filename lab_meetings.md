@@ -7,6 +7,32 @@ permalink: /more/lab_meetings.html
 Lab meetings are held Fridays from 10:30 am - 12:00 pm in MBB 3.204.
 <br><br>
 
+### Summer 2018
+
+|------+---+--------------------+---+----------------------+---+-------|
+| Date      |    |Research       |    |Literature |         |Notes      |
+|:----------|----|:------------------|----|:--------------------|---|:------|
+| 5/18/18 || Joseph || Cory ||
+| 5/25/18 || Colleen || Joseph ||
+| 6/1/18 || Lee || Colleen ||
+| 6/8/18 || Nelson || Lee ||
+| 6/15/18 || Ben || Nelson ||
+| 6/22/18 || Adam || Ben ||
+| 6/29/18 || Ashley || Adam ||
+| 7/6/18 || Mackenzie || Ashley ||
+| 7/11/18 || --- || --- || Claus out of town
+| 7/19/18 || --- || --- || Claus out of town
+| 7/26/18 || --- || --- || Claus out of town
+| 8/3/18 || Dariya || Mackenzie ||
+| 8/10/18 || --- || --- || BEACON Congress
+| 8/17/18 || Cory || Dariya ||
+| 8/24/18 || Dacia || Cory || 
+| 8/31/18 || Umut || Dacia ||
+|------+---+--------------------+---+----------------------+---+-------|
+{:.widetable}
+
+<br /><br />
+
 ### Spring 2018
 
 |------+---+--------------------+---+----------------------+---+-------|
