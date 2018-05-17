@@ -20,9 +20,9 @@ Lab meetings are held Fridays from 10:30 am - 12:00 pm in MBB 3.204.
 | 6/22/18 || Adam || Ben ||
 | 6/29/18 || Ashley || Adam ||
 | 7/6/18 || Mackenzie || Ashley ||
-| 7/11/18 || --- || --- || Claus out of town
-| 7/19/18 || --- || --- || Claus out of town
-| 7/26/18 || --- || --- || Claus out of town
+| 7/13/18 || --- || --- || Claus out of town
+| 7/20/18 || --- || --- || Claus out of town
+| 7/27/18 || --- || --- || Claus out of town
 | 8/3/18 || Dariya || Mackenzie ||
 | 8/10/18 || --- || --- || BEACON Congress
 | 8/17/18 || Cory || Dariya ||
