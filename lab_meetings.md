@@ -13,12 +13,12 @@ Lab meetings are held Fridays from 10:30 am - 12:00 pm in MBB 3.204.
 | Date      |    |Research       |    |Literature |         |Notes      |
 |:----------|----|:------------------|----|:--------------------|---|:------|
 | 5/18/18 || Joseph || Cory ||
-| 5/25/18 || Colleen || Joseph ||
-| 6/1/18 || Lee || Colleen ||
+| 5/25/18 || Adam || Joseph ||
+| 6/1/18 || Lee || Adam ||
 | 6/8/18 || Nelson || Lee ||
 | 6/15/18 || Ben || Nelson ||
-| 6/22/18 || Adam || Ben ||
-| 6/29/18 || Ashley || Adam ||
+| 6/22/18 || Colleen || Ben ||
+| 6/29/18 || Ashley || Colleen ||
 | 7/6/18 || Mackenzie || Ashley ||
 | 7/13/18 || --- || --- || Claus out of town
 | 7/20/18 || --- || --- || Claus out of town
