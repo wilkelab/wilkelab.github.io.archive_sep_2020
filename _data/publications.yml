@@ -1,3 +1,9 @@
+- author: M. U. Caglar, A. J. Hockenberry, C. O. Wilke
+  year: preprint
+  title: "Predicting bacterial growth conditions from mRNA and protein abundances"
+  ref: "bioRxiv 353433"
+  doi: 10.1101/353433
+
 - author: B. R. Jack, C. O. Wilke
   year: preprint
   title: "Pinetree: a step-wise gene expression simulator with codon-specific translation rates."
