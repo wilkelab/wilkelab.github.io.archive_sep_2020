@@ -1,6 +1,6 @@
 - author: M. U. Caglar, A. J. Hockenberry, C. O. Wilke
   year: preprint
-  title: "Predicting bacterial growth conditions from mRNA and protein abundances."
+  title: Predicting bacterial growth conditions from mRNA and protein abundances.
   ref: "bioRxiv 353433"
   doi: 10.1101/353433
 
@@ -12,21 +12,27 @@
 
 - author: M. L. Paff, B. R. Jack, B. L. Smith, J. J. Bull, C. O. Wilke
   year: preprint
-  title: "Combinatorial approaches to viral attenuation."
+  title: Combinatorial approaches to viral attenuation.
   ref: "bioRxiv 299180"
   doi: 10.1101/299180
 
 - author: A. J. Hockenberry, L. A. N. Amaral, M. C. Jewett, C. O. Wilke
   year: preprint
-  title: "Selection removes Shine-Dalgarno-like sequences from within protein coding genes."
+  title: Selection removes Shine-Dalgarno-like sequences from within protein coding genes.
   ref: "bioRxiv 278689"
   doi: 10.1101/278689
+
+- author: B. L. Smith, G. Chen, C. O. Wilke, R. M. Krug
+  year: 2018
+  title: Avian influenza virus PB1 gene in H3N2 viruses evolved in humans to reduce interferon inhibition by skewing codon usage toward interferon-altered tRNA pools.
+  ref: "mBio 9:e01222-18"
+  doi: 10.1128/mBio.01222-18
   
 - author: D. C. Wu, J. Yao, K. S. Ho, A. M. Lambowitz, C. O. Wilke
-  year: preprint
-  title: "Limitation of alignment-free tools in total RNA-seq quantification."
-  ref: "bioRxiv 246967"
-  doi: 10.1101/246967
+  year: 2018
+  title: Limitation of alignment-free tools in total RNA-seq quantification.
+  ref: "BMC Genomics 201819:510"
+  doi: 10.1186/s12864-018-4869-5
 
 - author: Q. Jiang, A. I. Teufel, E. L. Jackson, C. O. Wilke
   year: 2018
