@@ -17,16 +17,16 @@
   doi: 10.1101/339994
 
 - author: M. L. Paff, B. R. Jack, B. L. Smith, J. J. Bull, C. O. Wilke
-  year: preprint
+  year: 2018
   title: Combinatorial approaches to viral attenuation.
-  ref: "bioRxiv 299180"
-  doi: 10.1101/299180
+  ref: "mSystems, in press"
+  doi: 10.1128/mSystems.00046-18
 
-- author: A. J. Hockenberry, L. A. N. Amaral, M. C. Jewett, C. O. Wilke
-  year: preprint
-  title: Selection removes Shine-Dalgarno-like sequences from within protein coding genes.
-  ref: "bioRxiv 278689"
-  doi: 10.1101/278689
+- author: A. J. Hockenberry, M. C. Jewett, L. A. N. Amaral, C. O. Wilke
+  year: 2018
+  title: Within-gene Shine-Dalgarno sequences are not selected for function.
+  ref: "Mol. Biol. Evol., in press"
+  doi: 10.1093/molbev/msy150
 
 - author: B. L. Smith, G. Chen, C. O. Wilke, R. M. Krug
   year: 2018
