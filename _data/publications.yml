@@ -16,17 +16,23 @@
   ref: "bioRxiv 339994"
   doi: 10.1101/339994
 
-- author: M. L. Paff, B. R. Jack, B. L. Smith, J. J. Bull, C. O. Wilke
-  year: 2018
-  title: Combinatorial approaches to viral attenuation.
-  ref: "mSystems, in press"
-  doi: 10.1128/mSystems.00046-18
-
 - author: A. J. Hockenberry, M. C. Jewett, L. A. N. Amaral, C. O. Wilke
   year: 2018
   title: Within-gene Shine-Dalgarno sequences are not selected for function.
   ref: "Mol. Biol. Evol., in press"
   doi: 10.1093/molbev/msy150
+
+- author: A. I. Teufel, A. M. Ritchie, C. O. Wilke, D. A. Liberles
+  year: 2018
+  title: Using the mutation–selection framework to characterize selection on protein sequences.
+  ref: "Genes 9:409",
+  doi: 10.3390/genes9080409
+
+- author: M. L. Paff, B. R. Jack, B. L. Smith, J. J. Bull, C. O. Wilke
+  year: 2018
+  title: Combinatorial approaches to viral attenuation.
+  ref: "mSystems 3:e00046"
+  doi: 10.1128/mSystems.00046-18
 
 - author: B. L. Smith, G. Chen, C. O. Wilke, R. M. Krug
   year: 2018
