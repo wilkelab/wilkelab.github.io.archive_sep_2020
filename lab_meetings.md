@@ -4,7 +4,7 @@ title:  Lab Meeting Schedule
 permalink: /more/lab_meetings.html
 ---
 
-Lab meetings are held Fridays from 10:30 am - 12:00 pm in MBB 3.204.
+Lab meetings are held Fridays from 10:30 am -- 12:00 pm in MBB 3.204.
 <br><br>
 
 ### Fall 2018
