@@ -22,7 +22,7 @@ Lab meetings are held Fridays from 10:30 am - 12:00 pm in MBB 3.204.
 | 10/19/18 || --- || --- || No lab meeting.
 | 10/26/18 || Ben || Cory || 
 | 11/2/18 || Mackenzie || Ben || 
-| 11/9/18 || Adam || Mackenzie || Claus out of town
+| 11/9/18 || Adam || Mackenzie ||
 | 11/16/18 || Dariya || Adam ||
 | 11/23/18 || --- || --- || Thanksgiving
 | 11/30/18 || Ashley || Dariya ||
