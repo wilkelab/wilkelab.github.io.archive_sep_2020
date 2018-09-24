@@ -5,22 +5,11 @@
   blog: "http://serialmentor.com/blog"
   github: clauswilke
 
-- name: M. Umut Çağlar
-  role: Postdoc
-  joined: 2014
-  pubs: "http://scholar.google.com/citations?user=bdtVzlcAAAAJ"
-  github: umutcaglar
-
 - name: Adam Hockenberry
   role: Postdoc
   joined: 2017
   pubs: "https://scholar.google.com/citations?user=W5qqC2wAAAAJ&hl=en"
   github: adamhockenberry
-
-- name: Bart Smith
-  role: Postdoc
-  joined: 2016
-  github: HelloImBart
 
 - name: Ashley Teufel
   role: Postdoc
@@ -43,10 +32,6 @@
 - name: Mackenzie M. Johnson
   role: Graduate Student (EEB)
   joined: 2017
-
-- name: Matthew Paff
-  role: Graduate Student (CMB)
-  joined: 2015
   
 - name: Dariya K. Sydykova
   role: Graduate Student (CMB)
@@ -58,3 +43,8 @@
 - name: Nelson Morrow
   role: Undergraduate
   joined: 2016  
+
+- name: Lee Rao
+  role: Undergraduate
+  joined: 2018 
+  github: leerao 

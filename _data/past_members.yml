@@ -5,6 +5,13 @@
   currently: Computational Biologist at UT Southwestern Medical Center
   url: "http://scholar.google.com/citations?user=UBvhRHgAAAAJ"
 
+- name: M. Umut Çağlar
+  role: Postdoc
+  joined: 2014
+  left: 2018
+  currently: Lead Data Scientist and Cognitive Engineer at State Street
+  url: "https://www.linkedin.com/in/mehmetumutcaglar/"
+
 - name: Art Covert
   role: Postdoc, Research Educator
   joined: 2010
@@ -32,6 +39,12 @@
   left: 2015
   currently: Postdoc, UT Austin
   url: "http://www.shahmoradi.org/" 
+  
+- name: Bart Smith
+  role: Postdoc
+  joined: 2016
+  left: 2018
+  currently: Teacher
 
 - name: Tong Zhou
   role: Postdoc
@@ -68,6 +81,13 @@
   github: dakotaz
   currently: Canvasser at Clean Water Action
   url: "https://www.linkedin.com/in/dakota-derryberry-41733a49/"
+  
+- name: Matthew Paff
+  role: Graduate Student (CMB)
+  joined: 2015
+  left: 2018
+  currently: Data Scientist at Nano Global
+  url: "https://www.linkedin.com/in/matthew-paff/"
   
 - name: Michael P. Scherrer
   role: Graduate Student (CMB)
