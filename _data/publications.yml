@@ -16,22 +16,22 @@
   ref: "bioRxiv 366971"
   doi: 10.1101/366971
 
-- author: M. U. Caglar, A. J. Hockenberry, C. O. Wilke
-  year: preprint
-  title: Predicting bacterial growth conditions from mRNA and protein abundances.
-  ref: "bioRxiv 353433"
-  doi: 10.1101/353433
-
 - author: B. R. Jack, C. O. Wilke
   year: preprint
   title: "Pinetree: a step-wise gene expression simulator with codon-specific translation rates."
   ref: "bioRxiv 339994"
   doi: 10.1101/339994
 
+- author: M. U. Caglar, A. J. Hockenberry, C. O. Wilke
+  year: 2018
+  title: Predicting bacterial growth conditions from mRNA and protein abundances.
+  ref: "PLoS ONE 13:e0206634"
+  doi: 10.1371/journal.pone.0206634
+
 - author: A. J. Hockenberry, M. C. Jewett, L. A. N. Amaral, C. O. Wilke
   year: 2018
   title: Within-gene Shine-Dalgarno sequences are not selected for function.
-  ref: "Mol. Biol. Evol., in press"
+  ref: "Mol. Biol. Evol. 35:2487–2498"
   doi: 10.1093/molbev/msy150
 
 - author: A. I. Teufel, A. M. Ritchie, C. O. Wilke, D. A. Liberles
