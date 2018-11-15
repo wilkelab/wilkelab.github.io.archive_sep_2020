@@ -10,17 +10,17 @@
   ref: "bioRxiv 411025"
   doi: 10.1101/411025
 
-- author: A. I. Teufel, M. M. Johnson, J. M. Laurent, A. H. Kachroo, E. M. Marcotte, C. O. Wilke
-  year: preprint
-  title: The many nuanced evolutionary consequences of duplicated genes.
-  ref: "bioRxiv 366971"
-  doi: 10.1101/366971
-
 - author: B. R. Jack, C. O. Wilke
   year: preprint
   title: "Pinetree: a step-wise gene expression simulator with codon-specific translation rates."
   ref: "bioRxiv 339994"
   doi: 10.1101/339994
+
+- author: A. I. Teufel, M. M. Johnson, J. M. Laurent, A. H. Kachroo, E. M. Marcotte, C. O. Wilke
+  year: 2018
+  title: The many nuanced evolutionary consequences of duplicated genes.
+  ref: "Mol. Biol. Evol., in press."
+  doi: 10.1093/molbev/msy210
 
 - author: M. U. Caglar, A. J. Hockenberry, C. O. Wilke
   year: 2018
