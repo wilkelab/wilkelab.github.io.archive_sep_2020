@@ -5,6 +5,9 @@ date:   2019-01-21 00:00:01
 ---
 This is the home page for class SDS 348, Computational Biology and Bioinformatics. All relevant course materials will be posted here.
 
+Syllabus: [SDS348_syllabus_spring2019.pdf](/classes/SDS348/SDS348_syllabus_spring2019.pdf)
+
+
 ## Lectures
 **1. Jan 21, 2019 – Introduction, R Markdown**
 
