@@ -323,47 +323,38 @@ All homeworks are due by 7:00pm on the day they are due. Homeworks need to be su
 * Homework 1 (due Jan 23, 2018)
 	- [R Markdown](/classes/SDS348/2018_spring/homeworks/HW1.Rmd)
 	- [HTML](/classes/SDS348/2018_spring/homeworks/HW1.html)
-    - [Solutions, HTML](/classes/SDS348/2018_spring/homeworks/HW1-solution.html)
 	
 * Homework 2 (due Jan 30, 2018)
 	- [R Markdown](/classes/SDS348/2018_spring/homeworks/HW2.Rmd)
 	- [HTML](/classes/SDS348/2018_spring/homeworks/HW2.html) 	
-    - [Solutions, HTML](/classes/SDS348/2018_spring/homeworks/HW2-solution.html)
 
 * Homework 3 (due Feb 6, 2018)
 	- [R Markdown](/classes/SDS348/2018_spring/homeworks/HW3.Rmd)
 	- [HTML](/classes/SDS348/2018_spring/homeworks/HW3.html) 	
-    - [Solutions, HTML](/classes/SDS348/2018_spring/homeworks/HW3-solution.html)
 
 * Homework 4 (due Feb 13, 2018)
 	- [R Markdown](/classes/SDS348/2018_spring/homeworks/HW4.Rmd)
 	- [HTML](/classes/SDS348/2018_spring/homeworks/HW4.html) 
-    - [Solutions, HTML](/classes/SDS348/2018_spring/homeworks/HW4-solution.html)	
     
 * Homework 5 (due Feb 27, 2018)
 	- [R Markdown](/classes/SDS348/2018_spring/homeworks/HW5.Rmd)
 	- [HTML](/classes/SDS348/2018_spring/homeworks/HW5.html) 
-    - [Solutions, HTML](/classes/SDS348/2018_spring/homeworks/HW5-solution.html)	
 
 * Homework 6 (due Mar 6, 2018)
 	- [R Markdown](/classes/SDS348/2018_spring/homeworks/HW6.Rmd)
 	- [HTML](/classes/SDS348/2018_spring/homeworks/HW6.html) 
-    - [Solutions, HTML](/classes/SDS348/2018_spring/homeworks/HW6-solution.html)	
 
 * Homework 7 (due Mar 20, 2018)
 	- [Jupyter Notebook](/classes/SDS348/2018_spring/homeworks/HW7.ipynb)
 	- [HTML](/classes/SDS348/2018_spring/homeworks/HW7.html) 
-    - [Solutions, HTML](/classes/SDS348/2018_spring/homeworks/HW7-solution.html)	
 
 * Homework 8 (due Apr 3, 2018)
 	- [Jupyter Notebook](/classes/SDS348/2018_spring/homeworks/HW8.ipynb)
 	- [HTML](/classes/SDS348/2018_spring/homeworks/HW8.html) 
-    - [Solutions, HTML](/classes/SDS348/2018_spring/homeworks/HW8-solution.html)	
 
 * Homework 9 (due Apr 10, 2018)
 	- [Jupyter Notebook](/classes/SDS348/2018_spring/homeworks/HW9.ipynb)
 	- [HTML](/classes/SDS348/2018_spring/homeworks/HW9.html) 
-    - [Solutions, HTML](/classes/SDS348/2018_spring/homeworks/HW9-solution.html)	
 
 * Homework 10 (due Apr 17, 2018)
 	- [PDF](/classes/SDS348/2018_spring/homeworks/HW10.pdf) 
@@ -371,7 +362,6 @@ All homeworks are due by 7:00pm on the day they are due. Homeworks need to be su
 * Homework 11 (Problem 1 due Apr 25, 2018 and Problem 2 due Apr 24, 2018)
 	- [Jupyter Notebook](/classes/SDS348/2018_spring/homeworks/HW11.ipynb)
 	- [HTML](/classes/SDS348/2018_spring/homeworks/HW11.html) 
-    - [Solutions, HTML](/classes/SDS348/2018_spring/homeworks/HW11-solution.html)	
 
 ## Labs
 
@@ -491,12 +481,10 @@ All projects are due by 7:00pm on the day they are due. Projects need to be subm
 - Project 1:
     - [HTML](/classes/SDS348/2018_spring/projects/project1.html)
     - [R Markdown](/classes/SDS348/2018_spring/projects/project1.Rmd) (due Feb 21, 2018)
-    - [Solutions, HTML](/classes/SDS348/2018_spring/projects/project1-solution.html)
 
 - Project 2:
     - [HTML](/classes/SDS348/2018_spring/projects/project2.html)
     - [R Markdown](/classes/SDS348/2018_spring/projects/project2.Rmd) (due Mar 27, 2018)
-    - [Solutions, HTML](/classes/SDS348/2018_spring/projects/project2-solution.html)
     
 - Project 3:
     - [Instructions](/classes/SDS348/2018_spring/projects/project3_instructions.pdf) (due May 3, 2018)
