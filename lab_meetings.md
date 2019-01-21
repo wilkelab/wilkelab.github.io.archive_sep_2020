@@ -7,6 +7,27 @@ permalink: /more/lab_meetings.html
 Lab meetings are held Fridays from 10:30 am -- 12:00 pm in MBB 3.204.
 <br><br>
 
+### Spring 2019
+
+|------+---+--------------------+---+----------------------+---+-------|
+| Date      |    |Research       |    |Literature |         |Notes      |
+|:----------|----|:------------------|----|:--------------------|---|:------|
+| 1/25/19 || Adam || Adam ||
+| 2/1/19 || Alex || Adam ||
+| 2/8/19 || Cory || Alex ||
+| 2/15/19 || --- || Cory ||
+| 2/22/19 || Matt || --- ||
+| 3/1/19 || Dariya || Matt ||
+| 3/8/19 || Mackenzie || Dariya ||
+| 3/15/19 || Undergraduate || Mackenzie || No lab meeting.
+| 3/22/19 || --- || --- || No lab meeting.
+| 3/29/19 || --- || --- || No lab meeting.
+| 4/5/19 || --- || Undergraduate ||
+|------+---+--------------------+---+----------------------+---+-------|
+{:.widetable}
+
+<br /><br />
+
 ### Fall 2018
 
 |------+---+--------------------+---+----------------------+---+-------|
@@ -127,36 +148,6 @@ Lab meetings are held Fridays from 10:30 am -- 12:00 pm in MBB 3.204.
 | 8/18/17  || Bart || Cory || 
 | 8/25/17  || --- || ---  || Literature only 
 | 9/1/17  || --- || --- || Literature only
-|------+---+--------------------+---+----------------------+---+-------|
-{:.widetable}
-
-<br /><br />
-
-### Spring 2017
-
-|------+---+--------------------+---+----------------------+---+-------|
-| Date      |    |Meeting type        |    |Presenters |         |Notes      |
-|:----------|----|:------------------|----|:--------------------|---|:------|
-| 1/13/17  || Literature || Bart || 
-| 1/20/17   || Literature || ||
-| 1/27/17  || Research || Umut, Eric ||
-| 2/3/17  || Literature || || 
-| 2/10/17  || Research || Bart ||
-| 2/17/17   || Literature || ||
-| 2/24/17   || Research || Cory, Ben || 
-| 3/3/17  || Literature || ||
-| 3/10/17  || Literature ||  || 
-| 3/17/17  || Research || Matt || 
-| 3/24/17   || Research || Ashley, Spencer || 
-| 3/31/17  || Literature ||  || 
-| 4/7/17  || Literature ||  || 
-| 4/14/17  || Research || Dakota, Umut || 
-| 4/21/17  || Literature || ||
-| 4/28/17  || Research || Seung, Dariya ||
-| 5/5/17  || Literature ||  || 
-| 5/12/17  || Research || Qian, Ben || 
-| 5/19/17  || Research, Literature || Cory ||
-| 5/26/17  || Research, Literature ||  ||
 |------+---+--------------------+---+----------------------+---+-------|
 {:.widetable}
 
