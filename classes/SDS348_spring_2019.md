@@ -19,10 +19,10 @@ Syllabus: [SDS348_syllabus_spring2019.pdf](/classes/SDS348/SDS348_syllabus_sprin
 * You can download R from here: [https://cran.r-project.org/](https://cran.r-project.org/)
 * You can download RStudio from here: [https://www.rstudio.com/products/rstudio/download/](https://www.rstudio.com/products/rstudio/download/)
 * In-class worksheet:
-    - [R Markdown](/classes/SDS348/2018_spring/worksheets/class1.Rmd)
-    - [HTML](/classes/SDS348/2018_spring/worksheets/class1.html)
-    - [R Markdown solutions](/classes/SDS348/2018_spring/worksheets/class1_solutions.Rmd)
-    - [HTML solutions](/classes/SDS348/2018_spring/worksheets/class1_solutions.html)
+    - [R Markdown](/classes/SDS348/2019_spring/worksheets/class1.Rmd)
+    - [HTML](/classes/SDS348/2019_spring/worksheets/class1.html)
+    - [R Markdown solutions](/classes/SDS348/2019_spring/worksheets/class1_solutions.Rmd)
+    - [HTML solutions](/classes/SDS348/2019_spring/worksheets/class1_solutions.html)
 
 ## Homeworks
 
