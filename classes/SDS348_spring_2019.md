@@ -36,10 +36,11 @@ All homeworks are due by 4:00pm on the day they are due. Homeworks need to be su
 
 **1. Jan 23, 2019**
 
-* Slides: forthcoming
+* Slides: [lab1.pdf](/classes/SDS348/2019_spring/labs/lab1-slides.pdf)
 * Guide to converting from HTML to PDF: [html_to_pdf_guide.pdf](/classes/SDS348/2018_spring/labs/html_to_pdf_guide.pdf)
 * Lab worksheet:
-    - forthcoming
+    - [R Markdown](/classes/SDS348/2019_spring/labs/lab1.Rmd)
+    - [HTML](/classes/SDS348/2019_spring/labs/lab1.html)
 
 ## Projects
 
