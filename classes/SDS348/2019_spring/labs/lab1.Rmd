@@ -8,7 +8,6 @@ This worksheet uses the `iris` data set available in R. This data set gives the 
 
 ```{r}
 head(iris)
-iris
 ```
 
 **Problem 1:** Is there a difference in sepal length between species setosa and species virginica? Perform a t test and discuss your results (1-2 sentences).
