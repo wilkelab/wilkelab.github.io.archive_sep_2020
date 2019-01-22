@@ -9,11 +9,18 @@ Syllabus: [SDS348_syllabus_spring2019.pdf](/classes/SDS348/SDS348_syllabus_sprin
 
 
 ## Lectures
-**1. Jan 21, 2019 – Introduction, R Markdown**
+**1. Jan 22, 2019 – Introduction, R Markdown**
 
-* Download R from here: [http://cran.r-project.org/](http://cran.r-project.org/)
-* Download RStudio from here: [http://www.rstudio.com/products/rstudio/download/](http://www.rstudio.com/products/rstudio/download/)
+* Slides: [class1.pdf](/classes/SDS348/2019_spring/slides/class1.pdf)
 * R Markdown basics: [http://rmarkdown.rstudio.com/authoring_basics.html](http://rmarkdown.rstudio.com/authoring_basics.html)
+* Class compute servers:
+    - https://educcomp01.ccbb.utexas.edu/
+    - https://educcomp02.ccbb.utexas.edu/
+* You can download R from here: [http://cran.r-project.org/](http://cran.r-project.org/)
+* You can download RStudio from here: [http://www.rstudio.com/products/rstudio/download/](http://www.rstudio.com/products/rstudio/download/)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2018_spring/worksheets/class1.Rmd)
+    - [HTML](/classes/SDS348/2018_spring/worksheets/class1.html)
 
 ## Homeworks
 
