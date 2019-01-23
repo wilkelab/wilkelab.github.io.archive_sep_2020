@@ -31,7 +31,6 @@ All homeworks are due by 4:00pm on the day they are due. Homeworks need to be su
 * Homework 1 (due Jan 29, 2019)
 	- [R Markdown](/classes/SDS348/2019_spring/homeworks/HW1.Rmd)
 	- [HTML](/classes/SDS348/2019_spring/homeworks/HW1.html)
-    - [Solutions, HTML](/classes/SDS348/2019_spring/labs/lab1-solution.html)
 
 ## Labs
 
@@ -42,6 +41,8 @@ All homeworks are due by 4:00pm on the day they are due. Homeworks need to be su
 * Lab worksheet:
     - [R Markdown](/classes/SDS348/2019_spring/labs/lab1.Rmd)
     - [HTML](/classes/SDS348/2019_spring/labs/lab1.html)
+    - [Solutions, HTML](/classes/SDS348/2019_spring/labs/lab1-solution.html)
+
 
 ## Projects
 
