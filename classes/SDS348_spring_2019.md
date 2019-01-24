@@ -21,8 +21,18 @@ Syllabus: [SDS348_syllabus_spring2019.pdf](/classes/SDS348/SDS348_syllabus_sprin
 * In-class worksheet:
     - [R Markdown](/classes/SDS348/2019_spring/worksheets/class1.Rmd)
     - [HTML](/classes/SDS348/2019_spring/worksheets/class1.html)
-    - [R Markdown solutions](/classes/SDS348/2019_spring/worksheets/class1_solutions.Rmd)
-    - [HTML solutions](/classes/SDS348/2019_spring/worksheets/class1_solutions.html)
+    - [Solutions, R Markdown](/classes/SDS348/2019_spring/worksheets/class1_solutions.Rmd)
+    - [Solutions, HTML](/classes/SDS348/2019_spring/worksheets/class1_solutions.html)
+
+**2. Jan 24, 2019 – R review**
+
+* Slides: [class2.pdf](/classes/SDS348/2019_spring/slides/class2.pdf)
+* Biostats supplement on regression modeling: [statistical_modeling.pdf](/classes/SDS348/statistical_modeling.pdf)
+* General R tutorial (fairly long and detailed): [http://www.cyclismo.org/tutorial/R/index.html](http://www.cyclismo.org/tutorial/R/index.html)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2019_spring/worksheets/class2.Rmd)
+    - [HTML](/classes/SDS348/2019_spring/worksheets/class2.html)
+
 
 ## Homeworks
 
