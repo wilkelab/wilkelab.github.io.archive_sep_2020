@@ -21,8 +21,29 @@ Syllabus: [SDS348_syllabus_spring2019.pdf](/classes/SDS348/SDS348_syllabus_sprin
 * In-class worksheet:
     - [R Markdown](/classes/SDS348/2019_spring/worksheets/class1.Rmd)
     - [HTML](/classes/SDS348/2019_spring/worksheets/class1.html)
-    - [R Markdown solutions](/classes/SDS348/2019_spring/worksheets/class1_solutions.Rmd)
-    - [HTML solutions](/classes/SDS348/2019_spring/worksheets/class1_solutions.html)
+    - [Solutions, R Markdown](/classes/SDS348/2019_spring/worksheets/class1_solutions.Rmd)
+    - [Solutions, HTML](/classes/SDS348/2019_spring/worksheets/class1_solutions.html)
+
+**2. Jan 24, 2019 – R review**
+
+* Slides: [class2.pdf](/classes/SDS348/2019_spring/slides/class2.pdf)
+* Biostats supplement on regression modeling: [statistical_modeling.pdf](/classes/SDS348/statistical_modeling.pdf)
+* General R tutorial (fairly long and detailed): [http://www.cyclismo.org/tutorial/R/index.html](http://www.cyclismo.org/tutorial/R/index.html)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2019_spring/worksheets/class2.Rmd)
+    - [HTML](/classes/SDS348/2019_spring/worksheets/class2.html)
+    - [Solutions](/classes/SDS348/2019_spring/worksheets/class2_solutions.html)
+
+**3. Jan 29, 2019 – Data visualization with ggplot2**
+
+* Slides: [class3.pdf](/classes/SDS348/2019_spring/slides/class3.pdf)
+* R for Data Science: [http://r4ds.had.co.nz/](http://r4ds.had.co.nz/)
+* ggplot2 reference manual: [http://ggplot2.tidyverse.org/](http://ggplot2.tidyverse.org/)
+* ggplot2 video tutorial: [http://varianceexplained.org/RData/lessons/lesson2/segment1/](http://varianceexplained.org/RData/lessons/lesson2/segment1/)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2019_spring/worksheets/class3.Rmd)
+    - [HTML](/classes/SDS348/2019_spring/worksheets/class3.html)
+
 
 ## Homeworks
 
