@@ -1,0 +1,29 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=3, fig.width=4)
+library(ggplot2)
+theme_set(theme_bw(base_size=12))
+```
+
+##Lab Worksheet 2
+
+We will be working with the `msleep` data set that is provided with ggplot2. The data set contains information about the sleep habits of 83 mammals. Enter `?msleep` on the R command line to learn more about the dataset.
+
+**Problem 1:** Make the following plots: (i) a plot of total time awake vs. body weight, colored by "vore" (carnivore, herbivore, etc.); (ii) a plot of body weight vs. brain weight, colored by "vore". When you plot body weight and/or brain weight, consider whether a linear scale or a logarithmic scale seems more appropriate, and explain your reasoning in 1-2 sentences. **HINT:** Use the functions `scale_x_log10()` and `scale_y_log10()` to change the scales.
+
+```{r}
+# your R code goes here
+```
+
+*Your answer goes here.*
+
+**Problem 2:** Explain the difference between `geom_line()` and `geom_path()`. Make up a simple data set (5-10 data points), plot it twice, once using `geom_line()` and once using `geom_path()`, and explain why each plot looks the way it does.
+
+*Your answer goes here.* 
+
+```{r}
+# your R code goes here
+```
+
+
+

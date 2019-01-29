@@ -68,6 +68,12 @@ All homeworks are due by 4:00pm on the day they are due. Homeworks need to be su
     - [HTML](/classes/SDS348/2019_spring/labs/lab1.html)
     - [Solutions, HTML](/classes/SDS348/2019_spring/labs/lab1-solution.html)
 
+**1. Jan 30, 2019**
+
+* Slides: [Directory of visualizations](https://serialmentor.com/dataviz/directory-of-visualizations.html)
+* Lab worksheet:
+    - [R Markdown](/classes/SDS348/2019_spring/labs/lab2.Rmd)
+    - [HTML](/classes/SDS348/2019_spring/labs/lab2.html)
 
 ## Projects
 
