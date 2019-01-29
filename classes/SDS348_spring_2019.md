@@ -53,6 +53,10 @@ All homeworks are due by 4:00pm on the day they are due. Homeworks need to be su
 * Homework 1 (due Jan 29, 2019)
 	- [R Markdown](/classes/SDS348/2019_spring/homeworks/HW1.Rmd)
 	- [HTML](/classes/SDS348/2019_spring/homeworks/HW1.html)
+	
+* Homework 2 (due Feb 5, 2019)
+	- [R Markdown](/classes/SDS348/2019_spring/homeworks/HW2.Rmd)
+	- [HTML](/classes/SDS348/2019_spring/homeworks/HW2.html)
 
 ## Labs
 
@@ -65,6 +69,12 @@ All homeworks are due by 4:00pm on the day they are due. Homeworks need to be su
     - [HTML](/classes/SDS348/2019_spring/labs/lab1.html)
     - [Solutions, HTML](/classes/SDS348/2019_spring/labs/lab1-solution.html)
 
+**1. Jan 30, 2019**
+
+* Fundamentals of Data Visualizations (chapter 5): [Directory of visualizations](https://serialmentor.com/dataviz/directory-of-visualizations.html)
+* Lab worksheet:
+    - [R Markdown](/classes/SDS348/2019_spring/labs/lab2.Rmd)
+    - [HTML](/classes/SDS348/2019_spring/labs/lab2.html)
 
 ## Projects
 
