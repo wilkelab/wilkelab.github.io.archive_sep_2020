@@ -59,6 +59,10 @@ All homeworks are due by 4:00pm on the day they are due. Homeworks need to be su
 * Homework 2 (due Feb 5, 2019)
 	- [R Markdown](/classes/SDS348/2019_spring/homeworks/HW2.Rmd)
 	- [HTML](/classes/SDS348/2019_spring/homeworks/HW2.html)
+	
+* Homework 3 (due Feb 12, 2019)
+	- [R Markdown](/classes/SDS348/2019_spring/homeworks/HW3.Rmd)
+	- [HTML](/classes/SDS348/2019_spring/homeworks/HW3.html)
 
 ## Labs
 

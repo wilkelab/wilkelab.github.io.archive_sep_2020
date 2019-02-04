@@ -1,0 +1,73 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=3, fig.width=4)
+library(ggplot2)
+theme_set(theme_bw(base_size=12))
+library(dplyr)
+```
+## Homework 3
+*Enter your name and EID here*
+
+**This homework is due on Feb. 12, 2019 at 4:00pm. Please submit as a PDF file on Canvas.**
+
+In this homework, you are asked to evaluate two data sets and determine if they are tidy data sets. *We are referring to a very specific definition of "tidy", so if this term is unfamiliar to you, please review the lecture materials*.
+
+**Problem 1: (2 pts)** The dataset `USAccDeaths` built into R contains accidental deaths in the US 1973-1978. You can run `?USAccDeaths` to learn more about this data set.
+```{r}
+USAccDeaths
+```
+Explain the variables present in this dataset. Using the variables in this dataset and the formal definition of tidy data that we learned in lecture, is this data set tidy? Explain why or why not.
+
+*Your answer goes here. 2-3 sentences only.*
+
+The dataset `CO2` built into R contains data on the carbon dioxide uptake in grass plants. You can run `?CO2` to learn more about this data set.
+```{r}
+head(CO2)
+```
+Explain the variables present in this dataset. Using the variables in this dataset and the formal definition of tidy data that we learned in lecture, is this data set tidy? Explain why or why not.
+
+*Your answer goes here. 2-3 sentences only.*
+
+**Problem 2: (5 pts)** Listed below are three examples of code that violate the rules in [section 2](https://style.tidyverse.org/syntax.html) of the tidyverse style guide. Which tidyverse style guidelines are violated in these example?
+```{r, eval = FALSE}
+iris %>% filter(Species=="versicolor") %>% head()
+```
+
+*Your answer goes here. 1-2 sentences only.*
+
+```{r, eval = FALSE}
+iris[50,]
+```
+
+*Your answer goes here. 1-2 sentences only.*
+
+```{r, eval = FALSE}
+boxplot (len ~ dose, data = ToothGrowth, range = 1, width = c(2, 2, 2), varwidth = TRUE, notch = FALSE, outline = TRUE)
+```
+
+*Your answer goes here. 1-2 sentences only.*
+
+**Problem 3: (3 pts)** The `NCbirths` contains 1409 birth records from North Carolina in 2001. The column contents are as follows:
+
++ **Plural**: 1=single birth, 2=twins, 3=triplets.
++ **Sex**: Sex of the baby 1=male 2=female.
++ **MomAge**: Mother's age (in years).
++ **Weeks**: Completed weeks of gestation.
++ **Gained**: Weight gained during pregnancy (in pounds).
++ **BirthWeightGm**: Birth weight in grams.
++ **Low**: Indicator for low birth weight, 1=2500 grams or less, 0=otherwise.
++ **Premie**: Indicator for premature birth, 1=36 weeks or sooner, 0=otherwise.
++ **Marital**: Marital status: 0=married or 1=not married.
+
+```{r}
+NCbirths <- read.csv("http://wilkelab.org/classes/SDS348/data_sets/NCbirths.csv")
+head(NCbirths)
+```
+
+For single births, what are the **max** completed weeks of gestation and the **mean** birth weight for babies that were born prematurely and for babies that were carried to term? State your answer in a sentence. **HINT:** Use the function `max()` to determine the maximum completed weeks of gestation.
+
+```{r}
+# R code goes here
+```
+
+*Your answer goes here. 2-3 sentences only.*
