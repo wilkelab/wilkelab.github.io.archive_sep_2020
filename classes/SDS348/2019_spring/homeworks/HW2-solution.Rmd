@@ -1,7 +1,7 @@
 ```{r global_options, include=FALSE}
 library(knitr)
 library(ggplot2)
-opts_chunk$set(fig.align="center", fig.height=4, fig.width=6)
+opts_chunk$set(fig.align = "center", fig.height = 4, fig.width = 6)
 ```
 ## Homework 2
 *Enter your name and EID here*
