@@ -1,0 +1,60 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=3, fig.width=4)
+library(ggplot2)
+theme_set(theme_bw(base_size=12))
+library(dplyr)
+```
+##Lab Worksheet 3
+
+**Problem 1:** *The data set `AirPassengers` built into R lists total numbers of international airline passengers, 1949 to 1960.*
+```{r}
+AirPassengers
+```
+*Explain the variables present in this dataset. Using the variables in this dataset and the formal definition of tidy data that we learned in lecture, is this data set tidy? Explain why or why not.*
+
+The dataset contains the variables for number of passengers, years, and months. The dataset is not tidy. There should be one column for year, one for month, and one for the number of passengers. Instead, the data are arranged such that years vary along the rows and months along the columns.
+
+**Problem 2:** *The function `data()` lists all datasets that are available in R by default. Look through the list and identify a dataset that is tidy. Explain the variables present in this dataset and why the dataset is tidy.*
+
+I pick the dataset `OrchardSprays`:
+```{r}
+head(OrchardSprays)
+```
+This dataset contains variables for row of the design (`rowpos`), column of the design (`colpos`), treatment level (`treatment`), and response (`decrease`). It contains one row per observation, one column of measured values (`decrease`), and three columns describing the conditions under which that value was measured (`rowpos`, `colpos`, `treatment`).
+
+**Problem 3:** *In an in-class exercise, we made the following plot of the Sitka dataset:*
+
+```{r}
+# download the sitka data set:
+sitka <- read.csv("http://wilkelab.org/classes/SDS348/data_sets/sitka.csv")
+head(sitka)
+ggplot(sitka, aes(x=Time, y=size, group=tree)) + geom_line() + facet_wrap(~treat)
+```
+
+*Now modify the plot so that the line for each tree is colored according to the maximum size of the tree.* 
+```{r}
+sitka_grouped <- group_by(sitka, tree)
+sitka_new <- mutate(sitka_grouped, max_size = max(size))
+ggplot(sitka_new, aes(x=Time, y=size, group=tree, color=max_size)) + geom_line() + facet_wrap(~treat)
+```
+
+### If that was easy...
+
+**Problem 4:** *The package nycflights13 contains information about all flights departing from one of the NY City airports in 2013. In particular, the data table `flights` lists on-time departure and arrival information for 336,776 individual flights:*
+```{r}
+library(nycflights13)
+flights
+```
+
+*We would like to collect some information about arrival delays of United Airlines (UA) flights. Do the following: pick all UA departures with non-zero arrival delay and calculate the mean arrival delay for each of the corresponding flight numbers. Which flight had the longest mean arrival delay and how long was that delay?*
+
+```{r}
+flights_filtered <- filter(flights, carrier == "UA" & arr_delay != 0)
+flights_grouped <- group_by(flights_filtered, flight)
+flights_summary <- summarize(flights_grouped, mean_delay = mean(arr_delay))
+filter(flights_summary, mean_delay == max(mean_delay))
+```
+
+Flight 1510 had the longest delay, with an average arrival delay of 283 minutes.
+

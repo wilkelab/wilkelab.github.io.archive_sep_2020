@@ -1,0 +1,49 @@
+```{r global_options, include=FALSE}
+library(knitr)
+library(ggplot2)
+opts_chunk$set(fig.align="center", fig.height=4, fig.width=6)
+```
+## Homework 2
+*Enter your name and EID here*
+
+**This homework is due on Feb. 5, 2019 at 4:00pm. Please submit as a PDF file on Canvas.**
+
+This homework uses the `Cars93` data set. Each observation in the data frame contains information on passenger cars from 1993. This is a big data frame with 27 columns. We are interested in the information on manufacturer (`Manufacturer`), car model (`Model`), type of car (`Type`), car company origin (`Origin`), midrange price in $1000 (`Price`), city MPG (miles per US gallon, `MPG.city`), and fuel tank capacity in gallons (`Fuel.tank.capacity`). 
+
+```{r}
+Cars93 <- read.csv("http://wilkelab.org/classes/SDS348/data_sets/Cars93.csv")
+head(Cars93)
+```
+
+**Problem 1: (2 pts)** Use ggplot2 to create a scatter plot of the city MPG versus the car prices. In the same plot, fit a curve to these data using `geom_smooth()`. In one sentence, what broad trend do you observe in city MPG for different car prices? **HINT**: Plot city MPG on the y-axis and price on the x-axis.
+
+```{r}
+ggplot(Cars93, aes(x = Price, y = MPG.city)) + geom_point() + geom_smooth()
+```
+
+City MPG decreases with price until $20,000, and it levels off after.
+
+**Problem 2: (4 pts)** Next, create a bar plot that shows the origin of cars, stacked on top of each other, for each car type. Make two observations about the data from this plot. State each in 1 sentence.
+
+```{r}
+ggplot(Cars93, aes(x = Type, fill = Origin)) + geom_bar()
+```
+
+Observations:
+
+1. Large cars are only produced by the US companies.
+
+2. For each car type, there are roughly equal amounts of cars of each origin.
+
+3. Most of the cars in this dataset are midsize or small.
+
+**Problem 3: (2 pts)** Plot the distribution of fuel tank capacity, once using `geom_histogram()` and once using `geom_density()`. 
+
+```{r}
+ggplot(Cars93, aes(x = Fuel.tank.capacity)) + geom_histogram()
+ggplot(Cars93, aes(x = Fuel.tank.capacity)) + geom_density()
+```
+
+**Problem 4: (2 pts)** What does the y-axis in your histogram represent? In your density plot, what is the *total* area under the curve? For the total area, please give a single number as your answer. **HINT**: You do not need to do any additional calculations to determine the area under the curve. Use Google to find the answer. 
+
+The y-axis in a histogram represents counts in a given range of x-values (bins). The area under the curve of a density plot always sums to 1.
