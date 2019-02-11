@@ -1,0 +1,68 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align = "center", fig.height = 3, fig.width = 4)
+library(ggplot2)
+theme_set(theme_bw(base_size = 12))
+library(dplyr)
+library(tidyr)
+```
+## Homework 4
+
+*Enter your name and EID here*
+
+**This homework is due on Feb. 19, 2019 at 4:00pm. Please submit as a PDF file on Canvas.**
+
+**Problem 1: (4 pts)** The following two data tables contain information about how many male and female passengers traveling on the Titanic in different classes survived or died. The data-frame `survived` contains information about passengers that survived, and the data-frame `deceased` contains information about passendgers that died. Using the `dplyr` and `tidyr` packages, make these data-frames tidy and then combine them into a single data-frame. Make sure that your final data-frame has a `survival_status` column indicating which data-frame the observations originally came from. HINT: You can use the `bind_rows` function to add rows from one data-frame onto another as long as both data-frames have identical column names.
+
+```{r}
+survived <- read.table(text = "
+class  male female
+1st    57    140
+2nd    14     80
+3rd    75     76
+crew  192     20
+", head = T)
+
+deceased <- read.table(text = "
+class  male female
+1st   118      4
+2nd   154     13
+3rd   387     89
+crew  670      3
+", head = T)
+
+# R code goes here
+```
+
+Using the data-frame you created above, compute the total number of passengers that survived and that did not survive.
+
+```{r}
+# R code goes here
+```
+
+**Problem 2: (3 pts)** The `chickwts` dataset contains information on the weight of chicks after being fed different feed supplements. The different feed supplements are labeled casein, horsebean, linseed, meatmeal, soybean, and sunflower in the `feed` column. I have created a new data-frame (`feed_names`), that contains the abbreviated names of different feed supplements. Using one of the `dplyr` join functions, combine the two data-frames so that there is an additional `feed_abbr` column and all of the original columns and rows in chickwts are retained. Which join function is most appropriate to use and why? 
+
+```{r}
+head(chickwts)
+
+feed_names <- read.table(text = "
+feed feed_abbr
+casein cs
+whey wh
+linseed  ls
+meatmeal mm
+fishmeal fm
+soybean sb
+sunflower sf
+corn co
+wheatbran wb
+", head = T)
+
+# R code goes here
+```
+
+*Your answer goes here. 1-2 sentences only.*
+
+**Problem 3: (3 pts)** Recall the `flights` dataset from lab 3 worksheet. Ask a **conceptual** question about the `flights` dataset. Your question should not repeat the questions from class materials. Describe in 1-2 sentences how you would answer this question with an analysis or a graph.
+
+*Your answer goes here. 2-3 sentences only.*
