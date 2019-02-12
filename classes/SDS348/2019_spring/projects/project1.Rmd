@@ -1,0 +1,90 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align = "center", fig.height = 5, fig.width = 6)
+library(tidyverse)
+theme_set(theme_bw(base_size = 12))
+library(ggthemes)
+```
+
+## Project 1
+*Enter your name and EID here*
+
+### Instructions
+
+This knitted R Markdown document (as a PDF) *and* the raw R Markdown file (as .Rmd) should both be submitted to Canvas by 4:00pm on **Feb 26th, 2019**. These two documents will be graded jointly, so they must be consistent (as in, don't change the R Markdown file without also updating the knitted document!).
+
+All results presented *must* have corresponding code. **Any answers/results given without the corresponding R code that generated the result will be considered absent.** To be clear: if you do calculations by hand instead of using R and then report the results from the calculations, **you will not receive credit** for those calculations. All code reported in your final project document should work properly. Please do not include any extraneous code or code which produces error messages. (Code which produces warnings is acceptable, as long as you understand what the warnings mean.)
+
+For this project, you will be using the dataset `flavors_of_cacao`. This dataset contains expert ratings of over 1,700 individual chocolate bars, along with information on their regional origin, percentage of cocoa, the variety of chocolate bean used, and where the beans were grown.
+```{r}
+flavors_of_cacao <- 
+  read_csv("https://raw.githubusercontent.com/clauswilke/dviz.supp/master/data-raw/cacao/cacao_clean.csv") %>%
+  extract(cocoa_percent, "cocoa_percent", regex = "([^%]+)%", convert = TRUE)
+head(flavors_of_cacao)
+```
+
+The column contents are as follows:
+
++ **company**: name of the company manufacturing the bar.
++ **bean_origin_detailed**: the specific geo-region of origin of the bar.
++ **REF**: a value linked to when the review was entered in the database. Higher = more recent.
++ **review_date**: date of publication of review.
++ **cocoa_percent**: cocoa percentage (darkness) of the chocolate bar being reviewed.
++ **location**: manufacturer base country.
++ **rating**: expert rating for the bar.
++ **bean_type**: the variety (breed) of bean used, if provided.
++ **bean_origin**: the broad geo-region of origin of the bean.
+
+### Problems
+
+**Problem 1: (10 pts)**
+Write R code that counts the number of reviews for each company location and calculates a minimum and a maximum ratings of each company location. Filter your output for countries with more than 20 reviews, and order your output from highest to lowest number of reviews. 
+```{r}
+# R code goes here
+```
+
+**Problem 2: (20 pts)** 
+Use the data-frame you generated in Problem 1 to find a location with the highest maximum rating and a location with the lowest minimum ratings. Perform a statistical test to determine whether there is a significant difference in ratings between these two locations.
+
+```{r}
+# R code goes here
+```
+
+*Your answer goes here. 1-2 sentences only.*
+
+**Problem 3: (40 pts)**
+Make one plot that visualizes the relationship between the number of reviews and maximum and minimum ratings. Use the data-frame you created in Problem 1. Your code should be well-commented and describe the various steps you take to create this figure. **HINT**: Convert your dataset to a tidy format before you plot.
+
+**a. (30 points)**
+
+```{r}
+# R code goes here
+```
+
+**b. (10 points)** Discuss the information (overarching trends, patterns, etc.) your plot reveals. Be sure to include in your discussion the similarities/differences among minimum and maximum ratings. Your discussion should also explain the results of the t-test in Problem 2 in the context of this plot. Be sure to also include a clear, logical justification for why you selected the particular geom(s) used to represent this data. Please limit your full response to a maximum of 10 sentences.
+
+*Your answer goes here.*
+
+**Problem 4: (30 pts)**
+Think of **one** (and only one!) conceptual question to ask about the data set `flavors_of_cacao`. Clearly state your question in the space provided below. Use the ggplot2 library to create a plot that can help you find an answer to the question. For the plot, provide a clear explanation as to why this type of plot (e.g. boxplot, barplot, histogram, etc.) is best for providing the information you are asking about. Answer your question by interpreting your plot and identifying any trends it reveals, or does not reveal, as the case may be. Please limit the discussion to 4-6 sentences.
+
+*To receive full credit for Problem 4, we look for the following for a question:*
+
+- *A clear, coherent question about the data. (Questions end in a question mark!)*
+- *The question should be conceptual and **should not** prompt a specific analysis or plot*.
+- *A plot that helps answer your proposed question, with a justification for why you chose to make the type of plot that you made.*
+- *An interpretation of your plot and a response to your proposed question.*
+- *Statistical analysis **is not** necessary. Just interpret your plot.*
+
+**You cannot reuse the questions about the `flavors_of_cacao` data set from the previous problems.**
+
+
+**Question**
+
+*State your question here.*
+
+```{r}
+# R code for a plot creation, analysis goes here
+```
+
+*Answer to your question goes here.*

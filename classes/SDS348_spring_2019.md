@@ -141,8 +141,18 @@ All homeworks are due by 4:00pm on the day they are due. Homeworks need to be su
     - [HTML](/classes/SDS348/2019_spring/labs/lab3.html)
     - [Solutions, HTML](/classes/SDS348/2019_spring/labs/lab3-solution.html)
 
+**4. Feb 13, 2019**
+
+* Slides: [lab4.pdf](/classes/SDS348/2019_spring/labs/lab4-slides.pdf)
+* Animations for different joins in dplyr: [Tidy animated verbs](https://github.com/gadenbuie/tidyexplain)
+* Lab worksheet:
+    - [R Markdown](/classes/SDS348/2019_spring/labs/lab4.Rmd)
+    - [HTML](/classes/SDS348/2019_spring/labs/lab4.html)
+
 ## Projects
 
 All projects are due by 4:00pm on the day they are due. Projects need to be submitted on Canvas, both in pdf format and as source code (plus data where needed).
 
-
+- Project 1:
+    - [HTML](/classes/SDS348/2019_spring/projects/project1.html)
+    - [R Markdown](/classes/SDS348/2019_spring/projects/project1.Rmd) (due Feb 26, 2019)
