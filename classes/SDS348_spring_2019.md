@@ -91,7 +91,7 @@ Syllabus: [SDS348_syllabus_spring2019.pdf](/classes/SDS348/SDS348_syllabus_sprin
     - [HTML](/classes/SDS348/2019_spring/worksheets/class8.html)
     - [Solutions](/classes/SDS348/2019_spring/worksheets/class8_solutions.html)
 
-**9. Feb 13, 2019 – Principal Components Analysis (PCA)**    
+**9. Feb 19, 2019 – Principal Components Analysis (PCA)**    
 
 * Slides: [class9.pdf](/classes/SDS348/2019_spring/slides/class9.pdf)
 * Intro to PCA: [http://setosa.io/ev/principal-component-analysis/](http://setosa.io/ev/principal-component-analysis/)
