@@ -89,6 +89,7 @@ Syllabus: [SDS348_syllabus_spring2019.pdf](/classes/SDS348/SDS348_syllabus_sprin
 * In-class worksheet:
     - [R Markdown](/classes/SDS348/2019_spring/worksheets/class8.Rmd)
     - [HTML](/classes/SDS348/2019_spring/worksheets/class8.html)
+    - [Solutions](/classes/SDS348/2019_spring/worksheets/class8_solutions.html)
 
 **9. Feb 13, 2019 – Principal Components Analysis (PCA)**    
 
@@ -119,6 +120,8 @@ All homeworks are due by 4:00pm on the day they are due. Homeworks need to be su
 * Homework 3 (due Feb 12, 2019)
 	- [R Markdown](/classes/SDS348/2019_spring/homeworks/HW3.Rmd)
 	- [HTML](/classes/SDS348/2019_spring/homeworks/HW3.html)
+	- [Solutions, R Markdown](/classes/SDS348/2019_spring/homeworks/HW3-solution.Rmd)
+	- [Solutions, HTML](/classes/SDS348/2019_spring/homeworks/HW3-solution.html)
 
 * Homework 4 (due Feb 19, 2019)
 	- [R Markdown](/classes/SDS348/2019_spring/homeworks/HW4.Rmd)
@@ -157,6 +160,13 @@ All homeworks are due by 4:00pm on the day they are due. Homeworks need to be su
 * Lab worksheet:
     - [R Markdown](/classes/SDS348/2019_spring/labs/lab4.Rmd)
     - [HTML](/classes/SDS348/2019_spring/labs/lab4.html)
+    - [Solutions, HTML](/classes/SDS348/2019_spring/labs/lab4-solution.html)
+
+**5. Feb 20, 2019**
+
+* Lab worksheet:
+    - [R Markdown](/classes/SDS348/2019_spring/labs/lab5.Rmd)
+    - [HTML](/classes/SDS348/2019_spring/labs/lab5.html)
 
 ## Projects
 
