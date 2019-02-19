@@ -90,6 +90,15 @@ Syllabus: [SDS348_syllabus_spring2019.pdf](/classes/SDS348/SDS348_syllabus_sprin
     - [R Markdown](/classes/SDS348/2019_spring/worksheets/class8.Rmd)
     - [HTML](/classes/SDS348/2019_spring/worksheets/class8.html)
 
+**9. Feb 13, 2019 – Principal Components Analysis (PCA)**    
+
+* Slides: [class9.pdf](/classes/SDS348/2019_spring/slides/class9.pdf)
+* Intro to PCA: [http://setosa.io/ev/principal-component-analysis/](http://setosa.io/ev/principal-component-analysis/)
+* PCA tutorial with mathematical background: [http://arxiv.org/pdf/1404.1100.pdf](http://arxiv.org/pdf/1404.1100.pdf)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2019_spring/worksheets/class9.Rmd)
+    - [HTML](/classes/SDS348/2019_spring/worksheets/class9.html)
+
 
 ## Homeworks
 
