@@ -112,7 +112,12 @@ Take the `biopsy` data set, cluster it into 2, 3, or 4 clusters, and display the
 biopsy <- read.csv("http://wilkelab.org/classes/SDS348/data_sets/biopsy.csv")
 head(biopsy)
 # do PCA on biopsy data set
-biopsy %>% select(-outcome) %>% scale() %>% prcomp() -> pca
+biopsy %>% 
+  select(-outcome) %>% 
+  scale() %>% 
+  prcomp() -> 
+  pca
+
 ```
 
 Hint: To create the plot, you will have to make a new data frame out of the pca coordinates (`pca$x`) and the clustering results (`km$cluster`).

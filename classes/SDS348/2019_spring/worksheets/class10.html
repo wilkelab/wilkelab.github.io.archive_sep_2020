@@ -450,7 +450,11 @@ head(biopsy)</code></pre>
 ## 5    benign
 ## 6 malignant</code></pre>
 <pre class="r"><code># do PCA on biopsy data set
-biopsy %&gt;% select(-outcome) %&gt;% scale() %&gt;% prcomp() -&gt; pca</code></pre>
+biopsy %&gt;% 
+  select(-outcome) %&gt;% 
+  scale() %&gt;% 
+  prcomp() -&gt; 
+  pca</code></pre>
 <p>Hint: To create the plot, you will have to make a new data frame out of the pca coordinates (<code>pca$x</code>) and the clustering results (<code>km$cluster</code>).</p>
 <pre class="r"><code># your R code goes here</code></pre>
 </div>
