@@ -101,7 +101,7 @@ Syllabus: [SDS348_syllabus_spring2019.pdf](/classes/SDS348/SDS348_syllabus_sprin
     - [HTML](/classes/SDS348/2019_spring/worksheets/class9.html)
     - [Solutions](/classes/SDS348/2019_spring/worksheets/class9_solutions.html)
 
-**10. Feb 21, 2018 – k-means clustering**
+**10. Feb 21, 2019 – k-means clustering**
 
 * Slides: [class10.pdf](/classes/SDS348/2019_spring/slides/class10.pdf)
 * Interactive k-means demonstration: [http://www.naftaliharris.com/blog/visualizing-k-means-clustering/](http://www.naftaliharris.com/blog/visualizing-k-means-clustering/)
@@ -112,6 +112,13 @@ Syllabus: [SDS348_syllabus_spring2019.pdf](/classes/SDS348/SDS348_syllabus_sprin
     - [HTML](/classes/SDS348/2019_spring/worksheets/class10.html)
     - [Solutions](/classes/SDS348/2019_spring/worksheets/class10_solutions.html)
 
+**11. Feb 26, 2019 – Binary prediction/logistic regression**
+
+* Slides: [class11.pdf](/classes/SDS348/2019_spring/slides/class11.pdf)
+* Wikipedia page on logistic regression: [http://en.wikipedia.org/wiki/Logistic_regression](http://en.wikipedia.org/wiki/Logistic_regression)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2019_spring/worksheets/class11.Rmd)
+    - [HTML](/classes/SDS348/2019_spring/worksheets/class11.html)
 
 ## Homeworks
 
