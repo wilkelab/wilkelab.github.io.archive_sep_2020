@@ -1,0 +1,115 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=3, fig.width=4)
+```
+## In-class worksheet 12
+**Feb 28, 2019**
+
+In this worksheet, we will use the libraries tidyverse, ggthemes, and plotROC:
+```{r message=FALSE}
+library(tidyverse)
+theme_set(theme_bw(base_size = 12)) # set default ggplot2 theme
+library(ggthemes) # for scale_color_colorblind()
+library(plotROC) # for geom_roc() and calc_auc()
+```
+
+# 1. True positive and true negative rates
+
+We continue working with the two species virginica and versicolor from the `iris` data set. As was done in the previous class, the following code makes a reduced data set, fits a logistic regression model (this time using only `Sepal.Length` as predictor), and then combines the predicted probabilities and the known species identity into one data frame called `pred_data`:
+```{r}
+# make a reduced iris data set that only contains virginica and versicolor species
+iris_small <- 
+  iris %>%
+  filter(Species %in% c("virginica", "versicolor")) %>%
+  mutate(Species = factor(Species)) # this makes R forget about the 3rd species
+
+# fit logistic regression model
+glm_out <- glm(
+  Species ~ Sepal.Length,
+  data = iris_small,
+  family = binomial
+)
+
+# combine fitted values and Species identity
+pred_data <- data.frame(
+  probability = glm_out$fitted.values,
+  Species = iris_small$Species
+)
+```
+
+Pick a probability cutoff at which you would decide that a specimen belongs to virginica rather than versicolor. Calculate how many virginicas you call correctly and how many incorrectly given that cutoff. Hint: use the functions `filter()` and `tally()`.
+```{r}
+# your R code goes here.
+```
+
+Now do the same calculation for versicolor.
+```{r}
+# your R code goes here.
+```
+
+If we define a call of virginica as a positive and a call of versicolor as a negative, what are the true positive rate (sensitivity, true positives divided by all possible positives, i.e., by the total count of virginicas) and the true negative rate (specificity, true negatives divided by all possible negatives, i.e., by the total count of versicolors) in your analysis?
+```{r}
+# your R code goes here.
+```
+
+Recalculate the true-positive rate and the true-negative rate for a different probability cutoff.
+```{r}
+# your R code goes here.
+```
+
+# 2. ROC curves
+
+Next we will calculate and plot ROC curves. We do this with the function `geom_roc()` from the package plotROC. Here is an example:
+
+```{r}
+# fit the model
+glm_out <- glm(
+  Species ~ Sepal.Width,
+  data = iris_small,
+  family = binomial
+)
+
+# make data frame of the linear predictor and the known truth
+df1 <- data.frame(
+  predictor = predict(glm_out, iris_small), # linear predictor
+  known_truth = iris_small$Species,  # the known truth, i.e., true species assignment
+  model = "Sepal.Width"              # an arbitrary name to distinguish different curves
+)
+
+# now plot using geom_roc()
+
+# the aesthetic names are not the most intuitive
+# `d` (disease) holds the known truth
+# `m` (marker) holds the predictor values 
+ggplot(df1, aes(d = known_truth, m = predictor, color = model)) + 
+  geom_roc(n.cuts = 0) +
+  coord_fixed() + 
+  scale_color_colorblind()
+```
+
+Now make a few additional models and then make a plot showing the various ROC curves in one graph. (Hint: combine the data frames from the different models into one using the function `rbind()`.)
+
+```{r fig.width=5}
+# your R code goes here.
+```
+
+
+# 3. If this was easy
+
+Calculate the area under the ROC curve (AUC) for your first model, using the function `calc_auc()` from the plotROC package. This function needs to be called on a plot containing a `geom_roc()` statement.
+
+```{r}
+# your R code goes here.
+```
+
+Now calculate the AUC values for all the ROC curves you generated earlier, using the function `calc_auc()` exactly once.
+
+```{r}
+# your R code goes here.
+```
+
+Unfortunately, because of how ggplot works, we have now lost the model names and instead just have group numbers. We can recover the connection between model name and group number by calling `unique(df_combined$model)` to obtain the model names and `order(unique(df_combined$model))` to obtain the corresponding group numbers. Use this information to generate a modified table that contains model name and AUC and is sorted in descending order of AUC.
+
+```{r}
+# your R code goes here.
+```
