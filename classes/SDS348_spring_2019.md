@@ -37,8 +37,8 @@ Syllabus: [SDS348_syllabus_spring2019.pdf](/classes/SDS348/SDS348_syllabus_sprin
 **3. Jan 29, 2019 – Data visualization with ggplot2**
 
 * Slides: [class3.pdf](/classes/SDS348/2019_spring/slides/class3.pdf)
-* R for Data Science: [http://r4ds.had.co.nz/](http://r4ds.had.co.nz/)
-* ggplot2 reference manual: [http://ggplot2.tidyverse.org/](http://ggplot2.tidyverse.org/)
+* R for Data Science: [https://r4ds.had.co.nz/](https://r4ds.had.co.nz/)
+* ggplot2 reference manual: [https://ggplot2.tidyverse.org/](https://ggplot2.tidyverse.org/)
 * ggplot2 video tutorial: [http://varianceexplained.org/RData/lessons/lesson2/segment1/](http://varianceexplained.org/RData/lessons/lesson2/segment1/)
 * In-class worksheet:
     - [R Markdown](/classes/SDS348/2019_spring/worksheets/class3.Rmd)
@@ -48,7 +48,7 @@ Syllabus: [SDS348_syllabus_spring2019.pdf](/classes/SDS348/SDS348_syllabus_sprin
 **4. Jan 31, 2019 – Data visualization with ggplot2**
 
 * Slides: [class4.pdf](/classes/SDS348/2019_spring/slides/class4.pdf)
-* Visualization book: [Fundamentals of Data Visualization](http://serialmentor.com/dataviz/)
+* Visualization book: [Fundamentals of Data Visualization](https://serialmentor.com/dataviz/)
 * Tidyverse style guide: [style.tidyverse.org](https://style.tidyverse.org/syntax.html)
 * In-class worksheet:
     - [R Markdown](/classes/SDS348/2019_spring/worksheets/class4.Rmd)
@@ -95,7 +95,7 @@ Syllabus: [SDS348_syllabus_spring2019.pdf](/classes/SDS348/SDS348_syllabus_sprin
 
 * Slides: [class9.pdf](/classes/SDS348/2019_spring/slides/class9.pdf)
 * Intro to PCA: [http://setosa.io/ev/principal-component-analysis/](http://setosa.io/ev/principal-component-analysis/)
-* PCA tutorial with mathematical background: [http://arxiv.org/pdf/1404.1100.pdf](http://arxiv.org/pdf/1404.1100.pdf)
+* PCA tutorial with mathematical background: [https://arxiv.org/pdf/1404.1100.pdf](https://arxiv.org/pdf/1404.1100.pdf)
 * In-class worksheet:
     - [R Markdown](/classes/SDS348/2019_spring/worksheets/class9.Rmd)
     - [HTML](/classes/SDS348/2019_spring/worksheets/class9.html)
@@ -104,8 +104,8 @@ Syllabus: [SDS348_syllabus_spring2019.pdf](/classes/SDS348/SDS348_syllabus_sprin
 **10. Feb 21, 2019 – k-means clustering**
 
 * Slides: [class10.pdf](/classes/SDS348/2019_spring/slides/class10.pdf)
-* Interactive k-means demonstration: [http://www.naftaliharris.com/blog/visualizing-k-means-clustering/](http://www.naftaliharris.com/blog/visualizing-k-means-clustering/)
-* Stackoverflow post on [choosing the right number of clusters](http://stackoverflow.com/a/15376462/4975218)
+* Interactive k-means demonstration: [https://www.naftaliharris.com/blog/visualizing-k-means-clustering/](https://www.naftaliharris.com/blog/visualizing-k-means-clustering/)
+* Stackoverflow post on [choosing the right number of clusters](https://stackoverflow.com/a/15376462/4975218)
 * Medium article: [The 5 clustering algorithms data scientists need to know.](https://towardsdatascience.com/the-5-clustering-algorithms-data-scientists-need-to-know-a36d136ef68)
 * In-class worksheet:
     - [R Markdown](/classes/SDS348/2019_spring/worksheets/class10.Rmd)
@@ -115,11 +115,23 @@ Syllabus: [SDS348_syllabus_spring2019.pdf](/classes/SDS348/SDS348_syllabus_sprin
 **11. Feb 26, 2019 – Binary prediction/logistic regression**
 
 * Slides: [class11.pdf](/classes/SDS348/2019_spring/slides/class11.pdf)
-* Wikipedia page on logistic regression: [http://en.wikipedia.org/wiki/Logistic_regression](http://en.wikipedia.org/wiki/Logistic_regression)
+* Wikipedia page on logistic regression: [https://en.wikipedia.org/wiki/Logistic_regression](https://en.wikipedia.org/wiki/Logistic_regression)
 * In-class worksheet:
     - [R Markdown](/classes/SDS348/2019_spring/worksheets/class11.Rmd)
     - [HTML](/classes/SDS348/2019_spring/worksheets/class11.html)
     - [Solutions](/classes/SDS348/2019_spring/worksheets/class11_solutions.html)
+
+**12. Feb 28, 2019 – Sensitivity/Specificity, ROC curves**
+
+* Slides: [class12.pdf](/classes/SDS348/2019_spring/slides/class12.pdf)
+* Wikipedia page on sensitivity and specificity: [https://en.wikipedia.org/wiki/Sensitivity_and_specificity](https://en.wikipedia.org/wiki/Sensitivity_and_specificity)
+* Wikipedia page on ROC curves: [https://en.wikipedia.org/wiki/Receiver_operating_characteristic](https://en.wikipedia.org/wiki/Receiver_operating_characteristic)
+* ROC animations: [https://github.com/dariyasydykova/open_projects/tree/master/ROC_animation](https://github.com/dariyasydykova/open_projects/tree/master/ROC_animation)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2019_spring/worksheets/class12.Rmd)
+    - [HTML](/classes/SDS348/2019_spring/worksheets/class12.html)
+    - [Solutions](/classes/SDS348/2019_spring/worksheets/class12_solutions.html)
+
 
 ## Homeworks
 
