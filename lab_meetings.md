@@ -18,7 +18,7 @@ Lab meetings are held Fridays from 10:30 am -- 12:00 pm in MBB 3.204.
 | 2/15/19 || Lee || Cory ||
 | 2/22/19 || Matt || Alex ||
 | 3/1/19 || Dariya || Matt ||
-| 3/8/19 || Mackenzie || Dariya ||
+| 3/8/19 || Mackenzie || Cory ||
 | 3/15/19 || Undergraduate || Mackenzie ||
 | 3/22/19 || --- || --- || No lab meeting.
 | 3/29/19 || --- || --- || No lab meeting.
