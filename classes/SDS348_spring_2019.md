@@ -139,6 +139,7 @@ Syllabus: [SDS348_syllabus_spring2019.pdf](/classes/SDS348/SDS348_syllabus_sprin
 * In-class worksheet:
     - [R Markdown](/classes/SDS348/2019_spring/worksheets/class13.Rmd)
     - [HTML](/classes/SDS348/2019_spring/worksheets/class13.html)
+    - [Solutions](/classes/SDS348/2019_spring/worksheets/class13_solutions.html)
 
 
 ## Homeworks
