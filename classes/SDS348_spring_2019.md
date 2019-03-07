@@ -145,7 +145,7 @@ Syllabus: [SDS348_syllabus_spring2019.pdf](/classes/SDS348/SDS348_syllabus_sprin
 
 * Slides: [class14.pdf](/classes/SDS348/2019_spring/slides/class14.pdf)
 * Alternative 1 to educcomp: [Google Collaboratorium](https://colab.research.google.com)
-* Alternative 2 to educcomp:  [Anaconda](https://www.continuum.io/downloads)
+* Alternative 2 to educcomp:  [Anaconda](https://www.continuum.io/distribution)
 * Official Python3 tutorial: [https://docs.python.org/3/tutorial/](https://docs.python.org/3/tutorial/)
 * Chapter 3 of the official tutorial: [An informal introduction](https://docs.python.org/3/tutorial/introduction.html)
 * In-class worksheet:
