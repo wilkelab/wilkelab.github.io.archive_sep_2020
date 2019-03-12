@@ -161,6 +161,7 @@ Syllabus: [SDS348_syllabus_spring2019.pdf](/classes/SDS348/SDS348_syllabus_sprin
 * In-class worksheet:
     - [Jupyter Notebook](/classes/SDS348/2019_spring/worksheets/class15.ipynb)
     - [HTML](/classes/SDS348/2019_spring/worksheets/class15.html)
+    - [Solutions](/classes/SDS348/2019_spring/worksheets/class15_solutions.html)
 
 
 ## Homeworks
