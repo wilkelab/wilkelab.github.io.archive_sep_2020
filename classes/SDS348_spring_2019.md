@@ -132,7 +132,7 @@ Syllabus: [SDS348_syllabus_spring2019.pdf](/classes/SDS348/SDS348_syllabus_sprin
     - [HTML](/classes/SDS348/2019_spring/worksheets/class12.html)
     - [Solutions](/classes/SDS348/2019_spring/worksheets/class12_solutions.html)
 
-**13. March 5, 2019 – Training and test data sets, cross-validation**
+**13. Mar 5, 2019 – Training and test data sets, cross-validation**
 
 * Slides: [class13.pdf](/classes/SDS348/2019_spring/slides/class13.pdf)
 * Wikipedia page on cross-validation: [here](https://en.wikipedia.org/wiki/Cross-validation_%28statistics%29)
@@ -140,6 +140,27 @@ Syllabus: [SDS348_syllabus_spring2019.pdf](/classes/SDS348/SDS348_syllabus_sprin
     - [R Markdown](/classes/SDS348/2019_spring/worksheets/class13.Rmd)
     - [HTML](/classes/SDS348/2019_spring/worksheets/class13.html)
     - [Solutions](/classes/SDS348/2019_spring/worksheets/class13_solutions.html)
+
+**14. Mar 7, 2019 – Introduction to python, basic data structures**
+
+* Slides: [class14.pdf](/classes/SDS348/2019_spring/slides/class14.pdf)
+* Alternative 1 to educcomp: [Google Collaboratorium](https://colab.research.google.com)
+* Alternative 2 to educcomp:  [Anaconda](https://www.continuum.io/distribution)
+* Official Python3 tutorial: [https://docs.python.org/3/tutorial/](https://docs.python.org/3/tutorial/)
+* Chapter 3 of the official tutorial: [An informal introduction](https://docs.python.org/3/tutorial/introduction.html)
+* In-class worksheet:
+    - [Jupyter Notebook](/classes/SDS348/2019_spring/worksheets/class14.ipynb)
+    - [HTML](/classes/SDS348/2019_spring/worksheets/class14.html)
+    - [Solutions](/classes/SDS348/2019_spring/worksheets/class14_solutions.html)
+
+**15. Mar 11, 2019 – Control flow in python**
+
+* Slides: [class15.pdf](/classes/SDS348/2019_spring/slides/class15.pdf)
+* Chapter 4.1–4.5 of the official tutorial: [More Control Flow Tools](https://docs.python.org/3/tutorial/controlflow.html)
+* Chapter 5.5 of the official tutorial: [Dictionaries](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)
+* In-class worksheet:
+    - [Jupyter Notebook](/classes/SDS348/2019_spring/worksheets/class15.ipynb)
+    - [HTML](/classes/SDS348/2019_spring/worksheets/class15.html)
 
 
 ## Homeworks
