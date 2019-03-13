@@ -265,7 +265,7 @@ All homeworks are due by 4:00pm on the day they are due. Homeworks need to be su
 **8. Mar 13, 2019**
 
 * Lab worksheet:
-    - [R Markdown](/classes/SDS348/2019_spring/labs/lab8.ipynb)
+    - [Jupyter Notebook](/classes/SDS348/2019_spring/labs/lab8.ipynb)
     - [HTML](/classes/SDS348/2019_spring/labs/lab8.html)
 
 
