@@ -289,6 +289,6 @@ All projects are due by 4:00pm on the day they are due. Projects need to be subm
 	- [Solutions, R Markdown](/classes/SDS348/2019_spring/projects/project1-solution.Rmd)
 	- [Solutions, HTML](/classes/SDS348/2019_spring/projects/project1-solution.html)
 
-- Project 1 (due Apr 2, 2019):
+- Project 2 (due Apr 2, 2019):
     - [HTML](/classes/SDS348/2019_spring/projects/project2.html)
     - [R Markdown](/classes/SDS348/2019_spring/projects/project2.Rmd)
