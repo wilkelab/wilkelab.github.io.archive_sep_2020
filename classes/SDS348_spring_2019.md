@@ -153,7 +153,7 @@ Syllabus: [SDS348_syllabus_spring2019.pdf](/classes/SDS348/SDS348_syllabus_sprin
     - [HTML](/classes/SDS348/2019_spring/worksheets/class14.html)
     - [Solutions](/classes/SDS348/2019_spring/worksheets/class14_solutions.html)
 
-**15. Mar 11, 2019 – Control flow in python**
+**15. Mar 12, 2019 – Control flow in python**
 
 * Slides: [class15.pdf](/classes/SDS348/2019_spring/slides/class15.pdf)
 * Chapter 4.1–4.5 of the official tutorial: [More Control Flow Tools](https://docs.python.org/3/tutorial/controlflow.html)
@@ -162,6 +162,14 @@ Syllabus: [SDS348_syllabus_spring2019.pdf](/classes/SDS348/SDS348_syllabus_sprin
     - [Jupyter Notebook](/classes/SDS348/2019_spring/worksheets/class15.ipynb)
     - [HTML](/classes/SDS348/2019_spring/worksheets/class15.html)
     - [Solutions](/classes/SDS348/2019_spring/worksheets/class15_solutions.html)
+
+**16. Mar 14, 2019 – Functions in python**
+
+* Slides: [class16.pdf](/classes/SDS348/2019_spring/slides/class16.pdf)
+* Chapter 4.6, 4.7 of the official tutorial: [Defining functions](https://docs.python.org/3/tutorial/controlflow.html#defining-functions)
+* In-class worksheet:
+    - [Jupyter Notebook](/classes/SDS348/2019_spring/worksheets/class16.ipynb)
+    - [HTML](/classes/SDS348/2019_spring/worksheets/class16.html)
 
 
 ## Homeworks
