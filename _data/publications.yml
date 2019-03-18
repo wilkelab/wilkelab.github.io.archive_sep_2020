@@ -1,11 +1,11 @@
 - author: A. Zeileis, J. C. Fisher, K. Hornik, R. Ihaka, C. D. McWhite, P. Murrell, R. Stauffer, C. O. Wilke
   year: preprint
-  title: "colorspace: A Toolbox for Manipulating and Assessing Colors and Palettes"
+  title: "colorspace: A Toolbox for Manipulating and Assessing Colors and Palettes."
   ref: "arXiv:1903.06490"
 
 - author: A. J. Hockenberry, C. O. Wilke
   year: preprint
-  title: Evolutionary couplings detect side-chain interactions
+  title: Evolutionary couplings detect side-chain interactions.
   ref: "bioRxiv 447409"
   doi: 10.1101/447409
 
