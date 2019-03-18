@@ -209,6 +209,8 @@ All homeworks are due by 4:00pm on the day they are due. Homeworks need to be su
 * Homework 6 (due Mar 12, 2019)
 	- [R Markdown](/classes/SDS348/2019_spring/homeworks/HW6.Rmd)
 	- [HTML](/classes/SDS348/2019_spring/homeworks/HW6.html)
+	- [Solutions, R Markdown](/classes/SDS348/2019_spring/homeworks/HW6-solution.Rmd)
+	- [Solutions, HTML](/classes/SDS348/2019_spring/homeworks/HW6-solution.html)
 	
 * Homework 7 (due Mar 26, 2019)
 	- [Jupyter Notebook](/classes/SDS348/2019_spring/homeworks/HW7.ipynb)
@@ -275,7 +277,7 @@ All homeworks are due by 4:00pm on the day they are due. Homeworks need to be su
 * Lab worksheet:
     - [Jupyter Notebook](/classes/SDS348/2019_spring/labs/lab8.ipynb)
     - [HTML](/classes/SDS348/2019_spring/labs/lab8.html)
-
+    - [Solutions, HTML](/classes/SDS348/2019_spring/labs/lab8-solution.html)
 
 ## Projects
 
@@ -286,3 +288,7 @@ All projects are due by 4:00pm on the day they are due. Projects need to be subm
     - [R Markdown](/classes/SDS348/2019_spring/projects/project1.Rmd)
 	- [Solutions, R Markdown](/classes/SDS348/2019_spring/projects/project1-solution.Rmd)
 	- [Solutions, HTML](/classes/SDS348/2019_spring/projects/project1-solution.html)
+
+- Project 2 (due Apr 2, 2019):
+    - [HTML](/classes/SDS348/2019_spring/projects/project2.html)
+    - [R Markdown](/classes/SDS348/2019_spring/projects/project2.Rmd)

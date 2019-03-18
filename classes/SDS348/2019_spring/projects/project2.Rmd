@@ -1,0 +1,98 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align = "center", fig.height = 4, fig.width = 5)
+library(tidyverse)
+theme_set(theme_bw(base_size = 12))
+library(plotROC)
+library(ggthemes)
+```
+## Project 2 
+*Enter your name and EID here*
+
+### Instructions
+
+Please submit both this completed Rmarkdown document and its knitted HTML, converted to PDF, on Canvas **no later than 4:00 pm on April 2nd, 2019**. These two documents will be graded jointly, so they must be consistent (as in, don't change the Rmarkdown file without also updating the knitted HTML!).
+
+All results presented **must** have corresponding code. Any answers/results given without the corresponding R code that generated the result will be considered absent. All code reported in your final project document should work properly. Please bear in mind that **you will lose points** for the following:
+
++ an R-code chunk with no comments
++ results without corresponding R code
++ extraneous code which does not contribute to the question
++ printing out the entire data table
+
+For this project, you will work with a dataset was extracted from the 1974 *Motor Trend* US magazine. It contains information about fuel consumption and 10 aspects of automobile design and performance for 32 automobiles. 
+
+```{r}
+head(mtcars)
+```
+
+The column contents are as follows:
+
++ **mpg**: miles per US gallon.
++ **cyl**: number of cylinders.
++ **disp**: displacement (cubic inches).
++ **hp**: gross horsepower.
++ **drat**: rear axle ratio.
++ **wt**: weight (1000 lbs).
++ **qsec**: 1/4 mile time.
++ **vs**: engine (0 = V-shaped, 1 = straight).
++ **am**: transmission (0 = automatic, 1 = manual).
++ **gear**: number of forward gears.
++ **carb**: number of carbuerators.
+
+### Problems
+
+**Problem 1: (20 points)** 
+Make a logistic regression model that predicts transmission type (`am`) from gross horsepower (`hp`) and miles per galon (`mpg`). Make another logistic regression model that also predicts transmission type from gross horsepower alone. Show the summary (using `summary`) of each model below. Make a plot with two ROC curves, and explain which model better predicts transmission type. For this analysis, use the entire dataset as training data, and do not evaluate the mode on test data.
+
+```{r}
+# R code goes here
+```
+
+*Your answer goes here.*
+
+**Problem 2: (40 points)**
+We have now divided the `mtcars` dataset into a training and a test data set (`train_data` and `test_data`): 
+ 
+```{r}
+train_fraction <- 0.5 # fraction of data for training purposes
+set.seed(123) # set the seed to make the partition reproductible
+train_size <- floor(train_fraction * nrow(mtcars)) # number of observations in training set
+train_indices <- sample(1:nrow(mtcars), size = train_size)
+
+train_data <- mtcars[train_indices, ] # get training data
+test_data <- mtcars[-train_indices, ] # get test data
+```
+
+Fit a logistic regression model to predict transimission type on the training data set. Use the predictors `hp` and `mpg` to predict transimission type (`am`). Your code should be appropriately commented with high-level statements about the code's function. Using your model, predict the outcome on the test data set, and plot and discuss your results.
+
+You should have two final plots: a plot with two ROC curves, one for the training and one for the test data set, and a density plot that shows how the linear predictor separates the two transmission types in the test data. Your discussion should, at least, cover the differences and similarities in model performance on the training vs. test data (including AUC) as well as a clear interpretation of each plot. Please limit your discussion to a maximum of 10 sentences.
+
+```{r}
+# R code goes here
+```
+
+*Your answer goes here.*
+
+**Problem 3: (40 points)**
+Think of one **conceptual** question to ask about the dataset `mtcars`. You are welcome to use either the training, test, or full data set for this part. For your question, perform an exploratory statistical analysis (PCA, clustering, logistic regression, linear regression, ANOVA, etc.) with two corresponding figures. The analysis and plots *must* be multivariate (include at least three of the data columns). Discuss your findings, in particular how your analysis' results reveal (or don't reveal) an answer to your proposed question. Please limit your discussion to a maximum of 15 sentences.
+
+*To receive full credit for Part II, you will have to do the following:*
+
+  - *Come up with one clear, conceptual question about the data, as explained above.*
+  - *The analysis must be multivariate (involve more than two columns of the data set at once).*
+  - *None of your work must repeat any part of the analysis of Part 1.*
+  - *For each plot, provide a justification for why you chose to make the type of plot that you made.*
+  - *Use different primary geoms for the two different plots.*
+  - *Provide an interpretation of your results and a response to your question.*
+
+**Conceptual question:** *Please write your question here.*
+
+*Please briefly describe your planned analysis and plots before doing them (5 sentences max).*
+
+```{r}
+# R code for your question goes here
+```
+
+*Discussion and answer of your question goes here (15 sentences max).*
+
