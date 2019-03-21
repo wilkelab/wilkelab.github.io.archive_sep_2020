@@ -4,7 +4,7 @@ title:  Lab Meeting Schedule
 permalink: /more/lab_meetings.html
 ---
 
-Lab meetings are held Fridays from 10:30 am -- 12:00 pm in MBB 3.204.
+Lab meetings are held Fridays from 11 AM -- 12:30 PM in MBB 3.204.
 <br><br>
 
 ### Spring 2019
@@ -19,10 +19,18 @@ Lab meetings are held Fridays from 10:30 am -- 12:00 pm in MBB 3.204.
 | 2/22/19 || Matt || Alex ||
 | 3/1/19 || Dariya || Matt ||
 | 3/8/19 || Mackenzie || Cory ||
-| 3/15/19 || Undergraduate || Mackenzie ||
-| 3/22/19 || --- || --- || No lab meeting.
+| 3/15/19 || Cory || Mackenzie ||
+| 3/22/19 || Dariya || Cory ||
 | 3/29/19 || --- || --- || No lab meeting.
-| 4/5/19 || --- || Undergraduate ||
+| 4/5/19 || Oren || Dariya ||
+| 4/12/19 || --- || --- || No lab meeting.
+| 4/19/19 || Adam || Oren ||
+| 4/26/19 || Alex || Adam ||
+| 5/3/19 || Claus || Alex ||
+| 5/10/19 || Cory || Claus ||
+| 5/17/19 || Mackenzie || Cory ||
+| 5/24/19 || Matt || Mackenzie ||
+| 5/31/19 || Dariya || Matt ||
 |------+---+--------------------+---+----------------------+---+-------|
 {:.widetable}
 
