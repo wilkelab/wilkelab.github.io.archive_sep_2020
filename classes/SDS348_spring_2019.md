@@ -190,6 +190,17 @@ Syllabus: [SDS348_syllabus_spring2019.pdf](/classes/SDS348/SDS348_syllabus_sprin
     - [Jupyter Notebook](/classes/SDS348/2019_spring/worksheets/class18.ipynb)
     - [HTML](/classes/SDS348/2019_spring/worksheets/class18.html)
 
+**19. Apr 2, 2019 – Introduction to Biopython**
+
+* Slides: [class19.pdf](/classes/SDS348/2019_spring/slides/class19.pdf)
+* Biopython website: [https://biopython.org](https://biopython.org)
+* Official Biopython tutorial: [https://biopython.org/DIST/docs/tutorial/Tutorial.html](https://biopython.org/DIST/docs/tutorial/Tutorial.html)
+* NCBI Entrez/PubMed website: [https://www.ncbi.nlm.nih.gov/](https://www.ncbi.nlm.nih.gov/)
+* In-class worksheet:
+    - [Jupyter Notebook](/classes/SDS348/2019_spring/worksheets/class19.ipynb)
+    - [HTML](/classes/SDS348/2019_spring/worksheets/class19.html)
+
+
 ## Homeworks
 
 All homeworks are due by 4:00pm on the day they are due. Homeworks need to be submitted as pdf files on Canvas.
