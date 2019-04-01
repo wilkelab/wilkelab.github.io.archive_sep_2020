@@ -189,6 +189,7 @@ Syllabus: [SDS348_syllabus_spring2019.pdf](/classes/SDS348/SDS348_syllabus_sprin
 * In-class worksheet:
     - [Jupyter Notebook](/classes/SDS348/2019_spring/worksheets/class18.ipynb)
     - [HTML](/classes/SDS348/2019_spring/worksheets/class18.html)
+    - [Solutions](/classes/SDS348/2019_spring/worksheets/class18_solutions.html)
 
 **19. Apr 2, 2019 – Introduction to Biopython**
 
@@ -244,7 +245,13 @@ All homeworks are due by 4:00pm on the day they are due. Homeworks need to be su
 * Homework 7 (due Mar 26, 2019)
 	- [Jupyter Notebook](/classes/SDS348/2019_spring/homeworks/HW7.ipynb)
 	- [HTML](/classes/SDS348/2019_spring/homeworks/HW7.html) 
+	- [Solutions, Jupyter Notebook](/classes/SDS348/2019_spring/homeworks/HW7-solution.ipynb)
+	- [Solutions, HTML](/classes/SDS348/2019_spring/homeworks/HW7-solution.html)
 
+* Homework 8 (due Apr 9, 2019)
+	- [Jupyter Notebook](/classes/SDS348/2019_spring/homeworks/HW8.ipynb)
+	- [HTML](/classes/SDS348/2019_spring/homeworks/HW8.html) 
+	
 ## Labs
 
 **1. Jan 23, 2019**
@@ -313,6 +320,7 @@ All homeworks are due by 4:00pm on the day they are due. Homeworks need to be su
 * Lab worksheet:
     - [Jupyter Notebook](/classes/SDS348/2019_spring/labs/lab9.ipynb)
     - [HTML](/classes/SDS348/2019_spring/labs/lab9.html)
+    - [Solutions, HTML](/classes/SDS348/2019_spring/labs/lab9-solution.html)
 
 ## Projects
 
