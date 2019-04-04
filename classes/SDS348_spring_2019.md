@@ -200,6 +200,17 @@ Syllabus: [SDS348_syllabus_spring2019.pdf](/classes/SDS348/SDS348_syllabus_sprin
 * In-class worksheet:
     - [Jupyter Notebook](/classes/SDS348/2019_spring/worksheets/class19.ipynb)
     - [HTML](/classes/SDS348/2019_spring/worksheets/class19.html)
+    - [Solutions](/classes/SDS348/2019_spring/worksheets/class19_solutions.html)
+
+
+**20. Apr 4, 2019 – Working with gene features and genomes**
+
+* Slides: [class20.pdf](/classes/SDS348/2019_spring/slides/class20.pdf)
+* Biopython Tutorial on sequence features: [SeqFeature objects](https://biopython.org/DIST/docs/tutorial/Tutorial.html#htoc38)
+* Official feature documentation from the International Nucleotide Sequence Database Collaboration: [Feature Key Reference](http://www.insdc.org/files/feature_table.html#7.2)
+* In-class worksheet:
+    - [Jupyter Notebook](/classes/SDS348/2019_spring/worksheets/class20.ipynb)
+    - [HTML](/classes/SDS348/2019_spring/worksheets/class20.html)
 
 
 ## Homeworks
