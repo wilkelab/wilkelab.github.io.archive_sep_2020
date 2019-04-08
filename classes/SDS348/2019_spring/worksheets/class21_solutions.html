@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>class20_solutions</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>class21_solutions</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -11775,8 +11775,17 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Class-20:-Working-with-gene-features-and-genomes">Class 20: Working with gene features and genomes<a class="anchor-link" href="#Class-20:-Working-with-gene-features-and-genomes">&#182;</a></h1><p><strong>Apr 4, 2019</strong></p>
-<h2 id="Features-in-genbank-files">Features in genbank files<a class="anchor-link" href="#Features-in-genbank-files">&#182;</a></h2><p>Many important pieces of information in genbank files are stored in features. These features can be queried through Biopython by working with the <code>features</code> list of a genbank record object (<code>record.features</code>). More information about  sequence features is available <a href="http://biopython.org/DIST/docs/tutorial/Tutorial.html#htoc38">here.</a> We will usually iterate over all features in the list with a <code>for</code> loop:</p>
+<h1 id="Class-21:-Searching-the-NCBI-databases">Class 21: Searching the NCBI databases<a class="anchor-link" href="#Class-21:-Searching-the-NCBI-databases">&#182;</a></h1><p><strong>April 9, 2019</strong></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Different-ways-of-processing-Entrez-results">Different ways of processing Entrez results<a class="anchor-link" href="#Different-ways-of-processing-Entrez-results">&#182;</a></h2><p>Every time we download data through the Entrez module, we can interact with the results in different ways. First, we can just use the handle we obtain as an ordinary file handle and just store or process the raw data provided by Entrez. Second, we can process the data with an appropriate, existing Biopython module. The latter will generally be preferable if an appropriate module exists. However, the various choices that are available may make things confusing.</p>
+<p>As an example, we will again download the genbank record with the ID "KT220438", containing an influenza HA protein. We will consider four different ways of looking at the data. First, we use <code>retmode="text"</code> in <code>Entrez.efetch()</code> and just download the raw data and print it. We get a regular genbank file as output:</p>
 
 </div>
 </div>
@@ -11789,17 +11798,12 @@ div#notebook {
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">Bio</span> <span class="k">import</span> <span class="n">Entrez</span><span class="p">,</span> <span class="n">SeqIO</span>
 <span class="n">Entrez</span><span class="o">.</span><span class="n">email</span> <span class="o">=</span> <span class="s2">&quot;wilke@austin.utexas.edu&quot;</span> <span class="c1"># put your email here</span>
 
-<span class="c1"># Download sequence record for genbank id KT220438</span>
-<span class="c1"># This is HA gene of Influenza A virus, strain A/NewJersey/NHRC_93219/2015(H3N2)</span>
+<span class="c1"># Download sequence record for genbank id KT220438 (HA from influenza A)</span>
+<span class="c1"># Using text mode</span>
 <span class="n">handle</span> <span class="o">=</span> <span class="n">Entrez</span><span class="o">.</span><span class="n">efetch</span><span class="p">(</span><span class="n">db</span><span class="o">=</span><span class="s2">&quot;nucleotide&quot;</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;KT220438&quot;</span><span class="p">,</span> <span class="n">rettype</span><span class="o">=</span><span class="s2">&quot;gb&quot;</span><span class="p">,</span> <span class="n">retmode</span><span class="o">=</span><span class="s2">&quot;text&quot;</span><span class="p">)</span>
-<span class="n">record</span> <span class="o">=</span> <span class="n">SeqIO</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">handle</span><span class="p">,</span> <span class="s2">&quot;genbank&quot;</span><span class="p">)</span>
+<span class="n">record</span> <span class="o">=</span> <span class="n">handle</span><span class="o">.</span><span class="n">read</span><span class="p">()</span> <span class="c1"># read file directly</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">record</span><span class="p">)</span>
 <span class="n">handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-
-<span class="c1"># Loop over all features in the record to see</span>
-<span class="c1"># what features there are and what information</span>
-<span class="c1"># they contain</span>
-<span class="k">for</span> <span class="n">feature</span> <span class="ow">in</span> <span class="n">record</span><span class="o">.</span><span class="n">features</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">feature</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -11816,47 +11820,101 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>type: source
-location: [0:1701](+)
-qualifiers:
-    Key: collection_date, Value: [&#39;17-Jan-2015&#39;]
-    Key: country, Value: [&#39;USA: New Jersey&#39;]
-    Key: db_xref, Value: [&#39;taxon:1682360&#39;]
-    Key: host, Value: [&#39;Homo sapiens&#39;]
-    Key: isolation_source, Value: [&#39;nasopharyngeal swab&#39;]
-    Key: lab_host, Value: [&#39;MDCK&#39;]
-    Key: mol_type, Value: [&#39;viral cRNA&#39;]
-    Key: organism, Value: [&#39;Influenza A virus (A/New Jersey/NHRC_93219/2015(H3N2))&#39;]
-    Key: segment, Value: [&#39;4&#39;]
-    Key: serotype, Value: [&#39;H3N2&#39;]
-    Key: strain, Value: [&#39;A/NewJersey/NHRC_93219/2015&#39;]
+<pre>LOCUS       KT220438                1701 bp    cRNA    linear   VRL 20-JUL-2015
+DEFINITION  Influenza A virus (A/NewJersey/NHRC_93219/2015(H3N2)) segment 4
+            hemagglutinin (HA) gene, complete cds.
+ACCESSION   KT220438
+VERSION     KT220438.1
+KEYWORDS    .
+SOURCE      Influenza A virus (A/New Jersey/NHRC_93219/2015(H3N2))
+  ORGANISM  Influenza A virus (A/New Jersey/NHRC_93219/2015(H3N2))
+            Viruses; ssRNA viruses; ssRNA negative-strand viruses;
+            Orthomyxoviridae; Influenzavirus A.
+REFERENCE   1  (bases 1 to 1701)
+  AUTHORS   Sitz,C.R., Thammavong,H.L., Balansay-Ames,M.S., Hawksworth,A.W.,
+            Myers,C.A. and Brice,G.T.
+  TITLE     GEISS Influenza Surveillance Response Program
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 1701)
+  AUTHORS   Sitz,C.R., Thammavong,H.L., Balansay-Ames,M.S., Hawksworth,A.W.,
+            Myers,C.A. and Brice,G.T.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (29-JUN-2015) Operational Infectious Diseases, Naval
+            Health Research Center, 140 Sylvester Rd., San Diego, CA 92106, USA
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1701
+                     /organism=&#34;Influenza A virus (A/New
+                     Jersey/NHRC_93219/2015(H3N2))&#34;
+                     /mol_type=&#34;viral cRNA&#34;
+                     /strain=&#34;A/NewJersey/NHRC_93219/2015&#34;
+                     /serotype=&#34;H3N2&#34;
+                     /isolation_source=&#34;nasopharyngeal swab&#34;
+                     /host=&#34;Homo sapiens&#34;
+                     /db_xref=&#34;taxon:1682360&#34;
+                     /segment=&#34;4&#34;
+                     /lab_host=&#34;MDCK&#34;
+                     /country=&#34;USA: New Jersey&#34;
+                     /collection_date=&#34;17-Jan-2015&#34;
+     gene            1..1701
+                     /gene=&#34;HA&#34;
+     CDS             1..1701
+                     /gene=&#34;HA&#34;
+                     /function=&#34;receptor binding and fusion protein&#34;
+                     /codon_start=1
+                     /product=&#34;hemagglutinin&#34;
+                     /protein_id=&#34;AKQ43545.1&#34;
+                     /translation=&#34;MKTIIALSYILCLVFAQKIPGNDNSTATLCLGHHAVPNGTIVKT
+                     ITNDRIEVTNATELVQNSSIGEICDSPHQILDGENCTLIDALLGDPQCDGFQNKKWDL
+                     FVERSKAYSNCYPYDVPDYASLRSLVASSGTLEFNNESFNWTGVTQNGTSSACIRRSS
+                     SSFFSRLNWLTHLNYTYPALNVTMPNNEQFDKLYIWGVHHPGTDKDQIFLYAQSSGRI
+                     TVSTKRSQQAVIPNIGSRPRIRDIPSRISIYWTIVKPGDILLINSTGNLIAPRGYFKI
+                     RSGKSSIMRSDAPIGKCKSECITPNGSIPNDKPFQNVNRITYGACPRYVKHSTLKLAT
+                     GMRNVPEKQTRGIFGAIAGFIENGWEGMVDGWYGFRHQNSEGRGQAADLKSTQAAIDQ
+                     INGKLNRLIGKTNEKFHQIEKEFSEVEGRIQDLEKYVEDTKIDLWSYNAELLVALENQ
+                     HTXDLTDSEMNKLFEKTKKQLRENAEDMGNGCFKIYHKCDNACIGSIRNGTYDHNVYR
+                     DEALNNRFQIKGVELKSGYKDWILWISXAISCFLLCVALLGFIMWACQKGNIRCNICI
+                     &#34;
+     mat_peptide     49..1035
+                     /gene=&#34;HA&#34;
+                     /product=&#34;HA1&#34;
+     mat_peptide     1036..1698
+                     /gene=&#34;HA&#34;
+                     /product=&#34;HA2&#34;
+ORIGIN      
+        1 atgaagacta tcattgcttt gagctacatt ctatgtctgg ttttcgctca aaaaattcct
+       61 ggaaatgaca atagcacggc aacgctgtgc cttgggcacc atgcagtacc aaacggaacg
+      121 atagtgaaaa caatcacaaa tgaccgaatt gaagttacta atgctactga gctggttcag
+      181 aattcctcaa taggtgaaat atgcgacagt cctcatcaga tccttgatgg agaaaactgc
+      241 acactaatag atgctctatt gggagaccct cagtgtgatg gctttcaaaa taagaaatgg
+      301 gacctttttg ttgaacgaag caaagcctac agcaactgct acccttatga tgtgccggat
+      361 tatgcctccc ttaggtcact agttgcctca tccggcacac tggagtttaa caatgaaagc
+      421 ttcaattgga ctggagtcac tcaaaacgga acaagttctg cttgcataag gagatctagt
+      481 agtagtttct ttagtagatt aaattggttg acccacttaa actacacata cccagcattg
+      541 aacgtgacta tgccaaacaa tgaacaattt gacaaattgt acatttgggg ggttcaccac
+      601 ccgggtacgg acaaggacca aatcttcctg tatgctcaat catcaggaag aatcacagta
+      661 tctaccaaaa gaagccaaca agctgtaatc ccaaatatcg gatctagacc cagaataagg
+      721 gatatcccta gcagaataag catctattgg acaatagtaa aaccgggaga catacttttg
+      781 attaacagca cagggaatct aattgctcct aggggttact tcaaaatacg aagtgggaaa
+      841 agctcaataa tgagatcaga tgcacccatt ggcaaatgca agtctgaatg catcactcca
+      901 aatggaagca ttcccaatga caaaccattc caaaatgtaa acaggatcac atacggggcc
+      961 tgtcccagat atgttaagca tagcactcta aaattggcaa caggaatgcg aaatgtacca
+     1021 gagaaacaaa ctagaggcat atttggcgca atagcgggtt tcatagaaaa tggttgggag
+     1081 ggaatggtgg atggttggta cggtttcagg catcaaaatt ctgagggaag aggacaagca
+     1141 gcagatctca aaagcactca agcagcaatc gatcaaatca atgggaagct gaatcgattg
+     1201 atcgggaaaa ccaacgagaa attccatcag attgaaaaag aattctcaga agtagaagga
+     1261 agaattcagg accttgagaa atatgttgag gacactaaaa tagatctctg gtcatacaac
+     1321 gcggagcttc ttgttgccct ggagaaccaa catacarttg atctaactga ctcagaaatg
+     1381 aacaaactgt ttgaaaaaac aaagaagcaa ctgagggaaa atgctgagga tatgggaaat
+     1441 ggttgtttca aaatatacca caaatgtgac aatgcctgca taggatcaat aagaaatgga
+     1501 acttatgacc acaatgtgta cagggatgaa gcattaaaca accggttcca gatcaaggga
+     1561 gttgagctga agtcagggta caaagattgg atcctatgga tttcctytgc catatcatgt
+     1621 tttttgcttt gtgttgcttt gttggggttc atcatgtggg cctgccaaaa gggcaacatt
+     1681 aggtgcaaca tttgcatttg a
+//
 
-type: gene
-location: [0:1701](+)
-qualifiers:
-    Key: gene, Value: [&#39;HA&#39;]
-
-type: CDS
-location: [0:1701](+)
-qualifiers:
-    Key: codon_start, Value: [&#39;1&#39;]
-    Key: function, Value: [&#39;receptor binding and fusion protein&#39;]
-    Key: gene, Value: [&#39;HA&#39;]
-    Key: product, Value: [&#39;hemagglutinin&#39;]
-    Key: protein_id, Value: [&#39;AKQ43545.1&#39;]
-    Key: translation, Value: [&#39;MKTIIALSYILCLVFAQKIPGNDNSTATLCLGHHAVPNGTIVKTITNDRIEVTNATELVQNSSIGEICDSPHQILDGENCTLIDALLGDPQCDGFQNKKWDLFVERSKAYSNCYPYDVPDYASLRSLVASSGTLEFNNESFNWTGVTQNGTSSACIRRSSSSFFSRLNWLTHLNYTYPALNVTMPNNEQFDKLYIWGVHHPGTDKDQIFLYAQSSGRITVSTKRSQQAVIPNIGSRPRIRDIPSRISIYWTIVKPGDILLINSTGNLIAPRGYFKIRSGKSSIMRSDAPIGKCKSECITPNGSIPNDKPFQNVNRITYGACPRYVKHSTLKLATGMRNVPEKQTRGIFGAIAGFIENGWEGMVDGWYGFRHQNSEGRGQAADLKSTQAAIDQINGKLNRLIGKTNEKFHQIEKEFSEVEGRIQDLEKYVEDTKIDLWSYNAELLVALENQHTXDLTDSEMNKLFEKTKKQLRENAEDMGNGCFKIYHKCDNACIGSIRNGTYDHNVYRDEALNNRFQIKGVELKSGYKDWILWISXAISCFLLCVALLGFIMWACQKGNIRCNICI&#39;]
-
-type: mat_peptide
-location: [48:1035](+)
-qualifiers:
-    Key: gene, Value: [&#39;HA&#39;]
-    Key: product, Value: [&#39;HA1&#39;]
-
-type: mat_peptide
-location: [1035:1698](+)
-qualifiers:
-    Key: gene, Value: [&#39;HA&#39;]
-    Key: product, Value: [&#39;HA2&#39;]
 
 </pre>
 </div>
@@ -11870,7 +11928,7 @@ qualifiers:
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The type of each feature is stored in <code>feature.type</code>, and its location on the DNA sequence is stored in <code>feature.location</code>. The additional feature information is stored in a dictionary called <code>qualifiers</code>. We can query this dictionary to retrieve individual elements of a feature. Note that these elements are all stored as lists, and so we generally have to add <code>[0]</code> at the end of our query to retrieve the first element in the list.</p>
+<p>We can also, as we have done before, process this file using the <code>SeqIO</code> module:</p>
 
 </div>
 </div>
@@ -11880,12 +11938,12 @@ qualifiers:
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">feature</span> <span class="ow">in</span> <span class="n">record</span><span class="o">.</span><span class="n">features</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">feature</span><span class="o">.</span><span class="n">type</span> <span class="o">==</span> <span class="s2">&quot;CDS&quot;</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Coding sequence found at position:&quot;</span><span class="p">,</span> <span class="n">feature</span><span class="o">.</span><span class="n">location</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Gene product:&quot;</span><span class="p">,</span> <span class="n">feature</span><span class="o">.</span><span class="n">qualifiers</span><span class="p">[</span><span class="s2">&quot;product&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Protein ID:&quot;</span><span class="p">,</span> <span class="n">feature</span><span class="o">.</span><span class="n">qualifiers</span><span class="p">[</span><span class="s2">&quot;protein_id&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Protein sequence:&quot;</span><span class="p">,</span> <span class="n">feature</span><span class="o">.</span><span class="n">qualifiers</span><span class="p">[</span><span class="s2">&quot;translation&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Download sequence record for genbank id KT220438 (HA from influenza A)</span>
+<span class="c1"># Using text mode</span>
+<span class="n">handle</span> <span class="o">=</span> <span class="n">Entrez</span><span class="o">.</span><span class="n">efetch</span><span class="p">(</span><span class="n">db</span><span class="o">=</span><span class="s2">&quot;nucleotide&quot;</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;KT220438&quot;</span><span class="p">,</span> <span class="n">rettype</span><span class="o">=</span><span class="s2">&quot;gb&quot;</span><span class="p">,</span> <span class="n">retmode</span><span class="o">=</span><span class="s2">&quot;text&quot;</span><span class="p">)</span>
+<span class="n">record</span> <span class="o">=</span> <span class="n">SeqIO</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">handle</span><span class="p">,</span> <span class="s2">&quot;genbank&quot;</span><span class="p">)</span> <span class="c1"># parse with SeqIO</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">record</span><span class="p">)</span>
+<span class="n">handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
 
 </div>
@@ -11902,10 +11960,23 @@ qualifiers:
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Coding sequence found at position: [0:1701](+)
-Gene product: hemagglutinin
-Protein ID: AKQ43545.1
-Protein sequence: MKTIIALSYILCLVFAQKIPGNDNSTATLCLGHHAVPNGTIVKTITNDRIEVTNATELVQNSSIGEICDSPHQILDGENCTLIDALLGDPQCDGFQNKKWDLFVERSKAYSNCYPYDVPDYASLRSLVASSGTLEFNNESFNWTGVTQNGTSSACIRRSSSSFFSRLNWLTHLNYTYPALNVTMPNNEQFDKLYIWGVHHPGTDKDQIFLYAQSSGRITVSTKRSQQAVIPNIGSRPRIRDIPSRISIYWTIVKPGDILLINSTGNLIAPRGYFKIRSGKSSIMRSDAPIGKCKSECITPNGSIPNDKPFQNVNRITYGACPRYVKHSTLKLATGMRNVPEKQTRGIFGAIAGFIENGWEGMVDGWYGFRHQNSEGRGQAADLKSTQAAIDQINGKLNRLIGKTNEKFHQIEKEFSEVEGRIQDLEKYVEDTKIDLWSYNAELLVALENQHTXDLTDSEMNKLFEKTKKQLRENAEDMGNGCFKIYHKCDNACIGSIRNGTYDHNVYRDEALNNRFQIKGVELKSGYKDWILWISXAISCFLLCVALLGFIMWACQKGNIRCNICI
+<pre>ID: KT220438.1
+Name: KT220438
+Description: Influenza A virus (A/NewJersey/NHRC_93219/2015(H3N2)) segment 4 hemagglutinin (HA) gene, complete cds
+Number of features: 5
+/structured_comment=OrderedDict([(&#39;Assembly-Data&#39;, OrderedDict([(&#39;Sequencing Technology&#39;, &#39;Sanger dideoxy sequencing&#39;)]))])
+/date=20-JUL-2015
+/molecule_type=cRNA
+/data_file_division=VRL
+/keywords=[&#39;&#39;]
+/accessions=[&#39;KT220438&#39;]
+/topology=linear
+/taxonomy=[&#39;Viruses&#39;, &#39;ssRNA viruses&#39;, &#39;ssRNA negative-strand viruses&#39;, &#39;Orthomyxoviridae&#39;, &#39;Influenzavirus A&#39;]
+/source=Influenza A virus (A/New Jersey/NHRC_93219/2015(H3N2))
+/organism=Influenza A virus (A/New Jersey/NHRC_93219/2015(H3N2))
+/sequence_version=1
+/references=[Reference(title=&#39;GEISS Influenza Surveillance Response Program&#39;, ...), Reference(title=&#39;Direct Submission&#39;, ...)]
+Seq(&#39;ATGAAGACTATCATTGCTTTGAGCTACATTCTATGTCTGGTTTTCGCTCAAAAA...TGA&#39;, IUPACAmbiguousDNA())
 </pre>
 </div>
 </div>
@@ -11918,16 +11989,7 @@ Protein sequence: MKTIIALSYILCLVFAQKIPGNDNSTATLCLGHHAVPNGTIVKTITNDRIEVTNATELVQNS
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Problems">Problems<a class="anchor-link" href="#Problems">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Problem 1:</strong></p>
-<p>When we are working with larger genbank files (e.g. entire genomes), we generally first download them and store them as a file on our local drive. Then we work with those local files. To practice this workflow, write code that downloads the complete genome of bacteriophage T7 and stores it in a file called <code>T7.gb</code>. The accession number for that genome is NC_001604. Make sure you can find the file you have created on your harddrive. Also verify that the file contains the same genome you can see on the NCBI website.</p>
+<p>In addition to text mode, we can also download the data in XML mode. XML is a structured data format that allows for easy machine-processing of complex data files. If we just print the raw data, though, it doesn't look appealing:</p>
 
 </div>
 </div>
@@ -11937,20 +11999,258 @@ Protein sequence: MKTIIALSYILCLVFAQKIPGNDNSTATLCLGHHAVPNGTIVKTITNDRIEVTNATELVQNS
 <div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Problem 1</span>
-
-<span class="c1"># Download T7 genome:</span>
-<span class="n">download_handle</span> <span class="o">=</span> <span class="n">Entrez</span><span class="o">.</span><span class="n">efetch</span><span class="p">(</span><span class="n">db</span><span class="o">=</span><span class="s2">&quot;nucleotide&quot;</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;NC_001604&quot;</span><span class="p">,</span> <span class="n">rettype</span><span class="o">=</span><span class="s2">&quot;gb&quot;</span><span class="p">,</span> <span class="n">retmode</span><span class="o">=</span><span class="s2">&quot;text&quot;</span><span class="p">)</span>
-<span class="n">data</span> <span class="o">=</span> <span class="n">download_handle</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-<span class="n">download_handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-
-<span class="c1"># Store data into file &quot;T7.gb&quot;:</span>
-<span class="n">out_handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;T7.gb&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span>
-<span class="n">out_handle</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-<span class="n">out_handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Download sequence record for genbank id KT220438 (HA from influenza A)</span>
+<span class="c1"># Using XML mode</span>
+<span class="n">handle</span> <span class="o">=</span> <span class="n">Entrez</span><span class="o">.</span><span class="n">efetch</span><span class="p">(</span><span class="n">db</span><span class="o">=</span><span class="s2">&quot;nucleotide&quot;</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;KT220438&quot;</span><span class="p">,</span> <span class="n">rettype</span><span class="o">=</span><span class="s2">&quot;gb&quot;</span><span class="p">,</span> <span class="n">retmode</span><span class="o">=</span><span class="s2">&quot;xml&quot;</span><span class="p">)</span>
+<span class="n">record</span> <span class="o">=</span> <span class="n">handle</span><span class="o">.</span><span class="n">read</span><span class="p">()</span> <span class="c1"># read file directly</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">record</span><span class="p">)</span>
+<span class="n">handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;  ?&gt;
+&lt;!DOCTYPE GBSet PUBLIC &#34;-//NCBI//NCBI GBSeq/EN&#34; &#34;https://www.ncbi.nlm.nih.gov/dtd/NCBI_GBSeq.dtd&#34;&gt;
+&lt;GBSet&gt;
+  &lt;GBSeq&gt;
+
+    &lt;GBSeq_locus&gt;KT220438&lt;/GBSeq_locus&gt;
+    &lt;GBSeq_length&gt;1701&lt;/GBSeq_length&gt;
+    &lt;GBSeq_strandedness&gt;single&lt;/GBSeq_strandedness&gt;
+    &lt;GBSeq_moltype&gt;cRNA&lt;/GBSeq_moltype&gt;
+    &lt;GBSeq_topology&gt;linear&lt;/GBSeq_topology&gt;
+    &lt;GBSeq_division&gt;VRL&lt;/GBSeq_division&gt;
+    &lt;GBSeq_update-date&gt;20-JUL-2015&lt;/GBSeq_update-date&gt;
+    &lt;GBSeq_create-date&gt;20-JUL-2015&lt;/GBSeq_create-date&gt;
+    &lt;GBSeq_definition&gt;Influenza A virus (A/NewJersey/NHRC_93219/2015(H3N2)) segment 4 hemagglutinin (HA) gene, complete cds&lt;/GBSeq_definition&gt;
+    &lt;GBSeq_primary-accession&gt;KT220438&lt;/GBSeq_primary-accession&gt;
+    &lt;GBSeq_accession-version&gt;KT220438.1&lt;/GBSeq_accession-version&gt;
+    &lt;GBSeq_other-seqids&gt;
+      &lt;GBSeqid&gt;gb|KT220438.1|&lt;/GBSeqid&gt;
+      &lt;GBSeqid&gt;gi|887493048&lt;/GBSeqid&gt;
+    &lt;/GBSeq_other-seqids&gt;
+    &lt;GBSeq_source&gt;Influenza A virus (A/New Jersey/NHRC_93219/2015(H3N2))&lt;/GBSeq_source&gt;
+    &lt;GBSeq_organism&gt;Influenza A virus (A/New Jersey/NHRC_93219/2015(H3N2))&lt;/GBSeq_organism&gt;
+    &lt;GBSeq_taxonomy&gt;Viruses; ssRNA viruses; ssRNA negative-strand viruses; Orthomyxoviridae; Influenzavirus A&lt;/GBSeq_taxonomy&gt;
+    &lt;GBSeq_references&gt;
+      &lt;GBReference&gt;
+        &lt;GBReference_reference&gt;1&lt;/GBReference_reference&gt;
+        &lt;GBReference_position&gt;1..1701&lt;/GBReference_position&gt;
+        &lt;GBReference_authors&gt;
+          &lt;GBAuthor&gt;Sitz,C.R.&lt;/GBAuthor&gt;
+          &lt;GBAuthor&gt;Thammavong,H.L.&lt;/GBAuthor&gt;
+          &lt;GBAuthor&gt;Balansay-Ames,M.S.&lt;/GBAuthor&gt;
+          &lt;GBAuthor&gt;Hawksworth,A.W.&lt;/GBAuthor&gt;
+          &lt;GBAuthor&gt;Myers,C.A.&lt;/GBAuthor&gt;
+          &lt;GBAuthor&gt;Brice,G.T.&lt;/GBAuthor&gt;
+        &lt;/GBReference_authors&gt;
+        &lt;GBReference_title&gt;GEISS Influenza Surveillance Response Program&lt;/GBReference_title&gt;
+        &lt;GBReference_journal&gt;Unpublished&lt;/GBReference_journal&gt;
+      &lt;/GBReference&gt;
+      &lt;GBReference&gt;
+        &lt;GBReference_reference&gt;2&lt;/GBReference_reference&gt;
+        &lt;GBReference_position&gt;1..1701&lt;/GBReference_position&gt;
+        &lt;GBReference_authors&gt;
+          &lt;GBAuthor&gt;Sitz,C.R.&lt;/GBAuthor&gt;
+          &lt;GBAuthor&gt;Thammavong,H.L.&lt;/GBAuthor&gt;
+          &lt;GBAuthor&gt;Balansay-Ames,M.S.&lt;/GBAuthor&gt;
+          &lt;GBAuthor&gt;Hawksworth,A.W.&lt;/GBAuthor&gt;
+          &lt;GBAuthor&gt;Myers,C.A.&lt;/GBAuthor&gt;
+          &lt;GBAuthor&gt;Brice,G.T.&lt;/GBAuthor&gt;
+        &lt;/GBReference_authors&gt;
+        &lt;GBReference_title&gt;Direct Submission&lt;/GBReference_title&gt;
+        &lt;GBReference_journal&gt;Submitted (29-JUN-2015) Operational Infectious Diseases, Naval Health Research Center, 140 Sylvester Rd., San Diego, CA 92106, USA&lt;/GBReference_journal&gt;
+      &lt;/GBReference&gt;
+    &lt;/GBSeq_references&gt;
+    &lt;GBSeq_comment&gt;##Assembly-Data-START## ; Sequencing Technology :: Sanger dideoxy sequencing ; ##Assembly-Data-END##&lt;/GBSeq_comment&gt;
+    &lt;GBSeq_feature-table&gt;
+      &lt;GBFeature&gt;
+        &lt;GBFeature_key&gt;source&lt;/GBFeature_key&gt;
+        &lt;GBFeature_location&gt;1..1701&lt;/GBFeature_location&gt;
+        &lt;GBFeature_intervals&gt;
+          &lt;GBInterval&gt;
+            &lt;GBInterval_from&gt;1&lt;/GBInterval_from&gt;
+            &lt;GBInterval_to&gt;1701&lt;/GBInterval_to&gt;
+            &lt;GBInterval_accession&gt;KT220438.1&lt;/GBInterval_accession&gt;
+          &lt;/GBInterval&gt;
+        &lt;/GBFeature_intervals&gt;
+        &lt;GBFeature_quals&gt;
+          &lt;GBQualifier&gt;
+            &lt;GBQualifier_name&gt;organism&lt;/GBQualifier_name&gt;
+            &lt;GBQualifier_value&gt;Influenza A virus (A/New Jersey/NHRC_93219/2015(H3N2))&lt;/GBQualifier_value&gt;
+          &lt;/GBQualifier&gt;
+          &lt;GBQualifier&gt;
+            &lt;GBQualifier_name&gt;mol_type&lt;/GBQualifier_name&gt;
+            &lt;GBQualifier_value&gt;viral cRNA&lt;/GBQualifier_value&gt;
+          &lt;/GBQualifier&gt;
+          &lt;GBQualifier&gt;
+            &lt;GBQualifier_name&gt;strain&lt;/GBQualifier_name&gt;
+            &lt;GBQualifier_value&gt;A/NewJersey/NHRC_93219/2015&lt;/GBQualifier_value&gt;
+          &lt;/GBQualifier&gt;
+          &lt;GBQualifier&gt;
+            &lt;GBQualifier_name&gt;serotype&lt;/GBQualifier_name&gt;
+            &lt;GBQualifier_value&gt;H3N2&lt;/GBQualifier_value&gt;
+          &lt;/GBQualifier&gt;
+          &lt;GBQualifier&gt;
+            &lt;GBQualifier_name&gt;isolation_source&lt;/GBQualifier_name&gt;
+            &lt;GBQualifier_value&gt;nasopharyngeal swab&lt;/GBQualifier_value&gt;
+          &lt;/GBQualifier&gt;
+          &lt;GBQualifier&gt;
+            &lt;GBQualifier_name&gt;host&lt;/GBQualifier_name&gt;
+            &lt;GBQualifier_value&gt;Homo sapiens&lt;/GBQualifier_value&gt;
+          &lt;/GBQualifier&gt;
+          &lt;GBQualifier&gt;
+            &lt;GBQualifier_name&gt;db_xref&lt;/GBQualifier_name&gt;
+            &lt;GBQualifier_value&gt;taxon:1682360&lt;/GBQualifier_value&gt;
+          &lt;/GBQualifier&gt;
+          &lt;GBQualifier&gt;
+            &lt;GBQualifier_name&gt;segment&lt;/GBQualifier_name&gt;
+            &lt;GBQualifier_value&gt;4&lt;/GBQualifier_value&gt;
+          &lt;/GBQualifier&gt;
+          &lt;GBQualifier&gt;
+            &lt;GBQualifier_name&gt;lab_host&lt;/GBQualifier_name&gt;
+            &lt;GBQualifier_value&gt;MDCK&lt;/GBQualifier_value&gt;
+          &lt;/GBQualifier&gt;
+          &lt;GBQualifier&gt;
+            &lt;GBQualifier_name&gt;country&lt;/GBQualifier_name&gt;
+            &lt;GBQualifier_value&gt;USA: New Jersey&lt;/GBQualifier_value&gt;
+          &lt;/GBQualifier&gt;
+          &lt;GBQualifier&gt;
+            &lt;GBQualifier_name&gt;collection_date&lt;/GBQualifier_name&gt;
+            &lt;GBQualifier_value&gt;17-Jan-2015&lt;/GBQualifier_value&gt;
+          &lt;/GBQualifier&gt;
+        &lt;/GBFeature_quals&gt;
+      &lt;/GBFeature&gt;
+      &lt;GBFeature&gt;
+        &lt;GBFeature_key&gt;gene&lt;/GBFeature_key&gt;
+        &lt;GBFeature_location&gt;1..1701&lt;/GBFeature_location&gt;
+        &lt;GBFeature_intervals&gt;
+          &lt;GBInterval&gt;
+            &lt;GBInterval_from&gt;1&lt;/GBInterval_from&gt;
+            &lt;GBInterval_to&gt;1701&lt;/GBInterval_to&gt;
+            &lt;GBInterval_accession&gt;KT220438.1&lt;/GBInterval_accession&gt;
+          &lt;/GBInterval&gt;
+        &lt;/GBFeature_intervals&gt;
+        &lt;GBFeature_quals&gt;
+          &lt;GBQualifier&gt;
+            &lt;GBQualifier_name&gt;gene&lt;/GBQualifier_name&gt;
+            &lt;GBQualifier_value&gt;HA&lt;/GBQualifier_value&gt;
+          &lt;/GBQualifier&gt;
+        &lt;/GBFeature_quals&gt;
+      &lt;/GBFeature&gt;
+      &lt;GBFeature&gt;
+        &lt;GBFeature_key&gt;CDS&lt;/GBFeature_key&gt;
+        &lt;GBFeature_location&gt;1..1701&lt;/GBFeature_location&gt;
+        &lt;GBFeature_intervals&gt;
+          &lt;GBInterval&gt;
+            &lt;GBInterval_from&gt;1&lt;/GBInterval_from&gt;
+            &lt;GBInterval_to&gt;1701&lt;/GBInterval_to&gt;
+            &lt;GBInterval_accession&gt;KT220438.1&lt;/GBInterval_accession&gt;
+          &lt;/GBInterval&gt;
+        &lt;/GBFeature_intervals&gt;
+        &lt;GBFeature_quals&gt;
+          &lt;GBQualifier&gt;
+            &lt;GBQualifier_name&gt;gene&lt;/GBQualifier_name&gt;
+            &lt;GBQualifier_value&gt;HA&lt;/GBQualifier_value&gt;
+          &lt;/GBQualifier&gt;
+          &lt;GBQualifier&gt;
+            &lt;GBQualifier_name&gt;function&lt;/GBQualifier_name&gt;
+            &lt;GBQualifier_value&gt;receptor binding and fusion protein&lt;/GBQualifier_value&gt;
+          &lt;/GBQualifier&gt;
+          &lt;GBQualifier&gt;
+            &lt;GBQualifier_name&gt;codon_start&lt;/GBQualifier_name&gt;
+            &lt;GBQualifier_value&gt;1&lt;/GBQualifier_value&gt;
+          &lt;/GBQualifier&gt;
+          &lt;GBQualifier&gt;
+            &lt;GBQualifier_name&gt;transl_table&lt;/GBQualifier_name&gt;
+            &lt;GBQualifier_value&gt;1&lt;/GBQualifier_value&gt;
+          &lt;/GBQualifier&gt;
+          &lt;GBQualifier&gt;
+            &lt;GBQualifier_name&gt;product&lt;/GBQualifier_name&gt;
+            &lt;GBQualifier_value&gt;hemagglutinin&lt;/GBQualifier_value&gt;
+          &lt;/GBQualifier&gt;
+          &lt;GBQualifier&gt;
+            &lt;GBQualifier_name&gt;protein_id&lt;/GBQualifier_name&gt;
+            &lt;GBQualifier_value&gt;AKQ43545.1&lt;/GBQualifier_value&gt;
+          &lt;/GBQualifier&gt;
+          &lt;GBQualifier&gt;
+            &lt;GBQualifier_name&gt;translation&lt;/GBQualifier_name&gt;
+            &lt;GBQualifier_value&gt;MKTIIALSYILCLVFAQKIPGNDNSTATLCLGHHAVPNGTIVKTITNDRIEVTNATELVQNSSIGEICDSPHQILDGENCTLIDALLGDPQCDGFQNKKWDLFVERSKAYSNCYPYDVPDYASLRSLVASSGTLEFNNESFNWTGVTQNGTSSACIRRSSSSFFSRLNWLTHLNYTYPALNVTMPNNEQFDKLYIWGVHHPGTDKDQIFLYAQSSGRITVSTKRSQQAVIPNIGSRPRIRDIPSRISIYWTIVKPGDILLINSTGNLIAPRGYFKIRSGKSSIMRSDAPIGKCKSECITPNGSIPNDKPFQNVNRITYGACPRYVKHSTLKLATGMRNVPEKQTRGIFGAIAGFIENGWEGMVDGWYGFRHQNSEGRGQAADLKSTQAAIDQINGKLNRLIGKTNEKFHQIEKEFSEVEGRIQDLEKYVEDTKIDLWSYNAELLVALENQHTXDLTDSEMNKLFEKTKKQLRENAEDMGNGCFKIYHKCDNACIGSIRNGTYDHNVYRDEALNNRFQIKGVELKSGYKDWILWISXAISCFLLCVALLGFIMWACQKGNIRCNICI&lt;/GBQualifier_value&gt;
+          &lt;/GBQualifier&gt;
+        &lt;/GBFeature_quals&gt;
+      &lt;/GBFeature&gt;
+      &lt;GBFeature&gt;
+        &lt;GBFeature_key&gt;mat_peptide&lt;/GBFeature_key&gt;
+        &lt;GBFeature_location&gt;49..1035&lt;/GBFeature_location&gt;
+        &lt;GBFeature_intervals&gt;
+          &lt;GBInterval&gt;
+            &lt;GBInterval_from&gt;49&lt;/GBInterval_from&gt;
+            &lt;GBInterval_to&gt;1035&lt;/GBInterval_to&gt;
+            &lt;GBInterval_accession&gt;KT220438.1&lt;/GBInterval_accession&gt;
+          &lt;/GBInterval&gt;
+        &lt;/GBFeature_intervals&gt;
+        &lt;GBFeature_quals&gt;
+          &lt;GBQualifier&gt;
+            &lt;GBQualifier_name&gt;gene&lt;/GBQualifier_name&gt;
+            &lt;GBQualifier_value&gt;HA&lt;/GBQualifier_value&gt;
+          &lt;/GBQualifier&gt;
+          &lt;GBQualifier&gt;
+            &lt;GBQualifier_name&gt;product&lt;/GBQualifier_name&gt;
+            &lt;GBQualifier_value&gt;HA1&lt;/GBQualifier_value&gt;
+          &lt;/GBQualifier&gt;
+          &lt;GBQualifier&gt;
+            &lt;GBQualifier_name&gt;peptide&lt;/GBQualifier_name&gt;
+            &lt;GBQualifier_value&gt;QKIPGNDNSTATLCLGHHAVPNGTIVKTITNDRIEVTNATELVQNSSIGEICDSPHQILDGENCTLIDALLGDPQCDGFQNKKWDLFVERSKAYSNCYPYDVPDYASLRSLVASSGTLEFNNESFNWTGVTQNGTSSACIRRSSSSFFSRLNWLTHLNYTYPALNVTMPNNEQFDKLYIWGVHHPGTDKDQIFLYAQSSGRITVSTKRSQQAVIPNIGSRPRIRDIPSRISIYWTIVKPGDILLINSTGNLIAPRGYFKIRSGKSSIMRSDAPIGKCKSECITPNGSIPNDKPFQNVNRITYGACPRYVKHSTLKLATGMRNVPEKQTR&lt;/GBQualifier_value&gt;
+          &lt;/GBQualifier&gt;
+        &lt;/GBFeature_quals&gt;
+      &lt;/GBFeature&gt;
+      &lt;GBFeature&gt;
+        &lt;GBFeature_key&gt;mat_peptide&lt;/GBFeature_key&gt;
+        &lt;GBFeature_location&gt;1036..1698&lt;/GBFeature_location&gt;
+        &lt;GBFeature_intervals&gt;
+          &lt;GBInterval&gt;
+            &lt;GBInterval_from&gt;1036&lt;/GBInterval_from&gt;
+            &lt;GBInterval_to&gt;1698&lt;/GBInterval_to&gt;
+            &lt;GBInterval_accession&gt;KT220438.1&lt;/GBInterval_accession&gt;
+          &lt;/GBInterval&gt;
+        &lt;/GBFeature_intervals&gt;
+        &lt;GBFeature_quals&gt;
+          &lt;GBQualifier&gt;
+            &lt;GBQualifier_name&gt;gene&lt;/GBQualifier_name&gt;
+            &lt;GBQualifier_value&gt;HA&lt;/GBQualifier_value&gt;
+          &lt;/GBQualifier&gt;
+          &lt;GBQualifier&gt;
+            &lt;GBQualifier_name&gt;product&lt;/GBQualifier_name&gt;
+            &lt;GBQualifier_value&gt;HA2&lt;/GBQualifier_value&gt;
+          &lt;/GBQualifier&gt;
+          &lt;GBQualifier&gt;
+            &lt;GBQualifier_name&gt;peptide&lt;/GBQualifier_name&gt;
+            &lt;GBQualifier_value&gt;GIFGAIAGFIENGWEGMVDGWYGFRHQNSEGRGQAADLKSTQAAIDQINGKLNRLIGKTNEKFHQIEKEFSEVEGRIQDLEKYVEDTKIDLWSYNAELLVALENQHTXDLTDSEMNKLFEKTKKQLRENAEDMGNGCFKIYHKCDNACIGSIRNGTYDHNVYRDEALNNRFQIKGVELKSGYKDWILWISXAISCFLLCVALLGFIMWACQKGNIRCNICI&lt;/GBQualifier_value&gt;
+          &lt;/GBQualifier&gt;
+        &lt;/GBFeature_quals&gt;
+      &lt;/GBFeature&gt;
+    &lt;/GBSeq_feature-table&gt;
+    &lt;GBSeq_sequence&gt;atgaagactatcattgctttgagctacattctatgtctggttttcgctcaaaaaattcctggaaatgacaatagcacggcaacgctgtgccttgggcaccatgcagtaccaaacggaacgatagtgaaaacaatcacaaatgaccgaattgaagttactaatgctactgagctggttcagaattcctcaataggtgaaatatgcgacagtcctcatcagatccttgatggagaaaactgcacactaatagatgctctattgggagaccctcagtgtgatggctttcaaaataagaaatgggacctttttgttgaacgaagcaaagcctacagcaactgctacccttatgatgtgccggattatgcctcccttaggtcactagttgcctcatccggcacactggagtttaacaatgaaagcttcaattggactggagtcactcaaaacggaacaagttctgcttgcataaggagatctagtagtagtttctttagtagattaaattggttgacccacttaaactacacatacccagcattgaacgtgactatgccaaacaatgaacaatttgacaaattgtacatttggggggttcaccacccgggtacggacaaggaccaaatcttcctgtatgctcaatcatcaggaagaatcacagtatctaccaaaagaagccaacaagctgtaatcccaaatatcggatctagacccagaataagggatatccctagcagaataagcatctattggacaatagtaaaaccgggagacatacttttgattaacagcacagggaatctaattgctcctaggggttacttcaaaatacgaagtgggaaaagctcaataatgagatcagatgcacccattggcaaatgcaagtctgaatgcatcactccaaatggaagcattcccaatgacaaaccattccaaaatgtaaacaggatcacatacggggcctgtcccagatatgttaagcatagcactctaaaattggcaacaggaatgcgaaatgtaccagagaaacaaactagaggcatatttggcgcaatagcgggtttcatagaaaatggttgggagggaatggtggatggttggtacggtttcaggcatcaaaattctgagggaagaggacaagcagcagatctcaaaagcactcaagcagcaatcgatcaaatcaatgggaagctgaatcgattgatcgggaaaaccaacgagaaattccatcagattgaaaaagaattctcagaagtagaaggaagaattcaggaccttgagaaatatgttgaggacactaaaatagatctctggtcatacaacgcggagcttcttgttgccctggagaaccaacatacarttgatctaactgactcagaaatgaacaaactgtttgaaaaaacaaagaagcaactgagggaaaatgctgaggatatgggaaatggttgtttcaaaatataccacaaatgtgacaatgcctgcataggatcaataagaaatggaacttatgaccacaatgtgtacagggatgaagcattaaacaaccggttccagatcaagggagttgagctgaagtcagggtacaaagattggatcctatggatttcctytgccatatcatgttttttgctttgtgttgctttgttggggttcatcatgtgggcctgccaaaagggcaacattaggtgcaacatttgcatttga&lt;/GBSeq_sequence&gt;
+  &lt;/GBSeq&gt;
+
+&lt;/GBSet&gt;
+
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -11959,15 +12259,8 @@ Protein sequence: MKTIIALSYILCLVFAQKIPGNDNSTATLCLGHHAVPNGTIVKTITNDRIEVTNATELVQNS
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Problem 2:</strong></p>
-<p>Now read in the T7 genome, and for each coding sequence (CDS) in that genome print out the name (<code>locus_tag</code>) and the product name (<code>product</code>).</p>
-<p>Hints:</p>
-<ul>
-<li>First you need to parse the genbank file into a record, using <code>SeqIO.read()</code>.</li>
-<li>All gene annotations are stored as features, and <code>record.features</code> gives you a list of all these features.</li>
-<li>Each feature has a type, accessible through <code>feature.type</code>. We are only interested in features of type "CDS".</li>
-<li>The actual annotations we are interested in, such as <code>locus_tag</code>, <code>product</code>, etc., are stored in the dictionary <code>feature.qualifiers</code>.</li>
-</ul>
+<p>The advantage of XML mode is that there is the generic <code>Entrez.parse()</code> function that can parse XML files returned from <code>Entrez.efetch()</code>. Also, some modules in Biopython cannot work with files obtained in text mode, they can only work on files obtained in XML mode. The documentation will generally tell you for each module what kind of input it expects.</p>
+<p>Reading the above example with <code>Entrez.parse()</code> gives us the following:</p>
 
 </div>
 </div>
@@ -11977,20 +12270,12 @@ Protein sequence: MKTIIALSYILCLVFAQKIPGNDNSTATLCLGHHAVPNGTIVKTITNDRIEVTNATELVQNS
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Problem 2</span>
-
-<span class="n">in_handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;T7.gb&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span>
-<span class="n">record</span> <span class="o">=</span> <span class="n">SeqIO</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">in_handle</span><span class="p">,</span> <span class="s2">&quot;genbank&quot;</span><span class="p">)</span>
-<span class="n">in_handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-
-<span class="k">for</span> <span class="n">feature</span> <span class="ow">in</span> <span class="n">record</span><span class="o">.</span><span class="n">features</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">feature</span><span class="o">.</span><span class="n">type</span> <span class="o">==</span> <span class="s1">&#39;CDS&#39;</span><span class="p">:</span>
-        <span class="c1"># all the qualifiers are returned as lists, so we have to add `[0]` at the end to just get</span>
-        <span class="c1"># the first element of each list</span>
-        <span class="n">locus_tag</span> <span class="o">=</span> <span class="n">feature</span><span class="o">.</span><span class="n">qualifiers</span><span class="p">[</span><span class="s1">&#39;locus_tag&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
-        <span class="n">product</span> <span class="o">=</span> <span class="n">feature</span><span class="o">.</span><span class="n">qualifiers</span><span class="p">[</span><span class="s1">&#39;product&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">locus_tag</span> <span class="o">+</span> <span class="s2">&quot;: &quot;</span> <span class="o">+</span> <span class="n">product</span><span class="p">)</span>
-    
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Download sequence record for genbank id KT220438 (HA from influenza A)</span>
+<span class="n">handle</span> <span class="o">=</span> <span class="n">Entrez</span><span class="o">.</span><span class="n">efetch</span><span class="p">(</span><span class="n">db</span><span class="o">=</span><span class="s2">&quot;nucleotide&quot;</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;KT220438&quot;</span><span class="p">,</span> <span class="n">rettype</span><span class="o">=</span><span class="s2">&quot;gb&quot;</span><span class="p">,</span> <span class="n">retmode</span><span class="o">=</span><span class="s2">&quot;xml&quot;</span><span class="p">)</span>
+<span class="n">parsed</span> <span class="o">=</span> <span class="n">Entrez</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">handle</span><span class="p">)</span>
+<span class="n">record</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">parsed</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span> <span class="c1"># We need to convert the parsed contents into a list. Here we want just the 0th element.</span>
+<span class="n">handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">record</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12007,66 +12292,7 @@ Protein sequence: MKTIIALSYILCLVFAQKIPGNDNSTATLCLGHHAVPNGTIVKTITNDRIEVTNATELVQNS
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>T7p01: hypothetical protein
-T7p02: hypothetical protein
-T7p04: hypothetical protein
-T7p05: hypothetical protein
-T7p06: hypothetical protein
-T7p03: protein kinase
-T7p07: T3/T7-like RNA polymerase
-T7p09: hypothetical protein
-T7p08: host dGTPase inhibitor
-T7p10: ATP-dependent DNA ligase
-T7p11: hypothetical protein
-T7p12: hypothetical protein
-T7p13: hypothetical protein
-T7p14: hypothetical protein
-T7p15: hypothetical protein
-T7p16: inhibitor of host bacterial RNA polymerase
-T7p17: single-stranded DNA-binding protein
-T7p18: hypothetical protein
-T7p19: endonuclease I
-T7p20: lysozyme
-T7p21: putative NHN endonuclease
-T7p22: DNA primase/helicase
-T7p23: hypothetical protein
-T7p24: helicase
-T7p25: hypothetical protein
-T7p26: hypothetical protein
-T7p27: hypothetical protein
-T7p28: hypothetical protein
-T7p29: DNA polymerase
-T7p30: hypothetical protein
-T7p31: hypothetical protein
-T7p32: host protein H-NS-interacting protein
-T7p33: hypothetical protein
-T7p34: host recBCD nuclease inhibitor
-T7p35: exonuclease
-T7p36: hypothetical protein
-T7p37: hypothetical protein
-T7p38: hypothetical protein
-T7p39: hypothetical protein
-T7p40: tail assembly protein
-T7p41: hypothetical protein
-T7p42: head-tail connector protein
-T7p43: capsid assembly protein
-T7p44: major capsid protein
-T7p45: major capsid protein
-T7p46: tail tubular protein A
-T7p47: tail tubular protein B
-T7p48: internal virion protein A
-T7p49: internal virion protein B
-T7p50: internal virion protein C
-T7p51: internal virion protein D
-T7p52: tail fiber protein
-T7p53: type II holin
-T7p54: DNA packaging protein, small subunit
-T7p55: phage lambda Rz-like lysis protein
-T7p56: phage lambda Rz1-like protein
-T7p57: DNA maturation protein
-T7p58: hypothetical protein
-T7p59: hypothetical protein
-T7p60: hypothetical protein
+<pre>DictElement({&#39;GBSeq_division&#39;: &#39;VRL&#39;, &#39;GBSeq_comment&#39;: &#39;##Assembly-Data-START## ; Sequencing Technology :: Sanger dideoxy sequencing ; ##Assembly-Data-END##&#39;, &#39;GBSeq_references&#39;: [DictElement({&#39;GBReference_reference&#39;: &#39;1&#39;, &#39;GBReference_position&#39;: &#39;1..1701&#39;, &#39;GBReference_title&#39;: &#39;GEISS Influenza Surveillance Response Program&#39;, &#39;GBReference_authors&#39;: [&#39;Sitz,C.R.&#39;, &#39;Thammavong,H.L.&#39;, &#39;Balansay-Ames,M.S.&#39;, &#39;Hawksworth,A.W.&#39;, &#39;Myers,C.A.&#39;, &#39;Brice,G.T.&#39;], &#39;GBReference_journal&#39;: &#39;Unpublished&#39;}, attributes={}), DictElement({&#39;GBReference_reference&#39;: &#39;2&#39;, &#39;GBReference_position&#39;: &#39;1..1701&#39;, &#39;GBReference_title&#39;: &#39;Direct Submission&#39;, &#39;GBReference_authors&#39;: [&#39;Sitz,C.R.&#39;, &#39;Thammavong,H.L.&#39;, &#39;Balansay-Ames,M.S.&#39;, &#39;Hawksworth,A.W.&#39;, &#39;Myers,C.A.&#39;, &#39;Brice,G.T.&#39;], &#39;GBReference_journal&#39;: &#39;Submitted (29-JUN-2015) Operational Infectious Diseases, Naval Health Research Center, 140 Sylvester Rd., San Diego, CA 92106, USA&#39;}, attributes={})], &#39;GBSeq_locus&#39;: &#39;KT220438&#39;, &#39;GBSeq_strandedness&#39;: &#39;single&#39;, &#39;GBSeq_update-date&#39;: &#39;20-JUL-2015&#39;, &#39;GBSeq_organism&#39;: &#39;Influenza A virus (A/New Jersey/NHRC_93219/2015(H3N2))&#39;, &#39;GBSeq_accession-version&#39;: &#39;KT220438.1&#39;, &#39;GBSeq_source&#39;: &#39;Influenza A virus (A/New Jersey/NHRC_93219/2015(H3N2))&#39;, &#39;GBSeq_topology&#39;: &#39;linear&#39;, &#39;GBSeq_taxonomy&#39;: &#39;Viruses; ssRNA viruses; ssRNA negative-strand viruses; Orthomyxoviridae; Influenzavirus A&#39;, &#39;GBSeq_other-seqids&#39;: [&#39;gb|KT220438.1|&#39;, &#39;gi|887493048&#39;], &#39;GBSeq_definition&#39;: &#39;Influenza A virus (A/NewJersey/NHRC_93219/2015(H3N2)) segment 4 hemagglutinin (HA) gene, complete cds&#39;, &#39;GBSeq_create-date&#39;: &#39;20-JUL-2015&#39;, &#39;GBSeq_length&#39;: &#39;1701&#39;, &#39;GBSeq_primary-accession&#39;: &#39;KT220438&#39;, &#39;GBSeq_sequence&#39;: &#39;atgaagactatcattgctttgagctacattctatgtctggttttcgctcaaaaaattcctggaaatgacaatagcacggcaacgctgtgccttgggcaccatgcagtaccaaacggaacgatagtgaaaacaatcacaaatgaccgaattgaagttactaatgctactgagctggttcagaattcctcaataggtgaaatatgcgacagtcctcatcagatccttgatggagaaaactgcacactaatagatgctctattgggagaccctcagtgtgatggctttcaaaataagaaatgggacctttttgttgaacgaagcaaagcctacagcaactgctacccttatgatgtgccggattatgcctcccttaggtcactagttgcctcatccggcacactggagtttaacaatgaaagcttcaattggactggagtcactcaaaacggaacaagttctgcttgcataaggagatctagtagtagtttctttagtagattaaattggttgacccacttaaactacacatacccagcattgaacgtgactatgccaaacaatgaacaatttgacaaattgtacatttggggggttcaccacccgggtacggacaaggaccaaatcttcctgtatgctcaatcatcaggaagaatcacagtatctaccaaaagaagccaacaagctgtaatcccaaatatcggatctagacccagaataagggatatccctagcagaataagcatctattggacaatagtaaaaccgggagacatacttttgattaacagcacagggaatctaattgctcctaggggttacttcaaaatacgaagtgggaaaagctcaataatgagatcagatgcacccattggcaaatgcaagtctgaatgcatcactccaaatggaagcattcccaatgacaaaccattccaaaatgtaaacaggatcacatacggggcctgtcccagatatgttaagcatagcactctaaaattggcaacaggaatgcgaaatgtaccagagaaacaaactagaggcatatttggcgcaatagcgggtttcatagaaaatggttgggagggaatggtggatggttggtacggtttcaggcatcaaaattctgagggaagaggacaagcagcagatctcaaaagcactcaagcagcaatcgatcaaatcaatgggaagctgaatcgattgatcgggaaaaccaacgagaaattccatcagattgaaaaagaattctcagaagtagaaggaagaattcaggaccttgagaaatatgttgaggacactaaaatagatctctggtcatacaacgcggagcttcttgttgccctggagaaccaacatacarttgatctaactgactcagaaatgaacaaactgtttgaaaaaacaaagaagcaactgagggaaaatgctgaggatatgggaaatggttgtttcaaaatataccacaaatgtgacaatgcctgcataggatcaataagaaatggaacttatgaccacaatgtgtacagggatgaagcattaaacaaccggttccagatcaagggagttgagctgaagtcagggtacaaagattggatcctatggatttcctytgccatatcatgttttttgctttgtgttgctttgttggggttcatcatgtgggcctgccaaaagggcaacattaggtgcaacatttgcatttga&#39;, &#39;GBSeq_feature-table&#39;: [DictElement({&#39;GBFeature_quals&#39;: [DictElement({&#39;GBQualifier_name&#39;: &#39;organism&#39;, &#39;GBQualifier_value&#39;: &#39;Influenza A virus (A/New Jersey/NHRC_93219/2015(H3N2))&#39;}, attributes={}), DictElement({&#39;GBQualifier_name&#39;: &#39;mol_type&#39;, &#39;GBQualifier_value&#39;: &#39;viral cRNA&#39;}, attributes={}), DictElement({&#39;GBQualifier_name&#39;: &#39;strain&#39;, &#39;GBQualifier_value&#39;: &#39;A/NewJersey/NHRC_93219/2015&#39;}, attributes={}), DictElement({&#39;GBQualifier_name&#39;: &#39;serotype&#39;, &#39;GBQualifier_value&#39;: &#39;H3N2&#39;}, attributes={}), DictElement({&#39;GBQualifier_name&#39;: &#39;isolation_source&#39;, &#39;GBQualifier_value&#39;: &#39;nasopharyngeal swab&#39;}, attributes={}), DictElement({&#39;GBQualifier_name&#39;: &#39;host&#39;, &#39;GBQualifier_value&#39;: &#39;Homo sapiens&#39;}, attributes={}), DictElement({&#39;GBQualifier_name&#39;: &#39;db_xref&#39;, &#39;GBQualifier_value&#39;: &#39;taxon:1682360&#39;}, attributes={}), DictElement({&#39;GBQualifier_name&#39;: &#39;segment&#39;, &#39;GBQualifier_value&#39;: &#39;4&#39;}, attributes={}), DictElement({&#39;GBQualifier_name&#39;: &#39;lab_host&#39;, &#39;GBQualifier_value&#39;: &#39;MDCK&#39;}, attributes={}), DictElement({&#39;GBQualifier_name&#39;: &#39;country&#39;, &#39;GBQualifier_value&#39;: &#39;USA: New Jersey&#39;}, attributes={}), DictElement({&#39;GBQualifier_name&#39;: &#39;collection_date&#39;, &#39;GBQualifier_value&#39;: &#39;17-Jan-2015&#39;}, attributes={})], &#39;GBFeature_intervals&#39;: [DictElement({&#39;GBInterval_to&#39;: &#39;1701&#39;, &#39;GBInterval_from&#39;: &#39;1&#39;, &#39;GBInterval_accession&#39;: &#39;KT220438.1&#39;}, attributes={})], &#39;GBFeature_key&#39;: &#39;source&#39;, &#39;GBFeature_location&#39;: &#39;1..1701&#39;}, attributes={}), DictElement({&#39;GBFeature_quals&#39;: [DictElement({&#39;GBQualifier_name&#39;: &#39;gene&#39;, &#39;GBQualifier_value&#39;: &#39;HA&#39;}, attributes={})], &#39;GBFeature_intervals&#39;: [DictElement({&#39;GBInterval_to&#39;: &#39;1701&#39;, &#39;GBInterval_from&#39;: &#39;1&#39;, &#39;GBInterval_accession&#39;: &#39;KT220438.1&#39;}, attributes={})], &#39;GBFeature_key&#39;: &#39;gene&#39;, &#39;GBFeature_location&#39;: &#39;1..1701&#39;}, attributes={}), DictElement({&#39;GBFeature_quals&#39;: [DictElement({&#39;GBQualifier_name&#39;: &#39;gene&#39;, &#39;GBQualifier_value&#39;: &#39;HA&#39;}, attributes={}), DictElement({&#39;GBQualifier_name&#39;: &#39;function&#39;, &#39;GBQualifier_value&#39;: &#39;receptor binding and fusion protein&#39;}, attributes={}), DictElement({&#39;GBQualifier_name&#39;: &#39;codon_start&#39;, &#39;GBQualifier_value&#39;: &#39;1&#39;}, attributes={}), DictElement({&#39;GBQualifier_name&#39;: &#39;transl_table&#39;, &#39;GBQualifier_value&#39;: &#39;1&#39;}, attributes={}), DictElement({&#39;GBQualifier_name&#39;: &#39;product&#39;, &#39;GBQualifier_value&#39;: &#39;hemagglutinin&#39;}, attributes={}), DictElement({&#39;GBQualifier_name&#39;: &#39;protein_id&#39;, &#39;GBQualifier_value&#39;: &#39;AKQ43545.1&#39;}, attributes={}), DictElement({&#39;GBQualifier_name&#39;: &#39;translation&#39;, &#39;GBQualifier_value&#39;: &#39;MKTIIALSYILCLVFAQKIPGNDNSTATLCLGHHAVPNGTIVKTITNDRIEVTNATELVQNSSIGEICDSPHQILDGENCTLIDALLGDPQCDGFQNKKWDLFVERSKAYSNCYPYDVPDYASLRSLVASSGTLEFNNESFNWTGVTQNGTSSACIRRSSSSFFSRLNWLTHLNYTYPALNVTMPNNEQFDKLYIWGVHHPGTDKDQIFLYAQSSGRITVSTKRSQQAVIPNIGSRPRIRDIPSRISIYWTIVKPGDILLINSTGNLIAPRGYFKIRSGKSSIMRSDAPIGKCKSECITPNGSIPNDKPFQNVNRITYGACPRYVKHSTLKLATGMRNVPEKQTRGIFGAIAGFIENGWEGMVDGWYGFRHQNSEGRGQAADLKSTQAAIDQINGKLNRLIGKTNEKFHQIEKEFSEVEGRIQDLEKYVEDTKIDLWSYNAELLVALENQHTXDLTDSEMNKLFEKTKKQLRENAEDMGNGCFKIYHKCDNACIGSIRNGTYDHNVYRDEALNNRFQIKGVELKSGYKDWILWISXAISCFLLCVALLGFIMWACQKGNIRCNICI&#39;}, attributes={})], &#39;GBFeature_intervals&#39;: [DictElement({&#39;GBInterval_to&#39;: &#39;1701&#39;, &#39;GBInterval_from&#39;: &#39;1&#39;, &#39;GBInterval_accession&#39;: &#39;KT220438.1&#39;}, attributes={})], &#39;GBFeature_key&#39;: &#39;CDS&#39;, &#39;GBFeature_location&#39;: &#39;1..1701&#39;}, attributes={}), DictElement({&#39;GBFeature_quals&#39;: [DictElement({&#39;GBQualifier_name&#39;: &#39;gene&#39;, &#39;GBQualifier_value&#39;: &#39;HA&#39;}, attributes={}), DictElement({&#39;GBQualifier_name&#39;: &#39;product&#39;, &#39;GBQualifier_value&#39;: &#39;HA1&#39;}, attributes={}), DictElement({&#39;GBQualifier_name&#39;: &#39;peptide&#39;, &#39;GBQualifier_value&#39;: &#39;QKIPGNDNSTATLCLGHHAVPNGTIVKTITNDRIEVTNATELVQNSSIGEICDSPHQILDGENCTLIDALLGDPQCDGFQNKKWDLFVERSKAYSNCYPYDVPDYASLRSLVASSGTLEFNNESFNWTGVTQNGTSSACIRRSSSSFFSRLNWLTHLNYTYPALNVTMPNNEQFDKLYIWGVHHPGTDKDQIFLYAQSSGRITVSTKRSQQAVIPNIGSRPRIRDIPSRISIYWTIVKPGDILLINSTGNLIAPRGYFKIRSGKSSIMRSDAPIGKCKSECITPNGSIPNDKPFQNVNRITYGACPRYVKHSTLKLATGMRNVPEKQTR&#39;}, attributes={})], &#39;GBFeature_intervals&#39;: [DictElement({&#39;GBInterval_to&#39;: &#39;1035&#39;, &#39;GBInterval_from&#39;: &#39;49&#39;, &#39;GBInterval_accession&#39;: &#39;KT220438.1&#39;}, attributes={})], &#39;GBFeature_key&#39;: &#39;mat_peptide&#39;, &#39;GBFeature_location&#39;: &#39;49..1035&#39;}, attributes={}), DictElement({&#39;GBFeature_quals&#39;: [DictElement({&#39;GBQualifier_name&#39;: &#39;gene&#39;, &#39;GBQualifier_value&#39;: &#39;HA&#39;}, attributes={}), DictElement({&#39;GBQualifier_name&#39;: &#39;product&#39;, &#39;GBQualifier_value&#39;: &#39;HA2&#39;}, attributes={}), DictElement({&#39;GBQualifier_name&#39;: &#39;peptide&#39;, &#39;GBQualifier_value&#39;: &#39;GIFGAIAGFIENGWEGMVDGWYGFRHQNSEGRGQAADLKSTQAAIDQINGKLNRLIGKTNEKFHQIEKEFSEVEGRIQDLEKYVEDTKIDLWSYNAELLVALENQHTXDLTDSEMNKLFEKTKKQLRENAEDMGNGCFKIYHKCDNACIGSIRNGTYDHNVYRDEALNNRFQIKGVELKSGYKDWILWISXAISCFLLCVALLGFIMWACQKGNIRCNICI&#39;}, attributes={})], &#39;GBFeature_intervals&#39;: [DictElement({&#39;GBInterval_to&#39;: &#39;1698&#39;, &#39;GBInterval_from&#39;: &#39;1036&#39;, &#39;GBInterval_accession&#39;: &#39;KT220438.1&#39;}, attributes={})], &#39;GBFeature_key&#39;: &#39;mat_peptide&#39;, &#39;GBFeature_location&#39;: &#39;1036..1698&#39;}, attributes={})], &#39;GBSeq_moltype&#39;: &#39;cRNA&#39;}, attributes={})
 </pre>
 </div>
 </div>
@@ -12079,9 +12305,7 @@ T7p60: hypothetical protein
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Problem 3:</strong></p>
-<p>Calculate the mean gene length (in amino acids) for all CDSs in the T7 genome.</p>
-<p>Hint: Use the function <code>round()</code> to round your result to 2 decimal digits.</p>
+<p>While this output may not seem useful, we now just have a set of nested dictionaries that we can interrogate using standard Python techniques:</p>
 
 </div>
 </div>
@@ -12091,19 +12315,7 @@ T7p60: hypothetical protein
 <div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">in_handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;T7.gb&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span>
-<span class="n">record</span> <span class="o">=</span> <span class="n">SeqIO</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">in_handle</span><span class="p">,</span> <span class="s2">&quot;genbank&quot;</span><span class="p">)</span>
-<span class="n">in_handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-
-<span class="n">count</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># counts the number of genes in the genome</span>
-<span class="n">length_sum</span> <span class="o">=</span> <span class="mf">0.</span> <span class="c1"># holds the total sum of all lengths of all genes</span>
-<span class="k">for</span> <span class="n">feature</span> <span class="ow">in</span> <span class="n">record</span><span class="o">.</span><span class="n">features</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">feature</span><span class="o">.</span><span class="n">type</span> <span class="o">==</span> <span class="s1">&#39;CDS&#39;</span><span class="p">:</span>
-        <span class="n">seq</span> <span class="o">=</span> <span class="n">feature</span><span class="o">.</span><span class="n">qualifiers</span><span class="p">[</span><span class="s1">&#39;translation&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
-        <span class="n">length_sum</span> <span class="o">+=</span> <span class="nb">len</span><span class="p">(</span><span class="n">seq</span><span class="p">)</span>
-        <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
-        
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;mean length:&quot;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">length_sum</span><span class="o">/</span><span class="n">count</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="s2">&quot;amino acids&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">record</span><span class="o">.</span><span class="n">keys</span><span class="p">()))</span> <span class="c1"># print out all the keys in the dictionary</span>
 </pre></div>
 
 </div>
@@ -12120,7 +12332,75 @@ T7p60: hypothetical protein
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>mean length: 227.62 amino acids
+<pre>[&#39;GBSeq_division&#39;, &#39;GBSeq_comment&#39;, &#39;GBSeq_references&#39;, &#39;GBSeq_locus&#39;, &#39;GBSeq_strandedness&#39;, &#39;GBSeq_update-date&#39;, &#39;GBSeq_organism&#39;, &#39;GBSeq_accession-version&#39;, &#39;GBSeq_source&#39;, &#39;GBSeq_topology&#39;, &#39;GBSeq_taxonomy&#39;, &#39;GBSeq_other-seqids&#39;, &#39;GBSeq_definition&#39;, &#39;GBSeq_create-date&#39;, &#39;GBSeq_length&#39;, &#39;GBSeq_primary-accession&#39;, &#39;GBSeq_sequence&#39;, &#39;GBSeq_feature-table&#39;, &#39;GBSeq_moltype&#39;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">record</span><span class="p">[</span><span class="s1">&#39;GBSeq_sequence&#39;</span><span class="p">])</span> <span class="c1"># print out the sequence</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>atgaagactatcattgctttgagctacattctatgtctggttttcgctcaaaaaattcctggaaatgacaatagcacggcaacgctgtgccttgggcaccatgcagtaccaaacggaacgatagtgaaaacaatcacaaatgaccgaattgaagttactaatgctactgagctggttcagaattcctcaataggtgaaatatgcgacagtcctcatcagatccttgatggagaaaactgcacactaatagatgctctattgggagaccctcagtgtgatggctttcaaaataagaaatgggacctttttgttgaacgaagcaaagcctacagcaactgctacccttatgatgtgccggattatgcctcccttaggtcactagttgcctcatccggcacactggagtttaacaatgaaagcttcaattggactggagtcactcaaaacggaacaagttctgcttgcataaggagatctagtagtagtttctttagtagattaaattggttgacccacttaaactacacatacccagcattgaacgtgactatgccaaacaatgaacaatttgacaaattgtacatttggggggttcaccacccgggtacggacaaggaccaaatcttcctgtatgctcaatcatcaggaagaatcacagtatctaccaaaagaagccaacaagctgtaatcccaaatatcggatctagacccagaataagggatatccctagcagaataagcatctattggacaatagtaaaaccgggagacatacttttgattaacagcacagggaatctaattgctcctaggggttacttcaaaatacgaagtgggaaaagctcaataatgagatcagatgcacccattggcaaatgcaagtctgaatgcatcactccaaatggaagcattcccaatgacaaaccattccaaaatgtaaacaggatcacatacggggcctgtcccagatatgttaagcatagcactctaaaattggcaacaggaatgcgaaatgtaccagagaaacaaactagaggcatatttggcgcaatagcgggtttcatagaaaatggttgggagggaatggtggatggttggtacggtttcaggcatcaaaattctgagggaagaggacaagcagcagatctcaaaagcactcaagcagcaatcgatcaaatcaatgggaagctgaatcgattgatcgggaaaaccaacgagaaattccatcagattgaaaaagaattctcagaagtagaaggaagaattcaggaccttgagaaatatgttgaggacactaaaatagatctctggtcatacaacgcggagcttcttgttgccctggagaaccaacatacarttgatctaactgactcagaaatgaacaaactgtttgaaaaaacaaagaagcaactgagggaaaatgctgaggatatgggaaatggttgtttcaaaatataccacaaatgtgacaatgcctgcataggatcaataagaaatggaacttatgaccacaatgtgtacagggatgaagcattaaacaaccggttccagatcaagggagttgagctgaagtcagggtacaaagattggatcctatggatttcctytgccatatcatgttttttgctttgtgttgctttgttggggttcatcatgtgggcctgccaaaagggcaacattaggtgcaacatttgcatttga
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">features</span> <span class="o">=</span> <span class="n">record</span><span class="p">[</span><span class="s1">&#39;GBSeq_feature-table&#39;</span><span class="p">]</span> <span class="c1"># extract all the features</span>
+<span class="k">for</span> <span class="n">feature</span> <span class="ow">in</span> <span class="n">features</span><span class="p">:</span> <span class="c1"># loop over features and print feature key and feature location</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">feature</span><span class="p">[</span><span class="s1">&#39;GBFeature_key&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;: &quot;</span> <span class="o">+</span> <span class="n">feature</span><span class="p">[</span><span class="s1">&#39;GBFeature_location&#39;</span><span class="p">])</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>source: 1..1701
+gene: 1..1701
+CDS: 1..1701
+mat_peptide: 49..1035
+mat_peptide: 1036..1698
 </pre>
 </div>
 </div>
@@ -12133,62 +12413,29 @@ T7p60: hypothetical protein
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Problem 4:</strong></p>
-<p>(a) Download the <em>E. coli</em> K12 genome, available here: <a href="http://www.ncbi.nlm.nih.gov/nuccore/CP009685">http://www.ncbi.nlm.nih.gov/nuccore/CP009685</a>, and store it in a file called <code>Ecoli_K12.gb</code>.</p>
-<p>(b) Calculate the fraction of coding sequences that are marked as "hypothetical protein". (This information is provided in the "product" qualifier of a "CDS" feature.)</p>
-<p>(c) Calculate the GC content of the <em>entire</em> genome sequence. GC content is the fraction of G and C nucleotides in the sequence.</p>
+<h2 id="Running-search-queries-through-Entrez">Running search queries through Entrez<a class="anchor-link" href="#Running-search-queries-through-Entrez">&#182;</a></h2><p>So far we have only downloaded specific records from Entrez. In addition to just downloading records, however, we can also run searches directly from python. Any query that you can do on the Entrez website (<a href="https://www.ncbi.nlm.nih.gov/">https://www.ncbi.nlm.nih.gov/</a>) can also be executed directly from python. This allows you to find a large number of records all at once and process them in an automated fashion.</p>
+<p>For example, below we will see how to automatically run and retrieve the results for the following search term: "influenza a virus texas h1n1 hemagglutinin complete cds". A direct link to the search results on the Entrez website is here:<br>
+<a href="https://www.ncbi.nlm.nih.gov/nuccore/?term=influenza+a+virus+texas+h1n1+hemagglutinin+complete+cds">https://www.ncbi.nlm.nih.gov/nuccore/?term=influenza+a+virus+texas+h1n1+hemagglutinin+complete+cds</a></p>
+<p>(Note that in the following Python code, we limit the number of search hits returned to the first 10.)</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Problem 4a</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># let&#39;s do a search for influenza H1N1 viruses from Texas</span>
+<span class="n">handle</span> <span class="o">=</span> <span class="n">Entrez</span><span class="o">.</span><span class="n">esearch</span><span class="p">(</span><span class="n">db</span><span class="o">=</span><span class="s2">&quot;nucleotide&quot;</span><span class="p">,</span>  <span class="c1"># database to search</span>
+                        <span class="n">term</span><span class="o">=</span><span class="s2">&quot;influenza a virus texas h1n1 hemagglutinin complete cds&quot;</span><span class="p">,</span>  <span class="c1"># search term</span>
+                        <span class="n">retmax</span><span class="o">=</span><span class="mi">10</span>  <span class="c1"># number of results that are returned</span>
+                        <span class="p">)</span>
+<span class="n">record</span> <span class="o">=</span> <span class="n">Entrez</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">handle</span><span class="p">)</span>
+<span class="n">handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 
-<span class="c1"># Download E. coli K12 genome:</span>
-<span class="n">download_handle</span> <span class="o">=</span> <span class="n">Entrez</span><span class="o">.</span><span class="n">efetch</span><span class="p">(</span><span class="n">db</span><span class="o">=</span><span class="s2">&quot;nucleotide&quot;</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;CP009685&quot;</span><span class="p">,</span> <span class="n">rettype</span><span class="o">=</span><span class="s2">&quot;gb&quot;</span><span class="p">,</span> <span class="n">retmode</span><span class="o">=</span><span class="s2">&quot;text&quot;</span><span class="p">)</span>
-<span class="n">data</span> <span class="o">=</span> <span class="n">download_handle</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-<span class="n">download_handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-
-<span class="c1"># Store data into file &quot;Ecoli_K12.gb&quot;:</span>
-<span class="n">out_handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;Ecoli_K12.gb&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span>
-<span class="n">out_handle</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-<span class="n">out_handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Problem 4b</span>
-
-<span class="c1"># Read in E. coli K12 genome:</span>
-<span class="n">in_handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;Ecoli_K12.gb&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span>
-<span class="n">record</span> <span class="o">=</span> <span class="n">SeqIO</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">in_handle</span><span class="p">,</span> <span class="s2">&quot;genbank&quot;</span><span class="p">)</span>
-<span class="n">in_handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-
-<span class="c1"># count all CDSs and the hypothetical ones</span>
-<span class="n">CDS_count</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">hyp_CDS_count</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">for</span> <span class="n">feature</span> <span class="ow">in</span> <span class="n">record</span><span class="o">.</span><span class="n">features</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">feature</span><span class="o">.</span><span class="n">type</span> <span class="o">==</span> <span class="s1">&#39;CDS&#39;</span><span class="p">:</span>
-        <span class="n">CDS_count</span> <span class="o">+=</span> <span class="mi">1</span>
-        <span class="k">if</span> <span class="s2">&quot;product&quot;</span> <span class="ow">in</span> <span class="n">feature</span><span class="o">.</span><span class="n">qualifiers</span><span class="p">:</span>
-            <span class="k">if</span> <span class="n">feature</span><span class="o">.</span><span class="n">qualifiers</span><span class="p">[</span><span class="s2">&quot;product&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;hypothetical protein&quot;</span><span class="p">:</span>
-                <span class="n">hyp_CDS_count</span> <span class="o">+=</span> <span class="mi">1</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Total coding sequences in the E. coli K12 genome:&quot;</span><span class="p">,</span> <span class="n">CDS_count</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Number of hypothetical proteins in the E. coli K12 genome:&quot;</span><span class="p">,</span> <span class="n">hyp_CDS_count</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Fraction:&quot;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="mi">100</span><span class="o">*</span><span class="n">hyp_CDS_count</span><span class="o">/</span><span class="n">CDS_count</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="s2">&quot;%&quot;</span><span class="p">)</span>
+<span class="n">gi_list</span> <span class="o">=</span> <span class="n">record</span><span class="p">[</span><span class="s2">&quot;IdList&quot;</span><span class="p">]</span> <span class="c1"># list of genbank identifiers found</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">gi_list</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -12205,9 +12452,271 @@ T7p60: hypothetical protein
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Total coding sequences in the E. coli K12 genome: 4391
-Number of hypothetical proteins in the E. coli K12 genome: 897
-Fraction: 20.43 %
+<pre>[&#39;1597259311&#39;, &#39;1597259287&#39;, &#39;1597258925&#39;, &#39;1597258900&#39;, &#39;1591440116&#39;, &#39;1591440105&#39;, &#39;1591440078&#39;, &#39;1590855198&#39;, &#39;1590855179&#39;, &#39;1590836043&#39;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Note that even though NCBI is <a href="https://www.ncbi.nlm.nih.gov/news/03-02-2016-phase-out-of-GI-numbers/">phasing out sequence GI numbers,</a> for now the <code>esearch()</code> function still returns GI numbers (numerical sequence identifiers without version information).</p>
+<p>We can download all the genbank records in the list of identifiers using the <code>Entrez.efetch()</code> function. This function provides us with a handle that needs to be processed with <code>SeqIO.parse()</code>. (We used <code>SeqIO.read()</code> previously, which reads a single record. <code>SeqIO.parse()</code> reads multiple records. See <a href="http://biopython.org/wiki/SeqIO">here</a> for details.)</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">handle</span> <span class="o">=</span> <span class="n">Entrez</span><span class="o">.</span><span class="n">efetch</span><span class="p">(</span><span class="n">db</span><span class="o">=</span><span class="s2">&quot;nucleotide&quot;</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="n">gi_list</span><span class="p">,</span> <span class="n">rettype</span><span class="o">=</span><span class="s2">&quot;gb&quot;</span><span class="p">,</span> <span class="n">retmode</span><span class="o">=</span><span class="s2">&quot;text&quot;</span><span class="p">)</span>
+<span class="n">records</span> <span class="o">=</span> <span class="n">SeqIO</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">handle</span><span class="p">,</span> <span class="s2">&quot;genbank&quot;</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">record</span> <span class="ow">in</span> <span class="n">records</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">record</span><span class="o">.</span><span class="n">description</span><span class="p">)</span>
+    
+<span class="n">handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span> <span class="c1"># important, close the handle only after you have iterated over the records. Otherwise you will get an error!</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Influenza A virus (A/Texas/12/2019(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/07/2019(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/06/2019(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/05/2019(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/157/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/143/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/02/2019(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/148/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/147/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/156/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>As another example, let's search the "pubmed" database (database of scientific publications) for papers from 2015 written by "Wilke CO". The exact search term we need to use is the following: "Wilke CO[Author] AND 2015[Date - Publication]"</p>
+<p>You can <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Wilke+CO%5BAuthor%5D+AND+2015%5BDate+-+Publication%5D">click here</a> to see the result from that search online.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">handle</span> <span class="o">=</span> <span class="n">Entrez</span><span class="o">.</span><span class="n">esearch</span><span class="p">(</span><span class="n">db</span><span class="o">=</span><span class="s2">&quot;pubmed&quot;</span><span class="p">,</span>  <span class="c1"># database to search</span>
+                        <span class="n">term</span><span class="o">=</span><span class="s2">&quot;Wilke CO[Author] AND 2015[Date - Publication]&quot;</span><span class="p">,</span>  <span class="c1"># search term</span>
+                        <span class="n">retmax</span><span class="o">=</span><span class="mi">10</span>  <span class="c1"># number of results that are returned</span>
+                        <span class="p">)</span>
+<span class="n">record</span> <span class="o">=</span> <span class="n">Entrez</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">handle</span><span class="p">)</span>
+<span class="n">handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+<span class="c1"># search returns PubMed IDs (pmids)</span>
+<span class="n">pmid_list</span> <span class="o">=</span> <span class="n">record</span><span class="p">[</span><span class="s2">&quot;IdList&quot;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">pmid_list</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[&#39;26770819&#39;, &#39;26468068&#39;, &#39;26430238&#39;, &#39;26397960&#39;, &#39;26355089&#39;, &#39;26275208&#39;, &#39;26020774&#39;, &#39;25999509&#39;, &#39;25787027&#39;, &#39;25737813&#39;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Just like with genes and genomes, we can download the records corresponding to these identifiers. They are references. We'll print the author(s), title, and reference (source).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">Bio</span> <span class="k">import</span> <span class="n">Medline</span>
+<span class="n">handle</span> <span class="o">=</span> <span class="n">Entrez</span><span class="o">.</span><span class="n">efetch</span><span class="p">(</span><span class="n">db</span><span class="o">=</span><span class="s2">&quot;pubmed&quot;</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="n">pmid_list</span><span class="p">,</span> <span class="n">rettype</span><span class="o">=</span><span class="s2">&quot;medline&quot;</span><span class="p">,</span> <span class="n">retmode</span><span class="o">=</span><span class="s2">&quot;text&quot;</span><span class="p">)</span>
+<span class="n">records</span> <span class="o">=</span> <span class="n">Medline</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">handle</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">record</span> <span class="ow">in</span> <span class="n">records</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">record</span><span class="p">[</span><span class="s1">&#39;AU&#39;</span><span class="p">])</span> <span class="c1"># author list</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">record</span><span class="p">[</span><span class="s1">&#39;TI&#39;</span><span class="p">])</span> <span class="c1"># title</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">record</span><span class="p">[</span><span class="s1">&#39;SO&#39;</span><span class="p">])</span> <span class="c1"># source (reference)</span>
+    <span class="nb">print</span><span class="p">()</span>
+<span class="n">handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[&#39;Meyer AG&#39;, &#39;Spielman SJ&#39;, &#39;Bedford T&#39;, &#39;Wilke CO&#39;]
+Time dependence of evolutionary metrics during the 2009 pandemic influenza virus outbreak.
+Virus Evol. 2015 Jan;1(1). doi: 10.1093/ve/vev006. Epub 2015 Jan 1.
+
+[&#39;Meyer AG&#39;, &#39;Wilke CO&#39;]
+The utility of protein structure as a predictor of site-wise dN/dS varies widely among HIV-1 proteins.
+J R Soc Interface. 2015 Oct 6;12(111):20150579. doi: 10.1098/rsif.2015.0579.
+
+[&#39;Wilke CO&#39;]
+Evolutionary paths of least resistance.
+Proc Natl Acad Sci U S A. 2015 Oct 13;112(41):12553-4. doi: 10.1073/pnas.1517390112. Epub 2015 Oct 1.
+
+[&#39;Spielman SJ&#39;, &#39;Wilke CO&#39;]
+Pyvolve: A Flexible Python Module for Simulating Sequences along Phylogenies.
+PLoS One. 2015 Sep 23;10(9):e0139047. doi: 10.1371/journal.pone.0139047. eCollection 2015.
+
+[&#39;Kerr SA&#39;, &#39;Jackson EL&#39;, &#39;Lungu OI&#39;, &#39;Meyer AG&#39;, &#39;Demogines A&#39;, &#39;Ellington AD&#39;, &#39;Georgiou G&#39;, &#39;Wilke CO&#39;, &#39;Sawyer SL&#39;]
+Computational and Functional Analysis of the Virus-Receptor Interface Reveals Host Range Trade-Offs in New World Arenaviruses.
+J Virol. 2015 Nov;89(22):11643-53. doi: 10.1128/JVI.01408-15. Epub 2015 Sep 9.
+
+[&#39;Houser JR&#39;, &#39;Barnhart C&#39;, &#39;Boutz DR&#39;, &#39;Carroll SM&#39;, &#39;Dasgupta A&#39;, &#39;Michener JK&#39;, &#39;Needham BD&#39;, &#39;Papoulas O&#39;, &#39;Sridhara V&#39;, &#39;Sydykova DK&#39;, &#39;Marx CJ&#39;, &#39;Trent MS&#39;, &#39;Barrick JE&#39;, &#39;Marcotte EM&#39;, &#39;Wilke CO&#39;]
+Controlled Measurement and Comparative Analysis of Cellular Components in E. coli Reveals Broad Regulatory Changes in Response to Glucose Starvation.
+PLoS Comput Biol. 2015 Aug 14;11(8):e1004400. doi: 10.1371/journal.pcbi.1004400. eCollection 2015 Aug.
+
+[&#39;Meyer AG&#39;, &#39;Wilke CO&#39;]
+Geometric Constraints Dominate the Antigenic Evolution of Influenza H3N2 Hemagglutinin.
+PLoS Pathog. 2015 May 28;11(5):e1004940. doi: 10.1371/journal.ppat.1004940. eCollection 2015 May.
+
+[&#39;Kachroo AH&#39;, &#39;Laurent JM&#39;, &#39;Yellman CM&#39;, &#39;Meyer AG&#39;, &#39;Wilke CO&#39;, &#39;Marcotte EM&#39;]
+Evolution. Systematic humanization of yeast genes reveals conserved functions and genetic modularity.
+Science. 2015 May 22;348(6237):921-5. doi: 10.1126/science.aaa0769.
+
+[&#39;Echave J&#39;, &#39;Jackson EL&#39;, &#39;Wilke CO&#39;]
+Relationship between protein thermodynamic constraints and variation of evolutionary rates among sites.
+Phys Biol. 2015 Mar 19;12(2):025002. doi: 10.1088/1478-3975/12/2/025002.
+
+[&#39;Spielman SJ&#39;, &#39;Kumar K&#39;, &#39;Wilke CO&#39;]
+Comprehensive, structurally-informed alignment and phylogeny of vertebrate biogenic amine receptors.
+PeerJ. 2015 Feb 17;3:e773. doi: 10.7717/peerj.773. eCollection 2015.
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Problems">Problems<a class="anchor-link" href="#Problems">&#182;</a></h2><p><strong>Problem 1</strong></p>
+<p>Use the following code to download the genbank record <code>KT220438</code> in XML and parse it with the <code>Entrez.parse()</code> function:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Download sequence record for genbank id KT220438 (HA from influenza A)</span>
+<span class="n">handle</span> <span class="o">=</span> <span class="n">Entrez</span><span class="o">.</span><span class="n">efetch</span><span class="p">(</span><span class="n">db</span><span class="o">=</span><span class="s2">&quot;nucleotide&quot;</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;KT220438&quot;</span><span class="p">,</span> <span class="n">rettype</span><span class="o">=</span><span class="s2">&quot;gb&quot;</span><span class="p">,</span> <span class="n">retmode</span><span class="o">=</span><span class="s2">&quot;xml&quot;</span><span class="p">)</span>
+<span class="n">parsed</span> <span class="o">=</span> <span class="n">Entrez</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">handle</span><span class="p">)</span>
+<span class="n">record</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">parsed</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span> <span class="c1"># Convert the parsed contents into a list and take element 0.</span>
+<span class="n">handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Then:</p>
+<p>(a) Print out the value for the key <code>GBSeq_definition</code>.</p>
+<p>(b) Find the <code>CDS</code> feature and print out all its qualifiers. Note that qualifiers are provided under the keyword <code>GBFeature_quals</code>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Problem 1a</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">record</span><span class="p">[</span><span class="s1">&#39;GBSeq_definition&#39;</span><span class="p">])</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Influenza A virus (A/NewJersey/NHRC_93219/2015(H3N2)) segment 4 hemagglutinin (HA) gene, complete cds
 </pre>
 </div>
 </div>
@@ -12218,24 +12727,20 @@ Fraction: 20.43 %
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Problem 4c</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Problem 1b</span>
 
-<span class="c1"># Read in E. coli K12 genome:</span>
-<span class="n">in_handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;Ecoli_K12.gb&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span>
-<span class="n">record</span> <span class="o">=</span> <span class="n">SeqIO</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">in_handle</span><span class="p">,</span> <span class="s2">&quot;genbank&quot;</span><span class="p">)</span>
-<span class="n">in_handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="n">features</span> <span class="o">=</span> <span class="n">record</span><span class="p">[</span><span class="s1">&#39;GBSeq_feature-table&#39;</span><span class="p">]</span> <span class="c1"># extract all the features</span>
+<span class="k">for</span> <span class="n">feature</span> <span class="ow">in</span> <span class="n">features</span><span class="p">:</span> <span class="c1"># loop over features and find CDS feature</span>
+    <span class="k">if</span> <span class="n">feature</span><span class="p">[</span><span class="s1">&#39;GBFeature_key&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;CDS&#39;</span><span class="p">:</span>
+        <span class="n">CDS_feature</span> <span class="o">=</span> <span class="n">feature</span>
+        <span class="k">break</span>
 
-<span class="c1"># Count all the G and C nucleotides</span>
-<span class="n">GC_count</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">for</span> <span class="n">nucleotide</span> <span class="ow">in</span> <span class="n">record</span><span class="o">.</span><span class="n">seq</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">nucleotide</span><span class="o">==</span><span class="s1">&#39;G&#39;</span> <span class="ow">or</span> <span class="n">nucleotide</span><span class="o">==</span><span class="s1">&#39;C&#39;</span><span class="p">:</span>
-        <span class="n">GC_count</span> <span class="o">+=</span> <span class="mi">1</span>
-<span class="c1"># Calculate GC percentage</span>
-<span class="n">GC_perc</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="mi">100</span><span class="o">*</span><span class="n">GC_count</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">record</span><span class="o">.</span><span class="n">seq</span><span class="p">),</span> <span class="mi">2</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;GC content: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">GC_perc</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;%&quot;</span><span class="p">)</span>
+<span class="n">qualifiers</span> <span class="o">=</span> <span class="n">CDS_feature</span><span class="p">[</span><span class="s1">&#39;GBFeature_quals&#39;</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">q</span> <span class="ow">in</span> <span class="n">qualifiers</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">q</span><span class="p">[</span><span class="s1">&#39;GBQualifier_name&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;: &quot;</span> <span class="o">+</span> <span class="n">q</span><span class="p">[</span><span class="s1">&#39;GBQualifier_value&#39;</span><span class="p">])</span>
 </pre></div>
 
 </div>
@@ -12252,7 +12757,117 @@ Fraction: 20.43 %
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>GC content: 50.79%
+<pre>gene: HA
+function: receptor binding and fusion protein
+codon_start: 1
+transl_table: 1
+product: hemagglutinin
+protein_id: AKQ43545.1
+translation: MKTIIALSYILCLVFAQKIPGNDNSTATLCLGHHAVPNGTIVKTITNDRIEVTNATELVQNSSIGEICDSPHQILDGENCTLIDALLGDPQCDGFQNKKWDLFVERSKAYSNCYPYDVPDYASLRSLVASSGTLEFNNESFNWTGVTQNGTSSACIRRSSSSFFSRLNWLTHLNYTYPALNVTMPNNEQFDKLYIWGVHHPGTDKDQIFLYAQSSGRITVSTKRSQQAVIPNIGSRPRIRDIPSRISIYWTIVKPGDILLINSTGNLIAPRGYFKIRSGKSSIMRSDAPIGKCKSECITPNGSIPNDKPFQNVNRITYGACPRYVKHSTLKLATGMRNVPEKQTRGIFGAIAGFIENGWEGMVDGWYGFRHQNSEGRGQAADLKSTQAAIDQINGKLNRLIGKTNEKFHQIEKEFSEVEGRIQDLEKYVEDTKIDLWSYNAELLVALENQHTXDLTDSEMNKLFEKTKKQLRENAEDMGNGCFKIYHKCDNACIGSIRNGTYDHNVYRDEALNNRFQIKGVELKSGYKDWILWISXAISCFLLCVALLGFIMWACQKGNIRCNICI
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Problem 2:</strong></p>
+<p>(a) Use an Entrez esearch query of the pubmed database to find out how many publications "Spielman SJ" wrote in 2015.</p>
+<p>(b) From the results of part (a), compile a combined list of all the co-authors of "Spielman SJ" in 2015.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Problem 2a</span>
+
+<span class="n">handle</span> <span class="o">=</span> <span class="n">Entrez</span><span class="o">.</span><span class="n">esearch</span><span class="p">(</span><span class="n">db</span><span class="o">=</span><span class="s2">&quot;pubmed&quot;</span><span class="p">,</span>  <span class="c1"># database to search</span>
+                        <span class="n">term</span><span class="o">=</span><span class="s2">&quot;Spielman SJ[Author] AND 2015[Date - Publication]&quot;</span><span class="p">,</span>  <span class="c1"># search term</span>
+                        <span class="n">retmax</span><span class="o">=</span><span class="mi">10</span>  <span class="c1"># number of results that are returned</span>
+                        <span class="p">)</span>
+<span class="n">record</span> <span class="o">=</span> <span class="n">Entrez</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">handle</span><span class="p">)</span>
+<span class="n">handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+<span class="c1"># search returns PubMed IDs (pmids)</span>
+<span class="n">pmid_list</span> <span class="o">=</span> <span class="n">record</span><span class="p">[</span><span class="s2">&quot;IdList&quot;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Publications found:&quot;</span><span class="p">,</span> <span class="n">pmid_list</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Number of publications:&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">pmid_list</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Publications found: [&#39;26770819&#39;, &#39;26397960&#39;, &#39;25737813&#39;, &#39;25576365&#39;]
+Number of publications: 4
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Problem 2b</span>
+
+<span class="kn">from</span> <span class="nn">Bio</span> <span class="k">import</span> <span class="n">Medline</span>
+<span class="n">handle</span> <span class="o">=</span> <span class="n">Entrez</span><span class="o">.</span><span class="n">efetch</span><span class="p">(</span><span class="n">db</span><span class="o">=</span><span class="s2">&quot;pubmed&quot;</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="n">pmid_list</span><span class="p">,</span> <span class="n">rettype</span><span class="o">=</span><span class="s2">&quot;medline&quot;</span><span class="p">,</span> <span class="n">retmode</span><span class="o">=</span><span class="s2">&quot;text&quot;</span><span class="p">)</span>
+<span class="n">records</span> <span class="o">=</span> <span class="n">Medline</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">handle</span><span class="p">)</span>
+<span class="n">coauthors</span> <span class="o">=</span> <span class="p">[]</span> <span class="c1"># start with empty list of coauthors</span>
+<span class="k">for</span> <span class="n">record</span> <span class="ow">in</span> <span class="n">records</span><span class="p">:</span>
+    <span class="n">au_list</span> <span class="o">=</span> <span class="n">record</span><span class="p">[</span><span class="s1">&#39;AU&#39;</span><span class="p">]</span>
+    <span class="k">for</span> <span class="n">author</span> <span class="ow">in</span> <span class="n">au_list</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">author</span> <span class="o">!=</span> <span class="s2">&quot;Spielman SJ&quot;</span> <span class="ow">and</span> <span class="n">author</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">coauthors</span><span class="p">:</span>
+            <span class="n">coauthors</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">author</span><span class="p">)</span>
+<span class="n">handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Co-authors of &quot;Spielman SJ&quot; in 2015:&#39;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">author</span> <span class="ow">in</span> <span class="n">coauthors</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="n">author</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Co-authors of &#34;Spielman SJ&#34; in 2015:
+  Meyer AG
+  Bedford T
+  Wilke CO
+  Kumar K
 </pre>
 </div>
 </div>
@@ -12273,32 +12888,46 @@ Fraction: 20.43 %
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Problem 5:</strong></p>
-<p>In the T7 genome, find the CDS feature corresponding to locus tag "T7p45" (major capsid protein), and then use the <code>feature.extract()</code> function to extract the DNA sequence corresponding to that gene. Then translate that sequence to verify (by inspection) that it corresponds to the protein sequence that is listed for gene T7p45.</p>
+<p><strong>Problem 3:</strong></p>
+<p>For larger searches, NCBI wants you to use the WebEnv method to download all your search results. This is explained in the Biopython tutorial <a href="http://biopython.org/DIST/docs/tutorial/Tutorial.html#sec:entrez-webenv">here.</a> Rewrite the influenza search from the section "Running search queries on through Entrez" in such a way that it uses the WebEnv method. For this downloading method, it makes sense to write all the results into a file and then read the results back in.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">in_handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;T7.gb&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span>
-<span class="n">record</span> <span class="o">=</span> <span class="n">SeqIO</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">in_handle</span><span class="p">,</span> <span class="s2">&quot;genbank&quot;</span><span class="p">)</span>
-<span class="n">in_handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">handle</span> <span class="o">=</span> <span class="n">Entrez</span><span class="o">.</span><span class="n">esearch</span><span class="p">(</span><span class="n">db</span><span class="o">=</span><span class="s2">&quot;nucleotide&quot;</span><span class="p">,</span>  <span class="c1"># database to search</span>
+                        <span class="n">term</span><span class="o">=</span><span class="s2">&quot;influenza a virus texas h1n1 hemagglutinin complete cds&quot;</span><span class="p">,</span>  <span class="c1"># search term</span>
+                        <span class="n">usehistory</span><span class="o">=</span><span class="s2">&quot;y&quot;</span> <span class="c1"># this switches on the WebEnv method</span>
+                        <span class="p">)</span>
+<span class="n">results</span> <span class="o">=</span> <span class="n">Entrez</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">handle</span><span class="p">)</span>
+<span class="n">handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 
-<span class="k">for</span> <span class="n">feature</span> <span class="ow">in</span> <span class="n">record</span><span class="o">.</span><span class="n">features</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">feature</span><span class="o">.</span><span class="n">type</span> <span class="o">==</span> <span class="s1">&#39;CDS&#39;</span><span class="p">:</span>
-        <span class="n">locus_tag</span> <span class="o">=</span> <span class="n">feature</span><span class="o">.</span><span class="n">qualifiers</span><span class="p">[</span><span class="s1">&#39;locus_tag&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
-        <span class="k">if</span> <span class="n">locus_tag</span> <span class="o">==</span> <span class="s1">&#39;T7p45&#39;</span><span class="p">:</span>
-            <span class="n">target_feature</span> <span class="o">=</span> <span class="n">feature</span>
-            <span class="k">break</span>
-            
-<span class="nb">print</span><span class="p">(</span><span class="n">target_feature</span><span class="p">)</span>
-<span class="n">DNA_seq</span> <span class="o">=</span> <span class="n">target_feature</span><span class="o">.</span><span class="n">extract</span><span class="p">(</span><span class="n">record</span><span class="p">)</span><span class="o">.</span><span class="n">seq</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;DNA:&quot;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">DNA_seq</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;protein:&quot;</span><span class="p">,</span> <span class="n">DNA_seq</span><span class="o">.</span><span class="n">translate</span><span class="p">())</span>
+<span class="c1"># Because we ran the search with usehistory=&quot;y&quot;, the results now contain two additional</span>
+<span class="c1"># pieces of information, the WebEnv session cookie and the QueryKey:</span>
+<span class="n">webenv</span> <span class="o">=</span> <span class="n">results</span><span class="p">[</span><span class="s2">&quot;WebEnv&quot;</span><span class="p">]</span>
+<span class="n">query_key</span> <span class="o">=</span> <span class="n">results</span><span class="p">[</span><span class="s2">&quot;QueryKey&quot;</span><span class="p">]</span>
+
+<span class="c1"># We also get the number of search results:</span>
+<span class="n">count</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">results</span><span class="p">[</span><span class="s2">&quot;Count&quot;</span><span class="p">])</span>
+
+<span class="c1"># We now download the results and store them in a local file</span>
+<span class="c1"># Downloading happens in batches, let&#39;s download 20 results at a time:</span>
+<span class="n">batch_size</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">out_handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;influenza_HA.gb&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">start</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">count</span><span class="p">,</span> <span class="n">batch_size</span><span class="p">):</span>
+    <span class="n">end</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">count</span><span class="p">,</span> <span class="n">start</span><span class="o">+</span><span class="n">batch_size</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Downloading records </span><span class="si">%i</span><span class="s2"> through </span><span class="si">%i</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">start</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">end</span><span class="p">))</span>
+    <span class="n">fetch_handle</span> <span class="o">=</span> <span class="n">Entrez</span><span class="o">.</span><span class="n">efetch</span><span class="p">(</span><span class="n">db</span><span class="o">=</span><span class="s2">&quot;nucleotide&quot;</span><span class="p">,</span> <span class="n">rettype</span><span class="o">=</span><span class="s2">&quot;gb&quot;</span><span class="p">,</span> <span class="n">retmode</span><span class="o">=</span><span class="s2">&quot;text&quot;</span><span class="p">,</span>
+                                 <span class="n">retstart</span><span class="o">=</span><span class="n">start</span><span class="p">,</span> <span class="n">retmax</span><span class="o">=</span><span class="n">batch_size</span><span class="p">,</span>
+                                 <span class="n">webenv</span><span class="o">=</span><span class="n">webenv</span><span class="p">,</span> <span class="n">query_key</span><span class="o">=</span><span class="n">query_key</span><span class="p">)</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">fetch_handle</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+    <span class="n">fetch_handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="n">out_handle</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="n">out_handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
 
 </div>
@@ -12315,20 +12944,44 @@ Fraction: 20.43 %
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>type: CDS
-location: [22966:24004](+)
-qualifiers:
-    Key: codon_start, Value: [&#39;1&#39;]
-    Key: db_xref, Value: [&#39;GOA:P19726&#39;, &#39;UniProtKB/Swiss-Prot:P19726&#39;, &#39;GeneID:1261026&#39;]
-    Key: locus_tag, Value: [&#39;T7p45&#39;]
-    Key: note, Value: [&#39;major capsid protein. Involved in F-exclusion of wt T7 phage. A minor capsid protein (gp10B) is produced from gene 10 by a -1 frameshift towards the end of 10A, resulting in a slightly larger protein. Other names: gp10A.&#39;]
-    Key: product, Value: [&#39;major capsid protein&#39;]
-    Key: protein_id, Value: [&#39;NP_041998.1&#39;]
-    Key: transl_table, Value: [&#39;11&#39;]
-    Key: translation, Value: [&#39;MASMTGGQQMGTNQGKGVVAAGDKLALFLKVFGGEVLTAFARTSVTTSRHMVRSISSGKSAQFPVLGRTQAAYLAPGENLDDKRKDIKHTEKVITIDGLLTADVLIYDIEDAMNHYDVRSEYTSQLGESLAMAADGAVLAEIAGLCNVESKYNENIEGLGTATVIETTQNKAALTDQVALGKEIIAALTKARAALTKNYVPAADRVFYCDPDSYSAILAALMPNAANYAALIDPEKGSIRNVMGFEVVEVPHLTAGGAGTAREGTTGQKHVFPANKGEGNVKVAKDNVIGLFMHRSAVGTVKLRDLALERARRANFQADQIIAKYAMGHGGLRPEAAGAVVFKVE&#39;]
-
-DNA: ATGGCTAGCATGACTGGTGGACAGCAAATGGGTACTAACCAAGGTAAAGGTGTAGTTGCTGCTGGAGATAAACTGGCGTTGTTCTTGAAGGTATTTGGCGGTGAAGTCCTGACTGCGTTCGCTCGTACCTCCGTGACCACTTCTCGCCACATGGTACGTTCCATCTCCAGCGGTAAATCCGCTCAGTTCCCTGTTCTGGGTCGCACTCAGGCAGCGTATCTGGCTCCGGGCGAGAACCTCGACGATAAACGTAAGGACATCAAACACACCGAGAAGGTAATCACCATTGACGGTCTCCTGACGGCTGACGTTCTGATTTATGATATTGAGGACGCGATGAACCACTACGACGTTCGCTCTGAGTATACCTCTCAGTTGGGTGAATCTCTGGCGATGGCTGCGGATGGTGCGGTTCTGGCTGAGATTGCCGGTCTGTGTAACGTGGAAAGCAAATATAATGAGAACATCGAGGGCTTAGGTACTGCTACCGTAATTGAGACCACTCAGAACAAGGCCGCACTTACCGACCAAGTTGCGCTGGGTAAGGAGATTATTGCGGCTCTGACTAAGGCTCGTGCGGCTCTGACCAAGAACTATGTTCCGGCTGCTGACCGTGTGTTCTACTGTGACCCAGATAGCTACTCTGCGATTCTGGCAGCACTGATGCCGAACGCAGCAAACTACGCTGCTCTGATTGACCCTGAGAAGGGTTCTATCCGCAACGTTATGGGCTTTGAGGTTGTAGAAGTTCCGCACCTCACCGCTGGTGGTGCTGGTACCGCTCGTGAGGGCACTACTGGTCAGAAGCACGTCTTCCCTGCCAATAAAGGTGAGGGTAATGTCAAGGTTGCTAAGGACAACGTTATCGGCCTGTTCATGCACCGCTCTGCGGTAGGTACTGTTAAGCTGCGTGACTTGGCTCTGGAGCGCGCTCGCCGTGCTAACTTCCAAGCGGACCAGATTATCGCTAAGTACGCAATGGGCCACGGTGGTCTTCGCCCAGAAGCTGCTGGTGCAGTGGTTTTCAAAGTGGAGTAA
-protein: MASMTGGQQMGTNQGKGVVAAGDKLALFLKVFGGEVLTAFARTSVTTSRHMVRSISSGKSAQFPVLGRTQAAYLAPGENLDDKRKDIKHTEKVITIDGLLTADVLIYDIEDAMNHYDVRSEYTSQLGESLAMAADGAVLAEIAGLCNVESKYNENIEGLGTATVIETTQNKAALTDQVALGKEIIAALTKARAALTKNYVPAADRVFYCDPDSYSAILAALMPNAANYAALIDPEKGSIRNVMGFEVVEVPHLTAGGAGTAREGTTGQKHVFPANKGEGNVKVAKDNVIGLFMHRSAVGTVKLRDLALERARRANFQADQIIAKYAMGHGGLRPEAAGAVVFKVE*
+<pre>Downloading records 1 through 20
+Downloading records 21 through 40
+Downloading records 41 through 60
+Downloading records 61 through 80
+Downloading records 81 through 100
+Downloading records 101 through 120
+Downloading records 121 through 140
+Downloading records 141 through 160
+Downloading records 161 through 180
+Downloading records 181 through 200
+Downloading records 201 through 220
+Downloading records 221 through 240
+Downloading records 241 through 260
+Downloading records 261 through 280
+Downloading records 281 through 300
+Downloading records 301 through 320
+Downloading records 321 through 340
+Downloading records 341 through 360
+Downloading records 361 through 380
+Downloading records 381 through 400
+Downloading records 401 through 420
+Downloading records 421 through 440
+Downloading records 441 through 460
+Downloading records 461 through 480
+Downloading records 481 through 500
+Downloading records 501 through 520
+Downloading records 521 through 540
+Downloading records 541 through 560
+Downloading records 561 through 580
+Downloading records 581 through 600
+Downloading records 601 through 620
+Downloading records 621 through 640
+Downloading records 641 through 660
+Downloading records 661 through 680
+Downloading records 681 through 700
+Downloading records 701 through 720
+Downloading records 721 through 740
+Downloading records 741 through 744
 </pre>
 </div>
 </div>
@@ -12337,42 +12990,19 @@ protein: MASMTGGQQMGTNQGKGVVAAGDKLALFLKVFGGEVLTAFARTSVTTSRHMVRSISSGKSAQFPVLGRTQA
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Problem 6:</strong></p>
-<p>For the influenza HA gene with ID "KT220438", write python code that checks whether the protein sequence listed in the CDS feature corresponds to the protein sequence you obtain when you translate the gene sequence. The code should print "The two translations match" or "The two translations do not match" depending on whether there is a match or not.</p>
-
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># download the record again</span>
-<span class="n">handle</span> <span class="o">=</span> <span class="n">Entrez</span><span class="o">.</span><span class="n">efetch</span><span class="p">(</span><span class="n">db</span><span class="o">=</span><span class="s2">&quot;nucleotide&quot;</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;KT220438&quot;</span><span class="p">,</span> <span class="n">rettype</span><span class="o">=</span><span class="s2">&quot;gb&quot;</span><span class="p">,</span> <span class="n">retmode</span><span class="o">=</span><span class="s2">&quot;text&quot;</span><span class="p">)</span>
-<span class="n">record</span> <span class="o">=</span> <span class="n">SeqIO</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">handle</span><span class="p">,</span> <span class="s2">&quot;genbank&quot;</span><span class="p">)</span>
-<span class="n">handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># We can now open the file we created and parse all the records we have previously stored</span>
+<span class="n">in_handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;influenza_HA.gb&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span>
+<span class="n">records</span> <span class="o">=</span> <span class="n">SeqIO</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">in_handle</span><span class="p">,</span> <span class="s2">&quot;genbank&quot;</span><span class="p">)</span>
 
-<span class="c1"># find the CDS feature    </span>
-<span class="k">for</span> <span class="n">feature</span> <span class="ow">in</span> <span class="n">record</span><span class="o">.</span><span class="n">features</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">feature</span><span class="o">.</span><span class="n">type</span> <span class="o">==</span> <span class="s2">&quot;CDS&quot;</span><span class="p">:</span>
-        <span class="n">CDS_feature</span> <span class="o">=</span> <span class="n">feature</span>
-        
-<span class="c1"># Extract the amino-acid sequence from the CDS feature. We must not forget the [0]</span>
-<span class="c1"># at the end to extract the first element of the list</span>
-<span class="n">CDS_feature_seq</span> <span class="o">=</span> <span class="n">CDS_feature</span><span class="o">.</span><span class="n">qualifiers</span><span class="p">[</span><span class="s2">&quot;translation&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
-<span class="c1"># Extract the translated sequence from the DNA sequence in the record.</span>
-<span class="c1"># We need to remove the trailing &#39;*&#39; indicating a stop codon,</span>
-<span class="c1"># and we also need to convert the whole thing into a string. </span>
-<span class="n">translated_seq</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">record</span><span class="o">.</span><span class="n">seq</span><span class="o">.</span><span class="n">translate</span><span class="p">()[:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
-<span class="k">if</span> <span class="n">CDS_feature_seq</span> <span class="o">==</span> <span class="n">translated_seq</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The two translations match.&quot;</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The two translations do not match.&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">record</span> <span class="ow">in</span> <span class="n">records</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">record</span><span class="o">.</span><span class="n">description</span><span class="p">)</span>
+    
+<span class="n">in_handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
 
 </div>
@@ -12389,7 +13019,750 @@ protein: MASMTGGQQMGTNQGKGVVAAGDKLALFLKVFGGEVLTAFARTSVTTSRHMVRSISSGKSAQFPVLGRTQA
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>The two translations match.
+<pre>Influenza A virus (A/Texas/12/2019(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/07/2019(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/06/2019(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/05/2019(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/157/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/143/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/02/2019(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/148/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/147/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/156/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/154/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/swine/Texas/A01785919/2019(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/7939/2019(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/7923/2019(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/7921/2019(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/7920/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/7918/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/7917/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/7916/2019(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/7914/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/7913/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/7911/2019(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/7910/2019(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/7908/2019(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/7906/2019(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/7904/2019(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/7902/2019(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/7901/2019(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/7898/2019(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/7895/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/7949/2019(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/7947/2019(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/7938/2019(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/7937/2019(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/7936/2019(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/7931/2019(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/7930/2019(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/7929/2019(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/7928/2019(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/7926/2019(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/7925/2019(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/7924/2019(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/7912/2019(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/7907/2019(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/7905/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/7903/2019(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/7900/2019(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/7899/2019(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/7897/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/7896/2019(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/7894/2019(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/7893/2019(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/152/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/151/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/140/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/swine/Texas/A01785906/2019(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/7430/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/7429/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/7389/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/144/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/145/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/7670/2018()) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/7668/2018()) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/7666/2018()) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/7664/2018()) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/7662/2018()) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/7658/2018()) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/7656/2018()) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/7192/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/142/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/143/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/7050/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/7045/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/7003/2017(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/6992/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/6988/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/6984/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/6980/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/6979/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/6974/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/140/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/134/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/138/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/135/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/141/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/134/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/136/2018(H3N2)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/7504/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/139/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/138/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/swine/Texas/A01785737/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/6843/2017(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/swine/Texas/A01785599/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/swine/Texas/A01785528/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/06/2018(H1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/403/2017(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/402/2017(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/401/2017(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/400/2017(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/93/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/blue-winged teal/Texas/UGAI15-6706/2015(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/blue-winged teal/Texas/UGAI15-5632/2015(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/6417/2017(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/88/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/85/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/84/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/81/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/75/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/74/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/72/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/70/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/01/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/69/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/316/2017(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/314/2017(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/311/2017(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/310/2017(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/08/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/03/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/65/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/323/2017(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/322/2017(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/320/2017(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/318/2017(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/swine/Texas/A01785406/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/swine/Texas/A01785377/2017(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/316/2017(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/314/2017(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/310/2017(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/311/2017(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/300/2017(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/295/2017(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/294/2017(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/295/2017(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/294/2017(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/swine/Texas/A02221802/2017(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/6180/2017(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/6178/2017(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/6176/2017(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/6175/2017(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/6170/2017(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/281/2017(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/28/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/160/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/13/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/157/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/150/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/146/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/144/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/143/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/140/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/115/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/114/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/113/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/112/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/111/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/110/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/109/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/108/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/107/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/106/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/105/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/104/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/103/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/102/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/101/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/100/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/100/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/99/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/98/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/94/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/93/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/79/2015(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/135/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/127/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/122/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/47/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/137/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/132/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/128/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/125/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/117/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/116/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/61/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/55/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/55/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/53/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/51/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/51/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/50/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/38/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/87/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/84/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/81/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/37/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/75/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/73/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/72/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/70/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/69/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/68/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/18/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/16/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/13/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/04/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/03/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/02/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/46/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/40/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/39/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/32/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/31/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/28/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/27/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/27/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/25/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/24/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/20/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/10/2016(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/78/2015(H1N1)) clone 3025624445_284379_v1_4 segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/02/2016(H1N1)) clone 3000415970_284773_v1_4 segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/03/2016(H1N1)) clone 3000415977_284780_v1_4 segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/21/2016(H1N1)) clone 3025624773_ZZYPO19U_v1_4 segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/05/2016(H1N1)) clone 3000416250_285448_v1_4 segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/07/2016(H1N1)) clone 3000416252_285445_v1_4 segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/09/2016(H1N1)) clone 3025624576_285571_v1_4 segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/27/2013(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/09/2014(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/11/2014(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/10/2014(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/16/2014(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/02/2014(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/96/2013(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/82/2013(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/42/2013(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/117/2013(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/08/2014(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/12/2014(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/07/2014(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/36/2013(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/26/2013(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/89/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/86/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/88/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/85/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/87/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/07/2013(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/15/2013(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/13/2013(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/106/2012(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/99/2012(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/10/2013(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/90/2012(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/07/2012(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/24/2012(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/49/2012(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/48/2012(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/24/2012(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/26/2012(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/23/2012(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/27/2012(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/31/2012(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/35/2012(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/33/2012(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/34/2012(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/23/2012(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/23/2012(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/29/2012(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/18/2012(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/05/2012(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/04/2012(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/47/2012(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/36/2012(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/30/2012(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/47/2012(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/22/2012(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/21/2012(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/37/2012(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/02/2012(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/37/2012(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/36/2012(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/79/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/08/2011(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/07/2011(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/14/2010(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/01/2011(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/01/2011(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/04/2011(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/09/2011(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/10/2011(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/48/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/57/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/76/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/77/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/64/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/58/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/62/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/45/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/73/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/59/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/60/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/72/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/56/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/61/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/65/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/63/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/66/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/66/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/01/2010(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/67/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/67/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/75/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/71/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/70/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/69/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/03/2010(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/42/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/01/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/38/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/01/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/36/2008(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/32/2008(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/35/2008(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/23/2008(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/04/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/05/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/29/2008(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/27/2008(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/23/2008(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/16/2008(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/15/2008(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/18/2008(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/17/2008(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/11/2008(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/09/2008(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/10/2008(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/08/2008(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/74/2007(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/78/2007(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/70/2007(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/41/2007(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/32/2007(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/31/2007(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/06/2007(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/05/2007(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/194/2016(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/89/2017(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/63/2017(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/41/2017(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/101/2017(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/83/2017(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/103/2017(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/86/2017(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/81/2017(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/79/2017(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/swine/Texas/A02214607/2017(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/69/2017(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/63/2017(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/58/2017(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/57/2017(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/56/2017(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/44/2017(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/42/2017(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/41/2017(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/51/2017(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/49/2017(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/43/2017(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/31/2017(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/37/2017(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/39/2017(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/31/2017(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/34/2017(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/22/2017(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/21/2017(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/08/2017(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/18/2017(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/06/2017(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/08/2017(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/04/2017(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/200/2016(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/199/2016(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/03/2017(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/200/2016(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/199/2016(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/194/2016(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/5485/2016(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/5484/2016(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/5483/2016(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/5028/2016(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/blue-winged teal/Texas/AI12-4549/2012(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/swine/Texas/13TOSU0035/2013(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/swine/Texas/13TOSU0050/2013(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/swine/Texas/A01432097/2012(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/UR06-0422/2007(H1N1)) segment 4, complete sequence
+Influenza A virus (A/reassortant/IVR-148(Brisbane/59/2007 x Texas/1/1977)(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/swine/Texas/13TOSU0041/2013(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/swine/Texas/A01410177/2014(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/3689/2013(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/3688/2013(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/3687/2013(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/3686/2013(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/3685/2013(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/3684/2013(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/3683/2013(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/3682/2013(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/3681/2013(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/3680/2013(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/3679/2013(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/3678/2013(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/3677/2013(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/3676/2014(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/3675/2014(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/3674/2014(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/3673/2014(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/3672/2014(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/3671/2014(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/3670/2014(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/3669/2014(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/3668/2014(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/3667/2014(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/3666/2014(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/3665/2014(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/3664/2013(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/3663/2013(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/3662/2013(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/3661/2013(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/3660/2013(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/3571/2013(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/3570/2013(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/3520/2013(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/3515/2013(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/3513/2013(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/3512/2013(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/3510/2013(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/3509/2013(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/3508/2013(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/3475/2013(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/3474/2013(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/3425/2013(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/swine/Texas/00525/2005(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/swine/Texas/SG1187/2004(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/swine/Texas/SG1187/2004(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/swine/Texas/SG1162/2003(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/swine/Texas/00195/2003(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/swine/Texas/SG1162/2003(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/swine/Texas/00867/2005(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/swine/Texas/00244/2004(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/swine/Texas/SG1380/2011(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/swine/Texas/01657/2007(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/swine/Texas/SG1271/2007(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/swine/Texas/01522/2007(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/mallard/Alberta/211/1998(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/ruddy turnstone/Delaware Bay/123/1994(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/JMM_53/2012(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/JMM_52/2012(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/36-JY2/1991(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/northern pintail/Texas/421716/2001(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/reassortant/IVR-148(Brisbane/59/2007 x Texas/1/1977)(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/reassortant/IVR-148(Brisbane/59/2007 x Texas/1/1977)(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/reassortant/IVR-148(Brisbane/59/2007 x Texas/1/1977)(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/swine/Texas/A01104003/2011(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/swine/Texas/A01104004/2011(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/JMS368/2009(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/JMS360/2009(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/45034240/2009(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/JMS403/2010(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/JMS401/2010(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/JMS400/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/JMS367/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/JMS366/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/JMS415/2010(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/JMS414/2010(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/JMS413/2010(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/JMS412/2010(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/JMS411/2010(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/JMS410/2010(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/JMS409/2010(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/JMS408/2010(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/JMS407/2010(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/JMS406/2010(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/JMS405/2010(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/JMS404/2010(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/JMS402/2010(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/JMS399/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/JMS398/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/JMS397/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/JMS395/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/JMS394/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/JMS393/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/JMS392/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/JMS391/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/JMS390/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/JMS389/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/JMS388/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/JMS387/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/JMS386/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/JMS385/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/JMS384/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/JMS383/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/JMS382/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/JMS381/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/JMS380/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/JMS379/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/JMS373/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/JMS372/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/JMS371/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/JMS370/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/JMS369/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/JMS365/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/JMS364/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/JMS363/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/JMS362/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/JMS361/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/JMS359/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/JMS358/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/JMS356/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/46241654/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/46240925/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/46233104/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/46224042/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/46223582/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/46223444/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/46222134/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/46221665/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/46214103/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/46201823/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/46193632/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/JMS378/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/JMS377/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/JMS376/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/JMS375/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/46193311/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/46192760/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/461917783/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/46182018/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/46181292/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/46181235/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/46172734/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/46172731/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/44312415/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/42211898/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/42202026/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/42132413/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/42254309/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/42103399/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/42091791/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/43292238/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/42151049/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/42102708/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/42221280/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/43143450/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/42201798/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/42191647/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/44302551/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/44301765/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/42163291/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/42303371/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/42121926/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/42281289/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Brownsville/37OS/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45061755/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45122886/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45032753/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45121004/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45052569/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45113911/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45032708/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45102952/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45062346/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45024243/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/44151841/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45042604/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45023717/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/44152535/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45132202/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45131305/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45072128/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45072656/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45071344/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45131576/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45072273/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45043852/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45021632/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/44282651/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45101422/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45103759/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45101424/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45091417/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45091405/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45091402/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45140902/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45093214/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45083819/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45071524/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45010998/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/44313703/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45093670/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45093846/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45103259/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45062584/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45061670/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/44302167/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/44302533/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45034157/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45033567/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45033774/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45132647/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45131774/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45132788/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45122722/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45122774/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45132214/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45113882/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45103998/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45104048/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45103737/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45104026/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45113371/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45122036/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45122282/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45122033/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45121606/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45122369/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45130742/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45122538/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45120922/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/43122467/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/42192947/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/43132503/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/42291877/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/42142537/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/42163295/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/43200999/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/43272683/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/45062633/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/42114261/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/42113095/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/42173957/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/42201824/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/42122969/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/42191653/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/42123701/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/43011033/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/43242018/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/42152486/2009(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/47/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/29/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/30/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/05/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/04/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/20/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/39/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/reassortant/IDCDC-RG22(New York/18/2009 x Puerto Rico/8/1934)(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/reassortant/IDCDC-RG20(Texas/05/2009 x Puerto Rico/8/1934)(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/reassortant/IDCDC-RG18(Texas/05/2009 x New York/18/2009 x Puerto Rico/8/1934)(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Italy/85/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/37/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/36/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/34/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/31/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/32/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/11/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/17/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/28/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/10/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/04/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/reassortant/IDCDC-RG15(Texas/05/2009 x Puerto Rico/8/1934)(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/12/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/05/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/09/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/08/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/19/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/22/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/23/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/15/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/07/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/08/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/09/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/06/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/04/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/04/2009(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/WRAIR1118P/2009(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/WRAIR1115P/2009(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/WRAIR1053P/2009(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/X-113(X-31B-Texas/36/1991)(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/36/91(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Wilson-Smith/1933(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/USSR/90/1977(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/36/1991(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Taiwan/01/1986(H1N1)) hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/New Caledonia/20/1999(H1N1)) hemagglutinin (HA) gene, complete cds
+Synthetic construct derived from Influenza A virus (A/Texas/15/2009(H1N1)) hemagglutinin gene, complete cds
+Influenza A virus (A/Texas/36/91(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/UR06-0323/2007(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/UR06-0156/2007(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/36/1991(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/UR06-0250/2007(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/UR06-0026/2007(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/UR06-0217/2007(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/UR06-0038/2007(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/UR06-0420/2007(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/UR06-0503/2007(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/UR06-0039/2007(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/UR06-0133/2007(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/UR06-0216/2007(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/UR06-0445/2007(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/UR06-0204/2007(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/UR06-0357/2007(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/UR06-0342/2007(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/UR06-0176/2007(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/UR06-0305/2007(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/UR06-0157/2007(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/UR06-0582/2007(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/UR06-0308/2007(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/UR06-0309/2007(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/UR06-0397/2007(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/UR06-0468/2007(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/UR06-0270/2007(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/UR06-0444/2007(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/UR06-0175/2007(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/UR06-0271/2007(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/UR06-0542/2007(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/UR06-0540/2007(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/UR06-0306/2007(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/UR06-0195/2007(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/UR06-0303/2007(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/UR06-0174/2007(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/UR06-0359/2007(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/UR06-0193/2007(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/UR06-0526/2007(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/UR06-0461/2007(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/UR06-0563/2007(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/UR06-0196/2007(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/UR06-0467/2007(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/UR06-0203/2007(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/UR06-0398/2007(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/UR06-0025/2007(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/UR06-0380/2007(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/UR06-0502/2007(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/UR06-0012/2006(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Baylor/4052/1981(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Texas/2922-3/1986(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Lackland/7/1978(H1N1)) segment 4, complete sequence
+Influenza A virus (A/Lackland/3/1978(H1N1)) segment 4, complete sequence
 </pre>
 </div>
 </div>

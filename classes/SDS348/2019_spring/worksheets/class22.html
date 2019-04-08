@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>class20_solutions</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>class22</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -11775,8 +11775,17 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Class-20:-Working-with-gene-features-and-genomes">Class 20: Working with gene features and genomes<a class="anchor-link" href="#Class-20:-Working-with-gene-features-and-genomes">&#182;</a></h1><p><strong>Apr 4, 2019</strong></p>
-<h2 id="Features-in-genbank-files">Features in genbank files<a class="anchor-link" href="#Features-in-genbank-files">&#182;</a></h2><p>Many important pieces of information in genbank files are stored in features. These features can be queried through Biopython by working with the <code>features</code> list of a genbank record object (<code>record.features</code>). More information about  sequence features is available <a href="http://biopython.org/DIST/docs/tutorial/Tutorial.html#htoc38">here.</a> We will usually iterate over all features in the list with a <code>for</code> loop:</p>
+<h1 id="Class-22:-Regular-Expressions">Class 22: Regular Expressions<a class="anchor-link" href="#Class-22:-Regular-Expressions">&#182;</a></h1><p><strong>April 11, 2019</strong></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Regular expressions are an extremely powerful method of searching and extracting information from strings. A good, basic tutorial is available <a href="https://developers.google.com/edu/python/regular-expressions">here.</a></p>
+<p>In the most-common use case, you have a test string that you test against a regular expression string, using the function <code>search</code> from the <code>re</code> module:</p>
 
 </div>
 </div>
@@ -11786,20 +11795,18 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">Bio</span> <span class="k">import</span> <span class="n">Entrez</span><span class="p">,</span> <span class="n">SeqIO</span>
-<span class="n">Entrez</span><span class="o">.</span><span class="n">email</span> <span class="o">=</span> <span class="s2">&quot;wilke@austin.utexas.edu&quot;</span> <span class="c1"># put your email here</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">re</span> <span class="c1"># we need to import the re module to use it</span>
 
-<span class="c1"># Download sequence record for genbank id KT220438</span>
-<span class="c1"># This is HA gene of Influenza A virus, strain A/NewJersey/NHRC_93219/2015(H3N2)</span>
-<span class="n">handle</span> <span class="o">=</span> <span class="n">Entrez</span><span class="o">.</span><span class="n">efetch</span><span class="p">(</span><span class="n">db</span><span class="o">=</span><span class="s2">&quot;nucleotide&quot;</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;KT220438&quot;</span><span class="p">,</span> <span class="n">rettype</span><span class="o">=</span><span class="s2">&quot;gb&quot;</span><span class="p">,</span> <span class="n">retmode</span><span class="o">=</span><span class="s2">&quot;text&quot;</span><span class="p">)</span>
-<span class="n">record</span> <span class="o">=</span> <span class="n">SeqIO</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">handle</span><span class="p">,</span> <span class="s2">&quot;genbank&quot;</span><span class="p">)</span>
-<span class="n">handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="n">test_string</span> <span class="o">=</span> <span class="s2">&quot;My name is John Doe&quot;</span>
 
-<span class="c1"># Loop over all features in the record to see</span>
-<span class="c1"># what features there are and what information</span>
-<span class="c1"># they contain</span>
-<span class="k">for</span> <span class="n">feature</span> <span class="ow">in</span> <span class="n">record</span><span class="o">.</span><span class="n">features</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">feature</span><span class="p">)</span>
+<span class="c1"># test whether test_string contains &quot;name&quot;</span>
+<span class="c1"># (pay attention to the r in front of the string; we need this)</span>
+<span class="n">match</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;name&quot;</span><span class="p">,</span> <span class="n">test_string</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">match</span><span class="p">:</span> <span class="c1"># did we find a match?    </span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Test string matches.&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Match:&quot;</span><span class="p">,</span> <span class="n">match</span><span class="o">.</span><span class="n">group</span><span class="p">())</span> <span class="c1"># print out the part of the string that matched</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Test string doesn&#39;t match.&quot;</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -11816,48 +11823,48 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>type: source
-location: [0:1701](+)
-qualifiers:
-    Key: collection_date, Value: [&#39;17-Jan-2015&#39;]
-    Key: country, Value: [&#39;USA: New Jersey&#39;]
-    Key: db_xref, Value: [&#39;taxon:1682360&#39;]
-    Key: host, Value: [&#39;Homo sapiens&#39;]
-    Key: isolation_source, Value: [&#39;nasopharyngeal swab&#39;]
-    Key: lab_host, Value: [&#39;MDCK&#39;]
-    Key: mol_type, Value: [&#39;viral cRNA&#39;]
-    Key: organism, Value: [&#39;Influenza A virus (A/New Jersey/NHRC_93219/2015(H3N2))&#39;]
-    Key: segment, Value: [&#39;4&#39;]
-    Key: serotype, Value: [&#39;H3N2&#39;]
-    Key: strain, Value: [&#39;A/NewJersey/NHRC_93219/2015&#39;]
+<pre>Test string matches.
+Match: name
+</pre>
+</div>
+</div>
 
-type: gene
-location: [0:1701](+)
-qualifiers:
-    Key: gene, Value: [&#39;HA&#39;]
+</div>
+</div>
 
-type: CDS
-location: [0:1701](+)
-qualifiers:
-    Key: codon_start, Value: [&#39;1&#39;]
-    Key: function, Value: [&#39;receptor binding and fusion protein&#39;]
-    Key: gene, Value: [&#39;HA&#39;]
-    Key: product, Value: [&#39;hemagglutinin&#39;]
-    Key: protein_id, Value: [&#39;AKQ43545.1&#39;]
-    Key: translation, Value: [&#39;MKTIIALSYILCLVFAQKIPGNDNSTATLCLGHHAVPNGTIVKTITNDRIEVTNATELVQNSSIGEICDSPHQILDGENCTLIDALLGDPQCDGFQNKKWDLFVERSKAYSNCYPYDVPDYASLRSLVASSGTLEFNNESFNWTGVTQNGTSSACIRRSSSSFFSRLNWLTHLNYTYPALNVTMPNNEQFDKLYIWGVHHPGTDKDQIFLYAQSSGRITVSTKRSQQAVIPNIGSRPRIRDIPSRISIYWTIVKPGDILLINSTGNLIAPRGYFKIRSGKSSIMRSDAPIGKCKSECITPNGSIPNDKPFQNVNRITYGACPRYVKHSTLKLATGMRNVPEKQTRGIFGAIAGFIENGWEGMVDGWYGFRHQNSEGRGQAADLKSTQAAIDQINGKLNRLIGKTNEKFHQIEKEFSEVEGRIQDLEKYVEDTKIDLWSYNAELLVALENQHTXDLTDSEMNKLFEKTKKQLRENAEDMGNGCFKIYHKCDNACIGSIRNGTYDHNVYRDEALNNRFQIKGVELKSGYKDWILWISXAISCFLLCVALLGFIMWACQKGNIRCNICI&#39;]
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">test_string</span> <span class="o">=</span> <span class="s2">&quot;My email is john@utexas.edu&quot;</span>
 
-type: mat_peptide
-location: [48:1035](+)
-qualifiers:
-    Key: gene, Value: [&#39;HA&#39;]
-    Key: product, Value: [&#39;HA1&#39;]
+<span class="c1"># test whether test_string contains &quot;name&quot;</span>
+<span class="n">match</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;name&quot;</span><span class="p">,</span> <span class="n">test_string</span><span class="p">)</span>
 
-type: mat_peptide
-location: [1035:1698](+)
-qualifiers:
-    Key: gene, Value: [&#39;HA&#39;]
-    Key: product, Value: [&#39;HA2&#39;]
+<span class="k">if</span> <span class="n">match</span><span class="p">:</span> <span class="c1"># did we find a match?    </span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Test string matches.&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Match:&quot;</span><span class="p">,</span> <span class="n">match</span><span class="o">.</span><span class="n">group</span><span class="p">())</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Test string doesn&#39;t match.&quot;</span><span class="p">)</span>
+</pre></div>
 
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Test string doesn&#39;t match.
 </pre>
 </div>
 </div>
@@ -11870,22 +11877,23 @@ qualifiers:
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The type of each feature is stored in <code>feature.type</code>, and its location on the DNA sequence is stored in <code>feature.location</code>. The additional feature information is stored in a dictionary called <code>qualifiers</code>. We can query this dictionary to retrieve individual elements of a feature. Note that these elements are all stored as lists, and so we generally have to add <code>[0]</code> at the end of our query to retrieve the first element in the list.</p>
+<p>Much of the power of regular expressions stems from the fact that you can match on general patterns. For example, <code>\S+</code> will match an arbitrary number of non-whitespace characters:</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">feature</span> <span class="ow">in</span> <span class="n">record</span><span class="o">.</span><span class="n">features</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">feature</span><span class="o">.</span><span class="n">type</span> <span class="o">==</span> <span class="s2">&quot;CDS&quot;</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Coding sequence found at position:&quot;</span><span class="p">,</span> <span class="n">feature</span><span class="o">.</span><span class="n">location</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Gene product:&quot;</span><span class="p">,</span> <span class="n">feature</span><span class="o">.</span><span class="n">qualifiers</span><span class="p">[</span><span class="s2">&quot;product&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Protein ID:&quot;</span><span class="p">,</span> <span class="n">feature</span><span class="o">.</span><span class="n">qualifiers</span><span class="p">[</span><span class="s2">&quot;protein_id&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Protein sequence:&quot;</span><span class="p">,</span> <span class="n">feature</span><span class="o">.</span><span class="n">qualifiers</span><span class="p">[</span><span class="s2">&quot;translation&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">test_string</span> <span class="o">=</span> <span class="s2">&quot;My age is secret.&quot;</span>
+<span class="n">match</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;My \S+ is&quot;</span><span class="p">,</span> <span class="n">test_string</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Match:&quot;</span><span class="p">,</span> <span class="n">match</span><span class="o">.</span><span class="n">group</span><span class="p">())</span>
+
+<span class="n">test_string</span> <span class="o">=</span> <span class="s2">&quot;My mood is good.&quot;</span>
+<span class="n">match</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;My \S+ is&quot;</span><span class="p">,</span> <span class="n">test_string</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Match:&quot;</span><span class="p">,</span> <span class="n">match</span><span class="o">.</span><span class="n">group</span><span class="p">())</span>
 </pre></div>
 
 </div>
@@ -11902,10 +11910,54 @@ qualifiers:
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Coding sequence found at position: [0:1701](+)
-Gene product: hemagglutinin
-Protein ID: AKQ43545.1
-Protein sequence: MKTIIALSYILCLVFAQKIPGNDNSTATLCLGHHAVPNGTIVKTITNDRIEVTNATELVQNSSIGEICDSPHQILDGENCTLIDALLGDPQCDGFQNKKWDLFVERSKAYSNCYPYDVPDYASLRSLVASSGTLEFNNESFNWTGVTQNGTSSACIRRSSSSFFSRLNWLTHLNYTYPALNVTMPNNEQFDKLYIWGVHHPGTDKDQIFLYAQSSGRITVSTKRSQQAVIPNIGSRPRIRDIPSRISIYWTIVKPGDILLINSTGNLIAPRGYFKIRSGKSSIMRSDAPIGKCKSECITPNGSIPNDKPFQNVNRITYGACPRYVKHSTLKLATGMRNVPEKQTRGIFGAIAGFIENGWEGMVDGWYGFRHQNSEGRGQAADLKSTQAAIDQINGKLNRLIGKTNEKFHQIEKEFSEVEGRIQDLEKYVEDTKIDLWSYNAELLVALENQHTXDLTDSEMNKLFEKTKKQLRENAEDMGNGCFKIYHKCDNACIGSIRNGTYDHNVYRDEALNNRFQIKGVELKSGYKDWILWISXAISCFLLCVALLGFIMWACQKGNIRCNICI
+<pre>Match: My age is
+Match: My mood is
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We can also capture substrings using regular expressions, by encapsulating the parts of interest in parentheses <code>()</code>:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">test_string</span> <span class="o">=</span> <span class="s2">&quot;My age is secret.&quot;</span>
+<span class="n">match</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;My (\S+) is (\S+)&quot;</span><span class="p">,</span> <span class="n">test_string</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Match:&quot;</span><span class="p">,</span> <span class="n">match</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Captured group 1:&quot;</span> <span class="p">,</span> <span class="n">match</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Captured group 2:&quot;</span> <span class="p">,</span> <span class="n">match</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Match: My age is secret.
+Captured group 1: age
+Captured group 2: secret.
 </pre>
 </div>
 </div>
@@ -11926,162 +11978,34 @@ Protein sequence: MKTIIALSYILCLVFAQKIPGNDNSTATLCLGHHAVPNGTIVKTITNDRIEVTNATELVQNS
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Problem 1:</strong></p>
-<p>When we are working with larger genbank files (e.g. entire genomes), we generally first download them and store them as a file on our local drive. Then we work with those local files. To practice this workflow, write code that downloads the complete genome of bacteriophage T7 and stores it in a file called <code>T7.gb</code>. The accession number for that genome is NC_001604. Make sure you can find the file you have created on your harddrive. Also verify that the file contains the same genome you can see on the NCBI website.</p>
+<p><strong>Problem 1</strong></p>
+<p>Use the online python regular expression editor available here: <a href="http://pythex.org/">http://pythex.org/</a> to explore regular expressions. For each of the given test strings, find the regular expressions that achieves the given goals.</p>
+<p>1. Test string: "<code>my email is: john@utexas.edu</code>"</p>
+<ul>
+<li>Match on: "<code>my email is</code>"  </li>
+<li>Match on any email address  </li>
+<li>Match on: "<code>@utexas.edu</code>"  </li>
+<li>Capture the entire email address  </li>
+<li>Capture both the part before the @ sign and the part after the @ sign separately  </li>
+<li>Capture the username of any <code>utexas.edu</code> email address  </li>
+</ul>
+<p>2. Test string: "<code>phone number: 123-456-7890</code>"</p>
+<ul>
+<li>Match on "<code>phone number:</code>" and capture the phone number  </li>
+<li>Match on any string of the form of a phone number, with three digits, a hyphen, three more digits, another hyphen, and four digits  </li>
+<li>Use the same match as before, but now capture the area code  </li>
+</ul>
+<p>3. Invent a few more problems and solutions on your own.</p>
 
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Problem 1</span>
-
-<span class="c1"># Download T7 genome:</span>
-<span class="n">download_handle</span> <span class="o">=</span> <span class="n">Entrez</span><span class="o">.</span><span class="n">efetch</span><span class="p">(</span><span class="n">db</span><span class="o">=</span><span class="s2">&quot;nucleotide&quot;</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;NC_001604&quot;</span><span class="p">,</span> <span class="n">rettype</span><span class="o">=</span><span class="s2">&quot;gb&quot;</span><span class="p">,</span> <span class="n">retmode</span><span class="o">=</span><span class="s2">&quot;text&quot;</span><span class="p">)</span>
-<span class="n">data</span> <span class="o">=</span> <span class="n">download_handle</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-<span class="n">download_handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-
-<span class="c1"># Store data into file &quot;T7.gb&quot;:</span>
-<span class="n">out_handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;T7.gb&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span>
-<span class="n">out_handle</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-<span class="n">out_handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Problem 2:</strong></p>
-<p>Now read in the T7 genome, and for each coding sequence (CDS) in that genome print out the name (<code>locus_tag</code>) and the product name (<code>product</code>).</p>
-<p>Hints:</p>
-<ul>
-<li>First you need to parse the genbank file into a record, using <code>SeqIO.read()</code>.</li>
-<li>All gene annotations are stored as features, and <code>record.features</code> gives you a list of all these features.</li>
-<li>Each feature has a type, accessible through <code>feature.type</code>. We are only interested in features of type "CDS".</li>
-<li>The actual annotations we are interested in, such as <code>locus_tag</code>, <code>product</code>, etc., are stored in the dictionary <code>feature.qualifiers</code>.</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Problem 2</span>
-
-<span class="n">in_handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;T7.gb&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span>
-<span class="n">record</span> <span class="o">=</span> <span class="n">SeqIO</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">in_handle</span><span class="p">,</span> <span class="s2">&quot;genbank&quot;</span><span class="p">)</span>
-<span class="n">in_handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-
-<span class="k">for</span> <span class="n">feature</span> <span class="ow">in</span> <span class="n">record</span><span class="o">.</span><span class="n">features</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">feature</span><span class="o">.</span><span class="n">type</span> <span class="o">==</span> <span class="s1">&#39;CDS&#39;</span><span class="p">:</span>
-        <span class="c1"># all the qualifiers are returned as lists, so we have to add `[0]` at the end to just get</span>
-        <span class="c1"># the first element of each list</span>
-        <span class="n">locus_tag</span> <span class="o">=</span> <span class="n">feature</span><span class="o">.</span><span class="n">qualifiers</span><span class="p">[</span><span class="s1">&#39;locus_tag&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
-        <span class="n">product</span> <span class="o">=</span> <span class="n">feature</span><span class="o">.</span><span class="n">qualifiers</span><span class="p">[</span><span class="s1">&#39;product&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">locus_tag</span> <span class="o">+</span> <span class="s2">&quot;: &quot;</span> <span class="o">+</span> <span class="n">product</span><span class="p">)</span>
-    
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>T7p01: hypothetical protein
-T7p02: hypothetical protein
-T7p04: hypothetical protein
-T7p05: hypothetical protein
-T7p06: hypothetical protein
-T7p03: protein kinase
-T7p07: T3/T7-like RNA polymerase
-T7p09: hypothetical protein
-T7p08: host dGTPase inhibitor
-T7p10: ATP-dependent DNA ligase
-T7p11: hypothetical protein
-T7p12: hypothetical protein
-T7p13: hypothetical protein
-T7p14: hypothetical protein
-T7p15: hypothetical protein
-T7p16: inhibitor of host bacterial RNA polymerase
-T7p17: single-stranded DNA-binding protein
-T7p18: hypothetical protein
-T7p19: endonuclease I
-T7p20: lysozyme
-T7p21: putative NHN endonuclease
-T7p22: DNA primase/helicase
-T7p23: hypothetical protein
-T7p24: helicase
-T7p25: hypothetical protein
-T7p26: hypothetical protein
-T7p27: hypothetical protein
-T7p28: hypothetical protein
-T7p29: DNA polymerase
-T7p30: hypothetical protein
-T7p31: hypothetical protein
-T7p32: host protein H-NS-interacting protein
-T7p33: hypothetical protein
-T7p34: host recBCD nuclease inhibitor
-T7p35: exonuclease
-T7p36: hypothetical protein
-T7p37: hypothetical protein
-T7p38: hypothetical protein
-T7p39: hypothetical protein
-T7p40: tail assembly protein
-T7p41: hypothetical protein
-T7p42: head-tail connector protein
-T7p43: capsid assembly protein
-T7p44: major capsid protein
-T7p45: major capsid protein
-T7p46: tail tubular protein A
-T7p47: tail tubular protein B
-T7p48: internal virion protein A
-T7p49: internal virion protein B
-T7p50: internal virion protein C
-T7p51: internal virion protein D
-T7p52: tail fiber protein
-T7p53: type II holin
-T7p54: DNA packaging protein, small subunit
-T7p55: phage lambda Rz-like lysis protein
-T7p56: phage lambda Rz1-like protein
-T7p57: DNA maturation protein
-T7p58: hypothetical protein
-T7p59: hypothetical protein
-T7p60: hypothetical protein
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Problem 3:</strong></p>
-<p>Calculate the mean gene length (in amino acids) for all CDSs in the T7 genome.</p>
-<p>Hint: Use the function <code>round()</code> to round your result to 2 decimal digits.</p>
+<p>Write python code that can take a string of the form <code>"My name is: ..."</code>, extract the name (indicated here by <code>...</code>), and then print it. Make sure you get the full name, not just the first name.</p>
 
 </div>
 </div>
@@ -12091,40 +12015,12 @@ T7p60: hypothetical protein
 <div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">in_handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;T7.gb&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span>
-<span class="n">record</span> <span class="o">=</span> <span class="n">SeqIO</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">in_handle</span><span class="p">,</span> <span class="s2">&quot;genbank&quot;</span><span class="p">)</span>
-<span class="n">in_handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">test_string</span> <span class="o">=</span> <span class="s2">&quot;My name is: John Doe&quot;</span>
 
-<span class="n">count</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># counts the number of genes in the genome</span>
-<span class="n">length_sum</span> <span class="o">=</span> <span class="mf">0.</span> <span class="c1"># holds the total sum of all lengths of all genes</span>
-<span class="k">for</span> <span class="n">feature</span> <span class="ow">in</span> <span class="n">record</span><span class="o">.</span><span class="n">features</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">feature</span><span class="o">.</span><span class="n">type</span> <span class="o">==</span> <span class="s1">&#39;CDS&#39;</span><span class="p">:</span>
-        <span class="n">seq</span> <span class="o">=</span> <span class="n">feature</span><span class="o">.</span><span class="n">qualifiers</span><span class="p">[</span><span class="s1">&#39;translation&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
-        <span class="n">length_sum</span> <span class="o">+=</span> <span class="nb">len</span><span class="p">(</span><span class="n">seq</span><span class="p">)</span>
-        <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
-        
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;mean length:&quot;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">length_sum</span><span class="o">/</span><span class="n">count</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="s2">&quot;amino acids&quot;</span><span class="p">)</span>
+<span class="c1"># your code goes here</span>
 </pre></div>
 
 </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>mean length: 227.62 amino acids
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -12133,10 +12029,8 @@ T7p60: hypothetical protein
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Problem 4:</strong></p>
-<p>(a) Download the <em>E. coli</em> K12 genome, available here: <a href="http://www.ncbi.nlm.nih.gov/nuccore/CP009685">http://www.ncbi.nlm.nih.gov/nuccore/CP009685</a>, and store it in a file called <code>Ecoli_K12.gb</code>.</p>
-<p>(b) Calculate the fraction of coding sequences that are marked as "hypothetical protein". (This information is provided in the "product" qualifier of a "CDS" feature.)</p>
-<p>(c) Calculate the GC content of the <em>entire</em> genome sequence. GC content is the fraction of G and C nucleotides in the sequence.</p>
+<h2 id="If-this-was-easy">If this was easy<a class="anchor-link" href="#If-this-was-easy">&#182;</a></h2><p><strong>Problem 3:</strong></p>
+<p>Write a function that can parse phone numbers in any sort of format and print them out in the standard 123-456-7890 format.</p>
 
 </div>
 </div>
@@ -12146,254 +12040,20 @@ T7p60: hypothetical protein
 <div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Problem 4a</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">clean_phone_number</span><span class="p">(</span><span class="nb">input</span><span class="p">):</span>
+    <span class="c1"># implement your function here</span>
+    <span class="k">pass</span> <span class="c1"># delete this, it is here just as a placeholder</span>
 
-<span class="c1"># Download E. coli K12 genome:</span>
-<span class="n">download_handle</span> <span class="o">=</span> <span class="n">Entrez</span><span class="o">.</span><span class="n">efetch</span><span class="p">(</span><span class="n">db</span><span class="o">=</span><span class="s2">&quot;nucleotide&quot;</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;CP009685&quot;</span><span class="p">,</span> <span class="n">rettype</span><span class="o">=</span><span class="s2">&quot;gb&quot;</span><span class="p">,</span> <span class="n">retmode</span><span class="o">=</span><span class="s2">&quot;text&quot;</span><span class="p">)</span>
-<span class="n">data</span> <span class="o">=</span> <span class="n">download_handle</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-<span class="n">download_handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-
-<span class="c1"># Store data into file &quot;Ecoli_K12.gb&quot;:</span>
-<span class="n">out_handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;Ecoli_K12.gb&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span>
-<span class="n">out_handle</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-<span class="n">out_handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="c1"># all these calls should produce the number 123-456-7890</span>
+<span class="n">clean_phone_number</span><span class="p">(</span><span class="s2">&quot;1234567890&quot;</span><span class="p">)</span>
+<span class="n">clean_phone_number</span><span class="p">(</span><span class="s2">&quot;+1 (123) 456-7890&quot;</span><span class="p">)</span>
+<span class="n">clean_phone_number</span><span class="p">(</span><span class="s2">&quot;1 123 456 7890&quot;</span><span class="p">)</span>
+<span class="n">clean_phone_number</span><span class="p">(</span><span class="s2">&quot;(123) 4567890&quot;</span><span class="p">)</span>
+<span class="c1"># the function should realize that this is not a valid phone number</span>
+<span class="n">clean_phone_number</span><span class="p">(</span><span class="s2">&quot;123456&quot;</span><span class="p">)</span>
 </pre></div>
 
 </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Problem 4b</span>
-
-<span class="c1"># Read in E. coli K12 genome:</span>
-<span class="n">in_handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;Ecoli_K12.gb&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span>
-<span class="n">record</span> <span class="o">=</span> <span class="n">SeqIO</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">in_handle</span><span class="p">,</span> <span class="s2">&quot;genbank&quot;</span><span class="p">)</span>
-<span class="n">in_handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-
-<span class="c1"># count all CDSs and the hypothetical ones</span>
-<span class="n">CDS_count</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">hyp_CDS_count</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">for</span> <span class="n">feature</span> <span class="ow">in</span> <span class="n">record</span><span class="o">.</span><span class="n">features</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">feature</span><span class="o">.</span><span class="n">type</span> <span class="o">==</span> <span class="s1">&#39;CDS&#39;</span><span class="p">:</span>
-        <span class="n">CDS_count</span> <span class="o">+=</span> <span class="mi">1</span>
-        <span class="k">if</span> <span class="s2">&quot;product&quot;</span> <span class="ow">in</span> <span class="n">feature</span><span class="o">.</span><span class="n">qualifiers</span><span class="p">:</span>
-            <span class="k">if</span> <span class="n">feature</span><span class="o">.</span><span class="n">qualifiers</span><span class="p">[</span><span class="s2">&quot;product&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;hypothetical protein&quot;</span><span class="p">:</span>
-                <span class="n">hyp_CDS_count</span> <span class="o">+=</span> <span class="mi">1</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Total coding sequences in the E. coli K12 genome:&quot;</span><span class="p">,</span> <span class="n">CDS_count</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Number of hypothetical proteins in the E. coli K12 genome:&quot;</span><span class="p">,</span> <span class="n">hyp_CDS_count</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Fraction:&quot;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="mi">100</span><span class="o">*</span><span class="n">hyp_CDS_count</span><span class="o">/</span><span class="n">CDS_count</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="s2">&quot;%&quot;</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Total coding sequences in the E. coli K12 genome: 4391
-Number of hypothetical proteins in the E. coli K12 genome: 897
-Fraction: 20.43 %
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Problem 4c</span>
-
-<span class="c1"># Read in E. coli K12 genome:</span>
-<span class="n">in_handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;Ecoli_K12.gb&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span>
-<span class="n">record</span> <span class="o">=</span> <span class="n">SeqIO</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">in_handle</span><span class="p">,</span> <span class="s2">&quot;genbank&quot;</span><span class="p">)</span>
-<span class="n">in_handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-
-<span class="c1"># Count all the G and C nucleotides</span>
-<span class="n">GC_count</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">for</span> <span class="n">nucleotide</span> <span class="ow">in</span> <span class="n">record</span><span class="o">.</span><span class="n">seq</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">nucleotide</span><span class="o">==</span><span class="s1">&#39;G&#39;</span> <span class="ow">or</span> <span class="n">nucleotide</span><span class="o">==</span><span class="s1">&#39;C&#39;</span><span class="p">:</span>
-        <span class="n">GC_count</span> <span class="o">+=</span> <span class="mi">1</span>
-<span class="c1"># Calculate GC percentage</span>
-<span class="n">GC_perc</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="mi">100</span><span class="o">*</span><span class="n">GC_count</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">record</span><span class="o">.</span><span class="n">seq</span><span class="p">),</span> <span class="mi">2</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;GC content: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">GC_perc</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;%&quot;</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>GC content: 50.79%
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="If-this-was-easy">If this was easy<a class="anchor-link" href="#If-this-was-easy">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Problem 5:</strong></p>
-<p>In the T7 genome, find the CDS feature corresponding to locus tag "T7p45" (major capsid protein), and then use the <code>feature.extract()</code> function to extract the DNA sequence corresponding to that gene. Then translate that sequence to verify (by inspection) that it corresponds to the protein sequence that is listed for gene T7p45.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">in_handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;T7.gb&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span>
-<span class="n">record</span> <span class="o">=</span> <span class="n">SeqIO</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">in_handle</span><span class="p">,</span> <span class="s2">&quot;genbank&quot;</span><span class="p">)</span>
-<span class="n">in_handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-
-<span class="k">for</span> <span class="n">feature</span> <span class="ow">in</span> <span class="n">record</span><span class="o">.</span><span class="n">features</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">feature</span><span class="o">.</span><span class="n">type</span> <span class="o">==</span> <span class="s1">&#39;CDS&#39;</span><span class="p">:</span>
-        <span class="n">locus_tag</span> <span class="o">=</span> <span class="n">feature</span><span class="o">.</span><span class="n">qualifiers</span><span class="p">[</span><span class="s1">&#39;locus_tag&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
-        <span class="k">if</span> <span class="n">locus_tag</span> <span class="o">==</span> <span class="s1">&#39;T7p45&#39;</span><span class="p">:</span>
-            <span class="n">target_feature</span> <span class="o">=</span> <span class="n">feature</span>
-            <span class="k">break</span>
-            
-<span class="nb">print</span><span class="p">(</span><span class="n">target_feature</span><span class="p">)</span>
-<span class="n">DNA_seq</span> <span class="o">=</span> <span class="n">target_feature</span><span class="o">.</span><span class="n">extract</span><span class="p">(</span><span class="n">record</span><span class="p">)</span><span class="o">.</span><span class="n">seq</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;DNA:&quot;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">DNA_seq</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;protein:&quot;</span><span class="p">,</span> <span class="n">DNA_seq</span><span class="o">.</span><span class="n">translate</span><span class="p">())</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>type: CDS
-location: [22966:24004](+)
-qualifiers:
-    Key: codon_start, Value: [&#39;1&#39;]
-    Key: db_xref, Value: [&#39;GOA:P19726&#39;, &#39;UniProtKB/Swiss-Prot:P19726&#39;, &#39;GeneID:1261026&#39;]
-    Key: locus_tag, Value: [&#39;T7p45&#39;]
-    Key: note, Value: [&#39;major capsid protein. Involved in F-exclusion of wt T7 phage. A minor capsid protein (gp10B) is produced from gene 10 by a -1 frameshift towards the end of 10A, resulting in a slightly larger protein. Other names: gp10A.&#39;]
-    Key: product, Value: [&#39;major capsid protein&#39;]
-    Key: protein_id, Value: [&#39;NP_041998.1&#39;]
-    Key: transl_table, Value: [&#39;11&#39;]
-    Key: translation, Value: [&#39;MASMTGGQQMGTNQGKGVVAAGDKLALFLKVFGGEVLTAFARTSVTTSRHMVRSISSGKSAQFPVLGRTQAAYLAPGENLDDKRKDIKHTEKVITIDGLLTADVLIYDIEDAMNHYDVRSEYTSQLGESLAMAADGAVLAEIAGLCNVESKYNENIEGLGTATVIETTQNKAALTDQVALGKEIIAALTKARAALTKNYVPAADRVFYCDPDSYSAILAALMPNAANYAALIDPEKGSIRNVMGFEVVEVPHLTAGGAGTAREGTTGQKHVFPANKGEGNVKVAKDNVIGLFMHRSAVGTVKLRDLALERARRANFQADQIIAKYAMGHGGLRPEAAGAVVFKVE&#39;]
-
-DNA: ATGGCTAGCATGACTGGTGGACAGCAAATGGGTACTAACCAAGGTAAAGGTGTAGTTGCTGCTGGAGATAAACTGGCGTTGTTCTTGAAGGTATTTGGCGGTGAAGTCCTGACTGCGTTCGCTCGTACCTCCGTGACCACTTCTCGCCACATGGTACGTTCCATCTCCAGCGGTAAATCCGCTCAGTTCCCTGTTCTGGGTCGCACTCAGGCAGCGTATCTGGCTCCGGGCGAGAACCTCGACGATAAACGTAAGGACATCAAACACACCGAGAAGGTAATCACCATTGACGGTCTCCTGACGGCTGACGTTCTGATTTATGATATTGAGGACGCGATGAACCACTACGACGTTCGCTCTGAGTATACCTCTCAGTTGGGTGAATCTCTGGCGATGGCTGCGGATGGTGCGGTTCTGGCTGAGATTGCCGGTCTGTGTAACGTGGAAAGCAAATATAATGAGAACATCGAGGGCTTAGGTACTGCTACCGTAATTGAGACCACTCAGAACAAGGCCGCACTTACCGACCAAGTTGCGCTGGGTAAGGAGATTATTGCGGCTCTGACTAAGGCTCGTGCGGCTCTGACCAAGAACTATGTTCCGGCTGCTGACCGTGTGTTCTACTGTGACCCAGATAGCTACTCTGCGATTCTGGCAGCACTGATGCCGAACGCAGCAAACTACGCTGCTCTGATTGACCCTGAGAAGGGTTCTATCCGCAACGTTATGGGCTTTGAGGTTGTAGAAGTTCCGCACCTCACCGCTGGTGGTGCTGGTACCGCTCGTGAGGGCACTACTGGTCAGAAGCACGTCTTCCCTGCCAATAAAGGTGAGGGTAATGTCAAGGTTGCTAAGGACAACGTTATCGGCCTGTTCATGCACCGCTCTGCGGTAGGTACTGTTAAGCTGCGTGACTTGGCTCTGGAGCGCGCTCGCCGTGCTAACTTCCAAGCGGACCAGATTATCGCTAAGTACGCAATGGGCCACGGTGGTCTTCGCCCAGAAGCTGCTGGTGCAGTGGTTTTCAAAGTGGAGTAA
-protein: MASMTGGQQMGTNQGKGVVAAGDKLALFLKVFGGEVLTAFARTSVTTSRHMVRSISSGKSAQFPVLGRTQAAYLAPGENLDDKRKDIKHTEKVITIDGLLTADVLIYDIEDAMNHYDVRSEYTSQLGESLAMAADGAVLAEIAGLCNVESKYNENIEGLGTATVIETTQNKAALTDQVALGKEIIAALTKARAALTKNYVPAADRVFYCDPDSYSAILAALMPNAANYAALIDPEKGSIRNVMGFEVVEVPHLTAGGAGTAREGTTGQKHVFPANKGEGNVKVAKDNVIGLFMHRSAVGTVKLRDLALERARRANFQADQIIAKYAMGHGGLRPEAAGAVVFKVE*
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Problem 6:</strong></p>
-<p>For the influenza HA gene with ID "KT220438", write python code that checks whether the protein sequence listed in the CDS feature corresponds to the protein sequence you obtain when you translate the gene sequence. The code should print "The two translations match" or "The two translations do not match" depending on whether there is a match or not.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># download the record again</span>
-<span class="n">handle</span> <span class="o">=</span> <span class="n">Entrez</span><span class="o">.</span><span class="n">efetch</span><span class="p">(</span><span class="n">db</span><span class="o">=</span><span class="s2">&quot;nucleotide&quot;</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;KT220438&quot;</span><span class="p">,</span> <span class="n">rettype</span><span class="o">=</span><span class="s2">&quot;gb&quot;</span><span class="p">,</span> <span class="n">retmode</span><span class="o">=</span><span class="s2">&quot;text&quot;</span><span class="p">)</span>
-<span class="n">record</span> <span class="o">=</span> <span class="n">SeqIO</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">handle</span><span class="p">,</span> <span class="s2">&quot;genbank&quot;</span><span class="p">)</span>
-<span class="n">handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-
-<span class="c1"># find the CDS feature    </span>
-<span class="k">for</span> <span class="n">feature</span> <span class="ow">in</span> <span class="n">record</span><span class="o">.</span><span class="n">features</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">feature</span><span class="o">.</span><span class="n">type</span> <span class="o">==</span> <span class="s2">&quot;CDS&quot;</span><span class="p">:</span>
-        <span class="n">CDS_feature</span> <span class="o">=</span> <span class="n">feature</span>
-        
-<span class="c1"># Extract the amino-acid sequence from the CDS feature. We must not forget the [0]</span>
-<span class="c1"># at the end to extract the first element of the list</span>
-<span class="n">CDS_feature_seq</span> <span class="o">=</span> <span class="n">CDS_feature</span><span class="o">.</span><span class="n">qualifiers</span><span class="p">[</span><span class="s2">&quot;translation&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
-<span class="c1"># Extract the translated sequence from the DNA sequence in the record.</span>
-<span class="c1"># We need to remove the trailing &#39;*&#39; indicating a stop codon,</span>
-<span class="c1"># and we also need to convert the whole thing into a string. </span>
-<span class="n">translated_seq</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">record</span><span class="o">.</span><span class="n">seq</span><span class="o">.</span><span class="n">translate</span><span class="p">()[:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
-<span class="k">if</span> <span class="n">CDS_feature_seq</span> <span class="o">==</span> <span class="n">translated_seq</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The two translations match.&quot;</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The two translations do not match.&quot;</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>The two translations match.
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 

@@ -202,7 +202,6 @@ Syllabus: [SDS348_syllabus_spring2019.pdf](/classes/SDS348/SDS348_syllabus_sprin
     - [HTML](/classes/SDS348/2019_spring/worksheets/class19.html)
     - [Solutions](/classes/SDS348/2019_spring/worksheets/class19_solutions.html)
 
-
 **20. Apr 4, 2019 – Working with gene features and genomes**
 
 * Slides: [class20.pdf](/classes/SDS348/2019_spring/slides/class20.pdf)
@@ -211,6 +210,26 @@ Syllabus: [SDS348_syllabus_spring2019.pdf](/classes/SDS348/SDS348_syllabus_sprin
 * In-class worksheet:
     - [Jupyter Notebook](/classes/SDS348/2019_spring/worksheets/class20.ipynb)
     - [HTML](/classes/SDS348/2019_spring/worksheets/class20.html)
+    - [Solutions](/classes/SDS348/2019_spring/worksheets/class20_solutions.html)
+
+**21. Apr 9, 2019 – Running queries on Entrez**
+
+* Slides: [class21.pdf](/classes/SDS348/2019_spring/slides/class21.pdf)
+* Biopython SeqIO documentation: [SeqIO](https://biopython.org/wiki/SeqIO)
+* In-class worksheet:
+    - [Jupyter Notebook](/classes/SDS348/2019_spring/worksheets/class21.ipynb)
+    - [HTML](/classes/SDS348/2019_spring/worksheets/class21.html)
+
+**22. Apr 11, 2019 – Regular expressions**
+
+* Slides: [class22.pdf](/classes/SDS348/2019_spring/slides/class22.pdf)
+* Python regular expression editor: [https://pythex.org/](https://pythex.org/)
+* Official Python regular expression documentation: [Regular Expression HOWTO](https://docs.python.org/3/howto/regex.html)
+* Alternative regular expression tutorial: [Python Regular Expressions](https://developers.google.com/edu/python/regular-expressions)
+* In-class worksheet:
+    - [Jupyter Notebook](/classes/SDS348/2019_spring/worksheets/class22.ipynb)
+    - [HTML](/classes/SDS348/2019_spring/worksheets/class22.html)
+
 
 
 ## Homeworks

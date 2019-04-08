@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>class20_solutions</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>class21</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -11775,8 +11775,17 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Class-20:-Working-with-gene-features-and-genomes">Class 20: Working with gene features and genomes<a class="anchor-link" href="#Class-20:-Working-with-gene-features-and-genomes">&#182;</a></h1><p><strong>Apr 4, 2019</strong></p>
-<h2 id="Features-in-genbank-files">Features in genbank files<a class="anchor-link" href="#Features-in-genbank-files">&#182;</a></h2><p>Many important pieces of information in genbank files are stored in features. These features can be queried through Biopython by working with the <code>features</code> list of a genbank record object (<code>record.features</code>). More information about  sequence features is available <a href="http://biopython.org/DIST/docs/tutorial/Tutorial.html#htoc38">here.</a> We will usually iterate over all features in the list with a <code>for</code> loop:</p>
+<h1 id="Class-21:-Searching-the-NCBI-databases">Class 21: Searching the NCBI databases<a class="anchor-link" href="#Class-21:-Searching-the-NCBI-databases">&#182;</a></h1><p><strong>April 9, 2019</strong></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Different-ways-of-processing-Entrez-results">Different ways of processing Entrez results<a class="anchor-link" href="#Different-ways-of-processing-Entrez-results">&#182;</a></h2><p>Every time we download data through the Entrez module, we can interact with the results in different ways. First, we can just use the handle we obtain as an ordinary file handle and just store or process the raw data provided by Entrez. Second, we can process the data with an appropriate, existing Biopython module. The latter will generally be preferable if an appropriate module exists. However, the various choices that are available may make things confusing.</p>
+<p>As an example, we will again download the genbank record with the ID "KT220438", containing an influenza HA protein. We will consider four different ways of looking at the data. First, we use <code>retmode="text"</code> in <code>Entrez.efetch()</code> and just download the raw data and print it. We get a regular genbank file as output:</p>
 
 </div>
 </div>
@@ -11789,17 +11798,12 @@ div#notebook {
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">Bio</span> <span class="k">import</span> <span class="n">Entrez</span><span class="p">,</span> <span class="n">SeqIO</span>
 <span class="n">Entrez</span><span class="o">.</span><span class="n">email</span> <span class="o">=</span> <span class="s2">&quot;wilke@austin.utexas.edu&quot;</span> <span class="c1"># put your email here</span>
 
-<span class="c1"># Download sequence record for genbank id KT220438</span>
-<span class="c1"># This is HA gene of Influenza A virus, strain A/NewJersey/NHRC_93219/2015(H3N2)</span>
+<span class="c1"># Download sequence record for genbank id KT220438 (HA from influenza A)</span>
+<span class="c1"># Using text mode</span>
 <span class="n">handle</span> <span class="o">=</span> <span class="n">Entrez</span><span class="o">.</span><span class="n">efetch</span><span class="p">(</span><span class="n">db</span><span class="o">=</span><span class="s2">&quot;nucleotide&quot;</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;KT220438&quot;</span><span class="p">,</span> <span class="n">rettype</span><span class="o">=</span><span class="s2">&quot;gb&quot;</span><span class="p">,</span> <span class="n">retmode</span><span class="o">=</span><span class="s2">&quot;text&quot;</span><span class="p">)</span>
-<span class="n">record</span> <span class="o">=</span> <span class="n">SeqIO</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">handle</span><span class="p">,</span> <span class="s2">&quot;genbank&quot;</span><span class="p">)</span>
+<span class="n">record</span> <span class="o">=</span> <span class="n">handle</span><span class="o">.</span><span class="n">read</span><span class="p">()</span> <span class="c1"># read file directly</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">record</span><span class="p">)</span>
 <span class="n">handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-
-<span class="c1"># Loop over all features in the record to see</span>
-<span class="c1"># what features there are and what information</span>
-<span class="c1"># they contain</span>
-<span class="k">for</span> <span class="n">feature</span> <span class="ow">in</span> <span class="n">record</span><span class="o">.</span><span class="n">features</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">feature</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -11816,47 +11820,101 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>type: source
-location: [0:1701](+)
-qualifiers:
-    Key: collection_date, Value: [&#39;17-Jan-2015&#39;]
-    Key: country, Value: [&#39;USA: New Jersey&#39;]
-    Key: db_xref, Value: [&#39;taxon:1682360&#39;]
-    Key: host, Value: [&#39;Homo sapiens&#39;]
-    Key: isolation_source, Value: [&#39;nasopharyngeal swab&#39;]
-    Key: lab_host, Value: [&#39;MDCK&#39;]
-    Key: mol_type, Value: [&#39;viral cRNA&#39;]
-    Key: organism, Value: [&#39;Influenza A virus (A/New Jersey/NHRC_93219/2015(H3N2))&#39;]
-    Key: segment, Value: [&#39;4&#39;]
-    Key: serotype, Value: [&#39;H3N2&#39;]
-    Key: strain, Value: [&#39;A/NewJersey/NHRC_93219/2015&#39;]
+<pre>LOCUS       KT220438                1701 bp    cRNA    linear   VRL 20-JUL-2015
+DEFINITION  Influenza A virus (A/NewJersey/NHRC_93219/2015(H3N2)) segment 4
+            hemagglutinin (HA) gene, complete cds.
+ACCESSION   KT220438
+VERSION     KT220438.1
+KEYWORDS    .
+SOURCE      Influenza A virus (A/New Jersey/NHRC_93219/2015(H3N2))
+  ORGANISM  Influenza A virus (A/New Jersey/NHRC_93219/2015(H3N2))
+            Viruses; ssRNA viruses; ssRNA negative-strand viruses;
+            Orthomyxoviridae; Influenzavirus A.
+REFERENCE   1  (bases 1 to 1701)
+  AUTHORS   Sitz,C.R., Thammavong,H.L., Balansay-Ames,M.S., Hawksworth,A.W.,
+            Myers,C.A. and Brice,G.T.
+  TITLE     GEISS Influenza Surveillance Response Program
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 1701)
+  AUTHORS   Sitz,C.R., Thammavong,H.L., Balansay-Ames,M.S., Hawksworth,A.W.,
+            Myers,C.A. and Brice,G.T.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (29-JUN-2015) Operational Infectious Diseases, Naval
+            Health Research Center, 140 Sylvester Rd., San Diego, CA 92106, USA
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1701
+                     /organism=&#34;Influenza A virus (A/New
+                     Jersey/NHRC_93219/2015(H3N2))&#34;
+                     /mol_type=&#34;viral cRNA&#34;
+                     /strain=&#34;A/NewJersey/NHRC_93219/2015&#34;
+                     /serotype=&#34;H3N2&#34;
+                     /isolation_source=&#34;nasopharyngeal swab&#34;
+                     /host=&#34;Homo sapiens&#34;
+                     /db_xref=&#34;taxon:1682360&#34;
+                     /segment=&#34;4&#34;
+                     /lab_host=&#34;MDCK&#34;
+                     /country=&#34;USA: New Jersey&#34;
+                     /collection_date=&#34;17-Jan-2015&#34;
+     gene            1..1701
+                     /gene=&#34;HA&#34;
+     CDS             1..1701
+                     /gene=&#34;HA&#34;
+                     /function=&#34;receptor binding and fusion protein&#34;
+                     /codon_start=1
+                     /product=&#34;hemagglutinin&#34;
+                     /protein_id=&#34;AKQ43545.1&#34;
+                     /translation=&#34;MKTIIALSYILCLVFAQKIPGNDNSTATLCLGHHAVPNGTIVKT
+                     ITNDRIEVTNATELVQNSSIGEICDSPHQILDGENCTLIDALLGDPQCDGFQNKKWDL
+                     FVERSKAYSNCYPYDVPDYASLRSLVASSGTLEFNNESFNWTGVTQNGTSSACIRRSS
+                     SSFFSRLNWLTHLNYTYPALNVTMPNNEQFDKLYIWGVHHPGTDKDQIFLYAQSSGRI
+                     TVSTKRSQQAVIPNIGSRPRIRDIPSRISIYWTIVKPGDILLINSTGNLIAPRGYFKI
+                     RSGKSSIMRSDAPIGKCKSECITPNGSIPNDKPFQNVNRITYGACPRYVKHSTLKLAT
+                     GMRNVPEKQTRGIFGAIAGFIENGWEGMVDGWYGFRHQNSEGRGQAADLKSTQAAIDQ
+                     INGKLNRLIGKTNEKFHQIEKEFSEVEGRIQDLEKYVEDTKIDLWSYNAELLVALENQ
+                     HTXDLTDSEMNKLFEKTKKQLRENAEDMGNGCFKIYHKCDNACIGSIRNGTYDHNVYR
+                     DEALNNRFQIKGVELKSGYKDWILWISXAISCFLLCVALLGFIMWACQKGNIRCNICI
+                     &#34;
+     mat_peptide     49..1035
+                     /gene=&#34;HA&#34;
+                     /product=&#34;HA1&#34;
+     mat_peptide     1036..1698
+                     /gene=&#34;HA&#34;
+                     /product=&#34;HA2&#34;
+ORIGIN      
+        1 atgaagacta tcattgcttt gagctacatt ctatgtctgg ttttcgctca aaaaattcct
+       61 ggaaatgaca atagcacggc aacgctgtgc cttgggcacc atgcagtacc aaacggaacg
+      121 atagtgaaaa caatcacaaa tgaccgaatt gaagttacta atgctactga gctggttcag
+      181 aattcctcaa taggtgaaat atgcgacagt cctcatcaga tccttgatgg agaaaactgc
+      241 acactaatag atgctctatt gggagaccct cagtgtgatg gctttcaaaa taagaaatgg
+      301 gacctttttg ttgaacgaag caaagcctac agcaactgct acccttatga tgtgccggat
+      361 tatgcctccc ttaggtcact agttgcctca tccggcacac tggagtttaa caatgaaagc
+      421 ttcaattgga ctggagtcac tcaaaacgga acaagttctg cttgcataag gagatctagt
+      481 agtagtttct ttagtagatt aaattggttg acccacttaa actacacata cccagcattg
+      541 aacgtgacta tgccaaacaa tgaacaattt gacaaattgt acatttgggg ggttcaccac
+      601 ccgggtacgg acaaggacca aatcttcctg tatgctcaat catcaggaag aatcacagta
+      661 tctaccaaaa gaagccaaca agctgtaatc ccaaatatcg gatctagacc cagaataagg
+      721 gatatcccta gcagaataag catctattgg acaatagtaa aaccgggaga catacttttg
+      781 attaacagca cagggaatct aattgctcct aggggttact tcaaaatacg aagtgggaaa
+      841 agctcaataa tgagatcaga tgcacccatt ggcaaatgca agtctgaatg catcactcca
+      901 aatggaagca ttcccaatga caaaccattc caaaatgtaa acaggatcac atacggggcc
+      961 tgtcccagat atgttaagca tagcactcta aaattggcaa caggaatgcg aaatgtacca
+     1021 gagaaacaaa ctagaggcat atttggcgca atagcgggtt tcatagaaaa tggttgggag
+     1081 ggaatggtgg atggttggta cggtttcagg catcaaaatt ctgagggaag aggacaagca
+     1141 gcagatctca aaagcactca agcagcaatc gatcaaatca atgggaagct gaatcgattg
+     1201 atcgggaaaa ccaacgagaa attccatcag attgaaaaag aattctcaga agtagaagga
+     1261 agaattcagg accttgagaa atatgttgag gacactaaaa tagatctctg gtcatacaac
+     1321 gcggagcttc ttgttgccct ggagaaccaa catacarttg atctaactga ctcagaaatg
+     1381 aacaaactgt ttgaaaaaac aaagaagcaa ctgagggaaa atgctgagga tatgggaaat
+     1441 ggttgtttca aaatatacca caaatgtgac aatgcctgca taggatcaat aagaaatgga
+     1501 acttatgacc acaatgtgta cagggatgaa gcattaaaca accggttcca gatcaaggga
+     1561 gttgagctga agtcagggta caaagattgg atcctatgga tttcctytgc catatcatgt
+     1621 tttttgcttt gtgttgcttt gttggggttc atcatgtggg cctgccaaaa gggcaacatt
+     1681 aggtgcaaca tttgcatttg a
+//
 
-type: gene
-location: [0:1701](+)
-qualifiers:
-    Key: gene, Value: [&#39;HA&#39;]
-
-type: CDS
-location: [0:1701](+)
-qualifiers:
-    Key: codon_start, Value: [&#39;1&#39;]
-    Key: function, Value: [&#39;receptor binding and fusion protein&#39;]
-    Key: gene, Value: [&#39;HA&#39;]
-    Key: product, Value: [&#39;hemagglutinin&#39;]
-    Key: protein_id, Value: [&#39;AKQ43545.1&#39;]
-    Key: translation, Value: [&#39;MKTIIALSYILCLVFAQKIPGNDNSTATLCLGHHAVPNGTIVKTITNDRIEVTNATELVQNSSIGEICDSPHQILDGENCTLIDALLGDPQCDGFQNKKWDLFVERSKAYSNCYPYDVPDYASLRSLVASSGTLEFNNESFNWTGVTQNGTSSACIRRSSSSFFSRLNWLTHLNYTYPALNVTMPNNEQFDKLYIWGVHHPGTDKDQIFLYAQSSGRITVSTKRSQQAVIPNIGSRPRIRDIPSRISIYWTIVKPGDILLINSTGNLIAPRGYFKIRSGKSSIMRSDAPIGKCKSECITPNGSIPNDKPFQNVNRITYGACPRYVKHSTLKLATGMRNVPEKQTRGIFGAIAGFIENGWEGMVDGWYGFRHQNSEGRGQAADLKSTQAAIDQINGKLNRLIGKTNEKFHQIEKEFSEVEGRIQDLEKYVEDTKIDLWSYNAELLVALENQHTXDLTDSEMNKLFEKTKKQLRENAEDMGNGCFKIYHKCDNACIGSIRNGTYDHNVYRDEALNNRFQIKGVELKSGYKDWILWISXAISCFLLCVALLGFIMWACQKGNIRCNICI&#39;]
-
-type: mat_peptide
-location: [48:1035](+)
-qualifiers:
-    Key: gene, Value: [&#39;HA&#39;]
-    Key: product, Value: [&#39;HA1&#39;]
-
-type: mat_peptide
-location: [1035:1698](+)
-qualifiers:
-    Key: gene, Value: [&#39;HA&#39;]
-    Key: product, Value: [&#39;HA2&#39;]
 
 </pre>
 </div>
@@ -11870,7 +11928,7 @@ qualifiers:
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The type of each feature is stored in <code>feature.type</code>, and its location on the DNA sequence is stored in <code>feature.location</code>. The additional feature information is stored in a dictionary called <code>qualifiers</code>. We can query this dictionary to retrieve individual elements of a feature. Note that these elements are all stored as lists, and so we generally have to add <code>[0]</code> at the end of our query to retrieve the first element in the list.</p>
+<p>We can also, as we have done before, process this file using the <code>SeqIO</code> module:</p>
 
 </div>
 </div>
@@ -11880,12 +11938,12 @@ qualifiers:
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">feature</span> <span class="ow">in</span> <span class="n">record</span><span class="o">.</span><span class="n">features</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">feature</span><span class="o">.</span><span class="n">type</span> <span class="o">==</span> <span class="s2">&quot;CDS&quot;</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Coding sequence found at position:&quot;</span><span class="p">,</span> <span class="n">feature</span><span class="o">.</span><span class="n">location</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Gene product:&quot;</span><span class="p">,</span> <span class="n">feature</span><span class="o">.</span><span class="n">qualifiers</span><span class="p">[</span><span class="s2">&quot;product&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Protein ID:&quot;</span><span class="p">,</span> <span class="n">feature</span><span class="o">.</span><span class="n">qualifiers</span><span class="p">[</span><span class="s2">&quot;protein_id&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Protein sequence:&quot;</span><span class="p">,</span> <span class="n">feature</span><span class="o">.</span><span class="n">qualifiers</span><span class="p">[</span><span class="s2">&quot;translation&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Download sequence record for genbank id KT220438 (HA from influenza A)</span>
+<span class="c1"># Using text mode</span>
+<span class="n">handle</span> <span class="o">=</span> <span class="n">Entrez</span><span class="o">.</span><span class="n">efetch</span><span class="p">(</span><span class="n">db</span><span class="o">=</span><span class="s2">&quot;nucleotide&quot;</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;KT220438&quot;</span><span class="p">,</span> <span class="n">rettype</span><span class="o">=</span><span class="s2">&quot;gb&quot;</span><span class="p">,</span> <span class="n">retmode</span><span class="o">=</span><span class="s2">&quot;text&quot;</span><span class="p">)</span>
+<span class="n">record</span> <span class="o">=</span> <span class="n">SeqIO</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">handle</span><span class="p">,</span> <span class="s2">&quot;genbank&quot;</span><span class="p">)</span> <span class="c1"># parse with SeqIO</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">record</span><span class="p">)</span>
+<span class="n">handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
 
 </div>
@@ -11902,10 +11960,23 @@ qualifiers:
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Coding sequence found at position: [0:1701](+)
-Gene product: hemagglutinin
-Protein ID: AKQ43545.1
-Protein sequence: MKTIIALSYILCLVFAQKIPGNDNSTATLCLGHHAVPNGTIVKTITNDRIEVTNATELVQNSSIGEICDSPHQILDGENCTLIDALLGDPQCDGFQNKKWDLFVERSKAYSNCYPYDVPDYASLRSLVASSGTLEFNNESFNWTGVTQNGTSSACIRRSSSSFFSRLNWLTHLNYTYPALNVTMPNNEQFDKLYIWGVHHPGTDKDQIFLYAQSSGRITVSTKRSQQAVIPNIGSRPRIRDIPSRISIYWTIVKPGDILLINSTGNLIAPRGYFKIRSGKSSIMRSDAPIGKCKSECITPNGSIPNDKPFQNVNRITYGACPRYVKHSTLKLATGMRNVPEKQTRGIFGAIAGFIENGWEGMVDGWYGFRHQNSEGRGQAADLKSTQAAIDQINGKLNRLIGKTNEKFHQIEKEFSEVEGRIQDLEKYVEDTKIDLWSYNAELLVALENQHTXDLTDSEMNKLFEKTKKQLRENAEDMGNGCFKIYHKCDNACIGSIRNGTYDHNVYRDEALNNRFQIKGVELKSGYKDWILWISXAISCFLLCVALLGFIMWACQKGNIRCNICI
+<pre>ID: KT220438.1
+Name: KT220438
+Description: Influenza A virus (A/NewJersey/NHRC_93219/2015(H3N2)) segment 4 hemagglutinin (HA) gene, complete cds
+Number of features: 5
+/date=20-JUL-2015
+/data_file_division=VRL
+/accessions=[&#39;KT220438&#39;]
+/molecule_type=cRNA
+/references=[Reference(title=&#39;GEISS Influenza Surveillance Response Program&#39;, ...), Reference(title=&#39;Direct Submission&#39;, ...)]
+/sequence_version=1
+/topology=linear
+/source=Influenza A virus (A/New Jersey/NHRC_93219/2015(H3N2))
+/keywords=[&#39;&#39;]
+/structured_comment=OrderedDict([(&#39;Assembly-Data&#39;, OrderedDict([(&#39;Sequencing Technology&#39;, &#39;Sanger dideoxy sequencing&#39;)]))])
+/taxonomy=[&#39;Viruses&#39;, &#39;ssRNA viruses&#39;, &#39;ssRNA negative-strand viruses&#39;, &#39;Orthomyxoviridae&#39;, &#39;Influenzavirus A&#39;]
+/organism=Influenza A virus (A/New Jersey/NHRC_93219/2015(H3N2))
+Seq(&#39;ATGAAGACTATCATTGCTTTGAGCTACATTCTATGTCTGGTTTTCGCTCAAAAA...TGA&#39;, IUPACAmbiguousDNA())
 </pre>
 </div>
 </div>
@@ -11918,16 +11989,7 @@ Protein sequence: MKTIIALSYILCLVFAQKIPGNDNSTATLCLGHHAVPNGTIVKTITNDRIEVTNATELVQNS
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Problems">Problems<a class="anchor-link" href="#Problems">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Problem 1:</strong></p>
-<p>When we are working with larger genbank files (e.g. entire genomes), we generally first download them and store them as a file on our local drive. Then we work with those local files. To practice this workflow, write code that downloads the complete genome of bacteriophage T7 and stores it in a file called <code>T7.gb</code>. The accession number for that genome is NC_001604. Make sure you can find the file you have created on your harddrive. Also verify that the file contains the same genome you can see on the NCBI website.</p>
+<p>In addition to text mode, we can also download the data in XML mode. XML is a structured data format that allows for easy machine-processing of complex data files. If we just print the raw data, though, it doesn't look appealing:</p>
 
 </div>
 </div>
@@ -11937,17 +11999,722 @@ Protein sequence: MKTIIALSYILCLVFAQKIPGNDNSTATLCLGHHAVPNGTIVKTITNDRIEVTNATELVQNS
 <div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Problem 1</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Download sequence record for genbank id KT220438 (HA from influenza A)</span>
+<span class="c1"># Using XML mode</span>
+<span class="n">handle</span> <span class="o">=</span> <span class="n">Entrez</span><span class="o">.</span><span class="n">efetch</span><span class="p">(</span><span class="n">db</span><span class="o">=</span><span class="s2">&quot;nucleotide&quot;</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;KT220438&quot;</span><span class="p">,</span> <span class="n">rettype</span><span class="o">=</span><span class="s2">&quot;gb&quot;</span><span class="p">,</span> <span class="n">retmode</span><span class="o">=</span><span class="s2">&quot;xml&quot;</span><span class="p">)</span>
+<span class="n">record</span> <span class="o">=</span> <span class="n">handle</span><span class="o">.</span><span class="n">read</span><span class="p">()</span> <span class="c1"># read file directly</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">record</span><span class="p">)</span>
+<span class="n">handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
 
-<span class="c1"># Download T7 genome:</span>
-<span class="n">download_handle</span> <span class="o">=</span> <span class="n">Entrez</span><span class="o">.</span><span class="n">efetch</span><span class="p">(</span><span class="n">db</span><span class="o">=</span><span class="s2">&quot;nucleotide&quot;</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;NC_001604&quot;</span><span class="p">,</span> <span class="n">rettype</span><span class="o">=</span><span class="s2">&quot;gb&quot;</span><span class="p">,</span> <span class="n">retmode</span><span class="o">=</span><span class="s2">&quot;text&quot;</span><span class="p">)</span>
-<span class="n">data</span> <span class="o">=</span> <span class="n">download_handle</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-<span class="n">download_handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</div>
+</div>
+</div>
 
-<span class="c1"># Store data into file &quot;T7.gb&quot;:</span>
-<span class="n">out_handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;T7.gb&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span>
-<span class="n">out_handle</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-<span class="n">out_handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;  ?&gt;
+&lt;!DOCTYPE GBSet PUBLIC &#34;-//NCBI//NCBI GBSeq/EN&#34; &#34;https://www.ncbi.nlm.nih.gov/dtd/NCBI_GBSeq.dtd&#34;&gt;
+&lt;GBSet&gt;
+  &lt;GBSeq&gt;
+
+    &lt;GBSeq_locus&gt;KT220438&lt;/GBSeq_locus&gt;
+    &lt;GBSeq_length&gt;1701&lt;/GBSeq_length&gt;
+    &lt;GBSeq_strandedness&gt;single&lt;/GBSeq_strandedness&gt;
+    &lt;GBSeq_moltype&gt;cRNA&lt;/GBSeq_moltype&gt;
+    &lt;GBSeq_topology&gt;linear&lt;/GBSeq_topology&gt;
+    &lt;GBSeq_division&gt;VRL&lt;/GBSeq_division&gt;
+    &lt;GBSeq_update-date&gt;20-JUL-2015&lt;/GBSeq_update-date&gt;
+    &lt;GBSeq_create-date&gt;20-JUL-2015&lt;/GBSeq_create-date&gt;
+    &lt;GBSeq_definition&gt;Influenza A virus (A/NewJersey/NHRC_93219/2015(H3N2)) segment 4 hemagglutinin (HA) gene, complete cds&lt;/GBSeq_definition&gt;
+    &lt;GBSeq_primary-accession&gt;KT220438&lt;/GBSeq_primary-accession&gt;
+    &lt;GBSeq_accession-version&gt;KT220438.1&lt;/GBSeq_accession-version&gt;
+    &lt;GBSeq_other-seqids&gt;
+      &lt;GBSeqid&gt;gb|KT220438.1|&lt;/GBSeqid&gt;
+      &lt;GBSeqid&gt;gi|887493048&lt;/GBSeqid&gt;
+    &lt;/GBSeq_other-seqids&gt;
+    &lt;GBSeq_source&gt;Influenza A virus (A/New Jersey/NHRC_93219/2015(H3N2))&lt;/GBSeq_source&gt;
+    &lt;GBSeq_organism&gt;Influenza A virus (A/New Jersey/NHRC_93219/2015(H3N2))&lt;/GBSeq_organism&gt;
+    &lt;GBSeq_taxonomy&gt;Viruses; ssRNA viruses; ssRNA negative-strand viruses; Orthomyxoviridae; Influenzavirus A&lt;/GBSeq_taxonomy&gt;
+    &lt;GBSeq_references&gt;
+      &lt;GBReference&gt;
+        &lt;GBReference_reference&gt;1&lt;/GBReference_reference&gt;
+        &lt;GBReference_position&gt;1..1701&lt;/GBReference_position&gt;
+        &lt;GBReference_authors&gt;
+          &lt;GBAuthor&gt;Sitz,C.R.&lt;/GBAuthor&gt;
+          &lt;GBAuthor&gt;Thammavong,H.L.&lt;/GBAuthor&gt;
+          &lt;GBAuthor&gt;Balansay-Ames,M.S.&lt;/GBAuthor&gt;
+          &lt;GBAuthor&gt;Hawksworth,A.W.&lt;/GBAuthor&gt;
+          &lt;GBAuthor&gt;Myers,C.A.&lt;/GBAuthor&gt;
+          &lt;GBAuthor&gt;Brice,G.T.&lt;/GBAuthor&gt;
+        &lt;/GBReference_authors&gt;
+        &lt;GBReference_title&gt;GEISS Influenza Surveillance Response Program&lt;/GBReference_title&gt;
+        &lt;GBReference_journal&gt;Unpublished&lt;/GBReference_journal&gt;
+      &lt;/GBReference&gt;
+      &lt;GBReference&gt;
+        &lt;GBReference_reference&gt;2&lt;/GBReference_reference&gt;
+        &lt;GBReference_position&gt;1..1701&lt;/GBReference_position&gt;
+        &lt;GBReference_authors&gt;
+          &lt;GBAuthor&gt;Sitz,C.R.&lt;/GBAuthor&gt;
+          &lt;GBAuthor&gt;Thammavong,H.L.&lt;/GBAuthor&gt;
+          &lt;GBAuthor&gt;Balansay-Ames,M.S.&lt;/GBAuthor&gt;
+          &lt;GBAuthor&gt;Hawksworth,A.W.&lt;/GBAuthor&gt;
+          &lt;GBAuthor&gt;Myers,C.A.&lt;/GBAuthor&gt;
+          &lt;GBAuthor&gt;Brice,G.T.&lt;/GBAuthor&gt;
+        &lt;/GBReference_authors&gt;
+        &lt;GBReference_title&gt;Direct Submission&lt;/GBReference_title&gt;
+        &lt;GBReference_journal&gt;Submitted (29-JUN-2015) Operational Infectious Diseases, Naval Health Research Center, 140 Sylvester Rd., San Diego, CA 92106, USA&lt;/GBReference_journal&gt;
+      &lt;/GBReference&gt;
+    &lt;/GBSeq_references&gt;
+    &lt;GBSeq_comment&gt;##Assembly-Data-START## ; Sequencing Technology :: Sanger dideoxy sequencing ; ##Assembly-Data-END##&lt;/GBSeq_comment&gt;
+    &lt;GBSeq_feature-table&gt;
+      &lt;GBFeature&gt;
+        &lt;GBFeature_key&gt;source&lt;/GBFeature_key&gt;
+        &lt;GBFeature_location&gt;1..1701&lt;/GBFeature_location&gt;
+        &lt;GBFeature_intervals&gt;
+          &lt;GBInterval&gt;
+            &lt;GBInterval_from&gt;1&lt;/GBInterval_from&gt;
+            &lt;GBInterval_to&gt;1701&lt;/GBInterval_to&gt;
+            &lt;GBInterval_accession&gt;KT220438.1&lt;/GBInterval_accession&gt;
+          &lt;/GBInterval&gt;
+        &lt;/GBFeature_intervals&gt;
+        &lt;GBFeature_quals&gt;
+          &lt;GBQualifier&gt;
+            &lt;GBQualifier_name&gt;organism&lt;/GBQualifier_name&gt;
+            &lt;GBQualifier_value&gt;Influenza A virus (A/New Jersey/NHRC_93219/2015(H3N2))&lt;/GBQualifier_value&gt;
+          &lt;/GBQualifier&gt;
+          &lt;GBQualifier&gt;
+            &lt;GBQualifier_name&gt;mol_type&lt;/GBQualifier_name&gt;
+            &lt;GBQualifier_value&gt;viral cRNA&lt;/GBQualifier_value&gt;
+          &lt;/GBQualifier&gt;
+          &lt;GBQualifier&gt;
+            &lt;GBQualifier_name&gt;strain&lt;/GBQualifier_name&gt;
+            &lt;GBQualifier_value&gt;A/NewJersey/NHRC_93219/2015&lt;/GBQualifier_value&gt;
+          &lt;/GBQualifier&gt;
+          &lt;GBQualifier&gt;
+            &lt;GBQualifier_name&gt;serotype&lt;/GBQualifier_name&gt;
+            &lt;GBQualifier_value&gt;H3N2&lt;/GBQualifier_value&gt;
+          &lt;/GBQualifier&gt;
+          &lt;GBQualifier&gt;
+            &lt;GBQualifier_name&gt;isolation_source&lt;/GBQualifier_name&gt;
+            &lt;GBQualifier_value&gt;nasopharyngeal swab&lt;/GBQualifier_value&gt;
+          &lt;/GBQualifier&gt;
+          &lt;GBQualifier&gt;
+            &lt;GBQualifier_name&gt;host&lt;/GBQualifier_name&gt;
+            &lt;GBQualifier_value&gt;Homo sapiens&lt;/GBQualifier_value&gt;
+          &lt;/GBQualifier&gt;
+          &lt;GBQualifier&gt;
+            &lt;GBQualifier_name&gt;db_xref&lt;/GBQualifier_name&gt;
+            &lt;GBQualifier_value&gt;taxon:1682360&lt;/GBQualifier_value&gt;
+          &lt;/GBQualifier&gt;
+          &lt;GBQualifier&gt;
+            &lt;GBQualifier_name&gt;segment&lt;/GBQualifier_name&gt;
+            &lt;GBQualifier_value&gt;4&lt;/GBQualifier_value&gt;
+          &lt;/GBQualifier&gt;
+          &lt;GBQualifier&gt;
+            &lt;GBQualifier_name&gt;lab_host&lt;/GBQualifier_name&gt;
+            &lt;GBQualifier_value&gt;MDCK&lt;/GBQualifier_value&gt;
+          &lt;/GBQualifier&gt;
+          &lt;GBQualifier&gt;
+            &lt;GBQualifier_name&gt;country&lt;/GBQualifier_name&gt;
+            &lt;GBQualifier_value&gt;USA: New Jersey&lt;/GBQualifier_value&gt;
+          &lt;/GBQualifier&gt;
+          &lt;GBQualifier&gt;
+            &lt;GBQualifier_name&gt;collection_date&lt;/GBQualifier_name&gt;
+            &lt;GBQualifier_value&gt;17-Jan-2015&lt;/GBQualifier_value&gt;
+          &lt;/GBQualifier&gt;
+        &lt;/GBFeature_quals&gt;
+      &lt;/GBFeature&gt;
+      &lt;GBFeature&gt;
+        &lt;GBFeature_key&gt;gene&lt;/GBFeature_key&gt;
+        &lt;GBFeature_location&gt;1..1701&lt;/GBFeature_location&gt;
+        &lt;GBFeature_intervals&gt;
+          &lt;GBInterval&gt;
+            &lt;GBInterval_from&gt;1&lt;/GBInterval_from&gt;
+            &lt;GBInterval_to&gt;1701&lt;/GBInterval_to&gt;
+            &lt;GBInterval_accession&gt;KT220438.1&lt;/GBInterval_accession&gt;
+          &lt;/GBInterval&gt;
+        &lt;/GBFeature_intervals&gt;
+        &lt;GBFeature_quals&gt;
+          &lt;GBQualifier&gt;
+            &lt;GBQualifier_name&gt;gene&lt;/GBQualifier_name&gt;
+            &lt;GBQualifier_value&gt;HA&lt;/GBQualifier_value&gt;
+          &lt;/GBQualifier&gt;
+        &lt;/GBFeature_quals&gt;
+      &lt;/GBFeature&gt;
+      &lt;GBFeature&gt;
+        &lt;GBFeature_key&gt;CDS&lt;/GBFeature_key&gt;
+        &lt;GBFeature_location&gt;1..1701&lt;/GBFeature_location&gt;
+        &lt;GBFeature_intervals&gt;
+          &lt;GBInterval&gt;
+            &lt;GBInterval_from&gt;1&lt;/GBInterval_from&gt;
+            &lt;GBInterval_to&gt;1701&lt;/GBInterval_to&gt;
+            &lt;GBInterval_accession&gt;KT220438.1&lt;/GBInterval_accession&gt;
+          &lt;/GBInterval&gt;
+        &lt;/GBFeature_intervals&gt;
+        &lt;GBFeature_quals&gt;
+          &lt;GBQualifier&gt;
+            &lt;GBQualifier_name&gt;gene&lt;/GBQualifier_name&gt;
+            &lt;GBQualifier_value&gt;HA&lt;/GBQualifier_value&gt;
+          &lt;/GBQualifier&gt;
+          &lt;GBQualifier&gt;
+            &lt;GBQualifier_name&gt;function&lt;/GBQualifier_name&gt;
+            &lt;GBQualifier_value&gt;receptor binding and fusion protein&lt;/GBQualifier_value&gt;
+          &lt;/GBQualifier&gt;
+          &lt;GBQualifier&gt;
+            &lt;GBQualifier_name&gt;codon_start&lt;/GBQualifier_name&gt;
+            &lt;GBQualifier_value&gt;1&lt;/GBQualifier_value&gt;
+          &lt;/GBQualifier&gt;
+          &lt;GBQualifier&gt;
+            &lt;GBQualifier_name&gt;transl_table&lt;/GBQualifier_name&gt;
+            &lt;GBQualifier_value&gt;1&lt;/GBQualifier_value&gt;
+          &lt;/GBQualifier&gt;
+          &lt;GBQualifier&gt;
+            &lt;GBQualifier_name&gt;product&lt;/GBQualifier_name&gt;
+            &lt;GBQualifier_value&gt;hemagglutinin&lt;/GBQualifier_value&gt;
+          &lt;/GBQualifier&gt;
+          &lt;GBQualifier&gt;
+            &lt;GBQualifier_name&gt;protein_id&lt;/GBQualifier_name&gt;
+            &lt;GBQualifier_value&gt;AKQ43545.1&lt;/GBQualifier_value&gt;
+          &lt;/GBQualifier&gt;
+          &lt;GBQualifier&gt;
+            &lt;GBQualifier_name&gt;translation&lt;/GBQualifier_name&gt;
+            &lt;GBQualifier_value&gt;MKTIIALSYILCLVFAQKIPGNDNSTATLCLGHHAVPNGTIVKTITNDRIEVTNATELVQNSSIGEICDSPHQILDGENCTLIDALLGDPQCDGFQNKKWDLFVERSKAYSNCYPYDVPDYASLRSLVASSGTLEFNNESFNWTGVTQNGTSSACIRRSSSSFFSRLNWLTHLNYTYPALNVTMPNNEQFDKLYIWGVHHPGTDKDQIFLYAQSSGRITVSTKRSQQAVIPNIGSRPRIRDIPSRISIYWTIVKPGDILLINSTGNLIAPRGYFKIRSGKSSIMRSDAPIGKCKSECITPNGSIPNDKPFQNVNRITYGACPRYVKHSTLKLATGMRNVPEKQTRGIFGAIAGFIENGWEGMVDGWYGFRHQNSEGRGQAADLKSTQAAIDQINGKLNRLIGKTNEKFHQIEKEFSEVEGRIQDLEKYVEDTKIDLWSYNAELLVALENQHTXDLTDSEMNKLFEKTKKQLRENAEDMGNGCFKIYHKCDNACIGSIRNGTYDHNVYRDEALNNRFQIKGVELKSGYKDWILWISXAISCFLLCVALLGFIMWACQKGNIRCNICI&lt;/GBQualifier_value&gt;
+          &lt;/GBQualifier&gt;
+        &lt;/GBFeature_quals&gt;
+      &lt;/GBFeature&gt;
+      &lt;GBFeature&gt;
+        &lt;GBFeature_key&gt;mat_peptide&lt;/GBFeature_key&gt;
+        &lt;GBFeature_location&gt;49..1035&lt;/GBFeature_location&gt;
+        &lt;GBFeature_intervals&gt;
+          &lt;GBInterval&gt;
+            &lt;GBInterval_from&gt;49&lt;/GBInterval_from&gt;
+            &lt;GBInterval_to&gt;1035&lt;/GBInterval_to&gt;
+            &lt;GBInterval_accession&gt;KT220438.1&lt;/GBInterval_accession&gt;
+          &lt;/GBInterval&gt;
+        &lt;/GBFeature_intervals&gt;
+        &lt;GBFeature_quals&gt;
+          &lt;GBQualifier&gt;
+            &lt;GBQualifier_name&gt;gene&lt;/GBQualifier_name&gt;
+            &lt;GBQualifier_value&gt;HA&lt;/GBQualifier_value&gt;
+          &lt;/GBQualifier&gt;
+          &lt;GBQualifier&gt;
+            &lt;GBQualifier_name&gt;product&lt;/GBQualifier_name&gt;
+            &lt;GBQualifier_value&gt;HA1&lt;/GBQualifier_value&gt;
+          &lt;/GBQualifier&gt;
+          &lt;GBQualifier&gt;
+            &lt;GBQualifier_name&gt;peptide&lt;/GBQualifier_name&gt;
+            &lt;GBQualifier_value&gt;QKIPGNDNSTATLCLGHHAVPNGTIVKTITNDRIEVTNATELVQNSSIGEICDSPHQILDGENCTLIDALLGDPQCDGFQNKKWDLFVERSKAYSNCYPYDVPDYASLRSLVASSGTLEFNNESFNWTGVTQNGTSSACIRRSSSSFFSRLNWLTHLNYTYPALNVTMPNNEQFDKLYIWGVHHPGTDKDQIFLYAQSSGRITVSTKRSQQAVIPNIGSRPRIRDIPSRISIYWTIVKPGDILLINSTGNLIAPRGYFKIRSGKSSIMRSDAPIGKCKSECITPNGSIPNDKPFQNVNRITYGACPRYVKHSTLKLATGMRNVPEKQTR&lt;/GBQualifier_value&gt;
+          &lt;/GBQualifier&gt;
+        &lt;/GBFeature_quals&gt;
+      &lt;/GBFeature&gt;
+      &lt;GBFeature&gt;
+        &lt;GBFeature_key&gt;mat_peptide&lt;/GBFeature_key&gt;
+        &lt;GBFeature_location&gt;1036..1698&lt;/GBFeature_location&gt;
+        &lt;GBFeature_intervals&gt;
+          &lt;GBInterval&gt;
+            &lt;GBInterval_from&gt;1036&lt;/GBInterval_from&gt;
+            &lt;GBInterval_to&gt;1698&lt;/GBInterval_to&gt;
+            &lt;GBInterval_accession&gt;KT220438.1&lt;/GBInterval_accession&gt;
+          &lt;/GBInterval&gt;
+        &lt;/GBFeature_intervals&gt;
+        &lt;GBFeature_quals&gt;
+          &lt;GBQualifier&gt;
+            &lt;GBQualifier_name&gt;gene&lt;/GBQualifier_name&gt;
+            &lt;GBQualifier_value&gt;HA&lt;/GBQualifier_value&gt;
+          &lt;/GBQualifier&gt;
+          &lt;GBQualifier&gt;
+            &lt;GBQualifier_name&gt;product&lt;/GBQualifier_name&gt;
+            &lt;GBQualifier_value&gt;HA2&lt;/GBQualifier_value&gt;
+          &lt;/GBQualifier&gt;
+          &lt;GBQualifier&gt;
+            &lt;GBQualifier_name&gt;peptide&lt;/GBQualifier_name&gt;
+            &lt;GBQualifier_value&gt;GIFGAIAGFIENGWEGMVDGWYGFRHQNSEGRGQAADLKSTQAAIDQINGKLNRLIGKTNEKFHQIEKEFSEVEGRIQDLEKYVEDTKIDLWSYNAELLVALENQHTXDLTDSEMNKLFEKTKKQLRENAEDMGNGCFKIYHKCDNACIGSIRNGTYDHNVYRDEALNNRFQIKGVELKSGYKDWILWISXAISCFLLCVALLGFIMWACQKGNIRCNICI&lt;/GBQualifier_value&gt;
+          &lt;/GBQualifier&gt;
+        &lt;/GBFeature_quals&gt;
+      &lt;/GBFeature&gt;
+    &lt;/GBSeq_feature-table&gt;
+    &lt;GBSeq_sequence&gt;atgaagactatcattgctttgagctacattctatgtctggttttcgctcaaaaaattcctggaaatgacaatagcacggcaacgctgtgccttgggcaccatgcagtaccaaacggaacgatagtgaaaacaatcacaaatgaccgaattgaagttactaatgctactgagctggttcagaattcctcaataggtgaaatatgcgacagtcctcatcagatccttgatggagaaaactgcacactaatagatgctctattgggagaccctcagtgtgatggctttcaaaataagaaatgggacctttttgttgaacgaagcaaagcctacagcaactgctacccttatgatgtgccggattatgcctcccttaggtcactagttgcctcatccggcacactggagtttaacaatgaaagcttcaattggactggagtcactcaaaacggaacaagttctgcttgcataaggagatctagtagtagtttctttagtagattaaattggttgacccacttaaactacacatacccagcattgaacgtgactatgccaaacaatgaacaatttgacaaattgtacatttggggggttcaccacccgggtacggacaaggaccaaatcttcctgtatgctcaatcatcaggaagaatcacagtatctaccaaaagaagccaacaagctgtaatcccaaatatcggatctagacccagaataagggatatccctagcagaataagcatctattggacaatagtaaaaccgggagacatacttttgattaacagcacagggaatctaattgctcctaggggttacttcaaaatacgaagtgggaaaagctcaataatgagatcagatgcacccattggcaaatgcaagtctgaatgcatcactccaaatggaagcattcccaatgacaaaccattccaaaatgtaaacaggatcacatacggggcctgtcccagatatgttaagcatagcactctaaaattggcaacaggaatgcgaaatgtaccagagaaacaaactagaggcatatttggcgcaatagcgggtttcatagaaaatggttgggagggaatggtggatggttggtacggtttcaggcatcaaaattctgagggaagaggacaagcagcagatctcaaaagcactcaagcagcaatcgatcaaatcaatgggaagctgaatcgattgatcgggaaaaccaacgagaaattccatcagattgaaaaagaattctcagaagtagaaggaagaattcaggaccttgagaaatatgttgaggacactaaaatagatctctggtcatacaacgcggagcttcttgttgccctggagaaccaacatacarttgatctaactgactcagaaatgaacaaactgtttgaaaaaacaaagaagcaactgagggaaaatgctgaggatatgggaaatggttgtttcaaaatataccacaaatgtgacaatgcctgcataggatcaataagaaatggaacttatgaccacaatgtgtacagggatgaagcattaaacaaccggttccagatcaagggagttgagctgaagtcagggtacaaagattggatcctatggatttcctytgccatatcatgttttttgctttgtgttgctttgttggggttcatcatgtgggcctgccaaaagggcaacattaggtgcaacatttgcatttga&lt;/GBSeq_sequence&gt;
+  &lt;/GBSeq&gt;
+
+&lt;/GBSet&gt;
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The advantage of XML mode is that there is the generic <code>Entrez.parse()</code> function that can parse XML files returned from <code>Entrez.efetch()</code>. Also, some modules in Biopython cannot work with files obtained in text mode, they can only work on files obtained in XML mode. The documentation will generally tell you for each module what kind of input it expects.</p>
+<p>Reading the above example with <code>Entrez.parse()</code> gives us the following:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Download sequence record for genbank id KT220438 (HA from influenza A)</span>
+<span class="n">handle</span> <span class="o">=</span> <span class="n">Entrez</span><span class="o">.</span><span class="n">efetch</span><span class="p">(</span><span class="n">db</span><span class="o">=</span><span class="s2">&quot;nucleotide&quot;</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;KT220438&quot;</span><span class="p">,</span> <span class="n">rettype</span><span class="o">=</span><span class="s2">&quot;gb&quot;</span><span class="p">,</span> <span class="n">retmode</span><span class="o">=</span><span class="s2">&quot;xml&quot;</span><span class="p">)</span>
+<span class="n">parsed</span> <span class="o">=</span> <span class="n">Entrez</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">handle</span><span class="p">)</span>
+<span class="n">record</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">parsed</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span> <span class="c1"># We need to convert the parsed contents into a list. Here we want just the 0th element.</span>
+<span class="n">handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">record</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>DictElement({&#39;GBSeq_references&#39;: [DictElement({&#39;GBReference_position&#39;: &#39;1..1701&#39;, &#39;GBReference_reference&#39;: &#39;1&#39;, &#39;GBReference_journal&#39;: &#39;Unpublished&#39;, &#39;GBReference_authors&#39;: [&#39;Sitz,C.R.&#39;, &#39;Thammavong,H.L.&#39;, &#39;Balansay-Ames,M.S.&#39;, &#39;Hawksworth,A.W.&#39;, &#39;Myers,C.A.&#39;, &#39;Brice,G.T.&#39;], &#39;GBReference_title&#39;: &#39;GEISS Influenza Surveillance Response Program&#39;}, attributes={}), DictElement({&#39;GBReference_position&#39;: &#39;1..1701&#39;, &#39;GBReference_reference&#39;: &#39;2&#39;, &#39;GBReference_journal&#39;: &#39;Submitted (29-JUN-2015) Operational Infectious Diseases, Naval Health Research Center, 140 Sylvester Rd., San Diego, CA 92106, USA&#39;, &#39;GBReference_authors&#39;: [&#39;Sitz,C.R.&#39;, &#39;Thammavong,H.L.&#39;, &#39;Balansay-Ames,M.S.&#39;, &#39;Hawksworth,A.W.&#39;, &#39;Myers,C.A.&#39;, &#39;Brice,G.T.&#39;], &#39;GBReference_title&#39;: &#39;Direct Submission&#39;}, attributes={})], &#39;GBSeq_topology&#39;: &#39;linear&#39;, &#39;GBSeq_organism&#39;: &#39;Influenza A virus (A/New Jersey/NHRC_93219/2015(H3N2))&#39;, &#39;GBSeq_create-date&#39;: &#39;20-JUL-2015&#39;, &#39;GBSeq_length&#39;: &#39;1701&#39;, &#39;GBSeq_moltype&#39;: &#39;cRNA&#39;, &#39;GBSeq_locus&#39;: &#39;KT220438&#39;, &#39;GBSeq_accession-version&#39;: &#39;KT220438.1&#39;, &#39;GBSeq_source&#39;: &#39;Influenza A virus (A/New Jersey/NHRC_93219/2015(H3N2))&#39;, &#39;GBSeq_other-seqids&#39;: [&#39;gb|KT220438.1|&#39;, &#39;gi|887493048&#39;], &#39;GBSeq_feature-table&#39;: [DictElement({&#39;GBFeature_key&#39;: &#39;source&#39;, &#39;GBFeature_location&#39;: &#39;1..1701&#39;, &#39;GBFeature_quals&#39;: [DictElement({&#39;GBQualifier_value&#39;: &#39;Influenza A virus (A/New Jersey/NHRC_93219/2015(H3N2))&#39;, &#39;GBQualifier_name&#39;: &#39;organism&#39;}, attributes={}), DictElement({&#39;GBQualifier_value&#39;: &#39;viral cRNA&#39;, &#39;GBQualifier_name&#39;: &#39;mol_type&#39;}, attributes={}), DictElement({&#39;GBQualifier_value&#39;: &#39;A/NewJersey/NHRC_93219/2015&#39;, &#39;GBQualifier_name&#39;: &#39;strain&#39;}, attributes={}), DictElement({&#39;GBQualifier_value&#39;: &#39;H3N2&#39;, &#39;GBQualifier_name&#39;: &#39;serotype&#39;}, attributes={}), DictElement({&#39;GBQualifier_value&#39;: &#39;nasopharyngeal swab&#39;, &#39;GBQualifier_name&#39;: &#39;isolation_source&#39;}, attributes={}), DictElement({&#39;GBQualifier_value&#39;: &#39;Homo sapiens&#39;, &#39;GBQualifier_name&#39;: &#39;host&#39;}, attributes={}), DictElement({&#39;GBQualifier_value&#39;: &#39;taxon:1682360&#39;, &#39;GBQualifier_name&#39;: &#39;db_xref&#39;}, attributes={}), DictElement({&#39;GBQualifier_value&#39;: &#39;4&#39;, &#39;GBQualifier_name&#39;: &#39;segment&#39;}, attributes={}), DictElement({&#39;GBQualifier_value&#39;: &#39;MDCK&#39;, &#39;GBQualifier_name&#39;: &#39;lab_host&#39;}, attributes={}), DictElement({&#39;GBQualifier_value&#39;: &#39;USA: New Jersey&#39;, &#39;GBQualifier_name&#39;: &#39;country&#39;}, attributes={}), DictElement({&#39;GBQualifier_value&#39;: &#39;17-Jan-2015&#39;, &#39;GBQualifier_name&#39;: &#39;collection_date&#39;}, attributes={})], &#39;GBFeature_intervals&#39;: [DictElement({&#39;GBInterval_to&#39;: &#39;1701&#39;, &#39;GBInterval_accession&#39;: &#39;KT220438.1&#39;, &#39;GBInterval_from&#39;: &#39;1&#39;}, attributes={})]}, attributes={}), DictElement({&#39;GBFeature_key&#39;: &#39;gene&#39;, &#39;GBFeature_location&#39;: &#39;1..1701&#39;, &#39;GBFeature_quals&#39;: [DictElement({&#39;GBQualifier_value&#39;: &#39;HA&#39;, &#39;GBQualifier_name&#39;: &#39;gene&#39;}, attributes={})], &#39;GBFeature_intervals&#39;: [DictElement({&#39;GBInterval_to&#39;: &#39;1701&#39;, &#39;GBInterval_accession&#39;: &#39;KT220438.1&#39;, &#39;GBInterval_from&#39;: &#39;1&#39;}, attributes={})]}, attributes={}), DictElement({&#39;GBFeature_key&#39;: &#39;CDS&#39;, &#39;GBFeature_location&#39;: &#39;1..1701&#39;, &#39;GBFeature_quals&#39;: [DictElement({&#39;GBQualifier_value&#39;: &#39;HA&#39;, &#39;GBQualifier_name&#39;: &#39;gene&#39;}, attributes={}), DictElement({&#39;GBQualifier_value&#39;: &#39;receptor binding and fusion protein&#39;, &#39;GBQualifier_name&#39;: &#39;function&#39;}, attributes={}), DictElement({&#39;GBQualifier_value&#39;: &#39;1&#39;, &#39;GBQualifier_name&#39;: &#39;codon_start&#39;}, attributes={}), DictElement({&#39;GBQualifier_value&#39;: &#39;1&#39;, &#39;GBQualifier_name&#39;: &#39;transl_table&#39;}, attributes={}), DictElement({&#39;GBQualifier_value&#39;: &#39;hemagglutinin&#39;, &#39;GBQualifier_name&#39;: &#39;product&#39;}, attributes={}), DictElement({&#39;GBQualifier_value&#39;: &#39;AKQ43545.1&#39;, &#39;GBQualifier_name&#39;: &#39;protein_id&#39;}, attributes={}), DictElement({&#39;GBQualifier_value&#39;: &#39;MKTIIALSYILCLVFAQKIPGNDNSTATLCLGHHAVPNGTIVKTITNDRIEVTNATELVQNSSIGEICDSPHQILDGENCTLIDALLGDPQCDGFQNKKWDLFVERSKAYSNCYPYDVPDYASLRSLVASSGTLEFNNESFNWTGVTQNGTSSACIRRSSSSFFSRLNWLTHLNYTYPALNVTMPNNEQFDKLYIWGVHHPGTDKDQIFLYAQSSGRITVSTKRSQQAVIPNIGSRPRIRDIPSRISIYWTIVKPGDILLINSTGNLIAPRGYFKIRSGKSSIMRSDAPIGKCKSECITPNGSIPNDKPFQNVNRITYGACPRYVKHSTLKLATGMRNVPEKQTRGIFGAIAGFIENGWEGMVDGWYGFRHQNSEGRGQAADLKSTQAAIDQINGKLNRLIGKTNEKFHQIEKEFSEVEGRIQDLEKYVEDTKIDLWSYNAELLVALENQHTXDLTDSEMNKLFEKTKKQLRENAEDMGNGCFKIYHKCDNACIGSIRNGTYDHNVYRDEALNNRFQIKGVELKSGYKDWILWISXAISCFLLCVALLGFIMWACQKGNIRCNICI&#39;, &#39;GBQualifier_name&#39;: &#39;translation&#39;}, attributes={})], &#39;GBFeature_intervals&#39;: [DictElement({&#39;GBInterval_to&#39;: &#39;1701&#39;, &#39;GBInterval_accession&#39;: &#39;KT220438.1&#39;, &#39;GBInterval_from&#39;: &#39;1&#39;}, attributes={})]}, attributes={}), DictElement({&#39;GBFeature_key&#39;: &#39;mat_peptide&#39;, &#39;GBFeature_location&#39;: &#39;49..1035&#39;, &#39;GBFeature_quals&#39;: [DictElement({&#39;GBQualifier_value&#39;: &#39;HA&#39;, &#39;GBQualifier_name&#39;: &#39;gene&#39;}, attributes={}), DictElement({&#39;GBQualifier_value&#39;: &#39;HA1&#39;, &#39;GBQualifier_name&#39;: &#39;product&#39;}, attributes={}), DictElement({&#39;GBQualifier_value&#39;: &#39;QKIPGNDNSTATLCLGHHAVPNGTIVKTITNDRIEVTNATELVQNSSIGEICDSPHQILDGENCTLIDALLGDPQCDGFQNKKWDLFVERSKAYSNCYPYDVPDYASLRSLVASSGTLEFNNESFNWTGVTQNGTSSACIRRSSSSFFSRLNWLTHLNYTYPALNVTMPNNEQFDKLYIWGVHHPGTDKDQIFLYAQSSGRITVSTKRSQQAVIPNIGSRPRIRDIPSRISIYWTIVKPGDILLINSTGNLIAPRGYFKIRSGKSSIMRSDAPIGKCKSECITPNGSIPNDKPFQNVNRITYGACPRYVKHSTLKLATGMRNVPEKQTR&#39;, &#39;GBQualifier_name&#39;: &#39;peptide&#39;}, attributes={})], &#39;GBFeature_intervals&#39;: [DictElement({&#39;GBInterval_to&#39;: &#39;1035&#39;, &#39;GBInterval_accession&#39;: &#39;KT220438.1&#39;, &#39;GBInterval_from&#39;: &#39;49&#39;}, attributes={})]}, attributes={}), DictElement({&#39;GBFeature_key&#39;: &#39;mat_peptide&#39;, &#39;GBFeature_location&#39;: &#39;1036..1698&#39;, &#39;GBFeature_quals&#39;: [DictElement({&#39;GBQualifier_value&#39;: &#39;HA&#39;, &#39;GBQualifier_name&#39;: &#39;gene&#39;}, attributes={}), DictElement({&#39;GBQualifier_value&#39;: &#39;HA2&#39;, &#39;GBQualifier_name&#39;: &#39;product&#39;}, attributes={}), DictElement({&#39;GBQualifier_value&#39;: &#39;GIFGAIAGFIENGWEGMVDGWYGFRHQNSEGRGQAADLKSTQAAIDQINGKLNRLIGKTNEKFHQIEKEFSEVEGRIQDLEKYVEDTKIDLWSYNAELLVALENQHTXDLTDSEMNKLFEKTKKQLRENAEDMGNGCFKIYHKCDNACIGSIRNGTYDHNVYRDEALNNRFQIKGVELKSGYKDWILWISXAISCFLLCVALLGFIMWACQKGNIRCNICI&#39;, &#39;GBQualifier_name&#39;: &#39;peptide&#39;}, attributes={})], &#39;GBFeature_intervals&#39;: [DictElement({&#39;GBInterval_to&#39;: &#39;1698&#39;, &#39;GBInterval_accession&#39;: &#39;KT220438.1&#39;, &#39;GBInterval_from&#39;: &#39;1036&#39;}, attributes={})]}, attributes={})], &#39;GBSeq_strandedness&#39;: &#39;single&#39;, &#39;GBSeq_taxonomy&#39;: &#39;Viruses; ssRNA viruses; ssRNA negative-strand viruses; Orthomyxoviridae; Influenzavirus A&#39;, &#39;GBSeq_update-date&#39;: &#39;20-JUL-2015&#39;, &#39;GBSeq_division&#39;: &#39;VRL&#39;, &#39;GBSeq_comment&#39;: &#39;##Assembly-Data-START## ; Sequencing Technology :: Sanger dideoxy sequencing ; ##Assembly-Data-END##&#39;, &#39;GBSeq_primary-accession&#39;: &#39;KT220438&#39;, &#39;GBSeq_sequence&#39;: &#39;atgaagactatcattgctttgagctacattctatgtctggttttcgctcaaaaaattcctggaaatgacaatagcacggcaacgctgtgccttgggcaccatgcagtaccaaacggaacgatagtgaaaacaatcacaaatgaccgaattgaagttactaatgctactgagctggttcagaattcctcaataggtgaaatatgcgacagtcctcatcagatccttgatggagaaaactgcacactaatagatgctctattgggagaccctcagtgtgatggctttcaaaataagaaatgggacctttttgttgaacgaagcaaagcctacagcaactgctacccttatgatgtgccggattatgcctcccttaggtcactagttgcctcatccggcacactggagtttaacaatgaaagcttcaattggactggagtcactcaaaacggaacaagttctgcttgcataaggagatctagtagtagtttctttagtagattaaattggttgacccacttaaactacacatacccagcattgaacgtgactatgccaaacaatgaacaatttgacaaattgtacatttggggggttcaccacccgggtacggacaaggaccaaatcttcctgtatgctcaatcatcaggaagaatcacagtatctaccaaaagaagccaacaagctgtaatcccaaatatcggatctagacccagaataagggatatccctagcagaataagcatctattggacaatagtaaaaccgggagacatacttttgattaacagcacagggaatctaattgctcctaggggttacttcaaaatacgaagtgggaaaagctcaataatgagatcagatgcacccattggcaaatgcaagtctgaatgcatcactccaaatggaagcattcccaatgacaaaccattccaaaatgtaaacaggatcacatacggggcctgtcccagatatgttaagcatagcactctaaaattggcaacaggaatgcgaaatgtaccagagaaacaaactagaggcatatttggcgcaatagcgggtttcatagaaaatggttgggagggaatggtggatggttggtacggtttcaggcatcaaaattctgagggaagaggacaagcagcagatctcaaaagcactcaagcagcaatcgatcaaatcaatgggaagctgaatcgattgatcgggaaaaccaacgagaaattccatcagattgaaaaagaattctcagaagtagaaggaagaattcaggaccttgagaaatatgttgaggacactaaaatagatctctggtcatacaacgcggagcttcttgttgccctggagaaccaacatacarttgatctaactgactcagaaatgaacaaactgtttgaaaaaacaaagaagcaactgagggaaaatgctgaggatatgggaaatggttgtttcaaaatataccacaaatgtgacaatgcctgcataggatcaataagaaatggaacttatgaccacaatgtgtacagggatgaagcattaaacaaccggttccagatcaagggagttgagctgaagtcagggtacaaagattggatcctatggatttcctytgccatatcatgttttttgctttgtgttgctttgttggggttcatcatgtgggcctgccaaaagggcaacattaggtgcaacatttgcatttga&#39;, &#39;GBSeq_definition&#39;: &#39;Influenza A virus (A/NewJersey/NHRC_93219/2015(H3N2)) segment 4 hemagglutinin (HA) gene, complete cds&#39;}, attributes={})
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>While this output may not seem useful, we now just have a set of nested dictionaries that we can interrogate using standard Python techniques:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">record</span><span class="o">.</span><span class="n">keys</span><span class="p">()))</span> <span class="c1"># print out all the keys in the dictionary</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[&#39;GBSeq_references&#39;, &#39;GBSeq_topology&#39;, &#39;GBSeq_organism&#39;, &#39;GBSeq_create-date&#39;, &#39;GBSeq_length&#39;, &#39;GBSeq_moltype&#39;, &#39;GBSeq_locus&#39;, &#39;GBSeq_accession-version&#39;, &#39;GBSeq_source&#39;, &#39;GBSeq_other-seqids&#39;, &#39;GBSeq_feature-table&#39;, &#39;GBSeq_strandedness&#39;, &#39;GBSeq_taxonomy&#39;, &#39;GBSeq_update-date&#39;, &#39;GBSeq_division&#39;, &#39;GBSeq_comment&#39;, &#39;GBSeq_primary-accession&#39;, &#39;GBSeq_sequence&#39;, &#39;GBSeq_definition&#39;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">record</span><span class="p">[</span><span class="s1">&#39;GBSeq_sequence&#39;</span><span class="p">])</span> <span class="c1"># print out the sequence</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>atgaagactatcattgctttgagctacattctatgtctggttttcgctcaaaaaattcctggaaatgacaatagcacggcaacgctgtgccttgggcaccatgcagtaccaaacggaacgatagtgaaaacaatcacaaatgaccgaattgaagttactaatgctactgagctggttcagaattcctcaataggtgaaatatgcgacagtcctcatcagatccttgatggagaaaactgcacactaatagatgctctattgggagaccctcagtgtgatggctttcaaaataagaaatgggacctttttgttgaacgaagcaaagcctacagcaactgctacccttatgatgtgccggattatgcctcccttaggtcactagttgcctcatccggcacactggagtttaacaatgaaagcttcaattggactggagtcactcaaaacggaacaagttctgcttgcataaggagatctagtagtagtttctttagtagattaaattggttgacccacttaaactacacatacccagcattgaacgtgactatgccaaacaatgaacaatttgacaaattgtacatttggggggttcaccacccgggtacggacaaggaccaaatcttcctgtatgctcaatcatcaggaagaatcacagtatctaccaaaagaagccaacaagctgtaatcccaaatatcggatctagacccagaataagggatatccctagcagaataagcatctattggacaatagtaaaaccgggagacatacttttgattaacagcacagggaatctaattgctcctaggggttacttcaaaatacgaagtgggaaaagctcaataatgagatcagatgcacccattggcaaatgcaagtctgaatgcatcactccaaatggaagcattcccaatgacaaaccattccaaaatgtaaacaggatcacatacggggcctgtcccagatatgttaagcatagcactctaaaattggcaacaggaatgcgaaatgtaccagagaaacaaactagaggcatatttggcgcaatagcgggtttcatagaaaatggttgggagggaatggtggatggttggtacggtttcaggcatcaaaattctgagggaagaggacaagcagcagatctcaaaagcactcaagcagcaatcgatcaaatcaatgggaagctgaatcgattgatcgggaaaaccaacgagaaattccatcagattgaaaaagaattctcagaagtagaaggaagaattcaggaccttgagaaatatgttgaggacactaaaatagatctctggtcatacaacgcggagcttcttgttgccctggagaaccaacatacarttgatctaactgactcagaaatgaacaaactgtttgaaaaaacaaagaagcaactgagggaaaatgctgaggatatgggaaatggttgtttcaaaatataccacaaatgtgacaatgcctgcataggatcaataagaaatggaacttatgaccacaatgtgtacagggatgaagcattaaacaaccggttccagatcaagggagttgagctgaagtcagggtacaaagattggatcctatggatttcctytgccatatcatgttttttgctttgtgttgctttgttggggttcatcatgtgggcctgccaaaagggcaacattaggtgcaacatttgcatttga
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">features</span> <span class="o">=</span> <span class="n">record</span><span class="p">[</span><span class="s1">&#39;GBSeq_feature-table&#39;</span><span class="p">]</span> <span class="c1"># extract all the features</span>
+<span class="k">for</span> <span class="n">feature</span> <span class="ow">in</span> <span class="n">features</span><span class="p">:</span> <span class="c1"># loop over features and print feature key and feature location</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">feature</span><span class="p">[</span><span class="s1">&#39;GBFeature_key&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;: &quot;</span> <span class="o">+</span> <span class="n">feature</span><span class="p">[</span><span class="s1">&#39;GBFeature_location&#39;</span><span class="p">])</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>source: 1..1701
+gene: 1..1701
+CDS: 1..1701
+mat_peptide: 49..1035
+mat_peptide: 1036..1698
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Running-search-queries-through-Entrez">Running search queries through Entrez<a class="anchor-link" href="#Running-search-queries-through-Entrez">&#182;</a></h2><p>So far we have only downloaded specific records from Entrez. In addition to just downloading records, however, we can also run searches directly from python. Any query that you can do on the Entrez website (<a href="https://www.ncbi.nlm.nih.gov/">https://www.ncbi.nlm.nih.gov/</a>) can also be executed directly from python. This allows you to find a large number of records all at once and process them in an automated fashion.</p>
+<p>For example, below we will see how to automatically run and retrieve the results for the following search term: "influenza a virus texas h1n1 hemagglutinin complete cds". A direct link to the search results on the Entrez website is here:<br>
+<a href="https://www.ncbi.nlm.nih.gov/nuccore/?term=influenza+a+virus+texas+h1n1+hemagglutinin+complete+cds">https://www.ncbi.nlm.nih.gov/nuccore/?term=influenza+a+virus+texas+h1n1+hemagglutinin+complete+cds</a></p>
+<p>(Note that in the following Python code, we limit the number of search hits returned to the first 10.)</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># let&#39;s do a search for influenza H1N1 viruses from Texas</span>
+<span class="n">handle</span> <span class="o">=</span> <span class="n">Entrez</span><span class="o">.</span><span class="n">esearch</span><span class="p">(</span><span class="n">db</span><span class="o">=</span><span class="s2">&quot;nucleotide&quot;</span><span class="p">,</span>  <span class="c1"># database to search</span>
+                        <span class="n">term</span><span class="o">=</span><span class="s2">&quot;influenza a virus texas h1n1 hemagglutinin complete cds&quot;</span><span class="p">,</span>  <span class="c1"># search term</span>
+                        <span class="n">retmax</span><span class="o">=</span><span class="mi">10</span>  <span class="c1"># number of results that are returned</span>
+                        <span class="p">)</span>
+<span class="n">record</span> <span class="o">=</span> <span class="n">Entrez</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">handle</span><span class="p">)</span>
+<span class="n">handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+<span class="n">gi_list</span> <span class="o">=</span> <span class="n">record</span><span class="p">[</span><span class="s2">&quot;IdList&quot;</span><span class="p">]</span> <span class="c1"># list of genbank identifiers found</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">gi_list</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[&#39;1597259311&#39;, &#39;1597259287&#39;, &#39;1597258925&#39;, &#39;1597258900&#39;, &#39;1591440116&#39;, &#39;1591440105&#39;, &#39;1591440078&#39;, &#39;1590855198&#39;, &#39;1590855179&#39;, &#39;1590836043&#39;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Note that even though NCBI is <a href="https://www.ncbi.nlm.nih.gov/news/03-02-2016-phase-out-of-GI-numbers/">phasing out sequence GI numbers,</a> for now the <code>esearch()</code> function still returns GI numbers (numerical sequence identifiers without version information).</p>
+<p>We can download all the genbank records in the list of identifiers using the <code>Entrez.efetch()</code> function. This function provides us with a handle that needs to be processed with <code>SeqIO.parse()</code>. (We used <code>SeqIO.read()</code> previously, which reads a single record. <code>SeqIO.parse()</code> reads multiple records. See <a href="http://biopython.org/wiki/SeqIO">here</a> for details.)</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">handle</span> <span class="o">=</span> <span class="n">Entrez</span><span class="o">.</span><span class="n">efetch</span><span class="p">(</span><span class="n">db</span><span class="o">=</span><span class="s2">&quot;nucleotide&quot;</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="n">gi_list</span><span class="p">,</span> <span class="n">rettype</span><span class="o">=</span><span class="s2">&quot;gb&quot;</span><span class="p">,</span> <span class="n">retmode</span><span class="o">=</span><span class="s2">&quot;text&quot;</span><span class="p">)</span>
+<span class="n">records</span> <span class="o">=</span> <span class="n">SeqIO</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">handle</span><span class="p">,</span> <span class="s2">&quot;genbank&quot;</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">record</span> <span class="ow">in</span> <span class="n">records</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">record</span><span class="o">.</span><span class="n">description</span><span class="p">)</span>
+    
+<span class="n">handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span> <span class="c1"># important, close the handle only after you have iterated over the records. Otherwise you will get an error!</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Influenza A virus (A/Texas/12/2019(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/07/2019(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/06/2019(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/05/2019(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/157/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/143/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/02/2019(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/148/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/147/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+Influenza A virus (A/Texas/156/2018(H1N1)) segment 4 hemagglutinin (HA) gene, complete cds
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>As another example, let's search the "pubmed" database (database of scientific publications) for papers from 2015 written by "Wilke CO". The exact search term we need to use is the following: "Wilke CO[Author] AND 2015[Date - Publication]"</p>
+<p>You can <a href="http://www.ncbi.nlm.nih.gov/pubmed/?term=Wilke+CO%5BAuthor%5D+AND+2015%5BDate+-+Publication%5D">click here</a> to see the result from that search online.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">handle</span> <span class="o">=</span> <span class="n">Entrez</span><span class="o">.</span><span class="n">esearch</span><span class="p">(</span><span class="n">db</span><span class="o">=</span><span class="s2">&quot;pubmed&quot;</span><span class="p">,</span>  <span class="c1"># database to search</span>
+                        <span class="n">term</span><span class="o">=</span><span class="s2">&quot;Wilke CO[Author] AND 2015[Date - Publication]&quot;</span><span class="p">,</span>  <span class="c1"># search term</span>
+                        <span class="n">retmax</span><span class="o">=</span><span class="mi">10</span>  <span class="c1"># number of results that are returned</span>
+                        <span class="p">)</span>
+<span class="n">record</span> <span class="o">=</span> <span class="n">Entrez</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">handle</span><span class="p">)</span>
+<span class="n">handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+<span class="c1"># search returns PubMed IDs (pmids)</span>
+<span class="n">pmid_list</span> <span class="o">=</span> <span class="n">record</span><span class="p">[</span><span class="s2">&quot;IdList&quot;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">pmid_list</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[&#39;26770819&#39;, &#39;26468068&#39;, &#39;26430238&#39;, &#39;26397960&#39;, &#39;26355089&#39;, &#39;26275208&#39;, &#39;26020774&#39;, &#39;25999509&#39;, &#39;25787027&#39;, &#39;25737813&#39;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Just like with genes and genomes, we can download the records corresponding to these identifiers. They are references. We'll print the author(s), title, and reference (source).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">Bio</span> <span class="k">import</span> <span class="n">Medline</span>
+<span class="n">handle</span> <span class="o">=</span> <span class="n">Entrez</span><span class="o">.</span><span class="n">efetch</span><span class="p">(</span><span class="n">db</span><span class="o">=</span><span class="s2">&quot;pubmed&quot;</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="n">pmid_list</span><span class="p">,</span> <span class="n">rettype</span><span class="o">=</span><span class="s2">&quot;medline&quot;</span><span class="p">,</span> <span class="n">retmode</span><span class="o">=</span><span class="s2">&quot;text&quot;</span><span class="p">)</span>
+<span class="n">records</span> <span class="o">=</span> <span class="n">Medline</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">handle</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">record</span> <span class="ow">in</span> <span class="n">records</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">record</span><span class="p">[</span><span class="s1">&#39;AU&#39;</span><span class="p">])</span> <span class="c1"># author list</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">record</span><span class="p">[</span><span class="s1">&#39;TI&#39;</span><span class="p">])</span> <span class="c1"># title</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">record</span><span class="p">[</span><span class="s1">&#39;SO&#39;</span><span class="p">])</span> <span class="c1"># source (reference)</span>
+    <span class="nb">print</span><span class="p">()</span>
+<span class="n">handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[&#39;Meyer AG&#39;, &#39;Spielman SJ&#39;, &#39;Bedford T&#39;, &#39;Wilke CO&#39;]
+Time dependence of evolutionary metrics during the 2009 pandemic influenza virus outbreak.
+Virus Evol. 2015 Jan;1(1). doi: 10.1093/ve/vev006. Epub 2015 Jan 1.
+
+[&#39;Meyer AG&#39;, &#39;Wilke CO&#39;]
+The utility of protein structure as a predictor of site-wise dN/dS varies widely among HIV-1 proteins.
+J R Soc Interface. 2015 Oct 6;12(111):20150579. doi: 10.1098/rsif.2015.0579.
+
+[&#39;Wilke CO&#39;]
+Evolutionary paths of least resistance.
+Proc Natl Acad Sci U S A. 2015 Oct 13;112(41):12553-4. doi: 10.1073/pnas.1517390112. Epub 2015 Oct 1.
+
+[&#39;Spielman SJ&#39;, &#39;Wilke CO&#39;]
+Pyvolve: A Flexible Python Module for Simulating Sequences along Phylogenies.
+PLoS One. 2015 Sep 23;10(9):e0139047. doi: 10.1371/journal.pone.0139047. eCollection 2015.
+
+[&#39;Kerr SA&#39;, &#39;Jackson EL&#39;, &#39;Lungu OI&#39;, &#39;Meyer AG&#39;, &#39;Demogines A&#39;, &#39;Ellington AD&#39;, &#39;Georgiou G&#39;, &#39;Wilke CO&#39;, &#39;Sawyer SL&#39;]
+Computational and Functional Analysis of the Virus-Receptor Interface Reveals Host Range Trade-Offs in New World Arenaviruses.
+J Virol. 2015 Nov;89(22):11643-53. doi: 10.1128/JVI.01408-15. Epub 2015 Sep 9.
+
+[&#39;Houser JR&#39;, &#39;Barnhart C&#39;, &#39;Boutz DR&#39;, &#39;Carroll SM&#39;, &#39;Dasgupta A&#39;, &#39;Michener JK&#39;, &#39;Needham BD&#39;, &#39;Papoulas O&#39;, &#39;Sridhara V&#39;, &#39;Sydykova DK&#39;, &#39;Marx CJ&#39;, &#39;Trent MS&#39;, &#39;Barrick JE&#39;, &#39;Marcotte EM&#39;, &#39;Wilke CO&#39;]
+Controlled Measurement and Comparative Analysis of Cellular Components in E. coli Reveals Broad Regulatory Changes in Response to Glucose Starvation.
+PLoS Comput Biol. 2015 Aug 14;11(8):e1004400. doi: 10.1371/journal.pcbi.1004400. eCollection 2015 Aug.
+
+[&#39;Meyer AG&#39;, &#39;Wilke CO&#39;]
+Geometric Constraints Dominate the Antigenic Evolution of Influenza H3N2 Hemagglutinin.
+PLoS Pathog. 2015 May 28;11(5):e1004940. doi: 10.1371/journal.ppat.1004940. eCollection 2015 May.
+
+[&#39;Kachroo AH&#39;, &#39;Laurent JM&#39;, &#39;Yellman CM&#39;, &#39;Meyer AG&#39;, &#39;Wilke CO&#39;, &#39;Marcotte EM&#39;]
+Evolution. Systematic humanization of yeast genes reveals conserved functions and genetic modularity.
+Science. 2015 May 22;348(6237):921-5. doi: 10.1126/science.aaa0769.
+
+[&#39;Echave J&#39;, &#39;Jackson EL&#39;, &#39;Wilke CO&#39;]
+Relationship between protein thermodynamic constraints and variation of evolutionary rates among sites.
+Phys Biol. 2015 Mar 19;12(2):025002. doi: 10.1088/1478-3975/12/2/025002.
+
+[&#39;Spielman SJ&#39;, &#39;Kumar K&#39;, &#39;Wilke CO&#39;]
+Comprehensive, structurally-informed alignment and phylogeny of vertebrate biogenic amine receptors.
+PeerJ. 2015 Feb 17;3:e773. doi: 10.7717/peerj.773. eCollection 2015.
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Problems">Problems<a class="anchor-link" href="#Problems">&#182;</a></h2><p><strong>Problem 1</strong></p>
+<p>Use the following code to download the genbank record <code>KT220438</code> in XML and parse it with the <code>Entrez.parse()</code> function:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Download sequence record for genbank id KT220438 (HA from influenza A)</span>
+<span class="n">handle</span> <span class="o">=</span> <span class="n">Entrez</span><span class="o">.</span><span class="n">efetch</span><span class="p">(</span><span class="n">db</span><span class="o">=</span><span class="s2">&quot;nucleotide&quot;</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;KT220438&quot;</span><span class="p">,</span> <span class="n">rettype</span><span class="o">=</span><span class="s2">&quot;gb&quot;</span><span class="p">,</span> <span class="n">retmode</span><span class="o">=</span><span class="s2">&quot;xml&quot;</span><span class="p">)</span>
+<span class="n">parsed</span> <span class="o">=</span> <span class="n">Entrez</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">handle</span><span class="p">)</span>
+<span class="n">record</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">parsed</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span> <span class="c1"># Convert the parsed contents into a list and take element 0.</span>
+<span class="n">handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Then:</p>
+<p>(a) Print out the value for the key <code>GBSeq_definition</code>.</p>
+<p>(b) Find the <code>CDS</code> feature and print out all its qualifiers. Note that qualifiers are provided under the keyword <code>GBFeature_quals</code>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Problem 1a</span>
+
+<span class="c1"># Your code goes here.</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Problem 1b</span>
+
+<span class="c1"># Your code goes here.</span>
 </pre></div>
 
 </div>
@@ -11960,203 +12727,20 @@ Protein sequence: MKTIIALSYILCLVFAQKIPGNDNSTATLCLGHHAVPNGTIVKTITNDRIEVTNATELVQNS
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Problem 2:</strong></p>
-<p>Now read in the T7 genome, and for each coding sequence (CDS) in that genome print out the name (<code>locus_tag</code>) and the product name (<code>product</code>).</p>
-<p>Hints:</p>
-<ul>
-<li>First you need to parse the genbank file into a record, using <code>SeqIO.read()</code>.</li>
-<li>All gene annotations are stored as features, and <code>record.features</code> gives you a list of all these features.</li>
-<li>Each feature has a type, accessible through <code>feature.type</code>. We are only interested in features of type "CDS".</li>
-<li>The actual annotations we are interested in, such as <code>locus_tag</code>, <code>product</code>, etc., are stored in the dictionary <code>feature.qualifiers</code>.</li>
-</ul>
+<p>(a) Use an Entrez esearch query of the pubmed database to find out how many publications "Spielman SJ" wrote in 2015.</p>
+<p>(b) From the results of part (a), compile a combined list of all the co-authors of "Spielman SJ" in 2015.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Problem 2</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Problem 2a</span>
 
-<span class="n">in_handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;T7.gb&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span>
-<span class="n">record</span> <span class="o">=</span> <span class="n">SeqIO</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">in_handle</span><span class="p">,</span> <span class="s2">&quot;genbank&quot;</span><span class="p">)</span>
-<span class="n">in_handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-
-<span class="k">for</span> <span class="n">feature</span> <span class="ow">in</span> <span class="n">record</span><span class="o">.</span><span class="n">features</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">feature</span><span class="o">.</span><span class="n">type</span> <span class="o">==</span> <span class="s1">&#39;CDS&#39;</span><span class="p">:</span>
-        <span class="c1"># all the qualifiers are returned as lists, so we have to add `[0]` at the end to just get</span>
-        <span class="c1"># the first element of each list</span>
-        <span class="n">locus_tag</span> <span class="o">=</span> <span class="n">feature</span><span class="o">.</span><span class="n">qualifiers</span><span class="p">[</span><span class="s1">&#39;locus_tag&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
-        <span class="n">product</span> <span class="o">=</span> <span class="n">feature</span><span class="o">.</span><span class="n">qualifiers</span><span class="p">[</span><span class="s1">&#39;product&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">locus_tag</span> <span class="o">+</span> <span class="s2">&quot;: &quot;</span> <span class="o">+</span> <span class="n">product</span><span class="p">)</span>
-    
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>T7p01: hypothetical protein
-T7p02: hypothetical protein
-T7p04: hypothetical protein
-T7p05: hypothetical protein
-T7p06: hypothetical protein
-T7p03: protein kinase
-T7p07: T3/T7-like RNA polymerase
-T7p09: hypothetical protein
-T7p08: host dGTPase inhibitor
-T7p10: ATP-dependent DNA ligase
-T7p11: hypothetical protein
-T7p12: hypothetical protein
-T7p13: hypothetical protein
-T7p14: hypothetical protein
-T7p15: hypothetical protein
-T7p16: inhibitor of host bacterial RNA polymerase
-T7p17: single-stranded DNA-binding protein
-T7p18: hypothetical protein
-T7p19: endonuclease I
-T7p20: lysozyme
-T7p21: putative NHN endonuclease
-T7p22: DNA primase/helicase
-T7p23: hypothetical protein
-T7p24: helicase
-T7p25: hypothetical protein
-T7p26: hypothetical protein
-T7p27: hypothetical protein
-T7p28: hypothetical protein
-T7p29: DNA polymerase
-T7p30: hypothetical protein
-T7p31: hypothetical protein
-T7p32: host protein H-NS-interacting protein
-T7p33: hypothetical protein
-T7p34: host recBCD nuclease inhibitor
-T7p35: exonuclease
-T7p36: hypothetical protein
-T7p37: hypothetical protein
-T7p38: hypothetical protein
-T7p39: hypothetical protein
-T7p40: tail assembly protein
-T7p41: hypothetical protein
-T7p42: head-tail connector protein
-T7p43: capsid assembly protein
-T7p44: major capsid protein
-T7p45: major capsid protein
-T7p46: tail tubular protein A
-T7p47: tail tubular protein B
-T7p48: internal virion protein A
-T7p49: internal virion protein B
-T7p50: internal virion protein C
-T7p51: internal virion protein D
-T7p52: tail fiber protein
-T7p53: type II holin
-T7p54: DNA packaging protein, small subunit
-T7p55: phage lambda Rz-like lysis protein
-T7p56: phage lambda Rz1-like protein
-T7p57: DNA maturation protein
-T7p58: hypothetical protein
-T7p59: hypothetical protein
-T7p60: hypothetical protein
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Problem 3:</strong></p>
-<p>Calculate the mean gene length (in amino acids) for all CDSs in the T7 genome.</p>
-<p>Hint: Use the function <code>round()</code> to round your result to 2 decimal digits.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">in_handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;T7.gb&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span>
-<span class="n">record</span> <span class="o">=</span> <span class="n">SeqIO</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">in_handle</span><span class="p">,</span> <span class="s2">&quot;genbank&quot;</span><span class="p">)</span>
-<span class="n">in_handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-
-<span class="n">count</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># counts the number of genes in the genome</span>
-<span class="n">length_sum</span> <span class="o">=</span> <span class="mf">0.</span> <span class="c1"># holds the total sum of all lengths of all genes</span>
-<span class="k">for</span> <span class="n">feature</span> <span class="ow">in</span> <span class="n">record</span><span class="o">.</span><span class="n">features</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">feature</span><span class="o">.</span><span class="n">type</span> <span class="o">==</span> <span class="s1">&#39;CDS&#39;</span><span class="p">:</span>
-        <span class="n">seq</span> <span class="o">=</span> <span class="n">feature</span><span class="o">.</span><span class="n">qualifiers</span><span class="p">[</span><span class="s1">&#39;translation&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
-        <span class="n">length_sum</span> <span class="o">+=</span> <span class="nb">len</span><span class="p">(</span><span class="n">seq</span><span class="p">)</span>
-        <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
-        
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;mean length:&quot;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">length_sum</span><span class="o">/</span><span class="n">count</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="s2">&quot;amino acids&quot;</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>mean length: 227.62 amino acids
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Problem 4:</strong></p>
-<p>(a) Download the <em>E. coli</em> K12 genome, available here: <a href="http://www.ncbi.nlm.nih.gov/nuccore/CP009685">http://www.ncbi.nlm.nih.gov/nuccore/CP009685</a>, and store it in a file called <code>Ecoli_K12.gb</code>.</p>
-<p>(b) Calculate the fraction of coding sequences that are marked as "hypothetical protein". (This information is provided in the "product" qualifier of a "CDS" feature.)</p>
-<p>(c) Calculate the GC content of the <em>entire</em> genome sequence. GC content is the fraction of G and C nucleotides in the sequence.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Problem 4a</span>
-
-<span class="c1"># Download E. coli K12 genome:</span>
-<span class="n">download_handle</span> <span class="o">=</span> <span class="n">Entrez</span><span class="o">.</span><span class="n">efetch</span><span class="p">(</span><span class="n">db</span><span class="o">=</span><span class="s2">&quot;nucleotide&quot;</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;CP009685&quot;</span><span class="p">,</span> <span class="n">rettype</span><span class="o">=</span><span class="s2">&quot;gb&quot;</span><span class="p">,</span> <span class="n">retmode</span><span class="o">=</span><span class="s2">&quot;text&quot;</span><span class="p">)</span>
-<span class="n">data</span> <span class="o">=</span> <span class="n">download_handle</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-<span class="n">download_handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-
-<span class="c1"># Store data into file &quot;Ecoli_K12.gb&quot;:</span>
-<span class="n">out_handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;Ecoli_K12.gb&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span>
-<span class="n">out_handle</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-<span class="n">out_handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="c1"># Your code goes here.</span>
 </pre></div>
 
 </div>
@@ -12166,97 +12750,15 @@ T7p60: hypothetical protein
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Problem 4b</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Problem 2b</span>
 
-<span class="c1"># Read in E. coli K12 genome:</span>
-<span class="n">in_handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;Ecoli_K12.gb&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span>
-<span class="n">record</span> <span class="o">=</span> <span class="n">SeqIO</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">in_handle</span><span class="p">,</span> <span class="s2">&quot;genbank&quot;</span><span class="p">)</span>
-<span class="n">in_handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-
-<span class="c1"># count all CDSs and the hypothetical ones</span>
-<span class="n">CDS_count</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">hyp_CDS_count</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">for</span> <span class="n">feature</span> <span class="ow">in</span> <span class="n">record</span><span class="o">.</span><span class="n">features</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">feature</span><span class="o">.</span><span class="n">type</span> <span class="o">==</span> <span class="s1">&#39;CDS&#39;</span><span class="p">:</span>
-        <span class="n">CDS_count</span> <span class="o">+=</span> <span class="mi">1</span>
-        <span class="k">if</span> <span class="s2">&quot;product&quot;</span> <span class="ow">in</span> <span class="n">feature</span><span class="o">.</span><span class="n">qualifiers</span><span class="p">:</span>
-            <span class="k">if</span> <span class="n">feature</span><span class="o">.</span><span class="n">qualifiers</span><span class="p">[</span><span class="s2">&quot;product&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;hypothetical protein&quot;</span><span class="p">:</span>
-                <span class="n">hyp_CDS_count</span> <span class="o">+=</span> <span class="mi">1</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Total coding sequences in the E. coli K12 genome:&quot;</span><span class="p">,</span> <span class="n">CDS_count</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Number of hypothetical proteins in the E. coli K12 genome:&quot;</span><span class="p">,</span> <span class="n">hyp_CDS_count</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Fraction:&quot;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="mi">100</span><span class="o">*</span><span class="n">hyp_CDS_count</span><span class="o">/</span><span class="n">CDS_count</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="s2">&quot;%&quot;</span><span class="p">)</span>
+<span class="c1"># Your code goes here.</span>
 </pre></div>
 
 </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Total coding sequences in the E. coli K12 genome: 4391
-Number of hypothetical proteins in the E. coli K12 genome: 897
-Fraction: 20.43 %
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Problem 4c</span>
-
-<span class="c1"># Read in E. coli K12 genome:</span>
-<span class="n">in_handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;Ecoli_K12.gb&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span>
-<span class="n">record</span> <span class="o">=</span> <span class="n">SeqIO</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">in_handle</span><span class="p">,</span> <span class="s2">&quot;genbank&quot;</span><span class="p">)</span>
-<span class="n">in_handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-
-<span class="c1"># Count all the G and C nucleotides</span>
-<span class="n">GC_count</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">for</span> <span class="n">nucleotide</span> <span class="ow">in</span> <span class="n">record</span><span class="o">.</span><span class="n">seq</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">nucleotide</span><span class="o">==</span><span class="s1">&#39;G&#39;</span> <span class="ow">or</span> <span class="n">nucleotide</span><span class="o">==</span><span class="s1">&#39;C&#39;</span><span class="p">:</span>
-        <span class="n">GC_count</span> <span class="o">+=</span> <span class="mi">1</span>
-<span class="c1"># Calculate GC percentage</span>
-<span class="n">GC_perc</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="mi">100</span><span class="o">*</span><span class="n">GC_count</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">record</span><span class="o">.</span><span class="n">seq</span><span class="p">),</span> <span class="mi">2</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;GC content: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">GC_perc</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;%&quot;</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>GC content: 50.79%
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -12273,127 +12775,23 @@ Fraction: 20.43 %
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Problem 5:</strong></p>
-<p>In the T7 genome, find the CDS feature corresponding to locus tag "T7p45" (major capsid protein), and then use the <code>feature.extract()</code> function to extract the DNA sequence corresponding to that gene. Then translate that sequence to verify (by inspection) that it corresponds to the protein sequence that is listed for gene T7p45.</p>
+<p><strong>Problem 3:</strong></p>
+<p>For larger searches, NCBI wants you to use the WebEnv method to download all your search results. This is explained in the Biopython tutorial <a href="http://biopython.org/DIST/docs/tutorial/Tutorial.html#sec:entrez-webenv">here.</a> Rewrite the influenza search from the section "Running search queries on through Entrez" in such a way that it uses the WebEnv method. For this downloading method, it makes sense to write all the results into a file and then read the results back in.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">in_handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;T7.gb&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span>
-<span class="n">record</span> <span class="o">=</span> <span class="n">SeqIO</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">in_handle</span><span class="p">,</span> <span class="s2">&quot;genbank&quot;</span><span class="p">)</span>
-<span class="n">in_handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Problem 3</span>
 
-<span class="k">for</span> <span class="n">feature</span> <span class="ow">in</span> <span class="n">record</span><span class="o">.</span><span class="n">features</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">feature</span><span class="o">.</span><span class="n">type</span> <span class="o">==</span> <span class="s1">&#39;CDS&#39;</span><span class="p">:</span>
-        <span class="n">locus_tag</span> <span class="o">=</span> <span class="n">feature</span><span class="o">.</span><span class="n">qualifiers</span><span class="p">[</span><span class="s1">&#39;locus_tag&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
-        <span class="k">if</span> <span class="n">locus_tag</span> <span class="o">==</span> <span class="s1">&#39;T7p45&#39;</span><span class="p">:</span>
-            <span class="n">target_feature</span> <span class="o">=</span> <span class="n">feature</span>
-            <span class="k">break</span>
-            
-<span class="nb">print</span><span class="p">(</span><span class="n">target_feature</span><span class="p">)</span>
-<span class="n">DNA_seq</span> <span class="o">=</span> <span class="n">target_feature</span><span class="o">.</span><span class="n">extract</span><span class="p">(</span><span class="n">record</span><span class="p">)</span><span class="o">.</span><span class="n">seq</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;DNA:&quot;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">DNA_seq</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;protein:&quot;</span><span class="p">,</span> <span class="n">DNA_seq</span><span class="o">.</span><span class="n">translate</span><span class="p">())</span>
+<span class="c1"># Your code goes here.</span>
 </pre></div>
 
 </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>type: CDS
-location: [22966:24004](+)
-qualifiers:
-    Key: codon_start, Value: [&#39;1&#39;]
-    Key: db_xref, Value: [&#39;GOA:P19726&#39;, &#39;UniProtKB/Swiss-Prot:P19726&#39;, &#39;GeneID:1261026&#39;]
-    Key: locus_tag, Value: [&#39;T7p45&#39;]
-    Key: note, Value: [&#39;major capsid protein. Involved in F-exclusion of wt T7 phage. A minor capsid protein (gp10B) is produced from gene 10 by a -1 frameshift towards the end of 10A, resulting in a slightly larger protein. Other names: gp10A.&#39;]
-    Key: product, Value: [&#39;major capsid protein&#39;]
-    Key: protein_id, Value: [&#39;NP_041998.1&#39;]
-    Key: transl_table, Value: [&#39;11&#39;]
-    Key: translation, Value: [&#39;MASMTGGQQMGTNQGKGVVAAGDKLALFLKVFGGEVLTAFARTSVTTSRHMVRSISSGKSAQFPVLGRTQAAYLAPGENLDDKRKDIKHTEKVITIDGLLTADVLIYDIEDAMNHYDVRSEYTSQLGESLAMAADGAVLAEIAGLCNVESKYNENIEGLGTATVIETTQNKAALTDQVALGKEIIAALTKARAALTKNYVPAADRVFYCDPDSYSAILAALMPNAANYAALIDPEKGSIRNVMGFEVVEVPHLTAGGAGTAREGTTGQKHVFPANKGEGNVKVAKDNVIGLFMHRSAVGTVKLRDLALERARRANFQADQIIAKYAMGHGGLRPEAAGAVVFKVE&#39;]
-
-DNA: ATGGCTAGCATGACTGGTGGACAGCAAATGGGTACTAACCAAGGTAAAGGTGTAGTTGCTGCTGGAGATAAACTGGCGTTGTTCTTGAAGGTATTTGGCGGTGAAGTCCTGACTGCGTTCGCTCGTACCTCCGTGACCACTTCTCGCCACATGGTACGTTCCATCTCCAGCGGTAAATCCGCTCAGTTCCCTGTTCTGGGTCGCACTCAGGCAGCGTATCTGGCTCCGGGCGAGAACCTCGACGATAAACGTAAGGACATCAAACACACCGAGAAGGTAATCACCATTGACGGTCTCCTGACGGCTGACGTTCTGATTTATGATATTGAGGACGCGATGAACCACTACGACGTTCGCTCTGAGTATACCTCTCAGTTGGGTGAATCTCTGGCGATGGCTGCGGATGGTGCGGTTCTGGCTGAGATTGCCGGTCTGTGTAACGTGGAAAGCAAATATAATGAGAACATCGAGGGCTTAGGTACTGCTACCGTAATTGAGACCACTCAGAACAAGGCCGCACTTACCGACCAAGTTGCGCTGGGTAAGGAGATTATTGCGGCTCTGACTAAGGCTCGTGCGGCTCTGACCAAGAACTATGTTCCGGCTGCTGACCGTGTGTTCTACTGTGACCCAGATAGCTACTCTGCGATTCTGGCAGCACTGATGCCGAACGCAGCAAACTACGCTGCTCTGATTGACCCTGAGAAGGGTTCTATCCGCAACGTTATGGGCTTTGAGGTTGTAGAAGTTCCGCACCTCACCGCTGGTGGTGCTGGTACCGCTCGTGAGGGCACTACTGGTCAGAAGCACGTCTTCCCTGCCAATAAAGGTGAGGGTAATGTCAAGGTTGCTAAGGACAACGTTATCGGCCTGTTCATGCACCGCTCTGCGGTAGGTACTGTTAAGCTGCGTGACTTGGCTCTGGAGCGCGCTCGCCGTGCTAACTTCCAAGCGGACCAGATTATCGCTAAGTACGCAATGGGCCACGGTGGTCTTCGCCCAGAAGCTGCTGGTGCAGTGGTTTTCAAAGTGGAGTAA
-protein: MASMTGGQQMGTNQGKGVVAAGDKLALFLKVFGGEVLTAFARTSVTTSRHMVRSISSGKSAQFPVLGRTQAAYLAPGENLDDKRKDIKHTEKVITIDGLLTADVLIYDIEDAMNHYDVRSEYTSQLGESLAMAADGAVLAEIAGLCNVESKYNENIEGLGTATVIETTQNKAALTDQVALGKEIIAALTKARAALTKNYVPAADRVFYCDPDSYSAILAALMPNAANYAALIDPEKGSIRNVMGFEVVEVPHLTAGGAGTAREGTTGQKHVFPANKGEGNVKVAKDNVIGLFMHRSAVGTVKLRDLALERARRANFQADQIIAKYAMGHGGLRPEAAGAVVFKVE*
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Problem 6:</strong></p>
-<p>For the influenza HA gene with ID "KT220438", write python code that checks whether the protein sequence listed in the CDS feature corresponds to the protein sequence you obtain when you translate the gene sequence. The code should print "The two translations match" or "The two translations do not match" depending on whether there is a match or not.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># download the record again</span>
-<span class="n">handle</span> <span class="o">=</span> <span class="n">Entrez</span><span class="o">.</span><span class="n">efetch</span><span class="p">(</span><span class="n">db</span><span class="o">=</span><span class="s2">&quot;nucleotide&quot;</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="s2">&quot;KT220438&quot;</span><span class="p">,</span> <span class="n">rettype</span><span class="o">=</span><span class="s2">&quot;gb&quot;</span><span class="p">,</span> <span class="n">retmode</span><span class="o">=</span><span class="s2">&quot;text&quot;</span><span class="p">)</span>
-<span class="n">record</span> <span class="o">=</span> <span class="n">SeqIO</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">handle</span><span class="p">,</span> <span class="s2">&quot;genbank&quot;</span><span class="p">)</span>
-<span class="n">handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-
-<span class="c1"># find the CDS feature    </span>
-<span class="k">for</span> <span class="n">feature</span> <span class="ow">in</span> <span class="n">record</span><span class="o">.</span><span class="n">features</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">feature</span><span class="o">.</span><span class="n">type</span> <span class="o">==</span> <span class="s2">&quot;CDS&quot;</span><span class="p">:</span>
-        <span class="n">CDS_feature</span> <span class="o">=</span> <span class="n">feature</span>
-        
-<span class="c1"># Extract the amino-acid sequence from the CDS feature. We must not forget the [0]</span>
-<span class="c1"># at the end to extract the first element of the list</span>
-<span class="n">CDS_feature_seq</span> <span class="o">=</span> <span class="n">CDS_feature</span><span class="o">.</span><span class="n">qualifiers</span><span class="p">[</span><span class="s2">&quot;translation&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
-<span class="c1"># Extract the translated sequence from the DNA sequence in the record.</span>
-<span class="c1"># We need to remove the trailing &#39;*&#39; indicating a stop codon,</span>
-<span class="c1"># and we also need to convert the whole thing into a string. </span>
-<span class="n">translated_seq</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">record</span><span class="o">.</span><span class="n">seq</span><span class="o">.</span><span class="n">translate</span><span class="p">()[:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
-<span class="k">if</span> <span class="n">CDS_feature_seq</span> <span class="o">==</span> <span class="n">translated_seq</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The two translations match.&quot;</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The two translations do not match.&quot;</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>The two translations match.
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
