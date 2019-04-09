@@ -219,6 +219,7 @@ Syllabus: [SDS348_syllabus_spring2019.pdf](/classes/SDS348/SDS348_syllabus_sprin
 * In-class worksheet:
     - [Jupyter Notebook](/classes/SDS348/2019_spring/worksheets/class21.ipynb)
     - [HTML](/classes/SDS348/2019_spring/worksheets/class21.html)
+    - [Solutions](/classes/SDS348/2019_spring/worksheets/class21_solutions.html)
 
 **22. Apr 11, 2019 – Regular expressions**
 

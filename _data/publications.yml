@@ -16,10 +16,10 @@
   doi: 10.1101/411025
 
 - author: B. R. Jack, C. O. Wilke
-  year: preprint
+  year: 2019
   title: "Pinetree: a step-wise gene expression simulator with codon-specific translation rates."
-  ref: "bioRxiv 339994"
-  doi: 10.1101/339994
+  ref: "Bioinformatics, btz203"
+  doi: 10.1093/bioinformatics/btz203
 
 - author: A. I. Teufel, M. M. Johnson, J. M. Laurent, A. H. Kachroo, E. M. Marcotte, C. O. Wilke
   year: 2019
