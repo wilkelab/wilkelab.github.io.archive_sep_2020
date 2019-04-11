@@ -370,6 +370,7 @@ All homeworks are due by 4:00pm on the day they are due. Homeworks need to be su
 * Lab worksheet:
     - [Jupyter Notebook](/classes/SDS348/2019_spring/labs/lab11.ipynb)
     - [HTML](/classes/SDS348/2019_spring/labs/lab11.html)
+    - [Solutions, HTML](/classes/SDS348/2019_spring/labs/lab11-solution.html)
 
 ## Projects
 
@@ -384,6 +385,8 @@ All projects are due by 4:00pm on the day they are due. Projects need to be subm
 - Project 2 (due Apr 2, 2019):
     - [HTML](/classes/SDS348/2019_spring/projects/project2.html)
     - [R Markdown](/classes/SDS348/2019_spring/projects/project2.Rmd)
+	- [Solutions, R Markdown](/classes/SDS348/2019_spring/projects/project2-solution.Rmd)
+	- [Solutions, HTML](/classes/SDS348/2019_spring/projects/project2-solution.html)
     
 - SDS 385 Assignment (due Apr 16, 2019, **grad students only**):
 	- [HTML](/classes/SDS348/2019_spring/projects/grad_assignment.html)
