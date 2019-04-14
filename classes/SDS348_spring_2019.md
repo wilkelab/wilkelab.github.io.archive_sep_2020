@@ -299,6 +299,8 @@ All homeworks are due by 4:00pm on the day they are due. Homeworks need to be su
 * Homework 8 (due Apr 9, 2019)
 	- [Jupyter Notebook](/classes/SDS348/2019_spring/homeworks/HW8.ipynb)
 	- [HTML](/classes/SDS348/2019_spring/homeworks/HW8.html) 
+	- [Solutions, Jupyter Notebook](/classes/SDS348/2019_spring/homeworks/HW8-solution.ipynb)
+	- [Solutions, HTML](/classes/SDS348/2019_spring/homeworks/HW8-solution.html)
 
 * Homework 9 (due Apr 16, 2019)
 	- [Jupyter Notebook](/classes/SDS348/2019_spring/homeworks/HW9.ipynb)
@@ -382,6 +384,13 @@ All homeworks are due by 4:00pm on the day they are due. Homeworks need to be su
     - [HTML](/classes/SDS348/2019_spring/labs/lab10.html)
     - [Solutions, HTML](/classes/SDS348/2019_spring/labs/lab10-solution.html)
 
+**11. Apr 10, 2019**
+
+* Lab worksheet:
+    - [Jupyter Notebook](/classes/SDS348/2019_spring/labs/lab11.ipynb)
+    - [HTML](/classes/SDS348/2019_spring/labs/lab11.html)
+    - [Solutions, HTML](/classes/SDS348/2019_spring/labs/lab11-solution.html)
+
 ## Projects
 
 All projects are due by 4:00pm on the day they are due. Projects need to be submitted on Canvas, both in pdf format and as source code (plus data where needed).
@@ -395,6 +404,8 @@ All projects are due by 4:00pm on the day they are due. Projects need to be subm
 - Project 2 (due Apr 2, 2019):
     - [HTML](/classes/SDS348/2019_spring/projects/project2.html)
     - [R Markdown](/classes/SDS348/2019_spring/projects/project2.Rmd)
+	- [Solutions, R Markdown](/classes/SDS348/2019_spring/projects/project2-solution.Rmd)
+	- [Solutions, HTML](/classes/SDS348/2019_spring/projects/project2-solution.html)
     
 - SDS 385 Assignment (due Apr 16, 2019, **grad students only**):
 	- [HTML](/classes/SDS348/2019_spring/projects/grad_assignment.html)
