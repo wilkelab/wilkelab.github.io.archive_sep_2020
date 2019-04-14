@@ -230,7 +230,24 @@ Syllabus: [SDS348_syllabus_spring2019.pdf](/classes/SDS348/SDS348_syllabus_sprin
 * In-class worksheet:
     - [Jupyter Notebook](/classes/SDS348/2019_spring/worksheets/class22.ipynb)
     - [HTML](/classes/SDS348/2019_spring/worksheets/class22.html)
+    - [Solutions](/classes/SDS348/2019_spring/worksheets/class22_solutions.html)
 
+**23. Apr. 16, 2019 – Using regular expressions to analyze data**
+
+* Slides: [class23.pdf](/classes/SDS348/2019_spring/slides/class23.pdf)
+* Python regular expression editor: [https://pythex.org/](https://pythex.org/)
+* Regex crosswords: [regexcrossword.com](https://regexcrossword.com/)
+* In-class worksheet:
+    - [Jupyter Notebook](/classes/SDS348/2019_spring/worksheets/class23.ipynb)
+    - [HTML](/classes/SDS348/2019_spring/worksheets/class23.html)
+
+**24. Apr. 18, 2019 – Using regular expressions to analyze data**
+
+* Slides: [class24.pdf](/classes/SDS348/2019_spring/slides/class24.pdf)
+* Python regular expression editor: [https://pythex.org/](https://pythex.org/)
+* In-class worksheet:
+    - [Jupyter Notebook](/classes/SDS348/2018_spring/worksheets/class24.ipynb)
+    - [HTML](/classes/SDS348/2018_spring/worksheets/class24.html)
 
 
 ## Homeworks
