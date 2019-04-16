@@ -306,6 +306,9 @@ All homeworks are due by 4:00pm on the day they are due. Homeworks need to be su
 	- [Jupyter Notebook](/classes/SDS348/2019_spring/homeworks/HW9.ipynb)
 	- [HTML](/classes/SDS348/2019_spring/homeworks/HW9.html) 
 	
+* Homework 10 (due Apr 23, 2019)
+	- [Jupyter Notebook](/classes/SDS348/2019_spring/homeworks/HW10.ipynb)
+	- [HTML](/classes/SDS348/2019_spring/homeworks/HW10.html) 
 	
 ## Labs
 
