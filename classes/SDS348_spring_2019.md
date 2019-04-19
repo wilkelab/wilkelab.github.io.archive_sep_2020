@@ -225,6 +225,7 @@ Syllabus: [SDS348_syllabus_spring2019.pdf](/classes/SDS348/SDS348_syllabus_sprin
 
 * Slides: [class22.pdf](/classes/SDS348/2019_spring/slides/class22.pdf)
 * Python regular expression editor: [https://pythex.org/](https://pythex.org/)
+* Regular expression visualization: [https://regexper.com/](https://regexper.com/)
 * Official Python regular expression documentation: [Regular Expression HOWTO](https://docs.python.org/3/howto/regex.html)
 * Alternative regular expression tutorial: [Python Regular Expressions](https://developers.google.com/edu/python/regular-expressions)
 * In-class worksheet:
@@ -236,18 +237,22 @@ Syllabus: [SDS348_syllabus_spring2019.pdf](/classes/SDS348/SDS348_syllabus_sprin
 
 * Slides: [class23.pdf](/classes/SDS348/2019_spring/slides/class23.pdf)
 * Python regular expression editor: [https://pythex.org/](https://pythex.org/)
+* Regular expression visualization: [https://regexper.com/](https://regexper.com/)
 * Regex crosswords: [regexcrossword.com](https://regexcrossword.com/)
 * In-class worksheet:
     - [Jupyter Notebook](/classes/SDS348/2019_spring/worksheets/class23.ipynb)
     - [HTML](/classes/SDS348/2019_spring/worksheets/class23.html)
+    - [Solutions](/classes/SDS348/2019_spring/worksheets/class23_solutions.html)
 
 **24. Apr. 18, 2019 – Using regular expressions to analyze data**
 
 * Slides: [class24.pdf](/classes/SDS348/2019_spring/slides/class24.pdf)
 * Python regular expression editor: [https://pythex.org/](https://pythex.org/)
+* Regular expression visualization: [https://regexper.com/](https://regexper.com/)
 * In-class worksheet:
     - [Jupyter Notebook](/classes/SDS348/2018_spring/worksheets/class24.ipynb)
     - [HTML](/classes/SDS348/2018_spring/worksheets/class24.html)
+    - [Solutions](/classes/SDS348/2019_spring/worksheets/class24_solutions.html)
 
 
 ## Homeworks
