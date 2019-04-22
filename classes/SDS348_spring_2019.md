@@ -254,6 +254,18 @@ Syllabus: [SDS348_syllabus_spring2019.pdf](/classes/SDS348/SDS348_syllabus_sprin
     - [HTML](/classes/SDS348/2018_spring/worksheets/class24.html)
     - [Solutions](/classes/SDS348/2019_spring/worksheets/class24_solutions.html)
 
+**25. Apr. 23, 2019 – Aligning sequences**
+
+* Slides: [class25.pdf](/classes/SDS348/2019_spring/slides/class25.pdf)
+* Wikipedia page on the Needleman–Wunsch algorithm: [Needleman–Wunsch algorithm](https://en.wikipedia.org/wiki/Needleman%E2%80%93Wunsch_algorithm)
+* Alignment software:
+  - [MAFFT](https://mafft.cbrc.jp/alignment/software/)
+  - [Clustal Omega](http://www.clustal.org/omega/)
+  - [PRANK](http://wasabiapp.org/software/prank/)
+* [Example alignments](https://github.com/wilkelab/therm_constraints_rate_variation/tree/master/empirical_rate_calculations/protein_alignments/mafft_alignments)
+* In-class worksheet:
+    - [PDF](/classes/SDS348/2019_spring/worksheets/class25.pdf)
+
 
 ## Homeworks
 
@@ -427,3 +439,7 @@ All projects are due by 4:00pm on the day they are due. Projects need to be subm
 - SDS 385 Assignment (due Apr 16, 2019, **grad students only**):
 	- [HTML](/classes/SDS348/2019_spring/projects/grad_assignment.html)
     - [R Markdown](/classes/SDS348/2019_spring/projects/grad_assignment.Rmd)
+
+- Project 3 (due May 9, 2019):
+    - [HTML](/classes/SDS348/2019_spring/projects/project3.html)
+    - [Jupyter Notebook](/classes/SDS348/2019_spring/projects/project3.ipynb)
