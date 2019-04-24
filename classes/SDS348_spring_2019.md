@@ -271,9 +271,9 @@ Syllabus: [SDS348_syllabus_spring2019.pdf](/classes/SDS348/SDS348_syllabus_sprin
 
 * Slides: [class26.pdf](/classes/SDS348/2019_spring/slides/class26.pdf)
 * Wikipedia page on the Smith-Waterman algorithm: [Smith-Waterman algorithm](https://en.wikipedia.org/wiki/Smith%E2%80%93Waterman_algorithm)
-* NCBI BLAST search: [http://blast.ncbi.nlm.nih.gov/Blast.cgi](https://blast.ncbi.nlm.nih.gov/Blast.cgi)
+* NCBI BLAST search: [https://blast.ncbi.nlm.nih.gov/Blast.cgi](https://blast.ncbi.nlm.nih.gov/Blast.cgi)
 * Wikipedia page on BLAST: [BLAST](https://en.wikipedia.org/wiki/BLAST)
-* Biopython BLAST documentation: [Chapter 7: BLAST](https://biopython.org/DIST/docs/tutorial/Tutorial.html#htoc87)
+* Biopython BLAST documentation: [Chapter 7: BLAST](https://biopython.org/DIST/docs/tutorial/Tutorial.html#htoc96)
 * In-class worksheet:
     - [Smith-Waterman exercise](/classes/SDS348/2019_spring/worksheets/class26_SW-exercise.pdf)
     - [Jupyter Notebook](/classes/SDS348/2019_spring/worksheets/class26.ipynb)
