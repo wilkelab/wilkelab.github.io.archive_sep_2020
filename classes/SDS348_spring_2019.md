@@ -279,6 +279,19 @@ Syllabus: [SDS348_syllabus_spring2019.pdf](/classes/SDS348/SDS348_syllabus_sprin
     - [Jupyter Notebook](/classes/SDS348/2019_spring/worksheets/class26.ipynb)
     - [HTML](/classes/SDS348/2019_spring/worksheets/class26.html)
 
+**27. Apr. 30, 2019 – Multiple sequence alignments and phylogenetic trees**
+
+* Slides: [class27.pdf](/classes/SDS348/2019_spring/slides/class27.pdf)
+* Wikipedia page on multiple sequence alignments:
+[Multiple sequence alignment](https://en.wikipedia.org/wiki/Multiple_sequence_alignment)
+* Wikipedia page on phylogenetic trees:
+[Phylogenetic trees](https://en.wikipedia.org/wiki/Phylogenetic_tree)
+* In-class exercises:
+    - [EMBL-EBI MSA interface](https://www.ebi.ac.uk/Tools/msa/)
+    - [EMBL-EBI simple pylogeny](https://www.ebi.ac.uk/Tools/phylogeny/simple_phylogeny/)
+    - [EMBL-EBI sequence conversion interface](https://www.ebi.ac.uk/Tools/sfc/emboss_seqret/)
+
+
 ## Homeworks
 
 All homeworks are due by 4:00pm on the day they are due. Homeworks need to be submitted as pdf files on Canvas.
