@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>lab14-solution</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>HW11-solution</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -11775,7 +11775,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Lab-Worksheet-14-Solutions">Lab Worksheet 14 Solutions<a class="anchor-link" href="#Lab-Worksheet-14-Solutions">&#182;</a></h1>
+<h1 id="Homework-11-Solutions">Homework 11 Solutions<a class="anchor-link" href="#Homework-11-Solutions">&#182;</a></h1>
 </div>
 </div>
 </div>
@@ -11783,16 +11783,9 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The web interface to BLAST is available here: <a href="http://blast.ncbi.nlm.nih.gov/Blast.cgi">http://blast.ncbi.nlm.nih.gov/Blast.cgi</a></p>
-<p>Let's search for proteins related to the following query sequence, which is the human chemokine receptor 4 (a receptor that plays a fundamental role in the immune system):</p>
-
-<pre><code>&gt;human
-MSIPLPLLQIYTSDNYTEEMGSGDYDSMKEPCFREENANFNKIFLPTIYSIIFLTGIVGN
-GLVILVMGYQKKLRSMTDKYRLHLSVADLLFVITLPFWAVDAVANWYFGNFLCKAVHVIY
-TVNLYSSVLILAFISLDRYLAIVHATNSQRPRKLLAEKVVYVGVWIPALLLTIPDFIFAN
-VSEADDRYICDRFYPNDLWVVVFQFQHIMVGLILPGIVILSCYCIIISKLSHSKGHQKRK
-ALKTTVILILAFFACWLPYYIGISIDSFILLEIIKQGCEFENTVHKWISITEALAFFHCC
-LNPILYAFLGAKFKTSAQHALTSVSRGSSLKILSKGKRGGHSSVSTESESSSFHSS</code></pre>
+<p><em>Enter your name and EID here</em></p>
+<p><strong>Problem 2 of this homework is due on April 30, 2019 at 4:00pm. Please submit Part 2 as a PDF file on Canvas. Before submission, please re-run all cells by clicking "Kernel" and selecting "Restart &amp; Run All."</strong></p>
+<p><strong>Problem 1 is due, on paper, within the first ten minutes of lab on May 1, 2019. Problem 1 should not contain any code!</strong></p>
 
 </div>
 </div>
@@ -11801,8 +11794,32 @@ LNPILYAFLGAKFKTSAQHALTSVSRGSSLKILSKGKRGGHSSVSTESESSSFHSS</code></pre>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Problems">Problems<a class="anchor-link" href="#Problems">&#182;</a></h2><p><strong>Problem 1:</strong></p>
-<p>Download the blast results from the NCBI website in XML format and store them as <code>cxcr4_BLAST.xml</code>. Extract the genbank identifiers (written as gb|string|, where string is the actual identifier, consisting of letters, numbers, and the period symbol) for all matches with a score greater than or equal to 1600 and less than or equal 1800, and store them in a python list. For matches that list multiple genbank identifiers, only extract the first one.</p>
+<p><strong>Problem 1 (5 points):</strong> Using <strong>Smith-Waterman</strong> (not Needleman-Wunsch!), align the following two sequences by hand:</p>
+
+<pre><code>ACCAG
+ACAAGT</code></pre>
+<p>Draw out a score matrix, <strong>with the back-tracing arrows</strong>, using the following scoring function:</p>
+
+<pre><code>Match: +2
+Mismatch: -1
+Gap: -2</code></pre>
+<p>After you have filled out your score matrix, be sure to <strong>write out the final alignment or alignments</strong>.</p>
+<p><img src="http://wilkelab.org/classes/SDS348/2019_spring/homeworks/HW11-SW-matrix.png" width="500" /></p>
+<p>Alignment:</p>
+
+<pre><code>ACCAG
+ACAAG</code></pre>
+<p>This alignment has a score of 7.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Problem 2 (5 points):</strong> Modify the code from the Lab 13 Worksheet, Part 1 so that it runs the <strong>Smith-Waterman</strong> algorithm. Several helper functions are provided for you below. Your function final should produce the matrix of scores only. You <strong>do not</strong> need to do back-tracing. Use the same scoring function as in Problem 1.</p>
+<p>Run the sequences from Problem 1 through your function and print the output using <code>print_matrix()</code>.</p>
 
 </div>
 </div>
@@ -11812,81 +11829,86 @@ LNPILYAFLGAKFKTSAQHALTSVSRGSSLKILSKGKRGGHSSVSTESESSSFHSS</code></pre>
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">Bio.Blast</span> <span class="k">import</span> <span class="n">NCBIXML</span>
-<span class="kn">import</span> <span class="nn">re</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Use these values to calculate scores</span>
+<span class="n">match_award</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">mismatch_penalty</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+<span class="n">gap_penalty</span> <span class="o">=</span> <span class="o">-</span><span class="mi">2</span>
 
-<span class="c1"># open the downloaded file and parse with NCBIXML.read()</span>
-<span class="n">blast_handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;cxcr4_BLAST.xml&quot;</span><span class="p">)</span>
-<span class="n">blast_record</span> <span class="o">=</span> <span class="n">NCBIXML</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">blast_handle</span><span class="p">)</span>
-<span class="n">blast_handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="c1"># Make a score matrix with these two sequences</span>
+<span class="n">seq1</span> <span class="o">=</span> <span class="s2">&quot;ACCAG&quot;</span>
+<span class="n">seq2</span> <span class="o">=</span> <span class="s2">&quot;ACAAGT&quot;</span>
 
-<span class="n">gb_list</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">alignment</span> <span class="ow">in</span> <span class="n">blast_record</span><span class="o">.</span><span class="n">alignments</span><span class="p">:</span>
-    <span class="k">for</span> <span class="n">hsp</span> <span class="ow">in</span> <span class="n">alignment</span><span class="o">.</span><span class="n">hsps</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">hsp</span><span class="o">.</span><span class="n">score</span> <span class="o">&gt;=</span> <span class="mi">1600</span> <span class="ow">and</span> <span class="n">hsp</span><span class="o">.</span><span class="n">score</span> <span class="o">&lt;=</span> <span class="mi">1800</span><span class="p">:</span>
-            <span class="n">match</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;gb\|([\w\d\.]+)\|&#39;</span><span class="p">,</span> <span class="n">alignment</span><span class="o">.</span><span class="n">title</span><span class="p">)</span>
-            <span class="k">if</span> <span class="n">match</span><span class="p">:</span>
-                <span class="n">gb_id</span> <span class="o">=</span> <span class="n">match</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-                <span class="n">gb_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">gb_id</span><span class="p">)</span>
-                
-<span class="nb">print</span><span class="p">(</span><span class="n">gb_list</span><span class="p">)</span>
-</pre></div>
+<span class="c1"># Here is a helper function to print out matrices</span>
+<span class="k">def</span> <span class="nf">print_matrix</span><span class="p">(</span><span class="n">mat</span><span class="p">):</span>
+    <span class="c1"># Loop over all rows</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">mat</span><span class="p">)):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[&quot;</span><span class="p">,</span> <span class="n">end</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+        <span class="c1"># Loop over each column in row i</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">mat</span><span class="p">[</span><span class="n">i</span><span class="p">])):</span>
+            <span class="c1"># Print out the value in row i, column j</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">mat</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">],</span> <span class="n">end</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+            <span class="c1"># Only add a tab if we&#39;re not in the last column</span>
+            <span class="k">if</span> <span class="n">j</span> <span class="o">!=</span> <span class="nb">len</span><span class="p">(</span><span class="n">mat</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="o">-</span> <span class="mi">1</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">end</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;]</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
 
-</div>
-</div>
-</div>
+<span class="c1"># A function for making a matrix of zeroes</span>
+<span class="k">def</span> <span class="nf">zeros</span><span class="p">(</span><span class="n">rows</span><span class="p">,</span> <span class="n">cols</span><span class="p">):</span>
+    <span class="c1"># Define an empty list</span>
+    <span class="n">retval</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="c1"># Set up the rows of the matrix</span>
+    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">rows</span><span class="p">):</span>
+        <span class="c1"># For each row, add an empty list</span>
+        <span class="n">retval</span><span class="o">.</span><span class="n">append</span><span class="p">([])</span>
+        <span class="c1"># Set up the columns in each row</span>
+        <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">cols</span><span class="p">):</span>
+            <span class="c1"># Add a zero to each column in each row</span>
+            <span class="n">retval</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+    <span class="c1"># Return the matrix of zeros</span>
+    <span class="k">return</span> <span class="n">retval</span>
 
-<div class="output_wrapper">
-<div class="output">
+<span class="c1"># A function for determining the score between any two bases in alignment</span>
+<span class="k">def</span> <span class="nf">match_score</span><span class="p">(</span><span class="n">alpha</span><span class="p">,</span> <span class="n">beta</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">alpha</span> <span class="o">==</span> <span class="n">beta</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">match_award</span>
+    <span class="k">elif</span> <span class="n">alpha</span> <span class="o">==</span> <span class="s1">&#39;-&#39;</span> <span class="ow">or</span> <span class="n">beta</span> <span class="o">==</span> <span class="s1">&#39;-&#39;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">gap_penalty</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">mismatch_penalty</span>
 
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[&#39;AAF89355.1&#39;, &#39;AAF89362.1&#39;, &#39;ABX55951.1&#39;, &#39;AAF42991.1&#39;, &#39;AAF42992.1&#39;, &#39;AAF42990.1&#39;, &#39;ABX55952.1&#39;, &#39;AAF37288.1&#39;, &#39;EFB23364.1&#39;, &#39;ABA28309.1&#39;, &#39;KFO22725.1&#39;, &#39;EHB03245.1&#39;, &#39;ELR58312.1&#39;, &#39;AAF89363.1&#39;, &#39;ACH54079.1&#39;, &#39;AAZ32767.1&#39;, &#39;AAF89359.1&#39;, &#39;AAC48852.1&#39;]
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Problem 2:</strong></p>
-<p>Using the list of genbank identifiers obtained in the previous exercise, download the corresponding sequences from genbank and print them out in FASTA format.</p>
-<p>Hints:</p>
-<ul>
-<li>You will have to specify the database as "protein" for this to work, since the previous exercise generated identifiers for protein sequences.</li>
-<li>Use the function <code>SeqIO.write()</code> to output your results in FASTA format, and use <code>sys.stdout</code> from the <code>sys</code> module as your output handle.</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">Bio</span> <span class="k">import</span> <span class="n">Entrez</span><span class="p">,</span> <span class="n">SeqIO</span>
-<span class="kn">import</span> <span class="nn">sys</span>
-
-<span class="n">Entrez</span><span class="o">.</span><span class="n">email</span> <span class="o">=</span> <span class="s2">&quot;dariya.k.sydykova@gmail.com&quot;</span> <span class="c1"># put your email here</span>
-
-<span class="n">handle</span> <span class="o">=</span> <span class="n">Entrez</span><span class="o">.</span><span class="n">efetch</span><span class="p">(</span><span class="n">db</span><span class="o">=</span><span class="s2">&quot;protein&quot;</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="n">gb_list</span><span class="p">,</span> <span class="n">rettype</span><span class="o">=</span><span class="s2">&quot;gb&quot;</span><span class="p">,</span> <span class="n">retmode</span><span class="o">=</span><span class="s2">&quot;text&quot;</span><span class="p">)</span>
-<span class="n">records</span> <span class="o">=</span> <span class="n">SeqIO</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">handle</span><span class="p">,</span> <span class="s2">&quot;genbank&quot;</span><span class="p">)</span>
-
-<span class="k">for</span> <span class="n">record</span> <span class="ow">in</span> <span class="n">records</span><span class="p">:</span>
-    <span class="n">SeqIO</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">record</span><span class="p">,</span> <span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="p">,</span> <span class="s2">&quot;fasta&quot;</span><span class="p">)</span>
+<span class="c1"># The function that actually fills out a matrix of scores</span>
+<span class="k">def</span> <span class="nf">smith_waterman</span><span class="p">(</span><span class="n">seq1</span><span class="p">,</span> <span class="n">seq2</span><span class="p">):</span>
     
-<span class="n">handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span> <span class="c1"># important, close the handle only after you have iterated over the records. Otherwise you will get an error!</span>
+    <span class="c1"># length of two sequences</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">seq1</span><span class="p">)</span>
+    <span class="n">m</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">seq2</span><span class="p">)</span>  
+    
+    <span class="c1"># Generate matrix of zeros to store scores</span>
+    <span class="n">score</span> <span class="o">=</span> <span class="n">zeros</span><span class="p">(</span><span class="n">m</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+   
+    <span class="c1"># Calculate score table</span>
+        
+    <span class="c1"># Fill out first column</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">m</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="n">score</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+    
+    <span class="c1"># Fill out first row</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="n">score</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+    
+    <span class="c1"># Fill out all other values in the score matrix</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">m</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+            <span class="c1"># Calculate the score by checking the top, left, and diagonal cells</span>
+            <span class="n">match</span> <span class="o">=</span> <span class="n">score</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">][</span><span class="n">j</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">match_score</span><span class="p">(</span><span class="n">seq1</span><span class="p">[</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">seq2</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+            <span class="n">delete</span> <span class="o">=</span> <span class="n">score</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">+</span> <span class="n">gap_penalty</span>
+            <span class="n">insert</span> <span class="o">=</span> <span class="n">score</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">gap_penalty</span>
+            <span class="c1"># Record the maximum score from the three possible scores calculated above</span>
+            <span class="n">score</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">match</span><span class="p">,</span> <span class="n">delete</span><span class="p">,</span> <span class="n">insert</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">score</span>
+
+<span class="n">print_matrix</span><span class="p">(</span><span class="n">smith_waterman</span><span class="p">(</span><span class="n">seq1</span><span class="p">,</span> <span class="n">seq2</span><span class="p">))</span>
 </pre></div>
 
 </div>
@@ -11903,135 +11925,20 @@ LNPILYAFLGAKFKTSAQHALTSVSRGSSLKILSKGKRGGHSSVSTESESSSFHSS</code></pre>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>&gt;AAF89355.1 chemokine receptor CXCR4, partial [Callithrix jacchus]
-IYTSDNYTEEIGSGDYDSIKEPCFREENAHFNRIFLPTIYSIIFLTGIVGNGLVILVMGY
-QKKLRSMTDKYRLHLSVADLLFVITLPFWAVDAVANWYFGKFLCKAVHVIYTVNLYSSVL
-ILASISLDRYLAIVHATTSQRPPKLLAEKVVYVGVWIPALLLTIPDFIFANVSEADDRYI
-CDRFYPNDLWVVVFQFQHIMVGLILPGIVILSCYCIIISKLSHSKGHQKRKALKTTVILI
-LAFFACWLPYYIGISIDSFILLEIIRQGCEFENTVHKWISITEALAFFHCCLNPILYAFL
-GAKFKTSAQHALTSVSRGSSLKILSKGKRGGHSSVSTESESSSFHSS
-&gt;AAF89362.1 chemokine receptor CXCR4, partial [Eulemur macaco]
-IYTSDNYTEELGSGDYDSIKEPCFREENAHFNRIFLPTIYSIIFLTGIVGNGLVILVMGY
-QKKLRSMTDKYRLHLSVADLLFVITLPFWAVDAVANWYFGKFLCKAVHVIYTVNLYSSVL
-ILAFISLDRYLAIVHATNSQRPRKLSAEKVVYAGVWLPALLLTIPDFIFASVSEVDDRYI
-CDRLYPNDLWVVVFQFQHIMVGLILPGIVILSCYCIIISKLSHSKGHQKRKALKTTVILI
-LAFFACWLPYYIGISIDSFILLEIIKQGCEFENTVHKWISITEALAFFHCCLNPILYAFL
-GAKFKTSAQHALSSVSRGSSLKILSKGKRGGHSSVSTESESSSFHSS
-&gt;ABX55951.1 chemokine receptor, partial [Oryctolagus cuniculus]
-TSDNYTEELGSGDYDSIKEPCFREENAHFNRIFLPTIYSIIFLTGIVGNGLVILVMGYQK
-KQRSMTDKYRLHLSVADLLFVITLPFWAVDAVANWYFGKFLCKAVHVIYTVNLYSSVLIL
-AFISLDRYLAIVHATNSQKPRKLLAEKVVYVGVWIPALLLTIPDFIFANVREAEGRYICD
-RFYPSDLWVVVFQFQHIMVGLILPGIVILSCYCIIISKLSHSKGHQKRKALKTTVILILA
-FFACWLPYYIGISIDSFILLEIIKQGCEFENTVHKWISITEALAFFHCCLNPILYAFLGA
-KFKTSAQHALTSVSRGSSLKILSKGKRGGHSSVSTESESSSFHSS
-&gt;AAF42991.1 CXC chemokine receptor 4, partial [Hylobates lar]
-EEMGSGDYDSIKEPCFREENANFNKIFLPTIYSIIFLTGIVGNGLVILVMGYQEKLRSMT
-DKYRLHLSVADLLFVITLPFWAVDAVANWYFGNFLCKAVHVIYTVNLYSSVLILAFISLD
-RYLAIVHATNSQRPRKLLAEKVVYVGVWIPALLLTIPDFIFANVSEADDRYICDRFYPND
-LWVVVFQFQHIMVGLILPGIVMLSCYCIIISKLSHSKGHQKRKALKTTVILILAFFACWL
-PYYIGISIDSFILLEIIKQGCEFENTVHKWISITEALAFFHCCLNPILYAFLGAKFKTSA
-QHALTSVSRGSSLKILSKGKRGGHSSVSTESESS
-&gt;AAF42992.1 CXC chemokine receptor 4, partial [Saguinus oedipus]
-EEMGSGDYDSMKEPCFREENAHFNRIFLPTIYSIIFLTGIVGNGLVILVMGYQKKLRSMT
-DKYRLHLSVADLLFVITLPFWAVDAVANWYFGKFLCKAVHVIYTVNLYSSVLILAFISLD
-RYLAIVHATNSQRPRKLLAEKVVYVGVWIPALLLTIPDFIFANVSEADDRYICDRFYPND
-LWVVVFQFQHIMVGLILPGIVILSCYCIIISKLSHFKGHQKRKALKTTVILILAFFACWL
-PYYIGISIDSFILLEIIRQGCEFENTVHKWISITEALAFFHCCLNPILYAFLGAKFKTSA
-QHALTSVSRGSSLKILSKGKRGGHSSVSTESESS
-&gt;AAF42990.1 CXC chemokine receptor 4, partial [Chlorocebus aethiops]
-EEMGSGDYDSIKEPCFREENAHFNRIFLPTIYSIIFLTGIVGNGLVILVMGYQKKLRSMT
-DKYRLHLSVADLLFVITLPFWAVDAVANWYFGNFLCKAVHVIYTVNLYSSVLILAFISLD
-RYLAIVHATNSQRPRKLLAEKVVYVGVWIPALLLTIPHFIFASVSEADDRYICDRFYPND
-LWVVVFQFQHIMVGLILPGIVILSCYCIIISKLSHSKGHQKRKALKTTVILILAFFACWL
-PYYIGISIDSFILLEIIKQGCEFENTVHKWISITEALAFFHCCLNPILYAFLGAKFKTSA
-QHALTSVSRGSSLKILSKGKRGGHSSVSTESESS
-&gt;ABX55952.1 chemokine receptor, partial [Oryctolagus cuniculus]
-TSDNYTEELGSGDYDSIKEPCFREENAHFNRIFLPTIYSIIFLTGIVGNGLVILVMGYQK
-KQRSMTDKYRLHLSVADLLFVITLPFWAVDAVANWYFGKFLCKAVHVIYTVNLYSSVLIL
-AFISLDRYLAIVHATNSQKPRKLLAEKVVYVGVWIPALLLTIPDFIFANVREAEGRYICD
-RFYPSDLWVVVFQFQHIMVGLILPGIVILSCYCIIISKLSHSKGHQKRKALKTTVILILA
-FFACWLPYYIGISIDSFILLEIIKQGCEFENTVHKWISITEALAFFHCCLNPILYAFLGA
-KFKTSAQHALTSVSRGSSLKILSKGKRGGHSSVSTESES
-&gt;AAF37288.1 CXCR4 receptor, partial [Saimiri boliviensis]
-EEMGSGDYDSMKEPCFREENAHFNRIFLPTIYSIIFLTGIVGNGLVILVMGYQKKLRSMT
-DKYRLHLSVADLLFVITLPFWAVDAVANWYFGKFLCKAVHVIYTVNLYSSVLILAFISLD
-RYLAIVHATNSQRPRKLLAEKVVYVGVWIPALLLTIPDFIFANVSEADDRYICDRFYPND
-LWVVVFQFQHIMVGLILPGIVILSCYCIIISKLSHSKGHQKRKALKTTVILILAFFACWL
-PYYIGISIDSFILLEIIRQGCEFENTVHKWISITEALAFFHCCLNPILYAFLGAKFKTSA
-QHALTSVSRRSNLKILSKGKRGGHSSVSTESESS
-&gt;EFB23364.1 hypothetical protein PANDA_017529, partial [Ailuropoda melanoleuca]
-MSIPLPLLQIYPSDNYTEDDLGSGDYDSMKEPCFREENAHFNRIFLPTVYSIIFLTGIVG
-NGLVILVMGYQKKLRSMTDKYRLHLSVADLLFVLTLPFWAVDAVANWYFGKFLCKAVHVI
-YTVNLYSSVLILAFISLDRYLAIVHATNSQRPRKLLAEKVVYVGVWIPALLLTIPDFIFA
-NVREADGRYICDRFYPNDSWLVVFQFQHIMVGLILPGIVILSCYCIIISKLSHSKGYQKR
-KALKTTVILILAFFACWLPYYIGISIDSFILLEIIKQGCEFESTVHKWISITEALAFFHC
-CLNPILYAFLGAKFKTSAQHALTSVSRGSSLKILSKGKRGGHSSVSTESESSSFHSS
-&gt;ABA28309.1 chemokine (C-X-C motif) receptor 4 [Canis lupus familiaris]
-MEELHIYPSDNYTEEDLGSGDYDSMKEPCFREENAHFNRIFLPTVYSIIFLTGIVGNGLV
-ILVMGYQKKLRSMTDKYRLHLSVADLLFVLTLPFWAVEAVANWYFGNFLCKAVHVIYTVN
-LYSSVLILAFISLDRYLAIVHATNSQRPRKLLAEKVVYVGVWIPALLLTIPDFIFANVRE
-ADDRYICDRFYPNDSWLVVFQFQHIMVGLILPGIVILSCYCIIISKLSHSKGYQKRKALK
-TTVILILAFFACWLPYYIGISIDSFILLEIIKQGCEFEKTVHKWISITEALAFFHCCLNP
-ILYAFLGAKFKTSAQHALTSVSRGSSLKILSKGKRGGHSSVSTESESSSFHSS
-&gt;KFO22725.1 C-X-C chemokine receptor type 4 [Fukomys damarensis]
-MLLRAPPGTLFANNILCSLRKRRALRRPLLSSSDEIYTSDNYSEELGSGDYDSAKEPCFR
-NENAHFNRIFLPTIYSIIFLTGIVGNGLVILVMGYQKKLRSMTDKYRLHLSVADLLFVIT
-LPFWAVDAVANWYFGKFLCKAVHVIYTVNLYSSVLILAFISLDRYLAIVHATNSQRPRKL
-LVEKAVYVGVWIPAVLLTIPDFIFANVIEGDGKFICDRFYPNDLWVVVFQFQHIMVGLIL
-PGIVILSCYCIIISKLSHSKGHQKRKALKTTVILILAFFACWLPYYIGISIDSFILLEII
-KQGCEFENTVHKWISITEALAFFHCCLNPILYAFLGAKFKTSAQHALTSVSRGSSLKILS
-KGKRGGHSSVSTESESSSFHSS
-&gt;EHB03245.1 C-X-C chemokine receptor type 4 [Heterocephalus glaber]
-MRHSEKLVLPAALQAHPALPKYWTRTSYWARDARRDQGCSSLAEASQGQHPSAPPLSPPP
-LFGHSFTHPAFSSRPARAAHALLCERVFIKVWLRSETSICWLQQQIYTSDNYSEELGSGD
-YDSAKEPCFRNENAHFNRIFLPTIYSIIFLTGIVGNGLVILVMGYQKKLRSMTDKYRLHL
-SVADLLFVITLPFWAVDAVANWYFGKFLCKAVHVIYTVNLYSSVLILAFISLDRYLAIVH
-ATNSQRPRKLLVERAVYVGVWIPAVLLTIPDFIFANVIEGEGKYICDRFYPNDLWVVVFQ
-FQHIMVGLILPGIVILSCYCIIISKLSHSKGHQKRKALKTTVILILAFFACWLPYYIGIS
-IDSFILLEIIKQGCEFENTVHKWISITEALAFFHCCLNPILYAFLGAKFKTSAQHALTSV
-SRGSSLKILSKGKRGGHSSVSTESESSSFHSS
-&gt;ELR58312.1 C-X-C chemokine receptor type 4 [Bos mutus]
-MSIPLPVFQIFTSDNYTEDDLGSGDYDSMKEPCFREENAHFNRIFLPTVYSIIFLTGIVG
-NGLVILVMGYQKKLRSMTDKYRLHLSVADLLFVLTLPFWAVDAVANWYFGKFLCKAVHVI
-YTVNLYSSVLILAFISLDRYLAIVHATNSQKPRKLLAEKVVYVGVWLPAVLLTIPDLIFA
-DIKEVDERYICDRFYPSDLWLVVFQFQHIVVGLLLPGIVILSCYCIIISKLSHSKGYQKR
-KALKTTVILILTFFACWLPYYIGISIDSFILLEIIQQGCEFESTVHKWISITEALAFFHC
-CLNPILYAFLGAKFKTSAQHALTSVSRGSSLKILSKGKRGGHSSVSTESESSSFHSS
-&gt;AAF89363.1 chemokine receptor CXCR4, partial [Perodicticus potto]
-IFTSDNYTEELGSGDYDSSKEPCFREENAHFNRIFLPTIYSIIFLTGIVGNGLVILVMGY
-QKKLRSMTDKYRLHLSVADLLFVITLPFWAVDAVANWYFGEFLCKAVHVIYTVNLYSSVL
-ILAFISLDRYLAIVHATNSQKPRKLLAEKVVYAGVWLPAFLLTIPDVIFASVREADNRYI
-CDRFYPNDLWLAVFQFQHIMVGLILPGIVILSCYCIIISKLSHSKGHQKRKALKTTVILI
-LAFFACWLPYYIGISIDSFILLEIIKQGCEFDNTVHKWISITEALAFFHCCLNPILYAFL
-GAKFKTSAQHALTSVSRGSSLKILSKGKRGGHSSVSTESESSSFHSS
-&gt;ACH54079.1 chemokine receptor CXCR4 [Panthera leo]
-MDGFRIYPSDNYTEDDLGSGDYDSMKEPCFREENAHFNRIFLPTVYSIIFLTGIVGNGLV
-ILVMGYQKKLRSMTDKYRLHLSVADLLFVLTLPFWAVDAVANWYFGKFLCKAVHVIYTVN
-LYSSVLILAFISLDRYLAIVHATNSQRPRKLLAEKVVYVGVWIPALLLTIPDFIFANVRE
-ADGRYICDRFYPNDSWLVVFQFQHIMVGLILPGIVILSCYCIIISKLSHSKGYQKRKALK
-TTVILILAFFACWLPYYIGISIDSFILLEIIKQGCEFESTVHKWISITEALAFFHCCLNP
-ILYAFLGAKFKTSAQHALTSVSRGSSLKILSKGKRGGHSSVSTESESSSFHSS
-&gt;AAZ32767.1 CXCR4 [Sus scrofa]
-MDGFRIFTSDNYTEDDLGSGDYDSIKEPCFREENAHFNRIFLPTVYSIIFLTGIVGNGLV
-ILVMGYQKKLRSMTDKYRLHLSVADLLFVLTLPFWAVDAVANWYFGKFLCKAVHVIYTVN
-LYSSVLILAFISLDRYLAIVHATNSQRPRKLLAEKVVYVGVWIPALLLTIPDFIFANVRE
-GDGRYICDRFYPNDLWLVVFQFQHIMVGLILPGIVILSCYCIIISKLSHSKGYQKRKALK
-TTVILILAFFACWLPYYIGISIDSFILLEIIQQGCEFESTVHKWISITEALAFFHCCLNP
-ILYAFLGAKFKTSAQHALTSVSRGSSLKILSKGKRGGHSSVSTESESSSFHSS
-&gt;AAF89359.1 chemokine receptor CXCR4, partial [Nycticebus coucang]
-IYTSDNYTEDLGSGDYDSMKEPCFREENAHFNRIFLPTIYSIIFLTGIVGNGLVILVMGY
-QKKLRSMTDKYRLHLSVADLLFVITLPFWAVDAVANWYFGEFLCKAVHVIYTVNLYRSVL
-ILAFISLDRYLAIVHATNSQRPRKLLAEKVVYAGVWLPAFLLTIPDVIFASVREADRYIC
-DRFYPNDLWVVVFQFQHIMVGFILPGIVILSCYCIIISKLSHSKGHQKRKALKTTVILIL
-AFFACWLPYYIGISIDSFILLEIIKQGCEFDNTVHKWISITEALAFFHCCLNPILYAFLG
-AKFKTSAQHALTSVSRGSSLKILSKGKRGGHSSVSTESESSSFHSS
-&gt;AAC48852.1 CXCR-4 homolog [Felis catus]
-MDGFRIYPSDNYTEDDLGSGDYDSMKEPCFREENAHFNRIFLPTVYSIIFLTGIVGNGLV
-ILVMGYQKKLRSMTDKYRLHLSVADLLFVLTLPFWAVDAVANWYFGKFLCKAVHVIYTVN
-LYSSVLILAFISLDRYLAIVHATNSQRPRKLLAEKVVYVGVWIPALLLTIPDFIFANVRE
-ADGRYICDRFYPSDSWLVVFQFQHIMVGLILPGIVILSCYCIIISKLSHSKGYQKRKALK
-TTVILILAFFACWLPYYIGISIDSFILLEIIKQGCEFESTVHKWISITEALAFFHCCLNP
-ILYAFLGAKFKTSAQHALTSVSRGSSLKILSKGKRGGHSSVSTESESSSFHSS
+<pre>[0	0	0	0	0	0]
+
+[0	2	0	0	2	0]
+
+[0	0	4	2	0	1]
+
+[0	2	2	3	4	2]
+
+[0	2	1	1	5	3]
+
+[0	0	1	0	3	7]
+
+[0	0	0	0	1	5]
+
 </pre>
 </div>
 </div>
@@ -12039,16 +11946,6 @@ ILYAFLGAKFKTSAQHALTSVSRGSSLKILSKGKRGGHSSVSTESESSSFHSS
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Problem 3:</strong></p>
-<p>Use the FASTA format of the sequences from problem 2 and make a multiple sequence alignment and a phylogenetic tree with the Clustal Omega web interface: <a href="http://www.ebi.ac.uk/Tools/msa/clustalo/">http://www.ebi.ac.uk/Tools/msa/clustalo/</a>.</p>
-
-</div>
-</div>
 </div>
     </div>
   </div>

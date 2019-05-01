@@ -360,6 +360,8 @@ All homeworks are due by 4:00pm on the day they are due. Homeworks need to be su
 * Homework 11 (due Apr 30, 2019)
 	- [Jupyter Notebook](/classes/SDS348/2019_spring/homeworks/HW11.ipynb)
 	- [HTML](/classes/SDS348/2019_spring/homeworks/HW11.html) 
+	- [Solutions, Jupyter Notebook](/classes/SDS348/2019_spring/homeworks/HW11-solution.ipynb)
+	- [Solutions, HTML](/classes/SDS348/2019_spring/homeworks/HW11-solution.html)
 	
 ## Labs
 
@@ -464,6 +466,7 @@ All homeworks are due by 4:00pm on the day they are due. Homeworks need to be su
 * Lab worksheet:
     - [Jupyter Notebook](/classes/SDS348/2019_spring/labs/lab14.ipynb)
     - [HTML](/classes/SDS348/2019_spring/labs/lab14.html)
+    - [Solutions, HTML](/classes/SDS348/2019_spring/labs/lab14-solution.html)
 
 ## Projects
 
