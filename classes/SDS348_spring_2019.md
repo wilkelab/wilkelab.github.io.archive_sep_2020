@@ -278,6 +278,7 @@ Syllabus: [SDS348_syllabus_spring2019.pdf](/classes/SDS348/SDS348_syllabus_sprin
     - [Smith-Waterman exercise](/classes/SDS348/2019_spring/worksheets/class26_SW-exercise.pdf)
     - [Jupyter Notebook](/classes/SDS348/2019_spring/worksheets/class26.ipynb)
     - [HTML](/classes/SDS348/2019_spring/worksheets/class26.html)
+    - [Solutions](/classes/SDS348/2019_spring/worksheets/class26_solutions.html)
 
 **27. Apr. 30, 2019 – Multiple sequence alignments and phylogenetic trees**
 
