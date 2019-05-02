@@ -292,6 +292,12 @@ Syllabus: [SDS348_syllabus_spring2019.pdf](/classes/SDS348/SDS348_syllabus_sprin
     - [EMBL-EBI simple pylogeny](https://www.ebi.ac.uk/Tools/phylogeny/simple_phylogeny/)
     - [EMBL-EBI sequence conversion interface](https://www.ebi.ac.uk/Tools/sfc/emboss_seqret/)
 
+**28. May 2, 2019 – Working with protein structures**
+
+* Slides: [class28.pdf](/classes/SDS348/2019_spring/slides/class28.pdf)
+* Obtain PyMOL: [Educational-use PyMOL](https://pymol.org/edu/?q=educational/)
+* PyMOL tutorial: [Practical PyMOL for Beginners](https://www.pymolwiki.org/index.php/Practical_Pymol_for_Beginners)
+* Protein data bank: [https://www.rcsb.org/](https://www.rcsb.org/)
 
 ## Homeworks
 
