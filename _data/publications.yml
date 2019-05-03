@@ -1,3 +1,9 @@
+- author: W. Liu, M. U. Caglar, Z. Mao, A. Woodman, J. J. Arnold, C. O. Wilke, C. E. Cameron
+  year: preprint
+  title: More than efficacy revealed by single-cell analysis of antiviral therapeutics.
+  ref: "bioRxiv 606715"
+  doi: 10.1101/606715
+
 - author: A. Zeileis, J. C. Fisher, K. Hornik, R. Ihaka, C. D. McWhite, P. Murrell, R. Stauffer, C. O. Wilke
   year: preprint
   title: "colorspace: A Toolbox for Manipulating and Assessing Colors and Palettes."
