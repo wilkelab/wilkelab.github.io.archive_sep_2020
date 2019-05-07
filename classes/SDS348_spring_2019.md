@@ -299,6 +299,15 @@ Syllabus: [SDS348_syllabus_spring2019.pdf](/classes/SDS348/SDS348_syllabus_sprin
 * PyMOL tutorial: [Practical PyMOL for Beginners](https://www.pymolwiki.org/index.php/Practical_Pymol_for_Beginners)
 * Protein data bank: [https://www.rcsb.org/](https://www.rcsb.org/)
 
+**29. May 7, 2019 – Plotting geospatial data**
+
+* Slides: [class29.pdf](/classes/SDS348/2019_spring/slides/class29.pdf)
+* Fundamentals of dataviz book chapter: [Visualizing geospatial data](https://serialmentor.com/dataviz/geospatial-data.html)
+* R sf package: [Simple Features for R vignette](https://cran.r-project.org/web/packages/sf/vignettes/sf1.html)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2019_spring/worksheets/class29.Rmd)
+    - [HTML](/classes/SDS348/2019_spring/worksheets/class29.html)
+
 ## Homeworks
 
 All homeworks are due by 4:00pm on the day they are due. Homeworks need to be submitted as pdf files on Canvas.
