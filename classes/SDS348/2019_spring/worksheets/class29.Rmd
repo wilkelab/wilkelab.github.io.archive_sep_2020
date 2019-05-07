@@ -78,7 +78,7 @@ Plot the lower 48 states in a coordinate system that represents longitude along 
 # your R code goes here.
 ```
 
-Using the data frame `US_counties_income`, plot all the counties of the lower 48, coloring each one by median income. Hint: Use `scale_fill_viridis_c(option = "B")` to create an appealing color effect.
+Using the data frame `US_counties_income`, plot all US counties, coloring each one by median income. Hint: Use `scale_fill_viridis_c(option = "B")` to create an appealing color effect.
 
 ```{r}
 # your R code goes here.
