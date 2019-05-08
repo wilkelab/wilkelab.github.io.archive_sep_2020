@@ -309,6 +309,16 @@ Syllabus: [SDS348_syllabus_spring2019.pdf](/classes/SDS348/SDS348_syllabus_sprin
     - [HTML](/classes/SDS348/2019_spring/worksheets/class29.html)
     - [Solutions](/classes/SDS348/2019_spring/worksheets/class29_solutions.html)
 
+**30. May 9, 2019 – Making animated plots**
+
+* Slides: [class30.pdf](/classes/SDS348/2019_spring/slides/class30.pdf)
+* R gganimate package: [https://gganimate.com/](https://gganimate.com/)
+* Hans Rosling video: [200 years in 4 minutes](https://www.youtube.com/watch?v=Z8t4k0Q8e8Y)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2019_spring/worksheets/class30.Rmd)
+    - [HTML](/classes/SDS348/2019_spring/worksheets/class30.html)
+
+
 ## Homeworks
 
 All homeworks are due by 4:00pm on the day they are due. Homeworks need to be submitted as pdf files on Canvas.
