@@ -11871,20 +11871,20 @@ div#notebook {
 <span class="n">author_dict</span> <span class="o">=</span> <span class="p">{}</span>
 <span class="k">for</span> <span class="n">record</span> <span class="ow">in</span> <span class="n">records</span><span class="p">:</span>
      
-    <span class="c1"># retrieve a author names </span>
+    <span class="c1"># retrieve author names </span>
     <span class="n">author_lst</span> <span class="o">=</span> <span class="n">record</span><span class="p">[</span><span class="s2">&quot;AU&quot;</span><span class="p">]</span>
     
     <span class="k">for</span> <span class="n">author</span> <span class="ow">in</span> <span class="n">author_lst</span><span class="p">:</span>
         
         <span class="c1"># skip Dr. Wilke&#39;s name</span>
         <span class="k">if</span> <span class="n">author</span> <span class="o">==</span> <span class="s2">&quot;Wilke CO&quot;</span><span class="p">:</span>
-            <span class="k">pass</span>
+            <span class="k">continue</span>
         
-        <span class="c1"># check if journal name is in the dictionary</span>
+        <span class="c1"># check if author is in the dictionary</span>
         <span class="k">if</span> <span class="n">author</span> <span class="ow">in</span> <span class="n">author_dict</span><span class="p">:</span>
-            <span class="n">author_dict</span><span class="p">[</span><span class="n">author</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span> <span class="c1"># increment the count of journal by 1</span>
+            <span class="n">author_dict</span><span class="p">[</span><span class="n">author</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span> <span class="c1"># increment the count of author by 1</span>
         <span class="k">else</span><span class="p">:</span>
-            <span class="n">author_dict</span><span class="p">[</span><span class="n">author</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1"># set the count of journal to 1</span>
+            <span class="n">author_dict</span><span class="p">[</span><span class="n">author</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1"># set the count of author to 1</span>
 
 <span class="c1"># Close the efetch handle    </span>
 <span class="n">handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
@@ -11910,99 +11910,98 @@ div#notebook {
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Dr. Wilke&#39;s co-authors are:
-  Sridhara V: 3x
-  Guo F: 1x
-  Leonard SP: 1x
-  Person MD: 1x
-  Teufel AI: 6x
-  Liberles DA: 1x
-  Papoulas O: 1x
-  Kerr SA: 1x
-  Trent MS: 2x
-  Barclay W: 1x
   Johnson MM: 2x
-  Huang TJ: 1x
-  Yao J: 1x
-  Li S: 1x
-  Krug RM: 1x
-  Cunningham AL: 1x
   Houser JR: 2x
-  Beauchemin CA: 1x
-  Lipsitch M: 1x
-  Jewett MC: 1x
-  Shahmoradi A: 2x
-  Marcotte EM: 6x
-  Roche B: 1x
-  Liu W: 1x
-  Handel A: 1x
-  Bedford T: 2x
-  Spielman SJ: 10x
-  Friedrich TC: 1x
+  Barclay W: 1x
   Georgiou G: 1x
-  Meyer AG: 7x
-  Vander Wood D: 1x
-  Michener JK: 1x
-  Sydykova DK: 4x
-  Knauf GA: 1x
-  Laurent JM: 3x
-  Sawyer SL: 2x
-  McWhite CD: 1x
-  Barnhart CS: 1x
-  Jackson EL: 5x
-  B Kc D: 1x
-  Mao Z: 1x
-  Russell CA: 1x
-  Chapman SD: 1x
-  Woodman A: 1x
-  Needham BD: 1x
-  Wilke CO: 44x
-  Raman R: 1x
-  Marx CJ: 2x
-  Carroll SM: 2x
-  Herfst S: 1x
-  Yellman CM: 1x
-  Lambowitz AM: 1x
-  Dasgupta A: 2x
-  Ritchie AM: 1x
-  Kachroo AH: 3x
-  Derryberry DZ: 1x
-  Bull JJ: 2x
-  Boutz DR: 4x
-  Echave J: 4x
-  Davies BW: 1x
-  Belser JA: 1x
-  Caglar MU: 4x
-  Paff ML: 2x
-  Kasson PM: 1x
-  Lenoir WF: 1x
-  Ho KS: 1x
-  Chen G: 1x
-  Kumar K: 1x
-  Wu DC: 1x
-  Arnold JJ: 1x
-  Riley S: 1x
-  Wan S: 1x
   Lloyd-Smith JO: 1x
-  Demogines A: 1x
-  Russell CJ: 1x
-  Cameron CE: 1x
-  Ellington AD: 1x
-  Jack BR: 6x
-  Smith BL: 5x
-  Jiang Q: 1x
-  Brown CW: 1x
-  Adami C: 1x
-  Amaral LAN: 1x
-  Tucker AT: 1x
-  Cobey S: 1x
-  Hockenberry AJ: 2x
-  Maurer-Stroh S: 1x
+  Kasson PM: 1x
   Lungu OI: 1x
-  Cowperthwaite MC: 1x
+  Knauf GA: 1x
+  Krug RM: 1x
+  Arnold JJ: 1x
+  Herfst S: 1x
+  Kerr SA: 1x
+  B Kc D: 1x
+  Russell CA: 1x
+  Lambowitz AM: 1x
+  Jack BR: 6x
+  Cameron CE: 1x
+  Lenoir WF: 1x
+  Sawyer SL: 2x
+  Needham BD: 1x
+  Jewett MC: 1x
+  Kachroo AH: 3x
+  Carroll SM: 2x
+  Belser JA: 1x
+  Cunningham AL: 1x
+  Papoulas O: 1x
+  Ho KS: 1x
+  Laurent JM: 3x
+  Wu DC: 1x
   Barrick JE: 3x
-  DuBois CD: 1x
+  Cobey S: 1x
+  Dasgupta A: 2x
+  Derryberry DZ: 1x
+  Smith BL: 5x
+  Demogines A: 1x
+  Marcotte EM: 6x
+  Chapman SD: 1x
+  Paff ML: 2x
+  Handel A: 1x
+  Huang TJ: 1x
+  Adami C: 1x
+  Jackson EL: 5x
+  Yellman CM: 1x
+  McWhite CD: 1x
+  Woodman A: 1x
+  Jiang Q: 1x
+  Bull JJ: 2x
+  Person MD: 1x
+  Raman R: 1x
+  Ellington AD: 1x
+  Tucker AT: 1x
+  Sridhara V: 3x
+  Spielman SJ: 10x
+  Riley S: 1x
+  Maurer-Stroh S: 1x
+  Vander Wood D: 1x
+  Shahmoradi A: 2x
+  Liu W: 1x
+  Yao J: 1x
+  Bedford T: 2x
   Murcia PR: 1x
+  Wan S: 1x
+  Barnhart CS: 1x
+  Mao Z: 1x
+  Chen G: 1x
+  Davies BW: 1x
   Barnhart C: 1x
+  Marx CJ: 2x
+  Caglar MU: 4x
+  Kumar K: 1x
+  Brown CW: 1x
+  Li S: 1x
+  Russell CJ: 1x
+  Boutz DR: 4x
+  Amaral LAN: 1x
+  Leonard SP: 1x
+  Friedrich TC: 1x
+  Beauchemin CA: 1x
+  Teufel AI: 6x
+  Trent MS: 2x
+  Hockenberry AJ: 2x
+  Liberles DA: 1x
+  Sydykova DK: 4x
+  Roche B: 1x
+  Cowperthwaite MC: 1x
+  Lipsitch M: 1x
+  Ritchie AM: 1x
+  Guo F: 1x
+  Meyer AG: 7x
+  DuBois CD: 1x
+  Echave J: 4x
+  Michener JK: 1x
 </pre>
 </div>
 </div>
@@ -12033,24 +12032,24 @@ div#notebook {
 <span class="n">records</span> <span class="o">=</span> <span class="n">Medline</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">handle</span><span class="p">)</span>
 
 <span class="c1"># Start a counter</span>
-<span class="n">title_count</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">ab_count</span> <span class="o">=</span> <span class="mi">0</span>
 
 <span class="k">for</span> <span class="n">record</span> <span class="ow">in</span> <span class="n">records</span><span class="p">:</span>
     
     <span class="c1"># check if a record has an abstract</span>
     <span class="k">if</span> <span class="s2">&quot;AB&quot;</span> <span class="ow">in</span> <span class="n">record</span><span class="p">:</span>
         
-        <span class="c1"># Check for the term &quot;evolution&quot; or &quot;evolutionary&quot; in the title </span>
+        <span class="c1"># Check for the term &quot;evolution&quot; or &quot;evolutionary&quot; in the abstract </span>
         <span class="n">match</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;evolution(|ary)&quot;</span><span class="p">,</span> <span class="n">record</span><span class="p">[</span><span class="s2">&quot;AB&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
         
-        <span class="c1"># if &quot;virus&quot; or &quot;viral&quot; is in the title, increment the count by 1 </span>
+        <span class="c1"># if &quot;evolution&quot; or &quot;evolutionary&quot; is in the abstract, increment the count by 1 </span>
         <span class="k">if</span> <span class="n">match</span><span class="p">:</span> 
-            <span class="n">title_count</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="n">ab_count</span> <span class="o">+=</span> <span class="mi">1</span>
 
 <span class="c1"># Close the efetch handle    </span>
 <span class="n">handle</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">title_count</span><span class="p">,</span> <span class="s1">&#39;of the abstracts contain &quot;evolution&quot; or &quot;evolutionary&quot;&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">ab_count</span><span class="p">,</span> <span class="s1">&#39;of the abstracts contain &quot;evolution&quot; or &quot;evolutionary&quot;&#39;</span><span class="p">)</span>
 </pre></div>
 
 </div>
