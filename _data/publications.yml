@@ -1,3 +1,9 @@
+- author: J. M. Laurent, R. K. Garge, A. I. Teufel, C. O. Wilke, A. H. Kachroo, E. M. Marcotte
+  year: preprint
+  title: Humanization of yeast genes with multiple human orthologs reveals principles of functional divergence between paralogs
+  ref: "bioRxiv 668335"
+  doi: 10.1101/668335
+
 - author: B. R. Jack, D. R. Boutz, M. L. Paff, B. L. Smith, C. O. Wilke
   year: preprint
   title: Transcript degradation and codon usage regulate gene expression in a lytic phage.
@@ -26,6 +32,11 @@
   title: Theory of measurement for site-specific evolutionary rates in amino-acid sequences.
   ref: "bioRxiv 411025"
   doi: 10.1101/411025
+
+- author: C. D. DuPai, C. D. McWhite, C. B. Smith, R. Garten, S. Maurer-Stroh, and C. O. Wilke
+  year: 2019
+  title: "Influenza passaging annotations: what they tell us and why we should listen."
+  ref: "Virus Evolution, in press"
 
 - author: B. R. Jack, C. O. Wilke
   year: 2019
