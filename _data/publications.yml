@@ -21,17 +21,17 @@
   title: "colorspace: A Toolbox for Manipulating and Assessing Colors and Palettes."
   ref: "arXiv:1903.06490"
 
-- author: A. J. Hockenberry, C. O. Wilke
-  year: preprint
-  title: Evolutionary couplings detect side-chain interactions.
-  ref: "bioRxiv 447409"
-  doi: 10.1101/447409
-
 - author: D. K. Sydykova, C. O. Wilke
   year: preprint
   title: Theory of measurement for site-specific evolutionary rates in amino-acid sequences.
   ref: "bioRxiv 411025"
   doi: 10.1101/411025
+
+- author: A. J. Hockenberry, C. O. Wilke
+  year: 2019
+  title: Evolutionary couplings detect side-chain interactions.
+  ref: "PeerJ 7:e7280"
+  doi: 10.7717/peerj.7280
 
 - author: C. D. DuPai, C. D. McWhite, C. B. Smith, R. Garten, S. Maurer-Stroh, and C. O. Wilke
   year: 2019
