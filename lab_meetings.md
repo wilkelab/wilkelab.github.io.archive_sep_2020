@@ -16,16 +16,16 @@ Lab meetings are held Fridays from 11 AM -- 12:30 PM in MBB 3.204.
 | 9/13/19 || Mackenzie || Cory ||
 | 9/20/19 || --- || --- || No lab meeting.
 | 9/27/19 || Adam || Mackenzie ||
-| 10/4/19 || Undergrad || Adam ||
-| 10/11/19 || Matt || Undergrad ||
+| 10/4/19 || Anastasiya || Adam ||
+| 10/11/19 || Matt || Anastasiya ||
 | 10/18/19 || Kuang || Alex ||
 | 10/25/19 || Alex || Matt ||
-| 11/1/19 || --- || Kuang ||
-| 11/8/19 || --- || --- || No lab meeting.
-| 11/15/19 || Undergrad || --- ||
-| 11/22/19 || --- || --- || 
+| 11/1/19 || Chase || Kuang ||
+| 11/8/19 || Cory || Chase || No lab meeting.
+| 11/15/19 || Alexis || Cory ||
+| 11/22/19 || TBD || Alexis || 
 | 11/29/19 || --- || --- || No lab meeting.
-| 12/6/19 || --- || --- ||
+| 12/6/19 || TBD || TBD ||
 |------+---+--------------------+---+----------------------+---+-------|
 {:.widetable}
 
@@ -48,9 +48,9 @@ Lab meetings are held Fridays from 11 AM -- 12:30 PM in MBB 3.204.
 | 3/29/19 || --- || --- || No lab meeting.
 | 4/5/19 || Oren || Dariya ||
 | 4/12/19 || --- || --- || No lab meeting.
-| 4/19/19 || Adam || Oren ||
-| 4/26/19 || Alex || Adam ||
-| 5/3/19 || Claus || Alex ||
+| 4/19/19 || Dariya || Oren ||
+| 4/26/19 || Adam || Dariya ||
+| 5/3/19 || Claus || Adam ||
 | 5/10/19 || Cory || Claus ||
 | 5/17/19 || Mackenzie || Cory ||
 | 5/24/19 || Matt || Mackenzie ||
