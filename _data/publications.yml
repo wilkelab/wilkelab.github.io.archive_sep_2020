@@ -4,12 +4,6 @@
   ref: "bioRxiv 752535"
   doi: 10.1101/752535
 
-- author: A. J. Hockenberry, C. O. Wilke
-  year: preprint
-  title: Phylogenetic weighting does little to improve the accuracy of evolutionary coupling analyses.
-  ref: "bioRxiv 736173"
-  doi: 10.1101/736173
-
 - author: J. M. Laurent, R. K. Garge, A. I. Teufel, C. O. Wilke, A. H. Kachroo, E. M. Marcotte
   year: preprint
   title: Humanization of yeast genes with multiple human orthologs reveals principles of functional divergence between paralogs.
@@ -38,6 +32,12 @@
   title: Theory of measurement for site-specific evolutionary rates in amino-acid sequences.
   ref: "bioRxiv 411025"
   doi: 10.1101/411025
+
+- author: A. J. Hockenberry, C. O. Wilke
+  year: 2019
+  title: Phylogenetic weighting does little to improve the accuracy of evolutionary coupling analyses.
+  ref: "Entropy 21:1000"
+  doi: 10.3390/e21101000
 
 - author: A. J. Hockenberry, C. O. Wilke
   year: 2019
