@@ -16,12 +16,6 @@
   ref: "bioRxiv 647024"
   doi: 10.1101/647024
 
-- author: W. Liu, M. U. Caglar, Z. Mao, A. Woodman, J. J. Arnold, C. O. Wilke, C. E. Cameron
-  year: preprint
-  title: More than efficacy revealed by single-cell analysis of antiviral therapeutics.
-  ref: "bioRxiv 606715"
-  doi: 10.1101/606715
-
 - author: A. Zeileis, J. C. Fisher, K. Hornik, R. Ihaka, C. D. McWhite, P. Murrell, R. Stauffer, C. O. Wilke
   year: preprint
   title: "colorspace: A Toolbox for Manipulating and Assessing Colors and Palettes."
@@ -32,6 +26,12 @@
   title: Theory of measurement for site-specific evolutionary rates in amino-acid sequences.
   ref: "bioRxiv 411025"
   doi: 10.1101/411025
+
+- author: W. Liu, M. U. Caglar, Z. Mao, A. Woodman, J. J. Arnold, C. O. Wilke, C. E. Cameron
+  year: 2019
+  title: More than efficacy revealed by single-cell analysis of antiviral therapeutics.
+  ref: "Science Advances 5:eaax4761"
+  doi: 10.1126/sciadv.aax4761
 
 - author: A. J. Hockenberry, C. O. Wilke
   year: 2019
