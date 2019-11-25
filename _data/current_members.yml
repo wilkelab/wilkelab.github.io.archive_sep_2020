@@ -22,17 +22,17 @@
   joined: 2017
   pubs: "https://scholar.google.com/citations?hl=en&user=vBGR7-UAAAAJ"
   github: mmjohn
-  
-- name: Alexis M. Hill
-  role: Research Associate
-  joined: 2019
-  github: alexismhill3
-  
+    
 - name: Kuang Hu
   role: Graduate Student (CMB)
   joined: 2019
   github: KuangHu
-  
+
+- name: Alexis M. Hill
+  role: Research Associate
+  joined: 2019
+  github: alexismhill3
+
 - name: Lee Rao
   role: Undergraduate
   joined: 2018 
