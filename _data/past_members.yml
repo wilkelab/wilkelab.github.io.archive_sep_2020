@@ -46,6 +46,13 @@
   left: 2018
   currently: Teacher
 
+- name: Ashley Teufel
+  role: Postdoc
+  joined: 2015
+  left: 2018
+  currently: Omidyar Fellow, Santa Fe Institute
+  url: "https://scholar.google.com/citations?user=QqyRBHIAAAAJ"
+
 - name: Tong Zhou
   role: Postdoc
   joined: 2006
@@ -82,11 +89,18 @@
   currently: Canvasser at Clean Water Action
   url: "https://www.linkedin.com/in/dakota-derryberry-41733a49/"
   
+- name: Benjamin Jack
+  role: Graduate Student (CMB)
+  joined: 2015
+  left: 2019
+  currently: Data scientist, Valkyrie Intelligence 
+  url: "http://benjack.io"
+  
 - name: Matthew Paff
   role: Graduate Student (CMB)
   joined: 2015
   left: 2018
-  currently: Data Scientist at Nano Global
+  currently: Data Scientist, Valkyrie Intelligence 
   url: "https://www.linkedin.com/in/matthew-paff/"
   
 - name: Michael P. Scherrer
@@ -103,13 +117,26 @@
   currently: Assistant Professor, Rowan University
   url: "http://sjspielman.org"
 
+- name: Dariya K. Sydykova
+  role: Graduate Student (CMB)
+  joined: 2015
+  left: 2019
+  history: Undergraduate, 2012–2014
+  currently: Data Scientist, Valkyrie Intelligence 
+  url: "https://sydykova.com/"
+
+- name: Oren Bullock
+  role: Undergraduate
+  joined: 2018
+  left: 2019
+
 - name: Andrew Butler
   role: Undergraduate
   joined: 2013
   left: 2015
   github: andrewwbutler
   currently: Graduate Student, New York University
-
+  
 - name: Larry Clay
   role: Undergraduate, Volunteer
   joined: 2015
@@ -179,6 +206,11 @@
   role: Undergraduate
   joined: 2015
   left: 2016
+ 
+- name: Nelson Morrow
+  role: Undergraduate
+  joined: 2016  
+  left: 2019
  
 - name: Grace Shiau
   role: High School Student & Undergraduate

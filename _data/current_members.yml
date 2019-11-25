@@ -11,43 +11,28 @@
   pubs: "https://scholar.google.com/citations?user=W5qqC2wAAAAJ&hl=en"
   github: adamhockenberry
 
-- name: Ashley Teufel
-  role: Postdoc
-  joined: 2015
-  pubs: "https://scholar.google.com/citations?user=QqyRBHIAAAAJ"
-  github: a-teufel
-
-- name: Cory DuBois
+- name: Cory DuPai
   role: Graduate Student (CMB)
   joined: 2017
+  pubs: "https://scholar.google.com/citations?hl=en&user=F6StyZYAAAAJ"
   github: corydubois
-
-- name: Benjamin Jack
-  role: Graduate Student (CMB)
-  joined: 2015
-  url: "http://benjack.io"
-  pubs: "https://scholar.google.com/citations?user=b98WUfYAAAAJ"
-  github: benjaminjack
 
 - name: Mackenzie M. Johnson
   role: Graduate Student (EEB)
   joined: 2017
+  pubs: "https://scholar.google.com/citations?hl=en&user=vBGR7-UAAAAJ"
+  github: mmjohn
   
-- name: Dariya K. Sydykova
+- name: Alexis M. Hill
+  role: Research Associate
+  joined: 2019
+  github: alexismhill3
+  
+- name: Kuang Hu
   role: Graduate Student (CMB)
-  joined: 2015
-  history: Undergraduate, 2012–2014
-  pubs: "https://scholar.google.com/citations?user=D5G8bBAAAAAJ&hl=en"
-  github: dariyasydykova
-
-- name: Oren Bullock
-  role: Undergraduate
-  joined: 2018
+  joined: 2019
+  github: KuangHu
   
-- name: Nelson Morrow
-  role: Undergraduate
-  joined: 2016  
-
 - name: Lee Rao
   role: Undergraduate
   joined: 2018 

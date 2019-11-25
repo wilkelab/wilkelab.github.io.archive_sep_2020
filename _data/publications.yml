@@ -10,22 +10,29 @@
   ref: "bioRxiv 668335"
   doi: 10.1101/668335
 
-- author: B. R. Jack, D. R. Boutz, M. L. Paff, B. L. Smith, C. O. Wilke
-  year: preprint
-  title: Transcript degradation and codon usage regulate gene expression in a lytic phage.
-  ref: "bioRxiv 647024"
-  doi: 10.1101/647024
-
-- author: A. Zeileis, J. C. Fisher, K. Hornik, R. Ihaka, C. D. McWhite, P. Murrell, R. Stauffer, C. O. Wilke
-  year: preprint
-  title: "colorspace: A Toolbox for Manipulating and Assessing Colors and Palettes."
-  ref: "arXiv:1903.06490"
-
 - author: D. K. Sydykova, C. O. Wilke
   year: preprint
   title: Theory of measurement for site-specific evolutionary rates in amino-acid sequences.
   ref: "bioRxiv 411025"
   doi: 10.1101/411025
+  
+- author: B. R. Jack, D. R. Boutz, M. L. Paff, B. L. Smith, C. O. Wilke
+  year: 2020
+  title: Transcript degradation and codon usage regulate gene expression in a lytic phage.
+  ref: "Virus Evol., in press"
+  # the following is the preprint doi, not the final doi!
+  doi: 10.1101/647024
+  
+- author: A. Zeileis, J. C. Fisher, K. Hornik, R. Ihaka, C. D. McWhite, P. Murrell, R. Stauffer, C. O. Wilke
+  year: 2020
+  title: "colorspace: A Toolbox for Manipulating and Assessing Colors and Palettes."
+  ref: "J. Stat. Soft., in press"
+
+- author: H. Wickham, M. Averick, J. Bryan, W. Chang, L. D'Agostino McGowan, R. François, G. Grolemund, A. Hayes, L. Henry, J. Hester, M. Kuhn, T. Lin Pedersen, E. Miller, S. Milton Bache, K. Müller, J. Ooms, D. Robinson, D. Paige Seidel, V. Spinu, K. Takahashi, D. Vaughan, C. Wilke, K. Woo, H. Yutani
+  year: 2019
+  title: "Welcome to the Tidyverse"
+  ref: "JOSS 4:1686"
+  doi: 10.21105/joss.01686
 
 - author: W. Liu, M. U. Caglar, Z. Mao, A. Woodman, J. J. Arnold, C. O. Wilke, C. E. Cameron
   year: 2019
