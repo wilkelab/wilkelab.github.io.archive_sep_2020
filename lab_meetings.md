@@ -25,7 +25,9 @@ Lab meetings are held Fridays from 11 AM -- 12:30 PM in MBB 3.204.
 | 11/15/19 || Alexis || Cory ||
 | 11/22/19 || TBD || Alexis || 
 | 11/29/19 || --- || --- || No lab meeting.
-| 12/6/19 || TBD || TBD ||
+| 12/6/19 || Mackenzie || TBD ||
+| 12/13/19 || Sahil || Mackenzie ||
+| 12/20/19 || Adam || Sahil ||
 |------+---+--------------------+---+----------------------+---+-------|
 {:.widetable}
 
