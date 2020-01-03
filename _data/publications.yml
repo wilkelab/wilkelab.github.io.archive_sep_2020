@@ -15,18 +15,17 @@
   title: Theory of measurement for site-specific evolutionary rates in amino-acid sequences.
   ref: "bioRxiv 411025"
   doi: 10.1101/411025
-  
-- author: B. R. Jack, D. R. Boutz, M. L. Paff, B. L. Smith, C. O. Wilke
-  year: 2020
-  title: Transcript degradation and codon usage regulate gene expression in a lytic phage.
-  ref: "Virus Evol., in press"
-  # the following is the preprint doi, not the final doi!
-  doi: 10.1101/647024
-  
+    
 - author: A. Zeileis, J. C. Fisher, K. Hornik, R. Ihaka, C. D. McWhite, P. Murrell, R. Stauffer, C. O. Wilke
   year: 2020
   title: "colorspace: A Toolbox for Manipulating and Assessing Colors and Palettes."
   ref: "J. Stat. Soft., in press"
+
+- author: B. R. Jack, D. R. Boutz, M. L. Paff, B. L. Smith, C. O. Wilke
+  year: 2019
+  title: Transcript degradation and codon usage regulate gene expression in a lytic phage.
+  ref: "Virus Evol. 5:vez055"
+  doi: 10.1093/ve/vez055
 
 - author: H. Wickham, M. Averick, J. Bryan, W. Chang, L. D'Agostino McGowan, R. François, G. Grolemund, A. Hayes, L. Henry, J. Hester, M. Kuhn, T. Lin Pedersen, E. Miller, S. Milton Bache, K. Müller, J. Ooms, D. Robinson, D. Paige Seidel, V. Spinu, K. Takahashi, D. Vaughan, C. Wilke, K. Woo, H. Yutani
   year: 2019
@@ -309,7 +308,7 @@
 - author: A. G. Meyer, S. J. Spielman, T. Bedford, C. O. Wilke
   year: 2015
   title: On the time dependence of evolutionary metrics during the 2009 pandemic influenza virus outbreak.
-  ref: "Virus Evolution 1:vev006"
+  ref: "Virus Evol. 1:vev006"
   doi: 10.1093/ve/vev006 
   pmcid: PMC4710376
   
