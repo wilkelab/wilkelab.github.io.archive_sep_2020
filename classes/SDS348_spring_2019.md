@@ -327,68 +327,46 @@ All homeworks are due by 4:00pm on the day they are due. Homeworks need to be su
 * Homework 1 (due Jan 29, 2019)
 	- [R Markdown](/classes/SDS348/2019_spring/homeworks/HW1.Rmd)
 	- [HTML](/classes/SDS348/2019_spring/homeworks/HW1.html)
-	- [Solutions, R Markdown](/classes/SDS348/2019_spring/homeworks/HW1-solution.Rmd)
-	- [Solutions, HTML](/classes/SDS348/2019_spring/homeworks/HW1-solution.html)
 
 * Homework 2 (due Feb 5, 2019)
 	- [R Markdown](/classes/SDS348/2019_spring/homeworks/HW2.Rmd)
 	- [HTML](/classes/SDS348/2019_spring/homeworks/HW2.html)
-	- [Solutions, R Markdown](/classes/SDS348/2019_spring/homeworks/HW2-solution.Rmd)
-	- [Solutions, HTML](/classes/SDS348/2019_spring/homeworks/HW2-solution.html)
 	
 * Homework 3 (due Feb 12, 2019)
 	- [R Markdown](/classes/SDS348/2019_spring/homeworks/HW3.Rmd)
 	- [HTML](/classes/SDS348/2019_spring/homeworks/HW3.html)
-	- [Solutions, R Markdown](/classes/SDS348/2019_spring/homeworks/HW3-solution.Rmd)
-	- [Solutions, HTML](/classes/SDS348/2019_spring/homeworks/HW3-solution.html)
 
 * Homework 4 (due Feb 19, 2019)
 	- [R Markdown](/classes/SDS348/2019_spring/homeworks/HW4.Rmd)
 	- [HTML](/classes/SDS348/2019_spring/homeworks/HW4.html)
-	- [Solutions, R Markdown](/classes/SDS348/2019_spring/homeworks/HW4-solution.Rmd)
-	- [Solutions, HTML](/classes/SDS348/2019_spring/homeworks/HW4-solution.html)
 
 * Homework 5 (due Mar 5, 2019)
 	- [R Markdown](/classes/SDS348/2019_spring/homeworks/HW5.Rmd)
 	- [HTML](/classes/SDS348/2019_spring/homeworks/HW5.html)
-	- [Solutions, R Markdown](/classes/SDS348/2019_spring/homeworks/HW5-solution.Rmd)
-	- [Solutions, HTML](/classes/SDS348/2019_spring/homeworks/HW5-solution.html)
 
 * Homework 6 (due Mar 12, 2019)
 	- [R Markdown](/classes/SDS348/2019_spring/homeworks/HW6.Rmd)
 	- [HTML](/classes/SDS348/2019_spring/homeworks/HW6.html)
-	- [Solutions, R Markdown](/classes/SDS348/2019_spring/homeworks/HW6-solution.Rmd)
-	- [Solutions, HTML](/classes/SDS348/2019_spring/homeworks/HW6-solution.html)
 	
 * Homework 7 (due Mar 26, 2019)
 	- [Jupyter Notebook](/classes/SDS348/2019_spring/homeworks/HW7.ipynb)
 	- [HTML](/classes/SDS348/2019_spring/homeworks/HW7.html) 
-	- [Solutions, Jupyter Notebook](/classes/SDS348/2019_spring/homeworks/HW7-solution.ipynb)
-	- [Solutions, HTML](/classes/SDS348/2019_spring/homeworks/HW7-solution.html)
 
 * Homework 8 (due Apr 9, 2019)
 	- [Jupyter Notebook](/classes/SDS348/2019_spring/homeworks/HW8.ipynb)
 	- [HTML](/classes/SDS348/2019_spring/homeworks/HW8.html) 
-	- [Solutions, Jupyter Notebook](/classes/SDS348/2019_spring/homeworks/HW8-solution.ipynb)
-	- [Solutions, HTML](/classes/SDS348/2019_spring/homeworks/HW8-solution.html)
 
 * Homework 9 (due Apr 16, 2019)
 	- [Jupyter Notebook](/classes/SDS348/2019_spring/homeworks/HW9.ipynb)
 	- [HTML](/classes/SDS348/2019_spring/homeworks/HW9.html) 
-	- [Solutions, Jupyter Notebook](/classes/SDS348/2019_spring/homeworks/HW9-solution.ipynb)
-	- [Solutions, HTML](/classes/SDS348/2019_spring/homeworks/HW9-solution.html)
 
 * Homework 10 (due Apr 23, 2019)
 	- [Jupyter Notebook](/classes/SDS348/2019_spring/homeworks/HW10.ipynb)
 	- [HTML](/classes/SDS348/2019_spring/homeworks/HW10.html) 
-	- [Solutions, Jupyter Notebook](/classes/SDS348/2019_spring/homeworks/HW10-solution.ipynb)
-	- [Solutions, HTML](/classes/SDS348/2019_spring/homeworks/HW10-solution.html)
 
 * Homework 11 (due Apr 30, 2019)
 	- [Jupyter Notebook](/classes/SDS348/2019_spring/homeworks/HW11.ipynb)
 	- [HTML](/classes/SDS348/2019_spring/homeworks/HW11.html) 
-	- [Solutions, Jupyter Notebook](/classes/SDS348/2019_spring/homeworks/HW11-solution.ipynb)
-	- [Solutions, HTML](/classes/SDS348/2019_spring/homeworks/HW11-solution.html)
 	
 ## Labs
 
@@ -502,14 +480,10 @@ All projects are due by 4:00pm on the day they are due. Projects need to be subm
 - Project 1 (due Feb 26, 2019):
     - [HTML](/classes/SDS348/2019_spring/projects/project1.html)
     - [R Markdown](/classes/SDS348/2019_spring/projects/project1.Rmd)
-	- [Solutions, R Markdown](/classes/SDS348/2019_spring/projects/project1-solution.Rmd)
-	- [Solutions, HTML](/classes/SDS348/2019_spring/projects/project1-solution.html)
 
 - Project 2 (due Apr 2, 2019):
     - [HTML](/classes/SDS348/2019_spring/projects/project2.html)
     - [R Markdown](/classes/SDS348/2019_spring/projects/project2.Rmd)
-	- [Solutions, R Markdown](/classes/SDS348/2019_spring/projects/project2-solution.Rmd)
-	- [Solutions, HTML](/classes/SDS348/2019_spring/projects/project2-solution.html)
     
 - SDS 385 Assignment (due Apr 16, 2019, **grad students only**):
 	- [HTML](/classes/SDS348/2019_spring/projects/grad_assignment.html)
