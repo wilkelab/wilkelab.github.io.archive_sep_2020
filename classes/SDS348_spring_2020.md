@@ -10,6 +10,19 @@ This is the home page for class SDS 348, Computational Biology and Bioinformatic
 
 **1. Jan 21, 2020 – Introduction, R Markdown**
 
+* Slides: [class1.pdf](/classes/SDS348/2020_spring/slides/class1.pdf)
+* R Markdown basics: [https://rmarkdown.rstudio.com/authoring_basics.html](https://rmarkdown.rstudio.com/authoring_basics.html)
+* Class compute servers:
+    - [https://educcomp01.ccbb.utexas.edu/](https://educcomp01.ccbb.utexas.edu/)
+    - [https://educcomp02.ccbb.utexas.edu/](https://educcomp02.ccbb.utexas.edu/)
+    - [https://educcomp03.ccbb.utexas.edu/](https://educcomp03.ccbb.utexas.edu/)
+    - [https://educcomp04.ccbb.utexas.edu/](https://educcomp04.ccbb.utexas.edu/)
+* You can download R from here: [https://cran.r-project.org/](https://cran.r-project.org/)
+* You can download RStudio from here: [https://www.rstudio.com/products/rstudio/download/](https://www.rstudio.com/products/rstudio/download/)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2020_spring/worksheets/class1.Rmd)
+    - [HTML](/classes/SDS348/2020_spring/worksheets/class1.html)
+
 
 ## Homeworks
 
