@@ -7,6 +7,27 @@ permalink: /more/lab_meetings.html
 Lab meetings are held Fridays from 11 AM -- 12:30 PM in MBB 3.204.
 <br><br>
 
+### Spring 2020
+
+|------+---+--------------------+---+----------------------+---+-------|
+| Date      |    |Research       |    |Literature |         |Notes      |
+|:----------|----|:------------------|----|:--------------------|---|:------|
+| 1/10/20 || Anastasiya || --- ||
+| 1/17/20 || Cory || Anastasiya ||
+| 1/24/20 || Kuang || Cory || 
+| 1/31/20 || --- || --- || No lab meeting.
+| 2/7/20 || Alexis || Kuang ||
+| 2/14/20 || Mackenzie || Alexis ||
+| 2/21/20 || Adam || Mackenzie ||
+| 2/28/20 || Anastasiya || Adam ||
+| 3/6/20 || Cory || Anastasiya ||
+| 3/13/20 || TBD || Cory ||
+
+|------+---+--------------------+---+----------------------+---+-------|
+{:.widetable}
+
+<br /><br />
+
 ### Fall 2019
 
 |------+---+--------------------+---+----------------------+---+-------|
