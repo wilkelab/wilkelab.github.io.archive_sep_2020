@@ -37,6 +37,26 @@ Syllabus: [SDS348_syllabus_spring2020.pdf](/classes/SDS348/SDS348_syllabus_sprin
     - [HTML](/classes/SDS348/2020_spring/worksheets/class2.html)
     - [Solutions](/classes/SDS348/2020_spring/worksheets/class2_solutions.html)
 
+**3. Jan 28, 2020 – Data visualization with ggplot2**
+
+* Slides: [class3.pdf](/classes/SDS348/2020_spring/slides/class3.pdf)
+* R for Data Science: [https://r4ds.had.co.nz/](https://r4ds.had.co.nz/)
+* ggplot2 reference manual: [https://ggplot2.tidyverse.org/](https://ggplot2.tidyverse.org/)
+* ggplot2 video tutorial: [http://varianceexplained.org/RData/lessons/lesson2/segment1/](http://varianceexplained.org/RData/lessons/lesson2/segment1/)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2020_spring/worksheets/class3.Rmd)
+    - [HTML](/classes/SDS348/2020_spring/worksheets/class3.html)
+
+**4. Jan 30, 2020 – Data visualization with ggplot2**
+
+* Slides: [class4.pdf](/classes/SDS348/2020_spring/slides/class4.pdf)
+* Visualization book: [Fundamentals of Data Visualization](https://serialmentor.com/dataviz/)
+* Tidyverse style guide: [style.tidyverse.org](https://style.tidyverse.org/syntax.html)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2020_spring/worksheets/class4.Rmd)
+    - [HTML](/classes/SDS348/2020_spring/worksheets/class4.html)
+
+
 ## Homeworks
 
 All homeworks are due by noon (12:00pm) on the day they are due. Homeworks need to be submitted as pdf files on Canvas.
