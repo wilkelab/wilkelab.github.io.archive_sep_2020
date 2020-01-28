@@ -65,6 +65,10 @@ All homeworks are due by noon (12:00pm) on the day they are due. Homeworks need 
 * Homework 1 (due Jan 27, 2020)
 	- [R Markdown](/classes/SDS348/2020_spring/homeworks/HW1.Rmd)
 	- [HTML](/classes/SDS348/2020_spring/homeworks/HW1.html)
+
+* Homework 2 (due Feb 3, 2020)
+	- [R Markdown](/classes/SDS348/2020_spring/homeworks/HW2.Rmd)
+	- [HTML](/classes/SDS348/2020_spring/homeworks/HW2.html)
 	
 	
 ## Labs
@@ -77,6 +81,14 @@ All homeworks are due by noon (12:00pm) on the day they are due. Homeworks need 
     - [R Markdown](/classes/SDS348/2020_spring/labs/lab1.Rmd)
     - [HTML](/classes/SDS348/2020_spring/labs/lab1.html)
     - [Solutions, HTML](/classes/SDS348/2020_spring/labs/lab1-solution.html)
+
+**2. Jan 29, 2020**
+
+* Guide to all functions available in ggplot2: [https://ggplot2.tidyverse.org/reference/](https://ggplot2.tidyverse.org/reference/#section-aesthetics)
+* Lab worksheet:
+    - [R Markdown](/classes/SDS348/2020_spring/labs/lab2.Rmd)
+    - [HTML](/classes/SDS348/2020_spring/labs/lab2.html)
+
 
 ## Projects
 
