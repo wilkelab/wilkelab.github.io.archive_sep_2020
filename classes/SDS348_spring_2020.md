@@ -90,7 +90,7 @@ All homeworks are due by noon (12:00pm) on the day they are due. Homeworks need 
 * Lab worksheet:
     - [R Markdown](/classes/SDS348/2020_spring/labs/lab2.Rmd)
     - [HTML](/classes/SDS348/2020_spring/labs/lab2.html)
-    - [HTML, Solutions](/classes/SDS348/2020_spring/labs/lab2.html)
+    - [HTML, Solutions](/classes/SDS348/2020_spring/labs/lab2-solution.html)
 
 
 ## Projects
