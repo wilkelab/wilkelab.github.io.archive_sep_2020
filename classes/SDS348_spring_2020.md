@@ -92,6 +92,7 @@ All homeworks are due by noon (12:00pm) on the day they are due. Homeworks need 
 * Homework 2 (due Feb 3, 2020)
 	- [R Markdown](/classes/SDS348/2020_spring/homeworks/HW2.Rmd)
 	- [HTML](/classes/SDS348/2020_spring/homeworks/HW2.html)
+	- [HTML, Solutions](/classes/SDS348/2020_spring/homeworks/HW2-solution.html)
 
 
 * Homework 3 (due Feb 10, 2020)
@@ -125,7 +126,8 @@ All homeworks are due by noon (12:00pm) on the day they are due. Homeworks need 
 * Lab worksheet:
     - [R Markdown](/classes/SDS348/2020_spring/labs/lab3.Rmd)
     - [HTML](/classes/SDS348/2020_spring/labs/lab3.html)
-    
+    - [HTML, Solutions](/classes/SDS348/2020_spring/labs/lab3-solution.html)
+ 
 ## Projects
 
 All projects are due by noon (12:00pm) on the day they are due. Projects need to be submitted on Canvas, both in pdf format and as source code (plus data where needed).
