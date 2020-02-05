@@ -99,7 +99,12 @@ All homeworks are due by noon (12:00pm) on the day they are due. Homeworks need 
     - [HTML](/classes/SDS348/2020_spring/labs/lab2.html)
     - [HTML, Solutions](/classes/SDS348/2020_spring/labs/lab2-solution.html)
 
-
+**3. Feb 4, 2020**
+* Tidyverse style guide (syntax): [https://style.tidyverse.org/syntax.html](https://style.tidyverse.org/syntax.html) 
+* Lab worksheet:
+    - [R Markdown](/classes/SDS348/2020_spring/labs/lab3.Rmd)
+    - [HTML](/classes/SDS348/2020_spring/labs/lab3.html)
+    
 ## Projects
 
 All projects are due by noon (12:00pm) on the day they are due. Projects need to be submitted on Canvas, both in pdf format and as source code (plus data where needed).
