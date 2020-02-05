@@ -1,0 +1,68 @@
+```{r global_options, include=FALSE}
+
+library(knitr)
+library(ggplot2)
+opts_chunk$set(fig.align = "center", fig.height = 4, fig.width = 6)
+
+```
+##Homework 2
+*Enter your name and EID here*
+
+**This homework is due on Feb. 3, 2020 at 12:00pm. Please submit as a PDF file on Canvas.**
+
+This homework uses the `Cars93` data set. Each observation in the data frame contains information on passenger cars from 1993. This is a big data frame with 27 columns. We are interested in the information on manufacturer (`Manufacturer`), car model (`Model`), type of car (`Type`), midrange price in $1000 (`Price`), maximum horsepower (`Horsepower`), drivetrain (`DriveTrain`), and city MPG (miles per US gallon, `MPG.city`). 
+
+```{r}
+
+Cars93 <- read.csv("http://wilkelab.org/classes/SDS348/data_sets/Cars93.csv")
+head(Cars93)
+
+```
+
+**Problem 1: (3 pts)** Use ggplot2 to create a scatter plot of maximum horse power versus car price. In the same plot, fit a curve to these data using `geom_smooth()`. In 1-2 sentences, what broad trend do you observe in horsepower for different car prices? **HINT**: Plot maximum horse power on the y-axis and price on the x-axis.
+
+```{r}
+
+ggplot(Cars93, aes(x = Price, y = Horsepower)) +
+  geom_point() +
+  geom_smooth()
+
+```
+
+Horsepower generally increases with price until \$40,000, and then appears to level off after. However, there are few data points for cars costing more than $40,000.
+
+**Problem 2: (3 pts)** Next, create a scatter plot of horsepower against city MPG, facetted by type of drivetrain. In 1-2 sentences, make one observation about the data from this plot. 
+
+```{r}
+
+ggplot(Cars93, aes(x = Horsepower, y = MPG.city)) +
+  geom_point() +
+  facet_wrap(~DriveTrain)
+
+```
+
+Observations:
+
+1. City MPG and horsepower are negatively correlated (i.e., as city MPG goes up, horsepower goes down)
+
+2. Cars that are rear-wheel drive have the lowest MPG city.
+
+3. Front-wheel drive cars have the highest MPG city.
+
+3. All three types of drivetrains have similar ranges of maximum horsepower (100-300HP).
+
+**Problem 3: (2 pts)** Plot the distribution of car price, once using `geom_histogram()` and once using `geom_density()`. 
+
+```{r}
+
+ggplot(Cars93, aes(x = Price)) +
+  geom_histogram()
+
+ggplot(Cars93, aes(x = Price)) +
+  geom_density()
+
+```
+
+**Problem 4: (2 pts)** What does the y-axis in your histogram represent? In your density plot, what is the *total* area under the curve? Please give a single number as your answer. **HINT**: You do not need to do any additional calculations to determine the area under the curve. Use Google to find the answer. 
+
+The y-axis in a histogram represents counts in a given range of x-values (bins). The area under the curve of a density plot always sums to 1.
