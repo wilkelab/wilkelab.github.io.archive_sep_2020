@@ -1,0 +1,74 @@
+```{r global_options, include=FALSE}
+
+library(knitr)
+opts_chunk$set(fig.align = "center", fig.height = 3, fig.width = 4)
+library(ggplot2)
+theme_set(theme_bw(base_size = 12))
+library(dplyr)
+
+```
+## Lab Worksheet 3
+
+**Problem 1:** The data set `AirPassengers` built into R lists total numbers of international airline passengers, 1949 to 1960. Explain the variables present in this dataset. Using the variables in this dataset and the formal definition of tidy data that we learned in lecture, is this data set tidy? Explain why or why not.
+
+```{r}
+
+AirPassengers
+
+```
+
+*Your answer here.*
+
+**Problem 2:** The function `data()` lists all datasets that are available in R by default. Look through the list and identify a dataset that is tidy. Explain the variables present in this dataset and why the dataset is tidy.
+
+```{r}
+
+# Your R code here
+
+```
+
+*Your answer here.*
+
+**Problem 3a:** Save a tidy version of the dataset `Titanic` using the code below. Filter for those did not survive (`Survived == "No"`) and save the results in a new dataframe. What do you notice about the results?
+
+```{r}
+
+titanic <- as.data.frame(Titanic) # converts dataset `Titanic` into dataframe
+
+# Your R code here
+
+```
+
+*Your answer here.*
+
+**Problem 3b:** Using the new dataframe you just created, group by `Class`, use `summarize()` to sum the counts, then use `mutate()` to calculate the relative percentage of deaths in a new column for each group. What can you say about these results?
+
+```{r}
+
+# Your R code here
+
+```
+
+*Your answer here.*
+
+**Problem 4 (if time):** This package contains information about all flights that departed from NYC (e.g. EWR, JFK and LGA) to destinations in the United States, Puerto Rico, and the American Virgin Islands) in 2013: 336,776 flights in total. To help understand what causes delays, it also includes a number of other useful datasets. In particular, the data table `flights` lists on-time departure and arrival information for 336,776 individual flights:
+```{r}
+
+install.packages("nycflights13") # this dataset is not pre-installed, so you have to install it with this line of code
+
+library(nycflights13) # and then load it with this line of code
+
+flights
+
+```
+
+We would like to collect some information about arrival delays of United Airlines (UA) flights. Do the following: pick all UA departures with non-zero arrival delay and calculate the mean arrival delay for each of the corresponding flight numbers. Which flight had the longest mean arrival delay and how long was that delay?
+
+```{r}
+
+# Your R code here
+
+```
+
+*Your answer here.*
+
