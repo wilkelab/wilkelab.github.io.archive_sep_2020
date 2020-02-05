@@ -58,6 +58,27 @@ Syllabus: [SDS348_syllabus_spring2020.pdf](/classes/SDS348/SDS348_syllabus_sprin
     - [HTML](/classes/SDS348/2020_spring/worksheets/class4.html)
     - [Solutions](/classes/SDS348/2020_spring/worksheets/class4_solutions.html)
 
+**5. Feb 4, 2020 – Working with tidy data**
+
+* Slides: [class5.pdf](/classes/SDS348/2020_spring/slides/class5.pdf)
+* dplyr chapter in R for Data Science: [Chapter 5: Data transformation](https://r4ds.had.co.nz/transform.html)
+* dplyr package on the tidyverse website: [https://dplyr.tidyverse.org/](https://dplyr.tidyverse.org/)
+* Tidy data paper by Wickham: [J. Stat. Soft. 59:10, 2014](https://www.jstatsoft.org/v59/i10/paper)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2020_spring/worksheets/class5.Rmd)
+    - [HTML](/classes/SDS348/2020_spring/worksheets/class5.html)
+    - [Solutions](/classes/SDS348/2020_spring/worksheets/class5_solutions.html)
+
+    
+**6. Feb 6, 2020 – Working with tidy data**    
+
+* Slides: [class6.pdf](/classes/SDS348/2020_spring/slides/class6.pdf)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2020_spring/worksheets/class6.Rmd)
+    - [HTML](/classes/SDS348/2020_spring/worksheets/class6.html)
+
+
+
 ## Homeworks
 
 All homeworks are due by noon (12:00pm) on the day they are due. Homeworks need to be submitted as pdf files on Canvas.
