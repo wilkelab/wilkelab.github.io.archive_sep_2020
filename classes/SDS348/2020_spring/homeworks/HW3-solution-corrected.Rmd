@@ -1,0 +1,93 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=3, fig.width=4)
+library(ggplot2)
+theme_set(theme_bw(base_size=12))
+library(dplyr)
+```
+## Homework 3
+*Enter your name and EID here*
+
+**This homework is due on Feb. 10, 2019 at 12:00pm. Please submit as a PDF file on Canvas.**
+
+In this homework, you are asked to evaluate two data sets and determine if they are tidy data sets. *We are referring to a very specific definition of "tidy", so if this term is unfamiliar to you, please review the lecture materials*.
+
+**Problem 1: (3 pts)** The dataset `ldeaths` built into R is a time series giving the monthly deaths from bronchitis, emphysema and asthma in the UK (1974-1979). You can run `?ldeaths` to learn more about this data set. Using the variables in this dataset and the formal definition of tidy data that we learned in lecture, is this data set tidy? Explain why or why not.
+
+```{r}
+
+ldeaths
+
+```
+
+*The dataset contains the variables for year, month, and number of lung disease-related deaths. The dataset is not tidy. There should be one column for year, one column for month, and one column for number of accidental deaths. Instead, the data are arranged such that months vary along the columns and years vary along the rows. Lung death count varies along both the rows and the columns.*
+
+The dataset `airquality` built into R contains daily air quality measurements in New York, May to September in 1973. You can run `?airquality` to learn more about this data set. Using the variables in this dataset and the formal definition of tidy data that we learned in lecture, is this data set tidy? Explain why or why not.
+
+```{r}
+
+head(airquality)
+
+```
+
+*The dataset contains the variables for Ozone, Solar Radiation, Wind, Temp, Month and Day. The dataset is tidy because each column is a variable, and each row is an observation of the daily readings taken for each variable.*
+
+**Problem 2: (3 pts)** Listed below are three examples of code that violate the rules in [section 2](https://style.tidyverse.org/syntax.html) of the tidyverse style guide. Name at least one style violation in each example.
+
+```{r, eval = FALSE}
+
+ToothGrowth %>% filter(supp=="OJ") %>% head()
+
+```
+
+*The spaces on both sides of `==` are missing and the pipes are written on one line.*
+
+```{r, eval = FALSE}
+
+ToothGrowth[,1]
+
+```
+
+*There is no space after the comma.*
+
+```{r, eval = FALSE}
+
+boxplot ( len ~ dose, data = ToothGrowth, range = 1, width = c(2, 2, 2), varwidth = TRUE, notch = FALSE, outline = TRUE )
+
+```
+
+*There is a space before `(` and a space after `)`, and the code is too long to fit on a single line.*
+
+**Problem 3: (4 pts)** The `NCbirths` contains 1409 birth records from North Carolina in 2001. The column contents are as follows:
+
++ **Plural**: 1=single birth, 2=twins, 3=triplets.
++ **Sex**: Sex of the baby 1=male 2=female.
++ **MomAge**: Mother's age (in years).
++ **Weeks**: Completed weeks of gestation.
++ **Gained**: Weight gained during pregnancy (in pounds).
++ **BirthWeightGm**: Birth weight in grams.
++ **Low**: Indicator for low birth weight, 1=2500 grams or less, 0=otherwise.
++ **Premie**: Indicator for premature birth, 1=36 weeks or sooner, 0=otherwise.
++ **Marital**: Marital status: 0=married or 1=not married.
+
+```{r}
+
+NCbirths <- read.csv("http://wilkelab.org/classes/SDS348/data_sets/NCbirths.csv")
+head(NCbirths)
+
+```
+
+Using some of the analysis functions we've discussed in class (i.e., `mutate()`, `filter()`, `group_by()`, `summarize()`, etc), write code that outputs the answer to the following question:
+
+For premature births, what are the **maximum** age of mothers and the **mean** birth weight for single babies, twins and triplets? Using the computed results, answer the question in 1-2 sentences. **HINT:** Use the function `max()` to determine the maximum age of mothers.
+
+```{r}
+
+NCbirths %>%
+  filter(Premie == 1) %>%
+  group_by(Plural) %>%
+  summarize(max_Mom = max(MomAge), mean_BirthWeight = mean(BirthWeightGm))
+
+```
+
+*The maximum age of premie mothers is 43 for single births, 40 for twins, and 37 weeks for triplets. The mean birth weight for premature babies is 2616g for single births, 1896g for twins, and 1772g for triplets.*
