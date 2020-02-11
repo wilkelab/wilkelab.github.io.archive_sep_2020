@@ -1,0 +1,57 @@
+```{r global_options, include=FALSE}
+
+library(knitr)
+opts_chunk$set(fig.align = "center", fig.height = 3, fig.width = 4)
+library(ggplot2)
+theme_set(theme_bw(base_size = 12))
+library(tidyverse)
+
+```
+## Homework 4
+
+*Enter your name and EID here*
+
+**This homework is due on Feb. 17, 2020 at 12:00pm. Please submit as a PDF file on Canvas.**
+
+**Problem 1a: (3 pts)** The following two data tables contain information about the hair and eye colors of male and female statistics students. Make these dataframes tidy and then combine them into a single dataframe using `pivot_wider()` and `bind_rows()`. 
+
+**Hint**: Before combining the dataframes, make sure to `mutate()` a new column specifying whether the students are male or female. Two dataframes can be combined with `bind_rows()` as long as the column names are identical and contain the same types of data.
+
+```{r }
+
+female <- read_csv("http://wilkelab.org/classes/SDS348/data_sets/female_haireyecolor.csv")
+male <- read_csv("http://wilkelab.org/classes/SDS348/data_sets/male_haireyecolor.csv")
+
+# Your R code here
+
+```
+
+**Problem 1b: (1 pts)** Using the data-frame you created above, compute the total number of students for each hair color (i.e., the sum of students that have brown, black, blond or red hair). How many students have each color of hair?
+
+```{r}
+
+# Your R code here
+
+```
+
+*Your answer here.*
+
+**Problem 2: (3 pts)** The `chickwts` dataset contains information on the weight of chicks after being fed different feed supplements. The different feed supplements are labeled casein, horsebean, linseed, meatmeal, soybean, and sunflower in the `feed` column. I have created a new data-frame (`feed_names`), that contains the abbreviated names of different feed supplements. Using one of the `dplyr` join functions, combine the two data-frames so that there is an additional `feed_abbr` column and all of the original columns and rows in chickwts are retained. Which join function is most appropriate to use and why? 
+
+```{r}
+
+head(chickwts)
+
+feed_names <- read_csv("http://wilkelab.org/classes/SDS348/data_sets/feed_names.csv")
+
+# Your R code here
+
+```
+
+*Your answer here.*
+
+**Problem 3: (3 pts)** Recall the `flights` dataset from lab 3 worksheet. Ask a **conceptual** question about the `flights` dataset. Your question should not repeat the questions from class materials. Describe in 1-2 sentences how you would answer this question with an analysis or a graph.
+
+*State your question.*
+
+*State your approach.*
