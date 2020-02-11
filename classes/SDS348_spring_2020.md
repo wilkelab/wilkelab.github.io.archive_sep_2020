@@ -78,6 +78,20 @@ Syllabus: [SDS348_syllabus_spring2020.pdf](/classes/SDS348/SDS348_syllabus_sprin
     - [HTML](/classes/SDS348/2020_spring/worksheets/class6.html)
     - [Solutions](/classes/SDS348/2020_spring/worksheets/class6_solutions.html)
 
+**7. Feb 11, 2020 – Working with tidy data**    
+
+* Slides: [class7.pdf](/classes/SDS348/2020_spring/slides/class7.pdf)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2020_spring/worksheets/class7.Rmd)
+    - [HTML](/classes/SDS348/2020_spring/worksheets/class7.html)
+
+**8. Feb 13, 2020 – Rearranging data tables with tidyr**    
+
+* Slides: [class8.pdf](/classes/SDS348/2020_spring/slides/class8.pdf)
+* tidyr vignette: [https://tidyr.tidyverse.org/articles/tidy-data.html](https://tidyr.tidyverse.org/articles/tidy-data.html)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2020_spring/worksheets/class8.Rmd)
+    - [HTML](/classes/SDS348/2020_spring/worksheets/class8.html)
 
 
 ## Homeworks
