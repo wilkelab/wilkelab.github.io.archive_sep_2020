@@ -84,6 +84,7 @@ Syllabus: [SDS348_syllabus_spring2020.pdf](/classes/SDS348/SDS348_syllabus_sprin
 * In-class worksheet:
     - [R Markdown](/classes/SDS348/2020_spring/worksheets/class7.Rmd)
     - [HTML](/classes/SDS348/2020_spring/worksheets/class7.html)
+    - [Solutions](/classes/SDS348/2020_spring/worksheets/class7_solutions.html)
 
 **8. Feb 13, 2020 – Rearranging data tables with tidyr**    
 
