@@ -156,9 +156,8 @@ All homeworks are due by noon (12:00pm) on the day they are due. Homeworks need 
     - [inner_join()](https://github.com/corydupai/OCH_codealong/blob/master/animated-inner-join.gif)
     - [anti_join()](https://github.com/corydupai/OCH_codealong/blob/master/animated-anti-join.gif)
 * Lab worksheet:
-    - [R Markdown](/classes/SDS348/2020_spring/labs/lab3.Rmd)
-    - [HTML](/classes/SDS348/2020_spring/labs/lab3.html)
-    - [HTML, Solutions](/classes/SDS348/2020_spring/labs/lab3-solution.html)
+    - [R Markdown](/classes/SDS348/2020_spring/labs/lab4.Rmd)
+    - [HTML](/classes/SDS348/2020_spring/labs/lab4.html)
 
  
 ## Projects
