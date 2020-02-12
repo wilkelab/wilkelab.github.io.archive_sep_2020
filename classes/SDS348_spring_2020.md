@@ -148,6 +148,18 @@ All homeworks are due by noon (12:00pm) on the day they are due. Homeworks need 
     - [R Markdown](/classes/SDS348/2020_spring/labs/lab3.Rmd)
     - [HTML](/classes/SDS348/2020_spring/labs/lab3.html)
     - [HTML, Solutions](/classes/SDS348/2020_spring/labs/lab3-solution.html)
+
+**3. Feb 11, 2020**
+* Animated visualizations of different join() functions: 
+    - [full_join()](https://github.com/corydupai/OCH_codealong/blob/master/animated-full-join.gif)
+    - [left_join()](https://github.com/corydupai/OCH_codealong/blob/master/animated-left-join.gif)
+    - [inner_join()](https://github.com/corydupai/OCH_codealong/blob/master/animated-inner-join.gif)
+    - [anti_join()](https://github.com/corydupai/OCH_codealong/blob/master/animated-anti-join.gif)
+* Lab worksheet:
+    - [R Markdown](/classes/SDS348/2020_spring/labs/lab3.Rmd)
+    - [HTML](/classes/SDS348/2020_spring/labs/lab3.html)
+    - [HTML, Solutions](/classes/SDS348/2020_spring/labs/lab3-solution.html)
+
  
 ## Projects
 
