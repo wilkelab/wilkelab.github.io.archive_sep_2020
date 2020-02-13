@@ -1,0 +1,71 @@
+```{r global_options, include=FALSE}
+
+library(knitr)
+opts_chunk$set(fig.align = "center", fig.height = 3, fig.width = 4)
+library(ggplot2)
+theme_set(theme_bw(base_size = 12))
+library(tidyverse)
+
+```
+## Lab Worksheet 4
+
+In my research, we are interested in protein interactions associated with the dynein proteins **heatr2** and **dnai2**. In order to characterize these interactions, we engineered versions of **heatr2** and **dnai2** that are attached to a GFP tag. We put them in embryos, then break open cells, and can "pull down" the tagged proteins using an antibody that specifically binds to GFP. Finally, we run this mixture through a mass spectrometer to identify the proteins that are bound to **GFP-heatr2** and **GFP-dnai2**.
+
+```{r }
+
+# data frames with spectral counts from the mass spectrometer (MS) for each experiment:
+heatr2_df <- read_csv("http://wilkelab.org/classes/SDS348/data_sets/frog_apms_heatr2.csv")
+head(heatr2_df)
+
+dnai2_df <- read_csv("http://wilkelab.org/classes/SDS348/data_sets/frog_apms_dnai2.csv")
+head(dnai2_df)
+
+# data frame with annotations for each protein in the frog proteome:
+frog_annotations <- read_csv("http://wilkelab.org/classes/SDS348/data_sets/frog_annotations.csv")
+head(frog_annotations)
+
+```
+
+**Problem 1:** The experiment data frames are already sorted so the best hits are at the top. However, the protein identifiers in the column `accession` are essentially uninterpretable without annotations. Use `left_join` to join the annotation data frame to both experiments and save them into a new dataframe. What kind of proteins do we see at the top? **HINT**: The `accession` column in the experiment data frames is the same as the `ID` column in the annotation dataframe.
+```{r }
+
+# Your R code goes here
+
+```
+*Your answer goes here.*
+
+**Problem 2:** Use `anti-join()` on both dataframes to see which proteins identifications are unique to each experiment. How many protein identifications are unique to **heatr2**? How many protein identifications are unique to **dnai2**? Finally, use `inner_join()` to see how many proteins the experiments have in common. How many proteins are found in both experiments?
+```{r }
+
+# Your R code goes here
+
+```
+*Your answer goes here.*
+
+**Problem 3:** I have already precomputed statistics in the experimental data frames in the column `PSM_zscore`. The z-score describes how many standard deviations each point is away from the population mean, i.e., the higher the better. We are only interested in proteins that are positively enriched, so for a one-tailed test a z-score of 1.65 corresponds to a p-value < 0.05 (we use a special z-score formula that ensures this is multiple-hypothesis corrected). 
+
+Use `filter()` on the column `PSM_zscores` in both dataframes so you only keep z-scores >= 1.65. Then, use `bind_rows()` to combine them. Before binding the rows, make sure to `mutate()` a new column in each data frame containing the experiment identifier, i.e., `mutate(exp_id = "heatr2")`.
+```{r }
+
+# Your R code goes here
+
+```
+
+**Problem 4:** Recall the `ldeaths` dataset from last week's homework. This dataset is is untidy, and we are going to make it tidy with `rownames_to_column()` and `pivot_longer()`. Take a few minutes to read the documentation on these two functions.
+```{r }
+
+ldeaths
+
+ldeaths_table <- read.table(text = "
+Jan  Feb  Mar  Apr  May  Jun  Jul  Aug  Sep  Oct  Nov  Dec
+1974 3035 2552 2704 2554 2014 1655 1721 1524 1596 2074 2199 2512
+1975 2933 2889 2938 2497 1870 1726 1607 1545 1396 1787 2076 2837
+1976 2787 3891 3179 2011 1636 1580 1489 1300 1356 1653 2013 2823
+1977 3102 2294 2385 2444 1748 1554 1498 1361 1346 1564 1640 2293
+1978 2815 3137 2679 1969 1870 1633 1529 1366 1357 1570 1535 2491
+1979 3084 2605 2573 2143 1693 1504 1461 1354 1333 1492 1781 1915
+")
+
+# Your R code goes here
+
+```
