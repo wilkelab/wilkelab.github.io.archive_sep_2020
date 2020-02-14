@@ -167,9 +167,9 @@ All homeworks are due by noon (12:00pm) on the day they are due. Homeworks need 
 All projects are due by noon (12:00pm) on the day they are due. Projects need to be submitted on Canvas, both in pdf format and as source code (plus data where needed).
 
 - Project 1 (due Fri., Feb 28, 2020):
-    - [Instructions](/classes/SDS348/2019_spring/projects/project1_instructions.html)
-    - [Grading rubric](/classes/SDS348/2019_spring/projects/project1_rubric.pdf)
-    - [Project Template (Rmd)](/classes/SDS348/2019_spring/projects/project1.Rmd)
-    - [Project Template (HTML)](/classes/SDS348/2019_spring/projects/project1.html)
+    - [Instructions](/classes/SDS348/2020_spring/projects/project1_instructions.html)
+    - [Grading rubric](/classes/SDS348/2020_spring/projects/project1_rubric.pdf)
+    - [Project Template (Rmd)](/classes/SDS348/2020_spring/projects/project1.Rmd)
+    - [Project Template (HTML)](/classes/SDS348/2020_spring/projects/project1.html)
 
 
