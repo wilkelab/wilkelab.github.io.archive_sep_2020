@@ -1,0 +1,69 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align = "center", fig.height = 5, fig.width = 6)
+library(tidyverse)
+theme_set(theme_bw(base_size = 12))
+```
+
+## Project 1
+*Enter your name and EID here*
+
+This is the dataset you will be working with:
+```{r}
+ufo_sightings <- 
+  read_csv("https://wilkelab.org/classes/SDS348/data_sets/ufo_sightings_clean.csv") %>%
+  separate(datetime, into = c("month", "day", "year"), sep = "/") %>%
+  separate(year, into = c("year", "time"), sep = " ") %>%
+  separate(date_posted, into = c("month_posted", "day_posted", "year_posted"), sep = "/") %>%
+  select(-time, -month_posted, -day_posted) %>%
+  mutate(year = as.numeric(year)) %>%
+  filter(!is.na(country))
+```
+
+### **Part 1**
+
+**Question:** How have patterns of UFO sightings developed in different US states since 1940?
+
+To answer this question, consider only the US states California (ca), Texas (tx), and New Mexico (nm), and discard all sightings before 1940. Find which of these states had the highest number of cumulative sightings since 1940. Then, using ggplot, make a plot that shows UFO sightings per year, plotted as a line graph.
+
+**Introduction:** *Your introduction here.*
+
+**Approach:** *Your approach here.*
+
+**Analysis:**
+```{r}
+
+# Your R code here
+
+```
+
+```{r }
+
+# Your R code here
+
+```
+
+**Discussion:** *Your discussion of results here.*
+
+### **Part 2**
+
+**Question:** *Your question here.*
+
+**Introduction:** *Your introduction here.*
+
+**Approach:** *Your approach here.*
+
+**Analysis:**
+```{r }
+
+# Your R code here
+
+```
+
+```{r }
+
+# Your R code here
+
+```
+
+**Discussion:** *Your discussion of results here.*
