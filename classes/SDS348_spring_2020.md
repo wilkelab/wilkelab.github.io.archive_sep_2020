@@ -95,6 +95,24 @@ Syllabus: [SDS348_syllabus_spring2020.pdf](/classes/SDS348/SDS348_syllabus_sprin
     - [HTML](/classes/SDS348/2020_spring/worksheets/class8.html)
     - [Solutions](/classes/SDS348/2020_spring/worksheets/class8_solutions.html)
 
+**9. Feb 18, 2020 – Principal Components Analysis (PCA)**    
+
+* Slides: [class9.pdf](/classes/SDS348/2020_spring/slides/class9.pdf)
+* Intro to PCA: [http://setosa.io/ev/principal-component-analysis/](http://setosa.io/ev/principal-component-analysis/)
+* PCA tutorial with mathematical background: [https://arxiv.org/pdf/1404.1100.pdf](https://arxiv.org/pdf/1404.1100.pdf)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2020_spring/worksheets/class9.Rmd)
+    - [HTML](/classes/SDS348/2020_spring/worksheets/class9.html)
+
+**10. Feb 20, 2020 – k-means clustering**
+
+* Slides: [class10.pdf](/classes/SDS348/2020_spring/slides/class10.pdf)
+* Interactive k-means demonstration: [https://www.naftaliharris.com/blog/visualizing-k-means-clustering/](https://www.naftaliharris.com/blog/visualizing-k-means-clustering/)
+* Stackoverflow post on [choosing the right number of clusters](https://stackoverflow.com/a/15376462/4975218)
+* Medium article: [The 5 clustering algorithms data scientists need to know.](https://towardsdatascience.com/the-5-clustering-algorithms-data-scientists-need-to-know-a36d136ef68)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2020_spring/worksheets/class10.Rmd)
+    - [HTML](/classes/SDS348/2020_spring/worksheets/class10.html)
 
 ## Homeworks
 
@@ -132,7 +150,7 @@ All homeworks are due by noon (12:00pm) on the day they are due. Homeworks need 
 * Lab worksheet:
     - [R Markdown](/classes/SDS348/2020_spring/labs/lab1.Rmd)
     - [HTML](/classes/SDS348/2020_spring/labs/lab1.html)
-    - [Solutions, HTML](/classes/SDS348/2020_spring/labs/lab1-solution.html)
+    - [HTML, Solutions](/classes/SDS348/2020_spring/labs/lab1-solution.html)
 
 **2. Jan 29, 2020**
 
