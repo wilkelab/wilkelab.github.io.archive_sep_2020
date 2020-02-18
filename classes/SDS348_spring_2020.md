@@ -189,5 +189,6 @@ All projects are due by noon (12:00pm) on the day they are due. Projects need to
     - [Grading rubric](/classes/SDS348/2020_spring/projects/project1_rubric.pdf)
     - [Project Template (Rmd)](/classes/SDS348/2020_spring/projects/project1.Rmd)
     - [Project Template (HTML)](/classes/SDS348/2020_spring/projects/project1.html)
+    - [Example project solution](/classes/SDS348/2020_spring/projects/project1_example_solution.html) ([source Rmd](/classes/SDS348/2020_spring/projects/project1_example_solution.Rmd))
 
 
