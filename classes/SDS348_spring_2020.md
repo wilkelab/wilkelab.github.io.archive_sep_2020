@@ -170,7 +170,7 @@ All homeworks are due by noon (12:00pm) on the day they are due. Homeworks need 
     - [HTML](/classes/SDS348/2020_spring/labs/lab3.html)
     - [HTML, Solutions](/classes/SDS348/2020_spring/labs/lab3-solution.html)
 
-**3. Feb 11, 2020**
+**4. Feb 11, 2020**
 * Animated visualizations of different join() functions: 
     - [full_join()](https://github.com/corydupai/OCH_codealong/blob/master/animated-full-join.gif)
     - [left_join()](https://github.com/corydupai/OCH_codealong/blob/master/animated-left-join.gif)
@@ -181,6 +181,13 @@ All homeworks are due by noon (12:00pm) on the day they are due. Homeworks need 
     - [HTML](/classes/SDS348/2020_spring/labs/lab4.html)
     - [HTML, Solutions](/classes/SDS348/2020_spring/labs/lab4-solution.html)
 
+**5. Feb. 18, 2020**
+* Decent step-by-step walkthrough of principal component calculations: [https://builtin.com/data-science/step-step-explanation-principal-component-analysis](https://builtin.com/data-science/step-step-explanation-principal-component-analysis)
+* Visualization of data input vs PCA output: [http://setosa.io/ev/principal-component-analysis/](http://setosa.io/ev/principal-component-analysis/) 
+* Visualization of eigenvectors/eigenvalues if you really want to dig in: [http://setosa.io/ev/eigenvectors-and-eigenvalues/](http://setosa.io/ev/eigenvectors-and-eigenvalues/)
+* Lab worksheet:
+    - [R Markdown](/classes/SDS348/2020_spring/labs/lab5.Rmd)
+    - [HTML](/classes/SDS348/2020_spring/labs/lab5.html)
  
 ## Projects
 
