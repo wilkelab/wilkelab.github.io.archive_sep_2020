@@ -1,0 +1,70 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align = "center", fig.height = 3, fig.width = 4)
+library(ggplot2)
+theme_set(theme_bw(base_size = 12))
+library(dplyr)
+library(tidyverse)
+```
+## Homework 4
+
+*Enter your name and EID here*
+
+**This homework is due on Feb. 17, 2020 at 12:00pm. Please submit as a PDF file on Canvas.**
+
+**Problem 1a: (3 pts)** The following two data tables contain information about the hair and eye colors of male and female statistics students. Make these dataframes tidy and then combine them into a single dataframe using `pivot_wider()` and `bind_rows()`. 
+
+**Hint**: Before combining the dataframes, make sure to `mutate()` a new column specifying whether the students are male or female. Two dataframes can be combined with `bind_rows()` as long as the column names are identical and contain the same types of data.
+
+```{r }
+
+female <- read_csv("http://wilkelab.org/classes/SDS348/data_sets/female_haireyecolor.csv")
+male <- read_csv("http://wilkelab.org/classes/SDS348/data_sets/male_haireyecolor.csv")
+
+female_tidy <- female %>%
+  pivot_longer(-Hair, names_to = "Eyes", values_to = "Num_Students") %>%
+  mutate(Sex = "Female")
+
+male_tidy <- male %>%
+  pivot_longer(-Hair, names_to = "Eyes", values_to = "Num_Students") %>%
+  mutate(Sex = "Male")
+
+combined <- bind_rows(female_tidy, male_tidy)
+
+combined
+
+```
+
+**Problem 1b: (1 pts)** Using the data-frame you created above, compute the total number of students for each hair color (i.e., the sum of students that have brown, black, blond or red hair). How many students have each color of hair?
+
+```{r}
+
+combined %>%
+  group_by(Hair) %>%
+  summarize(Total = sum(Num_Students))
+
+```
+
+*One hundred eight students have black hair, 127 students have blond hair, 286 students have brown hair, and 71 students have red hair.*
+
+**Problem 2: (3 pts)** The `chickwts` dataset contains information on the weight of chicks after being fed different feed supplements. The different feed supplements are labeled casein, horsebean, linseed, meatmeal, soybean, and sunflower in the `feed` column. I have created a new data-frame (`feed_names`), that contains the abbreviated names of different feed supplements. Using one of the `dplyr` join functions, combine the two data-frames so that there is an additional `feed_abbr` column and all of the original columns and rows in chickwts are retained. Which join function is most appropriate to use and why? 
+
+```{r}
+
+head(chickwts)
+
+feed_names <- read_csv("http://wilkelab.org/classes/SDS348/data_sets/feed_names.csv")
+
+new_feed_names <- left_join(chickwts, feed_names)
+
+new_feed_names
+
+```
+
+*The `left_join` function is most appropriate because we want to retain all of the observations in `chickwts`, while copying observations from `feed_names` when there is more than one observation for the same feed type.*
+
+**Problem 3: (3 pts)** Recall the `flights` dataset from lab 3 worksheet. Ask a **conceptual** question about the `flights` dataset. Your question should not repeat the questions from class materials. Describe in 1-2 sentences how you would answer this question with an analysis or a graph.
+
+*Question: Is there a relationship between aiports in New York and the air time of the flights from those airports?*
+
+*Answer approach: I could plot distributions of air time for the three airports to see if these distributions differ from each other. I could also run an ANOVA to assess whether the mean air times are different between the three airports.*
