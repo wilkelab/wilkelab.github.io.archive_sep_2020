@@ -32,18 +32,18 @@ pca$center  # information on how the variables were centered around 0
 pca$rotation   # resulting rotation matrix containing eigenvectors
 head(pca$x)  # these were the values that were rotated; I've wrapped it with the head() function to keep knit from printing all 136 rows
 
-bumpus.pca <- data.frame(bumpus, pca$x) # combine original data frame with PCs
+bumpus_pca <- data.frame(bumpus, pca$x) # combine original data frame with PCs
 
 # plot by sex
-ggplot(bumpus.pca, aes(x = PC1, y = PC2, color = Sex)) + 
+ggplot(bumpus_pca, aes(x = PC1, y = PC2, color = Sex)) + 
   geom_point()
 
 # plot by age
-ggplot(bumpus.pca, aes(x = PC1, y = PC2, color = Age)) + 
+ggplot(bumpus_pca, aes(x = PC1, y = PC2, color = Age)) + 
   geom_point()
 
 # plot by survival
-ggplot(bumpus.pca, aes(x = PC1, y = PC2, color = Survival)) + 
+ggplot(bumpus_pca, aes(x = PC1, y = PC2, color = Survival)) + 
   geom_point()
 ```
 
