@@ -1,0 +1,98 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align = "center", fig.height = 3, fig.width = 4)
+library(tidyverse)
+theme_set(theme_bw(base_size = 12))
+library(grid) # for `arrow()`
+```
+## Lab Worksheet 5
+
+In 1898, Hermon Bumpus, an American biologist working at Brown University, collected data on one of the first examples of natural selection directly observed in nature. Immediately following a bad winter storm, he collected 136 English house sparrows, *Passer domesticus*, and brought them indoors. Of these birds, 64 had died during the storm, but 72 recovered and survived. By comparing measurements of physical traits, Bumpus demonstrated physical differences between the dead and living birds. He interpreted this finding as evidence for natural selection as a result of this storm:
+
+```{r}
+bumpus <- read_csv("http://wilkelab.org/classes/SDS348/data_sets/bumpus_full.csv")
+head(bumpus)
+```
+
+The data set has three categorical variables (`Sex`, with levels `Male` and `Female`, `Age`, with levels `Adult` and `Young`, and `Survival`, with levels `Alive` and `Dead`) and nine numerical variables that hold various aspects of the birds' anatomy, such as wingspread, weight, etc.
+
+**Question 1: Perform a PCA on the numerical columns of this data set. Then make three plots potting the data as PC2 vs. PC1, colored by (i) sex, (ii) age, (iii) survival.**
+
+```{r}
+# do PCA
+pca <- bumpus %>%
+  select(-Sex, -Age, -Survival) %>%
+  scale() %>%
+  prcomp()
+
+pca
+
+pca$scale  # information on how the variables in the dataset were scaled
+pca$center  # information on how the variables were centered around 0
+pca$rotation   # resulting rotation matrix containing eigenvectors
+head(pca$x)  # these were the values that were rotated; I've wrapped it with the head() function to keep knit from printing all 136 rows
+
+bumpus_pca <- data.frame(bumpus, pca$x) # combine original data frame with PCs
+
+# plot by sex
+ggplot(bumpus_pca, aes(x = PC1, y = PC2, color = Sex)) + 
+  geom_point()
+
+# plot by age
+ggplot(bumpus_pca, aes(x = PC1, y = PC2, color = Age)) + 
+  geom_point()
+
+# plot by survival
+ggplot(bumpus_pca, aes(x = PC1, y = PC2, color = Survival)) + 
+  geom_point()
+```
+
+**Question 2: Now visualize the rotation matrix of the PCA obtained under Question 1.**
+
+**Hint:** Look at yesterday's in class worksheet to find the code for visualizing the rotation matrix with arrows.
+```{r, fig.height=10, fig.width=10}
+# capture the rotation matrix in a data frame
+rotation_data <- data.frame(pca$rotation) %>%
+  rownames_to_column(var = "bird_feature")
+
+# define a pleasing arrow style
+arrow_style <- arrow(
+  length = unit(0.05, "inches"),
+  type = "closed"
+)
+
+# now plot, using geom_segment() for arrows and geom_text for labels
+ggplot(rotation_data) +
+  geom_segment(aes(xend = PC1, yend = PC2), x = 0, y = 0, arrow = arrow_style) +
+  geom_text(aes(x = PC1, y = PC2, label = bird_feature), hjust = 0, size = 3, color = "red") +
+  xlim(-1., 1.25) +
+  ylim(-1., 1.) +
+  coord_fixed() # fix aspect ratio to 1:1
+```
+
+**Question 3: Given the four plots from Questions 1 and 2, how do you interpret PC1 and PC2? What does PC1 tell you about a data point? What does PC2 tell you about a data point?**
+
+PC1 seems to measure the overall body size of the birds. All variables contribute positively to PC1, hence the larger an animal the larger its PC1 value.
+
+PC2 seems to measure the difference between male and female birds. Most female birds score positively on PC2, and most male birds score negatively on PC2.
+
+**Question 4: What percentage of the variation in the data does PC1 explain?**
+
+**Hint:** Look at yesterday's in class worksheet to find the calculation for relative variance of each principal component.
+```{r}
+perc_variation <- 100 * (pca$sdev^2 / sum(pca$sdev^2))
+
+perc_df <- data.frame(percent = perc_variation, princ_comp = 1:length(perc_variation))
+
+ggplot(perc_df, aes(x = princ_comp, y = percent)) + 
+  geom_col() + 
+  geom_text(aes(label = round(percent, 2)), size = 4, vjust = -0.5) + 
+  ylim(0, 70)
+```
+PC1 explains 59% of the variation in the data.
+
+**Question 5: Does the PCA suggest any specific physical characteristics for birds that survived? Consider only PC1 and PC2 for your answer.**
+
+Not really, dead and alive birds seem to be sprinkled all over the PC2-vs-PC1 plot. There is maybe a minor tendency for dead birds to score more negative on PC2.
+
+
