@@ -1,5 +1,6 @@
 ```{r global_options, include=FALSE}
 library(knitr)
+library(grid) # for `arrow()`
 library(tidyverse)
 library(ggplot2)
 opts_chunk$set(fig.align = "center", fig.height = 4, fig.width = 6)
@@ -31,6 +32,8 @@ The column contents are as follows:
 + **Marital**: Marital status: 0=married or 1=not married.
 
 **Problem 1 (3 pts):** We are interested in assessing the relationships between the variables in the dataset `NCbirths` and the mothers' marital status, the mothers' smoking habits, and plural births. Perform a principal components analysis (PCA) on the dataset `NCbirths`. Remove the columns `Marital`, `Smoke`, and `Plural` prior to performing PCA. Create a scatterplot of PC1 vs. PC2. First, color each point bythe  mother's marital status, then color each point by the mother's smoking habit, and then color each point by the indicator of plural births. What do you observe? Visually, and without doing any calculations, do the different types of births cluster together in principal-component space? Do the smokers or married mothers cluster together?
+
+**Hint:** R automatically reads in the values for `Marital`, `Smoke`, and `Plural` as continuous numeric variables. To convert them to categories for colors in the plot, use `factor()`.
 
 ```{r}
 # your R code goes here

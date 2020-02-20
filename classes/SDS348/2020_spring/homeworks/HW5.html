@@ -7,6 +7,7 @@
 <meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -157,18 +158,6 @@ summary {
 }
 </style>
 
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
 <!-- code folding -->
 
 
@@ -235,6 +224,7 @@ $(document).ready(function () {
 <li><strong>Marital</strong>: Marital status: 0=married or 1=not married.</li>
 </ul>
 <p><strong>Problem 1 (3 pts):</strong> We are interested in assessing the relationships between the variables in the dataset <code>NCbirths</code> and the mothers’ marital status, the mothers’ smoking habits, and plural births. Perform a principal components analysis (PCA) on the dataset <code>NCbirths</code>. Remove the columns <code>Marital</code>, <code>Smoke</code>, and <code>Plural</code> prior to performing PCA. Create a scatterplot of PC1 vs. PC2. First, color each point bythe mother’s marital status, then color each point by the mother’s smoking habit, and then color each point by the indicator of plural births. What do you observe? Visually, and without doing any calculations, do the different types of births cluster together in principal-component space? Do the smokers or married mothers cluster together?</p>
+<p><strong>Hint:</strong> R automatically reads in the values for <code>Marital</code>, <code>Smoke</code>, and <code>Plural</code> as continuous numeric variables. To convert them to categories for colors in the plot, use <code>factor()</code>.</p>
 <pre class="r"><code># your R code goes here</code></pre>
 <p><em>Your answer goes here. 2-3 sentences only.</em></p>
 <p><strong>Problem 2 (4 pts):</strong> Now visualize the rotation matrix of the PCA obtained under Problem 1.</p>
@@ -263,6 +253,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
