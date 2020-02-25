@@ -115,6 +115,25 @@ Syllabus: [SDS348_syllabus_spring2020.pdf](/classes/SDS348/SDS348_syllabus_sprin
 * In-class worksheet:
     - [R Markdown](/classes/SDS348/2020_spring/worksheets/class10.Rmd)
     - [HTML](/classes/SDS348/2020_spring/worksheets/class10.html)
+    - [Solutions](/classes/SDS348/2020_spring/worksheets/class10_solutions.html)
+
+**11. Feb 25, 2020 – Binary prediction/logistic regression**
+
+* Slides: [class11.pdf](/classes/SDS348/2020_spring/slides/class11.pdf)
+* Wikipedia page on logistic regression: [https://en.wikipedia.org/wiki/Logistic_regression](https://en.wikipedia.org/wiki/Logistic_regression)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2020_spring/worksheets/class11.Rmd)
+    - [HTML](/classes/SDS348/2020_spring/worksheets/class11.html)
+
+**12. Feb 27, 2020 – Sensitivity/Specificity, ROC curves**
+
+* Slides: [class12.pdf](/classes/SDS348/2020_spring/slides/class12.pdf)
+* Wikipedia page on sensitivity and specificity: [https://en.wikipedia.org/wiki/Sensitivity_and_specificity](https://en.wikipedia.org/wiki/Sensitivity_and_specificity)
+* Wikipedia page on ROC curves: [https://en.wikipedia.org/wiki/Receiver_operating_characteristic](https://en.wikipedia.org/wiki/Receiver_operating_characteristic)
+* ROC animations: [https://github.com/dariyasydykova/open_projects/tree/master/ROC_animation](https://github.com/dariyasydykova/open_projects/tree/master/ROC_animation)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2020_spring/worksheets/class12.Rmd)
+    - [HTML](/classes/SDS348/2020_spring/worksheets/class12.html)
 
 ## Homeworks
 
