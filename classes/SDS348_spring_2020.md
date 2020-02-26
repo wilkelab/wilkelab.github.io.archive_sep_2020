@@ -117,6 +117,25 @@ Syllabus: [SDS348_syllabus_spring2020.pdf](/classes/SDS348/SDS348_syllabus_sprin
     - [HTML](/classes/SDS348/2020_spring/worksheets/class10.html)
     - [Solutions](/classes/SDS348/2020_spring/worksheets/class10_solutions.html)
 
+**11. Feb 25, 2020 – Binary prediction/logistic regression**
+
+* Slides: [class11.pdf](/classes/SDS348/2020_spring/slides/class11.pdf)
+* Wikipedia page on logistic regression: [https://en.wikipedia.org/wiki/Logistic_regression](https://en.wikipedia.org/wiki/Logistic_regression)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2020_spring/worksheets/class11.Rmd)
+    - [HTML](/classes/SDS348/2020_spring/worksheets/class11.html)
+    - [Solutions](/classes/SDS348/2020_spring/worksheets/class11_solutions.html)
+
+
+**12. Feb 27, 2020 – Sensitivity/Specificity, ROC curves**
+
+* Slides: [class12.pdf](/classes/SDS348/2020_spring/slides/class12.pdf)
+* Wikipedia page on sensitivity and specificity: [https://en.wikipedia.org/wiki/Sensitivity_and_specificity](https://en.wikipedia.org/wiki/Sensitivity_and_specificity)
+* Wikipedia page on ROC curves: [https://en.wikipedia.org/wiki/Receiver_operating_characteristic](https://en.wikipedia.org/wiki/Receiver_operating_characteristic)
+* ROC animations: [https://github.com/dariyasydykova/open_projects/tree/master/ROC_animation](https://github.com/dariyasydykova/open_projects/tree/master/ROC_animation)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2020_spring/worksheets/class12.Rmd)
+    - [HTML](/classes/SDS348/2020_spring/worksheets/class12.html)
 
 ## Homeworks
 
@@ -196,9 +215,13 @@ All homeworks are due by noon (12:00pm) on the day they are due. Homeworks need 
     - [R Markdown](/classes/SDS348/2020_spring/labs/lab5.Rmd)
     - [HTML](/classes/SDS348/2020_spring/labs/lab5.html)
     - [HTML, Solutions](/classes/SDS348/2020_spring/labs/lab5-solution.html)
- 
-## Projects
 
+**6. Feb. 25, 2020**
+* Lab worksheet:
+    - [R Markdown](/classes/SDS348/2020_spring/labs/lab6.Rmd)                 
+    - [HTML](/classes/SDS348/2020_spring/labs/lab6.html)
+
+## Projects
 All projects are due by noon (12:00pm) on the day they are due. Projects need to be submitted on Canvas, both in pdf format and as source code (plus data where needed).
 
 - Project 1 (due Fri., Feb 28, 2020):
