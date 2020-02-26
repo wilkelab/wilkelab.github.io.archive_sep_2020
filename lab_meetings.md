@@ -20,7 +20,7 @@ Lab meetings are held Fridays from 11 AM -- 12:30 PM in MBB 3.204.
 | 2/14/20 || Mackenzie || Alexis ||
 | 2/21/20 || Adam || Mackenzie ||
 | 2/28/20 || Cory || Adam ||
-| 3/6/20 || Anastasiya || TBD ||
+| 3/6/20 || Anastasiya || Tanvi ||
 | 3/13/20 || TBD || Anastasiya ||
 |------+---+--------------------+---+----------------------+---+-------|
 {:.widetable}
