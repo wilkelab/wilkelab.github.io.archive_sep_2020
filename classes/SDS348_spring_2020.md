@@ -220,6 +220,7 @@ All homeworks are due by noon (12:00pm) on the day they are due. Homeworks need 
 * Lab worksheet:
     - [R Markdown](/classes/SDS348/2020_spring/labs/lab6.Rmd)                 
     - [HTML](/classes/SDS348/2020_spring/labs/lab6.html)
+    - [HTML, Solutions](/classes/SDS348/2020_spring/labs/lab6-solution.html)
 
 ## Projects
 All projects are due by noon (12:00pm) on the day they are due. Projects need to be submitted on Canvas, both in pdf format and as source code (plus data where needed).
