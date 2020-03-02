@@ -136,6 +136,7 @@ Syllabus: [SDS348_syllabus_spring2020.pdf](/classes/SDS348/SDS348_syllabus_sprin
 * In-class worksheet:
     - [R Markdown](/classes/SDS348/2020_spring/worksheets/class12.Rmd)
     - [HTML](/classes/SDS348/2020_spring/worksheets/class12.html)
+    - [Solutions](/classes/SDS348/2020_spring/worksheets/class12_solutions.html)
 
 ## Homeworks
 
