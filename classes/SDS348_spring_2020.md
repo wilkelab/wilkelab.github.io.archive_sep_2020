@@ -168,7 +168,9 @@ All homeworks are due by noon (12:00pm) on the day they are due. Homeworks need 
 	- [R Markdown](/classes/SDS348/2020_spring/homeworks/HW5.Rmd)
 	- [HTML](/classes/SDS348/2020_spring/homeworks/HW5.html)
 
-	
+* Homework 6 (due Mar 9, 2020)
+	- [R Markdown](/classes/SDS348/2020_spring/homeworks/HW6.Rmd)
+	- [HTML](/classes/SDS348/2020_spring/homeworks/HW6.html)	
 	
 ## Labs
 

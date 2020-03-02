@@ -1,0 +1,88 @@
+```{r global_options, include=FALSE}
+
+library(knitr)
+opts_chunk$set(fig.align = "center", fig.height = 4, fig.width = 6)
+library(tidyverse)
+theme_set(theme_bw(base_size = 12))
+library(ggthemes) # for scale_color_colorblind()
+library(plotROC) # for geom_roc() and calc_auc()
+
+```
+## Homework 6
+
+*Enter your name and EID here*
+
+**This homework is due on Mar. 9, 2020 at 12:00pm. Please submit as a PDF file on Canvas.**
+
+For this homework, you will work with a dataset collected by John Holcomb from the North Carolina State Center for Health and Environmental Statistics. This data set contains 1409 birth records from North Carolina in 2001.
+
+```{r}
+
+NCbirths <- read_csv("http://wilkelab.org/classes/SDS348/data_sets/NCbirths.csv")
+
+head(NCbirths)
+
+```
+The column contents are as follows:
+
++ **Plural**: 1=single birth, 2=twins, 3=triplets.
++ **Sex**: sex of the baby 1=male 2=female.
++ **MomAge**: Mother's age (in years).
++ **Weeks**: Completed weeks of gestation.
++ **Gained**: Weight gained during pregnancy (in pounds).
++ **Smoke**: Mother is a smoker: 1=yes, 0=no.
++ **BirthWeightGm**: Birth weight in grams.
++ **Low**: Indicator for low birth weight, 1=2500 grams or less, 0=otherwise.
++ **Premie**: Indicator for premature birth, 1=36 weeks or sooner, 0=otherwise.
++ **Marital**: Marital status: 0=married or 1=not married.
+
+**Problem 1: (5 pts)** 
+
+**a. (1 pt)** Make a logistic regression model that predicts premature births (`Premie `) from birth weight (`BirthWeightGm`), plural births (`Plural`), and weight gained during pregnancy (`Gained`) in the `NCbirths` data set. Show the summary (using `summary()`) of your model below.
+
+```{r}
+
+# Your R code here
+
+```
+
+**b. (1 pt)** Make a plot to show how the model separates premature births from regular births. Your plot should use the the fitted probabilities and/or the linear predictors, and you should color your geom by the indicator of premature births.
+
+```{r}
+
+# Your R code here
+
+```
+
+**c. (3 pts)** Use the probability cut-off of 0.50 to classify a birth as premature or non-premature. Calculate the **true positive rate** and the **false positive rate** and interpret these rates in the context of the `NCbirths` dataset. Your answer should mention something about premature births and the three predictors in part a.
+
+```{r}
+
+# Your R code here
+
+```
+
+*Your answer here.*
+
+**Problem 1: (5 pts)**  
+**a. (1 pt)** Plot an ROC curve for the model that you created in problem 1a. Does the model perform better than a model in which you randomly classify a birth as premature or non-premature? Explain your answer in 1-2 sentences.
+
+**HINT:** Random classification would lie along `y = x`.
+
+```{r}
+
+# Your R code here
+
+```
+
+*Your answer here*
+
+**b. (4 pts)** Use the mothers' marital status (`Marital`) and the mothers' age (`MomAge`) as a new set of predictor variables for premature births, and create a logistic regression model. Plot an ROC curve for your newly-created model and, on the same plot, add an ROC curve from your model in problem 1a. What can you conclude from your plot? Which model performs better and why? Support your conclusions **with AUC values for each model**.
+
+```{r}
+
+# Your R code here
+
+```
+
+*Your answer here.*
