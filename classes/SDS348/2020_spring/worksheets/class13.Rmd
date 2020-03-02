@@ -1,0 +1,56 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=3, fig.width=4)
+```
+## In-class worksheet 13
+**March 3, 2020**
+
+In this worksheet, we will use the libraries tidyverse, plotROC, and ggthemes:
+```{r message=FALSE}
+library(tidyverse)
+theme_set(theme_bw(base_size=12)) # set default ggplot2 theme
+library(plotROC)
+library(ggthemes)
+```
+
+# 1. Working with training and test data sets
+
+We continue working with the biopsy data set:
+```{r}
+biopsy <- read_csv("http://wilkelab.org/classes/SDS348/data_sets/biopsy.csv")
+biopsy$outcome <- factor(biopsy$outcome) # make outcome a factor
+```
+
+The following code splits the biopsy data set into a random training and test set:
+```{r}
+train_fraction <- 0.4 # fraction of data for training purposes
+set.seed(126)  # set the seed to make the partition reproductible
+train_size <- floor(train_fraction * nrow(biopsy)) # number of observations in training set
+train_indices <- sample(1:nrow(biopsy), size = train_size)
+
+train_data <- biopsy[train_indices, ] # get training data
+test_data <- biopsy[-train_indices, ] # get test data
+```
+
+Fit a logistic regression model on the training data set, then predict the outcome on the test data set, and plot the resulting ROC curves. Limit the x-axis range from 0 to 0.15 to zoom into the ROC curve. (Hint: Do **not** use `coord_fixed()`.)
+```{r}
+# model to use: 
+# outcome ~ clump_thickness + uniform_cell_size + uniform_cell_shape
+
+# Your R code goes here.
+```
+
+# 2. Area under the ROC curves
+
+You can calculate the areas under the ROC curves by running `calc_auc()` on a plot generated with `geom_roc()` (see previous worksheet). Use this function to calculate the area under the training and test curve for the model `outcome ~ clump_thickness`. For this exercise, generate a new set of training and test datasets with a different fraction of training data from before.
+```{r}
+# Your R code goes here.
+```
+
+# 3. If this was easy
+
+Write code that combines the AUC values calculated by `calc_auc()` with the correct group names and orders the output in descending order of AUC. (Hint: We have seen similar code in the previous worksheet.)
+
+```{r}
+# Your R code goes here.
+```

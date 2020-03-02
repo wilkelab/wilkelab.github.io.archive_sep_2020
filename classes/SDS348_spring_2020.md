@@ -138,6 +138,27 @@ Syllabus: [SDS348_syllabus_spring2020.pdf](/classes/SDS348/SDS348_syllabus_sprin
     - [HTML](/classes/SDS348/2020_spring/worksheets/class12.html)
     - [Solutions](/classes/SDS348/2020_spring/worksheets/class12_solutions.html)
 
+**13. Mar 3, 2020 – Training and test data sets, cross-validation**
+
+* Slides: [class13.pdf](/classes/SDS348/2020_spring/slides/class13.pdf)
+* Twitter thread: [Information in ROC curves](https://twitter.com/cecilejanssens/status/1233791846784086023?s=20)
+* Wikipedia page on cross-validation: [here](https://en.wikipedia.org/wiki/Cross-validation_%28statistics%29)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2020_spring/worksheets/class13.Rmd)
+    - [HTML](/classes/SDS348/2020_spring/worksheets/class13.html)
+ 
+**14. Mar 5, 2020 – Introduction to python, basic data structures**
+
+* Slides: [class14.pdf](/classes/SDS348/2020_spring/slides/class14.pdf)
+* Alternative 1 to educcomp: [Google Collaboratorium](https://colab.research.google.com)
+* Alternative 2 to educcomp:  [Anaconda](https://www.continuum.io/distribution)
+* Official Python3 tutorial: [https://docs.python.org/3/tutorial/](https://docs.python.org/3/tutorial/)
+* Chapter 3 of the official tutorial: [An informal introduction](https://docs.python.org/3/tutorial/introduction.html)
+* In-class worksheet:
+    - [Jupyter Notebook](/classes/SDS348/2020_spring/worksheets/class14.ipynb)
+    - [HTML](/classes/SDS348/2020_spring/worksheets/class14.html)
+
+
 ## Homeworks
 
 All homeworks are due by noon (12:00pm) on the day they are due. Homeworks need to be submitted as pdf files on Canvas.
