@@ -146,6 +146,8 @@ Syllabus: [SDS348_syllabus_spring2020.pdf](/classes/SDS348/SDS348_syllabus_sprin
 * In-class worksheet:
     - [R Markdown](/classes/SDS348/2020_spring/worksheets/class13.Rmd)
     - [HTML](/classes/SDS348/2020_spring/worksheets/class13.html)
+    - [Solutions](/classes/SDS348/2020_spring/worksheets/class13_solutions.html)
+
  
 **14. Mar 5, 2020 – Introduction to python, basic data structures**
 
