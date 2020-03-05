@@ -1,0 +1,109 @@
+```{r global_options, include=FALSE}
+library(knitr)
+library(tidyverse)
+library(ggplot2)
+opts_chunk$set(fig.align = "center", fig.height = 4, fig.width = 6)
+theme_set(theme_bw(base_size = 12))
+
+color_palette <- c("#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7", "#999999")
+```
+## Homework 5
+*Enter your name and EID here*
+
+**This homework is due on Mar. 2, 2020 at 12:00pm. Please submit as a PDF file on Canvas.**
+
+For this homework, recall the birth record dataset collected by John Holcomb from the North Carolina State Center for Health and Environmental Statistics. This data set contains 1409 birth records from North Carolina in 2001.
+
+```{r}
+
+NCbirths <- read_csv("http://wilkelab.org/classes/SDS348/data_sets/NCbirths.csv")
+head(NCbirths)
+
+```
+
+The column contents are as follows:
+
++ **Plural**: 1=single birth, 2=twins, 3=triplets.
++ **Sex**: Sex of the baby 1=male 2=female.
++ **MomAge**: Mother's age (in years).
++ **Weeks**: Completed weeks of gestation.
++ **Gained**: Weight gained during pregnancy (in pounds).
++ **Smoke**: Mother is a smoker: 1=yes, 0=no.
++ **BirthWeightGm**: Birth weight in grams.
++ **Low**: Indicator for low birth weight, 1=2500 grams or less, 0=otherwise.
++ **Premie**: Indicator for premature birth, 1=36 weeks or sooner, 0=otherwise.
++ **Marital**: Marital status: 0=married or 1=not married.
+
+**Problem 1 (3 pts):** We are interested in assessing the relationships between the variables in the dataset `NCbirths` and the mothers' marital status, the mothers' smoking habits, and plural births. Perform a principal components analysis (PCA) on the dataset `NCbirths`. Remove the columns `Marital`, `Smoke`, and `Plural` prior to performing PCA. Create a scatterplot of PC1 vs. PC2. First, color each point bythe  mother's marital status, then color each point by the mother's smoking habit, and then color each point by the indicator of plural births. What do you observe? Visually, and without doing any calculations, do the different types of births group together in principal-component space? Do the smokers or married mothers cluster together?
+
+```{r}
+
+pca <- NCbirths %>% 
+  select(-Marital, -Smoke, -Plural) %>% 
+  scale() %>% 
+  prcomp()
+
+pca_data <- data.frame(pca$x, NCbirths)
+
+ggplot(pca_data, aes(x = PC1, y = PC2, color = factor(Marital))) + 
+  geom_point() + 
+  scale_color_manual(values = color_palette)
+
+ggplot(pca_data, aes(x = PC1, y = PC2, color = factor(Smoke))) + 
+  geom_point() + 
+  scale_color_manual(values = color_palette)
+
+ggplot(pca_data, aes(x = PC1, y = PC2, color = factor(Plural))) + 
+  geom_point() + 
+  scale_color_manual(values = color_palette)
+
+```
+*The samples do not seem to cluster based on the marital status and smoking habits of mothers. There seems to be one distinct grouping that mostly contains data for single births, and two groupings that contain data for single births, twins, and triplets.*
+
+**Problem 2 (4 pts):** Now visualize the rotation matrix of the PCA obtained under Problem 1. 
+```{r}
+
+# capture the rotation matrix in a data frame
+rotation_data <- data.frame(pca$rotation, variable = row.names(pca$rotation))
+
+# define a pleasing arrow style
+arrow_style <- arrow(
+  length = unit(0.05, "inches"),
+  type = "closed"
+)
+# now plot, using geom_segment() for arrows and geom_text for labels
+ggplot(rotation_data) +
+  geom_segment(aes(xend = PC1, yend = PC2), x = 0, y = 0, arrow = arrow_style) +
+  geom_text(aes(x = PC1, y = PC2, label = variable), hjust = 0, size = 3, color = "red") +
+  xlim(-1., 1.) +
+  ylim(-1., 1.) +
+  coord_fixed() # fix aspect ratio to 1:1
+
+```
+
+Given the plots from Problem 1 and the arrow plot you made, how do you interpret PC1 and PC2? What does PC1 tell you about a data point? What does PC2 tell you about a data point?
+
+*Most of the variables contribute to PC1 and to PC2. The variable `MomAge` that measures the mother's age contributes very little to PC1 and PC2.*
+
+*PC1 seems to measure the difference between single and plural births, baby's weight, and gestation time. PC2 seems to measure the mother's health and sex of the baby.*
+
+**Problem 3 (3 pts):** Create a bar plot that shows the percent variance explained by each principal component. State how much variance is explained by each of the principal components 1 through 4.
+
+```{r}
+
+percent <- 100 * pca$sdev^2 / sum(pca$sdev^2)
+
+percent
+
+perc_data <- top_n(data.frame(percent = percent, PC = 1:length(percent)), 10, percent)
+
+ggplot(perc_data, aes(x = factor(PC), y = percent)) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = round(percent, 2)), size = 4, vjust = -.5) +
+  ylim(0, 50) +
+  xlab("Principal Component") +
+  ylab("Percent Variance")
+
+```
+
+*Principal components 1-4 explain 39.8%, 14.8%, 14.4%, and 14.0% of the variance, respectively.*
