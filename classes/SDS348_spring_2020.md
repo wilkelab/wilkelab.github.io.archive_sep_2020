@@ -161,6 +161,23 @@ Syllabus: [SDS348_syllabus_spring2020.pdf](/classes/SDS348/SDS348_syllabus_sprin
     - [HTML](/classes/SDS348/2020_spring/worksheets/class14.html)
     - [Solutions](/classes/SDS348/2020_spring/worksheets/class14_solutions.html)
 
+**15. Mar 10, 2020 – Control flow in python**
+
+* Slides: [class15.pdf](/classes/SDS348/2020_spring/slides/class15.pdf)
+* Chapter 4.1–4.5 of the official tutorial: [More Control Flow Tools](https://docs.python.org/3/tutorial/controlflow.html)
+* Chapter 5.5 of the official tutorial: [Dictionaries](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)
+* In-class worksheet:
+    - [Jupyter Notebook](/classes/SDS348/2020_spring/worksheets/class15.ipynb)
+    - [HTML](/classes/SDS348/2020_spring/worksheets/class15.html)
+
+**16. Mar 12, 2020 – Functions in python**
+
+* Slides: [class16.pdf](/classes/SDS348/2020_spring/slides/class16.pdf)
+* Chapter 4.6, 4.7 of the official tutorial: [Defining functions](https://docs.python.org/3/tutorial/controlflow.html#defining-functions)
+* In-class worksheet:
+    - [Jupyter Notebook](/classes/SDS348/2020_spring/worksheets/class16.ipynb)
+    - [HTML](/classes/SDS348/2020_spring/worksheets/class16.html)
+
 
 ## Homeworks
 
