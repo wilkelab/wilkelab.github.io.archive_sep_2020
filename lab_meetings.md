@@ -16,12 +16,21 @@ Lab meetings are held Fridays from 11 AM -- 12:30 PM in MBB 3.204.
 | 1/17/20 || Cory || Anastasiya ||
 | 1/24/20 || Kuang || Cory || 
 | 1/31/20 || --- || --- || No lab meeting.
-| 2/7/20 || Alexis || Kuang ||
-| 2/14/20 || Mackenzie || Alexis ||
+| 2/7/20 || Vy || Kuang ||
+| 2/14/20 || Mackenzie || Vy ||
 | 2/21/20 || Adam || Mackenzie ||
 | 2/28/20 || Cory || Adam ||
 | 3/6/20 || Anastasiya || Tanvi ||
-| 3/13/20 || TBD || Anastasiya ||
+| 3/13/20 || Kuang || Anastasiya ||
+| 3/20/20 || --- || --- || No lab meeting.
+| 3/27/20 || --- || --- || No lab meeting.
+| 4/3/20 || Alexis || Kuang ||
+| 4/10/20 || Cory ||  Alexis ||
+| 4/17/20 || Chase || Cory ||
+| 4/24/20 || Mackenzie || Chase ||
+| 5/1/20 || Vy || Mackenzie ||
+| 5/8/20 || Tanvi || Vy ||
+| 5/15/20 || Adam || Tanvi ||
 |------+---+--------------------+---+----------------------+---+-------|
 {:.widetable}
 
