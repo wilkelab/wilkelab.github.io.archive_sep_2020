@@ -280,6 +280,7 @@ All homeworks are due by noon (12:00pm) on the day they are due. Homeworks need 
     - [HTML, Solutions](/classes/SDS348/2020_spring/labs/lab7-solution.html)
 
 **8. Mar. 11, 2020**
+* Python style guide: [https://www.python.org/dev/peps/pep-0008/#code-lay-out](https://www.python.org/dev/peps/pep-0008/#code-lay-out)
 * Lab worksheet:
     - [R Markdown](/classes/SDS348/2020_spring/labs/lab8.Rmd)                 
     - [HTML](/classes/SDS348/2020_spring/labs/lab8.html)
@@ -292,6 +293,8 @@ All projects are due by noon (12:00pm) on the day they are due. Projects need to
     - [Grading rubric](/classes/SDS348/2020_spring/projects/project1_rubric.pdf)
     - [Project Template (Rmd)](/classes/SDS348/2020_spring/projects/project1.Rmd)
     - [Project Template (HTML)](/classes/SDS348/2020_spring/projects/project1.html)
-    - [Example project solution](/classes/SDS348/2020_spring/projects/project1_example_solution.html) ([source Rmd](/classes/SDS348/2020_spring/projects/project1_example_solution.Rmd))
-
+    - [Project Template, Solutions (HTML)](/classes/SDS348/2020_spring/projects/project1-solutions.html)
+- Project 1 Example
+    - [Example project, solution](/classes/SDS348/2020_spring/projects/project1_example_solution.html)
+    - [Example project, Rmd](/classes/SDS348/2020_spring/projects/project1_example_solution.Rmd))
 
