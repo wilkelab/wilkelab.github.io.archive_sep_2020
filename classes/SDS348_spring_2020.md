@@ -282,7 +282,7 @@ All homeworks are due by noon (12:00pm) on the day they are due. Homeworks need 
 **8. Mar. 11, 2020**
 * Python style guide: [https://www.python.org/dev/peps/pep-0008/#code-lay-out](https://www.python.org/dev/peps/pep-0008/#code-lay-out)
 * Lab worksheet:
-    - [Jupyter Notebook](/classes/SDS348/2020_spring/labs/lab8.Rmd)                 
+    - [Jupyter Notebook](/classes/SDS348/2020_spring/labs/lab8.ipynb)                 
     - [HTML](/classes/SDS348/2020_spring/labs/lab8.html)
 
 ## Projects
