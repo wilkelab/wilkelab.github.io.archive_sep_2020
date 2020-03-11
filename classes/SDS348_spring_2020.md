@@ -215,7 +215,7 @@ All homeworks are due by noon (12:00pm) on the day they are due. Homeworks need 
 	- [HTML](/classes/SDS348/2020_spring/homeworks/HW6.html)	
 
 * Homework 7 (due Mar 23, 2020)
-	- [R Markdown](/classes/SDS348/2020_spring/homeworks/HW7.Rmd)
+	- [Jupyter Notebook](/classes/SDS348/2020_spring/homeworks/HW7.Rmd)
 	- [HTML](/classes/SDS348/2020_spring/homeworks/HW7.html)	
 	
 ## Labs
@@ -282,7 +282,7 @@ All homeworks are due by noon (12:00pm) on the day they are due. Homeworks need 
 **8. Mar. 11, 2020**
 * Python style guide: [https://www.python.org/dev/peps/pep-0008/#code-lay-out](https://www.python.org/dev/peps/pep-0008/#code-lay-out)
 * Lab worksheet:
-    - [R Markdown](/classes/SDS348/2020_spring/labs/lab8.Rmd)                 
+    - [Jupyter Notebook](/classes/SDS348/2020_spring/labs/lab8.Rmd)                 
     - [HTML](/classes/SDS348/2020_spring/labs/lab8.html)
 
 ## Projects
