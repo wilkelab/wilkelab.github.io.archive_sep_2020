@@ -13090,7 +13090,7 @@ div#notebook {
 <li>Use <code>len()</code> to find the number of items in the list.</li>
 <li>Remove any number of amino acids from your list using <code>.remove()</code>.</li>
 <li>How many amino acids are in your list now? (Use <code>len()</code> again.)</li>
-<li>Add the amino acid "selenocysteine" to your list.</li>
+<li>Add the amino acid "selenocysteine" to your list using the function <code>append()</code>.</li>
 </ol>
 
 </div>
@@ -13103,8 +13103,8 @@ div#notebook {
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># create a list containing the amino acids arginine, alanine, cysteine,</span>
 <span class="c1"># histine, glutamic acid, and leucine</span>
-<span class="n">aa</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;arginine&#39;</span><span class="p">,</span> <span class="s1">&#39;alanine&#39;</span><span class="p">,</span> <span class="s1">&#39;cysteine&#39;</span><span class="p">,</span> <span class="s1">&#39;histidine&#39;</span><span class="p">,</span> <span class="s1">&#39;alanine&#39;</span><span class="p">,</span>
-     <span class="s1">&#39;glutamic acid&#39;</span><span class="p">,</span> <span class="s1">&#39;leucine&#39;</span><span class="p">]</span>
+<span class="n">aa</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;arginine&#39;</span><span class="p">,</span> <span class="s1">&#39;alanine&#39;</span><span class="p">,</span> <span class="s1">&#39;cysteine&#39;</span><span class="p">,</span> <span class="s1">&#39;histidine&#39;</span><span class="p">,</span> 
+      <span class="s1">&#39;alanine&#39;</span><span class="p">,</span> <span class="s1">&#39;glutamic acid&#39;</span><span class="p">,</span> <span class="s1">&#39;leucine&#39;</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">aa</span><span class="p">)</span>
 </pre></div>
 
@@ -13171,7 +13171,7 @@ div#notebook {
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># find the length of the list</span>
 <span class="n">aa_length</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">aa</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">aa_length</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;length of list =&quot;</span><span class="p">,</span> <span class="n">aa_length</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13188,7 +13188,7 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>7
+<pre>length of list = 7
 </pre>
 </div>
 </div>
@@ -13204,8 +13204,8 @@ div#notebook {
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># remove &#39;alanine&#39; from the list</span>
 <span class="n">aa</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s1">&#39;alanine&#39;</span><span class="p">)</span>
-<span class="n">aa_new_length</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">aa</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">aa_new_length</span><span class="p">)</span>
+<span class="n">aa_length</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">aa</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;length of new list =&quot;</span><span class="p">,</span> <span class="n">aa_length</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13222,7 +13222,7 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>6
+<pre>length of new list = 6
 </pre>
 </div>
 </div>
@@ -13237,6 +13237,20 @@ div#notebook {
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># note that only one &#39;alanine&#39; was removed from the list</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># add selenocysteine to the list</span>
+<span class="n">aa</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;selenocysteine&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13260,7 +13274,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># define a dictionary where the keys are the amino acids</span>
@@ -13295,7 +13309,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># add a &#39;selenocysteine&#39; key to the dictionary</span>
@@ -13329,7 +13343,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># remove a key-value pair from the dictionary</span>
@@ -13362,7 +13376,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># define an empty string</span>
@@ -13408,7 +13422,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data_string</span> <span class="o">=</span> <span class="s2">&quot;height: 15; weight: 7; width: 5;&quot;</span>
@@ -13469,7 +13483,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data_string</span> <span class="o">=</span> <span class="s2">&quot;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789&quot;</span>
