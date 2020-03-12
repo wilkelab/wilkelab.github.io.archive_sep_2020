@@ -169,6 +169,7 @@ Syllabus: [SDS348_syllabus_spring2020.pdf](/classes/SDS348/SDS348_syllabus_sprin
 * In-class worksheet:
     - [Jupyter Notebook](/classes/SDS348/2020_spring/worksheets/class15.ipynb)
     - [HTML](/classes/SDS348/2020_spring/worksheets/class15.html)
+    - [Solutions](/classes/SDS348/2020_spring/worksheets/class15_solutions.html)
 
 **16. Mar 12, 2020 – Functions in python**
 
