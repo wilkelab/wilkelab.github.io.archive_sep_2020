@@ -214,6 +214,11 @@ All homeworks are due by noon (12:00pm) on the day they are due. Homeworks need 
 * Homework 6 (due Mar 9, 2020)
 	- [R Markdown](/classes/SDS348/2020_spring/homeworks/HW6.Rmd)
 	- [HTML](/classes/SDS348/2020_spring/homeworks/HW6.html)	
+	- [HTML, Solutions](/classes/SDS348/2020_spring/homeworks/HW6-solution.html)
+
+* Homework 7 (due Mar 23, 2020)
+	- [Jupyter Notebook](/classes/SDS348/2020_spring/homeworks/HW7.ipynb)
+	- [HTML](/classes/SDS348/2020_spring/homeworks/HW7.html)	
 	
 ## Labs
 
@@ -276,6 +281,13 @@ All homeworks are due by noon (12:00pm) on the day they are due. Homeworks need 
     - [HTML](/classes/SDS348/2020_spring/labs/lab7.html)
     - [HTML, Solutions](/classes/SDS348/2020_spring/labs/lab7-solution.html)
 
+**8. Mar. 11, 2020**
+* Python style guide: [https://www.python.org/dev/peps/pep-0008/#code-lay-out](https://www.python.org/dev/peps/pep-0008/#code-lay-out)
+* Lab worksheet:
+    - [Jupyter Notebook](/classes/SDS348/2020_spring/labs/lab8.ipynb)                 
+    - [HTML](/classes/SDS348/2020_spring/labs/lab8.html)
+    - [HTML, Solutions](/classes/SDS348/2020_spring/labs/lab8-solution.html)
+
 ## Projects
 All projects are due by noon (12:00pm) on the day they are due. Projects need to be submitted on Canvas, both in pdf format and as source code (plus data where needed).
 
@@ -284,6 +296,8 @@ All projects are due by noon (12:00pm) on the day they are due. Projects need to
     - [Grading rubric](/classes/SDS348/2020_spring/projects/project1_rubric.pdf)
     - [Project Template (Rmd)](/classes/SDS348/2020_spring/projects/project1.Rmd)
     - [Project Template (HTML)](/classes/SDS348/2020_spring/projects/project1.html)
-    - [Example project solution](/classes/SDS348/2020_spring/projects/project1_example_solution.html) ([source Rmd](/classes/SDS348/2020_spring/projects/project1_example_solution.Rmd))
-
+    - [Project Template, Solutions (HTML)](/classes/SDS348/2020_spring/projects/project1_solutions.html)
+- Project 1 Example
+    - [Example project, solution](/classes/SDS348/2020_spring/projects/project1_example_solution.html)
+    - [Example project, Rmd](/classes/SDS348/2020_spring/projects/project1_example_solution.Rmd)
 

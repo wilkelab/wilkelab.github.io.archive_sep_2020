@@ -1,0 +1,116 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align = "center", fig.height = 5, fig.width = 6)
+library(tidyverse)
+theme_set(theme_bw(base_size = 12))
+```
+
+## Project 1
+*Enter your name and EID here*
+
+This is the dataset you will be working with:
+```{r}
+ufo_sightings <- 
+  read_csv("https://wilkelab.org/classes/SDS348/data_sets/ufo_sightings_clean.csv") %>%
+  separate(datetime, into = c("month", "day", "year"), sep = "/") %>%
+  separate(year, into = c("year", "time"), sep = " ") %>%
+  separate(date_posted, into = c("month_posted", "day_posted", "year_posted"), sep = "/") %>%
+  select(-time, -month_posted, -day_posted) %>%
+  mutate(year = as.numeric(year)) %>%
+  filter(!is.na(country))
+```
+
+### **Part 1**
+
+**Question:** How have patterns of UFO sightings developed in different US states since 1940?
+
+To answer this question, consider only the US states California (ca), Texas (tx), and New Mexico (nm), and discard all sightings before 1940. Find which of these states had the highest number of cumulative sightings since 1940. Then, using ggplot, make a plot that shows UFO sightings per year, plotted as a line graph.
+
+**Introduction:** This dataset contains over 70,000 reports of UFO sightings over the last century. The data has 13 variables, which contain information on the location of the UFO sighting (`city`, `state`, `country`, `longitude`, `latitude`), when the UFO sighting occurred (`month`, `day`, `year`), length of the UFO sighting (`duration_seconds`, `duration_hours_min`), details about the UFO in question (`shape`, `comments`), and when the report for the sighting was filed (`year posted`). To answer the question above, we will need the columns `state` and `year`.
+
+**Approach:** The dataset contains individual records of sightings. Therefore, we have to filter out the correct sightings for those in Texas, California, and New Mexico (keeping only the sightings that have occurred since 1940) and then summarize the number of reports for each state. To make a time series plot, we will need the same `state` and `year` filters, but this time group by both `state` and `year` to capture the number of UFO sightings per year in each state.
+
+**Analysis:**
+```{r}
+
+# calculate the total number of UFO sightings for each state
+ufo_sightings %>%
+  filter(state %in% c("tx", "ca", "nm") & year >= 1940) %>%
+  group_by(state) %>%
+    summarize(num_sightings = n()) 
+
+```
+
+```{r }
+
+# colorblind-safe palette
+color_palette <- c("#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7", "#999999")
+
+# line graph of sightings per year by state
+ufo_sightings %>%
+  filter(state %in% c("tx", "ca", "nm") & year > 1940) %>%
+  group_by(state, year) %>% # need to group by state AND year to maintain a data point for each year and state
+  summarize(num_sightings = n()) %>% # instead of total sightings for each state, now we are calculating total sightings **per year** for each state
+  ggplot(aes(x = year, y = num_sightings, color = state)) +
+  geom_line(size = 1, alpha = 0.75) +
+  scale_color_manual(values = color_palette)
+
+```
+
+**Discussion:** For the three states considered, California has the highes total number of UFO sightings (n = 8911) since 1940, Texas has the second highest number (n = 3446), and New Mexico has the lowest number of UFO sightings (n = 720). One hypothesis for this observation is that the number of sightings may be proportional to state population; i.e., New Mexico has the lowest population, and accordingly the lowest number of sightings. After plotting a line graph of UFO sightings by year since 1940, we can see a sharp spike in reports around 1995. One hypothesis for this is the beginning of the internet revolution in the mid 1990s, i.e., widespread communication of observations led to significantly higher accumulation of reports in an aggregated database.
+
+### **Part 2**
+
+**Question:** For the top six Texas cities with the most UFO reports, what are the top three shapes most UFOs are described to have?
+
+**Introduction:** This dataset contains information for the city, state, country, year, time, duration, description, and observed shape of UFO sightings in the last century or so. To answer the question above, we will need the columns `state`, `city`, and `shape`. The columns `state` and `city` described where in the United States the UFO sighting occurred and the column `shape` describes the apparent shape of the UFO at the time of the sighting.
+
+**Approach:** To evaluate which Texas cities have the most UFO sightings, we will need to filter the dataset for sightings occurring only in Texas, tally the total number of reports and store the top 6 cities with the most reports in a new dataframe called `top_texas`. Then, we will do a second manipulation of `ufo_sightings` where we filter for the cities in the `top_texas` dataframe, group by `city` and `shape` then summarize the number of occurrences of each shape in each city. To visualize the distribution of each top shape descriptor in each city, a bar plot will be best for directly comparing counts of categorical information.
+
+**Analysis:**
+```{r }
+
+# create dataframe containing top 6 Texas cities with most UFO sightings
+top_tx <- ufo_sightings %>%
+  filter(state == "tx") %>%
+  group_by(city) %>%
+  tally() %>% # count the number of UFO sightings in each city
+  top_n(6) %>% # take the top 6 cities with the most UFO sightings
+  arrange(desc(n)) # order from most to least sightings
+top_tx
+
+# create a dataframe containing the top 3 shapes observed in the top 6 Texas cities with the most UFO sightings
+tx_ufo_shapes <- ufo_sightings %>%
+  filter(city %in% top_tx$city) %>% # get top 6 cities with most sightings
+  group_by(city, shape) %>%
+  summarize(count = n()) %>% # count the number of descriptions for each shape
+  top_n(3) %>% # take the top 3 shapes with the highest counts for each city
+  arrange(city, desc(count)) # order from most to least common shape
+tx_ufo_shapes
+
+# get total for the top shapes in each city
+tx_ufo_shapes %>% 
+  group_by(shape) %>%
+  summarize(total = sum(count)) %>%
+  arrange(desc(total))
+
+```
+
+```{r fig.height = 4, fig.width = 7}
+
+# colorblind-safe palette
+color_palette <- c("#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
+
+# visualize the most common kinds of UFO shapes witnessed in each Texas city 
+tx_ufo_shapes %>%
+  ggplot(aes(x = shape, y = count, fill = shape)) +
+  geom_col() +
+  facet_wrap(~city) +
+  coord_flip() +
+  scale_fill_manual(values = rev(color_palette))
+
+```
+
+**Discussion:** The cities in Texas with the most UFO sightings are Houston (n = 294), Austin (n = 212), San Antonio (n = 173), Dallas (n = 139), El Paso (n = 86) and Arlington (n = 61). Interestingly, these are six of the most populous cities in Texas, which again implies a correlation between population and number of UFO sightings. We might hypothesize that UFOs appearing over densely populated areas are more likely to be seen and reported by one of the people in that area. The most common description of UFO shape is "light," which occurs in reports from all six cities. The second most common description is "triangle" (seen in 5 cities), then "disk" and "other" (2 cities). 
+
+We visualized the top three shapes for each respective city, and can easily spot that the description "fireball" is unique to Austin, "disk" unique to Dallas and El Paso, and the description "other" only reaches top spots in Houston and San Antonio. El Paso is the only city with the top shape descriptor "circle," and Arlington is the only city with "sphere" as a top reported UFO shape. Regional preferences for describing round objects/shapes might explain the different distributions.
