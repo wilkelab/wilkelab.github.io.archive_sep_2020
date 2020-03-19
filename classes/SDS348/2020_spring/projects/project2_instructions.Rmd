@@ -51,7 +51,7 @@ In the discussion section, interpret the results of your analysis. Identify any 
 
 ### Part 2 Instructions
 
-This time, you will supply the question while still using the `wine_features` dataset. The analysis needs to involve at least 3 distinct variables from the dataset and needs to include a multivariate statistical analysis (e.g., linear regression, logistic regression, clustering, etc.) Plot 2 figures. Part 2 materials cannot repeat any of the material from Part 1.
+This time, you will supply the question while still using the `wine_features` dataset. The analysis needs to involve at least 3 distinct variables from the dataset and needs to include a multivariate statistical analysis (e.g., linear regression, logistic regression, clustering, etc). You need to plot 2 figures. Part 2 materials cannot repeat any of the material from Part 1.
 
 Clearly state your question, introduction and approach in the sections provided. For the introduction, you do not need to repeat the whole dataset description from Part 1, but you do need to describe the columns required to answer your question. In the approach section, describe the data manipulation necessary to answer your question. For the plot, provide a clear explanation as to why this type of plot is best for providing the information you are asking about.
 

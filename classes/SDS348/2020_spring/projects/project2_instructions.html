@@ -7,7 +7,6 @@
 <meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -158,6 +157,18 @@ summary {
 }
 </style>
 
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
 <!-- code folding -->
 
 
@@ -197,8 +208,8 @@ summary {
 <li><strong>acidity_grade</strong>: acidity intensity (low, med, higj)</li>
 <li><strong>fixed_acidity</strong>: most acids involved with wine or fixed or nonvolatile/do not evaporate readily (tartaric acid - g / dm^3)</li>
 <li><strong>volatile_acidity</strong>: the amount of acetic acid in wine, which at too high of levels can lead to an unpleasant, vinegar taste (acetic acid - g / dm^3)</li>
-<li><strong>citric_acid</strong>: found in small quantities, citric acid can add ‘freshness’ and flavor to wines (g / dm^3)</li>
-<li><strong>residual_sugar</strong>: the amount of sugar remaining after fermentation stops; it’s rare to find wines with less than 1 gram/liter and wines with greater than 45 grams/liter are considered sweet (g / dm^3)</li>
+<li><strong>citric_acid</strong>: found in small quantities, citric acid can add âfreshnessâ and flavor to wines (g / dm^3)</li>
+<li><strong>residual_sugar</strong>: the amount of sugar remaining after fermentation stops; itâs rare to find wines with less than 1 gram/liter and wines with greater than 45 grams/liter are considered sweet (g / dm^3)</li>
 <li><strong>chlorides</strong>: the amount of salt in the wine (sodium chloride - g / dm^3)</li>
 <li><strong>free_sulfur_dioxide</strong>: the free form of SO2 exists in equilibrium between molecular SO2 (as a dissolved gas) and bisulfite ion; it prevents microbial growth and the oxidation of wine (mg / dm^3)</li>
 <li><strong>total_sulfur_dioxide</strong>: amount of free and bound forms of S02; in low concentrations, SO2 is mostly undetectable in wine, but at free SO2 concentrations over 50 ppm, SO2 becomes evident in the nose and taste of wine (mg / dm^3)</li>
@@ -222,7 +233,7 @@ summary {
 </div>
 <div id="part-2-instructions" class="section level3">
 <h3>Part 2 Instructions</h3>
-<p>This time, you will supply the question while still using the <code>wine_features</code> dataset. The analysis needs to involve at least 3 distinct variables from the dataset and needs to include a multivariate statistical analysis (e.g., linear regression, logistic regression, clustering, etc.) Plot 2 figures. Part 2 materials cannot repeat any of the material from Part 1.</p>
+<p>This time, you will supply the question while still using the <code>wine_features</code> dataset. The analysis needs to involve at least 3 distinct variables from the dataset and needs to include a multivariate statistical analysis (e.g., linear regression, logistic regression, clustering, etc). You need to plot 2 figures. Part 2 materials cannot repeat any of the material from Part 1.</p>
 <p>Clearly state your question, introduction and approach in the sections provided. For the introduction, you do not need to repeat the whole dataset description from Part 1, but you do need to describe the columns required to answer your question. In the approach section, describe the data manipulation necessary to answer your question. For the plot, provide a clear explanation as to why this type of plot is best for providing the information you are asking about.</p>
 <p>Answer your question by interpreting your plot and identifying any trends it reveals, or does not reveal, as the case may be. Speculate about why the data looks the way it does.</p>
 </div>
@@ -244,23 +255,6 @@ $(document).ready(function () {
 
 
 </script>
-
-<!-- tabsets -->
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
-<!-- code folding -->
-
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
