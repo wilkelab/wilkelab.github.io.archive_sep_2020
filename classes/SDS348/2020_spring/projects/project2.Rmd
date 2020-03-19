@@ -1,0 +1,95 @@
+```{r global_options, include=FALSE}
+
+library(knitr)
+opts_chunk$set(fig.align = "center", fig.height = 5, fig.width = 6)
+library(tidyverse)
+theme_set(theme_bw(base_size = 12))
+library(ggrepel)
+library(plotROC)
+library(ggthemes)
+
+```
+
+## Project 2
+*Enter your name and EID here*
+
+This is the dataset you will be working with:
+```{r }
+
+wine_features <- 
+  read_csv("https://wilkelab.org/classes/SDS348/data_sets/wine_features.csv") 
+
+```
+
+### **Part 1**
+
+**Question:** Can red and white wines be distinguished based on their physicochemical composition?
+
+To answer this question, perform a principal component analysis. Make a scatterplot of PC2 vs. PC1, and a rotation matrix visualizing the influence of the input variables. *Hint: You must remove all categorical variables before creating the PCA object.*
+
+**Introduction:** *Your introduction here.*
+
+**Approach:** *Your approach here.*
+
+**Analysis:**
+```{r }
+
+# your R code here
+# remember to comment your code!
+
+```
+
+```{r }
+
+# your R code here
+# remember to comment your code!
+
+```
+
+```{r }
+
+# your R code here
+# remember to comment your code!
+
+```
+
+**Discussion:** *Your discussion here.*
+
+### **Part 2** 
+
+**Question:** *Your question here here.*
+
+**Introduction:** *Your introduction here.*
+
+**Approach:** *Your approach here.*
+
+**Analysis:**
+```{r }
+
+# your R code here
+# remember to comment your code!
+
+```
+
+```{r }
+
+# your R code here
+# remember to comment your code!
+
+```
+
+```{r }
+
+# your R code here
+# remember to comment your code!
+
+```
+
+```{r }
+
+# your R code here
+# remember to comment your code!
+
+```
+
+**Discussion:** *Your discussion here.*

@@ -1,0 +1,58 @@
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### General instructions
+
+This knitted R Markdown document (as a PDF) **and the raw R Markdown file (as .Rmd)** must be submitted to Canvas by 12:00pm on **April 6th, 2020**. These two documents will be graded jointly, so they must be consistent (as in, don't change the R Markdown file without also updating the knitted document!). We allow you to be creative and incorporate packages that we haven't discussed, but please make sure that any extra packages you use will install on the class server. *Please ensure that your .Rmd will knit on the class server prior to uploading it.* If the .Rmd does not knit **on the class server**, you will not receive full credit.
+
+All results presented *must* have corresponding code. **Any answers/results given without the corresponding R code that generated the result will be considered absent.** To be clear: if you do calculations by hand instead of using R and then report the results from the calculations, **you will not receive credit** for those calculations. All code reported in your final project document should work properly. Please do not include any extraneous code or code which produces error messages. (Code which produces warnings is acceptable, as long as you understand what the warnings mean.)
+
+For this project, you will be using the dataset `wine_features`. This dataset contains ~6500 observations of physicochemical properties (`alcohol`, `alcohol_grade`, `pH`, `acidity_grade`, `fixed_acidity`, `volatile_acidity`, `citric acid`, `residual sugar`, `chlorides`, `free_sulfur_dioxide`, `total_sulfur_dioxide`, `density`, `sulphates`) for red and white wine variants of the Portuguese "Vinho Verde" wine. The dataset was generated as a part of an experiment where wine experts blindly tasted each wine and graded the wine quality (`quality` column) between 0 (very bad) and 10 (very excellent).  Each `quality` value is the median of at least 3 evaluations made by wine experts.
+
+The column contents are as follows:
+
++ **type**: whether the wine is red or white
++ **quality**: median score between 0 and 10 as blindly graded by wine experts
++ **quality_grade**: quality category given to each rating based on distribution of ratings (low, med, high)
++ **alcohol**: the percent alcohol content of the wine (% by volume)
++ **alcohol_grade**: relative amount of alcohol compared to all wines (low, med, high)
++ **pH**: describes how acidic or basic a wine is on a scale from 0 (very acidic) to 14 (very basic); most wines are between 3-4 on the pH scale
++ **acidity_grade**: acidity intensity (low, med, higj)
++ **fixed_acidity**: most acids involved with wine or fixed or nonvolatile/do not evaporate readily (tartaric acid - g / dm^3)
++ **volatile_acidity**:  the amount of acetic acid in wine, which at too high of levels can lead to an unpleasant, vinegar taste (acetic acid - g / dm^3)
++ **citric_acid**: found in small quantities, citric acid can add ‘freshness’ and flavor to wines (g / dm^3)
++ **residual_sugar**: the amount of sugar remaining after fermentation stops; it’s rare to find wines with less than 1 gram/liter and wines with greater than 45 grams/liter are considered sweet (g / dm^3)
++ **chlorides**: the amount of salt in the wine (sodium chloride - g / dm^3)
++ **free_sulfur_dioxide**: the free form of SO2 exists in equilibrium between molecular SO2 (as a dissolved gas) and bisulfite ion; it prevents microbial growth and the oxidation of wine (mg / dm^3)
++ **total_sulfur_dioxide**: amount of free and bound forms of S02; in low concentrations, SO2 is mostly undetectable in wine, but at free SO2 concentrations over 50 ppm, SO2 becomes evident in the nose and taste of wine (mg / dm^3)
++ **density**: degree of consistency measured by mass per unit volume (g / cm^3)
++ **sulphates**: a wine additive which can contribute to sulfur dioxide gas (S02) levels, wich acts as an antimicrobial and antioxidant (potassium sulphate - g / dm^3)
+
+This project consists of two parts. Each part should be structured as follows:
+
+- Introduction (1--2 paragraphs)
+- Approach (1--2 paragraphs); **Your code should be appropriately commented with high-level descriptions of the code's function.**
+- Analysis (2--3 code blocks, 1 figure, text/code comments as needed)
+- Discussion (1--3 paragraphs)
+
+We encourage you to be concise. A paragraph should typically not be longer than 5 sentences.
+
+
+### Part 1 Instructions
+
+Write a brief introduction to the dataset, the question, and what parts of the dataset are necessary to answer the question. You may repeat some of the information about the dataset in the instructions above, paraphrasing on your own terms. Imagine that your project is a standalone document and the grader has no knowledge of the dataset, with the exception of what is in the introduction.
+
+In the approach section, describe the data manipulation necessary to answer the given question. Provide your analysis in 1-2 code chunks, including a plot that will help your find the answer to your question. For the plot, provide a clear explanation as to why this type of plot (e.g. scatter plot, density plot, etc.) is best for providing the information you are asking about.
+
+In the discussion section, interpret the results of your analysis. Identify any trends revealed (or not revealed) by the plot. Speculate about why the data looks the way it does.
+
+
+### Part 2 Instructions
+
+This time, you will supply the question while still using the `wine_features` dataset. The analysis needs to involve at least 3 distinct variables from the dataset and needs to include a multivariate statistical analysis (e.g., linear regression, logistic regression, clustering, etc.) Plot 2 figures. Part 2 materials cannot repeat any of the material from Part 1.
+
+Clearly state your question, introduction and approach in the sections provided. For the introduction, you do not need to repeat the whole dataset description from Part 1, but you do need to describe the columns required to answer your question. In the approach section, describe the data manipulation necessary to answer your question. For the plot, provide a clear explanation as to why this type of plot is best for providing the information you are asking about.
+
+Answer your question by interpreting your plot and identifying any trends it reveals, or does not reveal, as the case may be. Speculate about why the data looks the way it does.

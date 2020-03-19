@@ -301,3 +301,8 @@ All projects are due by noon (12:00pm) on the day they are due. Projects need to
     - [Example project, solution](/classes/SDS348/2020_spring/projects/project1_example_solution.html)
     - [Example project, Rmd](/classes/SDS348/2020_spring/projects/project1_example_solution.Rmd)
 
+- Project 2 (due Mon., Apr 6, 2020):
+    - [Instructions](/classes/SDS348/2020_spring/projects/project2_instructions.html)
+    - [Project Template (Rmd)](/classes/SDS348/2020_spring/projects/project2.Rmd)
+    - [Project Template (HTML)](/classes/SDS348/2020_spring/projects/project2.html)
+ 
