@@ -7,6 +7,9 @@ This is the home page for class SDS 348, Computational Biology and Bioinformatic
 
 Syllabus: [SDS348_syllabus_spring2020.pdf](/classes/SDS348/SDS348_syllabus_spring2020.pdf)
 
+Revised syllabus due to COVID-19: [SDS348_syllabus_spring2020_revised.pdf](/classes/SDS348/SDS348_syllabus_spring2020_revised.pdf)
+
+
 
 ## Lectures
 
@@ -179,6 +182,22 @@ Syllabus: [SDS348_syllabus_spring2020.pdf](/classes/SDS348/SDS348_syllabus_sprin
     - [Jupyter Notebook](/classes/SDS348/2020_spring/worksheets/class16.ipynb)
     - [HTML](/classes/SDS348/2020_spring/worksheets/class16.html)
 
+**17. Mar 31, 2020 – More on python data structures, classes**
+
+* Slides: [class17.pdf](/classes/SDS348/2020_spring/slides/class17.pdf)
+* Chapter 9 of the official tutorial: [Classes](https://docs.python.org/3/tutorial/classes.html)
+* In-class worksheet:
+    - [Jupyter Notebook](/classes/SDS348/2020_spring/worksheets/class17.ipynb)
+    - [HTML](/classes/SDS348/2020_spring/worksheets/class17.html)
+
+
+**18. Apr 2, 2020 – Working with files**
+
+* Slides: [class18.pdf](/classes/SDS348/2020_spring/slides/class18.pdf)
+* Chapter 7.2 of the official tutorial: [Reading and writing files](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files)
+* In-class worksheet:
+    - [Jupyter Notebook](/classes/SDS348/2020_spring/worksheets/class18.ipynb)
+    - [HTML](/classes/SDS348/2020_spring/worksheets/class18.html)
 
 ## Homeworks
 
@@ -303,6 +322,11 @@ All projects are due by noon (12:00pm) on the day they are due. Projects need to
 
 - Project 2 (due Mon., Apr 6, 2020):
     - [Instructions](/classes/SDS348/2020_spring/projects/project2_instructions.html)
+    - [Grading rubric](/classes/SDS348/2020_spring/projects/project2_rubric.pdf)
     - [Project Template (Rmd)](/classes/SDS348/2020_spring/projects/project2.Rmd)
     - [Project Template (HTML)](/classes/SDS348/2020_spring/projects/project2.html)
  
+- SDS 385 Assignment (due Apr 14, 2020, **grad students only**):
+	- [HTML](/classes/SDS348/2019_spring/projects/grad_assignment.html)
+    - [R Markdown](/classes/SDS348/2019_spring/projects/grad_assignment.Rmd)
+
