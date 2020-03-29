@@ -327,6 +327,6 @@ All projects are due by noon (12:00pm) on the day they are due. Projects need to
     - [Project Template (HTML)](/classes/SDS348/2020_spring/projects/project2.html)
  
 - SDS 385 Assignment (due Apr 14, 2020, **grad students only**):
-	- [HTML](/classes/SDS348/2019_spring/projects/grad_assignment.html)
-    - [R Markdown](/classes/SDS348/2019_spring/projects/grad_assignment.Rmd)
+	- [HTML](/classes/SDS348/2020_spring/projects/grad_assignment.html)
+    - [R Markdown](/classes/SDS348/2020_spring/projects/grad_assignment.Rmd)
 
