@@ -308,6 +308,12 @@ All homeworks are due by noon (12:00pm) on the day they are due. Homeworks need 
     - [HTML](/classes/SDS348/2020_spring/labs/lab8.html)
     - [HTML, Solutions](/classes/SDS348/2020_spring/labs/lab8-solution.html)
 
+**9. Apr. 1, 2020**
+* Intro to object-oriented programming (first half of this article): [https://towardsdatascience.com/object-oriented-programming-for-data-scientists-build-your-ml-estimator-7da416751f64](https://towardsdatascience.com/object-oriented-programming-for-data-scientists-build-your-ml-estimator-7da416751f64)
+* Lab worksheet:
+    - [Jupyter Notebook](/classes/SDS348/2020_spring/labs/lab9.ipynb)                 
+    - [HTML](/classes/SDS348/2020_spring/labs/lab9.html)
+    
 ## Projects
 All projects are due by noon (12:00pm) on the day they are due. Projects need to be submitted on Canvas, both in pdf format and as source code (plus data where needed).
 
