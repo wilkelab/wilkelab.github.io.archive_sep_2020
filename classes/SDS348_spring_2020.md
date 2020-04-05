@@ -201,6 +201,24 @@ Revised syllabus due to COVID-19: [SDS348_syllabus_spring2020_revised.pdf](/clas
     - [HTML](/classes/SDS348/2020_spring/worksheets/class18.html)
     - [Solutions](/classes/SDS348/2020_spring/worksheets/class18_solutions.html)
 
+**19. Apr 7, 2019 – Introduction to Biopython**
+
+* Slides: [class19.pdf](/classes/SDS348/2020_spring/slides/class19.pdf)
+* Biopython website: [https://biopython.org](https://biopython.org)
+* Official Biopython tutorial: [https://biopython.org/DIST/docs/tutorial/Tutorial.html](https://biopython.org/DIST/docs/tutorial/Tutorial.html)
+* NCBI Entrez/PubMed website: [https://www.ncbi.nlm.nih.gov/](https://www.ncbi.nlm.nih.gov/)
+* In-class worksheet:
+    - [Jupyter Notebook](/classes/SDS348/2020_spring/worksheets/class19.ipynb)
+    - [HTML](/classes/SDS348/2020_spring/worksheets/class19.html)
+
+**20. Apr 9, 2020 – Working with gene features and genomes**
+
+* Slides: [class20.pdf](/classes/SDS348/2020_spring/slides/class20.pdf)
+* Biopython Tutorial on sequence features: [SeqFeature objects](https://biopython.org/DIST/docs/tutorial/Tutorial.html#htoc38)
+* Official feature documentation from the International Nucleotide Sequence Database Collaboration: [Feature Key Reference](http://www.insdc.org/files/feature_table.html#7.2)
+* In-class worksheet:
+    - [Jupyter Notebook](/classes/SDS348/2020_spring/worksheets/class20.ipynb)
+    - [HTML](/classes/SDS348/2020_spring/worksheets/class20.html)
 
 ## Homeworks
 
