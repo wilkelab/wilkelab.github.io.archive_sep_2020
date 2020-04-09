@@ -347,6 +347,7 @@ All homeworks are due by noon (12:00pm) on the day they are due. Homeworks need 
 * Lab worksheet:
     - [Jupyter Notebook](/classes/SDS348/2020_spring/labs/lab10.ipynb)                 
     - [HTML](/classes/SDS348/2020_spring/labs/lab10.html)
+    - [HTML, Solutions](/classes/SDS348/2020_spring/labs/lab10-solution.html)
     
 ## Projects
 All projects are due by noon (12:00pm) on the day they are due. Projects need to be submitted on Canvas, both in pdf format and as source code (plus data where needed).
@@ -366,8 +367,9 @@ All projects are due by noon (12:00pm) on the day they are due. Projects need to
     - [Grading rubric](/classes/SDS348/2020_spring/projects/project2_rubric.pdf)
     - [Project Template (Rmd)](/classes/SDS348/2020_spring/projects/project2.Rmd)
     - [Project Template (HTML)](/classes/SDS348/2020_spring/projects/project2.html)
+    - [Project Template, Solutions (HTML)](/classes/SDS348/2020_spring/projects/project2_solutions.html)
  
 - SDS 385 Assignment (due Apr 14, 2020, **grad students only**):
-	- [HTML](/classes/SDS348/2020_spring/projects/grad_assignment.html)
+    - [HTML](/classes/SDS348/2020_spring/projects/grad_assignment.html)
     - [R Markdown](/classes/SDS348/2020_spring/projects/grad_assignment.Rmd)
 
