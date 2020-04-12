@@ -222,6 +222,25 @@ Revised syllabus due to COVID-19: [SDS348_syllabus_spring2020_revised.pdf](/clas
     - [HTML](/classes/SDS348/2020_spring/worksheets/class20.html)
     - [Solutions](/classes/SDS348/2020_spring/worksheets/class20_solutions.html)
 
+**21. Apr 14, 2019 – Running queries on Entrez**
+
+* Slides: [class21.pdf](/classes/SDS348/2020_spring/slides/class21.pdf)
+* Biopython SeqIO documentation: [SeqIO](https://biopython.org/wiki/SeqIO)
+* In-class worksheet:
+    - [Jupyter Notebook](/classes/SDS348/2020_spring/worksheets/class21.ipynb)
+    - [HTML](/classes/SDS348/2020_spring/worksheets/class21.html)
+
+**22. Apr 16, 2020 – Regular expressions**
+
+* Slides: [class22.pdf](/classes/SDS348/2020_spring/slides/class22.pdf)
+* Python regular expression editor: [https://pythex.org/](https://pythex.org/)
+* Regular expression visualization: [https://regexper.com/](https://regexper.com/)
+* Official Python regular expression documentation: [Regular Expression HOWTO](https://docs.python.org/3/howto/regex.html)
+* Alternative regular expression tutorial: [Python Regular Expressions](https://developers.google.com/edu/python/regular-expressions)
+* In-class worksheet:
+    - [Jupyter Notebook](/classes/SDS348/2020_spring/worksheets/class22.ipynb)
+    - [HTML](/classes/SDS348/2020_spring/worksheets/class22.html)
+
 
 ## Homeworks
 
