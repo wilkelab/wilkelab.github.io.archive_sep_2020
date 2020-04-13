@@ -181,6 +181,7 @@ Revised syllabus due to COVID-19: [SDS348_syllabus_spring2020_revised.pdf](/clas
 * In-class worksheet:
     - [Jupyter Notebook](/classes/SDS348/2020_spring/worksheets/class16.ipynb)
     - [HTML](/classes/SDS348/2020_spring/worksheets/class16.html)
+    - [Solutions](/classes/SDS348/2020_spring/worksheets/class16_solutions.html)
 
 **17. Mar 31, 2020 – More on python data structures, classes**
 
