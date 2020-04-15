@@ -1,0 +1,175 @@
+```{r global_options, include=FALSE}
+
+library(knitr)
+opts_chunk$set(fig.align = "center", fig.height = 5, fig.width = 6)
+library(tidyverse)
+theme_set(theme_bw(base_size = 12))
+library(ggrepel)
+library(plotROC)
+library(ggthemes)
+colorblind_palette <- c("#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7", "#999999") # hex values for the colorblind-safe palette
+wine_palette <- c("#bcb37b", "#9e934d", "#8f8023", "#790000", "#5b0b0b") # white(ish) to red wine hex values
+
+```
+
+## Project 2
+*Enter your name and EID here*
+
+This is the dataset you will be working with:
+```{r }
+
+wine_features <- 
+  read_csv("https://wilkelab.org/classes/SDS348/data_sets/wine_features.csv") %>%
+  mutate(type = as.factor(type))
+
+```
+
+### **Part 1**
+
+**Question:** Can red and white wines be distinguished based on their physicochemical composition?
+
+To answer this question, perform a principal component analysis. Make a scatterplot of PC2 vs. PC1, and a rotation matrix visualizing the influence of the input variables. *Hint: You must remove all categorical variables before creating the PCA object.*
+
+**Introduction:** The dataset `wine_features` contains 6497 rows describing various chemical attributes of red and white wine (indicated by the `type` column) and each wine's relative quality (indicated by the `quality`/`quality_grade` column) on a scale of 3 to 9 as graded by experts performing a blind taste test. Chemical attributes recorded for each wine include `fixed_acidity`, `volatile_acidity`, `citric_acid`, `residual_sugar`, `chlorides`, `free_sulfur_dioxide`, `total_sulfur_dioxide`, `density`, `pH`, `sulphates`, `alcohol`. Categorical descriptions of alcohol content and acidity are given by `alcohol_grade` and `acidity_grade`.
+
+**Approach:** First, I will remove all non-numerical columns from the dataset (`type`, `quality_grade`, `alcohol_grade`, and `acidity_grade`). Then, I will perform a PCA on the remaining numerical columns using the functions `scale()` and `prcomp()`, and save the results in a new dataframe called `pca_data`. To evaluate whether the physicochemical properties describe the type of wine, I'll make a scatterplot (using `geom_point()`) comparing the first and second principal components, coloring each point by type of wine. Then, I'll make a new dataframe containing the rotation matrix and visualize the rotation matrix using `geom_segment()` and `geom_text_repel()`.
+
+**Analysis:**
+```{r }
+
+# perform PCA on `wine_features` dataset
+pca <- wine_features %>%
+  select(-type, -quality_grade,
+         -alcohol_grade, -acidity_grade) %>%
+  scale() %>%
+  prcomp()
+
+# get transformation data from PCA object for further analysis
+pca_data <- data.frame(pca$x, wine_features)
+
+```
+
+```{r }
+
+# color PC2 vs. PC1 scatterplot by type of wine
+ggplot(pca_data, aes(x = PC1, y = PC2, color = type)) + 
+  geom_point(alpha = 0.75, size = 2) + 
+  scale_color_manual(values = c(wine_palette[5], wine_palette[1]))
+
+```
+
+```{r }
+
+# capture the rotation matrix in a data frame
+rotation_data <- data.frame(pca$rotation, 
+                            variable = row.names(pca$rotation))
+
+# define a pleasing arrow style
+arrow_style <- arrow(length = unit(0.075, "inches"),
+                     type = "closed")
+
+# now plot, using geom_segment() for arrows and geom_text for labels
+ggplot(rotation_data) +
+  geom_segment(aes(xend = PC1, yend = PC2), 
+               x = 0, y = 0, 
+               arrow = arrow_style) +
+  geom_text_repel(aes(x = PC1, y = PC2, label = variable), 
+                  size = 3, 
+                  color = wine_palette[5],
+                  #vjust = 0,
+                  segment.size = 0,
+                  set.seed(13)) +
+  xlim(-1., 1.) +
+  ylim(-1., 1.) +
+  coord_fixed() # fix aspect ratio to 1:1
+
+```
+
+**Discussion:** From the scatter plot of principal-component space calculated from the `wine_features` dataset, we can see the two wine types separate into distinct groupings on the plot, i.e., a significant amount of the variation in the data is described by the two wine types (`type`). Wine types are separated largely by PC1 such that red wines generally have negative PC1 values and white wines have positive PC1 values. Thus, it's likely red and white wines have highly distinct physicochemical profiles. 
+
+Visualization of the rotation matrix indicates that variables describing sulfur content (`free_sulfur_dioxide`, `total_sulfur_dioxide`, `sulphates`) and acidity (`volatile_acidity`, `fixed_acidity`, `chlorides`) are captured by PC1, while `density`, `alcohol` content, and `quality` largely contribute to PC2. The variable `residual_sugar` is captured by both PC1 and PC2. Since `volatile_acidity` contributes mostly to negative PC1 space, we can conclude red wines have higher values of acetic acid. Similarly, since ``free_sulfur_dioxide` and `total_sulfur_dioxide` contribute mostly to positive PC1 space, we can conclude that white wines have higher amounts of free and bound SO2.
+
+### **Part 2** 
+
+**Question:** Can we predict whether wine is white or red by the density and residual sugar content of the wine? 
+
+**Introduction:** We will be working with the same `wine_features` dataset. We will be constructing a model that predicts whether a given wine is red or white, so our response variable will be `type` and our predictor variables will be `density` and `residual_sugar`. The variable `type` indicates whether a given wine is red or white, `density` is the given wine's degree of consistency measured by mass per unit volume (g/cm^3), and `residual_sugar` is the amount of sugar remaining after fermentation stops (g/dm^3). Wines with greater than 45 grams/liter residual sugar are considered sweet.
+
+**Approach:** First, the data must be partitioned into a training set (70%) `wine_train` and testing set `wine_test` (30%). Then, we will fit a logistic regression model using the `wine_train` subset and the `glm()` function, predicting wine `type` by its `density` and `residual_sugar`. Then, this model will be used to predict wine type in the `wine_test` subset and the `wine_train` subset with the `predict()` function; the results of the classification will be assigned to a new dataframe containing a `known_truth` variable in each case. To visually evaluate the model, we will plot (1) two ROC curves comparing the classification results for the training and test datasets using `geom_roc()`, and (2) a density plot that shows how the linear predictor separates the two wine types in the test data using `geom_density()`.
+
+**Analysis:**
+```{r }
+
+train_fraction <- 0.7 # fraction of data for training purposes
+set.seed(13) # set the seed to make the partition reproductible
+train_size <- floor(train_fraction * nrow(mtcars)) # number of observations in training set
+train_indices <- sample(1:nrow(wine_features), size = train_size)
+
+wine_train <- wine_features[train_indices, ] # get training data
+wine_test <- wine_features[-train_indices, ] # get test data
+
+```
+
+```{r }
+
+# model to use: type ~ density + residual_sugar
+glm_out_train <- glm(factor(type) ~ total_sulfur_dioxide,
+                     data = wine_train, 
+                     family = binomial)
+
+summary(glm_out_train)
+
+```
+
+```{r }
+
+# results data frame for training data
+wine_train_results <- data.frame(
+  predictor = predict(glm_out_train, wine_train),
+  known_truth = wine_train$type,
+  model = "training"
+)
+
+# results data frame for test data
+wine_test_results <- data.frame(
+  predictor = predict(glm_out_train, wine_test),
+  known_truth = wine_test$type,
+  model = "test"
+)
+
+# combining data frames with results
+wine_combined <- rbind(wine_train_results, wine_test_results)
+
+p <- ggplot(wine_combined, aes(d = known_truth, m = predictor, color = model)) +
+  geom_roc(n.cuts = 0) +
+  coord_fixed() +
+  scale_color_manual(values = c(wine_palette[5], wine_palette[1]))
+p
+
+```
+
+```{r }
+
+# make descriptive labels for the AUC calculation
+model <- unique(wine_combined$model)
+model_info <- data.frame(model,
+                         group = order(model))
+
+# calculate AUC values
+left_join(model_info, calc_auc(p)) %>%
+  select(-group, -PANEL) %>%
+  arrange(desc(AUC))
+
+```
+
+
+```{r }
+
+# create a density plot that shows how the linear predictor separates the two wine types in the test data
+ggplot(wine_test_results, aes(x = predictor, fill = factor(known_truth))) +
+  geom_density(alpha = 0.5) +
+  scale_fill_manual(values = c(wine_palette[5], wine_palette[1]))
+
+```
+
+**Discussion:** The parameters fit by the model show interesting results. For both independent variables, `density` and `residual_sugar`, the standard error is as large as the coefficient. Moreover, both variables have a Pr(>|z|) > 0.10, which would normally indicate the variables are not useful to model. However, when evaluating the diagnostic ability of the model vis a vis ROC curves, we can see the model does an overall excellent job of predicting red and white wine types (AUC = 0.988 for the training set, AUC = 0.954 for the test set). When we visualize how well the linear predictor separates the wine types, we can see two distinctly separated distributions for both red and white wines. Thus, I hypothesize I am seeing the "Hauck-Donner effect," where the estimated parameters are too close to boundary space (i.e., extremely close to 0 or 1), creating an artifically large distance between the estimate and the null hypothesis.
