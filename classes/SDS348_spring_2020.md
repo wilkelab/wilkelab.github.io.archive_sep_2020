@@ -288,6 +288,7 @@ All homeworks are due by noon (12:00pm) on the day they are due. Homeworks need 
 * Homework 8 (due Apr 13, 2020)
 	- [Jupyter Notebook](/classes/SDS348/2020_spring/homeworks/HW8.ipynb)
 	- [HTML](/classes/SDS348/2020_spring/homeworks/HW8.html)	
+	- [HTML, Solutions](/classes/SDS348/2020_spring/homeworks/HW8-solution.html)
 
 * Homework 9 (due Apr 20, 2020)
 	- [Jupyter Notebook](/classes/SDS348/2020_spring/homeworks/HW9.ipynb)
@@ -379,6 +380,7 @@ All homeworks are due by noon (12:00pm) on the day they are due. Homeworks need 
 * Lab worksheet:
     - [Jupyter Notebook](/classes/SDS348/2020_spring/labs/lab11.ipynb)                 
     - [HTML](/classes/SDS348/2020_spring/labs/lab11.html) 
+    - [HTML, Solutions](/classes/SDS348/2020_spring/labs/lab11-solution.html)
     
 ## Projects
 All projects are due by noon (12:00pm) on the day they are due. Projects need to be submitted on Canvas, both in pdf format and as source code (plus data where needed).
