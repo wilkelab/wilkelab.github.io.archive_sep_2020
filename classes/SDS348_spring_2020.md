@@ -244,6 +244,25 @@ Revised syllabus due to COVID-19: [SDS348_syllabus_spring2020_revised.pdf](/clas
     - [HTML](/classes/SDS348/2020_spring/worksheets/class22.html)
     - [Solutions](/classes/SDS348/2020_spring/worksheets/class22_solutions.html)
 
+**23. Apr. 21, 2020 – Using regular expressions to analyze data**
+
+* Slides: [class23.pdf](/classes/SDS348/2020_spring/slides/class23.pdf)
+* Python regular expression editor: [https://pythex.org/](https://pythex.org/)
+* Regular expression visualization: [https://regexper.com/](https://regexper.com/)
+* Regex crosswords: [regexcrossword.com](https://regexcrossword.com/)
+* In-class worksheet:
+    - [Jupyter Notebook](/classes/SDS348/2020_spring/worksheets/class23.ipynb)
+    - [HTML](/classes/SDS348/2020_spring/worksheets/class23.html)
+
+**24. Apr. 23, 2020 – Using regular expressions to analyze data**
+
+* Slides: [class24.pdf](/classes/SDS348/2020_spring/slides/class24.pdf)
+* Python regular expression editor: [https://pythex.org/](https://pythex.org/)
+* Regular expression visualization: [https://regexper.com/](https://regexper.com/)
+* In-class worksheet:
+    - [Jupyter Notebook](/classes/SDS348/2020_spring/worksheets/class24.ipynb)
+    - [HTML](/classes/SDS348/2020_spring/worksheets/class24.html)
+
 
 ## Homeworks
 
