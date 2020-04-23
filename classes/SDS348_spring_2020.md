@@ -253,6 +253,8 @@ Revised syllabus due to COVID-19: [SDS348_syllabus_spring2020_revised.pdf](/clas
 * In-class worksheet:
     - [Jupyter Notebook](/classes/SDS348/2020_spring/worksheets/class23.ipynb)
     - [HTML](/classes/SDS348/2020_spring/worksheets/class23.html)
+    - [Solutions](/classes/SDS348/2020_spring/worksheets/class23_solutions.html)
+
 
 **24. Apr. 23, 2020 – Using regular expressions to analyze data**
 
