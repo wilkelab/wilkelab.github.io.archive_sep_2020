@@ -442,6 +442,7 @@ All projects are due by noon (12:00pm) on the day they are due. Projects need to
     - [R Markdown](/classes/SDS348/2020_spring/projects/grad_assignment.Rmd)
 
 - Project 3 (due Thurs., May 7, 2020):
+    - [Grading rubric](/classes/SDS348/2020_spring/projects/project3_rubric.pdf)
     - [Project Template (iPython notebook)](/classes/SDS348/2020_spring/projects/project3.ipynb)
     - [Project Template (HTML)](/classes/SDS348/2020_spring/projects/project3.html)
 
