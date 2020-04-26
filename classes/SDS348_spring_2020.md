@@ -264,6 +264,7 @@ Revised syllabus due to COVID-19: [SDS348_syllabus_spring2020_revised.pdf](/clas
 * In-class worksheet:
     - [Jupyter Notebook](/classes/SDS348/2020_spring/worksheets/class24.ipynb)
     - [HTML](/classes/SDS348/2020_spring/worksheets/class24.html)
+    - [Solutions](/classes/SDS348/2020_spring/worksheets/class24_solutions.html)
 
 
 ## Homeworks
