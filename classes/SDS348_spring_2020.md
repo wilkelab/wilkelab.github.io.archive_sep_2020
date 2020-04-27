@@ -265,6 +265,30 @@ Revised syllabus due to COVID-19: [SDS348_syllabus_spring2020_revised.pdf](/clas
     - [Jupyter Notebook](/classes/SDS348/2020_spring/worksheets/class24.ipynb)
     - [HTML](/classes/SDS348/2020_spring/worksheets/class24.html)
 
+**25. Apr. 28, 2020 – Aligning sequences**
+
+* Slides: [class25.pdf](/classes/SDS348/2020_spring/slides/class25.pdf)
+* Wikipedia page on the Needleman–Wunsch algorithm: [Needleman–Wunsch algorithm](https://en.wikipedia.org/wiki/Needleman%E2%80%93Wunsch_algorithm)
+* Alignment software:
+  - [MAFFT](https://mafft.cbrc.jp/alignment/software/)
+  - [Clustal Omega](http://www.clustal.org/omega/)
+  - [PRANK](http://wasabiapp.org/software/prank/)
+* [Example alignments](https://github.com/wilkelab/therm_constraints_rate_variation/tree/master/empirical_rate_calculations/protein_alignments/mafft_alignments)
+* In-class worksheet:
+    - [Jupyter Notebook](/classes/SDS348/2020_spring/worksheets/class25.ipynb)
+    - [HTML](/classes/SDS348/2020_spring/worksheets/class25.html)
+
+**26. Apr. 20, 2020 – Global and local alignments, BLAST**
+
+* Slides: [class26.pdf](/classes/SDS348/2020_spring/slides/class26.pdf)
+* Wikipedia page on the Smith-Waterman algorithm: [Smith-Waterman algorithm](https://en.wikipedia.org/wiki/Smith%E2%80%93Waterman_algorithm)
+* NCBI BLAST search: [https://blast.ncbi.nlm.nih.gov/Blast.cgi](https://blast.ncbi.nlm.nih.gov/Blast.cgi)
+* Wikipedia page on BLAST: [BLAST](https://en.wikipedia.org/wiki/BLAST)
+* Biopython BLAST documentation: [Chapter 7: BLAST](https://biopython.org/DIST/docs/tutorial/Tutorial.html#htoc96)
+* In-class worksheet:
+    - [Jupyter Notebook](/classes/SDS348/2020_spring/worksheets/class26.ipynb)
+    - [HTML](/classes/SDS348/2020_spring/worksheets/class26.html)
+
 
 ## Homeworks
 
