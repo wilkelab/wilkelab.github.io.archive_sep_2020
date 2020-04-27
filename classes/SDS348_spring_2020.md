@@ -264,6 +264,7 @@ Revised syllabus due to COVID-19: [SDS348_syllabus_spring2020_revised.pdf](/clas
 * In-class worksheet:
     - [Jupyter Notebook](/classes/SDS348/2020_spring/worksheets/class24.ipynb)
     - [HTML](/classes/SDS348/2020_spring/worksheets/class24.html)
+    - [Solutions](/classes/SDS348/2020_spring/worksheets/class24_solutions.html)
 
 **25. Apr. 28, 2020 – Aligning sequences**
 
@@ -339,6 +340,7 @@ All homeworks are due by noon (12:00pm) on the day they are due. Homeworks need 
 * Homework 9 (due Apr 20, 2020)
 	- [Jupyter Notebook](/classes/SDS348/2020_spring/homeworks/HW9.ipynb)
 	- [HTML](/classes/SDS348/2020_spring/homeworks/HW9.html)	
+	- [HTML, Solutions](/classes/SDS348/2020_spring/homeworks/HW9-solution.html)
 
 * Homework 10 (due Apr 27, 2020)
 	- [Jupyter Notebook](/classes/SDS348/2020_spring/homeworks/HW10.ipynb)
@@ -437,6 +439,7 @@ All homeworks are due by noon (12:00pm) on the day they are due. Homeworks need 
 * Lab worksheet:
     - [Jupyter Notebook](/classes/SDS348/2020_spring/labs/lab12.ipynb)                 
     - [HTML](/classes/SDS348/2020_spring/labs/lab12.html) 
+    - [HTML, Solutions](/classes/SDS348/2020_spring/labs/lab12-solution.html)
 
  
 ## Projects
@@ -464,6 +467,7 @@ All projects are due by noon (12:00pm) on the day they are due. Projects need to
     - [R Markdown](/classes/SDS348/2020_spring/projects/grad_assignment.Rmd)
 
 - Project 3 (due Thurs., May 7, 2020):
+    - [Grading rubric](/classes/SDS348/2020_spring/projects/project3_rubric.pdf)
     - [Project Template (iPython notebook)](/classes/SDS348/2020_spring/projects/project3.ipynb)
     - [Project Template (HTML)](/classes/SDS348/2020_spring/projects/project3.html)
 
