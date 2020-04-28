@@ -278,6 +278,7 @@ Revised syllabus due to COVID-19: [SDS348_syllabus_spring2020_revised.pdf](/clas
 * In-class worksheet:
     - [Jupyter Notebook](/classes/SDS348/2020_spring/worksheets/class25.ipynb)
     - [HTML](/classes/SDS348/2020_spring/worksheets/class25.html)
+    - [Solutions](/classes/SDS348/2020_spring/worksheets/class25_solutions.html)
 
 **26. Apr. 20, 2020 – Global and local alignments, BLAST**
 
