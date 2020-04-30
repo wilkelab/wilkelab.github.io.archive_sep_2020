@@ -1,20 +1,25 @@
-- author: D. K. Sydykova, T. O. LaBar, C. Adami, C. O. Wilke
+- author: C. D. DuPai, C. O. Wilke, B. W. Davies
   year: preprint
-  title: Moderate amounts of epistasis are not evolutionarily stable in small populations.
-  ref: "bioRxiv 752535"
-  doi: 10.1101/752535
-
-- author: J. M. Laurent, R. K. Garge, A. I. Teufel, C. O. Wilke, A. H. Kachroo, E. M. Marcotte
-  year: preprint
-  title: Humanization of yeast genes with multiple human orthologs reveals principles of functional divergence between paralogs.
-  ref: "bioRxiv 668335"
-  doi: 10.1101/668335
+  title: A comprehensive co-expression network analysis in Vibrio cholerae.
+  ref: "bioRxiv 939611"
+  doi: 10.1101/2020.02.07.939611
 
 - author: D. K. Sydykova, C. O. Wilke
   year: preprint
   title: Theory of measurement for site-specific evolutionary rates in amino-acid sequences.
   ref: "bioRxiv 411025"
   doi: 10.1101/411025
+
+- author: J. M. Laurent, R. K. Garge, A. I. Teufel, C. O. Wilke, A. H. Kachroo, E. M. Marcotte
+  year: 2020
+  title: Humanization of yeast genes with multiple human orthologs reveals principles of functional divergence between paralogs.
+  ref: "PLOS Biol., in press"
+    
+- author: D. K. Sydykova, T. O. LaBar, C. Adami, C. O. Wilke
+  year: 2020
+  title: Moderate amounts of epistasis are not evolutionarily stable in small populations.
+  ref: "J. Mol. Evol., in press"
+  doi: 10.1007/s00239-020-09942-4
     
 - author: A. Zeileis, J. C. Fisher, K. Hornik, R. Ihaka, C. D. McWhite, P. Murrell, R. Stauffer, C. O. Wilke
   year: 2020
