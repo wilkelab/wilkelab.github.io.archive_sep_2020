@@ -346,6 +346,7 @@ All homeworks are due by noon (12:00pm) on the day they are due. Homeworks need 
 * Homework 10 (due Apr 27, 2020)
 	- [Jupyter Notebook](/classes/SDS348/2020_spring/homeworks/HW10.ipynb)
 	- [HTML](/classes/SDS348/2020_spring/homeworks/HW10.html)	
+	- [HTML, Solutions](/classes/SDS348/2020_spring/homeworks/HW10-solution.html)
 	
 ## Labs
 
