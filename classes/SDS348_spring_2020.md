@@ -292,6 +292,28 @@ Revised syllabus due to COVID-19: [SDS348_syllabus_spring2020_revised.pdf](/clas
     - [HTML](/classes/SDS348/2020_spring/worksheets/class26.html)
     - [Solutions](/classes/SDS348/2020_spring/worksheets/class26_solutions.html)
 
+**27. May 5, 2020 – Multiple sequence alignments and phylogenetic trees**
+
+* Slides: [class27.pdf](/classes/SDS348/2020_spring/slides/class27.pdf)
+* Wikipedia page on multiple sequence alignments:
+[Multiple sequence alignment](https://en.wikipedia.org/wiki/Multiple_sequence_alignment)
+* Wikipedia page on phylogenetic trees:
+[Phylogenetic trees](https://en.wikipedia.org/wiki/Phylogenetic_tree)
+* In-class exercises:
+    - [Example alignments](https://github.com/wilkelab/therm_constraints_rate_variation/tree/master/empirical_rate_calculations/protein_alignments/mafft_alignments)
+    - [EMBL-EBI MSA interface](https://www.ebi.ac.uk/Tools/msa/)
+    - [EMBL-EBI simple pylogeny](https://www.ebi.ac.uk/Tools/phylogeny/simple_phylogeny/)
+    - [EMBL-EBI sequence conversion interface](https://www.ebi.ac.uk/Tools/sfc/emboss_seqret/)
+
+**28. May 7, 2020 – Plotting geospatial data**
+
+* Slides: [class28.pdf](/classes/SDS348/2020_spring/slides/class28.pdf)
+* Fundamentals of dataviz book chapter: [Visualizing geospatial data](https://serialmentor.com/dataviz/geospatial-data.html)
+* R sf package: [Simple Features for R vignette](https://cran.r-project.org/web/packages/sf/vignettes/sf1.html)
+* In-class worksheet:
+    - [R Markdown](/classes/SDS348/2020_spring/worksheets/class28.Rmd)
+    - [HTML](/classes/SDS348/2020_spring/worksheets/class28.html)
+    - [Solutions](/classes/SDS348/2020_spring/worksheets/class28_solutions.html)
 
 ## Homeworks
 

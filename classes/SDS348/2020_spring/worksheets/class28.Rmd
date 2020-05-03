@@ -1,0 +1,101 @@
+```{r global_options, include=FALSE}
+library(knitr)
+opts_chunk$set(fig.align="center", fig.height=4.5, fig.width=6)
+```
+## In-class worksheet 28
+**May 7, 2020**
+
+In this worksheet, we will use the libraries tidyverse and sf:
+```{r message = FALSE, warning = FALSE}
+library(tidyverse)
+theme_set(theme_bw(base_size=12)) # set default ggplot2 theme
+library(sf) # needed for simple feature manipulation
+```
+
+## 1. Manipulating and plotting geospatial data
+
+We will work with two data frames, `US_income` and `US_counties_income`, which contain the median income and population number of US states or US counties, respectively.
+
+```{r}
+# load all data
+load(url("https://wilkelab.org/classes/SDS348/data_sets/US_income.RData"))
+
+# income and population data by state
+head(US_income)
+
+# income and population data by county
+head(US_counties_income)
+```
+
+Both data frames contain the boundaries of the lower 48 states as well as Alaska and Hawaii. For easier visualization, Alaska and Hawaii have been moved to lie underneath the lower 48 states. We can plot the geographic boundaries with `geom_sf()` ("sf" stands for "simple features"). Note that for a basic plot, we don't need to specify an aesthetic mapping, because geometry columns are automatically found and mapped by `geom_sf()`.
+
+```{r}
+ggplot(US_income) + 
+  geom_sf() 
+```
+
+We can map any of the other data values onto the map using standard ggplot2 techniques. For example, we can color states by the logarithm of the population number.
+
+```{r}
+ggplot(US_income, aes(fill = log(population))) +
+  geom_sf(color = "black", size = 0.2) # draw state boundaries with thin black lines
+```
+
+
+We can remove states we are not interested in by filtering, just like we normally do when working with the tidyverse. 
+
+```{r}
+# remove Alaska and Hawaii
+lower48 <- US_income %>%
+  filter(!GEOID %in% c("02", "15")) 
+
+# plot
+ggplot(lower48) + geom_sf()
+```
+
+We can change the coordinate system (i.e., reproject the geometric shapes) by adding `coord_sf()` with a coordinate reference system (crs). Many coordinate reference systems are specified by EPSG (European Petroleum Survey Group) codes, which can be looked up at https://epsg.io/ or https://spatialreference.org. For example, we can use EPSG 3395, which is an outdated Mercator projection.
+
+```{r}
+ggplot(lower48) + 
+  geom_sf() +
+  coord_sf(crs = 3395) # World Mercator, not recommended in practice, https://spatialreference.org/ref/epsg/3395/
+```
+
+Or, we could use EPSG 3338, which is a projection that is normally used for Alaska.
+
+```{r}
+ggplot(lower48) + 
+  geom_sf() +
+  coord_sf(crs = 3338) # Normally used for Alaska, https://spatialreference.org/ref/epsg/nad83-alaska-albers/
+```
+
+
+## 2. Problems
+
+Plot the lower 48 states in a coordinate system that represents longitude along the x axis and latitude along the y axis. Hint: This is called the longitude/latitude projection, and it has an EPSG code of 4326.
+
+```{r}
+# your R code goes here.
+```
+
+Using the data frame `US_counties_income`, plot all US counties, coloring each one by median income. Hint: Use `scale_fill_viridis_c(option = "B")` to create an appealing color effect.
+
+```{r}
+# your R code goes here.
+```
+
+Now plot only the counties of Texas, coloring each one by median income. Hint: Texas is represented by a code of `"48"`, and this code is stored in the `STATEFP` column in the data frame with county information.
+
+```{r}
+# your R code goes here.
+```
+
+
+## 3. If this was easy
+
+Make a map of all the counties in the lower 48, with counties with a median income of at least $75,000 highlighted in red.
+
+```{r}
+# your R code goes here.
+```
+
