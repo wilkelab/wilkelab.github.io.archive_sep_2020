@@ -7,6 +7,30 @@ permalink: /more/lab_meetings.html
 Lab meetings are held Fridays from 11 AM -- 12:30 PM in MBB 3.204.
 <br><br>
 
+### Summer 2020
+
+|------+---+--------------------+---+----------------------+---+-------|
+| Date      |    |Research       |    |Literature |         |Notes      |
+|:----------|----|:------------------|----|:--------------------|---|:------|
+| 5/22/20 || Anastasiya || Adam ||
+| 5/29/20 || --- || --- || No lab meeting.
+| 6/5/20 || Cory || Anastasiya ||
+| 6/12/20 || Kuang || Cory || 
+| 6/19/20 || Sahil || Kuang ||
+| 6/26/20 || Alexis || Sahil ||
+| 7/3/20 || Matt || Alexis ||
+| 7/10/20 || Lee || Matt ||
+| 7/17/20 || Mackenzie || Lee ||
+| 7/24/20 || Tanvi || Mackenzie ||
+| 7/31/20 || Adam || Tanvi ||
+| 8/7/20 || Anastasiya || Adam ||
+| 8/14/20 || Cory || Anastasiya || 
+| 8/21/20 || Kuang || Cory ||
+| 8/28/20 || Sahil||  Kuang ||
+|------+---+--------------------+---+----------------------+---+-------|
+{:.widetable}
+
+<br /><br />
 ### Spring 2020
 
 |------+---+--------------------+---+----------------------+---+-------|
@@ -162,55 +186,6 @@ Lab meetings are held Fridays from 11 AM -- 12:30 PM in MBB 3.204.
 | 4/13/18 || Bart || Ashley ||
 | 4/27/18 || Cory || Bart || 
 | 5/4/18 || Ben || Cory ||
-|------+---+--------------------+---+----------------------+---+-------|
-{:.widetable}
-
-<br /><br />
-
-### Fall 2017
-
-|------+---+--------------------+---+----------------------+---+-------|
-| Date      |    |Research       |    |Literature |         |Notes      |
-|:----------|----|:------------------|----|:--------------------|---|:------|
-| 9/8/17  || Umut || Bart || 
-| 9/15/17   || Nelson || Umut ||
-| 9/22/17  || Ashley || Nelson ||
-| 9/29/17  || Adam || Ashley || 
-| 10/6/17  || Dariya || Adam ||
-| 10/13/17   || Cory || Dariya ||
-| 10/20/17   || Ben || Cory || 
-| 10/27/17  || Bart || Ben ||
-| 11/3/17  || Mackenzie || Bart || 
-| 11/10/17  || Kevin || Mackenzie || 
-| 11/17/17   || Ashley || Kevin  ||
-| 11/24/17 || --- || --- || Thanksgiving, no lab meeting
-| 12/1/17  || Matt || Ben || 
-| 12/8/17  || Adam || Matt  || 
-| 12/15/17  || Dariya || Adam ||
-|------+---+--------------------+---+----------------------+---+-------|
-{:.widetable}
-
-<br /><br />
-
-### Summer 2017
-
-|------+---+--------------------+---+----------------------+---+-------|
-| Date      |    |Research       |    |Literature |         |Notes      |
-|:----------|----|:------------------|----|:--------------------|---|:------|
-| 6/2/17  || Qian || Cory || 
-| 6/9/17   || Nelson || Qian ||
-| 6/16/17  || Matt || Nelson ||
-| 6/23/17  || Ashley || Matt || 
-| 6/30/17  || Ben || Ashley ||
-| 7/7/17   || Adam || Ben ||
-| 7/14/17   || --- || --- || Claus out of town 
-| 7/21/17  || --- || --- || Claus out of town
-| 7/28/17  || Dariya || Adam || 
-| 8/4/17  || --- || --- || BEACON Congress, no lab meeting 
-| 8/11/17   || Cory || Dariya  || 
-| 8/18/17  || Bart || Cory || 
-| 8/25/17  || --- || ---  || Literature only 
-| 9/1/17  || --- || --- || Literature only
 |------+---+--------------------+---+----------------------+---+-------|
 {:.widetable}
 

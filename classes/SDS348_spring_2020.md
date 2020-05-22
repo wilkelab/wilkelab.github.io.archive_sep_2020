@@ -475,7 +475,7 @@ All projects are due by noon (12:00pm) on the day they are due. Projects need to
     - [Grading rubric](/classes/SDS348/2020_spring/projects/project1_rubric.pdf)
     - [Project Template (Rmd)](/classes/SDS348/2020_spring/projects/project1.Rmd)
     - [Project Template (HTML)](/classes/SDS348/2020_spring/projects/project1.html)
-    - [Project Template, Solutions (HTML)](/classes/SDS348/2020_spring/projects/project1_solutions.html)
+    - [Project Solutions (HTML)](/classes/SDS348/2020_spring/projects/project1_solutions.html)
 - Project 1 Example
     - [Example project, solution](/classes/SDS348/2020_spring/projects/project1_example_solution.html)
     - [Example project, Rmd](/classes/SDS348/2020_spring/projects/project1_example_solution.Rmd)
@@ -485,7 +485,7 @@ All projects are due by noon (12:00pm) on the day they are due. Projects need to
     - [Grading rubric](/classes/SDS348/2020_spring/projects/project2_rubric.pdf)
     - [Project Template (Rmd)](/classes/SDS348/2020_spring/projects/project2.Rmd)
     - [Project Template (HTML)](/classes/SDS348/2020_spring/projects/project2.html)
-    - [Project Template, Solutions (HTML)](/classes/SDS348/2020_spring/projects/project2_solutions.html)
+    - [Project Solutions (HTML)](/classes/SDS348/2020_spring/projects/project2_solutions.html)
  
 - SDS 385 Assignment (due Apr 14, 2020, **grad students only**):
     - [HTML](/classes/SDS348/2020_spring/projects/grad_assignment.html)
@@ -495,4 +495,4 @@ All projects are due by noon (12:00pm) on the day they are due. Projects need to
     - [Grading rubric](/classes/SDS348/2020_spring/projects/project3_rubric.pdf)
     - [Project Template (iPython notebook)](/classes/SDS348/2020_spring/projects/project3.ipynb)
     - [Project Template (HTML)](/classes/SDS348/2020_spring/projects/project3.html)
-
+    - [Project Solutions (HTML)](/classes/SDS348/2020_spring/projects/project3_solutions.html)
