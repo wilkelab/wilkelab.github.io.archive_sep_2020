@@ -16,6 +16,12 @@
   ref: "bioRxiv 411025"
   doi: 10.1101/411025
 
+- author: Y. Zhang, A. J. Moy, X. Feng, H. T. M. Nguyen, K. R. Sebastian, J. S. Reichenberg, C. O. Wilke, M. K. Markey, J. W. Tunnell 
+  year: 2020
+  title: Assessment of Raman spectroscopy for reducing unnecessary biopsies for melanoma screening.
+  ref: "Molecules 25:2852"
+  doi: 10.3390/molecules25122852
+
 - author: J. M. Laurent, R. K. Garge, A. I. Teufel, C. O. Wilke, A. H. Kachroo, E. M. Marcotte
   year: 2020
   title: Humanization of yeast genes with multiple human orthologs reveals principles of functional divergence between paralogs.
@@ -25,7 +31,7 @@
 - author: D. K. Sydykova, T. O. LaBar, C. Adami, C. O. Wilke
   year: 2020
   title: Moderate amounts of epistasis are not evolutionarily stable in small populations.
-  ref: "J. Mol. Evol., in press"
+  ref: "J. Mol. Evol. 88:435–444"
   doi: 10.1007/s00239-020-09942-4
     
 - author: A. Zeileis, J. C. Fisher, K. Hornik, R. Ihaka, C. D. McWhite, P. Murrell, R. Stauffer, C. O. Wilke
