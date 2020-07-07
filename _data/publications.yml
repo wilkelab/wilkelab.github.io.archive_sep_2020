@@ -4,17 +4,17 @@
   ref: "bioRxiv 094805"
   doi: 10.1101/2020.05.13.094805
 
-- author: C. D. DuPai, C. O. Wilke, B. W. Davies
-  year: preprint
-  title: A comprehensive co-expression network analysis in Vibrio cholerae.
-  ref: "bioRxiv 939611"
-  doi: 10.1101/2020.02.07.939611
-
 - author: D. K. Sydykova, C. O. Wilke
   year: preprint
   title: Theory of measurement for site-specific evolutionary rates in amino-acid sequences.
   ref: "bioRxiv 411025"
   doi: 10.1101/411025
+
+- author: C. D. DuPai, C. O. Wilke, B. W. Davies
+  year: 2020
+  title: A comprehensive co-expression network analysis in Vibrio cholerae.
+  ref: "mSystems 5:e00550-20"
+  doi: 10.1128/mSystems.00550-20
 
 - author: Y. Zhang, A. J. Moy, X. Feng, H. T. M. Nguyen, K. R. Sebastian, J. S. Reichenberg, C. O. Wilke, M. K. Markey, J. W. Tunnell 
   year: 2020
