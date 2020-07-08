@@ -19,12 +19,12 @@ Lab meetings are held Fridays from 11 AM -- 12:30 PM in MBB 3.204.
 | 6/19/20 || Sahil || Kuang ||
 | 6/26/20 || Alexis || Sahil ||
 | 7/3/20 || Matt || Alexis ||
-| 7/10/20 || Lee || Matt ||
-| 7/17/20 || Mackenzie || Lee ||
+| 7/10/20 || Adam || Matt ||
+| 7/17/20 || Mackenzie || Adam ||
 | 7/24/20 || Tanvi || Mackenzie ||
-| 7/31/20 || Adam || Tanvi ||
+| 7/31/20 || Lee || Tanvi ||
 | 8/7/20 || iGEM: PineTree on T7 || --- ||
-| 8/14/20 || Anastasiya || Adam ||
+| 8/14/20 || Anastasiya || Lee ||
 | 8/21/20 || Cory || Anastasiya || 
 | 8/28/20 || Kuang || Cory ||
 |------+---+--------------------+---+----------------------+---+-------|
