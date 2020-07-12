@@ -1,3 +1,9 @@
+- author: A. I. Teufel, W. Liu, J. A. Draghi, C. E. Cameron, C. O. Wilke
+  year: preprint 
+  title: Uncovering modeling features of viral replication dynamics from high-throughput single-cell virology experiments.
+  ref: "bioRxiv 195925"
+  doi: 10.1101/2020.07.09.195925
+
 - author: A. J. Hockenberry, C. O. Wilke
   year: preprint
   title: "BACPHLIP: Predicting bacteriophage lifestyle from conserved protein domains."
