@@ -10,9 +10,11 @@ The majority of our work in the lab is computational, but many of the ongoing pr
 
 
 **Postdocs.**
-The Wilke lab currently has several ongoing projects studying virus-host interactions on a cellular level, using a variety of high-throughput approaches. Most projects are computational, and potential research questions range from differential-equation or stochastic modeling of viral replication inside a cell to viral proteomics to high-throughput image analysis of single-cell virology experiments. We are also carrying out experiments in bacteriophage systems biology, in collaboration with the Bull lab at UT Austin. 
+Job ads for specific postdoc positions are listed below.
 
-Prospective postdocs should contact Claus Wilke by email (wilke@austin.utexas.edu) and send a current cv and a brief (~1 page) description of research interests. 
+August 6, 2020: The Wilke and [Barrick](https://barricklab.org) labs have a new NIH-funded position for a postdoctoral researcher on a project that will design and test mechanistic models of bacteriophage infection, replication, and evolution for applications in phage therapy and the design of attenuated vaccines. The ideal applicant will be a recent PhD with some combination of skills and interests in computational biology, phage biology, genome engineering, evolution, and synthetic biology.
+
+Contact wilke@austin.utexas.edu and jbarrick@cm.utexas.edu for more information. Send a cover letter, CV, and contact information for three references to apply.
 
 **Graduate students.**
 Prospective graduate students should inquire with Claus Wilke, but will have to apply through the regular process at UT Austin, either with the [Ecology, Evolution, & Behavior Graduate Program](http://www.biosci.utexas.edu/graduate/eeb/) or with the [Cell and Molecular Biology Graduate Program](https://icmb.utexas.edu/cmb/).
