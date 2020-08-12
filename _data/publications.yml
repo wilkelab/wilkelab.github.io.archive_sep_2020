@@ -22,6 +22,11 @@
   ref: "bioRxiv 411025"
   doi: 10.1101/411025
 
+- author: A. Zeileis, J. C. Fisher, K. Hornik, R. Ihaka, C. D. McWhite, P. Murrell, R. Stauffer, C. O. Wilke
+  year: 2020
+  title: "colorspace: A Toolbox for Manipulating and Assessing Colors and Palettes."
+  ref: "J. Stat. Soft., in press"
+
 - author: C. D. DuPai, C. O. Wilke, B. W. Davies
   year: 2020
   title: A comprehensive co-expression network analysis in Vibrio cholerae.
@@ -46,11 +51,6 @@
   ref: "J. Mol. Evol. 88:435–444"
   doi: 10.1007/s00239-020-09942-4
     
-- author: A. Zeileis, J. C. Fisher, K. Hornik, R. Ihaka, C. D. McWhite, P. Murrell, R. Stauffer, C. O. Wilke
-  year: 2020
-  title: "colorspace: A Toolbox for Manipulating and Assessing Colors and Palettes."
-  ref: "J. Stat. Soft., in press"
-
 - author: B. R. Jack, D. R. Boutz, M. L. Paff, B. L. Smith, C. O. Wilke
   year: 2019
   title: Transcript degradation and codon usage regulate gene expression in a lytic phage.
