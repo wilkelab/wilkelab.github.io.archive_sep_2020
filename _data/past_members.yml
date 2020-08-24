@@ -211,6 +211,16 @@
   role: Undergraduate
   joined: 2016  
   left: 2019
+  
+- name: Lee Rao
+  role: Undergraduate
+  joined: 2018
+  left: 2020
+
+- name: Vinayak Sahal
+  role: Undergraduate
+  joined: 2018
+  left: 2019
  
 - name: Grace Shiau
   role: High School Student & Undergraduate
