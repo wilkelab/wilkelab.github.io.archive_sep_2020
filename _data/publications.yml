@@ -32,18 +32,21 @@
   title: A comprehensive co-expression network analysis in Vibrio cholerae.
   ref: "mSystems 5:e00550-20"
   doi: 10.1128/mSystems.00550-20
+  pmcid: PMC7343309
 
 - author: Y. Zhang, A. J. Moy, X. Feng, H. T. M. Nguyen, K. R. Sebastian, J. S. Reichenberg, C. O. Wilke, M. K. Markey, J. W. Tunnell 
   year: 2020
   title: Assessment of Raman spectroscopy for reducing unnecessary biopsies for melanoma screening.
   ref: "Molecules 25:2852"
   doi: 10.3390/molecules25122852
+  pmcid: PMC7355922
 
 - author: J. M. Laurent, R. K. Garge, A. I. Teufel, C. O. Wilke, A. H. Kachroo, E. M. Marcotte
   year: 2020
   title: Humanization of yeast genes with multiple human orthologs reveals principles of functional divergence between paralogs.
   ref: "PLOS Biol. 18:e3000627"
   doi: 10.1371/journal.pbio.3000627
+  pmcid: PMC7259792
     
 - author: D. K. Sydykova, T. O. LaBar, C. Adami, C. O. Wilke
   year: 2020
@@ -56,6 +59,7 @@
   title: Transcript degradation and codon usage regulate gene expression in a lytic phage.
   ref: "Virus Evol. 5:vez055"
   doi: 10.1093/ve/vez055
+  pmcid: PMC6938266
 
 - author: H. Wickham, M. Averick, J. Bryan, W. Chang, L. D'Agostino McGowan, R. François, G. Grolemund, A. Hayes, L. Henry, J. Hester, M. Kuhn, T. Lin Pedersen, E. Miller, S. Milton Bache, K. Müller, J. Ooms, D. Robinson, D. Paige Seidel, V. Spinu, K. Takahashi, D. Vaughan, C. Wilke, K. Woo, H. Yutani
   year: 2019
@@ -68,72 +72,85 @@
   title: More than efficacy revealed by single-cell analysis of antiviral therapeutics.
   ref: "Science Advances 5:eaax4761"
   doi: 10.1126/sciadv.aax4761
+  pmcid: PMC6821460
 
 - author: A. J. Hockenberry, C. O. Wilke
   year: 2019
   title: Phylogenetic weighting does little to improve the accuracy of evolutionary coupling analyses.
   ref: "Entropy 21:1000"
   doi: 10.3390/e21101000
+  pmcid: PMC6818970  
 
 - author: A. J. Hockenberry, C. O. Wilke
   year: 2019
   title: Evolutionary couplings detect side-chain interactions.
   ref: "PeerJ 7:e7280"
   doi: 10.7717/peerj.7280
+  pmcid: PMC6622159
 
 - author: C. D. DuPai, C. D. McWhite, C. B. Smith, R. Garten, S. Maurer-Stroh, and C. O. Wilke
   year: 2019
   title: "Influenza passaging annotations: what they tell us and why we should listen."
   ref: "Virus Evol. 5:vez016"
   doi: 10.1093/ve/vez016
+  pmcid: PMC6599686
 
 - author: B. R. Jack, C. O. Wilke
   year: 2019
   title: "Pinetree: a step-wise gene expression simulator with codon-specific translation rates."
   ref: "Bioinformatics 35:4176–4178"
   doi: 10.1093/bioinformatics/btz203
+  pmcid: PMC6792109
 
 - author: A. I. Teufel, M. M. Johnson, J. M. Laurent, A. H. Kachroo, E. M. Marcotte, C. O. Wilke
   year: 2019
   title: The many nuanced evolutionary consequences of duplicated genes.
   ref: "Mol. Biol. Evol. 36:304–314"
   doi: 10.1093/molbev/msy210
+  pmcid: PMC6409435
 
 - author: M. U. Caglar, A. J. Hockenberry, C. O. Wilke
   year: 2018
   title: Predicting bacterial growth conditions from mRNA and protein abundances.
   ref: "PLoS ONE 13:e0206634"
   doi: 10.1371/journal.pone.0206634
+  pmcid: PMC6214550
 
 - author: A. J. Hockenberry, M. C. Jewett, L. A. N. Amaral, C. O. Wilke
   year: 2018
   title: Within-gene Shine-Dalgarno sequences are not selected for function.
   ref: "Mol. Biol. Evol. 35:2487–2498"
   doi: 10.1093/molbev/msy150
+  pmcid: PMC6188533
 
 - author: A. I. Teufel, A. M. Ritchie, C. O. Wilke, D. A. Liberles
   year: 2018
   title: Using the mutation–selection framework to characterize selection on protein sequences.
   ref: "Genes 9:409"
   doi: 10.3390/genes9080409
+  pmcid: PMC6115872
 
 - author: M. L. Paff, B. R. Jack, B. L. Smith, J. J. Bull, C. O. Wilke
   year: 2018
   title: Combinatorial approaches to viral attenuation.
   ref: "mSystems 3:e00046"
   doi: 10.1128/mSystems.00046-18
+  pmcid: PMC6068830
 
 - author: B. L. Smith, G. Chen, C. O. Wilke, R. M. Krug
   year: 2018
   title: Avian influenza virus PB1 gene in H3N2 viruses evolved in humans to reduce interferon inhibition by skewing codon usage toward interferon-altered tRNA pools.
   ref: "mBio 9:e01222-18"
   doi: 10.1128/mBio.01222-18
+  pmcid: PMC6030557
+  
   
 - author: D. C. Wu, J. Yao, K. S. Ho, A. M. Lambowitz, C. O. Wilke
   year: 2018
   title: Limitations of alignment-free tools in total RNA-seq quantification.
   ref: "BMC Genomics 19:510"
   doi: 10.1186/s12864-018-4869-5
+  pmcid: PMC6042521
 
 - author: Q. Jiang, A. I. Teufel, E. L. Jackson, C. O. Wilke
   year: 2018
@@ -154,12 +171,14 @@
   title: "Sicegar: R package for sigmoidal and double-sigmoidal curve fitting."
   ref: "PeerJ 6:e4251"
   doi: 10.7717/peerj.4251
+  pmcid: PMC5774301
 
 - author: A. T. Tucker, S. P. Leonard, C. D. DuBois, G. A. Knauf, A. L. Cunningham, C. O. Wilke, S. Trent, B. W. Davies
   year: 2018
   title: Discovery of next-generation antimicrobials through bacterial self-screening of surface-displayed peptide libraries.
   ref: "Cell 172:618–628.e13"
   doi: 10.1016/j.cell.2017.12.009
+  pmcid: PMC5786472
   
 - author: F. Guo, S. Li, M. U. Caglar, Z. Mao, W. Liu, A. Woodman, J. J. Arnold, C. O. Wilke, T. J. Huang, C. E. Cameron
   year: 2017
