@@ -12,7 +12,11 @@ The majority of our work in the lab is computational, but many of the ongoing pr
 **Postdocs.**
 Job ads for specific postdoc positions are listed below.
 
-August 6, 2020: The Wilke and [Barrick](https://barricklab.org) labs have a new NIH-funded position for a postdoctoral researcher on a project that will design and test mechanistic models of bacteriophage infection, replication, and evolution for applications in phage therapy and the design of attenuated vaccines. The ideal applicant will be a recent PhD with some combination of skills and interests in computational biology, phage biology, genome engineering, evolution, and synthetic biology.
+August 24, 2020: The Wilke lab has a new NIH-funded position for a postdoctoral researcher on a project that will design and test antimicrobial peptides. This work will be performed in collaboration with the [Davies lab.](http://bwdaviesutaustin.org/). The ideal applicant will be a recent PhD with some combination of skills and interests in computational biology, structural biology, machine learning, and protein design. This position will be entirely computational.
+
+Contact wilke@austin.utexas.edu for more information. Send a cover letter, CV, and contact information for three references to apply.
+
+August 6, 2020: The Wilke and [Barrick](https://barricklab.org) labs have a new NIH-funded position for a postdoctoral researcher on a project that will design and test mechanistic models of bacteriophage infection, replication, and evolution for applications in phage therapy and the design of attenuated vaccines. The ideal applicant will be a recent PhD with some combination of skills and interests in computational biology, phage biology, genome engineering, evolution, and synthetic biology. This position will be primarily experimental.
 
 Contact wilke@austin.utexas.edu and jbarrick@cm.utexas.edu for more information. Send a cover letter, CV, and contact information for three references to apply.
 
