@@ -12,7 +12,7 @@ The majority of our work in the lab is computational, but many of the ongoing pr
 **Postdocs.**
 Job ads for specific postdoc positions are listed below.
 
-August 24, 2020: The Wilke lab has a new NIH-funded position for a postdoctoral researcher on a project that will design and test antimicrobial peptides. This work will be performed in collaboration with the [Davies lab.](http://bwdaviesutaustin.org/). The ideal applicant will be a recent PhD with some combination of skills and interests in computational biology, structural biology, machine learning, and protein design. This position will be entirely computational.
+August 24, 2020: The Wilke lab has a new NIH-funded position for a postdoctoral researcher on a project that will design and test antimicrobial peptides. This work will be performed in collaboration with the [Davies lab.](http://bwdaviesutaustin.org/) The ideal applicant will be a recent PhD with some combination of skills and interests in computational biology, structural biology, machine learning, and protein design. This position will be entirely computational.
 
 Contact wilke@austin.utexas.edu for more information. Send a cover letter, CV, and contact information for three references to apply.
 
