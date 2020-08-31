@@ -28,7 +28,9 @@ Lab meetings are held Fridays from 11 AM -- 12:30 PM in MBB 3.204.
 | 12/4/20 || Adam || Matt || 
 | 12/11/20 || Mackenzie || Adam |||
 |------+---+--------------------+---+----------------------+---+-------|
-{:.widetable}<br><br>
+{:.widetable}
+
+<br><br />
 
 ### Summer 2020
 
